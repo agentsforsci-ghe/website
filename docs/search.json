@@ -6,7 +6,8 @@
     "section": "",
     "text": "Six steps. Steps 1 to 3 are about your own work and your own thinking, and they are the ones the day depends on. Steps 4 to 6 are setup and admin.\nWork through them in order. Steps 1 and 2 have no due date because you bring the result with you; the other four have due dates so that problems surface while there is still time to fix them.\n\n\n\n\n\n\n\n\nStep\nWhat\nDue\n\n\n\n\n1\nBring a piece of your own data\nbring it with you\n\n\n2\nWrite down how you publish a paper\nbring it with you\n\n\n3\nRead the AI declaration questionnaires\nFriday, 26 September 2026\n\n\n4\nInstall Claude Code\nbefore Step 5\n\n\n5\nTest your setup\nMonday, 22 September 2026\n\n\n6\nComplete the pre-course survey\nMonday, 15 September 2026\n\n\n\n\n\n\n\n\n\nTipHow long will this take?\n\n\n\nSteps 1 and 2 are thinking, not typing: half an hour each if you already know which dataset you want to use. Step 3 is about an hour of reading. Steps 4 to 6 are around half an hour together, unless something goes wrong with the install, which is exactly why Step 5 has a due date a week before the workshop.\n\n\n\n\n\n\n\n\nImportantIf you get stuck\n\n\n\nDo not spend an evening fighting an install. Open an issue on your setup repository (Step 5 explains how) or email lschoebitz@ethz.ch. Getting you unstuck before the day is the whole point of having pre-work.",
     "crumbs": [
-      "Before the workshop"
+      "Prepare",
+      "All six steps"
     ]
   },
   {
@@ -16,7 +17,7 @@
     "section": "",
     "text": "Due by Monday, 22 September 2026\nThis is the same idea as the setup check in the first workshop: prove the whole chain works while there is still a week to fix it if it does not.\nYou will clone a repository, let the agent make one small change, and open an issue to report the result.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 5: Test your setup"
     ]
   },
@@ -27,7 +28,7 @@
     "section": " 1. Clone the setup repository",
     "text": "1. Clone the setup repository\nYou will receive an invitation to a repository named setup-USERNAME in the agentsforsci-ghe organization, where USERNAME is your GitHub handle. Accept the invitation, then clone the repository the way you did in the first workshop.\nIf cloning fails, that is a Git authentication problem rather than an agent problem. The Git for Scientists pre-work covers it, and your personal access token from July should still work.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 5: Test your setup"
     ]
   },
@@ -38,7 +39,7 @@
     "section": " 2. Start the agent",
     "text": "2. Start the agent\nOpen a terminal, move into the folder you just cloned, and start Claude Code:\ncd setup-USERNAME\nclaude\nThe first run asks you to sign in. Use the account details from the email described in Step 4.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 5: Test your setup"
     ]
   },
@@ -49,7 +50,7 @@
     "section": " 3. Give it one task",
     "text": "3. Give it one task\nType this, exactly as written, and press enter:\nRead README.md, then add a line to it saying who you are and what\nversion you are. Commit the change with a clear message.\nWatch what happens. The agent will ask permission before it writes the file and before it commits. Say yes to both.\nThree things are worth noticing while it works, because they are the whole subject of the workshop:\n\nit read a file before changing it\nit asked before doing anything that changes something\nit wrote the commit message itself",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 5: Test your setup"
     ]
   },
@@ -60,7 +61,7 @@
     "section": " 4. Push",
     "text": "4. Push\nIn the same terminal:\ngit push\nThen open your repository on GitHub and check that the commit is there.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 5: Test your setup"
     ]
   },
@@ -71,7 +72,7 @@
     "section": " 5. Report that you are done",
     "text": "5. Report that you are done\nOn your setup-USERNAME repository, open an issue:\n\nTitle: Setup complete\nBody: paste the output of claude --version, and say which operating system you are on\nAssignee: larnsce\n\nSame as the first workshop: the issue is how we know you are ready.\n\n\n\n\n\n\nImportantIf any part of this failed\n\n\n\nOpen the issue anyway. Title it Setup problem, say which of the five parts broke, and paste the error message. Assign it to larnsce.\nThis is the point of having a due date a week out. A setup problem found on Monday, 22 September 2026 is half an hour of work; the same problem found at 09:00 on the day costs you the morning.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 5: Test your setup"
     ]
   },
@@ -82,7 +83,7 @@
     "section": "",
     "text": "Due by Friday, 26 September 2026\nRead the consultation materials on AI disclosure and bring your questions. The last block of the workshop writes a group response to this consultation, and that block only works if everyone arrives having read the same thing.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 3: Declaration reading"
     ]
   },
@@ -93,7 +94,7 @@
     "section": " What to read",
     "text": "What to read\nThe World Conferences on Research Integrity are running a consultation toward a global reporting standard for AI disclosure in research, supported by the International Science Council, COPE, STM, and the Global Young Academy. Round 2 is open, and responses are due by 16 October 2026, shortly after our workshop.\nRead the Round 2 preparatory materials, published by the International Science Council: https://council.science/events/ai-disclosure-standard/\nThe consultation asks five questions. These are the ones to hold in mind while reading:\n\nThreshold. When does AI use need to be disclosed at all?\nPlacement. Where should the disclosure go: spread through the sections of a paper where the tool was used, or gathered into one separate statement?\nTaxonomy. The draft proposes 18 categories of research task, from idea generation to editing. Does that list fit the way you work?\nNull statements. Should a paper have to say “we used no AI that meets the threshold”, the way it has to declare conflicts of interest?\nOversight. How should authors describe what they checked, and how they checked it?",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 3: Declaration reading"
     ]
   },
@@ -104,7 +105,7 @@
     "section": " The proposed threshold",
     "text": "The proposed threshold\nThe draft threshold is qualitative rather than numerical:\n\nAI use should be disclosed if it substantively shapes or replaces human judgement, or has another substantive influence on research processes or its reporting.\n\nThe test offered for “substantive” is whether a disciplinary peer would reasonably need to know about the use in order to understand how the research was done, or to judge whether the results are reliable. Spellchecking, grammar correction, and formatting are named as uses that generally do not need disclosure.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 3: Declaration reading"
     ]
   },
@@ -115,7 +116,7 @@
     "section": " What to bring",
     "text": "What to bring\nWrite down:\n\nTwo or three questions. Anything the materials left unclear, or any place the proposal does not fit how research works in your field.\nOne case from your own work. A specific thing you have done with an AI tool, where you are genuinely unsure whether it crosses the threshold. Borderline cases are the useful ones.\nYour own answer to question 4. Should a null statement be mandatory? Yes or no, and one sentence of reasoning.\n\nHalf a page in total is plenty.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 3: Declaration reading"
     ]
   },
@@ -126,7 +127,7 @@
     "section": " Why this step exists",
     "text": "Why this step exists\n\n\n\n\n\n\nNoteTwo positions we will put to the room\n\n\n\nOne position: disclose if AI was used at all. A threshold each author judges for themselves invites under-reporting, and a version-controlled workflow logs every use anyway, so the cost of a full declaration is near zero.\nThe other: a yes-or-no flag loses intent. It cannot tell translating your own ideas from having the machine write them, and readers will treat the flag as a quality judgement the way they treat journal rank.\nBoth have a point. We will argue this out on the day, and the group response records where we land.\n\n\nBy the time we write the response, you will have spent a day watching agents do research work under three different conditions, with the full record of what they did in front of you. That is a better basis for answering the consultation’s five questions than most respondents will have, which is exactly why it is worth submitting.\nGlobal Health Engineering will archive the response with a DOI and submit it before the 16 October due date. Everyone in the room is a contributor.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 3: Declaration reading"
     ]
   },
@@ -137,7 +138,7 @@
     "section": "",
     "text": "Bring a dataset of your own that can be shared openly. You will work with it for most of the day.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 1: Bring your data"
     ]
   },
@@ -148,7 +149,7 @@
     "section": " What counts",
     "text": "What counts\nSomething real from your own research, small enough to look at in one sitting. A single table is ideal: one file, a few hundred to a few thousand rows, columns you can explain. Survey responses, measurements, an extract from a larger database, a coding sheet.\nIt does not need to be tidy. It does not need to be finished. Messy real data is more useful here than a clean example, because the point is to see what an agent does with the data you actually have.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 1: Bring your data"
     ]
   },
@@ -159,7 +160,7 @@
     "section": " What must not come",
     "text": "What must not come\n\n\n\n\n\n\nImportantThe rule for the day\n\n\n\nPersonal and sensitive data never go into a Git repository, private repositories included. Git history is permanent, and a later visibility change, a new collaborator, or a push to the wrong remote can expose it.\n\n\nDo not bring:\n\nnames, or anything that identifies a person in combination with other columns\nrecruitment or participant data\nhealth data\nsigned consent forms\nanything a data protection agreement covers\nunpublished data belonging to someone else\n\nThis matters more with an agent than without one. A coding agent reads whole directories and pulls file contents into a request to a model. If protected data sits in the folder, it can leave your machine without you doing anything deliberate.\nIf you are unsure which category your data falls into, treat it as protected and ask before the workshop. Bringing an anonymised extract, or a published dataset you have worked with, is a perfectly good answer.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 1: Bring your data"
     ]
   },
@@ -170,7 +171,7 @@
     "section": " What to do",
     "text": "What to do\n\nPick the dataset.\nCheck it against the list above. If anything on that list applies, either anonymise it properly or pick something else.\nPut it somewhere you can find it quickly on the day. A single CSV or Excel file on your laptop is fine.\nBe ready to say in two sentences what the data is and where it came from. You will need this on the day, and it is the beginning of the documentation question we work on.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 1: Bring your data"
     ]
   },
@@ -181,7 +182,7 @@
     "section": " Why this step exists",
     "text": "Why this step exists\nOne of the comparisons we run hands the agent a plain spreadsheet, then hands it the same data published properly, with the columns described. The difference in what the agent can do is the argument for documentation, and it only lands if the data is yours and you already know what the columns mean.\nIf you genuinely have nothing you can share, say so in the survey (Step 6) and you will be paired with someone who does.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 1: Bring your data"
     ]
   },
@@ -190,90 +191,63 @@
     "href": "index.html",
     "title": "Agents for Scientists",
     "section": "",
-    "text": "Thank you for joining this workshop. Your course instructor Lars Schöbitz is looking forward to meeting you.\nWe will meet on Tuesday, 29 September 2026 - 08:30 to 17:00 (Europe/Zurich) at Villa Hatt, ETH Zurich.\nThis is the second of the two workshops in the series. The first, Git for Scientists, ran on 15 July 2026 and is the foundation this day builds on.",
-    "crumbs": [
-      "Course overview"
-    ]
+    "text": "Thank you for joining this workshop. Your course instructor Lars Schöbitz is looking forward to meeting you.\nWe will meet on Tuesday, 29 September 2026 - 08:30 to 17:00 (Europe/Zurich) at Villa Hatt, ETH Zurich.\nThis is the second of the two workshops in the series. The first, Git for Scientists, ran on 15 July 2026 and is the foundation this day builds on."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
     "title": "Agents for Scientists",
     "section": " Background",
-    "text": "Background\nIn the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.\nThe day runs the real work of publishing a paper (analysing data, making interpretations, writing documentation) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan. Comparing the three shows what the agent actually does for you, what it does badly, and what is left for you to do.\nBecause the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing the disclosure rules right now, and this group will send them a response written from what we do in the room.",
-    "crumbs": [
-      "Course overview"
-    ]
+    "text": "Background\nIn the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.\nThe day runs the real work of publishing a paper (analysing data, making interpretations, writing documentation) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan. Comparing the three shows what the agent actually does for you, what it does badly, and what is left for you to do.\nBecause the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing the disclosure rules right now, and this group will send them a response written from what we do in the room."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
     "title": "Agents for Scientists",
     "section": " Prior knowledge",
-    "text": "Prior knowledge\nThis workshop assumes the Git for Scientists foundation. You should be able to:\n\nclone a repository and open it as a project\nrun the pull, stage, commit, push cycle\ncreate a branch and open a pull request\nreview a colleague’s pull request and merge it\nopen an issue, assign it, and close it\n\nIf any of these are shaky, work through the Git for Scientists material again before the day. You do not need any prior experience with AI coding agents.",
-    "crumbs": [
-      "Course overview"
-    ]
+    "text": "Prior knowledge\nThis workshop assumes the Git for Scientists foundation. You should be able to:\n\nclone a repository and open it as a project\nrun the pull, stage, commit, push cycle\ncreate a branch and open a pull request\nreview a colleague’s pull request and merge it\nopen an issue, assign it, and close it\n\nIf any of these are shaky, work through the Git for Scientists material again before the day. You do not need any prior experience with AI coding agents."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring",
     "title": "Agents for Scientists",
     "section": " What do I need to bring?",
-    "text": "What do I need to bring?\n\na laptop, connected to wifi, with your setup tested (Step 4 and Step 5 below)\na web browser\na pen and paper\na piece of your own data that can be shared openly (Step 1 below)\nyour notes and questions from the reading (Step 3 below)",
-    "crumbs": [
-      "Course overview"
-    ]
+    "text": "What do I need to bring?\n\na laptop, connected to wifi, with your setup tested (Step 4 and Step 5 below)\na web browser\na pen and paper\na piece of your own data that can be shared openly (Step 1 below)\nyour notes and questions from the reading (Step 3 below)"
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare",
     "title": "Agents for Scientists",
     "section": " What do I need to prepare?",
-    "text": "What do I need to prepare?\nThere is pre-work for this workshop. It matters more than usual here: the day is built around your data and your questions, so a participant who arrives without them cannot take part in the main exercise.\nWork through the six steps in order.\n\nStep 1: Bring a piece of your own data\nStep 2: Write down how you publish a paper\nStep 3: Read the AI declaration questionnaires, by Friday, 26 September 2026\nStep 4: Install Claude Code\nStep 5: Test your setup, by Monday, 22 September 2026\nStep 6: Complete the pre-course survey, by Monday, 15 September 2026\n\nIf you would rather read before you do, the four background pages cover the security, literacy, transparency, and disclosure themes the day works through. They are optional.",
-    "crumbs": [
-      "Course overview"
-    ]
+    "text": "What do I need to prepare?\nThere is pre-work for this workshop. It matters more than usual here: the day is built around your data and your questions, so a participant who arrives without them cannot take part in the main exercise.\nWork through the six steps in order.\n\nStep 1: Bring a piece of your own data\nStep 2: Write down how you publish a paper\nStep 3: Read the AI declaration questionnaires, by Friday, 26 September 2026\nStep 4: Install Claude Code\nStep 5: Test your setup, by Monday, 22 September 2026\nStep 6: Complete the pre-course survey, by Monday, 15 September 2026\n\nIf you would rather read before you do, the four background pages cover the security, literacy, transparency, and disclosure themes the day works through. They are optional."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
     "title": "Agents for Scientists",
     "section": " Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nBlock\n\n\n\n\n08:30 - 09:00\nArrival and coffee\n\n\n09:00 - 09:45\nIntroduction: security, literacy, transparency, disclosure\n\n\n09:45 - 10:30\nCondition one: the work as you do it now\n\n\n10:30 - 11:00\nBreak\n\n\n11:00 - 12:15\nCondition two: agents with minimal input\n\n\n12:15 - 13:15\nLunch\n\n\n13:15 - 14:45\nCondition three: the planned run\n\n\n14:45 - 15:15\nBreak\n\n\n15:15 - 16:00\nPlain CSV against a published data package\n\n\n16:00 - 16:45\nOur response to the disclosure consultation\n\n\n16:45 - 17:00\nClose",
-    "crumbs": [
-      "Course overview"
-    ]
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nBlock\n\n\n\n\n08:30 - 09:00\nArrival and coffee\n\n\n09:00 - 09:45\nIntroduction: security, literacy, transparency, disclosure\n\n\n09:45 - 10:30\nCondition one: the work as you do it now\n\n\n10:30 - 11:00\nBreak\n\n\n11:00 - 12:15\nCondition two: agents with minimal input\n\n\n12:15 - 13:15\nLunch\n\n\n13:15 - 14:45\nCondition three: the planned run\n\n\n14:45 - 15:15\nBreak\n\n\n15:15 - 16:00\nPlain CSV against a published data package\n\n\n16:00 - 16:45\nOur response to the disclosure consultation\n\n\n16:45 - 17:00\nClose"
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
     "title": "Agents for Scientists",
     "section": " Learning objectives",
-    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nRun an agent inside the Git workflow: give a coding agent a task, review what it produced as a pull request, and accept or reject the change.\nJudge the difference a plan makes: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.\nJudge the difference documentation makes: compare what an agent does with a plain CSV against the same data published as a data package.\nLocate your own practice: place your current way of working on the Reproducibility Levels framework, and name the next step from where you are.\nDeclare agent use: point to the record your workflow produced and say what it shows about which parts of the work an agent touched.",
-    "crumbs": [
-      "Course overview"
-    ]
+    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nRun an agent inside the Git workflow: give a coding agent a task, review what it produced as a pull request, and accept or reject the change.\nJudge the difference a plan makes: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.\nJudge the difference documentation makes: compare what an agent does with a plain CSV against the same data published as a data package.\nLocate your own practice: place your current way of working on the Reproducibility Levels framework, and name the next step from where you are.\nDeclare agent use: point to the record your workflow produced and say what it shows about which parts of the work an agent touched."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d6d656e7473203e7d7d-what-this-workshop-contributes",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d6d656e7473203e7d7d-what-this-workshop-contributes",
     "title": "Agents for Scientists",
     "section": " What this workshop contributes",
-    "text": "What this workshop contributes\nResearch integrity bodies (WCRI, ISC, COPE, STM, and the Global Young Academy) are consulting on a global standard for reporting AI use in research. Round 2 of that consultation closes on 16 October 2026, which is after this workshop.\nWe will spend the last block writing a combined response from what we did during the day. Global Health Engineering will archive it with a DOI and submit it. Your pre-work reading in Step 3 is what makes that block possible, and your name goes on the result.",
-    "crumbs": [
-      "Course overview"
-    ]
+    "text": "What this workshop contributes\nResearch integrity bodies (WCRI, ISC, COPE, STM, and the Global Young Academy) are consulting on a global standard for reporting AI use in research. Round 2 of that consultation closes on 16 October 2026, which is after this workshop.\nWe will spend the last block writing a combined response from what we did during the day. Global Health Engineering will archive it with a DOI and submit it. Your pre-work reading in Step 3 is what makes that block possible, and your name goes on the result."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
     "title": "Agents for Scientists",
     "section": " Thanks",
-    "text": "Thanks\nThank you for working through these steps. See you at Villa Hatt, ETH Zurich.",
-    "crumbs": [
-      "Course overview"
-    ]
+    "text": "Thanks\nThank you for working through these steps. See you at Villa Hatt, ETH Zurich."
   },
   {
     "objectID": "background/transparency.html",
@@ -282,7 +256,7 @@
     "section": "",
     "text": "The ETH integrity guidelines rest on reliability, honesty, respect, and responsibility. Reliability includes transparency and traceability, and authorship requires a significant contribution through personal work.\nNone of this was written with agents in mind, and none of it needs rewriting because of them. The question the workshop answers is a practical one: how do you keep faith with these principles when an agent writes some of the code and some of the prose?",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Transparency"
     ]
   },
@@ -293,7 +267,7 @@
     "section": "",
     "text": "The ETH integrity guidelines rest on reliability, honesty, respect, and responsibility. Reliability includes transparency and traceability, and authorship requires a significant contribution through personal work.\nNone of this was written with agents in mind, and none of it needs rewriting because of them. The question the workshop answers is a practical one: how do you keep faith with these principles when an agent writes some of the code and some of the prose?",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Transparency"
     ]
   },
@@ -304,7 +278,7 @@
     "section": " Attribution at the commit level",
     "text": "Attribution at the commit level\nThe answer this group is testing is that the record should be a by-product of the work rather than something reconstructed afterwards.\nEvery commit says what changed and who made the change. Agent commits carry a trailer marking them as assisted; human commits carry one marking them as human-authored. The prompts behind agent commits can be archived alongside the code, so the instruction that produced a change sits next to the change.\nThe pull request then shows the whole history in one view: what the human drafted, what the agent altered, and what was reviewed before it was merged.\nThis is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim. The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a diff.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Transparency"
     ]
   },
@@ -315,7 +289,7 @@
     "section": " Could you recreate it if the AI were gone?",
     "text": "Could you recreate it if the AI were gone?\nA useful test for any artifact an agent helped produce. It is fine that the AI made it. The problem is when the AI has to stay in the loop for you to be able to change it.\nThe failure cases are recognisable:\n\na dashboard nobody can reconfigure\na manuscript with citations baked into the text rather than managed\nfigures an agent copied from one folder to another, with no code that would remake them\n\nThe remedy is a code-based source of truth that reads the data and builds the output, so a human can rerun it. This is the same argument as reproducibility, arriving from a different direction.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Transparency"
     ]
   },
@@ -326,7 +300,7 @@
     "section": " A watermark says a machine was involved, and nothing else",
     "text": "A watermark says a machine was involved, and nothing else\nSince August 2026 Anthropic watermarks Claude text and images, meeting the EU AI Act’s transparency obligation.\nThe limits are worth knowing. A mark can be stripped or edited away. It needs a substantial amount of text to work at all. Most importantly it carries no intent: it cannot distinguish translating your own ideas from having the machine write them, which is precisely the distinction that matters for integrity.\nThe audit trail from a version-controlled workflow carries what the mark cannot: what the tool did, on which files, in response to which instruction.\n\n\n\n\n\n\nNoteThe short version\n\n\n\nTraceability is not an extra step bolted onto agent use. Done this way it is the ordinary output of working through Git, and it is what makes the disclosure question answerable rather than a matter of memory.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Transparency"
     ]
   },
@@ -337,7 +311,7 @@
     "section": "",
     "text": "Every model produces some defective output. Useful use therefore requires enough expertise to tell good output from bad. The person, not the model, is what makes the output usable.\nCory Doctorow’s corollary is uncomfortable and worth stating plainly: a student is by definition not yet an expert in the subject, so learning a subject from a chatbot is incoherent. An expert can use the tool to generate and validate material precisely because they can accept or reject what comes back.\nFor this workshop, the practical reading is that the agent is most useful on work you could have done yourself but would rather not, and least trustworthy exactly where you cannot check it.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Literacy"
     ]
   },
@@ -348,7 +322,7 @@
     "section": "",
     "text": "Every model produces some defective output. Useful use therefore requires enough expertise to tell good output from bad. The person, not the model, is what makes the output usable.\nCory Doctorow’s corollary is uncomfortable and worth stating plainly: a student is by definition not yet an expert in the subject, so learning a subject from a chatbot is incoherent. An expert can use the tool to generate and validate material precisely because they can accept or reject what comes back.\nFor this workshop, the practical reading is that the agent is most useful on work you could have done yourself but would rather not, and least trustworthy exactly where you cannot check it.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Literacy"
     ]
   },
@@ -359,7 +333,7 @@
     "section": " The question that matters",
     "text": "The question that matters\nThe anchor story from academic libraries: a student brought a polished outline generated by a chatbot and asked, “How do I know if this is actually right?”\nThat is the right question, and answering it is a skill separate from producing the output. AI literacy is an extension of information literacy: where did this come from, can I verify it, does it support my work.\nCitation literacy is worth separating from citation mechanics here. Reference managers already showed that automating the format can hide whether anyone understood the source. Citation is about transparency and honesty; formatting was never the purpose.\nOn detection: AI text detectors cannot reliably identify AI-written text, and building integrity policy on them does not work. The better design is work where people demonstrate their thinking through drafts, process, and transparency about what they used, which is what a version-controlled workflow produces anyway.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Literacy"
     ]
   },
@@ -370,7 +344,7 @@
     "section": " Skills erode when you outsource them",
     "text": "Skills erode when you outsource them\nSkill retention drops when the tool does the work. Vicki Boykis’s proposed remedy is deliberate friction, for example reading every diff the agent produces. Her formulation: we should be more tired than the model.\nThis is not an argument against using agents. It is an argument for choosing where the friction goes. Reading the diff is slower than accepting it, and that slowness is where the understanding lives.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Literacy"
     ]
   },
@@ -381,7 +355,7 @@
     "section": " Write down what you know about your data",
     "text": "Write down what you know about your data\nIf you use an agent for data analysis, you have to write down what you know about the data so the agent can help. Hadley Wickham’s point is that this is not new work invented for machines: the data dictionary is the same documentation that always helped human colleagues, and mostly did not get written.\nHis working method keeps three things in sync: the cleaning script, a data dictionary, and the data file itself, with a commit after each AI-assisted edit.\nThe workshop tests this directly. The same agent gets a plain CSV, then gets the same data published as a documented data package. The difference in what it can do is the argument for documentation, made empirically rather than asserted.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Literacy"
     ]
   },
@@ -392,7 +366,7 @@
     "section": " Where are you now",
     "text": "Where are you now\nThe Reproducibility Levels framework describes five levels, from ephemeral work at one end to full reproducibility at the other, with a realistic middle target: a version-controlled workflow that a close collaborator could rerun.\nYou will locate your own practice on it during the day, per dimension (version control, workflow, environment). A mixed profile is normal and expected. The useful output is not the label but the next step from where you actually are.\n\n\n\n\n\n\nNoteThe short version\n\n\n\nThe agent is a lever, not a substitute for knowing your field. It works best where you could check it and worst where you cannot. Documentation you write for a colleague turns out to be documentation the agent needs too.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Literacy"
     ]
   },
@@ -403,7 +377,7 @@
     "section": "",
     "text": "European Commission living guidelines, three recommendations for researchers: stay responsible for the output; use AI transparently and name the tools used substantially in the methods section; protect privacy, confidentiality, and intellectual property.\nETH: declare AI use. For theses the declaration of originality covers it. Undeclared use can trigger disciplinary proceedings.\nETH Library on citation: output from generative AI cannot be attributed to an author and is not a citable source. AI tools must be declared, and a missing declaration counts as ghostwriting.\nThat last point catches people out. You do not cite the model as a source; you declare the tool as a method. These are different things and the distinction is not merely formal, since a model recalls patterns rather than retrieving documents. Some tools write the claim first and attach citations afterwards, which is research done backwards, and whether the link back to a source is real depends entirely on how the tool was built.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Disclosure"
     ]
   },
@@ -414,7 +388,7 @@
     "section": "",
     "text": "European Commission living guidelines, three recommendations for researchers: stay responsible for the output; use AI transparently and name the tools used substantially in the methods section; protect privacy, confidentiality, and intellectual property.\nETH: declare AI use. For theses the declaration of originality covers it. Undeclared use can trigger disciplinary proceedings.\nETH Library on citation: output from generative AI cannot be attributed to an author and is not a citable source. AI tools must be declared, and a missing declaration counts as ghostwriting.\nThat last point catches people out. You do not cite the model as a source; you declare the tool as a method. These are different things and the distinction is not merely formal, since a model recalls patterns rather than retrieving documents. Some tools write the claim first and attach citations afterwards, which is research done backwards, and whether the link back to a source is real depends entirely on how the tool was built.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Disclosure"
     ]
   },
@@ -425,7 +399,7 @@
     "section": " The standard under construction",
     "text": "The standard under construction\nThe World Conferences on Research Integrity, with the International Science Council, COPE, STM, and the Global Young Academy, are working toward a global reporting standard for AI disclosure. Round 2 of the consultation closes on 16 October 2026.\nThe proposed threshold is qualitative rather than numerical:\n\nAI use should be disclosed if it substantively shapes or replaces human judgement, or has another substantive influence on research processes or its reporting.\n\nThe test for “substantive” is whether a disciplinary peer would reasonably need to know in order to understand how the work was done or judge whether it is reliable. Spellchecking, grammar, and formatting are named as generally not requiring disclosure. The document argues explicitly that a percentage threshold is unworkable, because there is no objective way to compute what proportion of an output an AI influenced.\nThe proposed taxonomy is a list of 18 research and reporting tasks, from idea generation and literature search through data cleaning and analysis to drafting, translation, and editing. Project management and funding acquisition are deliberately excluded, on the grounds that AI use there does not affect what the article reports.\nOpen questions the consultation asks: where disclosure belongs (spread through the relevant sections, or gathered in one statement), whether a null statement should be mandatory the way conflict-of-interest statements are, and how to describe the verification and oversight that was actually done.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Disclosure"
     ]
   },
@@ -436,7 +410,7 @@
     "section": " Two positions to argue out",
     "text": "Two positions to argue out\nDisclose if AI was used at all. A threshold each author judges for themselves invites under-reporting, particularly given evidence that disclosing AI use lowers reader trust, which is a standing incentive to say nothing. A version-controlled workflow logs every use anyway, so the marginal cost of full disclosure is near zero. Beyond the declaration, hand over the artifacts: commit history, prompts, review record.\nA yes-or-no flag loses the intent. It cannot distinguish translation of your own ideas from ghostwriting, and readers will read the flag as a quality signal the way they read journal rank. Worse, a binary requirement singles out AI as uniquely requiring negative disclosure, and may lock in a practice that looks strange once these tools are ordinary.\nWhere they meet: the binary rule decides whether there is something to show. The artifacts show what was actually done. Neither substitutes for the other.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Disclosure"
     ]
   },
@@ -447,7 +421,7 @@
     "section": " What this workshop contributes",
     "text": "What this workshop contributes\nThe pre-work asks everyone to read the consultation materials and bring questions (Step 3).\nThe final block writes a combined response from what we did during the day. Global Health Engineering archives it with a DOI and submits it before the 16 October due date. Everyone in the room is a contributor.\nThe reason this is worth doing rather than a classroom exercise: most respondents will answer from opinion about how they think AI is used in research. This group will answer having spent a day watching agents do research work under three different conditions, with the complete record of what they did available to inspect. That is a materially better evidence base, and it is the kind of contribution a consultation is asking for.\n\n\n\n\n\n\nNoteThe short version\n\n\n\nThe rules that exist say: declare it, stay responsible, do not cite the model as a source. The rules being written are still open on threshold, placement, and how to describe oversight. We get to say something about all three, from evidence.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Disclosure"
     ]
   },
@@ -458,7 +432,8 @@
     "section": "",
     "text": "Four short pages covering the themes the workshop works through. They are optional: the day is built so you can follow it without having read them, and everything here comes up again in the introduction.\nRead them if you would rather arrive with the arguments already in mind, or come back to them afterwards when you are deciding what to change about how you work.\n\n\n\n\n\n\n\nPage\nThe question it answers\n\n\n\n\nSecurity\nWhat must never go into the tool?\n\n\nLiteracy\nWhat do you need to know before you can use the output?\n\n\nTransparency\nWhat does the workflow record for you?\n\n\nDisclosure\nWhat do you say about it, and to whom?\n\n\n\nThe order runs from rules, to judgement, to mechanism, to reporting. The workshop demonstrates all four in the hands-on part.\n\n\n\n\n\n\nNoteThe one page to read if you read only one\n\n\n\nSecurity. The others shape how you think; that one has rules you need before the first session, not after.",
     "crumbs": [
-      "Background reading"
+      "Background",
+      "All four themes"
     ]
   },
   {
@@ -468,7 +443,7 @@
     "section": "",
     "text": "Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent. A later visibility change, a new collaborator, or a push to the wrong remote can expose something committed months earlier, and removing it properly is difficult.\nNever in Git: names tied to attributes, recruitment data, health data, signed consent, anything that identifies a person. When you are unsure, treat it as protected and ask.\nThis rule predates agents. What agents change is how easily it is broken by accident: Claude Code reads a directory and pulls file contents into a request to a model. Protected data sitting in the project folder can leave your machine without you deciding to send it. The rule has to be in force before the first agent session, not after.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Security"
     ]
   },
@@ -479,7 +454,7 @@
     "section": "",
     "text": "Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent. A later visibility change, a new collaborator, or a push to the wrong remote can expose something committed months earlier, and removing it properly is difficult.\nNever in Git: names tied to attributes, recruitment data, health data, signed consent, anything that identifies a person. When you are unsure, treat it as protected and ask.\nThis rule predates agents. What agents change is how easily it is broken by accident: Claude Code reads a directory and pulls file contents into a request to a model. Protected data sitting in the project folder can leave your machine without you deciding to send it. The rule has to be in force before the first agent session, not after.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Security"
     ]
   },
@@ -490,7 +465,7 @@
     "section": " The ETH rule",
     "text": "The ETH rule\nThe Information Security office sets two levels. Compliant use is the baseline: use AI in line with the law and ETH directives, protect confidentiality, and never put personal or confidential data into a service that is not cleared for it. Responsible use goes further.\nAI systems count as external cloud services. At most “confidential” data may go into a cleared cloud service, and “strictly confidential” data never leaves ETH.\nThree obligations stay with you regardless of tool: you remain responsible for the output, you declare AI use, and you check every result.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Security"
     ]
   },
@@ -501,7 +476,7 @@
     "section": " What the vendor does with your sessions",
     "text": "What the vendor does with your sessions\nOn consumer plans (Free, Pro, Max), including Claude Code used from such an account, Anthropic may use conversations and coding sessions to train models under four conditions:\n\nyou allow it in privacy settings\na conversation is flagged for safety review\nyou send feedback with the thumbs buttons\nyou opt in to a tester program\n\nAnthropic asks consumer users not to process personal data in the products at all.\nCommercial products (Claude for Work, the API) fall under a separate policy where the customer, not the vendor, controls the data. This split is the whole reason group access is being arranged rather than everyone signing up individually.\nThe European Commission’s living guidelines say the same thing from the researcher’s side: do not upload unpublished or sensitive work into an external AI system unless you have assurances it will not be used for training.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Security"
     ]
   },
@@ -512,7 +487,7 @@
     "section": " Guardrails that also bind the agent",
     "text": "Guardrails that also bind the agent\nThe repository settings from the first workshop apply to the agent exactly as they apply to you:\n\nbranch protection on main\nno direct pushes\nno force push\nat least one review before merge\n\nClaude Code cannot force-push or reset shared history, and every change it makes still passes through a reviewed pull request. This is the practical answer to “what stops it breaking something”: the same thing that stops you.\n\n\n\n\n\n\nImportantThe short version\n\n\n\nBring openly shareable data. Assume anything in the project folder may be read. The plan you are on decides what happens to your sessions, and the group is settling that before the workshop.",
     "crumbs": [
-      "Background reading",
+      "Background",
       "Security"
     ]
   },
@@ -644,7 +619,7 @@
     "section": "",
     "text": "Write down the steps you go through to publish a research paper, from having data to having something submitted. Bring the list with you.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 2: How you publish"
     ]
   },
@@ -655,7 +630,7 @@
     "section": " What to do",
     "text": "What to do\nTake a sheet of paper or a plain text file. Write the steps in the order you do them, in your own words. Ten to twenty lines is about right.\nDo not write the idealised version. Write what actually happens, including the parts that are tedious, the parts you put off, and the parts you are not sure you do properly.\nSome prompts, if a blank page is hard:\n\nWhat is the first thing you do once the data is in front of you?\nWhere does the writing start, and in what program?\nWhen do the figures get made, and how many times do they get remade?\nWhere do the references come from, and when?\nWho else touches the document, and how do their changes reach you?\nWhat do you do between “the analysis is done” and “the manuscript is submitted”?\nWhat do you have to redo when a reviewer asks for a change?",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 2: How you publish"
     ]
   },
@@ -666,7 +641,7 @@
     "section": " Mark the time",
     "text": "Mark the time\nNext to each step, write roughly how long it takes. An hour, a day, three weeks. A rough number is fine, and a range is fine.\nThen mark the steps you would hand to someone else tomorrow if you could.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 2: How you publish"
     ]
   },
@@ -677,7 +652,7 @@
     "section": " Why this step exists",
     "text": "Why this step exists\nThe workshop runs your publishing process three times: once as you do it now, once with an agent given almost nothing, and once with an agent given a reviewed plan. Your list is the baseline for the first run and the specification for the third.\nThe steps you marked as tedious are the ones the second and third runs will test hardest. The steps you did not mark are the more interesting question, because they are where you think the value of your work actually is. By the end of the day you will have evidence about whether that was right.\n\n\n\n\n\n\nNoteThere is no correct answer here\n\n\n\nEveryone’s list looks different, and several people will find their list has gaps once they write it down. That is a useful result, not a problem. Bring the list as it is.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 2: How you publish"
     ]
   },
@@ -688,7 +663,7 @@
     "section": "",
     "text": "Claude Code is the coding agent we use on the day. It runs in a terminal, reads and writes files in a project folder, and runs commands, which is what makes it an agent rather than a chat window.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 4: Install Claude Code"
     ]
   },
@@ -699,7 +674,7 @@
     "section": " Install",
     "text": "Install\nClaude Code needs Node.js version 18 or newer.\n\nmacOSWindowsLinux\n\n\nOpen Terminal and run:\nnode --version\nIf that reports a version below 18, or says the command is not found, install Node.js from https://nodejs.org/ (choose the LTS version) and try again.\nThen install Claude Code:\nnpm install -g @anthropic-ai/claude-code\n\n\nClaude Code runs under Windows Subsystem for Linux (WSL). Open PowerShell as administrator and run:\nwsl --install\nRestart when prompted. Then open the Ubuntu terminal that was installed, and inside it check Node.js:\nnode --version\nIf the version is below 18 or the command is not found, follow the instructions at https://nodejs.org/ for Linux, then install Claude Code:\nnpm install -g @anthropic-ai/claude-code\n\n\nOpen a terminal and run:\nnode --version\nIf that reports a version below 18, install Node.js from https://nodejs.org/. Then:\nnpm install -g @anthropic-ai/claude-code",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 4: Install Claude Code"
     ]
   },
@@ -710,7 +685,7 @@
     "section": " Check the install worked",
     "text": "Check the install worked\nclaude --version\nThat should print a version number. If it prints an error instead, do not keep trying variations. Go to Step 5, which explains how to report the problem so it can be fixed before the workshop.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 4: Install Claude Code"
     ]
   },
@@ -721,7 +696,7 @@
     "section": " What data may go into the tool",
     "text": "What data may go into the tool\nThis part does not depend on the plan decision, and it holds regardless:\n\n\n\n\n\n\nImportantThe group rule\n\n\n\nPersonal and sensitive data never go into a Git repository, private repositories included. The same rule covers the agent: Claude Code reads whole directories and sends file contents to a model, so anything sitting in your project folder can leave your machine.\n\n\nETH treats AI systems as external cloud services. At most “confidential” data may go into a cleared cloud service, and “strictly confidential” data never leaves ETH. You stay responsible for the output, you declare AI use, and you check every result.\nThe plan you are on matters here. On consumer plans (Free, Pro, Max), Anthropic may use conversations and coding sessions to train models under four conditions: you allow it in privacy settings, a conversation is flagged for safety review, you send feedback with the thumbs buttons, or you opt in to a tester program. Commercial plans fall under a separate policy where the customer controls the data. This split is exactly why the group is arranging access rather than asking everyone to sign up individually.\nThe dataset you picked in Step 1 is openly shareable, so none of this restricts what we do on the day. It restricts what you do with the tool afterwards, which is the more important case.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 4: Install Claude Code"
     ]
   },
@@ -732,7 +707,7 @@
     "section": " Optional: an editor",
     "text": "Optional: an editor\nYou do not need one. Claude Code runs in a terminal on its own, and that is how we will use it.\nIf you would rather see your files alongside it, both Positron and VS Code have integrated terminals that work fine. Use whatever you already have. Do not install a new editor for this workshop.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 4: Install Claude Code"
     ]
   },
@@ -743,7 +718,7 @@
     "section": "",
     "text": "Due by Monday, 15 September 2026\nThe survey asks what you already do with AI tools, what you want out of the day, and what data you are bringing. It shapes the exercises, so answering it early genuinely changes what happens in the room.\nIt takes about ten minutes. Three things it asks that are worth thinking about first:\nWhich AI tools do you already use, and how often? There is no right answer, including “none”. The room will hold people who use an agent every day and people who have never opened one, and the exercises are built for both.\nWhat are you bringing as your dataset? One sentence about the data from Step 1. This tells us whether we need to pair anyone up.\nWhat do you want to be able to do afterwards? The most useful answers are specific. “Understand AI better” is hard to build a session around; “know whether I can let an agent near my analysis scripts without losing track of what changed” is a question we can answer in a day.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 6: Pre-course survey"
     ]
   },
@@ -754,7 +729,7 @@
     "section": " What happens to your answers",
     "text": "What happens to your answers\nResponses are used to plan the workshop and are not shared outside the teaching team. Nothing from the survey goes into a repository or into an AI tool.",
     "crumbs": [
-      "Before the workshop",
+      "Prepare",
       "Step 6: Pre-course survey"
     ]
   }

@@ -26,57 +26,75 @@ website:
     right: "This page is built with [Quarto](https://quarto.org/)."
     background: "#F5F5F5"
 
-  sidebar:
-    background: "#F5F5F5"
+  navbar:
+    background: "#0F4C81"
     logo: "images/ghe-square-logo.png"
     logo-alt: "Global Health Engineering logo"
-    pinned: true
-    align: center
-    tools:
+    title: "Agents for Scientists"
+    search: true
+    left:
+      - href: index.qmd
+        text: "Overview"
+      - href: pre-work/index.qmd
+        text: "Prepare"
+      - href: background/index.qmd
+        text: "Background"
+      - href: glossary.qmd
+        text: "Reference"
+    right:
       - icon: github
         href: https://github.com/agentsforsci-ghe
-        text: "GitHub organization"
-    style: "docked"
-    search: true
-    collapse-level: 1
-    contents:
-      - href: index.qmd
-        text: "Course overview"
-      - text: "---"
-      - section: "Before the workshop"
-        href: pre-work/index.qmd
-        contents:
-          - href: pre-work/01-bring-your-data.qmd
-            text: "Step 1: Bring your data"
-          - href: pre-work/02-publishing-steps.qmd
-            text: "Step 2: How you publish"
-          - href: pre-work/03-declaration-reading.qmd
-            text: "Step 3: Declaration reading"
-          - href: pre-work/04-install-claude-code.qmd
-            text: "Step 4: Install Claude Code"
-          - href: pre-work/05-verify-setup.qmd
-            text: "Step 5: Test your setup"
-          - href: pre-work/06-survey.qmd
-            text: "Step 6: Pre-course survey"
-      - text: "---"
-      - section: "Background reading"
-        href: background/index.qmd
-        contents:
-          - href: background/security.qmd
-            text: "Security"
-          - href: background/literacy.qmd
-            text: "Literacy"
-          - href: background/transparency.qmd
-            text: "Transparency"
-          - href: background/disclosure.qmd
-            text: "Disclosure"
-      - text: "---"
-      - section: "Reference"
-        contents:
-          - href: platform-guide.qmd
-            text: "Which tool does what?"
-          - href: glossary.qmd
-            text: "Glossary"
+        aria-label: "GitHub organization"
+
+  sidebar:
+    - id: prepare
+      title: "Prepare"
+      style: "docked"
+      background: "#F5F5F5"
+      collapse-level: 1
+      contents:
+        - href: pre-work/index.qmd
+          text: "All six steps"
+        - text: "---"
+        - href: pre-work/01-bring-your-data.qmd
+          text: "Step 1: Bring your data"
+        - href: pre-work/02-publishing-steps.qmd
+          text: "Step 2: How you publish"
+        - href: pre-work/03-declaration-reading.qmd
+          text: "Step 3: Declaration reading"
+        - href: pre-work/04-install-claude-code.qmd
+          text: "Step 4: Install Claude Code"
+        - href: pre-work/05-verify-setup.qmd
+          text: "Step 5: Test your setup"
+        - href: pre-work/06-survey.qmd
+          text: "Step 6: Pre-course survey"
+
+    - id: background
+      title: "Background"
+      style: "docked"
+      background: "#F5F5F5"
+      contents:
+        - href: background/index.qmd
+          text: "All four themes"
+        - text: "---"
+        - href: background/security.qmd
+          text: "Security"
+        - href: background/literacy.qmd
+          text: "Literacy"
+        - href: background/transparency.qmd
+          text: "Transparency"
+        - href: background/disclosure.qmd
+          text: "Disclosure"
+
+    - id: reference
+      title: "Reference"
+      style: "docked"
+      background: "#F5F5F5"
+      contents:
+        - href: platform-guide.qmd
+          text: "Which tool does what?"
+        - href: glossary.qmd
+          text: "Glossary"
 
 format:
   html:
