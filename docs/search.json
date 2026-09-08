@@ -1,235 +1,14 @@
 [
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": " References",
+    "objectID": "pre-work/index.html",
+    "href": "pre-work/index.html",
+    "title": " Before the workshop",
     "section": "",
-    "text": "Everything cited in the workshop material, in one place. Each entry links to the source, so you can follow anything up directly.\nThe list is generated from a shared bibliography, so it stays in step with the pages as they change.\n\n\nAnthropic. (2026). Privacy center. Anthropic. https://privacy.anthropic.com/\n\n\nBoykis, V. (2026). We should be more tired than the model. https://vickiboykis.com/\n\n\nCarpenter, T. A. (2026, August). We can now track AI-generated content. It doesn’t solve the real problem. The Scholarly Kitchen. https://scholarlykitchen.sspnet.org/2026/08/31/we-can-now-track-ai-generated-content/\n\n\nDoctorow, C. (2026, July). Pluralistic: Human in the loop. Pluralistic. https://pluralistic.net/2026/07/28/hitl-ers/#ai-ai-oh\n\n\nETH Zurich. (2026a). Guidelines for the use of generative AI in teaching and learning [Guidelines]. ETH Zurich.\n\n\nETH Zurich. (2026b). Research integrity at ETH Zurich. ETH Zurich. https://ethz.ch/en/research/ethics-and-animal-welfare/research-integrity.html\n\n\nETH Zurich. (2026c). Zitier-leitfaden [Citation guide]. ETH Zürich Library.\n\n\nEuropean Commission. (2026). Living guidelines on the responsible use of generative AI in research [Guidelines]. European Commission, Directorate-General for Research; Innovation.\n\n\nEuropean Union. (2024). Regulation (EU) 2024/1689 (artificial intelligence act), article 50: Transparency obligations. https://artificialintelligenceact.eu/article/50/\n\n\nInternational Science Council. (2026). AI disclosure in research: Towards a global reporting standard. International Science Council. https://council.science/our-work/ai-disclosure-in-research/\n\n\nJiang, J. (2026, September). Guest post — the human layer: Why AI makes academic libraries more essential, not less. The Scholarly Kitchen. https://scholarlykitchen.sspnet.org/2026/09/01/guest-post-the-human-layer-why-ai-makes-academic-libraries-more-essential-not-less-2/\n\n\nSchöbitz, L. (2026, July). Who wrote this? Scientific integrity at ETH Zurich in the age of AI. Global Health Engineering, ETH Zurich. https://ghe.ethz.ch/ghe-blog-news/2026/07/blog-who-wrote-this-scientific-integrity-at-eth-zurich-in-the-age-of-ai.html\n\n\nWeaver, K. D., Seghers, B., McNeice, K., Perkins, M., Santamarina, S., Lingard, L., Tsybuliak, N., & Dijkstal, F. (2026, July). Guest post — research needs a shared standard for AI disclosure. The Scholarly Kitchen. https://scholarlykitchen.sspnet.org/2026/07/13/guest-post-research-needs-a-shared-standard-for-ai-disclosure/\n\n\nWickham, H. (2026). Data dictionaries for AI-assisted data analysis. Posit. https://www.youtube.com/watch?v=jVqArueBFqA",
-    "crumbs": [
-      "Reference",
-      "References"
-    ]
-  },
-  {
-    "objectID": "pre-work/02-join-element.html",
-    "href": "pre-work/02-join-element.html",
-    "title": " Step 2: Join the ai-playground chat room",
-    "section": "",
-    "text": "We use Element for questions before, during, and after the workshop. It is where you ask when something breaks, and where the conversation continues once the day is over.\nJoin the room: #ai-playground:staffchat.ethz.ch",
+    "text": "Two tasks for now. Both are due by Monday, 14 September 2026.\n\n\n\n\n\n\n\n\nStep\nWhat\nDue\n\n\n\n\n1\nCreate your repository and add your data\nMonday, 14 September 2026\n\n\n2\nJoin the ai-playground chat room\nMonday, 14 September 2026\n\n\n\n\n\n\n\n\n\nNoteMore to come\n\n\n\nFurther preparation, including a pre-course survey and the tool setup, will be added here closer to the workshop. You will hear from me when it is ready. Start with these two, since the repository is what everything else builds on.\n\n\n\n\n\n\n\n\nTipHow long will this take?\n\n\n\nAround half an hour for both, assuming you already know which dataset you want to use and your GitHub authentication still works from the first workshop. Picking the dataset is usually the part that takes the thinking.\n\n\n\n\n\n\n\n\nImportantIf you get stuck\n\n\n\nDo not spend an evening fighting it. Ask in the chat room, or open an issue on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.",
     "crumbs": [
       "Prepare",
-      "Step 2: Join the chat"
+      "Overview"
     ]
-  },
-  {
-    "objectID": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d636865636b203e7d7d-if-you-already-use-element",
-    "href": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d636865636b203e7d7d-if-you-already-use-element",
-    "title": " Step 2: Join the ai-playground chat room",
-    "section": " If you already use Element",
-    "text": "If you already use Element\nJoin the room with the link above, then send me a message so I know you have arrived. A one-line hello is plenty.",
-    "crumbs": [
-      "Prepare",
-      "Step 2: Join the chat"
-    ]
-  },
-  {
-    "objectID": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d706c7573203e7d7d-if-you-are-new-to-element",
-    "href": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d706c7573203e7d7d-if-you-are-new-to-element",
-    "title": " Step 2: Join the ai-playground chat room",
-    "section": " If you are new to Element",
-    "text": "If you are new to Element\nElement is the chat client; staffchat.ethz.ch is the ETH server it connects to. You sign in with your GitHub account.\nStep-by-step instructions, written for a previous course but identical for this one: setting up Element\nFollow those through the login with GitHub, then come back and join #ai-playground:staffchat.ethz.ch.\n\n\n\n\n\n\nTipUse the desktop or web client\n\n\n\nElement works in a browser and as a desktop app. Either is fine. If you expect to keep using it after the workshop, the desktop app is less easy to lose in a pile of browser tabs.",
-    "crumbs": [
-      "Prepare",
-      "Step 2: Join the chat"
-    ]
-  },
-  {
-    "objectID": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-why-not-email",
-    "href": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-why-not-email",
-    "title": " Step 2: Join the ai-playground chat room",
-    "section": " Why not email",
-    "text": "Why not email\nQuestions asked in the room get answered once, where everyone can see the answer. Most setup problems are shared by several people, and someone else in the group has usually hit yours already.\nIt is also the honest reason: a question asked by email helps one person, and the same question asked in the room helps whoever reads it next.",
-    "crumbs": [
-      "Prepare",
-      "Step 2: Join the chat"
-    ]
-  },
-  {
-    "objectID": "platform-guide.html",
-    "href": "platform-guide.html",
-    "title": " Which tool does what?",
-    "section": "",
-    "text": "During the workshop several tools appear on your screen at the same time, and their names sound alike. It is completely normal to lose track of which one is doing what.\nThe first half covers Git, GitHub, and Quarto, carried over from the Git for Scientists workshop. The second half adds the agent.",
-    "crumbs": [
-      "Reference",
-      "Which tool does what?"
-    ]
-  },
-  {
-    "objectID": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207772656e6368203e7d7d-the-tools-in-one-sentence-each",
-    "href": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207772656e6368203e7d7d-the-tools-in-one-sentence-each",
-    "title": " Which tool does what?",
-    "section": " The tools in one sentence each",
-    "text": "The tools in one sentence each\nGit is a version control program that runs on your computer. It records the history of your files: every commit, every branch, every merge. Git works even without an internet connection.\nGitHub is a website (github.com) that hosts a copy of your Git repository in the cloud. Everything that involves other people happens here: pull requests, reviews, issues, and forks. GitHub is built on top of Git, but it is a separate product made by a separate company.\nQuarto is a publishing program that turns a plain-text document (a .qmd file) into a finished report, website, or presentation. When you render, Quarto runs your code and builds the output document. Quarto knows nothing about version control.\nClaude Code is the agent. It reads and writes files in your project folder, runs commands, and uses Git on your behalf. It runs on your computer, in a terminal.\nThe model (Claude) is the part that does the reasoning. It runs on Anthropic’s servers, not on your machine. It has no memory between sessions and no access to your files; everything it knows about your work, Claude Code had to send it.",
-    "crumbs": [
-      "Reference",
-      "Which tool does what?"
-    ]
-  },
-  {
-    "objectID": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-a-rule-of-thumb",
-    "href": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-a-rule-of-thumb",
-    "title": " Which tool does what?",
-    "section": " A rule of thumb",
-    "text": "A rule of thumb\n\nIf it records or moves the history of your files, it is Git.\nIf it involves another person or a web browser, it is GitHub.\nIf it turns text and code into a document, it is Quarto.\nIf it decides what to do next, it is the model.\nIf it actually does it on your machine, it is Claude Code.",
-    "crumbs": [
-      "Reference",
-      "Which tool does what?"
-    ]
-  },
-  {
-    "objectID": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f626f74203e7d7d-the-three-kinds-of-ai-coding-tool",
-    "href": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f626f74203e7d7d-the-three-kinds-of-ai-coding-tool",
-    "title": " Which tool does what?",
-    "section": " The three kinds of AI coding tool",
-    "text": "The three kinds of AI coding tool\nPeople say “AI coding tool” for three quite different things, and the difference matters when you choose one.\n\n\n\n\n\n\n\n\nKind\nWhat it does\nExamples\n\n\n\n\nAutocomplete\nSuggests the next few lines as you type. You stay in control of every keystroke.\nGitHub Copilot\n\n\nAI editor\nAn editor with a chat panel that can edit files for you, inside that editor.\nCursor, Positron Assistant\n\n\nAgentic coding\nRuns on its own for many steps: reads files, runs commands, uses Git, decides what to do next from what it finds.\nClaude Code, Codex CLI\n\n\n\nThis workshop is about the third kind. The difference is not that the agent is cleverer; it is that it acts in a loop without asking you at every step, which is what makes it useful and what makes the record of what it did necessary.",
-    "crumbs": [
-      "Reference",
-      "Which tool does what?"
-    ]
-  },
-  {
-    "objectID": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207461626c652d6c697374203e7d7d-every-action-of-the-day-mapped",
-    "href": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207461626c652d6c697374203e7d7d-every-action-of-the-day-mapped",
-    "title": " Which tool does what?",
-    "section": " Every action of the day, mapped",
-    "text": "Every action of the day, mapped\n\n\n\n\n\n\n\n\n\nWhat you do\nWhere\nCommand underneath\nTechnology\n\n\n\n\nClone a repository\nTerminal or IDE\ngit clone\nGit\n\n\nPull\nTerminal or IDE\ngit pull\nGit\n\n\nStage a file\nTerminal or IDE\ngit add\nGit\n\n\nCommit\nTerminal or IDE\ngit commit -m \"message\"\nGit\n\n\nPush\nTerminal or IDE\ngit push\nGit\n\n\nCreate a branch\nTerminal or IDE\ngit switch -c\nGit\n\n\nOpen a pull request\nGitHub: Compare & pull request\n—\nGitHub\n\n\nReview a pull request\nGitHub: Files changed\n—\nGitHub\n\n\nMerge a pull request\nGitHub: Merge pull request\ngit merge (on GitHub’s servers)\nGit, via GitHub\n\n\nOpen an issue\nGitHub: Issues &gt; New issue\n—\nGitHub\n\n\nRender a document\nTerminal or IDE\nquarto render\nQuarto\n\n\nStart the agent\nTerminal: claude\n—\nClaude Code\n\n\nAsk the agent to do something\nThe agent prompt\n(it decides)\nClaude Code, then the model\n\n\nApprove a change the agent proposes\nThe agent’s permission prompt\n—\nClaude Code\n\n\nLet the agent commit\nThe agent does it\ngit commit\nClaude Code running Git\n\n\n\nA dash (—) in the command column means there is no command for it at all: that action only exists on the website or in the agent’s own interface.\nNotice the last three rows. When the agent commits, it is running the same git commit you ran yourself in July. Nothing new is happening to your repository. That is the point: the agent is inside the workflow you already know, which is why you can review its work the same way you review a colleague’s.",
-    "crumbs": [
-      "Reference",
-      "Which tool does what?"
-    ]
-  },
-  {
-    "objectID": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-where-mcp-fits",
-    "href": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-where-mcp-fits",
-    "title": " Which tool does what?",
-    "section": " Where MCP fits",
-    "text": "Where MCP fits\nYou will hear MCP (Model Context Protocol) mentioned. It is a way of giving the agent access to something outside your project folder, such as a reference manager or a database. We might use one on the day to search literature through Zotero.",
-    "crumbs": [
-      "Reference",
-      "Which tool does what?"
-    ]
-  },
-  {
-    "objectID": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120747269616e676c652d6578636c616d6174696f6e203e7d7d-common-mix-ups",
-    "href": "platform-guide.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120747269616e676c652d6578636c616d6174696f6e203e7d7d-common-mix-ups",
-    "title": " Which tool does what?",
-    "section": " Common mix-ups",
-    "text": "Common mix-ups\nClaude Code is not the model. Claude Code is the program on your computer that reads files, runs commands, and asks permission. The model is the thing on Anthropic’s servers that decides what to do. When the agent does something odd, it is usually worth asking which of the two is responsible: a wrong decision is the model, a refused action is Claude Code doing its job.\nThe agent is not remembering you. Each request sends the whole conversation again, because the model keeps nothing between requests. This is why a long session costs more than a short one, and why starting fresh sometimes fixes a session that has gone in circles.\nAsking is not doing. The agent proposes; you approve. Every permission prompt is a decision point, and clicking through them without reading is how people end up with changes they did not want.\nCommit is not push. Unchanged from July. The agent committing means the change is saved on your computer. Until something pushes, nobody else can see it.\nAn agent using Git does not make the work traceable on its own. The history is only useful if the commits are honest about what changed and who asked for it. Letting an agent write commits is highly effective, because it describes the changes well. Those are part of the transparency and provenance questions the workshop works on.\nIf a term on this page is unfamiliar, look it up in the glossary.",
-    "crumbs": [
-      "Reference",
-      "Which tool does what?"
-    ]
-  },
-  {
-    "objectID": "glossary.html",
-    "href": "glossary.html",
-    "title": " Glossary",
-    "section": "",
-    "text": "The terms you meet during the pre-work and the workshop.\nEach entry has two layers. The main text defines the term in plain, everyday words, so you can read it once and understand it. The quieter block underneath gives the more technical wording, which is the vocabulary you will meet in documentation and in other courses.\nThe page has two halves. Git and GitHub carries over the terms from the first workshop. Working with agents covers the vocabulary this workshop adds.\nIf you are unsure which tool a term belongs to, see Which tool does what?\nThe Git and GitHub definitions draw on Glosario by The Carpentries, and the agent terms on the Dictionary of AI Coding. Full details are in References and attribution at the foot of the page.",
-    "crumbs": [
-      "Reference",
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#git-and-github",
-    "href": "glossary.html#git-and-github",
-    "title": " Glossary",
-    "section": "Git and GitHub",
-    "text": "Git and GitHub\n: A branch is a separate line of work inside a repository. You create a branch when you want to change files without touching the main copy of the project. When the changes have been reviewed, you bring them back into the main copy. In the workshop you make your edits on a branch and bring them into main through a pull request.\n::: {.glossary-technical}\n[Glosario](https://glosario.carpentries.org/en/#git_branch): A snapshot of a version of a Git repository. Multiple branches can capture multiple versions of the same repository.\n:::\n\nbug report\n\nA description of an unexpected error or wrong output from a program, written down so that someone can find and fix the problem. On GitHub, bug reports are usually filed as issues.\n\nclone\n\nTo clone a repository means to download a full copy of it from GitHub onto your own computer, including the record of every change ever made to it. You clone by running git clone in a terminal, or through your editor’s own Git menu.\n\nGlosario: A copy (usually downloaded) of a Git remote repository on a local computer.\n\n\ncloud\n\nComputers, storage, and services that you reach over the internet instead of running on your own machine. When we say GitHub stores your repository in the cloud, we mean it stores the repository on GitHub’s servers.\n\ncommit\n\nA commit is a saved version of your project. When you commit, Git records the exact content of your files at that moment, together with a message that says what you changed and why. You can go back to any earlier commit at any time.\n\nGlosario: As a verb, the act of saving a set of changes to a version control repository. As a noun, the changes saved.\n\n\ncommit message\n\nA commit message is the short note you attach to a commit. It tells your collaborators, and your future self, what you changed and why you changed it.\n\nGlosario: A comment attached to a commit that explains what was done and why.\n\n\ncredential\n\nA piece of information that proves to a computer system who you are, such as a password or a personal access token. Git keeps your GitHub credential on your computer, so you do not have to retype it for every push and pull.\n\ndefault branch (main)\n\nThe default branch is the main copy of the project inside a repository, and it is usually called main. It should always hold a version of the project that works. You make changes on other branches and bring them into main after someone has reviewed them. In older projects the default branch is called master.\n\nGlosario: A dedicated, permanent, central branch which should contain a ready product. After a new feature is developed on a separate branch, it can be merged into this branch.\n\n\nfork\n\nA fork is a personal copy of someone else’s repository, stored in your own GitHub account. You can change your fork freely, and you can offer your changes back to the original repository through a pull request. We do not use forks in the workshop, because our teams share one repository and work on branches inside it.\n\nGlosario: A copy of one person’s Git repository that lives in another person’s GitHub account. Changes to the content of a fork can be submitted to the upstream repository via a pull request.\n\n\nGit\n\nGit is a program on your computer that keeps track of changes to your files. It saves the versions you tell it to save, shows you what changed between versions, and lets you go back to any earlier version. Git works without an internet connection.\n\nGlosario: A version control tool to record and manage changes to a project.\n\n\nGit pane\n\nMost editors, including RStudio and Positron, have a Git pane: a panel showing what has changed in your repository, with buttons for the everyday Git work. Every button runs a real Git command, so clicking Push runs git push. This workshop mostly uses the terminal instead, because that is where the agent works, but the two are interchangeable.\n\nGitHub\n\nGitHub is a website that stores a copy of your Git repository online, so that other people can see your project, download it, and work on it with you. GitHub also adds tools that Git itself does not have, such as pull requests and issues.\n\nGlosario: A cloud-based platform built around Git that allows you to save versions of your project online and collaborate with other Git users.\n\n\nhistory\n\nThe history is the ordered record of all commits made in a repository, from the very first commit to the newest. It shows who changed what, when, and why. Every clone contains the full history, which is why you can recover any earlier state of the project.\n\nHTML\n\nThe format used for web pages. Rendering a Quarto document usually produces an HTML page that you can open in any web browser.\n\nGlosario: The standard markup language used for web pages.\n\n\nHTTPS\n\nThe secure way computers exchange data on the web, the same one behind every https:// address. Git talks to GitHub over HTTPS, which is why GitHub asks for a personal access token to prove who you are.\n\nissue\n\nAn issue is a to-do item for a project, posted on the repository’s page on GitHub. An issue can describe a problem, ask for something new, or hold a task. You can assign an issue to a person, and you can refer to it from commits and pull requests.\n\nGlosario: A bug report, feature request, or other to-do item associated with a project.\n\n\nlocal repository\n\nThe local repository is the copy of a repository on your own computer, including the record of every change. Your commits are saved here first. Pushing then uploads them to the copy on GitHub.\n\nMarkdown\n\nMarkdown is a simple way to add formatting, such as headings, links, and lists, to ordinary text. You type plain characters, e.g. # in front of a heading, and the text is later shown with the formatting applied. GitHub uses Markdown in README files, issues, and pull requests, and Quarto uses it for the text in .qmd documents.\n\nGlosario: A markup language with a simple syntax. Markdown is often used for README files.\n\n\nmarkup language\n\nA set of rules for marking up text to say what it means or how it should be shown. The marks themselves are usually not displayed. Markdown and HTML are markup languages.\n\nGlosario: A set of rules for annotating text to define its meaning or how it should be displayed.\n\n\nmerge\n\nTo merge means to combine the changes from one branch into another, so that one branch now contains the work of both. In the workshop, the merge happens when a reviewer accepts a pull request on GitHub.\n\nGlosario: Merging branches in Git incorporates the development histories of two branches in one. If changes are made to similar parts of both branches, a conflict will occur.\n\n\nmerge conflict\n\nA merge conflict happens when two branches have changed the same lines of the same file, and Git cannot tell which version you want to keep. Git stops, marks both versions inside the file, and waits for you to choose or combine them. A conflict is not an error. It only means that Git will not guess which change you meant.\n\nGlosario: A situation in which incompatible or overlapping changes have been made on different branches that are now being merged.\n\n\nmetadata\n\nInformation that describes other information. The author, date, and message attached to each commit are metadata about the changes in that commit.\n\nopen source\n\nSoftware whose source code is public and licensed so that anyone may use, change, and share it. Git and Quarto are open source. GitHub is not, although it hosts millions of open-source projects.\n\norigin\n\nOrigin is the name your computer uses for the copy of your repository on GitHub. Git sets the name automatically when you clone, so that you can push and pull without typing the full web address every time.\n\nGlosario: A short name for a remote repository.\n\n\npersonal access token (PAT)\n\nA personal access token is a long password that GitHub generates for you. Git sends it to GitHub when you push or pull, to prove that the request really comes from you. You created one during the Git for Scientists pre-work, and it should still work for this workshop.\n\nplain text\n\nText stored as ordinary characters only, with no hidden formatting, so that any editor on any computer can open it. Git works best with plain text, because it can show exactly which lines changed between versions. Quarto documents, R scripts, and CSV files are all plain text.\n\npull\n\nTo pull means to download the newest commits from GitHub into the copy on your own computer, so that both copies are the same again. Pulling is the first step of the commit cycle. Pull, then stage, then commit, then push.\n\nGlosario: Downloads and synchronizes changes between a remote repository and a local repository.\n\n\npull request\n\nA pull request is a page on GitHub where you ask another person to review the changes on your branch and, if the changes are good, to merge the branch into main. The reviewer can read every changed line, write comments, and suggest edits. A pull request is not the same as a pull. A pull downloads commits to your computer, and a pull request is a conversation about merging.\n\nGlosario: The request to merge a new feature or correction created on a branch or fork of a Git repository into the upstream repository. The developer is notified of the change, reviews it, makes or suggests changes, and potentially merges it.\n\n\npush\n\nTo push means to upload your commits from your own computer to the copy of your repository on GitHub. Until you push, your commits exist only on your computer, and nobody else can see them.\n\nGlosario: Uploads and synchronizes changes between a local repository and a remote repository.\n\n\nQuarto\n\nQuarto is a program that turns a text file into a finished document, such as a report, a website, or slides. A Quarto file ends in .qmd and contains ordinary text, code, and a few settings at the top. When you click Render, Quarto runs the code and builds the document. Quarto does not track versions and does not talk to GitHub.\n\nREADME\n\nA README is a text file that explains what a project is and how to use it. GitHub shows the file named README.md on the front page of the repository.\n\nGlosario: A plain text file containing important information about a project or software package.\n\n\nremote repository\n\nThe remote repository is the copy of a repository that is not on your computer. For us, the remote repository is the copy on GitHub. Pull and push move commits between your local copy and the remote copy, so that everyone can share their work.\n\nGlosario: A repository located on another computer. Tools such as Git are designed to synchronize changes between local and remote repositories in order to share work.\n\n\nrender\n\nTo render means to have Quarto build the output document, e.g. a web page or a PDF, from a .qmd file. Rendering also runs the code inside the file. You render by running quarto render in a terminal, or by clicking Render in your editor.\n\nrepository\n\nA repository is the folder for one project, together with the full record of every change made to the files in it. Git keeps the record in a hidden part of the folder. As a rule, one project gets one repository.\n\nGlosario: A place where a version control system stores the files that make up a project and the metadata that describes their history.\n\n\nserver\n\nA computer, or a program running on it, that provides data or services to other computers over a network. The remote copies of your repositories live on GitHub’s servers.\n\nGlosario: Typically, a program such as a database manager or web server that provides data to a client upon request.\n\n\nsnapshot\n\nThe complete state of all files in your project at one moment in time, saved so that you can return to it later. Every commit stores a snapshot, and the history is the ordered line of those snapshots.\n\nstage / staging area\n\nTo stage a file means to mark it for the next commit, and the staging area is where Git keeps the marked files until you commit. Git only commits the files you have staged, so you can change five files and commit only two of them. You stage a file with git add, or by ticking its checkbox in an editor’s Git pane.\n\nsynchronize\n\nTo bring two copies of the same thing to the same state, so that neither is missing changes the other has. Pull and push are how you synchronize your local repository with the remote repository on GitHub.\n\nversion control\n\nVersion control is a way of working where a program records every saved version of your files, so that you can see what changed, when, and why, and go back to any earlier version. Git is the version control program we use.\n\nGlosario: A system for managing changes made to software during its development.\n\n\nYAML\n\nYAML is a simple format for settings, written as names and values. The block between the two --- lines at the top of a Quarto file is written in YAML, and it holds settings such as the title and the output format.\n\nGlosario: Short for “YAML Ain’t Markup Language”, a way to represent nested data using indentation. YAML is often used in configuration files and to define parameters for various flavours of Markdown documents.",
-    "crumbs": [
-      "Reference",
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#working-with-agents",
-    "href": "glossary.html#working-with-agents",
-    "title": " Glossary",
-    "section": "Working with agents",
-    "text": "Working with agents\n\nagent\n\nAn agent is a language model that has been given tools and set to work in a loop: it does something, looks at the result, decides what to do next, and repeats until the task is done or it needs you. Claude Code is an agent. A single question and answer is not an agent, because nothing happens in between.\n\nA model, in a harness, that calls tools repeatedly in a loop, deciding each next step from the last result. Most agents carry read tools that observe and write tools that change things, giving the cycle explore, change, observe.\n\n\ncontext window\n\nThe context window is everything the model can see while it answers: your instructions, the conversation so far, and the contents of any file that was read. It has a size limit. When a session runs long, early parts fall out of view, which is one reason a fresh session sometimes works better than a long one.\n\nThe full set of tokens sent to the model on a single request. Everything the model knows about your situation at that moment is inside it, and nothing outside it exists as far as the model is concerned.\n\n\nhallucination\n\nA hallucination is output that is stated confidently and is wrong. A model can invent a function that does not exist, a citation for a paper nobody wrote, or a plausible number. It does not signal uncertainty when it does this, which is why the output has to be checked by someone who could tell.\n\nConfidently-wrong model output. Two variants are usually distinguished: factuality (the claim is false about the world) and faithfulness (the claim is not supported by the source it cites).\n\n\nharness\n\nThe harness is the program wrapped around the model that turns it into an agent. It sends the requests, runs the tools on your computer, sends the results back, and asks you for permission. Claude Code is a harness. So is a chat window, though a much simpler one.\n\nEverything around the model that turns it into an agent: the loop, the tool definitions, the system prompt, the permission layer, and the context assembly.\n\n\ninference\n\nInference is the model producing output. Training is what set the model’s numbers, months ago; inference is what happens each time you send a request. Nothing you do during inference changes the model.\n\nRunning a trained model to generate output, as distinct from training, which sets its parameters.\n\n\nMCP (Model Context Protocol)\n\nMCP is a standard way of giving an agent access to something outside your project folder, such as a reference manager, a database, or an issue tracker. A piece of software that offers such access is called an MCP server. We use one on the day to search literature through Zotero.\n\nA protocol for exposing external tools to an agent through a server. Note the cost: an MCP server’s tool definitions are sent on every request, so a command-line tool the agent already knows how to run is often the cheaper choice.\n\n\nmodel\n\nThe model is the part that does the reasoning. It runs on the provider’s servers, not on your machine, and it has no memory between requests. Everything it knows about your work was sent to it in that request.\n\nA stateless set of parameters that performs next-token prediction. Statelessness is why the whole conversation is resent each time, and why costs grow over a long session.\n\n\npermission\n\nA permission prompt is the agent stopping to ask before it does something that changes the world: writing a file, running a command, making a commit. It is your decision point, and reading what is being proposed before approving is the habit that separates using an agent from hoping.\n\nThe harness gates tool calls that have side effects. Which calls are gated depends on the permission mode; approving one does not approve the next.\n\n\nprompt\n\nA prompt is what you type to the agent. It is a description of what you want, not a command with a fixed syntax, so being specific about what “done” looks like matters more than any particular wording.\n\nThe user-supplied portion of the request. It sits alongside the system prompt, the conversation history, and any tool results already in the context window.\n\n\nsandbox\n\nA sandbox is a restricted space the agent runs inside, so that a mistake cannot reach the rest of your computer. Git serves a similar purpose in a different way: it does not stop the agent from changing a file, but it lets you see exactly what changed and undo it.\n\nAn isolated environment limiting what an agent can read, write, or reach. Sandboxing, version control, and backups are the three standard mitigations for the fact that write tools are both the point and the risk.\n\n\nsession\n\nA session is one continuous run of working with the agent, from starting it to closing it. Everything said in a session is in view; nothing carries into the next one unless it was written to a file.\n\nOne bounded run of interaction with an agent. Ending a session and starting fresh is the normal remedy when the context window has filled with material that is no longer relevant.\n\n\nsystem prompt\n\nThe system prompt is the standing instruction the harness sends with every request, telling the model what it is and how to behave. You do not usually see it. A CLAUDE.md file in your project is a way for you to add to it.\n\nInstructions the harness prepends to every model request. Project-level files such as CLAUDE.md or AGENTS.md are the user-editable layer on top of it.\n\n\ntoken\n\nA token is the unit a model reads and writes: roughly a short word or part of one. Everything is counted in tokens, including cost. This is the practical reason a long session gets more expensive than a short one, since the whole conversation is sent again each time.\n\nThe atomic unit of model input and output. Input tokens are what the harness sends, output tokens what the model generates; cached tokens are input the provider has stored from an earlier request and charges less for.\n\n\ntool\n\nA tool is a function the agent can call: read a file, write a file, run a command, search the web. The agent cannot do anything that is not one of its tools. The description of each tool is all the model knows about it.\n\nA function the harness exposes to the model, described by a name, a description, and an input schema. Read tools observe; write tools change things.\n\n\ntool call\n\nA tool call is the agent asking for a tool to be run, with particular arguments. The harness runs it and sends back the result. Most of what you see scrolling past during an agent session is tool calls and their results.\n\nThe model’s output naming a tool and its arguments, rather than text for the user. The harness executes it and returns a tool result into the context window.\n\n\nvibe coding\n\nVibe coding means prompting for code and accepting what comes back without properly reading it. Andrej Karpathy named it for throwaway work where that is fine. The name is also used loosely for any AI-assisted coding, which muddies a distinction worth keeping: whether anyone actually checked.\n\nCoined by Karpathy for low-stakes work where the code is not reviewed. The contrasting practice, sometimes called agentic engineering, keeps the review step and treats the agent as a collaborator whose output goes through the same scrutiny as a colleague’s.",
-    "crumbs": [
-      "Reference",
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "glossary.html#references-and-attribution",
-    "href": "glossary.html#references-and-attribution",
-    "title": " Glossary",
-    "section": "References and attribution",
-    "text": "References and attribution\nThe plain-language definitions on this page were written for this course.\nThe gray technical blocks in the Git and GitHub section are from Glosario by The Carpentries, licensed under CC-BY 4.0, in places shortened or adapted to the context of this workshop.\nThe technical blocks in the Working with agents section were written for this course. The choice of which terms to include, and some of the framing, draws on the Dictionary of AI Coding by Matt Pocock. Only the terms this workshop actually uses are included; the dictionary is worth reading in full if you want the rest.\nThe definitions of agent, harness, tool, and tool call follow Hadley Wickham’s explainer on what an agent is, which builds the concept up from the request and response loop between you and a model.",
-    "crumbs": [
-      "Reference",
-      "Glossary"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Agents for Scientists",
-    "section": "",
-    "text": "Thank you for joining this workshop. Your course instructor Lars Schöbitz is looking forward to meeting you.\nWe will meet on Tuesday, 29 September 2026 - 08:30 to 17:00 (Europe/Zurich) at Villa Hatt, ETH Zurich.\nThis is the second of the two workshops in the series. The first, Git for Scientists, ran on 15 July 2026 and is the foundation this day builds on."
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
-    "title": "Agents for Scientists",
-    "section": " Background",
-    "text": "Background\nIn the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.\nThe day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan and using GitHub issues. Comparing the three shows what the agent actually does for you, how you can document the process and how your stay involved in making decisions.\nBecause the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing disclosure rules for scientific research right now, and we are planning to use to send them a response written from what we do in the room."
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
-    "title": "Agents for Scientists",
-    "section": " Prior knowledge",
-    "text": "Prior knowledge\nEveryone taking part has been through the Git for Scientists workshop, so this builds directly on it. You should be able to:\n\nclone a repository and open it as a project\nrun the pull, stage, commit, push cycle\ncreate a branch and open a pull request\nreview a colleague’s pull request and merge it\nopen an issue, assign it, and close it\n\nIf any of these are shaky, work through the Git for Scientists material again before the day. You do not need any prior experience with AI coding agents."
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring",
-    "title": "Agents for Scientists",
-    "section": " What do I need to bring?",
-    "text": "What do I need to bring?\n\na laptop, connected to wifi\na web browser\na pen and paper\nyour repository, with your own data already committed (Step 1 below)"
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare",
-    "title": "Agents for Scientists",
-    "section": " What do I need to prepare?",
-    "text": "What do I need to prepare?\nThere is pre-work for this workshop. It matters more than usual here: the day is built around your data, so a participant who arrives without it cannot take part in the main exercise.\nTwo tasks to start with, both due by Monday, 14 September 2026:\n\nStep 1: Create your repository and add your data\nStep 2: Join the ai-playground chat room\n\nFurther preparation, including a pre-course survey and the tool setup, follows closer to the workshop."
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
-    "title": "Agents for Scientists",
-    "section": " Schedule",
-    "text": "Schedule\n\n\n\n\n\n\nNoteTentative\n\n\n\nThe schedule below is a working draft and still under active development.\n\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\n\n\n\n\n08:30 - 09:00\nArrival and coffee\n\n\n09:00 - 09:45\nIntroduction: security, literacy, transparency, disclosure\n\n\n09:45 - 10:30\nCondition one: the work as you do it now\n\n\n10:30 - 11:00\nBreak\n\n\n11:00 - 12:15\nCondition two: agents with minimal input\n\n\n12:15 - 13:15\nLunch\n\n\n13:15 - 14:45\nCondition three: the planned run\n\n\n14:45 - 15:15\nBreak\n\n\n15:15 - 16:00\nPlain CSV against a published data package\n\n\n16:00 - 16:45\nOur response to the disclosure consultation\n\n\n16:45 - 17:00\nClose"
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
-    "title": "Agents for Scientists",
-    "section": " Learning objectives",
-    "text": "Learning objectives\n\n\n\n\n\n\nNoteTentative\n\n\n\nThese objectives are still under active development and will be refined before the workshop.\n\n\nBy the end of this workshop, participants will be able to:\n\nRun an agent inside the Git workflow: give a coding agent a task, write its plan down as GitHub issues before any code is produced, then review what it produced as a pull request and accept or reject the change.\nJudge the difference a plan makes: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.\nJudge the difference documentation makes: compare what an agent does with a plain CSV against the same data published as a data package.\nDeclare agent use: point to the record your workflow produced and say what it shows about which parts of the work an agent touched."
-  },
-  {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
-    "title": "Agents for Scientists",
-    "section": " Thanks",
-    "text": "Thanks\nThank you for working through these steps. See you at Villa Hatt, ETH Zurich."
   },
   {
     "objectID": "pre-work/01-create-repository.html",
@@ -309,14 +88,103 @@
     ]
   },
   {
-    "objectID": "pre-work/index.html",
-    "href": "pre-work/index.html",
-    "title": " Before the workshop",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Agents for Scientists",
     "section": "",
-    "text": "Two tasks for now. Both are due by Monday, 14 September 2026.\n\n\n\n\n\n\n\n\nStep\nWhat\nDue\n\n\n\n\n1\nCreate your repository and add your data\nMonday, 14 September 2026\n\n\n2\nJoin the ai-playground chat room\nMonday, 14 September 2026\n\n\n\n\n\n\n\n\n\nNoteMore to come\n\n\n\nFurther preparation, including a pre-course survey and the tool setup, will be added here closer to the workshop. You will hear from me when it is ready. Start with these two, since the repository is what everything else builds on.\n\n\n\n\n\n\n\n\nTipHow long will this take?\n\n\n\nAround half an hour for both, assuming you already know which dataset you want to use and your GitHub authentication still works from the first workshop. Picking the dataset is usually the part that takes the thinking.\n\n\n\n\n\n\n\n\nImportantIf you get stuck\n\n\n\nDo not spend an evening fighting it. Ask in the chat room, or open an issue on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.",
+    "text": "Thank you for joining this workshop. Your course instructor Lars Schöbitz is looking forward to meeting you.\nWe will meet on Tuesday, 29 September 2026 - 08:30 to 17:00 (Europe/Zurich) at Villa Hatt, ETH Zurich.\nThis is the second of the two workshops in the series. The first, Git for Scientists, ran on 15 July 2026 and is the foundation this day builds on."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
+    "title": "Agents for Scientists",
+    "section": " Background",
+    "text": "Background\nIn the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.\nThe day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan and using GitHub issues. Comparing the three shows what the agent actually does for you, how you can document the process and how your stay involved in making decisions.\nBecause the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing disclosure rules for scientific research right now, and we are planning to use to send them a response written from what we do in the room."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
+    "title": "Agents for Scientists",
+    "section": " Prior knowledge",
+    "text": "Prior knowledge\nEveryone taking part has been through the Git for Scientists workshop, so this builds directly on it. You should be able to:\n\nclone a repository and open it as a project\nrun the pull, stage, commit, push cycle\ncreate a branch and open a pull request\nreview a colleague’s pull request and merge it\nopen an issue, assign it, and close it\n\nIf any of these are shaky, work through the Git for Scientists material again before the day. You do not need any prior experience with AI coding agents."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring",
+    "title": "Agents for Scientists",
+    "section": " What do I need to bring?",
+    "text": "What do I need to bring?\n\na laptop, connected to wifi\na web browser\na pen and paper\nyour repository, with your own data already committed (Step 1 below)"
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare",
+    "title": "Agents for Scientists",
+    "section": " What do I need to prepare?",
+    "text": "What do I need to prepare?\nThere is pre-work for this workshop. It matters more than usual here: the day is built around your data, so a participant who arrives without it cannot take part in the main exercise.\nTwo tasks to start with, both due by Monday, 14 September 2026:\n\nStep 1: Create your repository and add your data\nStep 2: Join the ai-playground chat room\n\nFurther preparation, including a pre-course survey and the tool setup, follows closer to the workshop."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
+    "title": "Agents for Scientists",
+    "section": " Schedule",
+    "text": "Schedule\n\n\n\n\n\n\nNoteTentative\n\n\n\nThe schedule below is a working draft and still under active development.\n\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\n\n\n\n\n08:30 - 09:00\nArrival and coffee\n\n\n09:00 - 09:45\nIntroduction: security, literacy, transparency, disclosure\n\n\n09:45 - 10:30\nCondition one: the work as you do it now\n\n\n10:30 - 11:00\nBreak\n\n\n11:00 - 12:15\nCondition two: agents with minimal input\n\n\n12:15 - 13:15\nLunch\n\n\n13:15 - 14:45\nCondition three: the planned run\n\n\n14:45 - 15:15\nBreak\n\n\n15:15 - 16:00\nPlain CSV against a published data package\n\n\n16:00 - 16:45\nOur response to the disclosure consultation\n\n\n16:45 - 17:00\nClose"
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
+    "title": "Agents for Scientists",
+    "section": " Learning objectives",
+    "text": "Learning objectives\n\n\n\n\n\n\nNoteTentative\n\n\n\nThese objectives are still under active development and will be refined before the workshop.\n\n\nBy the end of this workshop, participants will be able to:\n\nRun an agent inside the Git workflow: give a coding agent a task, write its plan down as GitHub issues before any code is produced, then review what it produced as a pull request and accept or reject the change.\nJudge the difference a plan makes: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.\nJudge the difference documentation makes: compare what an agent does with a plain CSV against the same data published as a data package.\nDeclare agent use: point to the record your workflow produced and say what it shows about which parts of the work an agent touched."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
+    "title": "Agents for Scientists",
+    "section": " Thanks",
+    "text": "Thanks\nThank you for working through these steps. See you at Villa Hatt, ETH Zurich."
+  },
+  {
+    "objectID": "pre-work/02-join-element.html",
+    "href": "pre-work/02-join-element.html",
+    "title": " Step 2: Join the ai-playground chat room",
+    "section": "",
+    "text": "We use Element for questions before, during, and after the workshop. It is where you ask when something breaks, and where the conversation continues once the day is over.\nJoin the room: #ai-playground:staffchat.ethz.ch",
     "crumbs": [
       "Prepare",
-      "Overview"
+      "Step 2: Join the chat"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d636865636b203e7d7d-if-you-already-use-element",
+    "href": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d636865636b203e7d7d-if-you-already-use-element",
+    "title": " Step 2: Join the ai-playground chat room",
+    "section": " If you already use Element",
+    "text": "If you already use Element\nJoin the room with the link above, then send me a message so I know you have arrived. A one-line hello is plenty.",
+    "crumbs": [
+      "Prepare",
+      "Step 2: Join the chat"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d706c7573203e7d7d-if-you-are-new-to-element",
+    "href": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d706c7573203e7d7d-if-you-are-new-to-element",
+    "title": " Step 2: Join the ai-playground chat room",
+    "section": " If you are new to Element",
+    "text": "If you are new to Element\nElement is the chat client; staffchat.ethz.ch is the ETH server it connects to. You sign in with your GitHub account.\nStep-by-step instructions, written for a previous course but identical for this one: setting up Element\nFollow those through the login with GitHub, then come back and join #ai-playground:staffchat.ethz.ch.\n\n\n\n\n\n\nTipUse the desktop or web client\n\n\n\nElement works in a browser and as a desktop app. Either is fine. If you expect to keep using it after the workshop, the desktop app is less easy to lose in a pile of browser tabs.",
+    "crumbs": [
+      "Prepare",
+      "Step 2: Join the chat"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-why-not-email",
+    "href": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-why-not-email",
+    "title": " Step 2: Join the ai-playground chat room",
+    "section": " Why not email",
+    "text": "Why not email\nQuestions asked in the room get answered once, where everyone can see the answer. Most setup problems are shared by several people, and someone else in the group has usually hit yours already.\nIt is also the honest reason: a question asked by email helps one person, and the same question asked in the room helps whoever reads it next.",
+    "crumbs": [
+      "Prepare",
+      "Step 2: Join the chat"
     ]
   }
 ]

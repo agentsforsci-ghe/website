@@ -6,6 +6,10 @@ project:
     - "**/*.qmd"
     # Background pages stay in the repo but are not published yet (under review)
     - "!background/"
+    # Reference pages stay in the repo but are not published yet (under review)
+    - "!glossary.qmd"
+    - "!platform-guide.qmd"
+    - "!references.qmd"
 
 website:
   page-navigation: true
@@ -39,8 +43,6 @@ website:
         text: "Overview"
       - href: pre-work/index.qmd
         text: "Prepare"
-      - href: glossary.qmd
-        text: "Reference"
     right:
       - icon: github
         href: https://github.com/agentsforsci-ghe
@@ -60,18 +62,6 @@ website:
           text: "Step 1: Your repository"
         - href: pre-work/02-join-element.qmd
           text: "Step 2: Join the chat"
-
-    - id: reference
-      title: "Reference"
-      style: "docked"
-      background: "#F5F5F5"
-      contents:
-        - href: platform-guide.qmd
-          text: "Which tool does what?"
-        - href: glossary.qmd
-          text: "Glossary"
-        - href: references.qmd
-          text: "References"
 
 bibliography: references.bib
 csl: https://www.zotero.org/styles/apa
