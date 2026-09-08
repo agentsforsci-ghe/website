@@ -1,0 +1,190 @@
+[
+  {
+    "objectID": "pre-work/index.html",
+    "href": "pre-work/index.html",
+    "title": " Before the workshop",
+    "section": "",
+    "text": "Two tasks for now. Both are due by Monday, 14 September 2026.\n\n\n\n\n\n\n\n\nStep\nWhat\nDue\n\n\n\n\n1\nCreate your repository and add your data\nMonday, 14 September 2026\n\n\n2\nJoin the ai-playground chat room\nMonday, 14 September 2026\n\n\n\n\n\n\n\n\n\nNoteMore to come\n\n\n\nFurther preparation, including a pre-course survey and the tool setup, will be added here closer to the workshop. You will hear from me when it is ready. Start with these two, since the repository is what everything else builds on.\n\n\n\n\n\n\n\n\nTipHow long will this take?\n\n\n\nAround half an hour for both, assuming you already know which dataset you want to use and your GitHub authentication still works from the first workshop. Picking the dataset is usually the part that takes the thinking.\n\n\n\n\n\n\n\n\nImportantIf you get stuck\n\n\n\nDo not spend an evening fighting it. Ask in the chat room, or open an issue on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.",
+    "crumbs": [
+      "Prepare",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-create-repository.html",
+    "href": "pre-work/01-create-repository.html",
+    "title": " Step 1: Create your repository and add your data",
+    "section": "",
+    "text": "Due by Monday, 14 September 2026\nEverything here uses the Git and GitHub workflow from Git for Scientists. If a step is unfamiliar, the instructions from that workshop still apply. If you are would like support in completing a step, please reach out to the course instructor.",
+    "crumbs": [
+      "Prepare",
+      "Step 1: Your repository"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-create-repository.html#accept-the-invitation-to-the-organization",
+    "href": "pre-work/01-create-repository.html#accept-the-invitation-to-the-organization",
+    "title": " Step 1: Create your repository and add your data",
+    "section": "Accept the invitation to the organization",
+    "text": "Accept the invitation to the organization\nYou have been invited to the agentsforsci-ghe organization on GitHub. Accept the invitation before you start working on the tasks below.\nThe invitation arrived by email. You can also accept it by going to https://github.com/agentsforsci-ghe/ while signed in to GitHub, where a banner offers you the invitation.\n\n\n\n\n\n\nNoteCheck the right inbox\n\n\n\nGitHub sent the invitation to the email address you used to register your GitHub account. That is not necessarily your institutional email address. If nothing has arrived, check the other address you might have signed up with, and look in the spam folder.\nYou can see which address GitHub has for you under Settings, Emails.",
+    "crumbs": [
+      "Prepare",
+      "Step 1: Your repository"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-create-repository.html#create-the-repository",
+    "href": "pre-work/01-create-repository.html#create-the-repository",
+    "title": " Step 1: Create your repository and add your data",
+    "section": "Create the repository",
+    "text": "Create the repository\nOnce you are a member, create a new repository in the agentsforsci-ghe organization.\nThe name should broadly reflect what you work with, following three rules:\n\nlowercase letters only\nat most two words\nwords separated by a dash\n\nFor example: solidwaste-kampala.\nTwo settings to choose on the same screen:\n\nVisibility: public if you can, private if you cannot\nInitialise this repository with: tick Add a README file\n\nVisibility. Choose public if the data allows it. The aim is for every repository to be public by the end, so the work and its outcomes can be shown to others. If you are not ready to make yours public yet, start private and switch it later under Settings. What you must not do is treat private as permission to commit something sensitive: the rule below applies either way.\nREADME. Ticking Add a README file means GitHub creates the repository with a file already in it, so you can clone it straight away. Without it you get an empty repository and a set of setup commands instead.",
+    "crumbs": [
+      "Prepare",
+      "Step 1: Your repository"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-create-repository.html#clone-it",
+    "href": "pre-work/01-create-repository.html#clone-it",
+    "title": " Step 1: Create your repository and add your data",
+    "section": "Clone it",
+    "text": "Clone it\nClone the repository to your computer, the same way you did in the first workshop.\nIf you would like to walk through it again, the instructions are still online: cloning a repository.",
+    "crumbs": [
+      "Prepare",
+      "Step 1: Your repository"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-create-repository.html#add-a-folder-called-data",
+    "href": "pre-work/01-create-repository.html#add-a-folder-called-data",
+    "title": " Step 1: Create your repository and add your data",
+    "section": "Add a folder called data",
+    "text": "Add a folder called data\nInside your cloned repository, create a folder named data, and put the dataset you plan to work with into it.\nWhat to bring. Something real from your own research, small enough to look at in one sitting. Several files are okay with a few hundred to a few thousand rows and columns you can explain. It does not need to be tidy or finished. Messy real data could be very useful here. Any file format is okay: CSV or XLSX, also PDF and DOCX, or JSON, etc.\n\n\n\n\n\n\nImportantThis must be non-sensitive data, with no personal data in it\n\n\n\nPersonal and sensitive data never go into a Git repository, private repositories included. Git history is permanent, and a later visibility change, a new collaborator, or a push to the wrong remote can expose it.\nDo not commit names, recruitment or participant data, health data, signed consent, or anything that identifies a person in combination with other columns.\nThis matters more with an agent than without one: a coding agent reads whole directories and sends file contents to a model, so protected data in the folder can leave your machine without you deciding to send it.\nIf you are unsure which category your data falls into, treat it as protected and ask before committing anything.\n\n\n\n\n\n\n\n\nNoteIf you cannot identify a dataset\n\n\n\nGet in touch with me directly and we will sort something out before the workshop. Do not skip the step and turn up without data.",
+    "crumbs": [
+      "Prepare",
+      "Step 1: Your repository"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-create-repository.html#commit-and-push",
+    "href": "pre-work/01-create-repository.html#commit-and-push",
+    "title": " Step 1: Create your repository and add your data",
+    "section": "Commit and push",
+    "text": "Commit and push\nStage the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.",
+    "crumbs": [
+      "Prepare",
+      "Step 1: Your repository"
+    ]
+  },
+  {
+    "objectID": "pre-work/01-create-repository.html#open-an-issue",
+    "href": "pre-work/01-create-repository.html#open-an-issue",
+    "title": " Step 1: Create your repository and add your data",
+    "section": "Open an issue",
+    "text": "Open an issue\nOnce the data is committed and pushed, open an issue on your own repository:\n\nTitle: Data added\nBody: one or two sentences saying what the data is and where it came from\nAssignee: larnsce\n\nThat issue is how I know you are ready, and the description is the beginning of the documentation question we work on during the day.\n\n\n\n\n\n\nImportantAll of this by Monday, 14 September 2026\n\n\n\nIf anything blocks you, open the issue anyway, describe what went wrong, and assign it to me. A problem found now is half an hour of work; the same problem found on the morning of the workshop costs you the session.",
+    "crumbs": [
+      "Prepare",
+      "Step 1: Your repository"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "Thank you for joining this workshop. Your course instructor Lars Schöbitz is looking forward to meeting you.\nWe will meet on Tuesday, 29 September 2026 - 08:30 to 17:00 (Europe/Zurich) at Villa Hatt, ETH Zurich.\nThis is the second of the two workshops in the series. The first, Git for Scientists, ran on 15 July 2026 and is the foundation this day builds on."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
+    "title": "Agents for Scientists",
+    "section": " Background",
+    "text": "Background\nIn the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.\nThe day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan and using GitHub issues. Comparing the three shows what the agent actually does for you, how you can document the process and how your stay involved in making decisions.\nBecause the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing disclosure rules for scientific research right now, and we are planning to use to send them a response written from what we do in the room."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge",
+    "title": "Agents for Scientists",
+    "section": " Prior knowledge",
+    "text": "Prior knowledge\nEveryone taking part has been through the Git for Scientists workshop, so this builds directly on it. You should be able to:\n\nclone a repository and open it as a project\nrun the pull, stage, commit, push cycle\ncreate a branch and open a pull request\nreview a colleague’s pull request and merge it\nopen an issue, assign it, and close it\n\nIf any of these are shaky, work through the Git for Scientists material again before the day. You do not need any prior experience with AI coding agents."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring",
+    "title": "Agents for Scientists",
+    "section": " What do I need to bring?",
+    "text": "What do I need to bring?\n\na laptop, connected to wifi\na web browser\na pen and paper\nyour repository, with your own data already committed (Step 1 below)"
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare",
+    "title": "Agents for Scientists",
+    "section": " What do I need to prepare?",
+    "text": "What do I need to prepare?\nThere is pre-work for this workshop. It matters more than usual here: the day is built around your data, so a participant who arrives without it cannot take part in the main exercise.\nTwo tasks to start with, both due by Monday, 14 September 2026:\n\nStep 1: Create your repository and add your data\nStep 2: Join the ai-playground chat room\n\nFurther preparation, including a pre-course survey and the tool setup, follows closer to the workshop."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
+    "title": "Agents for Scientists",
+    "section": " Schedule",
+    "text": "Schedule\n\n\n\n\n\n\nNoteTentative\n\n\n\nThe schedule below is a working draft and still under active development.\n\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\n\n\n\n\n08:30 - 09:00\nArrival and coffee\n\n\n09:00 - 09:45\nIntroduction: security, literacy, transparency, disclosure\n\n\n09:45 - 10:30\nCondition one: the work as you do it now\n\n\n10:30 - 11:00\nBreak\n\n\n11:00 - 12:15\nCondition two: agents with minimal input\n\n\n12:15 - 13:15\nLunch\n\n\n13:15 - 14:45\nCondition three: the planned run\n\n\n14:45 - 15:15\nBreak\n\n\n15:15 - 16:00\nPlain CSV against a published data package\n\n\n16:00 - 16:45\nOur response to the disclosure consultation\n\n\n16:45 - 17:00\nClose"
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
+    "title": "Agents for Scientists",
+    "section": " Learning objectives",
+    "text": "Learning objectives\n\n\n\n\n\n\nNoteTentative\n\n\n\nThese objectives are still under active development and will be refined before the workshop.\n\n\nBy the end of this workshop, participants will be able to:\n\nRun an agent inside the Git workflow: give a coding agent a task, write its plan down as GitHub issues before any code is produced, then review what it produced as a pull request and accept or reject the change.\nJudge the difference a plan makes: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.\nJudge the difference documentation makes: compare what an agent does with a plain CSV against the same data published as a data package.\nDeclare agent use: point to the record your workflow produced and say what it shows about which parts of the work an agent touched."
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks",
+    "title": "Agents for Scientists",
+    "section": " Thanks",
+    "text": "Thanks\nThank you for working through these steps. See you at Villa Hatt, ETH Zurich."
+  },
+  {
+    "objectID": "pre-work/02-join-element.html",
+    "href": "pre-work/02-join-element.html",
+    "title": " Step 2: Join the ai-playground chat room",
+    "section": "",
+    "text": "We use Element for questions before, during, and after the workshop. It is where you ask when something breaks, and where the conversation continues once the day is over.\nJoin the room: #ai-playground:staffchat.ethz.ch",
+    "crumbs": [
+      "Prepare",
+      "Step 2: Join the chat"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d636865636b203e7d7d-if-you-already-use-element",
+    "href": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d636865636b203e7d7d-if-you-already-use-element",
+    "title": " Step 2: Join the ai-playground chat room",
+    "section": " If you already use Element",
+    "text": "If you already use Element\nJoin the room with the link above, then send me a message so I know you have arrived. A one-line hello is plenty.",
+    "crumbs": [
+      "Prepare",
+      "Step 2: Join the chat"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d706c7573203e7d7d-if-you-are-new-to-element",
+    "href": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120757365722d706c7573203e7d7d-if-you-are-new-to-element",
+    "title": " Step 2: Join the ai-playground chat room",
+    "section": " If you are new to Element",
+    "text": "If you are new to Element\nElement is the chat client; staffchat.ethz.ch is the ETH server it connects to. You sign in with your GitHub account.\nStep-by-step instructions, written for a previous course but identical for this one: setting up Element\nFollow those through the login with GitHub, then come back and join #ai-playground:staffchat.ethz.ch.\n\n\n\n\n\n\nTipUse the desktop or web client\n\n\n\nElement works in a browser and as a desktop app. Either is fine. If you expect to keep using it after the workshop, the desktop app is less easy to lose in a pile of browser tabs.",
+    "crumbs": [
+      "Prepare",
+      "Step 2: Join the chat"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-why-not-email",
+    "href": "pre-work/02-join-element.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-why-not-email",
+    "title": " Step 2: Join the ai-playground chat room",
+    "section": " Why not email",
+    "text": "Why not email\nQuestions asked in the room get answered once, where everyone can see the answer. Most setup problems are shared by several people, and someone else in the group has usually hit yours already.\nIt is also the honest reason: a question asked by email helps one person, and the same question asked in the room helps whoever reads it next.",
+    "crumbs": [
+      "Prepare",
+      "Step 2: Join the chat"
+    ]
+  }
+]

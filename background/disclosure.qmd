@@ -1,0 +1,42 @@
+---
+title: "{{< fa bullhorn >}} Disclosure"
+subtitle: "What you say about it, and to whom"
+---
+
+## {{< fa gavel >}} The rules you already have
+
+**European Commission living guidelines** [@ec2026livingguidelines], three recommendations for researchers: stay responsible for the output; use AI transparently and name the tools used substantially in the methods section; protect privacy, confidentiality, and intellectual property.
+
+**ETH**: declare AI use [@ethz2026genaiteaching]. For theses the declaration of originality covers it. Undeclared use can trigger disciplinary proceedings.
+
+**ETH Library** on citation [@ethz2026zitierleitfaden]: output from generative AI cannot be attributed to an author and is not a citable source. AI tools must be declared, and a missing declaration counts as ghostwriting.
+
+That last point catches people out. You do not cite the model as a source; you declare the tool as a method. These are different things and the distinction is not merely formal, since a model recalls patterns rather than retrieving documents. Some tools write the claim first and attach citations afterwards, which is research done backwards, and whether the link back to a source is real depends entirely on how the tool was built.
+
+## {{< fa hammer >}} The standard under construction
+
+The World Conferences on Research Integrity, with the International Science Council, COPE, STM, and the Global Young Academy, are working toward a global reporting standard for AI disclosure [@weaver2026disclosure; @isc2026disclosure]. Round 2 of the consultation closes on **16 October 2026**.
+
+**The proposed threshold** is qualitative rather than numerical:
+
+> AI use should be disclosed if it substantively shapes or replaces human judgement, or has another substantive influence on research processes or its reporting.
+
+The test for "substantive" is whether a disciplinary peer would reasonably need to know in order to understand how the work was done or judge whether it is reliable. Spellchecking, grammar, and formatting are named as generally not requiring disclosure. The document argues explicitly that a percentage threshold is unworkable, because there is no objective way to compute what proportion of an output an AI influenced.
+
+**The proposed taxonomy** is a list of 18 research and reporting tasks, from idea generation and literature search through data cleaning and analysis to drafting, translation, and editing. Project management and funding acquisition are deliberately excluded, on the grounds that AI use there does not affect what the article reports.
+
+**Open questions** the consultation asks: where disclosure belongs (spread through the relevant sections, or gathered in one statement), whether a null statement should be mandatory the way conflict-of-interest statements are, and how to describe the verification and oversight that was actually done.
+
+## {{< fa scale-balanced >}} Two positions to argue out
+
+**Disclose if AI was used at all.** A threshold each author judges for themselves invites under-reporting, particularly given evidence that disclosing AI use lowers reader trust [@weaver2026disclosure], which is a standing incentive to say nothing. A version-controlled workflow logs every use anyway, so the marginal cost of full disclosure is near zero. Beyond the declaration, hand over the artifacts: commit history, prompts, review record.
+
+**A yes-or-no flag loses the intent** [@carpenter2026watermarking]**.** It cannot distinguish translation of your own ideas from ghostwriting, and readers will read the flag as a quality signal the way they read journal rank. Worse, a binary requirement singles out AI as uniquely requiring negative disclosure, and may lock in a practice that looks strange once these tools are ordinary.
+
+Where they meet: the binary rule decides whether there is something to show. The artifacts show what was actually done. Neither substitutes for the other.
+
+::: {.callout-note}
+## The short version
+
+The rules that exist say: declare it, stay responsible, do not cite the model as a source. The rules being written are still open on threshold, placement, and how to describe oversight. Watching agents work through a real task, with the full record in front of you, is a good way to form a view on all three.
+:::

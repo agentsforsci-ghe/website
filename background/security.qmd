@@ -1,0 +1,52 @@
+---
+title: "{{< fa shield-halved >}} Security"
+subtitle: "What must never go into the tool"
+---
+
+## {{< fa users >}} The group rule
+
+Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent. A later visibility change, a new collaborator, or a push to the wrong remote can expose something committed months earlier, and removing it properly is difficult.
+
+Never in Git: names tied to attributes, recruitment data, health data, signed consent, anything that identifies a person. When you are unsure, treat it as protected and ask.
+
+This rule predates agents. What agents change is how easily it is broken by accident: Claude Code reads a directory and pulls file contents into a request to a model. Protected data sitting in the project folder can leave your machine without you deciding to send it. The rule has to be in force before the first agent session, not after.
+
+## {{< fa building-columns >}} The ETH rule
+
+The Information Security office sets two levels. Compliant use is the baseline: use AI in line with the law and ETH directives, protect confidentiality, and never put personal or confidential data into a service that is not cleared for it. Responsible use goes further.
+
+AI systems count as external cloud services. At most "confidential" data may go into a cleared cloud service, and "strictly confidential" data never leaves ETH.
+
+Three obligations stay with you regardless of tool: you remain responsible for the output, you declare AI use, and you check every result [@ethz2026genaiteaching].
+
+## {{< fa database >}} What the vendor does with your sessions
+
+On consumer plans (Free, Pro, Max), including Claude Code used from such an account, Anthropic may use conversations and coding sessions to train models under four conditions [@anthropic2026privacy]:
+
+- you allow it in privacy settings
+- a conversation is flagged for safety review
+- you send feedback with the thumbs buttons
+- you opt in to a tester program
+
+Anthropic asks consumer users not to process personal data in the products at all.
+
+Commercial products (Claude for Work, the API) fall under a separate policy where the customer, not the vendor, controls the data. This split is the whole reason group access is being arranged rather than everyone signing up individually.
+
+The European Commission's living guidelines say the same thing from the researcher's side: do not upload unpublished or sensitive work into an external AI system unless you have assurances it will not be used for training [@ec2026livingguidelines].
+
+## {{< fa lock >}} Guardrails that also bind the agent
+
+The repository settings from the first workshop apply to the agent exactly as they apply to you:
+
+- branch protection on `main`
+- no direct pushes
+- no force push
+- at least one review before merge
+
+Claude Code cannot force-push or reset shared history, and every change it makes still passes through a reviewed pull request. This is the practical answer to "what stops it breaking something": the same thing that stops you.
+
+::: {.callout-important}
+## The short version
+
+Bring openly shareable data. Assume anything in the project folder may be read. The plan you are on decides what happens to your sessions, and the group is settling that before the workshop.
+:::

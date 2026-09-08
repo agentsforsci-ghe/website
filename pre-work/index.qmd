@@ -1,0 +1,30 @@
+---
+title: "{{< fa list-check >}} Before the workshop"
+---
+
+Two tasks for now. Both are due by [**{{< var due.repo >}}**]{.highlight-yellow}.
+
+| Step | What | Due |
+|------|------|-----|
+| [1](01-create-repository.qmd) | Create your repository and add your data | {{< var due.repo >}} |
+| [2](02-join-element.qmd) | Join the ai-playground chat room | {{< var due.repo >}} |
+
+: {tbl-colwidths="[10,60,30]"}
+
+::: {.callout-note}
+## More to come
+
+Further preparation, including a pre-course survey and the tool setup, will be added here closer to the workshop. You will hear from me when it is ready. Start with these two, since the repository is what everything else builds on.
+:::
+
+::: {.callout-tip}
+## How long will this take?
+
+Around half an hour for both, assuming you already know which dataset you want to use and your GitHub authentication still works from the first workshop. Picking the dataset is usually the part that takes the thinking.
+:::
+
+::: {.callout-important}
+## If you get stuck
+
+Do not spend an evening fighting it. Ask in [the chat room]({{< var chat.room-link >}}), or open an issue on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.
+:::

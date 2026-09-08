@@ -1,0 +1,26 @@
+---
+title: "{{< fa book >}} Background reading"
+---
+
+Four short pages covering the themes the workshop works through. They are [optional]{.highlight-yellow}: the day is built so you can follow it without having read them, and everything here comes up again in the introduction.
+
+Read them if you would rather arrive with the arguments already in mind, or come back to them afterwards when you are deciding what to change about how you work.
+
+Everything cited across these four pages is collected on the [references page](../references.qmd), with a link to each source.
+
+| Page | The question it answers |
+|------|------|
+| [Security](security.qmd) | What must never go into the tool? |
+| [Literacy](literacy.qmd) | What do you need to know before you can use the output? |
+| [Transparency](transparency.qmd) | What does the workflow record for you? |
+| [Disclosure](disclosure.qmd) | What do you say about it, and to whom? |
+
+: {tbl-colwidths="[25,75]"}
+
+The order runs from rules, to judgement, to mechanism, to reporting. The workshop demonstrates all four in the hands-on part.
+
+::: {.callout-note}
+## The one page to read if you read only one
+
+[Security](security.qmd). The others shape how you think; that one has rules you need before the first session, not after.
+:::

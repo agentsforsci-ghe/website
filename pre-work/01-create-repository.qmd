@@ -1,0 +1,92 @@
+---
+title: "{{< fa folder-plus >}} Step 1: Create your repository and add your data"
+---
+
+[Due by **{{< var due.repo >}}**]{.highlight-yellow}
+
+Everything here uses the Git and GitHub workflow from [{{< var prerequisite.title >}}]({{< var prerequisite.site >}}). If a step is unfamiliar, the instructions from that workshop still apply. If you are would like support in completing a step, please reach out to the course instructor.
+
+## Accept the invitation to the organization
+
+You have been invited to the [{{< var course.short-title >}} organization]({{< var course.github-org >}}) on GitHub. Accept the invitation before you start working on the tasks below.
+
+The invitation arrived by email. You can also accept it by going to [{{< var course.github-org >}}]({{< var course.github-org >}}) while signed in to GitHub, where a banner offers you the invitation.
+
+::: {.callout-note}
+## Check the right inbox
+
+GitHub sent the invitation to the email address you used to register your GitHub account. That is not necessarily your institutional email address. If nothing has arrived, check the other address you might have signed up with, and look in the spam folder.
+
+You can see which address GitHub has for you under [Settings, Emails](https://github.com/settings/emails).
+:::
+
+## Create the repository
+
+Once you are a member, create a new repository in the [{{< var course.short-title >}} organization]({{< var course.github-org >}}).
+
+The name should broadly reflect what you work with, following three rules:
+
+- lowercase letters only
+- at most two words
+- words separated by a dash
+
+For example: `solidwaste-kampala`.
+
+Two settings to choose on the same screen:
+
+- **Visibility:** public if you can, private if you cannot
+- **Initialise this repository with:** tick **Add a README file**
+
+**Visibility.** Choose public if the data allows it. The aim is for every repository to be public by the end, so the work and its outcomes can be shown to others. If you are not ready to make yours public yet, start private and switch it later under Settings. What you must not do is treat private as permission to commit something sensitive: the rule below applies either way.
+
+**README.** Ticking **Add a README file** means GitHub creates the repository with a file already in it, so you can clone it straight away. Without it you get an empty repository and a set of setup commands instead.
+
+## Clone it
+
+Clone the repository to your computer, the same way you did in the first workshop.
+
+If you would like to walk through it again, the instructions are still online: [cloning a repository]({{< var prerequisite.site >}}pre-work/06a-clone-repo.html).
+
+## Add a folder called `data`
+
+Inside your cloned repository, create a folder named `data`, and put the dataset you plan to work with into it.
+
+**What to bring.** Something real from your own research, small enough to look at in one sitting. Several files are okay with a few hundred to a few thousand rows and columns you can explain. It does not need to be tidy or finished. Messy real data could be very useful here. Any file format is okay: CSV or XLSX, also PDF and DOCX, or JSON, etc.
+
+::: {.callout-important}
+## This must be non-sensitive data, with no personal data in it
+
+Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent, and a later visibility change, a new collaborator, or a push to the wrong remote can expose it.
+
+Do not commit names, recruitment or participant data, health data, signed consent, or anything that identifies a person in combination with other columns.
+
+This matters more with an agent than without one: a coding agent reads whole directories and sends file contents to a model, so protected data in the folder can leave your machine without you deciding to send it.
+
+If you are unsure which category your data falls into, treat it as protected and ask before committing anything.
+:::
+
+::: {.callout-note}
+## If you cannot identify a dataset
+
+Get in touch with me directly and we will sort something out before the workshop. Do not skip the step and turn up without data.
+:::
+
+## Commit and push
+
+Stage the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.
+
+## Open an issue
+
+Once the data is committed and pushed, open an issue on your own repository:
+
+- **Title:** `Data added`
+- **Body:** one or two sentences saying what the data is and where it came from
+- **Assignee:** `{{< var github-handle >}}`
+
+That issue is how I know you are ready, and the description is the beginning of the documentation question we work on during the day.
+
+::: {.callout-important}
+## All of this by {{< var due.repo >}}
+
+If anything blocks you, open the issue anyway, describe what went wrong, and assign it to me. A problem found now is half an hour of work; the same problem found on the morning of the workshop costs you the session.
+:::
