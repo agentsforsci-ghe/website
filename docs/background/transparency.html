@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -187,6 +207,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Disclosure</span></a>
   </div>
 </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -229,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206275696c64696e672d636f6c756d6e73203e7d7d-eth-already-asks-for-traceability" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206275696c64696e672d636f6c756d6e73203e7d7d-eth-already-asks-for-traceability"><i class="fa-solid fa-building-columns" aria-label="building-columns"></i> ETH already asks for traceability</h2>
-<p>The ETH integrity guidelines rest on reliability, honesty, respect, and responsibility. Reliability includes transparency and traceability, and authorship requires a significant contribution through personal work.</p>
+<p>The ETH integrity guidelines rest on reliability, honesty, respect, and responsibility. Reliability includes transparency and traceability, and authorship requires a significant contribution through personal work <span class="citation" data-cites="ethz2026integrity">(<a href="#ref-ethz2026integrity" role="doc-biblioref">ETH Zurich, 2026</a>)</span>.</p>
 <p>None of this was written with agents in mind, and none of it needs rewriting because of them. The question the workshop answers is a practical one: how do you keep faith with these principles when an agent writes some of the code and some of the prose?</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d636f6d6d6974203e7d7d-attribution-at-the-commit-level" class="level2">
@@ -237,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The answer this group is testing is that the record should be a by-product of the work rather than something reconstructed afterwards.</p>
 <p>Every commit says what changed and who made the change. Agent commits carry a trailer marking them as assisted; human commits carry one marking them as human-authored. The prompts behind agent commits can be archived alongside the code, so the instruction that produced a change sits next to the change.</p>
 <p>The pull request then shows the whole history in one view: what the human drafted, what the agent altered, and what was reviewed before it was merged.</p>
-<p>This is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim. The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a diff.</p>
+<p>This is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim <span class="citation" data-cites="schoebitz2026whowrotethis">(<a href="#ref-schoebitz2026whowrotethis" role="doc-biblioref">Schöbitz, 2026</a>)</span>. The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a diff <span class="citation" data-cites="wickham2026datadict">(<a href="#ref-wickham2026datadict" role="doc-biblioref">Wickham, 2026</a>)</span>.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f74617465203e7d7d-could-you-recreate-it-if-the-ai-were-gone" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f74617465203e7d7d-could-you-recreate-it-if-the-ai-were-gone"><i class="fa-solid fa-rotate" aria-label="rotate"></i> Could you recreate it if the AI were gone?</h2>
@@ -252,8 +279,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207374616d70203e7d7d-a-watermark-says-a-machine-was-involved-and-nothing-else" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207374616d70203e7d7d-a-watermark-says-a-machine-was-involved-and-nothing-else"><i class="fa-solid fa-stamp" aria-label="stamp"></i> A watermark says a machine was involved, and nothing else</h2>
-<p>Since August 2026 Anthropic watermarks Claude text and images, meeting the EU AI Act’s transparency obligation.</p>
-<p>The limits are worth knowing. A mark can be stripped or edited away. It needs a substantial amount of text to work at all. Most importantly it carries no intent: it cannot distinguish translating your own ideas from having the machine write them, which is precisely the distinction that matters for integrity.</p>
+<p>Since August 2026 Anthropic watermarks Claude text and images, meeting the EU AI Act’s transparency obligation <span class="citation" data-cites="euaiact2024">(<a href="#ref-euaiact2024" role="doc-biblioref">European Union, 2024</a>)</span>.</p>
+<p>The limits are worth knowing <span class="citation" data-cites="carpenter2026watermarking">(<a href="#ref-carpenter2026watermarking" role="doc-biblioref">Carpenter, 2026</a>)</span>. A mark can be stripped or edited away. It needs a substantial amount of text to work at all. Most importantly it carries no intent: it cannot distinguish translating your own ideas from having the machine write them, which is precisely the distinction that matters for integrity.</p>
 <p>The audit trail from a version-controlled workflow carries what the mark cannot: what the tool did, on which files, in response to which instruction.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -270,9 +297,26 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-carpenter2026watermarking" class="csl-entry" role="listitem">
+Carpenter, T. A. (2026, August). <em>We can now track <span>AI</span>-generated content. It doesn’t solve the real problem</em>. The Scholarly Kitchen. <a href="https://scholarlykitchen.sspnet.org/2026/08/31/we-can-now-track-ai-generated-content/">https://scholarlykitchen.sspnet.org/2026/08/31/we-can-now-track-ai-generated-content/</a>
+</div>
+<div id="ref-ethz2026integrity" class="csl-entry" role="listitem">
+ETH Zurich. (2026). <em>Research integrity at <span>ETH</span> <span>Z</span>urich</em>. ETH Zurich. <a href="https://ethz.ch/en/research/ethics-and-animal-welfare/research-integrity.html">https://ethz.ch/en/research/ethics-and-animal-welfare/research-integrity.html</a>
+</div>
+<div id="ref-euaiact2024" class="csl-entry" role="listitem">
+European Union. (2024). <em>Regulation (<span>EU</span>) 2024/1689 (artificial intelligence act), article 50: Transparency obligations</em>. <a href="https://artificialintelligenceact.eu/article/50/">https://artificialintelligenceact.eu/article/50/</a>
+</div>
+<div id="ref-schoebitz2026whowrotethis" class="csl-entry" role="listitem">
+Schöbitz, L. (2026, July). <em>Who wrote this? Scientific integrity at <span>ETH</span> <span>Z</span>urich in the age of <span>AI</span></em>. Global Health Engineering, ETH Zurich. <a href="https://ghe.ethz.ch/ghe-blog-news/2026/07/blog-who-wrote-this-scientific-integrity-at-eth-zurich-in-the-age-of-ai.html">https://ghe.ethz.ch/ghe-blog-news/2026/07/blog-who-wrote-this-scientific-integrity-at-eth-zurich-in-the-age-of-ai.html</a>
+</div>
+<div id="ref-wickham2026datadict" class="csl-entry" role="listitem">
+Wickham, H. (2026). <em>Data dictionaries for <span>AI</span>-assisted data analysis</em>. Posit. <a href="https://www.youtube.com/watch?v=jVqArueBFqA">https://www.youtube.com/watch?v=jVqArueBFqA</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

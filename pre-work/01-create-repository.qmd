@@ -1,0 +1,77 @@
+---
+title: "{{< fa folder-plus >}} Step 1: Create your repository and add your data"
+---
+
+[Due by **{{< var due.repo >}}**]{.highlight-yellow}
+
+Create a repository in the workshop organization, put a dataset of your own into it, and push it to GitHub. This is the repository you will work in all day.
+
+Everything here uses the Git and GitHub workflow from [{{< var prerequisite.title >}}]({{< var prerequisite.site >}}). Nothing new is being asked; if a step is unfamiliar, the instructions from that workshop still apply.
+
+## {{< fa 1 >}} Create the repository
+
+Create a new repository in the [{{< var prerequisite.org-short >}} organization]({{< var prerequisite.org >}}).
+
+The name should broadly reflect what you work with, following three rules:
+
+- lowercase letters only
+- at most two words
+- words separated by a dash
+
+For example: `solidwaste-kampala`.
+
+::: {.callout-tip}
+## Why the naming rule
+
+Everyone's repository sits in the same organization, and we will be looking at each other's work during the day. A name that says what the data is about makes the list readable. It also matches the naming convention you will meet in the rest of the group's repositories.
+:::
+
+## {{< fa 2 >}} Clone it
+
+Clone the repository to your computer, the same way you did in the first workshop.
+
+If you would like to walk through it again, the instructions are still online: [cloning a repository]({{< var prerequisite.site >}}pre-work/06a-clone-repo.html).
+
+## {{< fa 3 >}} Add a folder called `data`
+
+Inside your cloned repository, create a folder named `data`, and put the dataset you plan to work with into it.
+
+**What to bring.** Something real from your own research, small enough to look at in one sitting. A single table is ideal: one file, a few hundred to a few thousand rows, columns you can explain. It does not need to be tidy or finished. Messy real data is more useful here than a clean example.
+
+::: {.callout-important}
+## This must be non-sensitive data, with no personal data in it
+
+Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent, and a later visibility change, a new collaborator, or a push to the wrong remote can expose it.
+
+Do not commit names, recruitment or participant data, health data, signed consent, or anything that identifies a person in combination with other columns.
+
+This matters more with an agent than without one: a coding agent reads whole directories and sends file contents to a model, so protected data in the folder can leave your machine without you deciding to send it.
+
+If you are unsure which category your data falls into, treat it as protected and ask before committing anything.
+:::
+
+::: {.callout-note}
+## If you cannot identify a dataset
+
+Get in touch with me directly and we will sort something out before the workshop. Do not skip the step and turn up without data, and do not substitute something sensitive because it was the only thing to hand.
+:::
+
+## {{< fa 4 >}} Commit and push
+
+Stage the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.
+
+## {{< fa 5 >}} Open an issue
+
+Once the data is committed and pushed, open an issue on your own repository:
+
+- **Title:** `Data added`
+- **Body:** one or two sentences saying what the data is and where it came from
+- **Assignee:** `{{< var github-handle >}}`
+
+That issue is how I know you are ready, and the description is the beginning of the documentation question we work on during the day.
+
+::: {.callout-important}
+## All of this by {{< var due.repo >}}
+
+If anything blocks you, open the issue anyway, describe what went wrong, and assign it to me. A problem found now is half an hour of work; the same problem found on the morning of the workshop costs you the session.
+:::

@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -186,6 +206,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Disclosure</span></a>
   </div>
 </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -236,11 +263,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206275696c64696e672d636f6c756d6e73203e7d7d-the-eth-rule"><i class="fa-solid fa-building-columns" aria-label="building-columns"></i> The ETH rule</h2>
 <p>The Information Security office sets two levels. Compliant use is the baseline: use AI in line with the law and ETH directives, protect confidentiality, and never put personal or confidential data into a service that is not cleared for it. Responsible use goes further.</p>
 <p>AI systems count as external cloud services. At most “confidential” data may go into a cleared cloud service, and “strictly confidential” data never leaves ETH.</p>
-<p>Three obligations stay with you regardless of tool: you remain responsible for the output, you declare AI use, and you check every result.</p>
+<p>Three obligations stay with you regardless of tool: you remain responsible for the output, you declare AI use, and you check every result <span class="citation" data-cites="ethz2026genaiteaching">(<a href="#ref-ethz2026genaiteaching" role="doc-biblioref">ETH Zurich, 2026</a>)</span>.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206461746162617365203e7d7d-what-the-vendor-does-with-your-sessions" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206461746162617365203e7d7d-what-the-vendor-does-with-your-sessions"><i class="fa-solid fa-database" aria-label="database"></i> What the vendor does with your sessions</h2>
-<p>On consumer plans (Free, Pro, Max), including Claude Code used from such an account, Anthropic may use conversations and coding sessions to train models under four conditions:</p>
+<p>On consumer plans (Free, Pro, Max), including Claude Code used from such an account, Anthropic may use conversations and coding sessions to train models under four conditions <span class="citation" data-cites="anthropic2026privacy">(<a href="#ref-anthropic2026privacy" role="doc-biblioref">Anthropic, 2026</a>)</span>:</p>
 <ul>
 <li>you allow it in privacy settings</li>
 <li>a conversation is flagged for safety review</li>
@@ -249,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Anthropic asks consumer users not to process personal data in the products at all.</p>
 <p>Commercial products (Claude for Work, the API) fall under a separate policy where the customer, not the vendor, controls the data. This split is the whole reason group access is being arranged rather than everyone signing up individually.</p>
-<p>The European Commission’s living guidelines say the same thing from the researcher’s side: do not upload unpublished or sensitive work into an external AI system unless you have assurances it will not be used for training.</p>
+<p>The European Commission’s living guidelines say the same thing from the researcher’s side: do not upload unpublished or sensitive work into an external AI system unless you have assurances it will not be used for training <span class="citation" data-cites="ec2026livingguidelines">(<a href="#ref-ec2026livingguidelines" role="doc-biblioref">European Commission, 2026</a>)</span>.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c6f636b203e7d7d-guardrails-that-also-bind-the-agent" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c6f636b203e7d7d-guardrails-that-also-bind-the-agent"><i class="fa-solid fa-lock" aria-label="lock"></i> Guardrails that also bind the agent</h2>
@@ -276,9 +303,20 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-anthropic2026privacy" class="csl-entry" role="listitem">
+Anthropic. (2026). <em>Privacy center</em>. Anthropic. <a href="https://privacy.anthropic.com/">https://privacy.anthropic.com/</a>
+</div>
+<div id="ref-ethz2026genaiteaching" class="csl-entry" role="listitem">
+ETH Zurich. (2026). <em>Guidelines for the use of generative <span>AI</span> in teaching and learning</em> [Guidelines]. ETH Zurich.
+</div>
+<div id="ref-ec2026livingguidelines" class="csl-entry" role="listitem">
+European Commission. (2026). <em>Living guidelines on the responsible use of generative <span>AI</span> in research</em> [Guidelines]. European Commission, Directorate-General for Research; Innovation.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

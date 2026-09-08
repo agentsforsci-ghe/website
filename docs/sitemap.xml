@@ -1,63 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://agentsforsci-ghe.github.io/website/pre-work/index.html</loc>
-    <lastmod>2026-09-08T14:04:07.668Z</lastmod>
+    <loc>https://agentsforsci-ghe.github.io/website/references.html</loc>
+    <lastmod>2026-09-08T14:34:58.305Z</lastmod>
   </url>
   <url>
-    <loc>https://agentsforsci-ghe.github.io/website/pre-work/05-verify-setup.html</loc>
-    <lastmod>2026-09-08T14:05:57.535Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agentsforsci-ghe.github.io/website/pre-work/03-declaration-reading.html</loc>
-    <lastmod>2026-09-08T14:05:06.438Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agentsforsci-ghe.github.io/website/pre-work/01-bring-your-data.html</loc>
-    <lastmod>2026-09-08T14:04:25.574Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agentsforsci-ghe.github.io/website/index.html</loc>
-    <lastmod>2026-09-08T14:03:54.345Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agentsforsci-ghe.github.io/website/background/transparency.html</loc>
-    <lastmod>2026-09-08T14:08:51.068Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agentsforsci-ghe.github.io/website/background/literacy.html</loc>
-    <lastmod>2026-09-08T14:08:51.065Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agentsforsci-ghe.github.io/website/background/disclosure.html</loc>
-    <lastmod>2026-09-08T14:09:15.164Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agentsforsci-ghe.github.io/website/background/index.html</loc>
-    <lastmod>2026-09-08T14:08:00.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agentsforsci-ghe.github.io/website/background/security.html</loc>
-    <lastmod>2026-09-08T14:08:17.138Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agentsforsci-ghe.github.io/website/glossary.html</loc>
-    <lastmod>2026-09-08T14:10:38.029Z</lastmod>
+    <loc>https://agentsforsci-ghe.github.io/website/pre-work/02-join-element.html</loc>
+    <lastmod>2026-09-08T14:33:28.413Z</lastmod>
   </url>
   <url>
     <loc>https://agentsforsci-ghe.github.io/website/platform-guide.html</loc>
     <lastmod>2026-09-08T14:06:31.116Z</lastmod>
   </url>
   <url>
-    <loc>https://agentsforsci-ghe.github.io/website/pre-work/02-publishing-steps.html</loc>
-    <lastmod>2026-09-08T14:04:40.808Z</lastmod>
+    <loc>https://agentsforsci-ghe.github.io/website/glossary.html</loc>
+    <lastmod>2026-09-08T14:10:38.029Z</lastmod>
   </url>
   <url>
-    <loc>https://agentsforsci-ghe.github.io/website/pre-work/04-install-claude-code.html</loc>
-    <lastmod>2026-09-08T14:05:30.252Z</lastmod>
+    <loc>https://agentsforsci-ghe.github.io/website/background/security.html</loc>
+    <lastmod>2026-09-08T14:32:23.041Z</lastmod>
   </url>
   <url>
-    <loc>https://agentsforsci-ghe.github.io/website/pre-work/06-survey.html</loc>
-    <lastmod>2026-09-08T14:05:57.538Z</lastmod>
+    <loc>https://agentsforsci-ghe.github.io/website/background/index.html</loc>
+    <lastmod>2026-09-08T14:34:17.976Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/background/disclosure.html</loc>
+    <lastmod>2026-09-08T14:32:39.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/background/literacy.html</loc>
+    <lastmod>2026-09-08T14:32:09.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/background/transparency.html</loc>
+    <lastmod>2026-09-08T14:32:23.041Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/index.html</loc>
+    <lastmod>2026-09-08T14:34:06.991Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/pre-work/01-create-repository.html</loc>
+    <lastmod>2026-09-08T14:33:13.961Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/pre-work/index.html</loc>
+    <lastmod>2026-09-08T14:33:48.025Z</lastmod>
   </url>
 </urlset>

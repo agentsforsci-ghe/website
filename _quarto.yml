@@ -54,20 +54,12 @@ website:
       collapse-level: 1
       contents:
         - href: pre-work/index.qmd
-          text: "All six steps"
+          text: "Overview"
         - text: "---"
-        - href: pre-work/01-bring-your-data.qmd
-          text: "Step 1: Bring your data"
-        - href: pre-work/02-publishing-steps.qmd
-          text: "Step 2: How you publish"
-        - href: pre-work/03-declaration-reading.qmd
-          text: "Step 3: Declaration reading"
-        - href: pre-work/04-install-claude-code.qmd
-          text: "Step 4: Install Claude Code"
-        - href: pre-work/05-verify-setup.qmd
-          text: "Step 5: Test your setup"
-        - href: pre-work/06-survey.qmd
-          text: "Step 6: Pre-course survey"
+        - href: pre-work/01-create-repository.qmd
+          text: "Step 1: Your repository"
+        - href: pre-work/02-join-element.qmd
+          text: "Step 2: Join the chat"
 
     - id: background
       title: "Background"
@@ -85,6 +77,9 @@ website:
           text: "Transparency"
         - href: background/disclosure.qmd
           text: "Disclosure"
+        - text: "---"
+        - href: references.qmd
+          text: "References"
 
     - id: reference
       title: "Reference"
@@ -95,6 +90,12 @@ website:
           text: "Which tool does what?"
         - href: glossary.qmd
           text: "Glossary"
+        - href: references.qmd
+          text: "References"
+
+bibliography: references.bib
+csl: https://www.zotero.org/styles/apa
+link-citations: true
 
 format:
   html:
