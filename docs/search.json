@@ -37,7 +37,7 @@
     "href": "pre-work/01-create-repository.html#create-the-repository",
     "title": " Step 1: Create your repository and add your data",
     "section": "Create the repository",
-    "text": "Create the repository\nOnce you are a member, create a new repository in the agentsforsci-ghe organization.\nThe name should broadly reflect what you work with, following three rules:\n\nlowercase letters only\nat most two words\nwords separated by a dash\n\nFor example: solidwaste-kampala.",
+    "text": "Create the repository\nOnce you are a member, create a new repository in the agentsforsci-ghe organization.\nThe name should broadly reflect what you work with, following three rules:\n\nlowercase letters only\nat most two words\nwords separated by a dash\n\nFor example: solidwaste-kampala.\nTwo settings to choose on the same screen:\n\nVisibility: public if you can, private if you cannot\nInitialise this repository with: tick Add a README file\n\nVisibility. Choose public if the data allows it. The aim is for every repository to be public by the end, so the work and its outcomes can be shown to others. If you are not ready to make yours public yet, start private and switch it later under Settings. What you must not do is treat private as permission to commit something sensitive: the rule below applies either way.\nREADME. Ticking Add a README file means GitHub creates the repository with a file already in it, so you can clone it straight away. Without it you get an empty repository and a set of setup commands instead.",
     "crumbs": [
       "Prepare",
       "Step 1: Your repository"
