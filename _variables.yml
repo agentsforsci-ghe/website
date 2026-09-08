@@ -26,7 +26,7 @@ course:
 # Logistics shown on the landing page (index.qmd) via {{< var >}}.
 session:
   event-location: "Villa Hatt, ETH Zurich"
-  event-location-directions: "https://ethz.ch/en/campus/get-to-know/campus-buildings/zurich/villa-hatt.html"
+  event-location-directions: "https://ethz.ch/en/campus/access/region-zurich/villa-hatt.html"
   datetime: "Tuesday, 29 September 2026 - 08:30 to 17:00"
   date-long: "Tuesday, 29 September 2026"
   time-range: "08:30 to 17:00"
