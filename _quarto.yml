@@ -1,0 +1,97 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "**/*.qmd"
+
+website:
+  page-navigation: true
+  title: "Agents for Scientists (Autumn 2026)"
+  description: "A hands-on workshop for the Global Health Engineering group
+      at ETH Zurich. Researchers run the real work of publishing a paper
+      under three conditions (without agents, with an agent given minimal
+      input, and with an agent given a reviewed plan) so that the value and
+      the limits of agentic AI in research become visible. Because the work
+      runs through Git and GitHub, every agent action and human decision is
+      recorded, which makes agent use traceable and declarable."
+  site-url: "https://agentsforsci-ghe.github.io/website/"
+  repo-url: https://github.com/agentsforsci-ghe/website
+  repo-actions: [edit, issue]
+  favicon: images/ghe-square-logo.png
+
+  page-footer:
+    left: |
+      Funding and support: [Swiss Reproducibility Network (SwissRN)](https://www.swissrn.org/contents/community/nodes/) local node at ETH Zurich and the [Data Stewardship Network at ETH Zurich](https://library.ethz.ch/en/researching-and-publishing/data-management-and-policies/research-data-management/data-stewardship.html), funded by the [swissuniversities Open Science Programme](https://www.swissuniversities.ch/en/topics/open-science/open-science-programme), and the [Global Health Engineering group at ETH Zurich](https://ghe.ethz.ch/).
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    background: "#F5F5F5"
+
+  sidebar:
+    background: "#F5F5F5"
+    logo: "images/ghe-square-logo.png"
+    logo-alt: "Global Health Engineering logo"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/agentsforsci-ghe
+        text: "GitHub organization"
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: "Course overview"
+      - text: "---"
+      - section: "Before the workshop"
+        href: pre-work/index.qmd
+        contents:
+          - href: pre-work/01-bring-your-data.qmd
+            text: "Step 1: Bring your data"
+          - href: pre-work/02-publishing-steps.qmd
+            text: "Step 2: How you publish"
+          - href: pre-work/03-declaration-reading.qmd
+            text: "Step 3: Declaration reading"
+          - href: pre-work/04-install-claude-code.qmd
+            text: "Step 4: Install Claude Code"
+          - href: pre-work/05-verify-setup.qmd
+            text: "Step 5: Test your setup"
+          - href: pre-work/06-survey.qmd
+            text: "Step 6: Pre-course survey"
+      - text: "---"
+      - section: "Background reading"
+        href: background/index.qmd
+        contents:
+          - href: background/security.qmd
+            text: "Security"
+          - href: background/literacy.qmd
+            text: "Literacy"
+          - href: background/transparency.qmd
+            text: "Transparency"
+          - href: background/disclosure.qmd
+            text: "Disclosure"
+      - text: "---"
+      - section: "Reference"
+        contents:
+          - href: platform-guide.qmd
+            text: "Which tool does what?"
+          - href: glossary.qmd
+            text: "Glossary"
+
+format:
+  html:
+    theme:
+      light: [litera, theme.scss]
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 250px
+    link-external-icon: true
+    link-external-newwindow: true
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    mainfont: "Atkinson Hyperlegible"
+
+freeze: auto
+editor: source

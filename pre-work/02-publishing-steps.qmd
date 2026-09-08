@@ -1,0 +1,39 @@
+---
+title: "{{< fa list-ol >}} Step 2: Write down how you publish a paper"
+---
+
+Write down the steps you go through to publish a research paper, from having data to having something submitted. Bring the list with you.
+
+## {{< fa clipboard-check >}} What to do
+
+Take a sheet of paper or a plain text file. Write the steps in the order you do them, in your own words. Ten to twenty lines is about right.
+
+Do not write the idealised version. Write what actually happens, including the parts that are tedious, the parts you put off, and the parts you are not sure you do properly.
+
+Some prompts, if a blank page is hard:
+
+- What is the first thing you do once the data is in front of you?
+- Where does the writing start, and in what program?
+- When do the figures get made, and how many times do they get remade?
+- Where do the references come from, and when?
+- Who else touches the document, and how do their changes reach you?
+- What do you do between "the analysis is done" and "the manuscript is submitted"?
+- What do you have to redo when a reviewer asks for a change?
+
+## {{< fa clock >}} Mark the time
+
+Next to each step, write roughly how long it takes. An hour, a day, three weeks. A rough number is fine, and a range is fine.
+
+Then mark the steps you would hand to someone else tomorrow if you could.
+
+## {{< fa lightbulb >}} Why this step exists
+
+The workshop runs your publishing process three times: once as you do it now, once with an agent given almost nothing, and once with an agent given a reviewed plan. Your list is the baseline for the first run and the specification for the third.
+
+The steps you marked as tedious are the ones the second and third runs will test hardest. The steps you did not mark are the more interesting question, because they are where you think the value of your work actually is. By the end of the day you will have evidence about whether that was right.
+
+::: {.callout-note}
+## There is no correct answer here
+
+Everyone's list looks different, and several people will find their list has gaps once they write it down. That is a useful result, not a problem. Bring the list as it is.
+:::

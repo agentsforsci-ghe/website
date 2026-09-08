@@ -1,0 +1,101 @@
+---
+title: "Agents for Scientists"
+subtitle: "Pre-course work"
+editor: source
+execute:
+  echo: false
+  warning: false
+editor_options:
+  chunk_output_type: console
+---
+
+Thank you for joining this workshop. Your course instructor [{{< var author >}}]({{< var author-url >}}) is looking forward to meeting you.
+
+We will meet on {{< var session.datetime >}} ({{< var session.timezone-label >}}) at {{< var session.event-location >}}.
+
+This is the second of the two workshops in the series. The first, [{{< var prerequisite.title >}}]({{< var prerequisite.site >}}), ran on {{< var prerequisite.date >}} and is the foundation this day builds on.
+
+## {{< fa circle-info >}} Background
+
+In the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.
+
+The day runs the real work of publishing a paper (analysing data, making interpretations, writing documentation) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan. Comparing the three shows what the agent actually does for you, what it does badly, and what is left for you to do.
+
+Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing the disclosure rules right now, and this group will send them a response written from what we do in the room.
+
+## {{< fa graduation-cap >}} Prior knowledge
+
+This workshop assumes the {{< var prerequisite.title >}} foundation. You should be able to:
+
+- clone a repository and open it as a project
+- run the pull, stage, commit, push cycle
+- create a branch and open a pull request
+- review a colleague's pull request and merge it
+- open an issue, assign it, and close it
+
+If any of these are shaky, work through the [{{< var prerequisite.title >}} material]({{< var prerequisite.site >}}) again before the day. You do not need any prior experience with AI coding agents.
+
+## {{< fa suitcase >}} What do I need to bring?
+
+- a laptop, connected to wifi, with your setup tested (Step 4 and Step 5 below)
+- a web browser
+- a pen and paper
+- [a piece of your own data that can be shared openly]{.highlight-yellow} (Step 1 below)
+- your notes and questions from the reading (Step 3 below)
+
+## {{< fa circle-question >}} What do I need to prepare?
+
+[There is pre-work for this workshop]{.highlight-yellow}. It matters more than usual here: the day is built around *your* data and *your* questions, so a participant who arrives without them cannot take part in the main exercise.
+
+Work through the six steps in order.
+
+- [Step 1](pre-work/01-bring-your-data.qmd): Bring a piece of your own data
+- [Step 2](pre-work/02-publishing-steps.qmd): Write down how you publish a paper
+- [Step 3](pre-work/03-declaration-reading.qmd): Read the AI declaration questionnaires, by [**{{< var due.reading >}}**]{.highlight-yellow}
+- [Step 4](pre-work/04-install-claude-code.qmd): Install Claude Code
+- [Step 5](pre-work/05-verify-setup.qmd): Test your setup, by [**{{< var due.setup >}}**]{.highlight-yellow}
+- [Step 6](pre-work/06-survey.qmd): Complete the pre-course survey, by [**{{< var due.survey >}}**]{.highlight-yellow}
+
+If you would rather read before you do, the four [background pages](background/index.qmd) cover the security, literacy, transparency, and disclosure themes the day works through. They are optional.
+
+```{r}
+library(dplyr)
+library(knitr)
+library(readr)
+```
+
+## {{< fa calendar >}} Schedule
+
+```{r}
+#| tbl-colwidths: [25,75]
+
+read_csv(here::here("data/tbl-01-agentsforsci-ghe-course-schedule.csv")) |>
+  filter(day == 1) |>
+  select(Time = time, Block = title) |>
+  kable()
+
+```
+
+## {{< fa bullseye >}} Learning objectives
+
+By the end of this workshop, participants will be able to:
+
+1. **Run an agent inside the Git workflow**: give a coding agent a task, review what it produced as a pull request, and accept or reject the change.
+
+2. **Judge the difference a plan makes**: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.
+
+3. **Judge the difference documentation makes**: compare what an agent does with a plain CSV against the same data published as a data package.
+
+4. **Locate your own practice**: place your current way of working on the Reproducibility Levels framework, and name the next step from where you are.
+
+5. **Declare agent use**: point to the record your workflow produced and say what it shows about which parts of the work an agent touched.
+
+## {{< fa comments >}} What this workshop contributes
+
+Research integrity bodies (WCRI, ISC, COPE, STM, and the Global Young Academy) are consulting on a global standard for reporting AI use in research. Round 2 of that consultation closes on 16 October 2026, which is after this workshop.
+
+We will spend the last block writing a combined response from what we did during the day. Global Health Engineering will archive it with a DOI and submit it. Your pre-work reading in Step 3 is what makes that block possible, and your name goes on the result.
+
+## {{< fa sun >}} Thanks
+
+Thank you for working through these steps. See you at {{< var session.event-location >}}.

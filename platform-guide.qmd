@@ -1,0 +1,88 @@
+---
+title: "{{< fa signs-post >}} Which tool does what?"
+format: html
+---
+
+During the workshop several tools appear on your screen at the same time, and their names sound alike. It is completely normal to lose track of which one is doing what. This page is the plain-English map.
+
+The first half covers Git, GitHub, and Quarto, carried over from the [{{< var prerequisite.title >}} workshop]({{< var prerequisite.site >}}). The second half adds the agent.
+
+## {{< fa wrench >}} The tools in one sentence each
+
+**Git** is a version control program that runs [on your computer]{.highlight-yellow}. It records the history of your files: every commit, every branch, every merge. Git works even without an internet connection.
+
+**GitHub** is a website ([github.com](https://github.com)) that hosts a copy of your Git repository [in the cloud]{.highlight-yellow}. Everything that involves other people happens here: pull requests, reviews, issues, and forks. GitHub is built on top of Git, but it is a separate product made by a separate company.
+
+**Quarto** is a publishing program that turns a plain-text document (a `.qmd` file) into a finished report, website, or presentation. When you render, Quarto runs your code and builds the output document. Quarto knows nothing about version control.
+
+**Claude Code** is the agent. It reads and writes files in your project folder, runs commands, and uses Git on your behalf. It runs [on your computer]{.highlight-yellow}, in a terminal.
+
+**The model** (Claude) is the part that does the reasoning. It runs [on Anthropic's servers]{.highlight-yellow}, not on your machine. It has no memory between sessions and no access to your files; everything it knows about your work, Claude Code had to send it.
+
+## {{< fa scale-balanced >}} A rule of thumb
+
+- If it records or moves the [history of your files]{.highlight-yellow}, it is **Git**.
+- If it involves [another person or a web browser]{.highlight-yellow}, it is **GitHub**.
+- If it turns [text and code into a document]{.highlight-yellow}, it is **Quarto**.
+- If it [decides what to do next]{.highlight-yellow}, it is the **model**.
+- If it [actually does it on your machine]{.highlight-yellow}, it is **Claude Code**.
+
+## {{< fa robot >}} The three kinds of AI coding tool
+
+People say "AI coding tool" for three quite different things, and the difference matters when you choose one.
+
+| Kind | What it does | Examples |
+|------|------|------|
+| Autocomplete | Suggests the next few lines as you type. You stay in control of every keystroke. | GitHub Copilot |
+| AI editor | An editor with a chat panel that can edit files for you, inside that editor. | Cursor, Positron Assistant |
+| Agentic coding | Runs on its own for many steps: reads files, runs commands, uses Git, decides what to do next from what it finds. | Claude Code, Codex CLI |
+
+: {tbl-colwidths="[20,50,30]"}
+
+This workshop is about the third kind. The difference is not that the agent is cleverer; it is that it acts in a loop without asking you at every step, which is what makes it useful and what makes the record of what it did necessary.
+
+## {{< fa table-list >}} Every action of the day, mapped
+
+| What you do | Where | Command underneath | Technology |
+|------|------|------|------|
+| Clone a repository | Terminal or IDE | `git clone` | Git |
+| Pull | Terminal or IDE | `git pull` | Git |
+| Stage a file | Terminal or IDE | `git add` | Git |
+| Commit | Terminal or IDE | `git commit -m "message"` | Git |
+| Push | Terminal or IDE | `git push` | Git |
+| Create a branch | Terminal or IDE | `git switch -c` | Git |
+| Open a pull request | GitHub: **Compare & pull request** | — | GitHub |
+| Review a pull request | GitHub: **Files changed** | — | GitHub |
+| Merge a pull request | GitHub: **Merge pull request** | `git merge` (on GitHub's servers) | Git, via GitHub |
+| Open an issue | GitHub: **Issues > New issue** | — | GitHub |
+| Render a document | Terminal or IDE | `quarto render` | Quarto |
+| Start the agent | Terminal: `claude` | — | Claude Code |
+| Ask the agent to do something | The agent prompt | (it decides) | Claude Code, then the model |
+| Approve a change the agent proposes | The agent's permission prompt | — | Claude Code |
+| Let the agent commit | The agent does it | `git commit` | Claude Code running Git |
+
+: {tbl-colwidths="[30,28,27,15]"}
+
+A dash (—) in the command column means there is [no command for it at all]{.highlight-yellow}: that action only exists on the website or in the agent's own interface.
+
+Notice the last three rows. When the agent commits, it is running the same `git commit` you ran yourself in July. Nothing new is happening to your repository. That is the point: [the agent is inside the workflow you already know]{.highlight-yellow}, which is why you can review its work the same way you review a colleague's.
+
+## {{< fa plug >}} Where MCP fits
+
+You will hear **MCP** (Model Context Protocol) mentioned. It is a way of giving the agent access to something outside your project folder, such as a reference manager or a database. We use one on the day to search literature through Zotero.
+
+An MCP server is not the only way to reach outside, and often not the best one. If a command-line tool already does the job, telling the agent to use that tool is cheaper: an MCP server sends a description of all its tools with every single request, while a command costs almost nothing. Reach for MCP when there is no command-line alternative.
+
+## {{< fa triangle-exclamation >}} Common mix-ups
+
+**Claude Code is not the model.** Claude Code is the program on your computer that reads files, runs commands, and asks permission. The model is the thing on Anthropic's servers that decides what to do. When the agent does something odd, it is usually worth asking which of the two is responsible: a wrong decision is the model, a refused action is Claude Code doing its job.
+
+**The agent is not remembering you.** Each request sends the whole conversation again, because the model keeps nothing between requests. This is why a long session costs more than a short one, and why starting fresh sometimes fixes a session that has gone in circles.
+
+**Asking is not doing.** The agent proposes; you approve. Every permission prompt is a decision point, and clicking through them without reading is how people end up with changes they did not want. Read the diff.
+
+**Commit is not push.** Unchanged from July. The agent committing means the change is saved on your computer. Until something pushes, nobody else can see it.
+
+**An agent using Git does not make the work traceable on its own.** The history is only useful if the commits are honest about what changed and who asked for it. That is the transparency question the workshop works on.
+
+If a term on this page is unfamiliar, look it up in the [glossary](glossary.qmd).

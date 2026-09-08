@@ -1,0 +1,55 @@
+---
+title: "{{< fa book-open-reader >}} Step 3: Read the AI declaration questionnaires"
+---
+
+[Due by **{{< var due.reading >}}**]{.highlight-yellow}
+
+Read the consultation materials on AI disclosure and bring your questions. The last block of the workshop writes a group response to this consultation, and that block only works if everyone arrives having read the same thing.
+
+## {{< fa file-lines >}} What to read
+
+The World Conferences on Research Integrity are running a consultation toward a global reporting standard for AI disclosure in research, supported by the International Science Council, COPE, STM, and the Global Young Academy. Round 2 is open, and responses are due by **16 October 2026**, shortly after our workshop.
+
+Read the Round 2 preparatory materials, published by the [International Science Council](https://council.science/): <https://council.science/events/ai-disclosure-standard/>
+
+The consultation asks five questions. These are the ones to hold in mind while reading:
+
+1. **Threshold.** When does AI use need to be disclosed at all?
+2. **Placement.** Where should the disclosure go: spread through the sections of a paper where the tool was used, or gathered into one separate statement?
+3. **Taxonomy.** The draft proposes 18 categories of research task, from idea generation to editing. Does that list fit the way you work?
+4. **Null statements.** Should a paper have to say "we used no AI that meets the threshold", the way it has to declare conflicts of interest?
+5. **Oversight.** How should authors describe what they checked, and how they checked it?
+
+## {{< fa scale-balanced >}} The proposed threshold
+
+The draft threshold is qualitative rather than numerical:
+
+> AI use should be disclosed if it substantively shapes or replaces human judgement, or has another substantive influence on research processes or its reporting.
+
+The test offered for "substantive" is whether a disciplinary peer would reasonably need to know about the use in order to understand how the research was done, or to judge whether the results are reliable. Spellchecking, grammar correction, and formatting are named as uses that generally do not need disclosure.
+
+## {{< fa pen >}} What to bring
+
+Write down:
+
+- **Two or three questions.** Anything the materials left unclear, or any place the proposal does not fit how research works in your field.
+- **One case from your own work.** A specific thing you have done with an AI tool, where you are genuinely unsure whether it crosses the threshold. Borderline cases are the useful ones.
+- **Your own answer to question 4.** Should a null statement be mandatory? Yes or no, and one sentence of reasoning.
+
+Half a page in total is plenty.
+
+## {{< fa lightbulb >}} Why this step exists
+
+::: {.callout-note}
+## Two positions we will put to the room
+
+One position: disclose if AI was used at all. A threshold each author judges for themselves invites under-reporting, and a version-controlled workflow logs every use anyway, so the cost of a full declaration is near zero.
+
+The other: a yes-or-no flag loses intent. It cannot tell translating your own ideas from having the machine write them, and readers will treat the flag as a quality judgement the way they treat journal rank.
+
+Both have a point. We will argue this out on the day, and the group response records where we land.
+:::
+
+By the time we write the response, you will have spent a day watching agents do research work under three different conditions, with the full record of what they did in front of you. That is a better basis for answering the consultation's five questions than most respondents will have, which is exactly why it is worth submitting.
+
+Global Health Engineering will archive the response with a DOI and submit it before the 16 October due date. Everyone in the room is a contributor.
