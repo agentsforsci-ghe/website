@@ -11,6 +11,8 @@ The page has two halves. **[Git and GitHub](#git-and-github)** carries over the 
 
 If you are unsure which *tool* a term belongs to, see [Which tool does what?](platform-guide.qmd)
 
+The Git and GitHub definitions draw on [Glosario](https://glosario.carpentries.org/) by The Carpentries, and the agent terms on the [Dictionary of AI Coding](https://github.com/mattpocock/dictionary-of-ai-coding). Full details are in [References and attribution](#references-and-attribution) at the foot of the page.
+
 ## Git and GitHub
 
 :   A branch is a separate line of work inside a repository. You create a branch when you want to change files without touching the main copy of the project. When the changes have been reviewed, you bring them back into the main copy. In the workshop you make your edits on a branch and bring them into `main` through a pull request.
@@ -342,7 +344,7 @@ vibe coding
     Coined by Karpathy for low-stakes work where the code is not reviewed. The contrasting practice, sometimes called agentic engineering, keeps the review step and treats the agent as a collaborator whose output goes through the same scrutiny as a colleague's.
     :::
 
-## Attribution
+## References and attribution
 
 The plain-language definitions on this page were written for this course.
 

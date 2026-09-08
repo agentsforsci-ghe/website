@@ -3,7 +3,7 @@ title: "{{< fa signs-post >}} Which tool does what?"
 format: html
 ---
 
-During the workshop several tools appear on your screen at the same time, and their names sound alike. It is completely normal to lose track of which one is doing what. This page is the plain-English map.
+During the workshop several tools appear on your screen at the same time, and their names sound alike. It is completely normal to lose track of which one is doing what. 
 
 The first half covers Git, GitHub, and Quarto, carried over from the [{{< var prerequisite.title >}} workshop]({{< var prerequisite.site >}}). The second half adds the agent.
 
@@ -69,9 +69,7 @@ Notice the last three rows. When the agent commits, it is running the same `git 
 
 ## {{< fa plug >}} Where MCP fits
 
-You will hear **MCP** (Model Context Protocol) mentioned. It is a way of giving the agent access to something outside your project folder, such as a reference manager or a database. We use one on the day to search literature through Zotero.
-
-An MCP server is not the only way to reach outside, and often not the best one. If a command-line tool already does the job, telling the agent to use that tool is cheaper: an MCP server sends a description of all its tools with every single request, while a command costs almost nothing. Reach for MCP when there is no command-line alternative.
+You will hear **MCP** (Model Context Protocol) mentioned. It is a way of giving the agent access to something outside your project folder, such as a reference manager or a database. We might use one on the day to search literature through Zotero.
 
 ## {{< fa triangle-exclamation >}} Common mix-ups
 
@@ -79,10 +77,10 @@ An MCP server is not the only way to reach outside, and often not the best one. 
 
 **The agent is not remembering you.** Each request sends the whole conversation again, because the model keeps nothing between requests. This is why a long session costs more than a short one, and why starting fresh sometimes fixes a session that has gone in circles.
 
-**Asking is not doing.** The agent proposes; you approve. Every permission prompt is a decision point, and clicking through them without reading is how people end up with changes they did not want. Read the diff.
+**Asking is not doing.** The agent proposes; you approve. Every permission prompt is a decision point, and clicking through them without reading is how people end up with changes they did not want. 
 
 **Commit is not push.** Unchanged from July. The agent committing means the change is saved on your computer. Until something pushes, nobody else can see it.
 
-**An agent using Git does not make the work traceable on its own.** The history is only useful if the commits are honest about what changed and who asked for it. That is the transparency question the workshop works on.
+**An agent using Git does not make the work traceable on its own.** The history is only useful if the commits are honest about what changed and who asked for it. Letting an agent write commits is highly effective, because it describes the changes well. Those are part of the transparency and provenance questions the workshop works on. 
 
 If a term on this page is unfamiliar, look it up in the [glossary](glossary.qmd).
