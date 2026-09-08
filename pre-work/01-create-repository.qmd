@@ -4,13 +4,25 @@ title: "{{< fa folder-plus >}} Step 1: Create your repository and add your data"
 
 [Due by **{{< var due.repo >}}**]{.highlight-yellow}
 
-Create a repository in the workshop organization, put a dataset of your own into it, and push it to GitHub. This is the repository you will work in all day.
+Everything here uses the Git and GitHub workflow from [{{< var prerequisite.title >}}]({{< var prerequisite.site >}}). If a step is unfamiliar, the instructions from that workshop still apply. If you are would like support in completing a step, please reach out to the course instructor.
 
-Everything here uses the Git and GitHub workflow from [{{< var prerequisite.title >}}]({{< var prerequisite.site >}}). Nothing new is being asked; if a step is unfamiliar, the instructions from that workshop still apply.
+## Accept the invitation to the organization
 
-## {{< fa 1 >}} Create the repository
+You have been invited to the [{{< var course.short-title >}} organization]({{< var course.github-org >}}) on GitHub. Accept the invitation before you start working on the tasks below.
 
-Create a new repository in the [{{< var prerequisite.org-short >}} organization]({{< var prerequisite.org >}}).
+The invitation arrived by email. You can also accept it by going to [{{< var course.github-org >}}]({{< var course.github-org >}}) while signed in to GitHub, where a banner offers you the invitation.
+
+::: {.callout-note}
+## Check the right inbox
+
+GitHub sent the invitation to the email address you used to register your GitHub account. That is not necessarily your institutional email address. If nothing has arrived, check the other address you might have signed up with, and look in the spam folder.
+
+You can see which address GitHub has for you under [Settings, Emails](https://github.com/settings/emails).
+:::
+
+## Create the repository
+
+Once you are a member, create a new repository in the [{{< var course.short-title >}} organization]({{< var course.github-org >}}).
 
 The name should broadly reflect what you work with, following three rules:
 
@@ -20,23 +32,17 @@ The name should broadly reflect what you work with, following three rules:
 
 For example: `solidwaste-kampala`.
 
-::: {.callout-tip}
-## Why the naming rule
-
-Everyone's repository sits in the same organization, and we will be looking at each other's work during the day. A name that says what the data is about makes the list readable. It also matches the naming convention you will meet in the rest of the group's repositories.
-:::
-
-## {{< fa 2 >}} Clone it
+## Clone it
 
 Clone the repository to your computer, the same way you did in the first workshop.
 
 If you would like to walk through it again, the instructions are still online: [cloning a repository]({{< var prerequisite.site >}}pre-work/06a-clone-repo.html).
 
-## {{< fa 3 >}} Add a folder called `data`
+## Add a folder called `data`
 
 Inside your cloned repository, create a folder named `data`, and put the dataset you plan to work with into it.
 
-**What to bring.** Something real from your own research, small enough to look at in one sitting. A single table is ideal: one file, a few hundred to a few thousand rows, columns you can explain. It does not need to be tidy or finished. Messy real data is more useful here than a clean example.
+**What to bring.** Something real from your own research, small enough to look at in one sitting. Several files are okay with a few hundred to a few thousand rows and columns you can explain. It does not need to be tidy or finished. Messy real data could useful here. Any file format is okay: CSV or XLSX, also PDF and DOCX, or JSON, etc.
 
 ::: {.callout-important}
 ## This must be non-sensitive data, with no personal data in it
@@ -53,14 +59,14 @@ If you are unsure which category your data falls into, treat it as protected and
 ::: {.callout-note}
 ## If you cannot identify a dataset
 
-Get in touch with me directly and we will sort something out before the workshop. Do not skip the step and turn up without data, and do not substitute something sensitive because it was the only thing to hand.
+Get in touch with me directly and we will sort something out before the workshop. Do not skip the step and turn up without data.
 :::
 
-## {{< fa 4 >}} Commit and push
+## Commit and push
 
 Stage the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.
 
-## {{< fa 5 >}} Open an issue
+## Open an issue
 
 Once the data is committed and pushed, open an issue on your own repository:
 

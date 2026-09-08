@@ -4,7 +4,7 @@ nocite: |
   @*
 ---
 
-Everything cited on the [background pages](background/index.qmd), in one place. Each entry links to the source, so you can follow anything up directly.
+Everything cited in the workshop material, in one place. Each entry links to the source, so you can follow anything up directly.
 
 The list is generated from a shared bibliography, so it stays in step with the pages as they change.
 

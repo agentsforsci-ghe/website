@@ -4,6 +4,8 @@ project:
   render:
     - "*.qmd"
     - "**/*.qmd"
+    # Background pages stay in the repo but are not published yet (under review)
+    - "!background/"
 
 website:
   page-navigation: true
@@ -37,8 +39,6 @@ website:
         text: "Overview"
       - href: pre-work/index.qmd
         text: "Prepare"
-      - href: background/index.qmd
-        text: "Background"
       - href: glossary.qmd
         text: "Reference"
     right:
@@ -60,26 +60,6 @@ website:
           text: "Step 1: Your repository"
         - href: pre-work/02-join-element.qmd
           text: "Step 2: Join the chat"
-
-    - id: background
-      title: "Background"
-      style: "docked"
-      background: "#F5F5F5"
-      contents:
-        - href: background/index.qmd
-          text: "All four themes"
-        - text: "---"
-        - href: background/security.qmd
-          text: "Security"
-        - href: background/literacy.qmd
-          text: "Literacy"
-        - href: background/transparency.qmd
-          text: "Transparency"
-        - href: background/disclosure.qmd
-          text: "Disclosure"
-        - text: "---"
-        - href: references.qmd
-          text: "References"
 
     - id: reference
       title: "Reference"

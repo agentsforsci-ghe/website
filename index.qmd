@@ -19,9 +19,9 @@ This is the second of the two workshops in the series. The first, [{{< var prere
 
 In the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.
 
-The day runs the real work of publishing a paper (analysing data, making interpretations, writing documentation) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan. Comparing the three shows what the agent actually does for you, what it does badly, and what is left for you to do.
+The day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan and using GitHub issues. Comparing the three shows what the agent actually does for you, how you can document the process and how your stay involved in making decisions. 
 
-Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing the disclosure rules right now, and this group will send them a response written from what we do in the room.
+Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing disclosure rules for scientific research right now, and we are planning to use to send them a response written from what we do in the room.
 
 ## {{< fa graduation-cap >}} Prior knowledge
 
@@ -53,8 +53,6 @@ Two tasks to start with, both due by [**{{< var due.repo >}}**]{.highlight-yello
 
 Further preparation, including a pre-course survey and the tool setup, follows closer to the workshop.
 
-If you would rather read before you do, the four [background pages](background/index.qmd) cover the security, literacy, transparency, and disclosure themes the day works through. They are optional.
-
 ```{r}
 library(dplyr)
 library(knitr)
@@ -66,7 +64,7 @@ library(readr)
 ::: {.callout-note}
 ## Tentative
 
-The schedule below is a working draft and still under active development. The shape of the day is settled; the individual blocks and timings will change.
+The schedule below is a working draft and still under active development. 
 :::
 
 ```{r}
@@ -89,7 +87,7 @@ These objectives are still under active development and will be refined before t
 
 By the end of this workshop, participants will be able to:
 
-1. **Run an agent inside the Git workflow**: give a coding agent a task, review what it produced as a pull request, and accept or reject the change.
+1. **Run an agent inside the Git workflow**: give a coding agent a task, write its plan down as GitHub issues before any code is produced, then review what it produced as a pull request and accept or reject the change.
 
 2. **Judge the difference a plan makes**: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.
 
