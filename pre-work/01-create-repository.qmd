@@ -51,7 +51,7 @@ If you would like to walk through it again, the instructions are still online: [
 
 Inside your cloned repository, create a folder named `data`, and put the dataset you plan to work with into it.
 
-**What to bring.** Something real from your own research, small enough to look at in one sitting. Several files are okay with a few hundred to a few thousand rows and columns you can explain. It does not need to be tidy or finished. Messy real data could useful here. Any file format is okay: CSV or XLSX, also PDF and DOCX, or JSON, etc.
+**What to bring.** Something real from your own research, small enough to look at in one sitting. Several files are okay with a few hundred to a few thousand rows and columns you can explain. It does not need to be tidy or finished. Messy real data could be very useful here. Any file format is okay: CSV or XLSX, also PDF and DOCX, or JSON, etc.
 
 ::: {.callout-important}
 ## This must be non-sensitive data, with no personal data in it
