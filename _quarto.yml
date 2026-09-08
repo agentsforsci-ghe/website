@@ -10,6 +10,11 @@ project:
     - "!glossary.qmd"
     - "!platform-guide.qmd"
     - "!references.qmd"
+  # Copied into docs/ on every render. GitHub Pages serves docs/ directly, and
+  # this tells it not to run the output through Jekyll. Quarto clears docs/ on
+  # render, so the file has to be a project resource rather than sit there.
+  resources:
+    - ".nojekyll"
 
 website:
   page-navigation: true
