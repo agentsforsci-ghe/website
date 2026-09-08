@@ -5,7 +5,7 @@ subtitle: "What the workflow records for you"
 
 ## {{< fa building-columns >}} ETH already asks for traceability
 
-The ETH integrity guidelines rest on reliability, honesty, respect, and responsibility. Reliability includes transparency and traceability, and authorship requires a significant contribution through personal work.
+The ETH integrity guidelines rest on reliability, honesty, respect, and responsibility. Reliability includes transparency and traceability, and authorship requires a significant contribution through personal work [@ethz2026integrity].
 
 None of this was written with agents in mind, and none of it needs rewriting because of them. The question the workshop answers is a practical one: how do you keep faith with these principles when an agent writes some of the code and some of the prose?
 
@@ -17,7 +17,7 @@ Every commit says what changed and who made the change. Agent commits carry a tr
 
 The pull request then shows the whole history in one view: what the human drafted, what the agent altered, and what was reviewed before it was merged.
 
-This is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim. The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a diff.
+This is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim [@schoebitz2026whowrotethis]. The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a diff [@wickham2026datadict].
 
 ## {{< fa rotate >}} Could you recreate it if the AI were gone?
 
@@ -33,9 +33,9 @@ The remedy is a code-based source of truth that reads the data and builds the ou
 
 ## {{< fa stamp >}} A watermark says a machine was involved, and nothing else
 
-Since August 2026 Anthropic watermarks Claude text and images, meeting the EU AI Act's transparency obligation.
+Since August 2026 Anthropic watermarks Claude text and images, meeting the EU AI Act's transparency obligation [@euaiact2024].
 
-The limits are worth knowing. A mark can be stripped or edited away. It needs a substantial amount of text to work at all. Most importantly it carries no intent: it cannot distinguish translating your own ideas from having the machine write them, which is precisely the distinction that matters for integrity.
+The limits are worth knowing [@carpenter2026watermarking]. A mark can be stripped or edited away. It needs a substantial amount of text to work at all. Most importantly it carries no intent: it cannot distinguish translating your own ideas from having the machine write them, which is precisely the distinction that matters for integrity.
 
 The audit trail from a version-controlled workflow carries what the mark cannot: what the tool did, on which files, in response to which instruction.
 

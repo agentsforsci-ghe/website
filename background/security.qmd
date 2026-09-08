@@ -17,11 +17,11 @@ The Information Security office sets two levels. Compliant use is the baseline: 
 
 AI systems count as external cloud services. At most "confidential" data may go into a cleared cloud service, and "strictly confidential" data never leaves ETH.
 
-Three obligations stay with you regardless of tool: you remain responsible for the output, you declare AI use, and you check every result.
+Three obligations stay with you regardless of tool: you remain responsible for the output, you declare AI use, and you check every result [@ethz2026genaiteaching].
 
 ## {{< fa database >}} What the vendor does with your sessions
 
-On consumer plans (Free, Pro, Max), including Claude Code used from such an account, Anthropic may use conversations and coding sessions to train models under four conditions:
+On consumer plans (Free, Pro, Max), including Claude Code used from such an account, Anthropic may use conversations and coding sessions to train models under four conditions [@anthropic2026privacy]:
 
 - you allow it in privacy settings
 - a conversation is flagged for safety review
@@ -32,7 +32,7 @@ Anthropic asks consumer users not to process personal data in the products at al
 
 Commercial products (Claude for Work, the API) fall under a separate policy where the customer, not the vendor, controls the data. This split is the whole reason group access is being arranged rather than everyone signing up individually.
 
-The European Commission's living guidelines say the same thing from the researcher's side: do not upload unpublished or sensitive work into an external AI system unless you have assurances it will not be used for training.
+The European Commission's living guidelines say the same thing from the researcher's side: do not upload unpublished or sensitive work into an external AI system unless you have assurances it will not be used for training [@ec2026livingguidelines].
 
 ## {{< fa lock >}} Guardrails that also bind the agent
 

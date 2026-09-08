@@ -1,0 +1,31 @@
+---
+title: "{{< fa comments >}} Step 2: Join the ai-playground chat room"
+---
+
+We use Element for questions before, during, and after the workshop. It is where you ask when something breaks, and where the conversation continues once the day is over.
+
+Join the room: [#ai-playground:staffchat.ethz.ch](https://matrix.to/#/#ai-playground:staffchat.ethz.ch)
+
+## {{< fa user-check >}} If you already use Element
+
+Join the room with the link above, then [send me a message]{.highlight-yellow} so I know you have arrived. A one-line hello is plenty.
+
+## {{< fa user-plus >}} If you are new to Element
+
+Element is the chat client; `staffchat.ethz.ch` is the ETH server it connects to. You sign in with your GitHub account.
+
+Step-by-step instructions, written for a previous course but identical for this one: [setting up Element](https://ds4owd-002.github.io/website/content/assignments/md-01/am-01-2-element.html)
+
+Follow those through the login with GitHub, then come back and join [#ai-playground:staffchat.ethz.ch](https://matrix.to/#/#ai-playground:staffchat.ethz.ch).
+
+::: {.callout-tip}
+## Use the desktop or web client
+
+Element works in a browser and as a desktop app. Either is fine. If you expect to keep using it after the workshop, the desktop app is less easy to lose in a pile of browser tabs.
+:::
+
+## {{< fa circle-question >}} Why not email
+
+Questions asked in the room get answered once, where everyone can see the answer. Most setup problems are shared by several people, and someone else in the group has usually hit yours already.
+
+It is also the honest reason: a question asked by email helps one person, and the same question asked in the room helps whoever reads it next.

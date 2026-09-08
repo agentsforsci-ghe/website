@@ -27,6 +27,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -44,17 +45,17 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-a88deade1133a401a461acf351919818.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f14e45094a8639f22d603033652656ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f14e45094a8639f22d603033652656ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-f14e45094a8639f22d603033652656ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d83d88b8d67974b5dcc887f4af409a7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d83d88b8d67974b5dcc887f4af409a7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d83d88b8d67974b5dcc887f4af409a7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -80,162 +81,52 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Course overview</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/ghe-square-logo.png" alt="Global Health Engineering logo" class="navbar-logo light-content">
+    <img src="./images/ghe-square-logo.png" alt="Global Health Engineering logo" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Agents for Scientists</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./pre-work/index.html"> 
+<span class="menu-text">Prepare</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/agentsforsci-ghe"> <i class="bi bi-github" role="img" aria-label="GitHub organization">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/ghe-square-logo.png" alt="Global Health Engineering logo" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./images/ghe-square-logo.png" alt="Global Health Engineering logo" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
-      </a>
-      <div class="sidebar-tools-main">
-    <a href="https://github.com/agentsforsci-ghe" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
-</div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Course overview</span></a>
-  </div>
-</li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./pre-work/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Before the workshop</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pre-work/01-bring-your-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 1: Bring your data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pre-work/02-publishing-steps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 2: How you publish</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pre-work/03-declaration-reading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 3: Declaration reading</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pre-work/04-install-claude-code.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 4: Install Claude Code</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pre-work/05-verify-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 5: Test your setup</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pre-work/06-survey.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 6: Pre-course survey</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./background/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Background reading</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./background/security.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Security</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./background/literacy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literacy</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./background/transparency.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transparency</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./background/disclosure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Disclosure</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Reference</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./platform-guide.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Which tool does what?</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Glossary</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -248,7 +139,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> What do I need to prepare?</a></li>
   <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</a></li>
   <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning objectives</a></li>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d6d656e7473203e7d7d-what-this-workshop-contributes" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d6d656e7473203e7d7d-what-this-workshop-contributes" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d6d656e7473203e7d7d-what-this-workshop-contributes"><i class="fa-solid fa-comments" aria-label="comments"></i> What this workshop contributes</a></li>
   <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks"><i class="fa-solid fa-sun" aria-label="sun"></i> Thanks</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -282,12 +172,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background"><i class="fa-solid fa-circle-info" aria-label="circle-info"></i> Background</h2>
 <p>In the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.</p>
-<p>The day runs the real work of publishing a paper (analysing data, making interpretations, writing documentation) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan. Comparing the three shows what the agent actually does for you, what it does badly, and what is left for you to do.</p>
-<p>Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing the disclosure rules right now, and this group will send them a response written from what we do in the room.</p>
+<p>The day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan and using GitHub issues. Comparing the three shows what the agent actually does for you, how you can document the process and how your stay involved in making decisions.</p>
+<p>Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing disclosure rules for scientific research right now, and we are planning to use to send them a response written from what we do in the room.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Prior knowledge</h2>
-<p>This workshop assumes the Git for Scientists foundation. You should be able to:</p>
+<p>Everyone taking part has been through the Git for Scientists workshop, so this builds directly on it. You should be able to:</p>
 <ul>
 <li>clone a repository and open it as a project</li>
 <li>run the pull, stage, commit, push cycle</li>
@@ -300,29 +190,37 @@ ul.task-list li input[type="checkbox"] {
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring"><i class="fa-solid fa-suitcase" aria-label="suitcase"></i> What do I need to bring?</h2>
 <ul>
-<li>a laptop, connected to wifi, with your setup tested (Step 4 and Step 5 below)</li>
+<li>a laptop, connected to wifi</li>
 <li>a web browser</li>
 <li>a pen and paper</li>
-<li><span class="highlight-yellow">a piece of your own data that can be shared openly</span> (Step 1 below)</li>
-<li>your notes and questions from the reading (Step 3 below)</li>
+<li><span class="highlight-yellow">your repository, with your own data already committed</span> (Step 1 below)</li>
 </ul>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> What do I need to prepare?</h2>
-<p><span class="highlight-yellow">There is pre-work for this workshop</span>. It matters more than usual here: the day is built around <em>your</em> data and <em>your</em> questions, so a participant who arrives without them cannot take part in the main exercise.</p>
-<p>Work through the six steps in order.</p>
+<p><span class="highlight-yellow">There is pre-work for this workshop</span>. It matters more than usual here: the day is built around <em>your</em> data, so a participant who arrives without it cannot take part in the main exercise.</p>
+<p>Two tasks to start with, both due by <span class="highlight-yellow"><strong>Monday, 14 September 2026</strong></span>:</p>
 <ul>
-<li><a href="./pre-work/01-bring-your-data.html">Step 1</a>: Bring a piece of your own data</li>
-<li><a href="./pre-work/02-publishing-steps.html">Step 2</a>: Write down how you publish a paper</li>
-<li><a href="./pre-work/03-declaration-reading.html">Step 3</a>: Read the AI declaration questionnaires, by <span class="highlight-yellow"><strong>Friday, 26 September 2026</strong></span></li>
-<li><a href="./pre-work/04-install-claude-code.html">Step 4</a>: Install Claude Code</li>
-<li><a href="./pre-work/05-verify-setup.html">Step 5</a>: Test your setup, by <span class="highlight-yellow"><strong>Monday, 22 September 2026</strong></span></li>
-<li><a href="./pre-work/06-survey.html">Step 6</a>: Complete the pre-course survey, by <span class="highlight-yellow"><strong>Monday, 15 September 2026</strong></span></li>
+<li><a href="./pre-work/01-create-repository.html">Step 1</a>: Create your repository and add your data</li>
+<li><a href="./pre-work/02-join-element.html">Step 2</a>: Join the ai-playground chat room</li>
 </ul>
-<p>If you would rather read before you do, the four <a href="./background/index.html">background pages</a> cover the security, literacy, transparency, and disclosure themes the day works through. They are optional.</p>
+<p>Further preparation, including a pre-course survey and the tool setup, follows closer to the workshop.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Tentative
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The schedule below is a working draft and still under active development.</p>
+</div>
+</div>
 <div class="cell" data-tbl-colwidths="[25,75]">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -388,19 +286,26 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning objectives</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Tentative
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These objectives are still under active development and will be refined before the workshop.</p>
+</div>
+</div>
 <p>By the end of this workshop, participants will be able to:</p>
 <ol type="1">
-<li><p><strong>Run an agent inside the Git workflow</strong>: give a coding agent a task, review what it produced as a pull request, and accept or reject the change.</p></li>
+<li><p><strong>Run an agent inside the Git workflow</strong>: give a coding agent a task, write its plan down as GitHub issues before any code is produced, then review what it produced as a pull request and accept or reject the change.</p></li>
 <li><p><strong>Judge the difference a plan makes</strong>: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.</p></li>
 <li><p><strong>Judge the difference documentation makes</strong>: compare what an agent does with a plain CSV against the same data published as a data package.</p></li>
-<li><p><strong>Locate your own practice</strong>: place your current way of working on the Reproducibility Levels framework, and name the next step from where you are.</p></li>
 <li><p><strong>Declare agent use</strong>: point to the record your workflow produced and say what it shows about which parts of the work an agent touched.</p></li>
 </ol>
-</section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d6d656e7473203e7d7d-what-this-workshop-contributes" class="level2">
-<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6d6d656e7473203e7d7d-what-this-workshop-contributes"><i class="fa-solid fa-comments" aria-label="comments"></i> What this workshop contributes</h2>
-<p>Research integrity bodies (WCRI, ISC, COPE, STM, and the Global Young Academy) are consulting on a global standard for reporting AI use in research. Round 2 of that consultation closes on 16 October 2026, which is after this workshop.</p>
-<p>We will spend the last block writing a combined response from what we did during the day. Global Health Engineering will archive it with a DOI and submit it. Your pre-work reading in Step 3 is what makes that block possible, and your name goes on the result.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks"><i class="fa-solid fa-sun" aria-label="sun"></i> Thanks</h2>

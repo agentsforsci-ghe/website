@@ -37,12 +37,18 @@ prerequisite:
   title: "Git for Scientists"
   date: "15 July 2026"
   site: "https://gitforsci-ghe.github.io/website/"
+  org: "https://github.com/gitforsci-ghe"
+  org-short: "gitforsci-ghe"
+
+# Chat room for the workshop.
+chat:
+  room: "#ai-playground:staffchat.ethz.ch"
+  room-link: "https://matrix.to/#/#ai-playground:staffchat.ethz.ch"
+  element-instructions: "https://ds4owd-002.github.io/website/content/assignments/md-01/am-01-2-element.html"
 
 # Due dates for the pre-course work.
 due:
-  survey: "Monday, 15 September 2026"
-  setup: "Monday, 22 September 2026"
-  reading: "Friday, 26 September 2026"
+  repo: "Monday, 14 September 2026"
 
 # Brand colour mirrored from _brand.yml so slide section headers stay in
 # sync with the website palette. Update both if the brand changes.

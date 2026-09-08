@@ -6,6 +6,8 @@ Four short pages covering the themes the workshop works through. They are [optio
 
 Read them if you would rather arrive with the arguments already in mind, or come back to them afterwards when you are deciding what to change about how you work.
 
+Everything cited across these four pages is collected on the [references page](../references.qmd), with a link to each source.
+
 | Page | The question it answers |
 |------|------|
 | [Security](security.qmd) | What must never go into the tool? |
