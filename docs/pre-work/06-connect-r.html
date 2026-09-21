@@ -324,7 +324,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p>What objects are in my R session?</p>
 </blockquote>
-<p>The agent asks permission to use an r-mcptools tool. Read the prompt and allow it. The answer names <code>x</code> and describes it as a data frame with 6 rows and 11 columns. On the day you do the same with the workshop data loaded.</p>
+<p>If Claude Code asks before using the r-mcptools tool, read the prompt and allow it; in auto mode it runs without asking. The answer names <code>x</code> and describes it as a data frame with 6 rows and 11 columns. On the day you do the same with the workshop data loaded.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -335,7 +335,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>With this in place the agent can run any R code in your live session, including code that removes objects or writes files. The permission prompt is what stands between it and that. Read the prompt each time rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.</p>
+<p>With this in place the agent can run any R code in your live session, including code that removes objects or writes files. In manual mode the permission prompt is what stands between it and that; in auto mode a built-in check takes that role, and it does not know your data. Read what the agent proposes, or what it did, rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.</p>
 </div>
 </div>
 

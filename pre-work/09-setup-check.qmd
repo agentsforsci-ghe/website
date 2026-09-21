@@ -42,7 +42,7 @@ Press **Shift+Tab** until the status line at the bottom says **plan mode**. In p
 
 > List five items from my Zotero library with their citation keys.
 
-Each time the agent wants to use a tool, a permission prompt appears with the tool's name. Read it, then allow it. The three answers show the agent reading the sample data, your R session, and your own library.
+When Claude Code asks before using a tool, read the prompt and allow it. In auto mode most of these steps run without asking, and each answer names the tool it used. The three answers show the agent reading the sample data, your R session, and your own library.
 
 ::: {.callout-note}
 ## If it proposes something you did not ask for
@@ -68,7 +68,7 @@ Open an issue on your setup repository with the title **Setup complete**, assign
 
 > Open an issue on this repository titled "Setup complete", assign it to {{< var github-handle >}}, and write in the body which of the pre-work steps 4 to 9 worked for me and which did not.
 
-It uses the GitHub CLI from step 5 for that. Read the prompt, allow it, and check on GitHub that the issue exists. Opening the issue by hand, as you did in step 1, is just as good.
+It uses the GitHub CLI from step 5 for that. Allow the prompt if one appears, and check on GitHub that the issue exists. Opening the issue by hand, as you did in step 1, is just as good.
 
 ::: {.callout-important}
 ## If anything failed

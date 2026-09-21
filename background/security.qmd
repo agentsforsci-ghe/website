@@ -34,7 +34,7 @@ The European Commission's living guidelines say the same thing from the research
 
 The agent has no special restraint built into it. It runs the same Git commands you do, which includes the destructive ones. Three things stand between it and your repository, and it is worth knowing which of them are real on the day:
 
-- **The permission prompt.** Claude Code asks before it runs a shell command. Reading that prompt rather than approving it by reflex is the guardrail you operate yourself, and it is the one that does the most work.
+- **The permission prompt, and the check that stands in for it.** In manual mode Claude Code asks before it runs a command or edits a file, and reading that prompt rather than approving it by reflex is the guardrail you operate yourself. On the day we work in auto mode, where a second model checks each action against a set of rules, blocks what looks destructive or would move data out of the repository, and lets everything else run without asking. That trades your attention for a filter that does not know your data or your intent. It still asks when a rule says so or when you have told the agent not to do something, and Shift+Tab switches back to manual mode at any time. The habit is the same in both modes: read what the agent proposes before it happens, or what it did right after.
 - **The diff.** Every change is visible before you accept it. An agent that edits ten files leaves ten diffs to read, and reading them is the practice this workshop asks of you.
 - **The pull request.** Changes reach `main` through a branch and a reviewed pull request. This is a working practice rather than an enforced setting, so it holds only as long as you follow it.
 

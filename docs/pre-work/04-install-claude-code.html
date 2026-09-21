@@ -368,7 +368,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="open-a-terminal-at-that-folder" class="level3">
 <h3 class="anchored" data-anchor-id="open-a-terminal-at-that-folder">Open a terminal at that folder</h3>
-<p>Claude Code works in the folder you start it from, so the terminal has to be opened inside the setup repository. Three ways, pick one.</p>
+<p>Claude Code works in the folder you start it from, so the terminal has to be opened inside the setup repository. I like to open a terminal separately from RStudio while working on a project, and keep the two windows next to each other, filling the screen. RStudio and other editors also have a terminal built in. Both ways are described below. Pick one and try out what works for you.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">macOS Finder</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Windows Explorer</a></li></ul>
 <div class="tab-content">
@@ -392,6 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>The first start asks you to pick a colour theme, then opens your browser to log in. Log in with the account from Part 1. If the browser does not open, press <code>c</code> to copy the login link and paste it into a browser yourself. GHE members: if asked which organization to use, pick <strong>Global Health Engineering</strong>.</p></li>
 <li><p>Back in the terminal, type <code>/status</code> and press Enter. It shows which account you are logged in with. Check that it is the one you intended.</p></li>
+<li><p>Look at the bottom line of the window, where Claude Code shows its permission mode. On the Team, Pro and Max plans it starts in <strong>auto mode</strong>: a built-in check approves ordinary actions on its own and asks you only when something looks risky. Pressing <strong>Shift+Tab</strong> switches to <strong>manual mode</strong>, where it asks before every command. Either is fine for the pre-work. On the workshop day we work in auto mode.</p></li>
 <li><p>Say hello. Type a greeting and press Enter. You get a greeting back. That is the whole test.</p></li>
 <li><p>Type <code>/exit</code> to leave.</p></li>
 </ol>

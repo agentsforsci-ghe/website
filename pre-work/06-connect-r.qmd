@@ -78,10 +78,10 @@ Check the **Environment** pane at the top right of RStudio: `x` is listed there 
 
 > What objects are in my R session?
 
-The agent asks permission to use an r-mcptools tool. Read the prompt and allow it. The answer names `x` and describes it as a data frame with 6 rows and 11 columns. On the day you do the same with the workshop data loaded.
+If Claude Code asks before using the r-mcptools tool, read the prompt and allow it; in auto mode it runs without asking. The answer names `x` and describes it as a data frame with 6 rows and 11 columns. On the day you do the same with the workshop data loaded.
 
 ::: {.callout-important}
 ## What this connection means
 
-With this in place the agent can run any R code in your live session, including code that removes objects or writes files. The permission prompt is what stands between it and that. Read the prompt each time rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.
+With this in place the agent can run any R code in your live session, including code that removes objects or writes files. In manual mode the permission prompt is what stands between it and that; in auto mode a built-in check takes that role, and it does not know your data. Read what the agent proposes, or what it did, rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.
 :::
