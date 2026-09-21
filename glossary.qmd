@@ -9,7 +9,7 @@ Each entry has two layers. The main text defines the term in plain, everyday wor
 
 The page has two halves. **[Git and GitHub](#git-and-github)** carries over the terms from the first workshop. **[Working with agents](#working-with-agents)** covers the vocabulary this workshop adds.
 
-If you are unsure which *tool* a term belongs to, see [Which tool does what?](platform-guide.qmd)
+If you are unsure which *tool* a term belongs to, a short guide to which tool does what will follow on this site.
 
 The Git and GitHub definitions draw on [Glosario](https://glosario.carpentries.org/) by The Carpentries, and the agent terms on the [Dictionary of AI Coding](https://github.com/mattpocock/dictionary-of-ai-coding). Full details are in [References and attribution](#references-and-attribution) at the foot of the page.
 

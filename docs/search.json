@@ -555,7 +555,7 @@
     "href": "glossary.html",
     "title": " Glossary",
     "section": "",
-    "text": "The terms you meet during the pre-work and the workshop.\nEach entry has two layers. The main text defines the term in plain, everyday words, so you can read it once and understand it. The quieter block underneath gives the more technical wording, which is the vocabulary you will meet in documentation and in other courses.\nThe page has two halves. Git and GitHub carries over the terms from the first workshop. Working with agents covers the vocabulary this workshop adds.\nIf you are unsure which tool a term belongs to, see Which tool does what?\nThe Git and GitHub definitions draw on Glosario by The Carpentries, and the agent terms on the Dictionary of AI Coding. Full details are in References and attribution at the foot of the page.",
+    "text": "The terms you meet during the pre-work and the workshop.\nEach entry has two layers. The main text defines the term in plain, everyday words, so you can read it once and understand it. The quieter block underneath gives the more technical wording, which is the vocabulary you will meet in documentation and in other courses.\nThe page has two halves. Git and GitHub carries over the terms from the first workshop. Working with agents covers the vocabulary this workshop adds.\nIf you are unsure which tool a term belongs to, a short guide to which tool does what will follow on this site.\nThe Git and GitHub definitions draw on Glosario by The Carpentries, and the agent terms on the Dictionary of AI Coding. Full details are in References and attribution at the foot of the page.",
     "crumbs": [
       "Background",
       "Glossary"
