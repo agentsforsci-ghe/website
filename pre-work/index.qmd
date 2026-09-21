@@ -2,25 +2,34 @@
 title: "{{< fa list-check >}} Before the workshop"
 ---
 
-Two tasks for now. Both are due by [**{{< var due.repo >}}**]{.highlight-yellow}.
+Steps 1 and 2 were due by **{{< var due.repo >}}**. Steps 4 to 9 set up the tools and are due by [**{{< var due.setup >}}**]{.highlight-yellow}. Step 3, a short survey, follows later and needs nothing from you yet.
 
-| Step | What | Due |
-|------|------|-----|
-| [1](01-create-repository.qmd) | Create your repository and add your data | {{< var due.repo >}} |
-| [2](02-join-element.qmd) | Join the ai-playground chat room | {{< var due.repo >}} |
+| Step | What | Time | Due |
+|------|------|------|-----|
+| [1](01-create-repository.qmd) | Create your repository and add your data | 30 min | {{< var due.repo >}} |
+| [2](02-join-element.qmd) | Join the ai-playground chat room | 5 min | {{< var due.repo >}} |
+| 3 | Pre-course survey (to follow, nothing to do yet) | 5 min | later |
+| [4](04-install-claude-code.qmd) | Install Claude Code, clone your setup repository, log in | 25 min | {{< var due.setup >}} |
+| [5](05-github-cli.qmd) | Connect GitHub from the terminal | 10 min | {{< var due.setup >}} |
+| [6](06-connect-r.qmd) | Connect your R session | 10 min | {{< var due.setup >}} |
+| [7](07-zotero.qmd) | Set up Zotero | 30 to 45 min | {{< var due.setup >}} |
+| [8](08-zotero-mcp.qmd) | Connect Zotero | 10 min | {{< var due.setup >}} |
+| [9](09-setup-check.qmd) | Test your setup on the prepared repository and report done | 20 min | {{< var due.setup >}} |
 
-: {tbl-colwidths="[10,60,30]"}
+: {tbl-colwidths="[8,52,15,25]"}
+
+Do the steps in order. Step 4 ends with a small repository I prepared for you, with public data in it, and steps 6, 8 and 9 use it for their tests. Your own repository from step 1 stays out of Claude Code until the day. Step 8 needs Zotero from step 7, and step 9 checks everything at once.
 
 ::: {.callout-note}
-## More to come
+## What I assume you use
 
-Further preparation, including a pre-course survey and the tool setup, will be added here closer to the workshop. You will hear from me when it is ready. Start with these two, since the repository is what everything else builds on.
+The instructions and the day are written for RStudio, R and Quarto, as taught in the first workshop. Other editors (Positron, VS Code) and other languages (Python, JavaScript, Stata do files) are welcome, and the agent works with all of them. What I cannot promise is that the setup works the same way; step 6, the connection to a running R session, is specific to R and RStudio. If you work differently, do the steps as far as they apply and tell me in the chat room where they stop.
 :::
 
 ::: {.callout-tip}
 ## How long will this take?
 
-Around half an hour for both, assuming you already know which dataset you want to use and your GitHub authentication still works from the first workshop. Picking the dataset is usually the part that takes the thinking.
+Around two hours in total, and it does not have to happen in one sitting. Step 7 is the long one. If you already use Zotero, it shrinks to checking a few settings.
 :::
 
 ::: {.callout-important}

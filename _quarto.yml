@@ -67,6 +67,18 @@ website:
           text: "Step 1: Your repository"
         - href: pre-work/02-join-element.qmd
           text: "Step 2: Join the chat"
+        - href: pre-work/04-install-claude-code.qmd
+          text: "Step 4: Install Claude Code"
+        - href: pre-work/05-github-cli.qmd
+          text: "Step 5: Connect GitHub"
+        - href: pre-work/06-connect-r.qmd
+          text: "Step 6: Connect R"
+        - href: pre-work/07-zotero.qmd
+          text: "Step 7: Set up Zotero"
+        - href: pre-work/08-zotero-mcp.qmd
+          text: "Step 8: Connect Zotero"
+        - href: pre-work/09-setup-check.qmd
+          text: "Step 9: Test your setup"
 
 bibliography: references.bib
 csl: https://www.zotero.org/styles/apa

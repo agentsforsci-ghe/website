@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title> Step 1: Create your repository and add your data – Agents for Scientists (Autumn 2026)</title>
+<title> Step 4: Install Claude Code and log in – Agents for Scientists (Autumn 2026)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -36,7 +71,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pre-work/02-join-element.html" rel="next">
+<link href="../pre-work/05-github-cli.html" rel="next">
+<link href="../pre-work/02-join-element.html" rel="prev">
 <link href="../images/ghe-square-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -132,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pre-work/01-create-repository.html">Step 1: Your repository</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pre-work/04-install-claude-code.html">Step 4: Install Claude Code</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -159,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/01-create-repository.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pre-work/01-create-repository.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 1: Your repository</span></a>
   </div>
 </li>
@@ -171,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/04-install-claude-code.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/04-install-claude-code.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Step 4: Install Claude Code</span></a>
   </div>
 </li>
@@ -215,21 +251,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#accept-the-invitation-to-the-organization" id="toc-accept-the-invitation-to-the-organization" class="nav-link active" data-scroll-target="#accept-the-invitation-to-the-organization">Accept the invitation to the organization</a></li>
-  <li><a href="#create-the-repository" id="toc-create-the-repository" class="nav-link" data-scroll-target="#create-the-repository">Create the repository</a></li>
-  <li><a href="#clone-it" id="toc-clone-it" class="nav-link" data-scroll-target="#clone-it">Clone it</a></li>
-  <li><a href="#add-a-folder-called-data" id="toc-add-a-folder-called-data" class="nav-link" data-scroll-target="#add-a-folder-called-data">Add a folder called <code>data</code></a></li>
-  <li><a href="#commit-and-push" id="toc-commit-and-push" class="nav-link" data-scroll-target="#commit-and-push">Commit and push</a></li>
-  <li><a href="#open-an-issue" id="toc-open-an-issue" class="nav-link" data-scroll-target="#open-an-issue">Open an issue</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account"><i class="fa-solid fa-user" aria-label="user"></i> Part 1: Your Claude account</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-2-install" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-2-install" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-2-install"><i class="fa-solid fa-download" aria-label="download"></i> Part 2: Install</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612072696768742d746f2d627261636b6574203e7d7d-part-3-clone-your-setup-repository-and-log-in" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612072696768742d746f2d627261636b6574203e7d7d-part-3-clone-your-setup-repository-and-log-in" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612072696768742d746f2d627261636b6574203e7d7d-part-3-clone-your-setup-repository-and-log-in"><i class="fa-solid fa-right-to-bracket" aria-label="right-to-bracket"></i> Part 3: Clone your setup repository and log in</a>
+  <ul class="collapse">
+  <li><a href="#clone-your-setup-repository" id="toc-clone-your-setup-repository" class="nav-link" data-scroll-target="#clone-your-setup-repository">Clone your setup repository</a></li>
+  <li><a href="#open-a-terminal-at-that-folder" id="toc-open-a-terminal-at-that-folder" class="nav-link" data-scroll-target="#open-a-terminal-at-that-folder">Open a terminal at that folder</a></li>
+  <li><a href="#log-in" id="toc-log-in" class="nav-link" data-scroll-target="#log-in">Log in</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/01-create-repository.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/04-install-claude-code.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><i class="fa-solid fa-folder-plus" aria-label="folder-plus"></i> Step 1: Create your repository and add your data</h1>
+<h1 class="title"><i class="fa-solid fa-terminal" aria-label="terminal"></i> Step 4: Install Claude Code and log in</h1>
 </div>
 
 
@@ -246,68 +284,142 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><span class="highlight-yellow">Due by <strong>Monday, 14 September 2026</strong></span></p>
-<p>Everything here uses the Git and GitHub workflow from <a href="https://gitforsci-ghe.github.io/website/">Git for Scientists</a>. If a step is unfamiliar, the instructions from that workshop still apply. If you are would like support in completing a step, please reach out to the course instructor.</p>
-<section id="accept-the-invitation-to-the-organization" class="level2">
-<h2 class="anchored" data-anchor-id="accept-the-invitation-to-the-organization">Accept the invitation to the organization</h2>
-<p>You have been invited to the <a href="https://github.com/agentsforsci-ghe/">agentsforsci-ghe organization</a> on GitHub. Accept the invitation before you start working on the tasks below.</p>
-<p>The invitation arrived by email. You can also accept it by going to <a href="https://github.com/agentsforsci-ghe/">https://github.com/agentsforsci-ghe/</a> while signed in to GitHub, where a banner offers you the invitation.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<p><span class="highlight-yellow">Due by <strong>Friday, 25 September 2026</strong></span></p>
+<p>Claude Code is the coding agent we use on the day. It runs in a terminal, works inside the folder you start it in, reads and edits files there, and runs commands. It asks before it runs a command or changes a file, and that permission prompt is the first thing to learn to read.</p>
+<p>This step has three parts: get an account, install the program, and log in once from a small repository I prepared for you.</p>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account"><i class="fa-solid fa-user" aria-label="user"></i> Part 1: Your Claude account</h2>
+<p>Claude Code is not part of the free Claude plan. You need one of the two routes below.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">GHE members</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Everyone else</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>You will receive an email invitation to the <strong>Global Health Engineering</strong> organization on the Claude Team plan, sent to your ETH email address. Accept it. If you do not have a Claude account under that address yet, the invitation walks you through creating one.</p>
+<p>Use your ETH address, not a personal one. If you already use Claude with a personal address, the Team seat is a separate account and you log into Claude Code with the ETH one.</p>
+<p>The invitation expires after three weeks. If none has arrived by the time you reach this step, tell me in the chat room.</p>
+<p>On the Team plan, what you type and what the agent reads is not used to train models, and the group, not the vendor, controls the data. That is the reason for the plan.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Create your own account at <a href="https://claude.ai">claude.ai</a> and subscribe to a paid plan for the month of the workshop. The Pro plan is enough. I suggest the Max plan for one month, since the day involves a lot of agent work and the Pro limits can run out in an afternoon. Cancel afterwards if you do not want to keep it.</p>
+<p>Then do one thing before anything else: open <a href="https://claude.ai/settings/data-privacy-controls">your privacy settings</a> and turn <strong>off</strong> the setting that allows your chats and coding sessions to be used for model training. On the Free, Pro and Max plans that setting is on unless you turn it off, and it covers Claude Code sessions. With the setting off, your data is kept for 30 days instead of five years and is not used for training.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-2-install" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-2-install"><i class="fa-solid fa-download" aria-label="download"></i> Part 2: Install</h2>
+<p>The installer needs nothing else on your computer. Open a terminal and paste one line.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">macOS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Windows</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Open <strong>Terminal</strong> (in Applications, Utilities, or search for it with Spotlight) and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-fsSL</span> https://claude.ai/install.sh <span class="kw">|</span> <span class="fu">bash</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Open <strong>PowerShell</strong> (search for it in the Start menu) and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">irm</span> https<span class="op">://</span>claude<span class="op">.</span><span class="fu">ai</span><span class="op">/</span>install<span class="op">.</span><span class="fu">ps1</span> <span class="op">|</span> <span class="fu">iex</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Claude Code uses Git for Windows, which you installed for the first workshop, to run commands. If you skipped that step then, install it from <a href="https://git-scm.com/downloads/win">git-scm.com</a> first.</p>
+</div>
+</div>
+</div>
+<p>Close the terminal and open a new one, so it picks up the new program. Then check the install:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> <span class="at">--version</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> doctor</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The first prints a version number. The second checks the installation and prints what it found. Both should finish without an error.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Check the right inbox
+<span class="screen-reader-only">Tip</span>Which terminal
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>GitHub sent the invitation to the email address you used to register your GitHub account. That is not necessarily your institutional email address. If nothing has arrived, check the other address you might have signed up with, and look in the spam folder.</p>
-<p>You can see which address GitHub has for you under <a href="https://github.com/settings/emails">Settings, Emails</a>.</p>
+<p>Any terminal works, including the <strong>Terminal</strong> tab in RStudio (Tools, Terminal, New Terminal). On the Mac, <a href="https://iterm2.com/">iTerm</a> is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in PowerShell, and use whichever terminal you like afterwards.</p>
 </div>
 </div>
 </section>
-<section id="create-the-repository" class="level2">
-<h2 class="anchored" data-anchor-id="create-the-repository">Create the repository</h2>
-<p>Once you are a member, create a new repository in the <a href="https://github.com/agentsforsci-ghe/">agentsforsci-ghe organization</a>.</p>
-<p>The name should broadly reflect what you work with, following three rules:</p>
-<ul>
-<li>lowercase letters only</li>
-<li>at most two words</li>
-<li>words separated by a dash</li>
-</ul>
-<p>For example: <code>solidwaste-kampala</code>.</p>
-<p>Two settings to choose on the same screen:</p>
-<ul>
-<li><strong>Visibility:</strong> public if you can, private if you cannot</li>
-<li><strong>Initialise this repository with:</strong> tick <strong>Add a README file</strong></li>
-</ul>
-<p><strong>Visibility.</strong> Choose public if the data allows it. The aim is for every repository to be public by the end, so the work and its outcomes can be shown to others. If you are not ready to make yours public yet, start private and switch it later under Settings. What you must not do is treat private as permission to commit something sensitive: the rule below applies either way.</p>
-<p><strong>README.</strong> Ticking <strong>Add a README file</strong> means GitHub creates the repository with a file already in it, so you can clone it straight away. Without it you get an empty repository and a set of setup commands instead.</p>
-</section>
-<section id="clone-it" class="level2">
-<h2 class="anchored" data-anchor-id="clone-it">Clone it</h2>
-<p>Clone the repository to your computer, the same way you did in the first workshop.</p>
-<p>If you would like to walk through it again, the instructions are still online: <a href="https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html">cloning a repository</a>.</p>
-</section>
-<section id="add-a-folder-called-data" class="level2">
-<h2 class="anchored" data-anchor-id="add-a-folder-called-data">Add a folder called <code>data</code></h2>
-<p>Inside your cloned repository, create a folder named <code>data</code>, and put the dataset you plan to work with into it.</p>
-<p><strong>What to bring.</strong> Something real from your own research, small enough to look at in one sitting. Several files are okay with a few hundred to a few thousand rows and columns you can explain. It does not need to be tidy or finished. Messy real data could be very useful here. Any file format is okay: CSV or XLSX, also PDF and DOCX, or JSON, etc.</p>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612072696768742d746f2d627261636b6574203e7d7d-part-3-clone-your-setup-repository-and-log-in" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612072696768742d746f2d627261636b6574203e7d7d-part-3-clone-your-setup-repository-and-log-in"><i class="fa-solid fa-right-to-bracket" aria-label="right-to-bracket"></i> Part 3: Clone your setup repository and log in</h2>
+<section id="clone-your-setup-repository" class="level3">
+<h3 class="anchored" data-anchor-id="clone-your-setup-repository">Clone your setup repository</h3>
+<p>I have created a repository for you in the organization, named <code>setup-USERNAME</code> with your GitHub username in place of USERNAME. It holds a small public dataset and one R script, and it is where every test before the day runs.</p>
+<ol type="1">
+<li>Open the organization page, <a href="https://github.com/agentsforsci-ghe/">https://github.com/agentsforsci-ghe/</a>, and find <code>setup-USERNAME</code> in the list of repositories. Use the search field on that page if the list is long.</li>
+<li>Open it, click the green <strong>Code</strong> button, and copy the HTTPS URL.</li>
+<li>In RStudio, choose <strong>File, New Project, Version Control, Git</strong>, paste the URL, pick where the folder should live, and click <strong>Create Project</strong>. This is the same clone you did in the first workshop; the <a href="https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html">instructions from then</a> still apply, screenshots included.</li>
+</ol>
+<p>RStudio opens the new project. The Files pane at the bottom right shows <code>01-read-data.R</code>, a <code>data</code> folder, and a README.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>This must be non-sensitive data, with no personal data in it
+<span class="screen-reader-only">Important</span>No repository with your name
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent, and a later visibility change, a new collaborator, or a push to the wrong remote can expose it.</p>
-<p>Do not commit names, recruitment or participant data, health data, signed consent, or anything that identifies a person in combination with other columns.</p>
-<p>This matters more with an agent than without one: a coding agent reads whole directories and sends file contents to a model, so protected data in the folder can leave your machine without you deciding to send it.</p>
-<p>If you are unsure which category your data falls into, treat it as protected and ask before committing anything.</p>
+<p>Tell me in <a href="https://matrix.to/#/#ai-playground:staffchat.ethz.ch">the chat room</a>. Creating it takes me a minute.</p>
+</div>
+</div>
+</section>
+<section id="open-a-terminal-at-that-folder" class="level3">
+<h3 class="anchored" data-anchor-id="open-a-terminal-at-that-folder">Open a terminal at that folder</h3>
+<p>Claude Code works in the folder you start it from, so the terminal has to be opened inside the setup repository. Three ways, pick one.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">macOS Finder</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Windows Explorer</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>With the project open, choose <strong>Tools, Terminal, New Terminal</strong>. A Terminal tab appears next to the Console, already inside the project folder. This works the same on macOS and Windows.</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>Open Finder and go to the folder you just created, for example <code>Documents/setup-USERNAME</code>. Right-click the folder and choose <strong>New Terminal at Folder</strong>. A Terminal window opens inside it. If the entry is missing from the menu, look under <strong>Services</strong> in the same menu, or switch it on once under System Settings, Keyboard, Keyboard Shortcuts, Services, Files and Folders.</p>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>Open File Explorer and open the folder you just created. Right-click an empty area inside the folder and choose <strong>Open in Terminal</strong>. On Windows 10, hold Shift while right-clicking and choose <strong>Open PowerShell window here</strong>. <strong>Open Git Bash here</strong>, which Git for Windows added to the same menu, works as well.</p>
+</div>
+</div>
+</div>
+<p>Whichever way you chose, the prompt in the terminal ends with the folder name, <code>setup-USERNAME</code>. If it does not, you are in the wrong folder.</p>
+</section>
+<section id="log-in" class="level3">
+<h3 class="anchored" data-anchor-id="log-in">Log in</h3>
+<ol type="1">
+<li><p>In that terminal, start Claude Code:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>The first start asks you to pick a colour theme, then opens your browser to log in. Log in with the account from Part 1. If the browser does not open, press <code>c</code> to copy the login link and paste it into a browser yourself. GHE members: if asked which organization to use, pick <strong>Global Health Engineering</strong>.</p></li>
+<li><p>Back in the terminal, type <code>/status</code> and press Enter. It shows which account you are logged in with. Check that it is the one you intended.</p></li>
+<li><p>Say hello. Type a greeting and press Enter. You get a greeting back. That is the whole test.</p></li>
+<li><p>Type <code>/exit</code> to leave.</p></li>
+</ol>
+<p>Do not ask it to do anything else yet. Step 9 is where you give it work, with the safety rails in place.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Why a setup repository and not your own
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The agent reads whole folders and sends what it finds to a model. Before the day, it does not see the data you committed in step 1. Every test in steps 4 to 9 runs in <code>setup-USERNAME</code>, which holds public data prepared for exactly this. We set the safety rails for your own repository together in the room.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>If the login fails on the ETH network
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Claude Code needs to reach a handful of addresses (claude.ai, api.anthropic.com, platform.claude.com and downloads.claude.ai). If the login page never opens or the terminal reports a connection error while you are on eduroam or the ETH network, try again on a phone hotspot and tell me in the chat room which network failed.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -316,42 +428,16 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>If you cannot identify a dataset
+<span class="screen-reader-only">Note</span>If the install fails
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Get in touch with me directly and we will sort something out before the workshop. Do not skip the step and turn up without data.</p>
-</div>
-</div>
-</section>
-<section id="commit-and-push" class="level2">
-<h2 class="anchored" data-anchor-id="commit-and-push">Commit and push</h2>
-<p>Stage the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.</p>
-</section>
-<section id="open-an-issue" class="level2">
-<h2 class="anchored" data-anchor-id="open-an-issue">Open an issue</h2>
-<p>Once the data is committed and pushed, open an issue on your own repository:</p>
-<ul>
-<li><strong>Title:</strong> <code>Data added</code></li>
-<li><strong>Body:</strong> one or two sentences saying what the data is and where it came from</li>
-<li><strong>Assignee:</strong> <code>larnsce</code></li>
-</ul>
-<p>That issue is how I know you are ready, and the description is the beginning of the documentation question we work on during the day.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>All of this by Monday, 14 September 2026
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If anything blocks you, open the issue anyway, describe what went wrong, and assign it to me. A problem found now is half an hour of work; the same problem found on the morning of the workshop costs you the session.</p>
+<p>Claude Code also exists as a website, <a href="https://claude.ai/code">claude.ai/code</a>, that works from your GitHub repository without anything on your laptop. It is the fallback for the day if the local install cannot be fixed. Tell me before the workshop so we can set it up together.</p>
 </div>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -764,10 +850,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../pre-work/02-join-element.html" class="pagination-link" aria-label="Step 2: Join the chat">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 2: Join the chat</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pre-work/02-join-element.html" class="pagination-link" aria-label="Step 2: Join the chat">
-        <span class="nav-page-text">Step 2: Join the chat</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pre-work/05-github-cli.html" class="pagination-link" aria-label="Step 5: Connect GitHub">
+        <span class="nav-page-text">Step 5: Connect GitHub</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -779,7 +868,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/01-create-repository.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/04-install-claude-code.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

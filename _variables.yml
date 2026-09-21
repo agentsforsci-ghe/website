@@ -49,6 +49,17 @@ chat:
 # Due dates for the pre-course work.
 due:
   repo: "Monday, 14 September 2026"
+  setup: "Friday, 25 September 2026"
+
+# Claude account routes shown on the install page.
+claude:
+  team-org: "Global Health Engineering"
+  privacy-settings: "https://claude.ai/settings/data-privacy-controls"
+
+# The commit and open-pr skills used in the workshop.
+skills:
+  repo: "https://github.com/Global-Health-Engineering/skills"
+  repo-short: "Global-Health-Engineering/skills"
 
 # Brand colour mirrored from _brand.yml so slide section headers stay in
 # sync with the website palette. Update both if the brand changes.

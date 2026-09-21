@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title> Step 1: Create your repository and add your data – Agents for Scientists (Autumn 2026)</title>
+<title> Step 5: Connect GitHub – Agents for Scientists (Autumn 2026)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -36,7 +71,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pre-work/02-join-element.html" rel="next">
+<link href="../pre-work/06-connect-r.html" rel="next">
+<link href="../pre-work/04-install-claude-code.html" rel="prev">
 <link href="../images/ghe-square-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -132,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pre-work/01-create-repository.html">Step 1: Your repository</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pre-work/05-github-cli.html">Step 5: Connect GitHub</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -159,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/01-create-repository.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pre-work/01-create-repository.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 1: Your repository</span></a>
   </div>
 </li>
@@ -177,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/05-github-cli.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/05-github-cli.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Step 5: Connect GitHub</span></a>
   </div>
 </li>
@@ -215,21 +251,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#accept-the-invitation-to-the-organization" id="toc-accept-the-invitation-to-the-organization" class="nav-link active" data-scroll-target="#accept-the-invitation-to-the-organization">Accept the invitation to the organization</a></li>
-  <li><a href="#create-the-repository" id="toc-create-the-repository" class="nav-link" data-scroll-target="#create-the-repository">Create the repository</a></li>
-  <li><a href="#clone-it" id="toc-clone-it" class="nav-link" data-scroll-target="#clone-it">Clone it</a></li>
-  <li><a href="#add-a-folder-called-data" id="toc-add-a-folder-called-data" class="nav-link" data-scroll-target="#add-a-folder-called-data">Add a folder called <code>data</code></a></li>
-  <li><a href="#commit-and-push" id="toc-commit-and-push" class="nav-link" data-scroll-target="#commit-and-push">Commit and push</a></li>
-  <li><a href="#open-an-issue" id="toc-open-an-issue" class="nav-link" data-scroll-target="#open-an-issue">Open an issue</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-part-1-the-github-cli" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-part-1-the-github-cli" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-part-1-the-github-cli"><i class="fa-solid fa-key" aria-label="key"></i> Part 1: The GitHub CLI</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-part-2-a-dev-branch" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-part-2-a-dev-branch" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-part-2-a-dev-branch"><i class="fa-solid fa-code-branch" aria-label="code-branch"></i> Part 2: A <code>dev</code> branch</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/01-create-repository.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/05-github-cli.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><i class="fa-solid fa-folder-plus" aria-label="folder-plus"></i> Step 1: Create your repository and add your data</h1>
+<h1 class="title"><i class="fa-brands fa-github" aria-label="github"></i> Step 5: Connect GitHub</h1>
 </div>
 
 
@@ -246,68 +278,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><span class="highlight-yellow">Due by <strong>Monday, 14 September 2026</strong></span></p>
-<p>Everything here uses the Git and GitHub workflow from <a href="https://gitforsci-ghe.github.io/website/">Git for Scientists</a>. If a step is unfamiliar, the instructions from that workshop still apply. If you are would like support in completing a step, please reach out to the course instructor.</p>
-<section id="accept-the-invitation-to-the-organization" class="level2">
-<h2 class="anchored" data-anchor-id="accept-the-invitation-to-the-organization">Accept the invitation to the organization</h2>
-<p>You have been invited to the <a href="https://github.com/agentsforsci-ghe/">agentsforsci-ghe organization</a> on GitHub. Accept the invitation before you start working on the tasks below.</p>
-<p>The invitation arrived by email. You can also accept it by going to <a href="https://github.com/agentsforsci-ghe/">https://github.com/agentsforsci-ghe/</a> while signed in to GitHub, where a banner offers you the invitation.</p>
+<p><span class="highlight-yellow">Due by <strong>Friday, 25 September 2026</strong></span></p>
+<p>On the day, the agent opens issues and pull requests on your repository for you. For that it needs to talk to GitHub from the terminal, which the GitHub CLI provides. Two parts: install the GitHub CLI and log in, then create a <code>dev</code> branch.</p>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-part-1-the-github-cli" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-part-1-the-github-cli"><i class="fa-solid fa-key" aria-label="key"></i> Part 1: The GitHub CLI</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">macOS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Windows</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The GitHub CLI comes through Homebrew, the package manager for the Mac. If you do not have Homebrew yet, go to <a href="https://brew.sh/">brew.sh</a>, copy the install line shown at the top of that page, paste it into Terminal, press Enter, and follow the prompts. It asks for your Mac password and takes a few minutes. Then, in the same Terminal window, install the GitHub CLI:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install gh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Open PowerShell (as in step 4), paste this line, and press Enter:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>winget install <span class="op">--</span>id GitHub<span class="op">.</span><span class="fu">cli</span> <span class="op">--</span>source winget</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Close the terminal and open a new window afterwards, so the new program is found.</p>
+</div>
+</div>
+</div>
+<p>Now connect the CLI to your GitHub account. In the terminal, run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gh</span> auth login</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>It asks a few questions. Answer <strong>GitHub.com</strong>, <strong>HTTPS</strong>, <strong>Yes</strong> to authenticating Git with your GitHub credentials, and <strong>Login with a web browser</strong>. Copy the one-time code it shows, press Enter, paste the code into the browser page that opens, and authorize.</p>
+<p>Check it worked:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gh</span> auth status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then open a terminal at your setup repository (as in step 4) and run one command that only works when GitHub is reachable:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gh</span> repo view</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>It prints the name and README of <code>setup-USERNAME</code>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Check the right inbox
+<span class="screen-reader-only">Note</span>The token from the first workshop
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>GitHub sent the invitation to the email address you used to register your GitHub account. That is not necessarily your institutional email address. If nothing has arrived, check the other address you might have signed up with, and look in the spam folder.</p>
-<p>You can see which address GitHub has for you under <a href="https://github.com/settings/emails">Settings, Emails</a>.</p>
+<p>The personal access token you created for the first workshop keeps working for RStudio. The GitHub CLI has its own login, which is what you just did. The two do not interfere.</p>
 </div>
 </div>
 </section>
-<section id="create-the-repository" class="level2">
-<h2 class="anchored" data-anchor-id="create-the-repository">Create the repository</h2>
-<p>Once you are a member, create a new repository in the <a href="https://github.com/agentsforsci-ghe/">agentsforsci-ghe organization</a>.</p>
-<p>The name should broadly reflect what you work with, following three rules:</p>
-<ul>
-<li>lowercase letters only</li>
-<li>at most two words</li>
-<li>words separated by a dash</li>
-</ul>
-<p>For example: <code>solidwaste-kampala</code>.</p>
-<p>Two settings to choose on the same screen:</p>
-<ul>
-<li><strong>Visibility:</strong> public if you can, private if you cannot</li>
-<li><strong>Initialise this repository with:</strong> tick <strong>Add a README file</strong></li>
-</ul>
-<p><strong>Visibility.</strong> Choose public if the data allows it. The aim is for every repository to be public by the end, so the work and its outcomes can be shown to others. If you are not ready to make yours public yet, start private and switch it later under Settings. What you must not do is treat private as permission to commit something sensitive: the rule below applies either way.</p>
-<p><strong>README.</strong> Ticking <strong>Add a README file</strong> means GitHub creates the repository with a file already in it, so you can clone it straight away. Without it you get an empty repository and a set of setup commands instead.</p>
-</section>
-<section id="clone-it" class="level2">
-<h2 class="anchored" data-anchor-id="clone-it">Clone it</h2>
-<p>Clone the repository to your computer, the same way you did in the first workshop.</p>
-<p>If you would like to walk through it again, the instructions are still online: <a href="https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html">cloning a repository</a>.</p>
-</section>
-<section id="add-a-folder-called-data" class="level2">
-<h2 class="anchored" data-anchor-id="add-a-folder-called-data">Add a folder called <code>data</code></h2>
-<p>Inside your cloned repository, create a folder named <code>data</code>, and put the dataset you plan to work with into it.</p>
-<p><strong>What to bring.</strong> Something real from your own research, small enough to look at in one sitting. Several files are okay with a few hundred to a few thousand rows and columns you can explain. It does not need to be tidy or finished. Messy real data could be very useful here. Any file format is okay: CSV or XLSX, also PDF and DOCX, or JSON, etc.</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-part-2-a-dev-branch" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-part-2-a-dev-branch"><i class="fa-solid fa-code-branch" aria-label="code-branch"></i> Part 2: A <code>dev</code> branch</h2>
+<p>The working pattern for the day is that changes land on a branch called <code>dev</code>, get reviewed in a pull request, and reach <code>main</code> through the merge. Create the branch now so it is there when the agent starts working.</p>
+<p>Create it on your own repository from step 1, the one with your data, which is where the day’s work happens. Open that project in RStudio with <strong>File, Open Project</strong>.</p>
+<p>In the Git pane, click the <strong>New Branch</strong> button. Name it <code>dev</code>, leave <strong>Sync branch with remote</strong> ticked, and click <strong>Create</strong>. RStudio creates the branch, switches to it, and pushes it to GitHub.</p>
+<p>Check on GitHub: the branch menu on your repository page now lists <code>main</code> and <code>dev</code>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>This must be non-sensitive data, with no personal data in it
+<span class="screen-reader-only">Note</span>Not using RStudio
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent, and a later visibility change, a new collaborator, or a push to the wrong remote can expose it.</p>
-<p>Do not commit names, recruitment or participant data, health data, signed consent, or anything that identifies a person in combination with other columns.</p>
-<p>This matters more with an agent than without one: a coding agent reads whole directories and sends file contents to a model, so protected data in the folder can leave your machine without you deciding to send it.</p>
-<p>If you are unsure which category your data falls into, treat it as protected and ask before committing anything.</p>
+<p>Create a branch called <code>dev</code> and push it with whatever tool you prefer. The name is what matters.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -316,38 +343,11 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>If you cannot identify a dataset
+<span class="screen-reader-only">Note</span>Announced for the day: two GHE skills
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Get in touch with me directly and we will sort something out before the workshop. Do not skip the step and turn up without data.</p>
-</div>
-</div>
-</section>
-<section id="commit-and-push" class="level2">
-<h2 class="anchored" data-anchor-id="commit-and-push">Commit and push</h2>
-<p>Stage the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.</p>
-</section>
-<section id="open-an-issue" class="level2">
-<h2 class="anchored" data-anchor-id="open-an-issue">Open an issue</h2>
-<p>Once the data is committed and pushed, open an issue on your own repository:</p>
-<ul>
-<li><strong>Title:</strong> <code>Data added</code></li>
-<li><strong>Body:</strong> one or two sentences saying what the data is and where it came from</li>
-<li><strong>Assignee:</strong> <code>larnsce</code></li>
-</ul>
-<p>That issue is how I know you are ready, and the description is the beginning of the documentation question we work on during the day.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>All of this by Monday, 14 September 2026
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If anything blocks you, open the issue anyway, describe what went wrong, and assign it to me. A problem found now is half an hour of work; the same problem found on the morning of the workshop costs you the session.</p>
+<p>During the workshop we install two small skills written at Global Health Engineering, one that turns the agent’s changes into a commit with a record of what the agent did, and one that opens a pull request from <code>dev</code> into <code>main</code>. They are installed in Claude Code with two commands, take a minute, and can be removed again after the day. Nothing to do now. If you are curious, they live at <a href="https://github.com/Global-Health-Engineering/skills">Global-Health-Engineering/skills</a>.</p>
 </div>
 </div>
 
@@ -764,10 +764,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../pre-work/04-install-claude-code.html" class="pagination-link" aria-label="Step 4: Install Claude Code">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 4: Install Claude Code</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pre-work/02-join-element.html" class="pagination-link" aria-label="Step 2: Join the chat">
-        <span class="nav-page-text">Step 2: Join the chat</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pre-work/06-connect-r.html" class="pagination-link" aria-label="Step 6: Connect R">
+        <span class="nav-page-text">Step 6: Connect R</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -779,7 +782,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/01-create-repository.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/05-github-cli.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

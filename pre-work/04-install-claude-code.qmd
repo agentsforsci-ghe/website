@@ -1,0 +1,150 @@
+---
+title: "{{< fa terminal >}} Step 4: Install Claude Code and log in"
+---
+
+[Due by **{{< var due.setup >}}**]{.highlight-yellow}
+
+Claude Code is the coding agent we use on the day. It runs in a terminal, works inside the folder you start it in, reads and edits files there, and runs commands. It asks before it runs a command or changes a file, and that permission prompt is the first thing to learn to read.
+
+This step has three parts: get an account, install the program, and log in once from a small repository I prepared for you.
+
+## {{< fa user >}} Part 1: Your Claude account
+
+Claude Code is not part of the free Claude plan. You need one of the two routes below.
+
+::: {.panel-tabset}
+
+### GHE members
+
+You will receive an email invitation to the **{{< var claude.team-org >}}** organization on the Claude Team plan, sent to your ETH email address. Accept it. If you do not have a Claude account under that address yet, the invitation walks you through creating one.
+
+Use your ETH address, not a personal one. If you already use Claude with a personal address, the Team seat is a separate account and you log into Claude Code with the ETH one.
+
+The invitation expires after three weeks. If none has arrived by the time you reach this step, tell me in the chat room.
+
+On the Team plan, what you type and what the agent reads is not used to train models, and the group, not the vendor, controls the data. That is the reason for the plan.
+
+### Everyone else
+
+Create your own account at [claude.ai](https://claude.ai) and subscribe to a paid plan for the month of the workshop. The Pro plan is enough. I suggest the Max plan for one month, since the day involves a lot of agent work and the Pro limits can run out in an afternoon. Cancel afterwards if you do not want to keep it.
+
+Then do one thing before anything else: open [your privacy settings]({{< var claude.privacy-settings >}}) and turn **off** the setting that allows your chats and coding sessions to be used for model training. On the Free, Pro and Max plans that setting is on unless you turn it off, and it covers Claude Code sessions. With the setting off, your data is kept for 30 days instead of five years and is not used for training.
+
+:::
+
+## {{< fa download >}} Part 2: Install
+
+The installer needs nothing else on your computer. Open a terminal and paste one line.
+
+::: {.panel-tabset}
+
+### macOS
+
+Open **Terminal** (in Applications, Utilities, or search for it with Spotlight) and run:
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+### Windows
+
+Open **PowerShell** (search for it in the Start menu) and run:
+
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+Claude Code uses Git for Windows, which you installed for the first workshop, to run commands. If you skipped that step then, install it from [git-scm.com](https://git-scm.com/downloads/win) first.
+
+:::
+
+Close the terminal and open a new one, so it picks up the new program. Then check the install:
+
+```bash
+claude --version
+claude doctor
+```
+
+The first prints a version number. The second checks the installation and prints what it found. Both should finish without an error.
+
+::: {.callout-tip}
+## Which terminal
+
+Any terminal works, including the **Terminal** tab in RStudio (Tools, Terminal, New Terminal). On the Mac, [iTerm](https://iterm2.com/) is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in PowerShell, and use whichever terminal you like afterwards.
+:::
+
+## {{< fa right-to-bracket >}} Part 3: Clone your setup repository and log in
+
+### Clone your setup repository
+
+I have created a repository for you in the organization, named `setup-USERNAME` with your GitHub username in place of USERNAME. It holds a small public dataset and one R script, and it is where every test before the day runs.
+
+1. Open the organization page, [{{< var course.github-org >}}]({{< var course.github-org >}}), and find `setup-USERNAME` in the list of repositories. Use the search field on that page if the list is long.
+2. Open it, click the green **Code** button, and copy the HTTPS URL.
+3. In RStudio, choose **File, New Project, Version Control, Git**, paste the URL, pick where the folder should live, and click **Create Project**. This is the same clone you did in the first workshop; the [instructions from then]({{< var prerequisite.site >}}pre-work/06a-clone-repo.html) still apply, screenshots included.
+
+RStudio opens the new project. The Files pane at the bottom right shows `01-read-data.R`, a `data` folder, and a README.
+
+::: {.callout-important}
+## No repository with your name
+
+Tell me in [the chat room]({{< var chat.room-link >}}). Creating it takes me a minute.
+:::
+
+### Open a terminal at that folder
+
+Claude Code works in the folder you start it from, so the terminal has to be opened inside the setup repository. Three ways, pick one.
+
+::: {.panel-tabset}
+
+### RStudio
+
+With the project open, choose **Tools, Terminal, New Terminal**. A Terminal tab appears next to the Console, already inside the project folder. This works the same on macOS and Windows.
+
+### macOS Finder
+
+Open Finder and go to the folder you just created, for example `Documents/setup-USERNAME`. Right-click the folder and choose **New Terminal at Folder**. A Terminal window opens inside it. If the entry is missing from the menu, look under **Services** in the same menu, or switch it on once under System Settings, Keyboard, Keyboard Shortcuts, Services, Files and Folders.
+
+### Windows Explorer
+
+Open File Explorer and open the folder you just created. Right-click an empty area inside the folder and choose **Open in Terminal**. On Windows 10, hold Shift while right-clicking and choose **Open PowerShell window here**. **Open Git Bash here**, which Git for Windows added to the same menu, works as well.
+
+:::
+
+Whichever way you chose, the prompt in the terminal ends with the folder name, `setup-USERNAME`. If it does not, you are in the wrong folder.
+
+### Log in
+
+1. In that terminal, start Claude Code:
+
+   ```bash
+   claude
+   ```
+
+2. The first start asks you to pick a colour theme, then opens your browser to log in. Log in with the account from Part 1. If the browser does not open, press `c` to copy the login link and paste it into a browser yourself. GHE members: if asked which organization to use, pick **{{< var claude.team-org >}}**.
+
+3. Back in the terminal, type `/status` and press Enter. It shows which account you are logged in with. Check that it is the one you intended.
+
+4. Say hello. Type a greeting and press Enter. You get a greeting back. That is the whole test.
+
+5. Type `/exit` to leave.
+
+Do not ask it to do anything else yet. Step 9 is where you give it work, with the safety rails in place.
+
+::: {.callout-note}
+## Why a setup repository and not your own
+
+The agent reads whole folders and sends what it finds to a model. Before the day, it does not see the data you committed in step 1. Every test in steps 4 to 9 runs in `setup-USERNAME`, which holds public data prepared for exactly this. We set the safety rails for your own repository together in the room.
+:::
+
+::: {.callout-important}
+## If the login fails on the ETH network
+
+Claude Code needs to reach a handful of addresses (claude.ai, api.anthropic.com, platform.claude.com and downloads.claude.ai). If the login page never opens or the terminal reports a connection error while you are on eduroam or the ETH network, try again on a phone hotspot and tell me in the chat room which network failed.
+:::
+
+::: {.callout-note}
+## If the install fails
+
+Claude Code also exists as a website, [claude.ai/code](https://claude.ai/code), that works from your GitHub repository without anything on your laptop. It is the fallback for the day if the local install cannot be fixed. Tell me before the workshop so we can set it up together.
+:::

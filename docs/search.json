@@ -4,10 +4,153 @@
     "href": "pre-work/index.html",
     "title": " Before the workshop",
     "section": "",
-    "text": "Two tasks for now. Both are due by Monday, 14 September 2026.\n\n\n\n\n\n\n\n\nStep\nWhat\nDue\n\n\n\n\n1\nCreate your repository and add your data\nMonday, 14 September 2026\n\n\n2\nJoin the ai-playground chat room\nMonday, 14 September 2026\n\n\n\n\n\n\n\n\n\nNoteMore to come\n\n\n\nFurther preparation, including a pre-course survey and the tool setup, will be added here closer to the workshop. You will hear from me when it is ready. Start with these two, since the repository is what everything else builds on.\n\n\n\n\n\n\n\n\nTipHow long will this take?\n\n\n\nAround half an hour for both, assuming you already know which dataset you want to use and your GitHub authentication still works from the first workshop. Picking the dataset is usually the part that takes the thinking.\n\n\n\n\n\n\n\n\nImportantIf you get stuck\n\n\n\nDo not spend an evening fighting it. Ask in the chat room, or open an issue on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.",
+    "text": "Steps 1 and 2 were due by Monday, 14 September 2026. Steps 4 to 9 set up the tools and are due by Friday, 25 September 2026. Step 3, a short survey, follows later and needs nothing from you yet.\n\n\n\n\n\n\n\n\n\nStep\nWhat\nTime\nDue\n\n\n\n\n1\nCreate your repository and add your data\n30 min\nMonday, 14 September 2026\n\n\n2\nJoin the ai-playground chat room\n5 min\nMonday, 14 September 2026\n\n\n3\nPre-course survey (to follow, nothing to do yet)\n5 min\nlater\n\n\n4\nInstall Claude Code, clone your setup repository, log in\n25 min\nFriday, 25 September 2026\n\n\n5\nConnect GitHub from the terminal\n10 min\nFriday, 25 September 2026\n\n\n6\nConnect your R session\n10 min\nFriday, 25 September 2026\n\n\n7\nSet up Zotero\n30 to 45 min\nFriday, 25 September 2026\n\n\n8\nConnect Zotero\n10 min\nFriday, 25 September 2026\n\n\n9\nTest your setup on the prepared repository and report done\n20 min\nFriday, 25 September 2026\n\n\n\nDo the steps in order. Step 4 ends with a small repository I prepared for you, with public data in it, and steps 6, 8 and 9 use it for their tests. Your own repository from step 1 stays out of Claude Code until the day. Step 8 needs Zotero from step 7, and step 9 checks everything at once.\n\n\n\n\n\n\nNoteWhat I assume you use\n\n\n\nThe instructions and the day are written for RStudio, R and Quarto, as taught in the first workshop. Other editors (Positron, VS Code) and other languages (Python, JavaScript, Stata do files) are welcome, and the agent works with all of them. What I cannot promise is that the setup works the same way; step 6, the connection to a running R session, is specific to R and RStudio. If you work differently, do the steps as far as they apply and tell me in the chat room where they stop.\n\n\n\n\n\n\n\n\nTipHow long will this take?\n\n\n\nAround two hours in total, and it does not have to happen in one sitting. Step 7 is the long one. If you already use Zotero, it shrinks to checking a few settings.\n\n\n\n\n\n\n\n\nImportantIf you get stuck\n\n\n\nDo not spend an evening fighting it. Ask in the chat room, or open an issue on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.",
     "crumbs": [
       "Prepare",
       "Overview"
+    ]
+  },
+  {
+    "objectID": "pre-work/08-zotero-mcp.html",
+    "href": "pre-work/08-zotero-mcp.html",
+    "title": " Step 8: Connect Zotero",
+    "section": "",
+    "text": "Due by Friday, 25 September 2026\nWith this step the agent can search your Zotero library, read the PDFs in it, and pull citation keys while it writes. The connection is a small program called zotero-mcp that talks to Zotero on your own computer, through the local access you switched on in step 7. It reads your library and does not change it.\nZotero has to be running whenever the agent uses it.",
+    "crumbs": [
+      "Prepare",
+      "Step 8: Connect Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/08-zotero-mcp.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install",
+    "href": "pre-work/08-zotero-mcp.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install",
+    "title": " Step 8: Connect Zotero",
+    "section": " Part 1: Install",
+    "text": "Part 1: Install\nzotero-mcp is a Python program. The installer below, called uv, takes care of Python for you.\n\nmacOSWindows\n\n\nOpen the Terminal app (any folder is fine), copy the line below, paste it after the prompt, and press Enter. It prints where uv was installed:\ncurl -LsSf https://astral.sh/uv/install.sh | sh\n\n\nOpen PowerShell, copy the line below, paste it after the prompt, and press Enter:\npowershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\"\n\n\n\nClose the terminal and open a new one, so the new installer is found. Then install the program, in the terminal:\nuv tool install zotero-mcp-server\nCheck, in the same terminal. It prints a version number:\nzotero-mcp version",
+    "crumbs": [
+      "Prepare",
+      "Step 8: Connect Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/08-zotero-mcp.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code",
+    "href": "pre-work/08-zotero-mcp.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code",
+    "title": " Step 8: Connect Zotero",
+    "section": " Part 2: Register it with Claude Code",
+    "text": "Part 2: Register it with Claude Code\nOpen a terminal (any folder is fine, the setting is not tied to a folder), copy this line, paste it after the prompt, and press Enter:\nclaude mcp add -s user zotero -e ZOTERO_LOCAL=true -- zotero-mcp\nIt answers with a line saying the server was added. Then, with the Zotero app running, check:\nclaude mcp list\nThe zotero line should end in Connected. If it says it failed to connect, the two usual causes are that Zotero is not running, or that the setting from step 7 (Settings, Advanced, Allow other applications on this computer to communicate with Zotero) is not ticked. On Windows there is a third: a terminal opened before the install in Part 1 finished does not find zotero-mcp. Open a new one and check again.",
+    "crumbs": [
+      "Prepare",
+      "Step 8: Connect Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/08-zotero-mcp.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-3-try-it",
+    "href": "pre-work/08-zotero-mcp.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-3-try-it",
+    "title": " Step 8: Connect Zotero",
+    "section": " Part 3: Try it",
+    "text": "Part 3: Try it\nKeep Zotero open. Open a terminal at your setup repository (as in step 4), start claude, and ask something your library can answer, for example:\n\nWhich items in my Zotero library are about sanitation?\n\nThe agent asks permission to use a zotero tool, with the tool’s name in the prompt. Read it and allow it. The answer lists items from your own library, with titles and citation keys. If it answers that it cannot reach Zotero, the app is not running or the Advanced setting from step 7 is off; fix that and ask again.\n\n\n\n\n\n\nNoteWhat you do not need\n\n\n\nThe zotero-mcp project offers extras for semantic search and PDF page images. The base install is enough for the workshop. Leave the extras out.",
+    "crumbs": [
+      "Prepare",
+      "Step 8: Connect Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-connect-r.html",
+    "href": "pre-work/06-connect-r.html",
+    "title": " Step 6: Connect your R session",
+    "section": "",
+    "text": "Due by Friday, 25 September 2026\nClaude Code has no R session of its own. It can run a script or render a Quarto document, but it cannot see the data frame you have open in RStudio. The mcptools package changes that. It lets the agent run R code inside your running RStudio session and look at the objects there, which is how it inspects your data on the day. This connection is specific to R and RStudio, see the note on the Prepare page. If you work in another language or editor, the agent still works, but this step may not apply.",
+    "crumbs": [
+      "Prepare",
+      "Step 6: Connect R"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-connect-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install-the-package",
+    "href": "pre-work/06-connect-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install-the-package",
+    "title": " Step 6: Connect your R session",
+    "section": " Part 1: Install the package",
+    "text": "Part 1: Install the package\nOpen RStudio. The Console is the pane at the bottom left, the one with a &gt; prompt. Click into it, type the line below, and press Enter. Wait until the download messages stop and the prompt is back:\ninstall.packages(\"mcptools\")",
+    "crumbs": [
+      "Prepare",
+      "Step 6: Connect R"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-connect-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code",
+    "href": "pre-work/06-connect-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code",
+    "title": " Step 6: Connect your R session",
+    "section": " Part 2: Register it with Claude Code",
+    "text": "Part 2: Register it with Claude Code\n\nmacOSWindows\n\n\nOpen the Terminal app (Spotlight, then type Terminal). Any folder is fine, this setting is not tied to a folder. Copy the line below, paste it after the prompt, and press Enter. It answers with a line saying the server was added:\nclaude mcp add -s user r-mcptools -- Rscript -e \"mcptools::mcp_server()\"\n\n\nOpen PowerShell (Start menu, then type PowerShell). On Windows the Rscript program is usually not findable from the terminal, so you give the full path. Get it from the RStudio Console, the pane at the bottom left:\nnormalizePath(file.path(R.home(\"bin\"), \"Rscript.exe\"))\nIt prints something like C:\\Program Files\\R\\R-4.5.1\\bin\\Rscript.exe. Use your path, in quotes, in PowerShell:\nclaude mcp add -s user r-mcptools -- \"C:\\Program Files\\R\\R-4.5.1\\bin\\Rscript.exe\" -e \"mcptools::mcp_server()\"\n\n\n\nCheck, in the same terminal:\nclaude mcp list\nThe line for r-mcptools should end in Connected.",
+    "crumbs": [
+      "Prepare",
+      "Step 6: Connect R"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-connect-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067656172203e7d7d-part-3-let-r-announce-its-sessions",
+    "href": "pre-work/06-connect-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067656172203e7d7d-part-3-let-r-announce-its-sessions",
+    "title": " Step 6: Connect your R session",
+    "section": " Part 3: Let R announce its sessions",
+    "text": "Part 3: Let R announce its sessions\nThe server needs to know which R session to talk to. One line in your R profile registers every RStudio session you start.\nBack in RStudio, click into the Console and run:\nfile.edit(\"~/.Rprofile\")\nA file called .Rprofile opens in the editor pane at the top left. It is empty unless you have set up R this way before. Paste this line into it, then save with Cmd+S on macOS or Ctrl+S on Windows:\nif (interactive()) mcptools::mcp_session()\nRestart R from the menu bar: Session, Restart R. The Console clears and shows a fresh prompt. Then, in the Console, create something for the agent to look at:\nx &lt;- head(mtcars)",
+    "crumbs": [
+      "Prepare",
+      "Step 6: Connect R"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-connect-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-4-try-it",
+    "href": "pre-work/06-connect-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-4-try-it",
+    "title": " Step 6: Connect your R session",
+    "section": " Part 4: Try it",
+    "text": "Part 4: Try it\nCheck the Environment pane at the top right of RStudio: x is listed there as 6 obs. of 11 variables. Now open a terminal at your setup repository (as in step 4), start claude, and ask:\n\nWhat objects are in my R session?\n\nThe agent asks permission to use an r-mcptools tool. Read the prompt and allow it. The answer names x and describes it as a data frame with 6 rows and 11 columns. On the day you do the same with the workshop data loaded.\n\n\n\n\n\n\nImportantWhat this connection means\n\n\n\nWith this in place the agent can run any R code in your live session, including code that removes objects or writes files. The permission prompt is what stands between it and that. Read the prompt each time rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.",
+    "crumbs": [
+      "Prepare",
+      "Step 6: Connect R"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-install-claude-code.html",
+    "href": "pre-work/04-install-claude-code.html",
+    "title": " Step 4: Install Claude Code and log in",
+    "section": "",
+    "text": "Due by Friday, 25 September 2026\nClaude Code is the coding agent we use on the day. It runs in a terminal, works inside the folder you start it in, reads and edits files there, and runs commands. It asks before it runs a command or changes a file, and that permission prompt is the first thing to learn to read.\nThis step has three parts: get an account, install the program, and log in once from a small repository I prepared for you.",
+    "crumbs": [
+      "Prepare",
+      "Step 4: Install Claude Code"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-install-claude-code.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account",
+    "href": "pre-work/04-install-claude-code.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account",
+    "title": " Step 4: Install Claude Code and log in",
+    "section": " Part 1: Your Claude account",
+    "text": "Part 1: Your Claude account\nClaude Code is not part of the free Claude plan. You need one of the two routes below.\n\nGHE membersEveryone else\n\n\nYou will receive an email invitation to the Global Health Engineering organization on the Claude Team plan, sent to your ETH email address. Accept it. If you do not have a Claude account under that address yet, the invitation walks you through creating one.\nUse your ETH address, not a personal one. If you already use Claude with a personal address, the Team seat is a separate account and you log into Claude Code with the ETH one.\nThe invitation expires after three weeks. If none has arrived by the time you reach this step, tell me in the chat room.\nOn the Team plan, what you type and what the agent reads is not used to train models, and the group, not the vendor, controls the data. That is the reason for the plan.\n\n\nCreate your own account at claude.ai and subscribe to a paid plan for the month of the workshop. The Pro plan is enough. I suggest the Max plan for one month, since the day involves a lot of agent work and the Pro limits can run out in an afternoon. Cancel afterwards if you do not want to keep it.\nThen do one thing before anything else: open your privacy settings and turn off the setting that allows your chats and coding sessions to be used for model training. On the Free, Pro and Max plans that setting is on unless you turn it off, and it covers Claude Code sessions. With the setting off, your data is kept for 30 days instead of five years and is not used for training.",
+    "crumbs": [
+      "Prepare",
+      "Step 4: Install Claude Code"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-install-claude-code.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-2-install",
+    "href": "pre-work/04-install-claude-code.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-2-install",
+    "title": " Step 4: Install Claude Code and log in",
+    "section": " Part 2: Install",
+    "text": "Part 2: Install\nThe installer needs nothing else on your computer. Open a terminal and paste one line.\n\nmacOSWindows\n\n\nOpen Terminal (in Applications, Utilities, or search for it with Spotlight) and run:\ncurl -fsSL https://claude.ai/install.sh | bash\n\n\nOpen PowerShell (search for it in the Start menu) and run:\nirm https://claude.ai/install.ps1 | iex\nClaude Code uses Git for Windows, which you installed for the first workshop, to run commands. If you skipped that step then, install it from git-scm.com first.\n\n\n\nClose the terminal and open a new one, so it picks up the new program. Then check the install:\nclaude --version\nclaude doctor\nThe first prints a version number. The second checks the installation and prints what it found. Both should finish without an error.\n\n\n\n\n\n\nTipWhich terminal\n\n\n\nAny terminal works, including the Terminal tab in RStudio (Tools, Terminal, New Terminal). On the Mac, iTerm is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in PowerShell, and use whichever terminal you like afterwards.",
+    "crumbs": [
+      "Prepare",
+      "Step 4: Install Claude Code"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-install-claude-code.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612072696768742d746f2d627261636b6574203e7d7d-part-3-clone-your-setup-repository-and-log-in",
+    "href": "pre-work/04-install-claude-code.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612072696768742d746f2d627261636b6574203e7d7d-part-3-clone-your-setup-repository-and-log-in",
+    "title": " Step 4: Install Claude Code and log in",
+    "section": " Part 3: Clone your setup repository and log in",
+    "text": "Part 3: Clone your setup repository and log in\n\nClone your setup repository\nI have created a repository for you in the organization, named setup-USERNAME with your GitHub username in place of USERNAME. It holds a small public dataset and one R script, and it is where every test before the day runs.\n\nOpen the organization page, https://github.com/agentsforsci-ghe/, and find setup-USERNAME in the list of repositories. Use the search field on that page if the list is long.\nOpen it, click the green Code button, and copy the HTTPS URL.\nIn RStudio, choose File, New Project, Version Control, Git, paste the URL, pick where the folder should live, and click Create Project. This is the same clone you did in the first workshop; the instructions from then still apply, screenshots included.\n\nRStudio opens the new project. The Files pane at the bottom right shows 01-read-data.R, a data folder, and a README.\n\n\n\n\n\n\nImportantNo repository with your name\n\n\n\nTell me in the chat room. Creating it takes me a minute.\n\n\n\n\nOpen a terminal at that folder\nClaude Code works in the folder you start it from, so the terminal has to be opened inside the setup repository. Three ways, pick one.\n\nRStudiomacOS FinderWindows Explorer\n\n\nWith the project open, choose Tools, Terminal, New Terminal. A Terminal tab appears next to the Console, already inside the project folder. This works the same on macOS and Windows.\n\n\nOpen Finder and go to the folder you just created, for example Documents/setup-USERNAME. Right-click the folder and choose New Terminal at Folder. A Terminal window opens inside it. If the entry is missing from the menu, look under Services in the same menu, or switch it on once under System Settings, Keyboard, Keyboard Shortcuts, Services, Files and Folders.\n\n\nOpen File Explorer and open the folder you just created. Right-click an empty area inside the folder and choose Open in Terminal. On Windows 10, hold Shift while right-clicking and choose Open PowerShell window here. Open Git Bash here, which Git for Windows added to the same menu, works as well.\n\n\n\nWhichever way you chose, the prompt in the terminal ends with the folder name, setup-USERNAME. If it does not, you are in the wrong folder.\n\n\nLog in\n\nIn that terminal, start Claude Code:\nclaude\nThe first start asks you to pick a colour theme, then opens your browser to log in. Log in with the account from Part 1. If the browser does not open, press c to copy the login link and paste it into a browser yourself. GHE members: if asked which organization to use, pick Global Health Engineering.\nBack in the terminal, type /status and press Enter. It shows which account you are logged in with. Check that it is the one you intended.\nSay hello. Type a greeting and press Enter. You get a greeting back. That is the whole test.\nType /exit to leave.\n\nDo not ask it to do anything else yet. Step 9 is where you give it work, with the safety rails in place.\n\n\n\n\n\n\nNoteWhy a setup repository and not your own\n\n\n\nThe agent reads whole folders and sends what it finds to a model. Before the day, it does not see the data you committed in step 1. Every test in steps 4 to 9 runs in setup-USERNAME, which holds public data prepared for exactly this. We set the safety rails for your own repository together in the room.\n\n\n\n\n\n\n\n\nImportantIf the login fails on the ETH network\n\n\n\nClaude Code needs to reach a handful of addresses (claude.ai, api.anthropic.com, platform.claude.com and downloads.claude.ai). If the login page never opens or the terminal reports a connection error while you are on eduroam or the ETH network, try again on a phone hotspot and tell me in the chat room which network failed.\n\n\n\n\n\n\n\n\nNoteIf the install fails\n\n\n\nClaude Code also exists as a website, claude.ai/code, that works from your GitHub repository without anything on your laptop. It is the fallback for the day if the local install cannot be fixed. Tell me before the workshop so we can set it up together.",
+    "crumbs": [
+      "Prepare",
+      "Step 4: Install Claude Code"
     ]
   },
   {
@@ -120,7 +263,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare",
     "title": "Agents for Scientists",
     "section": " What do I need to prepare?",
-    "text": "What do I need to prepare?\nThere is pre-work for this workshop. It matters more than usual here: the day is built around your data, so a participant who arrives without it cannot take part in the main exercise.\nTwo tasks to start with, both due by Monday, 14 September 2026:\n\nStep 1: Create your repository and add your data\nStep 2: Join the ai-playground chat room\n\nFurther preparation, including a pre-course survey and the tool setup, follows closer to the workshop."
+    "text": "What do I need to prepare?\nThere is pre-work for this workshop. It matters more than usual here: the day is built around your data, so a participant who arrives without it cannot take part in the main exercise.\nTwo tasks came first, both due by Monday, 14 September 2026:\n\nStep 1: Create your repository and add your data\nStep 2: Join the ai-playground chat room\n\nSeven more steps set up the tools, all due by Friday, 25 September 2026. They take around two hours in total and are listed on the Prepare page. The tests run on a small repository with public data that I prepare for each of you, not on your own data. Step 9 tests the whole setup and ends with an issue assigned to me, so I know you are ready."
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
@@ -185,6 +328,226 @@
     "crumbs": [
       "Prepare",
       "Step 2: Join the chat"
+    ]
+  },
+  {
+    "objectID": "pre-work/05-github-cli.html",
+    "href": "pre-work/05-github-cli.html",
+    "title": " Step 5: Connect GitHub",
+    "section": "",
+    "text": "Due by Friday, 25 September 2026\nOn the day, the agent opens issues and pull requests on your repository for you. For that it needs to talk to GitHub from the terminal, which the GitHub CLI provides. Two parts: install the GitHub CLI and log in, then create a dev branch.",
+    "crumbs": [
+      "Prepare",
+      "Step 5: Connect GitHub"
+    ]
+  },
+  {
+    "objectID": "pre-work/05-github-cli.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-part-1-the-github-cli",
+    "href": "pre-work/05-github-cli.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-part-1-the-github-cli",
+    "title": " Step 5: Connect GitHub",
+    "section": " Part 1: The GitHub CLI",
+    "text": "Part 1: The GitHub CLI\n\nmacOSWindows\n\n\nThe GitHub CLI comes through Homebrew, the package manager for the Mac. If you do not have Homebrew yet, go to brew.sh, copy the install line shown at the top of that page, paste it into Terminal, press Enter, and follow the prompts. It asks for your Mac password and takes a few minutes. Then, in the same Terminal window, install the GitHub CLI:\nbrew install gh\n\n\nOpen PowerShell (as in step 4), paste this line, and press Enter:\nwinget install --id GitHub.cli --source winget\nClose the terminal and open a new window afterwards, so the new program is found.\n\n\n\nNow connect the CLI to your GitHub account. In the terminal, run:\ngh auth login\nIt asks a few questions. Answer GitHub.com, HTTPS, Yes to authenticating Git with your GitHub credentials, and Login with a web browser. Copy the one-time code it shows, press Enter, paste the code into the browser page that opens, and authorize.\nCheck it worked:\ngh auth status\nThen open a terminal at your setup repository (as in step 4) and run one command that only works when GitHub is reachable:\ngh repo view\nIt prints the name and README of setup-USERNAME.\n\n\n\n\n\n\nNoteThe token from the first workshop\n\n\n\nThe personal access token you created for the first workshop keeps working for RStudio. The GitHub CLI has its own login, which is what you just did. The two do not interfere.",
+    "crumbs": [
+      "Prepare",
+      "Step 5: Connect GitHub"
+    ]
+  },
+  {
+    "objectID": "pre-work/05-github-cli.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-part-2-a-dev-branch",
+    "href": "pre-work/05-github-cli.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-part-2-a-dev-branch",
+    "title": " Step 5: Connect GitHub",
+    "section": " Part 2: A dev branch",
+    "text": "Part 2: A dev branch\nThe working pattern for the day is that changes land on a branch called dev, get reviewed in a pull request, and reach main through the merge. Create the branch now so it is there when the agent starts working.\nCreate it on your own repository from step 1, the one with your data, which is where the day’s work happens. Open that project in RStudio with File, Open Project.\nIn the Git pane, click the New Branch button. Name it dev, leave Sync branch with remote ticked, and click Create. RStudio creates the branch, switches to it, and pushes it to GitHub.\nCheck on GitHub: the branch menu on your repository page now lists main and dev.\n\n\n\n\n\n\nNoteNot using RStudio\n\n\n\nCreate a branch called dev and push it with whatever tool you prefer. The name is what matters.\n\n\n\n\n\n\n\n\nNoteAnnounced for the day: two GHE skills\n\n\n\nDuring the workshop we install two small skills written at Global Health Engineering, one that turns the agent’s changes into a commit with a record of what the agent did, and one that opens a pull request from dev into main. They are installed in Claude Code with two commands, take a minute, and can be removed again after the day. Nothing to do now. If you are curious, they live at Global-Health-Engineering/skills.",
+    "crumbs": [
+      "Prepare",
+      "Step 5: Connect GitHub"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html",
+    "href": "pre-work/07-zotero.html",
+    "title": " Step 7: Set up Zotero",
+    "section": "",
+    "text": "Due by Friday, 25 September 2026\nOne of the three paper tasks on the day is a literature review, and the agent does it against your own reference library. This page sets up Zotero, the free and open source reference manager, the way we use it in the group. If you already use Zotero, skim to Step 5 and check the settings from there on. The citation key settings in Step 7 are the group convention and are worth checking even on a library you have used for years.\nWritten against Zotero 10 (10.0.3, September 2026), which came out in August, and the current Better BibTeX release. If you run an older Zotero, update it first. Two things differ from older guides you may find online: the Sync tab in the settings is now called Account, and Better BibTeX runs on Zotero 10 even though its release notes still name older versions.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#what-you-are-setting-up",
+    "href": "pre-work/07-zotero.html#what-you-are-setting-up",
+    "title": " Step 7: Set up Zotero",
+    "section": "What you are setting up",
+    "text": "What you are setting up\n\nZotero, the desktop app. It stores your references, the PDFs attached to them, and your reading highlights.\nA zotero.org account with sync, so your library is backed up and available on other devices.\nThe Zotero Connector, a browser extension that saves papers into your library with one click.\nBetter BibTeX, a Zotero plugin that gives every item a stable short ID called a citation key, for example forte2022building. Citation keys are how Quarto, LaTeX and other plain text tools refer to items.\nTwo settings inside Zotero: local access for other apps on your computer, which step 8 depends on, and Quick Copy, which puts a citation key on your clipboard with one keystroke.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#step-1-install-zotero",
+    "href": "pre-work/07-zotero.html#step-1-install-zotero",
+    "title": " Step 7: Set up Zotero",
+    "section": "Step 1: Install Zotero",
+    "text": "Step 1: Install Zotero\n\nGo to zotero.org/download.\nDownload the installer for your platform and install it like any other app.\nOpen Zotero once so it can create its data folder.\n\nIf Zotero is already installed, update it before you continue. On macOS use Zotero, Check for Updates. On Windows use Help, Check for Updates. The steps below were checked on Zotero 10 and need Zotero 7 or newer.\nThroughout this page, “Settings” means the window you open with Zotero, Settings on macOS or Edit, Settings on Windows.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#step-2-create-an-account-and-turn-on-sync",
+    "href": "pre-work/07-zotero.html#step-2-create-an-account-and-turn-on-sync",
+    "title": " Step 7: Set up Zotero",
+    "section": "Step 2: Create an account and turn on sync",
+    "text": "Step 2: Create an account and turn on sync\n\nCreate a free account at zotero.org/user/register and confirm the email it sends you.\nIn Zotero, open Settings, Account (older versions call this tab Sync).\nSign in with your new account.\nLeave the data syncing defaults as they are. Data syncing covers your references, notes, tags and highlights. It is free and has no size limit.\n\nFile syncing is a separate switch on the same tab and covers the PDFs themselves. Every account gets 300 MB of file storage for free. Keep it on with the “Zotero” option if you want to read your PDFs on a second device; decide about paid storage later if the library outgrows the free tier.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#step-3-install-the-browser-connector",
+    "href": "pre-work/07-zotero.html#step-3-install-the-browser-connector",
+    "title": " Step 7: Set up Zotero",
+    "section": "Step 3: Install the browser connector",
+    "text": "Step 3: Install the browser connector\n\nIn the browser you normally use, go to zotero.org/download. The page detects your browser and offers the matching connector.\nInstall the extension and pin its button to the toolbar.\nKeep the Zotero desktop app open while you save. The connector hands items to the desktop app.\n\nTo save an item, open the paper’s page (the journal landing page, an arXiv abstract page) and click the connector button. Zotero saves the reference and, when it has access, the PDF.\nTwo other ways to add items, both inside Zotero: click the magic wand button and paste a DOI, ISBN, PMID or arXiv ID, or drag a PDF file into the Zotero window and check the metadata it reads out of it.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#step-4-know-your-way-around-the-library",
+    "href": "pre-work/07-zotero.html#step-4-know-your-way-around-the-library",
+    "title": " Step 7: Set up Zotero",
+    "section": "Step 4: Know your way around the library",
+    "text": "Step 4: Know your way around the library\nIf you have used a reference manager before, skim this. If Zotero is your first one, ten minutes here pay off.\n\nThe left pane lists your collections. A collection is a folder you assign items to. One item can sit in several collections at once.\nThe middle pane lists the items in the selected collection. An item is the reference record: title, authors, year, journal, DOI.\nAttachments (the PDF), notes and tags hang off an item. Click the arrow next to an item to see them.\nThe right pane shows the selected item’s fields. Fix obvious metadata errors as you notice them, because everything downstream builds on these fields.\nDouble-click an item to open its PDF in Zotero’s reader. Highlights are stored in Zotero’s database and sync like any other data.\n\nSave two or three real papers now so you have something to test with.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#step-5-allow-other-apps-to-talk-to-zotero",
+    "href": "pre-work/07-zotero.html#step-5-allow-other-apps-to-talk-to-zotero",
+    "title": " Step 7: Set up Zotero",
+    "section": "Step 5: Allow other apps to talk to Zotero",
+    "text": "Step 5: Allow other apps to talk to Zotero\nStep 8 connects the agent to your library through a local connection on your own computer. One checkbox enables it.\n\nOpen Settings, Advanced.\nCheck Allow other applications on this computer to communicate with Zotero.\n\nThe connection only works for apps running on the same computer. Nothing is exposed to the internet.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#step-6-install-better-bibtex",
+    "href": "pre-work/07-zotero.html#step-6-install-better-bibtex",
+    "title": " Step 7: Set up Zotero",
+    "section": "Step 6: Install Better BibTeX",
+    "text": "Step 6: Install Better BibTeX\nBetter BibTeX is installed from a downloaded file.\n\nIn your browser, go to the Better BibTeX releases page and download the latest .xpi file. You want the file saved to disk, not opened by the browser.\n\nSafariFirefoxChrome and Edge\n\n\nClick the .xpi link. Safari downloads it to your Downloads folder. If it opens a viewer instead, right-click the link and choose Download Linked File.\n\n\nFirefox tries to install .xpi files as Firefox extensions, which is the wrong target. Right-click the link and choose Save Link As.\n\n\nClick the link. If the browser warns that the file may be dangerous because it is an uncommon type, choose Keep. The file is safe.\n\n\n\nIn Zotero, go to Tools, Plugins.\nClick the gear icon, choose Install Plugin From File, and select the .xpi you downloaded.\nRestart Zotero when prompted.\n\nAfter the restart, the Settings window has a new Better BibTeX tab.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#step-7-configure-the-citation-keys",
+    "href": "pre-work/07-zotero.html#step-7-configure-the-citation-keys",
+    "title": " Step 7: Set up Zotero",
+    "section": "Step 7: Configure the citation keys",
+    "text": "Step 7: Configure the citation keys\nThis is the step to get exactly right.\nA citation key is a short, readable ID for one item, like forte2022building. Once other tools refer to your items by these keys, a key must never change. When everyone in a group generates keys the same way, a paper shared through a group library carries the same key in every member’s library, and drafts move between people without anyone rekeying citations. The formula below is the shared convention at Global Health Engineering.\nOpen Settings, Better BibTeX. Under Citation keys:\n\nSet the citation key formula to:\nauth.lower + year + veryshorttitle(1, 0).lower\nRead left to right: the last name of the first author, lowercased; the publication year; the first meaningful word of the title, lowercased. Tiago Forte’s 2022 book “Building a Second Brain” gets the key forte2022building.\nSet Automatically fill citation key after to 2 seconds. Filling writes the generated key into the item’s own Citation Key field, where it is saved and synced.\nCheck that Regenerate citation key when item changes is unchecked. With it unchecked, a filled key stays as it is even when you later fix a typo in the author or title, which is what you want. If it is checked, uncheck it now.\n\nLeave the remaining defaults. Then add a Citation Key column to your item list: right-click the column header in the middle pane and tick Citation Key.\nItems that were already in your library may carry keys from the old default formula. Select them, right-click, and choose Better BibTeX, Regenerate citation key. Do this now, before anything refers to the old keys.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#step-8-set-up-quick-copy",
+    "href": "pre-work/07-zotero.html#step-8-set-up-quick-copy",
+    "title": " Step 7: Set up Zotero",
+    "section": "Step 8: Set up Quick Copy",
+    "text": "Step 8: Set up Quick Copy\n\nOpen Settings, Export.\nUnder Quick Copy, set Item Format to Better BibTeX Citation Key Quick Copy.\nCheck that Note Format is Markdown + Rich Text and that Include Zotero Links is ticked on the Markdown line.\n\nFrom now on, selecting an item and pressing Cmd+Shift+C on macOS or Ctrl+Shift+C on Windows copies its citation key.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/07-zotero.html#check",
+    "href": "pre-work/07-zotero.html#check",
+    "title": " Step 7: Set up Zotero",
+    "section": "Check",
+    "text": "Check\nSave one more paper with the connector. Within two seconds its right pane shows a Citation Key in the shape authorYEARword. Select it, press the Quick Copy shortcut, paste into any text editor, and you get the bare key. Edit the title, wait two seconds, and confirm the key did not change. If all three worked, the setup is complete, and step 8 connects it to the agent.\n\n\n\n\n\n\nNoteWhere this page comes from\n\n\n\nAdapted from the Zotero getting-started guide written for the Global Health Engineering group in July 2026, shortened to what the workshop needs and checked against Zotero 10 in September 2026.",
+    "crumbs": [
+      "Prepare",
+      "Step 7: Set up Zotero"
+    ]
+  },
+  {
+    "objectID": "pre-work/09-setup-check.html",
+    "href": "pre-work/09-setup-check.html",
+    "title": " Step 9: Test your setup and report done",
+    "section": "",
+    "text": "Due by Friday, 25 September 2026\nTwenty minutes. This runs everything from steps 4 to 8 once, in the order the day uses it, on the setup repository you cloned in step 4, and ends with an issue assigned to me so I know you are ready. Have Zotero open, and RStudio open with the setup project (File, Open Project, then setup.Rproj in the folder you cloned).",
+    "crumbs": [
+      "Prepare",
+      "Step 9: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/09-setup-check.html#both-connections",
+    "href": "pre-work/09-setup-check.html#both-connections",
+    "title": " Step 9: Test your setup and report done",
+    "section": "1. Both connections",
+    "text": "1. Both connections\nIn RStudio, open a terminal inside the project: Tools, Terminal, New Terminal. A Terminal tab appears next to the Console, already in the setup folder. Run:\nclaude mcp list\nBoth r-mcptools and zotero end in Connected. If one does not, go back to step 6 or step 8 before continuing.",
+    "crumbs": [
+      "Prepare",
+      "Step 9: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/09-setup-check.html#put-the-data-in-your-r-session",
+    "href": "pre-work/09-setup-check.html#put-the-data-in-your-r-session",
+    "title": " Step 9: Test your setup and report done",
+    "section": "2. Put the data in your R session",
+    "text": "2. Put the data in your R session\nIn the Files pane at the bottom right, click 01-read-data.R to open it, then click Source at the top right of the editor. There is nothing to edit. The Console prints a line starting with “Loaded”, and the Environment pane at the top right lists two objects, investments and investments_by_country.",
+    "crumbs": [
+      "Prepare",
+      "Step 9: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/09-setup-check.html#a-read-only-run-in-plan-mode",
+    "href": "pre-work/09-setup-check.html#a-read-only-run-in-plan-mode",
+    "title": " Step 9: Test your setup and report done",
+    "section": "3. A read-only run in plan mode",
+    "text": "3. A read-only run in plan mode\nIn the Terminal tab, start Claude Code:\nclaude\nPress Shift+Tab until the status line at the bottom says plan mode. In plan mode the agent reads and proposes. It does not change anything. Ask these three things, one at a time, and wait for each answer:\n\nRead the files in the data folder and describe what is in them. Do not change anything.\n\n\nWhat objects are in my R session, and how many rows does the largest one have?\n\n\nList five items from my Zotero library with their citation keys.\n\nEach time the agent wants to use a tool, a permission prompt appears with the tool’s name. Read it, then allow it. The three answers show the agent reading the sample data, your R session, and your own library.\n\n\n\n\n\n\nNoteIf it proposes something you did not ask for\n\n\n\nSay no. In plan mode the agent may only read. Anything else is a good story for the chat room.",
+    "crumbs": [
+      "Prepare",
+      "Step 9: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/09-setup-check.html#a-file-and-a-commit",
+    "href": "pre-work/09-setup-check.html#a-file-and-a-commit",
+    "title": " Step 9: Test your setup and report done",
+    "section": "4. A file and a commit",
+    "text": "4. A file and a commit\nPress Shift+Tab to leave plan mode. Ask:\n\nCreate a file called SETUP.md at the top of this repository. In it, list my operating system, the Claude Code version, whether the r-mcptools and zotero servers are connected, and a short summary of what is in the data folder. Do not run git.\n\nThe agent shows the file it wants to write. Read it and accept. Then type /exit.\nCommit and push the file yourself, the way you did in the first workshop: in the RStudio Git pane, tick SETUP.md to stage it, click Commit, write “Add setup report” as the message, click Commit, then Push. Open the repository on GitHub and check that SETUP.md is there.\nToday you do every commit yourself. On the day you hand the agent one step at a time.",
+    "crumbs": [
+      "Prepare",
+      "Step 9: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/09-setup-check.html#report-done",
+    "href": "pre-work/09-setup-check.html#report-done",
+    "title": " Step 9: Test your setup and report done",
+    "section": "5. Report done",
+    "text": "5. Report done\nOpen an issue on your setup repository with the title Setup complete, assigned to larnsce, saying which of the steps 4 to 9 worked and which did not. You can have the agent do it. Start claude again in the Terminal tab and ask:\n\nOpen an issue on this repository titled “Setup complete”, assign it to larnsce, and write in the body which of the pre-work steps 4 to 9 worked for me and which did not.\n\nIt uses the GitHub CLI from step 5 for that. Read the prompt, allow it, and check on GitHub that the issue exists. Opening the issue by hand, as you did in step 1, is just as good.\n\n\n\n\n\n\nImportantIf anything failed\n\n\n\nOpen the issue anyway, describe what failed and at which step, and assign it to me. A problem found now is half an hour of work. The same problem found on the morning of the workshop costs you the session.\n\n\nThank you for working through all of this. See you at Villa Hatt, ETH Zurich.",
+    "crumbs": [
+      "Prepare",
+      "Step 9: Test your setup"
     ]
   }
 ]

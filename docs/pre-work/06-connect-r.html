@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title> Step 1: Create your repository and add your data – Agents for Scientists (Autumn 2026)</title>
+<title> Step 6: Connect your R session – Agents for Scientists (Autumn 2026)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -36,7 +71,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pre-work/02-join-element.html" rel="next">
+<link href="../pre-work/07-zotero.html" rel="next">
+<link href="../pre-work/05-github-cli.html" rel="prev">
 <link href="../images/ghe-square-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -132,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pre-work/01-create-repository.html">Step 1: Your repository</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pre-work/06-connect-r.html">Step 6: Connect R</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -159,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/01-create-repository.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pre-work/01-create-repository.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 1: Your repository</span></a>
   </div>
 </li>
@@ -183,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/06-connect-r.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/06-connect-r.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Step 6: Connect R</span></a>
   </div>
 </li>
@@ -215,21 +251,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#accept-the-invitation-to-the-organization" id="toc-accept-the-invitation-to-the-organization" class="nav-link active" data-scroll-target="#accept-the-invitation-to-the-organization">Accept the invitation to the organization</a></li>
-  <li><a href="#create-the-repository" id="toc-create-the-repository" class="nav-link" data-scroll-target="#create-the-repository">Create the repository</a></li>
-  <li><a href="#clone-it" id="toc-clone-it" class="nav-link" data-scroll-target="#clone-it">Clone it</a></li>
-  <li><a href="#add-a-folder-called-data" id="toc-add-a-folder-called-data" class="nav-link" data-scroll-target="#add-a-folder-called-data">Add a folder called <code>data</code></a></li>
-  <li><a href="#commit-and-push" id="toc-commit-and-push" class="nav-link" data-scroll-target="#commit-and-push">Commit and push</a></li>
-  <li><a href="#open-an-issue" id="toc-open-an-issue" class="nav-link" data-scroll-target="#open-an-issue">Open an issue</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install-the-package" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install-the-package" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install-the-package"><i class="fa-solid fa-download" aria-label="download"></i> Part 1: Install the package</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code"><i class="fa-solid fa-plug" aria-label="plug"></i> Part 2: Register it with Claude Code</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067656172203e7d7d-part-3-let-r-announce-its-sessions" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067656172203e7d7d-part-3-let-r-announce-its-sessions" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067656172203e7d7d-part-3-let-r-announce-its-sessions"><i class="fa-solid fa-gear" aria-label="gear"></i> Part 3: Let R announce its sessions</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-4-try-it" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-4-try-it" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-4-try-it"><i class="fa-solid fa-vial" aria-label="vial"></i> Part 4: Try it</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/01-create-repository.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/06-connect-r.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><i class="fa-solid fa-folder-plus" aria-label="folder-plus"></i> Step 1: Create your repository and add your data</h1>
+<h1 class="title"><i class="fa-brands fa-r-project" aria-label="r-project"></i> Step 6: Connect your R session</h1>
 </div>
 
 
@@ -246,108 +280,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><span class="highlight-yellow">Due by <strong>Monday, 14 September 2026</strong></span></p>
-<p>Everything here uses the Git and GitHub workflow from <a href="https://gitforsci-ghe.github.io/website/">Git for Scientists</a>. If a step is unfamiliar, the instructions from that workshop still apply. If you are would like support in completing a step, please reach out to the course instructor.</p>
-<section id="accept-the-invitation-to-the-organization" class="level2">
-<h2 class="anchored" data-anchor-id="accept-the-invitation-to-the-organization">Accept the invitation to the organization</h2>
-<p>You have been invited to the <a href="https://github.com/agentsforsci-ghe/">agentsforsci-ghe organization</a> on GitHub. Accept the invitation before you start working on the tasks below.</p>
-<p>The invitation arrived by email. You can also accept it by going to <a href="https://github.com/agentsforsci-ghe/">https://github.com/agentsforsci-ghe/</a> while signed in to GitHub, where a banner offers you the invitation.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Check the right inbox
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>GitHub sent the invitation to the email address you used to register your GitHub account. That is not necessarily your institutional email address. If nothing has arrived, check the other address you might have signed up with, and look in the spam folder.</p>
-<p>You can see which address GitHub has for you under <a href="https://github.com/settings/emails">Settings, Emails</a>.</p>
-</div>
-</div>
+<p><span class="highlight-yellow">Due by <strong>Friday, 25 September 2026</strong></span></p>
+<p>Claude Code has no R session of its own. It can run a script or render a Quarto document, but it cannot see the data frame you have open in RStudio. The mcptools package changes that. It lets the agent run R code inside your running RStudio session and look at the objects there, which is how it inspects your data on the day. This connection is specific to R and RStudio, see the note on the <a href="../pre-work/index.html">Prepare</a> page. If you work in another language or editor, the agent still works, but this step may not apply.</p>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install-the-package" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install-the-package"><i class="fa-solid fa-download" aria-label="download"></i> Part 1: Install the package</h2>
+<p>Open RStudio. The <strong>Console</strong> is the pane at the bottom left, the one with a <code>&gt;</code> prompt. Click into it, type the line below, and press Enter. Wait until the download messages stop and the prompt is back:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"mcptools"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="create-the-repository" class="level2">
-<h2 class="anchored" data-anchor-id="create-the-repository">Create the repository</h2>
-<p>Once you are a member, create a new repository in the <a href="https://github.com/agentsforsci-ghe/">agentsforsci-ghe organization</a>.</p>
-<p>The name should broadly reflect what you work with, following three rules:</p>
-<ul>
-<li>lowercase letters only</li>
-<li>at most two words</li>
-<li>words separated by a dash</li>
-</ul>
-<p>For example: <code>solidwaste-kampala</code>.</p>
-<p>Two settings to choose on the same screen:</p>
-<ul>
-<li><strong>Visibility:</strong> public if you can, private if you cannot</li>
-<li><strong>Initialise this repository with:</strong> tick <strong>Add a README file</strong></li>
-</ul>
-<p><strong>Visibility.</strong> Choose public if the data allows it. The aim is for every repository to be public by the end, so the work and its outcomes can be shown to others. If you are not ready to make yours public yet, start private and switch it later under Settings. What you must not do is treat private as permission to commit something sensitive: the rule below applies either way.</p>
-<p><strong>README.</strong> Ticking <strong>Add a README file</strong> means GitHub creates the repository with a file already in it, so you can clone it straight away. Without it you get an empty repository and a set of setup commands instead.</p>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code"><i class="fa-solid fa-plug" aria-label="plug"></i> Part 2: Register it with Claude Code</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">macOS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Windows</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Open the Terminal app (Spotlight, then type Terminal). Any folder is fine, this setting is not tied to a folder. Copy the line below, paste it after the prompt, and press Enter. It answers with a line saying the server was added:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> mcp add <span class="at">-s</span> user r-mcptools <span class="at">--</span> Rscript <span class="at">-e</span> <span class="st">"mcptools::mcp_server()"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Open PowerShell (Start menu, then type PowerShell). On Windows the <code>Rscript</code> program is usually not findable from the terminal, so you give the full path. Get it from the RStudio Console, the pane at the bottom left:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">normalizePath</span>(<span class="fu">file.path</span>(<span class="fu">R.home</span>(<span class="st">"bin"</span>), <span class="st">"Rscript.exe"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>It prints something like <code>C:\Program Files\R\R-4.5.1\bin\Rscript.exe</code>. Use your path, in quotes, in PowerShell:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>claude mcp add <span class="op">-</span>s user r-mcptools <span class="op">--</span> <span class="st">"C:\Program Files\R\R-4.5.1\bin\Rscript.exe"</span> <span class="op">-</span>e <span class="st">"mcptools::mcp_server()"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<p>Check, in the same terminal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> mcp list</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The line for <code>r-mcptools</code> should end in <strong>Connected</strong>.</p>
 </section>
-<section id="clone-it" class="level2">
-<h2 class="anchored" data-anchor-id="clone-it">Clone it</h2>
-<p>Clone the repository to your computer, the same way you did in the first workshop.</p>
-<p>If you would like to walk through it again, the instructions are still online: <a href="https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html">cloning a repository</a>.</p>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067656172203e7d7d-part-3-let-r-announce-its-sessions" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067656172203e7d7d-part-3-let-r-announce-its-sessions"><i class="fa-solid fa-gear" aria-label="gear"></i> Part 3: Let R announce its sessions</h2>
+<p>The server needs to know which R session to talk to. One line in your R profile registers every RStudio session you start.</p>
+<p>Back in RStudio, click into the Console and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.edit</span>(<span class="st">"~/.Rprofile"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A file called <code>.Rprofile</code> opens in the editor pane at the top left. It is empty unless you have set up R this way before. Paste this line into it, then save with <strong>Cmd+S</strong> on macOS or <strong>Ctrl+S</strong> on Windows:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">interactive</span>()) mcptools<span class="sc">::</span><span class="fu">mcp_session</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Restart R from the menu bar: <strong>Session, Restart R</strong>. The Console clears and shows a fresh prompt. Then, in the Console, create something for the agent to look at:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">head</span>(mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="add-a-folder-called-data" class="level2">
-<h2 class="anchored" data-anchor-id="add-a-folder-called-data">Add a folder called <code>data</code></h2>
-<p>Inside your cloned repository, create a folder named <code>data</code>, and put the dataset you plan to work with into it.</p>
-<p><strong>What to bring.</strong> Something real from your own research, small enough to look at in one sitting. Several files are okay with a few hundred to a few thousand rows and columns you can explain. It does not need to be tidy or finished. Messy real data could be very useful here. Any file format is okay: CSV or XLSX, also PDF and DOCX, or JSON, etc.</p>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-4-try-it" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-4-try-it"><i class="fa-solid fa-vial" aria-label="vial"></i> Part 4: Try it</h2>
+<p>Check the <strong>Environment</strong> pane at the top right of RStudio: <code>x</code> is listed there as 6 obs. of 11 variables. Now open a terminal at your setup repository (as in step 4), start <code>claude</code>, and ask:</p>
+<blockquote class="blockquote">
+<p>What objects are in my R session?</p>
+</blockquote>
+<p>The agent asks permission to use an r-mcptools tool. Read the prompt and allow it. The answer names <code>x</code> and describes it as a data frame with 6 rows and 11 columns. On the day you do the same with the workshop data loaded.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>This must be non-sensitive data, with no personal data in it
+<span class="screen-reader-only">Important</span>What this connection means
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent, and a later visibility change, a new collaborator, or a push to the wrong remote can expose it.</p>
-<p>Do not commit names, recruitment or participant data, health data, signed consent, or anything that identifies a person in combination with other columns.</p>
-<p>This matters more with an agent than without one: a coding agent reads whole directories and sends file contents to a model, so protected data in the folder can leave your machine without you deciding to send it.</p>
-<p>If you are unsure which category your data falls into, treat it as protected and ask before committing anything.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>If you cannot identify a dataset
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Get in touch with me directly and we will sort something out before the workshop. Do not skip the step and turn up without data.</p>
-</div>
-</div>
-</section>
-<section id="commit-and-push" class="level2">
-<h2 class="anchored" data-anchor-id="commit-and-push">Commit and push</h2>
-<p>Stage the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.</p>
-</section>
-<section id="open-an-issue" class="level2">
-<h2 class="anchored" data-anchor-id="open-an-issue">Open an issue</h2>
-<p>Once the data is committed and pushed, open an issue on your own repository:</p>
-<ul>
-<li><strong>Title:</strong> <code>Data added</code></li>
-<li><strong>Body:</strong> one or two sentences saying what the data is and where it came from</li>
-<li><strong>Assignee:</strong> <code>larnsce</code></li>
-</ul>
-<p>That issue is how I know you are ready, and the description is the beginning of the documentation question we work on during the day.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>All of this by Monday, 14 September 2026
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If anything blocks you, open the issue anyway, describe what went wrong, and assign it to me. A problem found now is half an hour of work; the same problem found on the morning of the workshop costs you the session.</p>
+<p>With this in place the agent can run any R code in your live session, including code that removes objects or writes files. The permission prompt is what stands between it and that. Read the prompt each time rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.</p>
 </div>
 </div>
 
@@ -764,10 +752,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../pre-work/05-github-cli.html" class="pagination-link" aria-label="Step 5: Connect GitHub">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 5: Connect GitHub</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pre-work/02-join-element.html" class="pagination-link" aria-label="Step 2: Join the chat">
-        <span class="nav-page-text">Step 2: Join the chat</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pre-work/07-zotero.html" class="pagination-link" aria-label="Step 7: Set up Zotero">
+        <span class="nav-page-text">Step 7: Set up Zotero</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -779,7 +770,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/01-create-repository.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/06-connect-r.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

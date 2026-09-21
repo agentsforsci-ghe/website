@@ -2,18 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://agentsforsci-ghe.github.io/website/pre-work/index.html</loc>
-    <lastmod>2026-09-08T14:33:48.025Z</lastmod>
+    <lastmod>2026-09-21T18:45:38.547Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/pre-work/08-zotero-mcp.html</loc>
+    <lastmod>2026-09-21T18:45:38.786Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/pre-work/06-connect-r.html</loc>
+    <lastmod>2026-09-21T18:45:38.707Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/pre-work/04-install-claude-code.html</loc>
+    <lastmod>2026-09-21T18:45:38.806Z</lastmod>
   </url>
   <url>
     <loc>https://agentsforsci-ghe.github.io/website/pre-work/01-create-repository.html</loc>
-    <lastmod>2026-09-08T20:29:19.600Z</lastmod>
+    <lastmod>2026-09-21T14:00:50.214Z</lastmod>
   </url>
   <url>
     <loc>https://agentsforsci-ghe.github.io/website/index.html</loc>
-    <lastmod>2026-09-08T20:22:03.484Z</lastmod>
+    <lastmod>2026-09-21T18:45:38.585Z</lastmod>
   </url>
   <url>
     <loc>https://agentsforsci-ghe.github.io/website/pre-work/02-join-element.html</loc>
-    <lastmod>2026-09-08T14:33:28.413Z</lastmod>
+    <lastmod>2026-09-21T12:54:16.706Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/pre-work/05-github-cli.html</loc>
+    <lastmod>2026-09-21T18:45:38.806Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/pre-work/07-zotero.html</loc>
+    <lastmod>2026-09-21T18:45:38.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agentsforsci-ghe.github.io/website/pre-work/09-setup-check.html</loc>
+    <lastmod>2026-09-21T18:16:21.751Z</lastmod>
   </url>
 </urlset>
