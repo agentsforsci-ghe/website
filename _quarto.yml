@@ -4,12 +4,8 @@ project:
   render:
     - "*.qmd"
     - "**/*.qmd"
-    # Background pages stay in the repo but are not published yet (under review)
-    - "!background/"
-    # Reference pages stay in the repo but are not published yet (under review)
-    - "!glossary.qmd"
+    # The platform guide stays in the repo but is not published yet (under review)
     - "!platform-guide.qmd"
-    - "!references.qmd"
   # Copied into docs/ on every render. GitHub Pages serves docs/ directly, and
   # this tells it not to run the output through Jekyll. Quarto clears docs/ on
   # render, so the file has to be a project resource rather than sit there.
@@ -48,6 +44,8 @@ website:
         text: "Overview"
       - href: pre-work/index.qmd
         text: "Prepare"
+      - href: background/index.qmd
+        text: "Background"
     right:
       - icon: github
         href: https://github.com/agentsforsci-ghe
@@ -79,6 +77,28 @@ website:
           text: "Step 8: Connect Zotero"
         - href: pre-work/09-setup-check.qmd
           text: "Step 9: Test your setup"
+    - id: background
+      title: "Background"
+      style: "docked"
+      background: "#F5F5F5"
+      collapse-level: 1
+      contents:
+        - href: background/index.qmd
+          text: "Overview"
+        - text: "---"
+        - href: background/security.qmd
+          text: "Security"
+        - href: background/literacy.qmd
+          text: "Literacy"
+        - href: background/transparency.qmd
+          text: "Transparency"
+        - href: background/disclosure.qmd
+          text: "Disclosure"
+        - text: "---"
+        - href: glossary.qmd
+          text: "Glossary"
+        - href: references.qmd
+          text: "References"
 
 bibliography: references.bib
 csl: https://www.zotero.org/styles/apa

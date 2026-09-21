@@ -21,7 +21,9 @@ In the first workshop you learned to use Git and GitHub so that every change to 
 
 The day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan and using GitHub issues. Comparing the three shows what the agent actually does for you, how you can document the process and how your stay involved in making decisions. 
 
-Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing disclosure rules for scientific research right now, and we are planning to use to send them a response written from what we do in the room.
+Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing disclosure rules for scientific research right now. We will not write a response to them in the room, but what the day shows feeds into the reproducibility community's contribution, through the AI working group of the Global Federation of Reproducibility Networks.
+
+Four short [background pages](background/index.qmd) cover the themes the introduction block builds on: security, literacy, transparency, and disclosure. Reading them before the day is useful, not required.
 
 ## {{< fa graduation-cap >}} Prior knowledge
 
@@ -91,7 +93,7 @@ By the end of this workshop, participants will be able to:
 
 2. **Judge the difference a plan makes**: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.
 
-3. **Judge the difference documentation makes**: compare what an agent does with a plain CSV against the same data published as a data package.
+3. **Judge the difference documentation makes**: compare what an agent does with a plain CSV against the same data published as a data package, the data together with its documentation in a form the agent can read.
 
 4. **Declare agent use**: point to the record your workflow produced and say what it shows about which parts of the work an agent touched.
 

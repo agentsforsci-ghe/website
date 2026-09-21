@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title> Step 9: Test your setup and report done – Agents for Scientists (Autumn 2026)</title>
+<title> Transparency – Agents for Scientists (Autumn 2026)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,42 +26,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -71,7 +56,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pre-work/08-zotero-mcp.html" rel="prev">
+<link href="../background/disclosure.html" rel="next">
+<link href="../background/literacy.html" rel="prev">
 <link href="../images/ghe-square-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -146,11 +132,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Overview</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../pre-work/index.html" aria-current="page"> 
+    <a class="nav-link" href="../pre-work/index.html"> 
 <span class="menu-text">Prepare</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../background/index.html"> 
+    <a class="nav-link active" href="../background/index.html" aria-current="page"> 
 <span class="menu-text">Background</span></a>
   </li>  
 </ul>
@@ -171,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pre-work/09-setup-check.html">Step 9: Test your setup</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../background/transparency.html">Transparency</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -191,57 +177,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../background/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/01-create-repository.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 1: Your repository</span></a>
+  <a href="../background/security.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Security</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/02-join-element.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 2: Join the chat</span></a>
+  <a href="../background/literacy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literacy</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/04-install-claude-code.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 4: Install Claude Code</span></a>
+  <a href="../background/transparency.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Transparency</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/05-github-cli.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 5: Connect GitHub</span></a>
+  <a href="../background/disclosure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disclosure</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/06-connect-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 6: Connect R</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pre-work/07-zotero.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 7: Set up Zotero</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pre-work/08-zotero-mcp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step 8: Connect Zotero</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pre-work/09-setup-check.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Step 9: Test your setup</span></a>
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
@@ -254,20 +229,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#both-connections" id="toc-both-connections" class="nav-link active" data-scroll-target="#both-connections">1. Both connections</a></li>
-  <li><a href="#put-the-data-in-your-r-session" id="toc-put-the-data-in-your-r-session" class="nav-link" data-scroll-target="#put-the-data-in-your-r-session">2. Put the data in your R session</a></li>
-  <li><a href="#a-read-only-run-in-plan-mode" id="toc-a-read-only-run-in-plan-mode" class="nav-link" data-scroll-target="#a-read-only-run-in-plan-mode">3. A read-only run in plan mode</a></li>
-  <li><a href="#a-file-and-a-commit" id="toc-a-file-and-a-commit" class="nav-link" data-scroll-target="#a-file-and-a-commit">4. A file and a commit</a></li>
-  <li><a href="#report-done" id="toc-report-done" class="nav-link" data-scroll-target="#report-done">5. Report done</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206275696c64696e672d636f6c756d6e73203e7d7d-eth-already-asks-for-traceability" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206275696c64696e672d636f6c756d6e73203e7d7d-eth-already-asks-for-traceability" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206275696c64696e672d636f6c756d6e73203e7d7d-eth-already-asks-for-traceability"><i class="fa-solid fa-building-columns" aria-label="building-columns"></i> ETH already asks for traceability</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d636f6d6d6974203e7d7d-attribution-at-the-commit-level" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d636f6d6d6974203e7d7d-attribution-at-the-commit-level" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d636f6d6d6974203e7d7d-attribution-at-the-commit-level"><i class="fa-solid fa-code-commit" aria-label="code-commit"></i> Attribution at the commit level</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f74617465203e7d7d-could-you-recreate-it-if-the-ai-were-gone" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f74617465203e7d7d-could-you-recreate-it-if-the-ai-were-gone" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f74617465203e7d7d-could-you-recreate-it-if-the-ai-were-gone"><i class="fa-solid fa-rotate" aria-label="rotate"></i> Could you recreate it if the AI were gone?</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207374616d70203e7d7d-a-watermark-says-a-machine-was-involved-and-nothing-else" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207374616d70203e7d7d-a-watermark-says-a-machine-was-involved-and-nothing-else" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207374616d70203e7d7d-a-watermark-says-a-machine-was-involved-and-nothing-else"><i class="fa-solid fa-stamp" aria-label="stamp"></i> A watermark says a machine was involved, and nothing else</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/09-setup-check.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/background/transparency.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><i class="fa-solid fa-flag-checkered" aria-label="flag-checkered"></i> Step 9: Test your setup and report done</h1>
+<h1 class="title"><i class="fa-solid fa-eye" aria-label="eye"></i> Transparency</h1>
+<p class="subtitle lead">What the workflow records for you</p>
 </div>
 
 
@@ -284,96 +259,80 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><span class="highlight-yellow">Due by <strong>Friday, 25 September 2026</strong></span></p>
-<p>Twenty minutes. This runs everything from steps 4 to 8 once, in the order the day uses it, on the setup repository you cloned in step 4, and ends with an issue assigned to me so I know you are ready. Have Zotero open, and RStudio open with the setup project (File, Open Project, then <code>setup.Rproj</code> in the folder you cloned).</p>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206275696c64696e672d636f6c756d6e73203e7d7d-eth-already-asks-for-traceability" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206275696c64696e672d636f6c756d6e73203e7d7d-eth-already-asks-for-traceability"><i class="fa-solid fa-building-columns" aria-label="building-columns"></i> ETH already asks for traceability</h2>
+<p>The ETH integrity guidelines rest on reliability, honesty, respect, and responsibility. Reliability includes transparency and traceability, and authorship requires a significant contribution through personal work <span class="citation" data-cites="ethz2026integrity">(<a href="#ref-ethz2026integrity" role="doc-biblioref">ETH Zurich, 2026</a>)</span>.</p>
+<p>None of this was written with agents in mind, and none of it needs rewriting because of them. The question the workshop answers is a practical one: how do you keep faith with these principles when an agent writes some of the code and some of the prose?</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d636f6d6d6974203e7d7d-attribution-at-the-commit-level" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d636f6d6d6974203e7d7d-attribution-at-the-commit-level"><i class="fa-solid fa-code-commit" aria-label="code-commit"></i> Attribution at the commit level</h2>
+<p>The answer this group is testing is that the record should be a by-product of the work rather than something reconstructed afterwards.</p>
+<p>Every commit says what changed and who made the change. Agent commits carry a trailer, a line at the end of the commit message, marking them as assisted; human commits carry one marking them as human-authored. The prompts behind agent commits can be archived alongside the code, so the instruction that produced a change sits next to the change.</p>
+<p>The pull request then shows the whole history in one view: what the human drafted, what the agent altered, and what was reviewed before it was merged.</p>
+<p>This is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim <span class="citation" data-cites="schoebitz2026whowrotethis">(<a href="#ref-schoebitz2026whowrotethis" role="doc-biblioref">Schöbitz, 2026a</a>)</span>.</p>
+<p>The talk at the Data Stewardship Network autumn meeting on 22 September 2026 took the record one step further <span class="citation" data-cites="schoebitz2026gitforscientists">(<a href="#ref-schoebitz2026gitforscientists" role="doc-biblioref">Schöbitz, 2026c</a>)</span>. The deck was built with the agent, and at the end the agent was asked to write the declaration of AI use for it. It read the archived prompts, the commit trailers, and the line by line history of the deck file, and produced the declaration page, with the prompt that produced it archived in turn <span class="citation" data-cites="schoebitz2026dsndeclaration">(<a href="#ref-schoebitz2026dsndeclaration" role="doc-biblioref">Schöbitz, 2026b</a>)</span>. Both are online. The same step, letting the agent write the declaration from the record, is demonstrated live on the day.</p>
+<p>The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a diff <span class="citation" data-cites="wickham2026datadict">(<a href="#ref-wickham2026datadict" role="doc-biblioref">Wickham, 2026</a>)</span>.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f74617465203e7d7d-could-you-recreate-it-if-the-ai-were-gone" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f74617465203e7d7d-could-you-recreate-it-if-the-ai-were-gone"><i class="fa-solid fa-rotate" aria-label="rotate"></i> Could you recreate it if the AI were gone?</h2>
+<p>A useful test for any artifact an agent helped produce. It is fine that the AI made it. The problem is when the AI has to stay in the loop for you to be able to change it.</p>
+<p>The failure cases are recognisable:</p>
+<ul>
+<li>a dashboard nobody can reconfigure</li>
+<li>a manuscript with citations baked into the text rather than managed</li>
+<li>figures an agent copied from one folder to another, with no code that would remake them</li>
+</ul>
+<p>The remedy is a code-based source of truth that reads the data and builds the output, so a human can rerun it. This is the same argument as reproducibility, arriving from a different direction.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207374616d70203e7d7d-a-watermark-says-a-machine-was-involved-and-nothing-else" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207374616d70203e7d7d-a-watermark-says-a-machine-was-involved-and-nothing-else"><i class="fa-solid fa-stamp" aria-label="stamp"></i> A watermark says a machine was involved, and nothing else</h2>
+<p>Since August 2026 Anthropic marks Claude output, in line with the EU AI Act’s transparency obligation <span class="citation" data-cites="euaiact2024 anthropic2026watermark">(<a href="#ref-anthropic2026watermark" role="doc-biblioref">Anthropic, 2026</a>; <a href="#ref-euaiact2024" role="doc-biblioref">European Union, 2024</a>)</span>. Text carries a watermark woven into the wording itself; images and other files carry signed content credentials attached as metadata. Models launched from 2 August 2026 mark their output from the start, and older models follow during a transition period, so the output of a given session may or may not be marked yet.</p>
+<p>The limits are worth knowing <span class="citation" data-cites="carpenter2026watermarking">(<a href="#ref-carpenter2026watermarking" role="doc-biblioref">Carpenter, 2026</a>)</span>. A mark can be stripped or edited away, which is easier with the metadata on an image than with a watermark woven into text. It needs a substantial amount of text to work at all. Most importantly it carries no intent: it cannot distinguish translating your own ideas from having the machine write them, which is precisely the distinction that matters for integrity.</p>
+<p>The audit trail from a version-controlled workflow carries what the mark cannot: what the tool did, on which files, in response to which instruction.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Why not your own repository
+<span class="screen-reader-only">Note</span>The short version
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The agent does not see your data before the day. The rule from step 1 about what goes into a repository applies to what an agent reads, and we set the safety rails together in the room. Your setup repository holds a few hundred rows of public WASH investment data instead, which is enough to test every connection.</p>
+<p>Traceability is not an extra step bolted onto agent use. Done this way it is the ordinary output of working through Git, and it is what makes the disclosure question answerable rather than a matter of memory.</p>
 </div>
 </div>
-<section id="both-connections" class="level2">
-<h2 class="anchored" data-anchor-id="both-connections">1. Both connections</h2>
-<p>In RStudio, open a terminal inside the project: <strong>Tools, Terminal, New Terminal</strong>. A Terminal tab appears next to the Console, already in the setup folder. Run:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> mcp list</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Both <code>r-mcptools</code> and <code>zotero</code> end in <strong>Connected</strong>. If one does not, go back to step 6 or step 8 before continuing.</p>
-</section>
-<section id="put-the-data-in-your-r-session" class="level2">
-<h2 class="anchored" data-anchor-id="put-the-data-in-your-r-session">2. Put the data in your R session</h2>
-<p>In the Files pane at the bottom right, click <code>01-read-data.R</code> to open it, then click <strong>Source</strong> at the top right of the editor. There is nothing to edit. The Console prints a line starting with “Loaded”, and the <strong>Environment</strong> pane at the top right lists two objects, <code>investments</code> and <code>investments_by_country</code>.</p>
-</section>
-<section id="a-read-only-run-in-plan-mode" class="level2">
-<h2 class="anchored" data-anchor-id="a-read-only-run-in-plan-mode">3. A read-only run in plan mode</h2>
-<p>In the Terminal tab, start Claude Code:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Press <strong>Shift+Tab</strong> until the status line at the bottom says <strong>plan mode</strong>. In plan mode the agent reads and proposes. It does not change anything. Ask these three things, one at a time, and wait for each answer:</p>
-<blockquote class="blockquote">
-<p>Read the files in the data folder and describe what is in them. Do not change anything.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>What objects are in my R session, and how many rows does the largest one have?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>List five items from my Zotero library with their citation keys.</p>
-</blockquote>
-<p>When Claude Code asks before using a tool, read the prompt and allow it. In auto mode most of these steps run without asking, and each answer names the tool it used. The three answers show the agent reading the sample data, your R session, and your own library.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>If it proposes something you did not ask for
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Say no. In plan mode the agent may only read. Anything else is a good story for the chat room.</p>
-</div>
-</div>
-</section>
-<section id="a-file-and-a-commit" class="level2">
-<h2 class="anchored" data-anchor-id="a-file-and-a-commit">4. A file and a commit</h2>
-<p>Press <strong>Shift+Tab</strong> to leave plan mode. Ask:</p>
-<blockquote class="blockquote">
-<p>Create a file called SETUP.md at the top of this repository. In it, list my operating system, the Claude Code version, whether the r-mcptools and zotero servers are connected, and a short summary of what is in the data folder. Do not run git.</p>
-</blockquote>
-<p>The agent shows the file it wants to write. Read it and accept. Then type <code>/exit</code>.</p>
-<p>Commit and push the file yourself, the way you did in the first workshop: in the RStudio Git pane, tick <code>SETUP.md</code> to stage it, click <strong>Commit</strong>, write “Add setup report” as the message, click <strong>Commit</strong>, then <strong>Push</strong>. Open the repository on GitHub and check that <code>SETUP.md</code> is there.</p>
-<p>Today you do every commit yourself. On the day you hand the agent one step at a time.</p>
-</section>
-<section id="report-done" class="level2">
-<h2 class="anchored" data-anchor-id="report-done">5. Report done</h2>
-<p>Open an issue on your setup repository with the title <strong>Setup complete</strong>, assigned to <code>larnsce</code>, saying which of the steps 4 to 9 worked and which did not. You can have the agent do it. Start <code>claude</code> again in the Terminal tab and ask:</p>
-<blockquote class="blockquote">
-<p>Open an issue on this repository titled “Setup complete”, assign it to larnsce, and write in the body which of the pre-work steps 4 to 9 worked for me and which did not.</p>
-</blockquote>
-<p>It uses the GitHub CLI from step 5 for that. Allow the prompt if one appears, and check on GitHub that the issue exists. Opening the issue by hand, as you did in step 1, is just as good.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>If anything failed
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Open the issue anyway, describe what failed and at which step, and assign it to me. A problem found now is half an hour of work. The same problem found on the morning of the workshop costs you the session.</p>
-</div>
-</div>
-<p>Thank you for working through all of this. See you at Villa Hatt, ETH Zurich.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-anthropic2026watermark" class="csl-entry" role="listitem">
+Anthropic. (2026, August). <em>How <span>Claude</span>’s text watermark works</em>. Anthropic. <a href="https://www.anthropic.com/news/claude-text-watermark">https://www.anthropic.com/news/claude-text-watermark</a>
+</div>
+<div id="ref-carpenter2026watermarking" class="csl-entry" role="listitem">
+Carpenter, T. A. (2026, August). <em>We can now track <span>AI</span>-generated content. It doesn’t solve the real problem</em>. The Scholarly Kitchen. <a href="https://scholarlykitchen.sspnet.org/2026/08/31/we-can-now-track-ai-generated-content/">https://scholarlykitchen.sspnet.org/2026/08/31/we-can-now-track-ai-generated-content/</a>
+</div>
+<div id="ref-ethz2026integrity" class="csl-entry" role="listitem">
+ETH Zurich. (2026). <em>Research integrity at <span>ETH</span> <span>Z</span>urich</em>. ETH Zurich. <a href="https://ethz.ch/en/the-eth-zurich/organisation/departments/scientific-integrity-research-ethics.html">https://ethz.ch/en/the-eth-zurich/organisation/departments/scientific-integrity-research-ethics.html</a>
+</div>
+<div id="ref-euaiact2024" class="csl-entry" role="listitem">
+European Union. (2024). <em>Regulation (<span>EU</span>) 2024/1689 (artificial intelligence act), article 50: Transparency obligations</em>. <a href="https://artificialintelligenceact.eu/article/50/">https://artificialintelligenceact.eu/article/50/</a>
+</div>
+<div id="ref-schoebitz2026whowrotethis" class="csl-entry" role="listitem">
+Schöbitz, L. (2026a, July). <em>Who wrote this? Scientific integrity at <span>ETH</span> <span>Z</span>urich in the age of <span>AI</span></em>. Global Health Engineering, ETH Zurich. <a href="https://ghe.ethz.ch/ghe-blog-news/2026/07/blog-who-wrote-this-scientific-integrity-at-eth-zurich-in-the-age-of-ai.html">https://ghe.ethz.ch/ghe-blog-news/2026/07/blog-who-wrote-this-scientific-integrity-at-eth-zurich-in-the-age-of-ai.html</a>
+</div>
+<div id="ref-schoebitz2026dsndeclaration" class="csl-entry" role="listitem">
+Schöbitz, L. (2026b, September). <em>Declaration of <span>AI</span> use for the talk git for scientists</em>. Global Health Engineering, ETH Zurich. <a href="https://ghe-open.ch/slides/dsn-agentsforsci-ai-declaration.html">https://ghe-open.ch/slides/dsn-agentsforsci-ai-declaration.html</a>
+</div>
+<div id="ref-schoebitz2026gitforscientists" class="csl-entry" role="listitem">
+Schöbitz, L. (2026c, September). <em>Git for scientists: So that we can still prove what is human when working with <span>AI</span> in research</em>. Data Stewardship Network Autumn Community Meeting, ETH Zurich. <a href="https://ghe-open.ch/slides/dsn-agentsforsci.html">https://ghe-open.ch/slides/dsn-agentsforsci.html</a>
+</div>
+<div id="ref-wickham2026datadict" class="csl-entry" role="listitem">
+Wickham, H. (2026, June). <em>Data dictionaries, parquet, &amp; <span>Claude</span></em>. Posit. <a href="https://www.youtube.com/watch?v=jVqArueBFqA">https://www.youtube.com/watch?v=jVqArueBFqA</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -783,11 +742,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../pre-work/08-zotero-mcp.html" class="pagination-link" aria-label="Step 8: Connect Zotero">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 8: Connect Zotero</span>
+      <a href="../background/literacy.html" class="pagination-link" aria-label="Literacy">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Literacy</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../background/disclosure.html" class="pagination-link" aria-label="Disclosure">
+        <span class="nav-page-text">Disclosure</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -798,7 +760,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/09-setup-check.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/background/transparency.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
