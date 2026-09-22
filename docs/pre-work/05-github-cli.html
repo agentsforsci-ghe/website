@@ -291,46 +291,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><span class="highlight-yellow">Due by <strong>Friday, 25 September 2026</strong></span></p>
-<p>On the day, the <a class="gl" href="../glossary.html#gl-agent" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="agent" data-bs-content="<p>An agent is a language model that has been given tools and set to
+<p>On the day, the <a href="../glossary.html#gl-agent" class="gl" data-bs-toggle="popover" data-bs-content="<p>An agent is a language model that has been given tools and set to
 work in a loop: it does something, looks at the result, decides what to
 do next, and repeats until the task is done or it needs you. Claude Code
 is an agent. A single question and answer is not an agent, because
-nothing happens in between.</p>"></a> opens <a class="gl" href="../glossary.html#gl-issue" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="issue" data-bs-content="<p>An issue is a to-do item for a project, posted on the repository’s
+nothing happens in between.</p>" data-bs-placement="top" data-bs-title="agent" data-bs-trigger="hover focus" data-bs-html="true">agent</a> opens <a href="../glossary.html#gl-issue" class="gl" data-bs-toggle="popover" data-bs-content="<p>An issue is a to-do item for a project, posted on the repository’s
 page on GitHub. An issue can describe a problem, ask for something new,
 or hold a task. You can assign an issue to a person, and you can refer
-to it from commits and pull requests.</p>">issues</a> and <a class="gl" href="../glossary.html#gl-pull-request" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="pull request" data-bs-content="<p>A pull request is a page on GitHub where you ask another person to
+to it from commits and pull requests.</p>" data-bs-placement="top" data-bs-title="issue" data-bs-trigger="hover focus" data-bs-html="true">issues</a> and <a href="../glossary.html#gl-pull-request" class="gl" data-bs-toggle="popover" data-bs-content="<p>A pull request is a page on GitHub where you ask another person to
 review the changes on your branch and, if the changes are good, to merge
 the branch into main. The reviewer can read every changed line, write
 comments, and suggest edits. A pull request is not the same as a pull. A
 pull downloads commits to your computer, and a pull request is a
-conversation about merging.</p>">pull requests</a> on your <a class="gl" href="../glossary.html#gl-repository" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="repository" data-bs-content="<p>A repository is the folder for one project, together with the full
+conversation about merging.</p>" data-bs-placement="top" data-bs-title="pull request" data-bs-trigger="hover focus" data-bs-html="true">pull requests</a> on your <a href="../glossary.html#gl-repository" class="gl" data-bs-toggle="popover" data-bs-content="<p>A repository is the folder for one project, together with the full
 record of every change made to the files in it. Git keeps the record in
 a hidden part of the folder. As a rule, one project gets one
-repository.</p>"></a> for you. For that it needs to talk to GitHub from the <a class="gl" href="../glossary.html#gl-terminal" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="terminal" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+repository.</p>" data-bs-placement="top" data-bs-title="repository" data-bs-trigger="hover focus" data-bs-html="true">repository</a> for you. For that it needs to talk to GitHub from the <a href="../glossary.html#gl-terminal" class="gl" data-bs-toggle="popover" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
 runs in one. Give it a window of its own next to your editor: the
 Terminal app on the Mac, PowerShell on Windows. RStudio’s Terminal tab
-also works, but it is slow and cramped for an agent.</p>"></a>, which the <a class="gl" href="../glossary.html#gl-github-cli" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="github cli" data-bs-content="<p>A program called gh that talks to GitHub from the terminal: it logs
+also works, but it is slow and cramped for an agent.</p>" data-bs-placement="top" data-bs-title="terminal" data-bs-trigger="hover focus" data-bs-html="true">terminal</a>, which the <a href="../glossary.html#gl-github-cli" class="gl" data-bs-toggle="popover" data-bs-content="<p>A program called gh that talks to GitHub from the terminal: it logs
 you in, opens issues and pull requests, and lists repositories. On the
-day the agent uses it to open issues and pull requests for you.</p>"></a> provides. Two parts: install the GitHub CLI and log in, then create a <code>dev</code> <a class="gl" href="../glossary.html#gl-branch" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="branch" data-bs-content="<p>A branch is a separate line of work inside a repository. You create a
+day the agent uses it to open issues and pull requests for you.</p>" data-bs-placement="top" data-bs-title="github cli" data-bs-trigger="hover focus" data-bs-html="true">GitHub CLI</a> provides. Two parts: install the GitHub CLI and log in, then create a <code>dev</code> <a href="../glossary.html#gl-branch" class="gl" data-bs-toggle="popover" data-bs-content="<p>A branch is a separate line of work inside a repository. You create a
 branch when you want to change files without touching the main copy of
 the project. When the changes have been reviewed, you bring them back
 into the main copy. In the workshop you make your edits on a branch and
-bring them into main through a pull request.</p>"></a>.</p>
+bring them into main through a pull request.</p>" data-bs-placement="top" data-bs-title="branch" data-bs-trigger="hover focus" data-bs-html="true">branch</a>.</p>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-part-1-the-github-cli" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-part-1-the-github-cli"><i class="fa-solid fa-key" aria-label="key"></i> Part 1: The GitHub CLI</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">macOS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Windows</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>The GitHub CLI comes through <a class="gl" href="../glossary.html#gl-homebrew" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="homebrew" data-bs-content="<p>The package manager for the Mac. One command in the terminal installs
+<p>The GitHub CLI comes through <a href="../glossary.html#gl-homebrew" class="gl" data-bs-toggle="popover" data-bs-content="<p>The package manager for the Mac. One command in the terminal installs
 a program, one command updates it. It is installed once, from brew.sh,
-and step 5 uses it for the GitHub CLI.</p>"></a>, the package manager for the Mac. If you do not have Homebrew yet, go to <a href="https://brew.sh/">brew.sh</a>, copy the install line shown at the top of that page, paste it into Terminal, press Enter, and follow the prompts. It asks for your Mac password and takes a few minutes. Then, in the same Terminal window, install the GitHub CLI:</p>
+and step 5 uses it for the GitHub CLI.</p>" data-bs-placement="top" data-bs-title="homebrew" data-bs-trigger="hover focus" data-bs-html="true">Homebrew</a>, the package manager for the Mac. If you do not have Homebrew yet, go to <a href="https://brew.sh/">brew.sh</a>, copy the install line shown at the top of that page, paste it into Terminal, press Enter, and follow the prompts. It asks for your Mac password and takes a few minutes. Then, in the same Terminal window, install the GitHub CLI:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install gh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Open <a class="gl" href="../glossary.html#gl-powershell" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="powershell" data-bs-content="<p>The terminal program built into Windows, where you type commands. Its
+<p>Open <a href="../glossary.html#gl-powershell" class="gl" data-bs-toggle="popover" data-bs-content="<p>The terminal program built into Windows, where you type commands. Its
 prompt starts with PS. The pre-work uses it for the install lines on
-Windows.</p>"></a> (as in step 4), paste this line, and press Enter:</p>
+Windows.</p>" data-bs-placement="top" data-bs-title="powershell" data-bs-trigger="hover focus" data-bs-html="true">PowerShell</a> (as in step 4), paste this line, and press Enter:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>winget install <span class="op">--</span>id GitHub<span class="op">.</span><span class="fu">cli</span> <span class="op">--</span>source winget</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Close the terminal and open a new window afterwards, so the new program is found.</p>
 </div>
@@ -338,17 +338,17 @@ Windows.</p>"></a> (as in step 4), paste this line, and press Enter:</p>
 </div>
 <p>Now connect the CLI to your GitHub account. In the terminal, run:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gh</span> auth login</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>It asks a few questions. Answer <strong>GitHub.com</strong>, <strong>HTTPS</strong>, <strong>Yes</strong> to authenticating Git with your GitHub <a class="gl" href="../glossary.html#gl-credential" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="credential" data-bs-content="<p>A piece of information that proves to a computer system who you are,
+<p>It asks a few questions. Answer <strong>GitHub.com</strong>, <strong>HTTPS</strong>, <strong>Yes</strong> to authenticating Git with your GitHub <a href="../glossary.html#gl-credential" class="gl" data-bs-toggle="popover" data-bs-content="<p>A piece of information that proves to a computer system who you are,
 such as a password or a personal access token. Git keeps your GitHub
 credential on your computer, so you do not have to retype it for every
-push and pull.</p>">credentials</a>, and <strong>Login with a web browser</strong>. Copy the one-time code it shows, press Enter, paste the code into the browser page that opens, and authorize.</p>
+push and pull.</p>" data-bs-placement="top" data-bs-title="credential" data-bs-trigger="hover focus" data-bs-html="true">credentials</a>, and <strong>Login with a web browser</strong>. Copy the one-time code it shows, press Enter, paste the code into the browser page that opens, and authorize.</p>
 <p>Check it worked:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gh</span> auth status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Then open a terminal at your setup repository (as in step 4) and run one command that only works when GitHub is reachable:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gh</span> repo view</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>It prints the name and <a class="gl" href="../glossary.html#gl-readme" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="readme" data-bs-content="<p>A README is a text file that explains what a project is and how to
+<p>It prints the name and <a href="../glossary.html#gl-readme" class="gl" data-bs-toggle="popover" data-bs-content="<p>A README is a text file that explains what a project is and how to
 use it. GitHub shows the file named README.md on the front page of the
-repository.</p>"></a> of <code>setup-USERNAME</code>.</p>
+repository.</p>" data-bs-placement="top" data-bs-title="readme" data-bs-trigger="hover focus" data-bs-html="true">README</a> of <code>setup-USERNAME</code>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -359,25 +359,25 @@ repository.</p>"></a> of <code>setup-USERNAME</code>.</p>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The <a class="gl" href="../glossary.html#gl-personal-access-token" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="personal access token" data-bs-content="<p>A personal access token is a long password that GitHub generates for
+<p>The <a href="../glossary.html#gl-personal-access-token" class="gl" data-bs-toggle="popover" data-bs-content="<p>A personal access token is a long password that GitHub generates for
 you. Git sends it to GitHub when you push or pull, to prove that the
 request really comes from you. You created one during the Git for
-Scientists pre-work, and it should still work for this workshop.</p>"></a> you created for the first workshop keeps working for RStudio. The GitHub CLI has its own login, which is what you just did. The two do not interfere.</p>
+Scientists pre-work, and it should still work for this workshop.</p>" data-bs-placement="top" data-bs-title="personal access token" data-bs-trigger="hover focus" data-bs-html="true">personal access token</a> you created for the first workshop keeps working for RStudio. The GitHub CLI has its own login, which is what you just did. The two do not interfere.</p>
 </div>
 </div>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-part-2-a-dev-branch" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-part-2-a-dev-branch"><i class="fa-solid fa-code-branch" aria-label="code-branch"></i> Part 2: A <code>dev</code> branch</h2>
-<p>The working pattern for the day is that changes land on a branch called <code>dev</code>, get reviewed in a pull request, and reach <code>main</code> through the <a class="gl" href="../glossary.html#gl-merge" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="merge" data-bs-content="<p>To merge means to combine the changes from one branch into another,
+<p>The working pattern for the day is that changes land on a branch called <code>dev</code>, get reviewed in a pull request, and reach <code>main</code> through the <a href="../glossary.html#gl-merge" class="gl" data-bs-toggle="popover" data-bs-content="<p>To merge means to combine the changes from one branch into another,
 so that one branch now contains the work of both. In the workshop, the
-merge happens when a reviewer accepts a pull request on GitHub.</p>"></a>. Create the branch now so it is there when the agent starts working.</p>
+merge happens when a reviewer accepts a pull request on GitHub.</p>" data-bs-placement="top" data-bs-title="merge" data-bs-trigger="hover focus" data-bs-html="true">merge</a>. Create the branch now so it is there when the agent starts working.</p>
 <p>Create it on your own repository from step 1, the one with your data, which is where the day’s work happens. Open that project in RStudio with <strong>File, Open Project</strong>.</p>
-<p>In the <a class="gl" href="../glossary.html#gl-git-pane" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="git pane" data-bs-content="<p>Most editors, including RStudio and Positron, have a Git pane: a
+<p>In the <a href="../glossary.html#gl-git-pane" class="gl" data-bs-toggle="popover" data-bs-content="<p>Most editors, including RStudio and Positron, have a Git pane: a
 panel showing what has changed in your repository, with buttons for the
 everyday Git work. Every button runs a real Git command, so clicking
 Push runs git push. This workshop mostly uses the terminal instead,
 because that is where the agent works, but the two are
-interchangeable.</p>"></a>, click the <strong>New Branch</strong> button. Name it <code>dev</code>, leave <strong>Sync branch with remote</strong> ticked, and click <strong>Create</strong>. RStudio creates the branch, switches to it, and pushes it to GitHub.</p>
+interchangeable.</p>" data-bs-placement="top" data-bs-title="git pane" data-bs-trigger="hover focus" data-bs-html="true">Git pane</a>, click the <strong>New Branch</strong> button. Name it <code>dev</code>, leave <strong>Sync branch with remote</strong> ticked, and click <strong>Create</strong>. RStudio creates the branch, switches to it, and pushes it to GitHub.</p>
 <p>Check on GitHub: the branch menu on your repository page now lists <code>main</code> and <code>dev</code>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -389,9 +389,9 @@ interchangeable.</p>"></a>, click the <strong>New Branch</strong> button. Name i
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Create a branch called <code>dev</code> and <a class="gl" href="../glossary.html#gl-push" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="push" data-bs-content="<p>To push means to upload your commits from your own computer to the
+<p>Create a branch called <code>dev</code> and <a href="../glossary.html#gl-push" class="gl" data-bs-toggle="popover" data-bs-content="<p>To push means to upload your commits from your own computer to the
 copy of your repository on GitHub. Until you push, your commits exist
-only on your computer, and nobody else can see them.</p>"></a> it with whatever tool you prefer. The name is what matters.</p>
+only on your computer, and nobody else can see them.</p>" data-bs-placement="top" data-bs-title="push" data-bs-trigger="hover focus" data-bs-html="true">push</a> it with whatever tool you prefer. The name is what matters.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -404,13 +404,13 @@ only on your computer, and nobody else can see them.</p>"></a> it with whatever 
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>During the workshop we install two small <a class="gl" href="../glossary.html#gl-skill" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="skill" data-bs-content="<p>A file of instructions the agent loads when a task matches the
+<p>During the workshop we install two small <a href="../glossary.html#gl-skill" class="gl" data-bs-toggle="popover" data-bs-content="<p>A file of instructions the agent loads when a task matches the
 skill’s description, so you do not explain the same procedure every
 time. On the day we install two, one that commits and one that opens a
-pull request.</p>">skills</a> written at Global Health Engineering, one that turns the agent’s changes into a <a class="gl" href="../glossary.html#gl-commit" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="commit" data-bs-content="<p>A commit is a saved version of your project. When you commit, Git
+pull request.</p>" data-bs-placement="top" data-bs-title="skill" data-bs-trigger="hover focus" data-bs-html="true">skills</a> written at Global Health Engineering, one that turns the agent’s changes into a <a href="../glossary.html#gl-commit" class="gl" data-bs-toggle="popover" data-bs-content="<p>A commit is a saved version of your project. When you commit, Git
 records the exact content of your files at that moment, together with a
 message that says what you changed and why. You can go back to any
-earlier commit at any time.</p>"></a> with a record of what the agent did, and one that opens a pull request from <code>dev</code> into <code>main</code>. They are installed in Claude Code with two commands, take a minute, and can be removed again after the day. Nothing to do now. If you are curious, they live at <a href="https://github.com/Global-Health-Engineering/skills">Global-Health-Engineering/skills</a>.</p>
+earlier commit at any time.</p>" data-bs-placement="top" data-bs-title="commit" data-bs-trigger="hover focus" data-bs-html="true">commit</a> with a record of what the agent did, and one that opens a pull request from <code>dev</code> into <code>main</code>. They are installed in Claude Code with two commands, take a minute, and can be removed again after the day. Nothing to do now. If you are curious, they live at <a href="https://github.com/Global-Health-Engineering/skills">Global-Health-Engineering/skills</a>.</p>
 </div>
 </div>
 
