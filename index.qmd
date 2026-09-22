@@ -33,9 +33,9 @@ Everyone taking part has been through the {{< var prerequisite.title >}} worksho
 - run the {{< gl pull >}}, {{< gl stage >}}, {{< gl commit >}}, {{< gl push >}} cycle
 - create a {{< gl branch >}} and open a {{< gl "pull request" >}}
 - review a colleague's pull request and {{< gl merge >}} it
-- open an issue, assign it, and close it
+- open an {{< gl issue >}}, assign it, and close it
 
-If any of these are shaky, work through the [{{< var prerequisite.title >}} material]({{< var prerequisite.site >}}) again before the day. You do not need any prior experience with AI coding agents.
+If any of these are shaky, work through the [{{< var prerequisite.title >}} material]({{< var prerequisite.site >}}) again before the day. You do not need any prior experience with AI coding {{< gl agent display="agents" >}}.
 
 ## {{< fa suitcase >}} What do I need to bring?
 
@@ -43,7 +43,7 @@ If any of these are shaky, work through the [{{< var prerequisite.title >}} mate
 - a web browser
 - a pen and paper
 - [your repository, with your own data already committed]{.highlight-yellow} (Step 1)
-- your setup repository, cloned and tested (Steps 4 and 9)
+- your setup {{< gl repository >}}, cloned and tested (Steps 4 and 9)
 - a Zotero library with a few references related to your data (Step 7)
 
 ## {{< fa circle-question >}} What do I need to prepare?
@@ -52,20 +52,20 @@ If any of these are shaky, work through the [{{< var prerequisite.title >}} mate
 
 Two tasks came first, both due by **{{< var due.repo >}}**:
 
-- [Step 1](pre-work/01-create-repository.qmd): Create your repository and add your data
+- [Step 1](pre-work/01-create-repository.qmd): Create your {{< gl repository >}} and add your data
 - [Step 2](pre-work/02-join-element.qmd): Join the ai-playground chat room
 
 Seven more steps follow, all due by [**{{< var due.setup >}}**]{.highlight-yellow}. They take around two hours in total, and not in one sitting:
 
 - [Step 3](pre-work/03-survey.qmd): Complete the pre-course survey
-- [Step 4](pre-work/04-install-claude-code.qmd): Install Claude Code, clone your setup repository, log in, put the app on your phone
+- [Step 4](pre-work/04-install-claude-code.qmd): Install Claude Code, {{< gl clone >}} your setup repository, log in, put the app on your phone
 - [Step 5](pre-work/05-github-cli.qmd): Connect GitHub from the {{< gl terminal >}}
 - [Step 6](pre-work/06-connect-r.qmd): Connect your {{< gl "R session" >}}
 - [Step 7](pre-work/07-zotero.qmd): Set up Zotero
 - [Step 8](pre-work/08-zotero-mcp.qmd): Connect Zotero
 - [Step 9](pre-work/09-setup-check.qmd): Test your setup and report done
 
-The tests run on a small repository with public data that I prepare for each of you, not on your own data. Step 9 ends with an issue assigned to me, so I know you are ready. The [Prepare](pre-work/index.qmd) page has the same list with time estimates and the details of each step.
+The tests run on a small repository with public data that I prepare for each of you, not on your own data. Step 9 ends with an {{< gl issue >}} assigned to me, so I know you are ready. The [Prepare](pre-work/index.qmd) page has the same list with time estimates and the details of each step.
 
 ```{r}
 library(dplyr)
@@ -101,7 +101,7 @@ These objectives are still under active development and will be refined before t
 
 By the end of this workshop, participants will be able to:
 
-1. **Run an agent inside the Git workflow**: give a coding agent a task, write its plan down as GitHub issues before any code is produced, then review what it produced as a pull request and accept or reject the change.
+1. **Run an agent inside the Git workflow**: give a coding {{< gl agent >}} a task, write its plan down as GitHub {{< gl issue display="issues" >}} before any code is produced, then review what it produced as a {{< gl "pull request" >}} and accept or reject the change.
 
 2. **Judge the difference a plan makes**: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.
 

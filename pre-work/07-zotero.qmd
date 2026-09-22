@@ -4,7 +4,7 @@ title: "{{< fa book-open >}} Step 7: Set up Zotero"
 
 [Due by **{{< var due.setup >}}**]{.highlight-yellow}
 
-One of the tasks on the day is a literature review, and the {{< gl agent >}} does it against your own reference library. This page sets up Zotero, the free and {{< gl "open source" >}} reference manager, the way we use it in the group. If you already use Zotero, skim to Step 5 and check the settings from there on. The citation key settings in Step 7 are the group convention and are worth checking even on a library you have used for years.
+One of the tasks on the day is a literature review, and the {{< gl agent >}} does it against your own reference library. This page sets up Zotero, the free and {{< gl "open source" >}} reference manager, the way we use it in the group. If you already use Zotero, skim to Step 5 and check the settings from there on. The {{< gl "citation key" >}} settings in Step 7 are the group convention and are worth checking even on a library you have used for years.
 
 Written against Zotero 10 (10.0.3, September 2026), which came out in August, and the current {{< gl "Better BibTeX" >}} release. If you run an older Zotero, update it first. Two things differ from older guides you may find online: the Sync tab in the settings is now called **Account**, and Better BibTeX runs on Zotero 10 even though its release notes still name older versions.
 
@@ -43,7 +43,7 @@ File syncing is a separate switch on the same tab and covers the PDFs themselves
 
 ## Step 3: Install the browser connector
 
-1. In the browser you normally use, go to [zotero.org/download](https://www.zotero.org/download/). The page detects your browser and offers the matching connector.
+1. In the browser you normally use, go to [zotero.org/download](https://www.zotero.org/download/). The page detects your browser and offers the matching {{< gl "Zotero Connector" display="connector" >}}.
 2. Install the extension and pin its button to the toolbar.
 3. Keep the Zotero desktop app open while you save. The connector hands items to the desktop app.
 
@@ -58,14 +58,14 @@ If you have used a reference manager before, skim this. If Zotero is your first 
 - The left pane lists your **collections**. A collection is a folder you assign items to. One item can sit in several collections at once.
 - The middle pane lists the **items** in the selected collection. An item is the reference record: title, authors, year, journal, DOI.
 - Attachments (the PDF), notes and tags hang off an item. Click the arrow next to an item to see them.
-- The right pane shows the selected item's fields. Fix obvious metadata errors as you notice them, because everything downstream builds on these fields.
+- The right pane shows the selected item's fields. Fix obvious {{< gl metadata >}} errors as you notice them, because everything downstream builds on these fields.
 - Double-click an item to open its PDF in Zotero's reader. Highlights are stored in Zotero's database and sync like any other data.
 
 Save two or three real papers now so you have something to test with.
 
 ## Step 5: Allow other apps to talk to Zotero
 
-Step 8 connects the agent to your library through a local connection on your own computer. One checkbox enables it.
+Step 8 connects the {{< gl agent >}} to your library through a local connection on your own computer. One checkbox enables it.
 
 1. Open **Settings, Advanced**.
 2. Check **Allow other applications on this computer to communicate with Zotero**.
@@ -74,7 +74,7 @@ The connection only works for apps running on the same computer. Nothing is expo
 
 ## Step 6: Install Better BibTeX
 
-Better BibTeX is installed from a downloaded file.
+{{< gl "Better BibTeX" >}} is installed from a downloaded file.
 
 1. In your browser, go to the [Better BibTeX releases page](https://github.com/retorquere/zotero-better-bibtex/releases) and download the latest `.xpi` file. You want the file saved to disk, not opened by the browser.
 
@@ -101,7 +101,7 @@ After the restart, the Settings window has a new **Better BibTeX** tab.
 
 This is the step to get exactly right.
 
-A citation key is a short, readable ID for one item, like `forte2022building`. Once other tools refer to your items by these keys, a key must never change. When everyone in a group generates keys the same way, a paper shared through a group library carries the same key in every member's library, and drafts move between people without anyone rekeying citations. The formula below is the shared convention at Global Health Engineering.
+A {{< gl "citation key" >}} is a short, readable ID for one item, like `forte2022building`. Once other tools refer to your items by these keys, a key must never change. When everyone in a group generates keys the same way, a paper shared through a group library carries the same key in every member's library, and drafts move between people without anyone rekeying citations. The formula below is the shared convention at Global Health Engineering.
 
 Open **Settings, Better BibTeX**. Under **Citation keys**:
 
@@ -127,11 +127,11 @@ Items that were already in your library may carry keys from the old default form
 2. Under **Quick Copy**, set **Item Format** to **Better BibTeX Citation Key Quick Copy**.
 3. Check that **Note Format** is **Markdown + Rich Text** and that **Include Zotero Links** is ticked on the {{< gl Markdown >}} line.
 
-From now on, selecting an item and pressing **Cmd+Shift+C** on macOS or **Ctrl+Shift+C** on Windows copies its citation key.
+From now on, selecting an item and pressing **Cmd+Shift+C** on macOS or **Ctrl+Shift+C** on Windows copies its {{< gl "citation key" >}}.
 
 ## Check
 
-Save one more paper with the connector. Within two seconds its right pane shows a **Citation Key** in the shape `authorYEARword`. Select it, press the Quick Copy shortcut, paste into any text editor, and you get the bare key. Edit the title, wait two seconds, and confirm the key did not change. If all three worked, the setup is complete, and step 8 connects it to the agent.
+Save one more paper with the {{< gl "Zotero Connector" display="connector" >}}. Within two seconds its right pane shows a **Citation Key** in the shape `authorYEARword`. Select it, press the {{< gl "Quick Copy" >}} shortcut, paste into any text editor, and you get the bare key. Edit the title, wait two seconds, and confirm the key did not change. If all three worked, the setup is complete, and step 8 connects it to the {{< gl agent >}}.
 
 ::: {.callout-note}
 ## Where this page comes from

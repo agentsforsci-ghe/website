@@ -292,47 +292,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><span class="highlight-yellow">Due by <strong>Friday, 25 September 2026</strong></span></p>
-<p>With this step the <a href="../glossary.html#gl-agent" class="gl" data-bs-html="true" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="<p>An agent is a language model that has been given tools and set to
+<p>With this step the <a href="../glossary.html#gl-agent" class="gl" data-bs-content="<p>An agent is a language model that has been given tools and set to
 work in a loop: it does something, looks at the result, decides what to
 do next, and repeats until the task is done or it needs you. Claude Code
 is an agent. A single question and answer is not an agent, because
-nothing happens in between.</p>" data-bs-title="agent">agent</a> can search your Zotero library, read the PDFs in it, and pull <a href="../glossary.html#gl-citation-key" class="gl" data-bs-html="true" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="<p>A short ID for one reference, built from the first author, the year
+nothing happens in between.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="agent" data-bs-placement="top" data-bs-trigger="hover focus">agent</a> can search your Zotero library, read the PDFs in it, and pull <a href="../glossary.html#gl-citation-key" class="gl" data-bs-content="<p>A short ID for one reference, built from the first author, the year
 and the first word of the title, like forte2022building. Plain text
 documents cite by key, so a key must never change once other files use
-it.</p>" data-bs-title="citation key">citation keys</a> while it writes. The connection is a small program called <a href="../glossary.html#gl-zotero-mcp" class="gl" data-bs-html="true" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="<p>The small program that connects the agent to your Zotero library, so
+it.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="citation key" data-bs-placement="top" data-bs-trigger="hover focus">citation keys</a> while it writes. The connection is a small program called <a href="../glossary.html#gl-zotero-mcp" class="gl" data-bs-content="<p>The small program that connects the agent to your Zotero library, so
 it can search the library and read the PDFs in it. Step 8 installs it
-and registers it with Claude Code.</p>" data-bs-title="zotero-mcp">zotero-mcp</a> that talks to Zotero on your own computer, through the local access you switched on in step 7. It reads your library and does not change it.</p>
+and registers it with Claude Code.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="zotero-mcp" data-bs-placement="top" data-bs-trigger="hover focus">zotero-mcp</a> that talks to Zotero on your own computer, through the local access you switched on in step 7. It reads your library and does not change it.</p>
 <p>Zotero has to be running whenever the agent uses it.</p>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646f776e6c6f6164203e7d7d-part-1-install"><i class="fa-solid fa-download" aria-label="download"></i> Part 1: Install</h2>
-<p>zotero-mcp is a Python program. The installer below, called <a href="../glossary.html#gl-uv" class="gl" data-bs-html="true" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="<p>A small program that installs Python tools, including zotero-mcp, and
-takes care of Python for you. Step 8 installs it once.</p>" data-bs-title="uv">uv</a>, takes care of Python for you.</p>
+<p><a href="../glossary.html#gl-zotero-mcp" class="gl" data-bs-content="<p>The small program that connects the agent to your Zotero library, so
+it can search the library and read the PDFs in it. Step 8 installs it
+and registers it with Claude Code.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="zotero-mcp" data-bs-placement="top" data-bs-trigger="hover focus">zotero-mcp</a> is a Python program. The installer below, called <a href="../glossary.html#gl-uv" class="gl" data-bs-content="<p>A small program that installs Python tools, including zotero-mcp, and
+takes care of Python for you. Step 8 installs it once.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="uv" data-bs-placement="top" data-bs-trigger="hover focus">uv</a>, takes care of Python for you.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">macOS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Windows</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Open the <a href="../glossary.html#gl-terminal" class="gl" data-bs-html="true" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+<p>Open the <a href="../glossary.html#gl-terminal" class="gl" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
 runs in one. Give it a window of its own next to your editor: the
 Terminal app on the Mac, PowerShell on Windows. RStudio’s Terminal tab
-also works, but it is slow and cramped for an agent.</p>" data-bs-title="terminal">Terminal</a> app (any folder is fine), copy the line below, paste it after the prompt, and press Enter. It prints where uv was installed:</p>
+also works, but it is slow and cramped for an agent.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="terminal" data-bs-placement="top" data-bs-trigger="hover focus">Terminal</a> app (any folder is fine), copy the line below, paste it after the prompt, and press Enter. It prints where <a href="../glossary.html#gl-uv" class="gl" data-bs-content="<p>A small program that installs Python tools, including zotero-mcp, and
+takes care of Python for you. Step 8 installs it once.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="uv" data-bs-placement="top" data-bs-trigger="hover focus">uv</a> was installed:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-LsSf</span> https://astral.sh/uv/install.sh <span class="kw">|</span> <span class="fu">sh</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Open <a href="../glossary.html#gl-powershell" class="gl" data-bs-html="true" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="<p>The terminal program built into Windows, where you type commands. Its
+<p>Open <a href="../glossary.html#gl-powershell" class="gl" data-bs-content="<p>The terminal program built into Windows, where you type commands. Its
 prompt starts with PS. The pre-work uses it for the install lines on
-Windows.</p>" data-bs-title="powershell">PowerShell</a>, copy the line below, paste it after the prompt, and press Enter:</p>
+Windows.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="powershell" data-bs-placement="top" data-bs-trigger="hover focus">PowerShell</a>, copy the line below, paste it after the prompt, and press Enter:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>powershell <span class="op">-</span>ExecutionPolicy ByPass <span class="op">-</span>c <span class="st">"irm https://astral.sh/uv/install.ps1 | iex"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
-<p>Close the terminal and open a new one, so the new installer is found. Then install the program, in the terminal:</p>
+<p>Close the <a href="../glossary.html#gl-terminal" class="gl" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+runs in one. Give it a window of its own next to your editor: the
+Terminal app on the Mac, PowerShell on Windows. RStudio’s Terminal tab
+also works, but it is slow and cramped for an agent.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="terminal" data-bs-placement="top" data-bs-trigger="hover focus">terminal</a> and open a new one, so the new installer is found. Then install the program, in the terminal:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tool install zotero-mcp-server</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Check, in the same terminal. It prints a version number:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">zotero-mcp</span> version</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-part-2-register-it-with-claude-code"><i class="fa-solid fa-plug" aria-label="plug"></i> Part 2: Register it with Claude Code</h2>
-<p>Open a terminal (any folder is fine, the setting is not tied to a folder), copy this line, paste it after the prompt, and press Enter:</p>
+<p>Open a <a href="../glossary.html#gl-terminal" class="gl" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+runs in one. Give it a window of its own next to your editor: the
+Terminal app on the Mac, PowerShell on Windows. RStudio’s Terminal tab
+also works, but it is slow and cramped for an agent.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="terminal" data-bs-placement="top" data-bs-trigger="hover focus">terminal</a> (any folder is fine, the setting is not tied to a folder), copy this line, paste it after the prompt, and press Enter:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> mcp add <span class="at">-s</span> user zotero <span class="at">-e</span> ZOTERO_LOCAL=true <span class="at">--</span> zotero-mcp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>It answers with a line saying the server was added. Then, with the Zotero app running, check:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> mcp list</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -340,18 +349,24 @@ Windows.</p>" data-bs-title="powershell">PowerShell</a>, copy the line below, pa
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-3-try-it" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207669616c203e7d7d-part-3-try-it"><i class="fa-solid fa-vial" aria-label="vial"></i> Part 3: Try it</h2>
-<p>Keep Zotero open. Open a terminal at your setup <a href="../glossary.html#gl-repository" class="gl" data-bs-html="true" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="<p>A repository is the folder for one project, together with the full
+<p>Keep Zotero open. Open a <a href="../glossary.html#gl-terminal" class="gl" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+runs in one. Give it a window of its own next to your editor: the
+Terminal app on the Mac, PowerShell on Windows. RStudio’s Terminal tab
+also works, but it is slow and cramped for an agent.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="terminal" data-bs-placement="top" data-bs-trigger="hover focus">terminal</a> at your setup <a href="../glossary.html#gl-repository" class="gl" data-bs-content="<p>A repository is the folder for one project, together with the full
 record of every change made to the files in it. Git keeps the record in
 a hidden part of the folder. As a rule, one project gets one
-repository.</p>" data-bs-title="repository">repository</a> (as in step 4), start <code>claude</code>, and ask something your library can answer, for example:</p>
+repository.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="repository" data-bs-placement="top" data-bs-trigger="hover focus">repository</a> (as in step 4), start <code>claude</code>, and ask something your library can answer, for example:</p>
 <blockquote class="blockquote">
 <p>Which items in my Zotero library are about sanitation?</p>
 </blockquote>
-<p>If Claude Code asks before using the zotero tool, read the prompt and allow it; in <a href="../glossary.html#gl-auto-mode" class="gl" data-bs-html="true" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="<p>The permission mode Claude Code starts in on the Team, Pro and Max
+<p>If Claude Code asks before using the zotero tool, read the prompt and allow it; in <a href="../glossary.html#gl-auto-mode" class="gl" data-bs-content="<p>The permission mode Claude Code starts in on the Team, Pro and Max
 plans. A second model, the classifier, checks each action and lets
 ordinary ones run without asking you. It blocks actions that look
 destructive or would send data out of the repository. We work in auto
-mode on the day.</p>" data-bs-title="auto mode">auto mode</a> it runs without asking. The answer lists items from your own library, with titles and citation keys. If it answers that it cannot reach Zotero, the app is not running or the Advanced setting from step 7 is off; fix that and ask again.</p>
+mode on the day.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="auto mode" data-bs-placement="top" data-bs-trigger="hover focus">auto mode</a> it runs without asking. The answer lists items from your own library, with titles and <a href="../glossary.html#gl-citation-key" class="gl" data-bs-content="<p>A short ID for one reference, built from the first author, the year
+and the first word of the title, like forte2022building. Plain text
+documents cite by key, so a key must never change once other files use
+it.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="citation key" data-bs-placement="top" data-bs-trigger="hover focus">citation keys</a>. If it answers that it cannot reach Zotero, the app is not running or the Advanced setting from step 7 is off; fix that and ask again.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -362,7 +377,9 @@ mode on the day.</p>" data-bs-title="auto mode">auto mode</a> it runs without as
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The zotero-mcp project offers extras for semantic search and PDF page images. The base install is enough for the workshop. Leave the extras out.</p>
+<p>The <a href="../glossary.html#gl-zotero-mcp" class="gl" data-bs-content="<p>The small program that connects the agent to your Zotero library, so
+it can search the library and read the PDFs in it. Step 8 installs it
+and registers it with Claude Code.</p>" data-bs-toggle="popover" data-bs-html="true" data-bs-title="zotero-mcp" data-bs-placement="top" data-bs-trigger="hover focus">zotero-mcp</a> project offers extras for semantic search and PDF page images. The base install is enough for the workshop. Leave the extras out.</p>
 </div>
 </div>
 

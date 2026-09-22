@@ -2,7 +2,8 @@
 """Wrap the first prose occurrence of each glossary term on a page in the gl
 shortcode, {{< gl term >}} or {{< gl term display="Text" >}}.
 
-One occurrence per term per page. Skipped: YAML front matter, code fences,
+One occurrence per term per section (a heading starts a section, so tabs and
+callouts with a title count too). Skipped: YAML front matter, code fences,
 inline code, headings, blockquotes (the prompts people copy), tables,
 shortcodes, links, attribute spans, and bold runs. Terms whose meaning
 shifts between pages are not in the list (prompt, token, tool, session,
@@ -63,19 +64,40 @@ def protected_ranges(text):
 def inside(pos, end, rs):
     return any(a <= pos < b or a < end <= b for a, b in rs)
 
+def sections(text):
+    """Split at heading lines (outside code fences) into chunks that join back exactly."""
+    lines = text.split("\n")
+    chunks, cur, fence = [], [], False
+    for l in lines:
+        if l.startswith("```"):
+            fence = not fence
+        if not fence and re.match(r"^#{1,6} ", l) and cur:
+            chunks.append("\n".join(cur) + "\n"); cur = []
+        cur.append(l)
+    chunks.append("\n".join(cur))
+    return chunks
+
 def mark(path):
-    text = open(path, encoding="utf-8").read()
+    excluded = EXCLUDE.get(path, set())
+    chunks = sections(open(path, encoding="utf-8").read())
+    total = 0
+    for i, chunk in enumerate(chunks):
+        new, n = mark_text(chunk, excluded)
+        chunks[i] = new; total += n
+    open(path, "w", encoding="utf-8").write("".join(chunks))
+    return total
+
+def mark_text(text, excluded):
     rs = protected_ranges(text)
     done = 0
     # longer forms first so "pull request" wins over "pull"
     order = sorted(TERMS.items(), key=lambda kv: -max(len(f) for f in kv[1]))
     longer_forms = [f for fs in TERMS.values() for f in fs if " " in f]
-    excluded = EXCLUDE.get(path, set())
     for term, forms in order:
         if term in excluded:
             continue
         if re.search(r"\{\{< gl \"?" + re.escape(term) + r"\"?[ >]", text):
-            continue   # already marked on this page: the script is safe to re-run
+            continue   # already marked in this section: the script is safe to re-run
         placed = False
         for form in sorted(forms, key=len, reverse=True):
             flags = 0 if term in CASE_SENSITIVE else re.I
@@ -99,8 +121,7 @@ def mark(path):
                 done += 1; placed = True
                 break
             if placed: break
-    open(path, "w", encoding="utf-8").write(text)
-    return done
+    return text, done
 
 if __name__ == "__main__":
     total = 0

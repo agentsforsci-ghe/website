@@ -28,7 +28,7 @@ claude mcp add -s user r-mcptools -- Rscript -e "mcptools::mcp_server()"
 
 ### Windows
 
-Open {{< gl PowerShell >}} (Start menu, then type PowerShell). On Windows the `Rscript` program is usually not findable from the terminal, so you give the full path. Get it from the RStudio {{< gl Console >}}, the pane at the bottom left:
+Open {{< gl PowerShell >}} (Start menu, then type PowerShell). On Windows the `Rscript` program is usually not findable from the {{< gl terminal >}}, so you give the full path. Get it from the RStudio {{< gl Console >}}, the pane at the bottom left:
 
 ```r
 normalizePath(file.path(R.home("bin"), "Rscript.exe"))
@@ -52,9 +52,9 @@ The line for `r-mcptools` should end in **Connected**.
 
 ## {{< fa gear >}} Part 3: Let R announce its sessions
 
-The server needs to know which R session to talk to. One line in your {{< gl "R profile" >}} registers every RStudio session you start.
+The server needs to know which {{< gl "R session" >}} to talk to. One line in your {{< gl "R profile" >}} registers every RStudio session you start.
 
-Back in RStudio, click into the Console and run:
+Back in RStudio, click into the {{< gl Console >}} and run:
 
 ```r
 file.edit("~/.Rprofile")
@@ -66,7 +66,7 @@ A file called `.Rprofile` opens in the editor pane at the top left. It is empty 
 if (interactive()) mcptools::mcp_session()
 ```
 
-Restart R from the menu bar: **Session, Restart R**. The Console clears and shows a fresh prompt. Then, in the Console, create something for the agent to look at:
+Restart R from the menu bar: **Session, Restart R**. The Console clears and shows a fresh prompt. Then, in the Console, create something for the {{< gl agent >}} to look at:
 
 ```r
 x <- head(mtcars)
@@ -74,7 +74,7 @@ x <- head(mtcars)
 
 ## {{< fa vial >}} Part 4: Try it
 
-Check the **Environment** pane at the top right of RStudio: `x` is listed there as 6 obs. of 11 variables. Now open a terminal at your setup {{< gl repository >}} (as in step 4), start `claude`, and ask:
+Check the **Environment** pane at the top right of RStudio: `x` is listed there as 6 obs. of 11 variables. Now open a {{< gl terminal >}} at your setup {{< gl repository >}} (as in step 4), start `claude`, and ask:
 
 > What objects are in my R session?
 
@@ -83,5 +83,5 @@ If Claude Code asks before using the r-mcptools tool, read the prompt and allow 
 ::: {.callout-important}
 ## What this connection means
 
-With this in place the agent can run any R code in your live session, including code that removes objects or writes files. In {{< gl "manual mode" >}} the {{< gl permission >}} prompt is what stands between it and that; in auto mode a built-in check takes that role, and it does not know your data. Read what the agent proposes, or what it did, rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.
+With this in place the {{< gl agent >}} can run any R code in your live session, including code that removes objects or writes files. In {{< gl "manual mode" >}} the {{< gl permission >}} prompt is what stands between it and that; in {{< gl "auto mode" >}} a built-in check takes that role, and it does not know your data. Read what the agent proposes, or what it did, rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.
 :::
