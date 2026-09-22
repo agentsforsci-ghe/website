@@ -18,12 +18,12 @@ Steps 1 and 2 were due by **{{< var due.repo >}}**. Steps 3 to 9 are due by [**{
 
 : {tbl-colwidths="[8,52,15,25]"}
 
-Do the steps in order. Step 4 ends with a small repository I prepared for you, with public data in it, and steps 6, 8 and 9 use it for their tests. Your own repository from step 1 stays out of Claude Code until the day. Step 8 needs Zotero from step 7, and step 9 checks everything at once.
+Do the steps in order. Step 4 ends with a small {{< gl repository >}} I prepared for you, with public data in it, and steps 6, 8 and 9 use it for their tests. Your own repository from step 1 stays out of Claude Code until the day. Step 8 needs Zotero from step 7, and step 9 checks everything at once.
 
 ::: {.callout-note}
 ## What I assume you use
 
-The instructions and the day are written for RStudio, R and Quarto, as taught in the first workshop. Other editors (Positron, VS Code) and other languages (Python, JavaScript, Stata do files) are welcome, and the agent works with all of them. What I cannot promise is that the setup works the same way; step 6, the connection to a running R session, is specific to R and RStudio. If you work differently, do the steps as far as they apply and tell me in the chat room where they stop.
+The instructions and the day are written for RStudio, R and Quarto, as taught in the first workshop. Other editors (Positron, VS Code) and other languages (Python, JavaScript, Stata do files) are welcome, and the {{< gl agent >}} works with all of them. What I cannot promise is that the setup works the same way; step 6, the connection to a running {{< gl "R session" >}}, is specific to R and RStudio. If you work differently, do the steps as far as they apply and tell me in the chat room where they stop.
 :::
 
 ::: {.callout-tip}
@@ -35,5 +35,5 @@ Around two hours in total, and it does not have to happen in one sitting. Step 7
 ::: {.callout-important}
 ## If you get stuck
 
-Do not spend an evening fighting it. Ask in [the chat room]({{< var chat.room-link >}}), or open an issue on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.
+Do not spend an evening fighting it. Ask in [the chat room]({{< var chat.room-link >}}), or open an {{< gl issue >}} on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.
 :::

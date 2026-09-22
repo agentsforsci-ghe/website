@@ -85,11 +85,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-712a858a7335f8c7f74f41a4769ee845.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-944cc49a1fd5d2d7222c95398737996b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-944cc49a1fd5d2d7222c95398737996b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-944cc49a1fd5d2d7222c95398737996b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/gl-1.0.0/gl.js"></script>
+<link href="../site_libs/quarto-contrib/gl-1.0.0/gl.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -295,7 +297,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><span class="highlight-yellow">Due by <strong>Friday, 25 September 2026</strong></span></p>
-<p>Claude Code is the coding agent we use on the day. It runs in a terminal, works inside the folder you start it in, reads and edits files there, and runs commands. It asks before it runs a command or changes a file, and that permission prompt is the first thing to learn to read.</p>
+<p>Claude Code is the coding <a class="gl" href="../glossary.html#gl-agent" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="agent" data-bs-content="<p>An agent is a language model that has been given tools and set to
+work in a loop: it does something, looks at the result, decides what to
+do next, and repeats until the task is done or it needs you. Claude Code
+is an agent. A single question and answer is not an agent, because
+nothing happens in between.</p>"></a> we use on the day. It runs in a <a class="gl" href="../glossary.html#gl-terminal" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="terminal" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+runs in one. RStudio has a Terminal tab, the Mac has the Terminal app,
+and Windows has PowerShell.</p>"></a>, works inside the folder you start it in, reads and edits files there, and runs commands. It asks before it runs a command or changes a file, and that <a class="gl" href="../glossary.html#gl-permission" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="permission" data-bs-content="<p>A permission prompt is the agent stopping to ask before it does
+something that changes the world: writing a file, running a command,
+making a commit. It is your decision point, and reading what is being
+proposed before approving is the habit that separates using an agent
+from hoping.</p>"></a> prompt is the first thing to learn to read.</p>
 <p>This step has three parts: get an account, install the program, and log in once from a small repository I prepared for you.</p>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account"><i class="fa-solid fa-user" aria-label="user"></i> Part 1: Your Claude account</h2>
@@ -347,7 +359,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Any terminal works, including the <strong>Terminal</strong> tab in RStudio (Tools, Terminal, New Terminal). On the Mac, <a href="https://iterm2.com/">iTerm</a> is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in PowerShell, and use whichever terminal you like afterwards.</p>
+<p>Any terminal works, including the <strong>Terminal</strong> tab in RStudio (Tools, Terminal, New Terminal). On the Mac, <a href="https://iterm2.com/">iTerm</a> is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in <a class="gl" href="../glossary.html#gl-powershell" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="powershell" data-bs-content="<p>The terminal program built into Windows, where you type commands. Its
+prompt starts with PS. The pre-work uses it for the install lines on
+Windows.</p>"></a>, and use whichever terminal you like afterwards.</p>
 </div>
 </div>
 </section>
@@ -357,11 +371,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="clone-your-setup-repository">Clone your setup repository</h3>
 <p>I have created a repository for you in the organization, named <code>setup-USERNAME</code> with your GitHub username in place of USERNAME. It holds a small public dataset and one R script, and it is where every test before the day runs.</p>
 <ol type="1">
-<li>Open the organization page, <a href="https://github.com/agentsforsci-ghe/">https://github.com/agentsforsci-ghe/</a>, and find <code>setup-USERNAME</code> in the list of repositories. Use the search field on that page if the list is long.</li>
+<li>Open the organization page, <a href="https://github.com/agentsforsci-ghe/">https://github.com/agentsforsci-ghe/</a>, and find <code>setup-USERNAME</code> in the list of <a class="gl" href="../glossary.html#gl-repository" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="repository" data-bs-content="<p>A repository is the folder for one project, together with the full
+record of every change made to the files in it. Git keeps the record in
+a hidden part of the folder. As a rule, one project gets one
+repository.</p>">repositories</a>. Use the search field on that page if the list is long.</li>
 <li>Open it, click the green <strong>Code</strong> button, and copy the HTTPS URL.</li>
-<li>In RStudio, choose <strong>File, New Project, Version Control, Git</strong>, paste the URL, pick where the folder should live, and click <strong>Create Project</strong>. This is the same clone you did in the first workshop; the <a href="https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html">instructions from then</a> still apply, screenshots included.</li>
+<li>In RStudio, choose <strong>File, New Project, Version Control, Git</strong>, paste the URL, pick where the folder should live, and click <strong>Create Project</strong>. This is the same <a class="gl" href="../glossary.html#gl-clone" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="clone" data-bs-content="<p>To clone a repository means to download a full copy of it from GitHub
+onto your own computer, including the record of every change ever made
+to it. You clone by running git clone in a terminal, or through your
+editor’s own Git menu.</p>"></a> you did in the first workshop; the <a href="https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html">instructions from then</a> still apply, screenshots included.</li>
 </ol>
-<p>RStudio opens the new project. The Files pane at the bottom right shows <code>01-read-data.R</code>, a <code>data</code> folder, and a README.</p>
+<p>RStudio opens the new project. The Files pane at the bottom right shows <code>01-read-data.R</code>, a <code>data</code> folder, and a <a class="gl" href="../glossary.html#gl-readme" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="readme" data-bs-content="<p>A README is a text file that explains what a project is and how to
+use it. GitHub shows the file named README.md on the front page of the
+repository.</p>"></a>.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -383,7 +405,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">macOS Finder</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Windows Explorer</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<p>With the project open, choose <strong>Tools, Terminal, New Terminal</strong>. A Terminal tab appears next to the Console, already inside the project folder. This works the same on macOS and Windows.</p>
+<p>With the project open, choose <strong>Tools, Terminal, New Terminal</strong>. A Terminal tab appears next to the <a class="gl" href="../glossary.html#gl-console" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="console" data-bs-content="<p>The pane in RStudio where you type R commands and see their output,
+at the bottom left by default, with a &amp;gt; prompt. It is not the
+Terminal tab next to it, which runs shell commands rather than R.</p>"></a>, already inside the project folder. This works the same on macOS and Windows.</p>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Open Finder and go to the folder you just created, for example <code>Documents/setup-USERNAME</code>. Right-click the folder and choose <strong>New Terminal at Folder</strong>. A Terminal window opens inside it. If the entry is missing from the menu, look under <strong>Services</strong> in the same menu, or switch it on once under System Settings, Keyboard, Keyboard Shortcuts, Services, Files and Folders.</p>
@@ -402,7 +426,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>The first start asks you to pick a colour theme, then opens your browser to log in. Log in with the account from Part 1. If the browser does not open, press <code>c</code> to copy the login link and paste it into a browser yourself. GHE members: if asked which organization to use, pick <strong>Global Health Engineering</strong>.</p></li>
 <li><p>Back in the terminal, type <code>/status</code> and press Enter. It shows which account you are logged in with. Check that it is the one you intended.</p></li>
-<li><p>Look at the bottom line of the window, where Claude Code shows its permission mode. On the Team, Pro and Max plans it starts in <strong>auto mode</strong>: a built-in check approves ordinary actions on its own and asks you only when something looks risky. Pressing <strong>Shift+Tab</strong> switches to <strong>manual mode</strong>, where it asks before every command. Either is fine for the pre-work. On the workshop day we work in auto mode.</p></li>
+<li><p>Look at the bottom line of the window, where Claude Code shows its permission mode. On the Team, Pro and Max plans it starts in <strong>auto mode</strong>: a built-in check approves ordinary actions on its own and asks you only when something looks risky. Pressing <strong>Shift+Tab</strong> switches to <strong>manual mode</strong>, where it asks before every command. Either is fine for the pre-work. On the workshop day we work in <a class="gl" href="../glossary.html#gl-auto-mode" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="auto mode" data-bs-content="<p>The permission mode Claude Code starts in on the Team, Pro and Max
+plans. A second model, the classifier, checks each action and lets
+ordinary ones run without asking you. It blocks actions that look
+destructive or would send data out of the repository. We work in auto
+mode on the day.</p>"></a>.</p></li>
 <li><p>Say hello. Type a greeting and press Enter. You get a greeting back. That is the whole test.</p></li>
 <li><p>Type <code>/exit</code> to leave.</p></li>
 </ol>

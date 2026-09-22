@@ -11,5 +11,5 @@ Complete the survey here: [{{< var survey.url >}}]({{< var survey.url >}})
 ::: {.callout-note}
 ## Why a survey when you are already in the organization
 
-I know your GitHub username from step 1. What I do not know is whether you are on macOS or Windows, whether you have used a coding agent before, and which reference manager you use. Steps 4 to 8 go differently depending on those answers, and the survey lets me prepare help for the combinations that are actually in the room.
+I know your GitHub username from step 1. What I do not know is whether you are on macOS or Windows, whether you have used a coding {{< gl agent >}} before, and which reference manager you use. Steps 4 to 8 go differently depending on those answers, and the survey lets me prepare help for the combinations that are actually in the room.
 :::

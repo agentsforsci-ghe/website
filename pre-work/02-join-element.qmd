@@ -12,7 +12,7 @@ Join the room with the link above, then [send me a message]{.highlight-yellow} s
 
 ## {{< fa user-plus >}} If you are new to Element
 
-Element is the chat client; `staffchat.ethz.ch` is the ETH server it connects to. You sign in with your GitHub account.
+Element is the chat client; `staffchat.ethz.ch` is the ETH {{< gl server >}} it connects to. You sign in with your GitHub account.
 
 Step-by-step instructions, written for a previous course but identical for this one: [setting up Element]({{< var chat.element-instructions >}})
 

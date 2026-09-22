@@ -84,11 +84,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-712a858a7335f8c7f74f41a4769ee845.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-944cc49a1fd5d2d7222c95398737996b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-944cc49a1fd5d2d7222c95398737996b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-944cc49a1fd5d2d7222c95398737996b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/gl-1.0.0/gl.js"></script>
+<link href="../site_libs/quarto-contrib/gl-1.0.0/gl.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -291,7 +293,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><span class="highlight-yellow">Due by <strong>Friday, 25 September 2026</strong></span></p>
-<p>Twenty minutes. This runs everything from steps 4 to 8 once, in the order the day uses it, on the setup repository you cloned in step 4, and ends with an issue assigned to me so I know you are ready. Have Zotero open, and RStudio open with the setup project (File, Open Project, then <code>setup.Rproj</code> in the folder you cloned).</p>
+<p>Twenty minutes. This runs everything from steps 4 to 8 once, in the order the day uses it, on the setup <a class="gl" href="../glossary.html#gl-repository" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="repository" data-bs-content="<p>A repository is the folder for one project, together with the full
+record of every change made to the files in it. Git keeps the record in
+a hidden part of the folder. As a rule, one project gets one
+repository.</p>"></a> you cloned in step 4, and ends with an <a class="gl" href="../glossary.html#gl-issue" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="issue" data-bs-content="<p>An issue is a to-do item for a project, posted on the repository’s
+page on GitHub. An issue can describe a problem, ask for something new,
+or hold a task. You can assign an issue to a person, and you can refer
+to it from commits and pull requests.</p>"></a> assigned to me so I know you are ready. Have Zotero open, and RStudio open with the setup project (File, Open Project, then <code>setup.Rproj</code> in the folder you cloned).</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -302,12 +310,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The agent does not see your data before the day. The rule from step 1 about what goes into a repository applies to what an agent reads, and we set the safety rails together in the room. Your setup repository holds a few hundred rows of public WASH investment data instead, which is enough to test every connection.</p>
+<p>The <a class="gl" href="../glossary.html#gl-agent" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="agent" data-bs-content="<p>An agent is a language model that has been given tools and set to
+work in a loop: it does something, looks at the result, decides what to
+do next, and repeats until the task is done or it needs you. Claude Code
+is an agent. A single question and answer is not an agent, because
+nothing happens in between.</p>"></a> does not see your data before the day. The rule from step 1 about what goes into a repository applies to what an agent reads, and we set the safety rails together in the room. Your setup repository holds a few hundred rows of public WASH investment data instead, which is enough to test every connection.</p>
 </div>
 </div>
 <section id="both-connections" class="level2">
 <h2 class="anchored" data-anchor-id="both-connections">1. Both connections</h2>
-<p>In RStudio, open a terminal inside the project: <strong>Tools, Terminal, New Terminal</strong>. A Terminal tab appears next to the Console, already in the setup folder. Run:</p>
+<p>In RStudio, open a <a class="gl" href="../glossary.html#gl-terminal" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="terminal" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+runs in one. RStudio has a Terminal tab, the Mac has the Terminal app,
+and Windows has PowerShell.</p>"></a> inside the project: <strong>Tools, Terminal, New Terminal</strong>. A Terminal tab appears next to the <a class="gl" href="../glossary.html#gl-console" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="console" data-bs-content="<p>The pane in RStudio where you type R commands and see their output,
+at the bottom left by default, with a &amp;gt; prompt. It is not the
+Terminal tab next to it, which runs shell commands rather than R.</p>"></a>, already in the setup folder. Run:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> mcp list</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Both <code>r-mcptools</code> and <code>zotero</code> end in <strong>Connected</strong>. If one does not, go back to step 6 or step 8 before continuing.</p>
 </section>
@@ -319,7 +335,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="a-read-only-run-in-plan-mode">3. A read-only run in plan mode</h2>
 <p>In the Terminal tab, start Claude Code:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Press <strong>Shift+Tab</strong> until the status line at the bottom says <strong>plan mode</strong>. In plan mode the agent reads and proposes. It does not change anything. Ask these three things, one at a time, and wait for each answer:</p>
+<p>Press <strong>Shift+Tab</strong> until the status line at the bottom says <strong>plan mode</strong>. In <a class="gl" href="../glossary.html#gl-plan-mode" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="plan mode" data-bs-content="<p>A mode in which the agent reads and proposes but changes nothing. Use
+it to have the agent look at something, or to get a plan before any work
+starts. Press Shift+Tab until the status line says plan mode.</p>"></a> the agent reads and proposes. It does not change anything. Ask these three things, one at a time, and wait for each answer:</p>
 <blockquote class="blockquote">
 <p>Read the files in the data folder and describe what is in them. Do not change anything.</p>
 </blockquote>
@@ -329,7 +347,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p>List five items from my Zotero library with their citation keys.</p>
 </blockquote>
-<p>When Claude Code asks before using a tool, read the prompt and allow it. In auto mode most of these steps run without asking, and each answer names the tool it used. The three answers show the agent reading the sample data, your R session, and your own library.</p>
+<p>When Claude Code asks before using a tool, read the prompt and allow it. In <a class="gl" href="../glossary.html#gl-auto-mode" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="auto mode" data-bs-content="<p>The permission mode Claude Code starts in on the Team, Pro and Max
+plans. A second model, the classifier, checks each action and lets
+ordinary ones run without asking you. It blocks actions that look
+destructive or would send data out of the repository. We work in auto
+mode on the day.</p>"></a> most of these steps run without asking, and each answer names the tool it used. The three answers show the agent reading the sample data, your <a class="gl" href="../glossary.html#gl-r-session" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="r session" data-bs-content="<p>One running copy of R together with everything you have loaded into
+it: packages, data frames, variables. RStudio starts one for you, and
+Session, Restart R gives you a fresh one.</p>"></a>, and your own library.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -351,7 +375,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Create a file called SETUP.md at the top of this repository. In it, list my operating system, the Claude Code version, whether the r-mcptools and zotero servers are connected, and a short summary of what is in the data folder. Do not run git.</p>
 </blockquote>
 <p>The agent shows the file it wants to write. Read it and accept. Then type <code>/exit</code>.</p>
-<p>Commit and push the file yourself, the way you did in the first workshop: in the RStudio Git pane, tick <code>SETUP.md</code> to stage it, click <strong>Commit</strong>, write “Add setup report” as the message, click <strong>Commit</strong>, then <strong>Push</strong>. Open the repository on GitHub and check that <code>SETUP.md</code> is there.</p>
+<p><a class="gl" href="../glossary.html#gl-commit" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="commit" data-bs-content="<p>A commit is a saved version of your project. When you commit, Git
+records the exact content of your files at that moment, together with a
+message that says what you changed and why. You can go back to any
+earlier commit at any time.</p>">Commit</a> and <a class="gl" href="../glossary.html#gl-push" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="push" data-bs-content="<p>To push means to upload your commits from your own computer to the
+copy of your repository on GitHub. Until you push, your commits exist
+only on your computer, and nobody else can see them.</p>"></a> the file yourself, the way you did in the first workshop: in the RStudio <a class="gl" href="../glossary.html#gl-git-pane" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="git pane" data-bs-content="<p>Most editors, including RStudio and Positron, have a Git pane: a
+panel showing what has changed in your repository, with buttons for the
+everyday Git work. Every button runs a real Git command, so clicking
+Push runs git push. This workshop mostly uses the terminal instead,
+because that is where the agent works, but the two are
+interchangeable.</p>"></a>, tick <code>SETUP.md</code> to <a class="gl" href="../glossary.html#gl-stage" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="stage" data-bs-content="<p>To stage a file means to mark it for the next commit, and the staging
+area is where Git keeps the marked files until you commit. Git only
+commits the files you have staged, so you can change five files and
+commit only two of them. You stage a file with git add, or by ticking
+its checkbox in an editor’s Git pane.</p>"></a> it, click <strong>Commit</strong>, write “Add setup report” as the message, click <strong>Commit</strong>, then <strong>Push</strong>. Open the repository on GitHub and check that <code>SETUP.md</code> is there.</p>
 <p>Today you do every commit yourself. On the day you hand the agent one step at a time.</p>
 </section>
 <section id="report-done" class="level2">
@@ -360,7 +398,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p>Open an issue on this repository titled “Setup complete”, assign it to larnsce, and write in the body which of the pre-work steps 4 to 9 worked for me and which did not.</p>
 </blockquote>
-<p>It uses the GitHub CLI from step 5 for that. Allow the prompt if one appears, and check on GitHub that the issue exists. Opening the issue by hand, as you did in step 1, is just as good.</p>
+<p>It uses the <a class="gl" href="../glossary.html#gl-github-cli" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="github cli" data-bs-content="<p>A program called gh that talks to GitHub from the terminal: it logs
+you in, opens issues and pull requests, and lists repositories. On the
+day the agent uses it to open issues and pull requests for you.</p>"></a> from step 5 for that. Allow the prompt if one appears, and check on GitHub that the issue exists. Opening the issue by hand, as you did in step 1, is just as good.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">

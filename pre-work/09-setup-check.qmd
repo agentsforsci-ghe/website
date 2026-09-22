@@ -4,17 +4,17 @@ title: "{{< fa flag-checkered >}} Step 9: Test your setup and report done"
 
 [Due by **{{< var due.setup >}}**]{.highlight-yellow}
 
-Twenty minutes. This runs everything from steps 4 to 8 once, in the order the day uses it, on the setup repository you cloned in step 4, and ends with an issue assigned to me so I know you are ready. Have Zotero open, and RStudio open with the setup project (File, Open Project, then `setup.Rproj` in the folder you cloned).
+Twenty minutes. This runs everything from steps 4 to 8 once, in the order the day uses it, on the setup {{< gl repository >}} you cloned in step 4, and ends with an {{< gl issue >}} assigned to me so I know you are ready. Have Zotero open, and RStudio open with the setup project (File, Open Project, then `setup.Rproj` in the folder you cloned).
 
 ::: {.callout-note}
 ## Why not your own repository
 
-The agent does not see your data before the day. The rule from step 1 about what goes into a repository applies to what an agent reads, and we set the safety rails together in the room. Your setup repository holds a few hundred rows of public WASH investment data instead, which is enough to test every connection.
+The {{< gl agent >}} does not see your data before the day. The rule from step 1 about what goes into a repository applies to what an agent reads, and we set the safety rails together in the room. Your setup repository holds a few hundred rows of public WASH investment data instead, which is enough to test every connection.
 :::
 
 ## 1. Both connections
 
-In RStudio, open a terminal inside the project: **Tools, Terminal, New Terminal**. A Terminal tab appears next to the Console, already in the setup folder. Run:
+In RStudio, open a {{< gl terminal >}} inside the project: **Tools, Terminal, New Terminal**. A Terminal tab appears next to the {{< gl Console >}}, already in the setup folder. Run:
 
 ```bash
 claude mcp list
@@ -34,7 +34,7 @@ In the Terminal tab, start Claude Code:
 claude
 ```
 
-Press **Shift+Tab** until the status line at the bottom says **plan mode**. In plan mode the agent reads and proposes. It does not change anything. Ask these three things, one at a time, and wait for each answer:
+Press **Shift+Tab** until the status line at the bottom says **plan mode**. In {{< gl "plan mode" >}} the agent reads and proposes. It does not change anything. Ask these three things, one at a time, and wait for each answer:
 
 > Read the files in the data folder and describe what is in them. Do not change anything.
 
@@ -42,7 +42,7 @@ Press **Shift+Tab** until the status line at the bottom says **plan mode**. In p
 
 > List five items from my Zotero library with their citation keys.
 
-When Claude Code asks before using a tool, read the prompt and allow it. In auto mode most of these steps run without asking, and each answer names the tool it used. The three answers show the agent reading the sample data, your R session, and your own library.
+When Claude Code asks before using a tool, read the prompt and allow it. In {{< gl "auto mode" >}} most of these steps run without asking, and each answer names the tool it used. The three answers show the agent reading the sample data, your {{< gl "R session" >}}, and your own library.
 
 ::: {.callout-note}
 ## If it proposes something you did not ask for
@@ -58,7 +58,7 @@ Press **Shift+Tab** to leave plan mode. Ask:
 
 The agent shows the file it wants to write. Read it and accept. Then type `/exit`.
 
-Commit and push the file yourself, the way you did in the first workshop: in the RStudio Git pane, tick `SETUP.md` to stage it, click **Commit**, write "Add setup report" as the message, click **Commit**, then **Push**. Open the repository on GitHub and check that `SETUP.md` is there.
+{{< gl commit display="Commit" >}} and {{< gl push >}} the file yourself, the way you did in the first workshop: in the RStudio {{< gl "Git pane" >}}, tick `SETUP.md` to {{< gl stage >}} it, click **Commit**, write "Add setup report" as the message, click **Commit**, then **Push**. Open the repository on GitHub and check that `SETUP.md` is there.
 
 Today you do every commit yourself. On the day you hand the agent one step at a time.
 
@@ -68,7 +68,7 @@ Open an issue on your setup repository with the title **Setup complete**, assign
 
 > Open an issue on this repository titled "Setup complete", assign it to {{< var github-handle >}}, and write in the body which of the pre-work steps 4 to 9 worked for me and which did not.
 
-It uses the GitHub CLI from step 5 for that. Allow the prompt if one appears, and check on GitHub that the issue exists. Opening the issue by hand, as you did in step 1, is just as good.
+It uses the {{< gl "GitHub CLI" >}} from step 5 for that. Allow the prompt if one appears, and check on GitHub that the issue exists. Opening the issue by hand, as you did in step 1, is just as good.
 
 ::: {.callout-important}
 ## If anything failed

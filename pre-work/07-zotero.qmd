@@ -4,14 +4,14 @@ title: "{{< fa book-open >}} Step 7: Set up Zotero"
 
 [Due by **{{< var due.setup >}}**]{.highlight-yellow}
 
-One of the tasks on the day is a literature review, and the agent does it against your own reference library. This page sets up Zotero, the free and open source reference manager, the way we use it in the group. If you already use Zotero, skim to Step 5 and check the settings from there on. The citation key settings in Step 7 are the group convention and are worth checking even on a library you have used for years.
+One of the tasks on the day is a literature review, and the {{< gl agent >}} does it against your own reference library. This page sets up Zotero, the free and {{< gl "open source" >}} reference manager, the way we use it in the group. If you already use Zotero, skim to Step 5 and check the settings from there on. The citation key settings in Step 7 are the group convention and are worth checking even on a library you have used for years.
 
-Written against Zotero 10 (10.0.3, September 2026), which came out in August, and the current Better BibTeX release. If you run an older Zotero, update it first. Two things differ from older guides you may find online: the Sync tab in the settings is now called **Account**, and Better BibTeX runs on Zotero 10 even though its release notes still name older versions.
+Written against Zotero 10 (10.0.3, September 2026), which came out in August, and the current {{< gl "Better BibTeX" >}} release. If you run an older Zotero, update it first. Two things differ from older guides you may find online: the Sync tab in the settings is now called **Account**, and Better BibTeX runs on Zotero 10 even though its release notes still name older versions.
 
 ::: {.callout-important}
 ## What to have in the library by the workshop
 
-Five to ten references related to the data you brought are enough, with PDFs attached where you have them. If you have none in Zotero yet, use [Semantic Scholar](https://www.semanticscholar.org/) or [Connected Papers](https://www.connectedpapers.com/) to find them quickly and save them with the connector from Step 3. It does not matter whether they are the best references for the work. The point is having a library to work with, and the search is good experimentation on its own. Everything can be reverted or started from scratch after what you learned.
+Five to ten references related to the data you brought are enough, with PDFs attached where you have them. If you have none in Zotero yet, use [Semantic Scholar](https://www.semanticscholar.org/) or [Connected Papers](https://www.connectedpapers.com/) to find them quickly and save them with the {{< gl "Zotero Connector" display="connector" >}} from Step 3. It does not matter whether they are the best references for the work. The point is having a library to work with, and the search is good experimentation on its own. Everything can be reverted or started from scratch after what you learned.
 :::
 
 ## What you are setting up
@@ -19,8 +19,8 @@ Five to ten references related to the data you brought are enough, with PDFs att
 - **Zotero**, the desktop app. It stores your references, the PDFs attached to them, and your reading highlights.
 - **A zotero.org account with sync**, so your library is backed up and available on other devices.
 - **The Zotero Connector**, a browser extension that saves papers into your library with one click.
-- **Better BibTeX**, a Zotero plugin that gives every item a stable short ID called a citation key, for example `forte2022building`. Citation keys are how Quarto, LaTeX and other plain text tools refer to items.
-- **Two settings inside Zotero**: local access for other apps on your computer, which step 8 depends on, and Quick Copy, which puts a citation key on your clipboard with one keystroke.
+- **Better BibTeX**, a Zotero plugin that gives every item a stable short ID called a citation key, for example `forte2022building`. {{< gl "citation key" display="Citation keys" >}} are how Quarto, LaTeX and other {{< gl "plain text" >}} tools refer to items.
+- **Two settings inside Zotero**: local access for other apps on your computer, which step 8 depends on, and {{< gl "Quick Copy" >}}, which puts a citation key on your clipboard with one keystroke.
 
 ## Step 1: Install Zotero
 
@@ -49,7 +49,7 @@ File syncing is a separate switch on the same tab and covers the PDFs themselves
 
 To save an item, open the paper's page (the journal landing page, an arXiv abstract page) and click the connector button. Zotero saves the reference and, when it has access, the PDF.
 
-Two other ways to add items, both inside Zotero: click the magic wand button and paste a DOI, ISBN, PMID or arXiv ID, or drag a PDF file into the Zotero window and check the metadata it reads out of it.
+Two other ways to add items, both inside Zotero: click the magic wand button and paste a DOI, ISBN, PMID or arXiv ID, or drag a PDF file into the Zotero window and check the {{< gl metadata >}} it reads out of it.
 
 ## Step 4: Know your way around the library
 
@@ -125,7 +125,7 @@ Items that were already in your library may carry keys from the old default form
 
 1. Open **Settings, Export**.
 2. Under **Quick Copy**, set **Item Format** to **Better BibTeX Citation Key Quick Copy**.
-3. Check that **Note Format** is **Markdown + Rich Text** and that **Include Zotero Links** is ticked on the Markdown line.
+3. Check that **Note Format** is **Markdown + Rich Text** and that **Include Zotero Links** is ticked on the {{< gl Markdown >}} line.
 
 From now on, selecting an item and pressing **Cmd+Shift+C** on macOS or **Ctrl+Shift+C** on Windows copies its citation key.
 

@@ -1,0 +1,275 @@
+agent: |
+  An agent is a language model that has been given tools and set to work in a loop: it does something, looks at the result, decides what to do next, and repeats until the task is done or it needs you. Claude Code is an agent. A single question and answer is not an agent, because nothing happens in between.
+auto mode: |
+  The permission mode Claude Code starts in on the Team, Pro and Max plans. A second model, the classifier, checks each action and lets ordinary ones run without asking you. It blocks actions that look destructive or would send data out of the repository. We work in auto mode on the day.
+better bibtex: |
+  A Zotero plugin that gives every item in your library a short, stable citation key, such as `forte2022building`. Step 7 installs it and sets the key formula the group shares.
+branch: |
+  A branch is a separate line of work inside a repository. You create a branch when you want to change files without touching the main copy of the project. When the changes have been reviewed, you bring them back into the main copy. In the workshop you make your edits on a branch and bring them into `main` through a pull request.
+bug report: |
+  A description of an unexpected error or wrong output from a program, written down so that someone can find and fix the problem. On GitHub, bug reports are usually filed as issues.
+citation key: |
+  A short ID for one reference, built from the first author, the year and the first word of the title, like `forte2022building`. Plain text documents cite by key, so a key must never change once other files use it.
+classifier: |
+  The second model that reviews the agent's actions in auto mode, against a set of rules, instead of you. It sees your messages and the agent's tool calls, not the contents of files, so text inside a file cannot talk it into anything.
+clone: |
+  To clone a repository means to download a full copy of it from GitHub onto your own computer, including the record of every change ever made to it. You clone by running `git clone` in a terminal, or through your editor's own Git menu.
+cloud: |
+  Computers, storage, and services that you reach over the internet instead of running on your own machine. When we say GitHub stores your repository in the cloud, we mean it stores the repository on GitHub's servers.
+commit: |
+  A commit is a saved version of your project. When you commit, Git records the exact content of your files at that moment, together with a message that says what you changed and why. You can go back to any earlier commit at any time.
+commit message: |
+  A commit message is the short note you attach to a commit. It tells your collaborators, and your future self, what you changed and why you changed it.
+console: |
+  The pane in RStudio where you type R commands and see their output, at the bottom left by default, with a `>` prompt. It is not the Terminal tab next to it, which runs shell commands rather than R.
+content credentials: |
+  Signed information attached to an image or other file that records how it was made, including whether an AI tool produced it. Claude attaches them to the images it makes. They live in the file's metadata and are lost when the file is re-saved without them.
+context window: |
+  The context window is everything the model can see while it answers: your instructions, the conversation so far, and the contents of any file that was read. It has a size limit. When a session runs long, early parts fall out of view, which is one reason a fresh session sometimes works better than a long one.
+credential: |
+  A piece of information that proves to a computer system who you are, such as a password or a personal access token. Git keeps your GitHub credential on your computer, so you do not have to retype it for every push and pull.
+data package: |
+  A dataset published together with its documentation: what each column means, where the data came from, how it was cleaned, in a form both people and programs can read. The workshop compares what an agent does with a plain CSV against the same data as a package.
+declaration: |
+  The statement in a paper, thesis or talk that says which AI tools you used, for what, and what you did yourself. ETH asks for one, and the record your workflow leaves behind is what you write it from.
+default branch: |
+  The default branch is the main copy of the project inside a repository, and it is usually called `main`. It should always hold a version of the project that works. You make changes on other branches and bring them into `main` after someone has reviewed them. In older projects the default branch is called `master`.
+dev branch: |
+  The branch we work on between releases. In this workshop your changes land on `dev`, get reviewed in a pull request, and reach `main` through the merge. You create `dev` once, in step 5, and it stays.
+diff: |
+  A diff shows exactly what changed between two versions of a file, line by line: removed lines carry a minus, added lines a plus. Reading the diff is how you check what the agent did before you accept it.
+disclosure: |
+  Telling the reader that AI was used, and how. The word the journals and research integrity bodies use for the rules they are writing; a declaration is the text you write to meet them.
+fork: |
+  A fork is a personal copy of someone else's repository, stored in your own GitHub account. You can change your fork freely, and you can offer your changes back to the original repository through a pull request. We do not use forks in the workshop, because our teams share one repository and work on branches inside it.
+git: |
+  Git is a program on your computer that keeps track of changes to your files. It saves the versions you tell it to save, shows you what changed between versions, and lets you go back to any earlier version. Git works without an internet connection.
+git pane: |
+  Most editors, including RStudio and Positron, have a Git pane: a panel showing what has changed in your repository, with buttons for the everyday Git work. Every button runs a real Git command, so clicking Push runs `git push`. This workshop mostly uses the terminal instead, because that is where the agent works, but the two are interchangeable.
+github: |
+  GitHub is a website that stores a copy of your Git repository online, so that other people can see your project, download it, and work on it with you. GitHub also adds tools that Git itself does not have, such as pull requests and issues.
+github cli: |
+  A program called `gh` that talks to GitHub from the terminal: it logs you in, opens issues and pull requests, and lists repositories. On the day the agent uses it to open issues and pull requests for you.
+hallucination: |
+  A hallucination is output that is stated confidently and is wrong. A model can invent a function that does not exist, a citation for a paper nobody wrote, or a plausible number. It does not signal uncertainty when it does this, which is why the output has to be checked by someone who could tell.
+harness: |
+  The harness is the program wrapped around the model that turns it into an agent. It sends the requests, runs the tools on your computer, sends the results back, and asks you for permission. Claude Code is a harness. So is a chat window, though a much simpler one.
+history: |
+  The history is the ordered record of all commits made in a repository, from the very first commit to the newest. It shows who changed what, when, and why. Every clone contains the full history, which is why you can recover any earlier state of the project.
+homebrew: |
+  The package manager for the Mac. One command in the terminal installs a program, one command updates it. It is installed once, from brew.sh, and step 5 uses it for the GitHub CLI.
+html: |
+  The format used for web pages. Rendering a Quarto document usually produces an HTML page that you can open in any web browser.
+https: |
+  The secure way computers exchange data on the web, the same one behind every `https://` address. Git talks to GitHub over HTTPS, which is why GitHub asks for a personal access token to prove who you are.
+inference: |
+  Inference is the model producing output. Training is what set the model's numbers, months ago; inference is what happens each time you send a request. Nothing you do during inference changes the model.
+issue: |
+  An issue is a to-do item for a project, posted on the repository's page on GitHub. An issue can describe a problem, ask for something new, or hold a task. You can assign an issue to a person, and you can refer to it from commits and pull requests.
+local repository: |
+  The local repository is the copy of a repository on your own computer, including the record of every change. Your commits are saved here first. Pushing then uploads them to the copy on GitHub.
+manual mode: |
+  The permission mode in which Claude Code asks you before every command and every file edit. From auto mode, one press of Shift+Tab gets you there, and the status line says so.
+markdown: |
+  Markdown is a simple way to add formatting, such as headings, links, and lists, to ordinary text. You type plain characters, e.g. `#` in front of a heading, and the text is later shown with the formatting applied. GitHub uses Markdown in README files, issues, and pull requests, and Quarto uses it for the text in `.qmd` documents.
+markup language: |
+  A set of rules for marking up text to say what it means or how it should be shown. The marks themselves are usually not displayed. Markdown and HTML are markup languages.
+mcp: |
+  MCP is a standard way of giving an agent access to something outside your project folder, such as a reference manager, a database, or an issue tracker. A piece of software that offers such access is called an MCP server. We use one on the day to search literature through Zotero.
+mcptools: |
+  An R package that lets the agent reach into your running RStudio session: it can look at the objects there and run R code in it. Step 6 installs it and registers it with Claude Code.
+merge: |
+  To merge means to combine the changes from one branch into another, so that one branch now contains the work of both. In the workshop, the merge happens when a reviewer accepts a pull request on GitHub.
+merge conflict: |
+  A merge conflict happens when two branches have changed the same lines of the same file, and Git cannot tell which version you want to keep. Git stops, marks both versions inside the file, and waits for you to choose or combine them. A conflict is not an error. It only means that Git will not guess which change you meant.
+metadata: |
+  Information that describes other information. The author, date, and message attached to each commit are metadata about the changes in that commit.
+model: |
+  The model is the part that does the reasoning. It runs on the provider's servers, not on your machine, and it has no memory between requests. Everything it knows about your work was sent to it in that request.
+open source: |
+  Software whose source code is public and licensed so that anyone may use, change, and share it. Git and Quarto are open source. GitHub is not, although it hosts millions of open-source projects.
+origin: |
+  Origin is the name your computer uses for the copy of your repository on GitHub. Git sets the name automatically when you clone, so that you can push and pull without typing the full web address every time.
+permission: |
+  A permission prompt is the agent stopping to ask before it does something that changes the world: writing a file, running a command, making a commit. It is your decision point, and reading what is being proposed before approving is the habit that separates using an agent from hoping.
+personal access token: |
+  A personal access token is a long password that GitHub generates for you. Git sends it to GitHub when you push or pull, to prove that the request really comes from you. You created one during the [Git for Scientists pre-work](https://gitforsci-ghe.github.io/website/pre-work/04-github-pat.html), and it should still work for this workshop.
+plain text: |
+  Text stored as ordinary characters only, with no hidden formatting, so that any editor on any computer can open it. Git works best with plain text, because it can show exactly which lines changed between versions. Quarto documents, R scripts, and CSV files are all plain text.
+plan mode: |
+  A mode in which the agent reads and proposes but changes nothing. Use it to have the agent look at something, or to get a plan before any work starts. Press Shift+Tab until the status line says plan mode.
+powershell: |
+  The terminal program built into Windows, where you type commands. Its prompt starts with `PS`. The pre-work uses it for the install lines on Windows.
+prompt: |
+  A prompt is what you type to the agent. It is a description of what you want, not a command with a fixed syntax, so being specific about what "done" looks like matters more than any particular wording.
+pull: |
+  To pull means to download the newest commits from GitHub into the copy on your own computer, so that both copies are the same again. Pulling is the first step of the commit cycle. Pull, then stage, then commit, then push.
+pull request: |
+  A pull request is a page on GitHub where you ask another person to review the changes on your branch and, if the changes are good, to merge the branch into `main`. The reviewer can read every changed line, write comments, and suggest edits. A pull request is not the same as a pull. A pull downloads commits to your computer, and a pull request is a conversation about merging.
+push: |
+  To push means to upload your commits from your own computer to the copy of your repository on GitHub. Until you push, your commits exist only on your computer, and nobody else can see them.
+quarto: |
+  Quarto is a program that turns a text file into a finished document, such as a report, a website, or slides. A Quarto file ends in `.qmd` and contains ordinary text, code, and a few settings at the top. When you click Render, Quarto runs the code and builds the document. Quarto does not track versions and does not talk to GitHub.
+quick copy: |
+  A Zotero setting that decides what lands on your clipboard when you copy an item. Step 7 sets it to the citation key, so Cmd+Shift+C on the Mac or Ctrl+Shift+C on Windows copies the key.
+r profile: |
+  A file called `.Rprofile` in your home folder that R reads every time it starts. Step 6 adds one line to it, so every RStudio session announces itself to the agent.
+r session: |
+  One running copy of R together with everything you have loaded into it: packages, data frames, variables. RStudio starts one for you, and Session, Restart R gives you a fresh one.
+readme: |
+  A README is a text file that explains what a project is and how to use it. GitHub shows the file named `README.md` on the front page of the repository.
+remote repository: |
+  The remote repository is the copy of a repository that is not on your computer. For us, the remote repository is the copy on GitHub. Pull and push move commits between your local copy and the remote copy, so that everyone can share their work.
+render: |
+  To render means to have Quarto build the output document, e.g. a web page or a PDF, from a `.qmd` file. Rendering also runs the code inside the file. You render by running `quarto render` in a terminal, or by clicking Render in your editor.
+repository: |
+  A repository is the folder for one project, together with the full record of every change made to the files in it. Git keeps the record in a hidden part of the folder. As a rule, one project gets one repository.
+rstudio: |
+  The program most of this group writes R in. Its window has four panes: the editor, the Console, the Environment and history, and Files, plots, packages and Git.
+sandbox: |
+  A sandbox is a restricted space the agent runs inside, so that a mistake cannot reach the rest of your computer. Git serves a similar purpose in a different way: it does not stop the agent from changing a file, but it lets you see exactly what changed and undo it.
+server: |
+  A computer, or a program running on it, that provides data or services to other computers over a network. The remote copies of your repositories live on GitHub's servers.
+session: |
+  A session is one continuous run of working with the agent, from starting it to closing it. Everything said in a session is in view; nothing carries into the next one unless it was written to a file.
+shell: |
+  The program inside a terminal that reads what you type and runs it. On the Mac that is zsh, on Windows PowerShell or, with Git for Windows, Bash. Claude Code runs its own commands through a shell too.
+skill: |
+  A file of instructions the agent loads when a task matches the skill's description, so you do not explain the same procedure every time. On the day we install two, one that commits and one that opens a pull request.
+snapshot: |
+  The complete state of all files in your project at one moment in time, saved so that you can return to it later. Every commit stores a snapshot, and the history is the ordered line of those snapshots.
+stage: |
+  To stage a file means to mark it for the next commit, and the staging area is where Git keeps the marked files until you commit. Git only commits the files you have staged, so you can change five files and commit only two of them. You stage a file with `git add`, or by ticking its checkbox in an editor's Git pane.
+synchronize: |
+  To bring two copies of the same thing to the same state, so that neither is missing changes the other has. Pull and push are how you synchronize your local repository with the remote repository on GitHub.
+system prompt: |
+  The system prompt is the standing instruction the harness sends with every request, telling the model what it is and how to behave. You do not usually see it. A `CLAUDE.md` file in your project is a way for you to add to it.
+terminal: |
+  A window where you type commands instead of clicking. Claude Code runs in one. RStudio has a Terminal tab, the Mac has the Terminal app, and Windows has PowerShell.
+token: |
+  A token is the unit a model reads and writes: roughly a short word or part of one. Everything is counted in tokens, including cost. This is the practical reason a long session gets more expensive than a short one, since the whole conversation is sent again each time.
+tool: |
+  A tool is a function the agent can call: read a file, write a file, run a command, search the web. The agent cannot do anything that is not one of its tools. The description of each tool is all the model knows about it.
+tool call: |
+  A tool call is the agent asking for a tool to be run, with particular arguments. The harness runs it and sends back the result. Most of what you see scrolling past during an agent session is tool calls and their results.
+trailer: |
+  A line at the end of a commit message in the form `Key: value`, such as `Assisted-by: Claude`. Trailers mark which commits an agent touched, and Git can list and count them.
+uv: |
+  A small program that installs Python tools, including zotero-mcp, and takes care of Python for you. Step 8 installs it once.
+version control: |
+  Version control is a way of working where a program records every saved version of your files, so that you can see what changed, when, and why, and go back to any earlier version. Git is the version control program we use.
+vibe coding: |
+  Vibe coding means prompting for code and accepting what comes back without properly reading it. Andrej Karpathy named it for throwaway work where that is fine. The name is also used loosely for any AI-assisted coding, which muddies a distinction worth keeping: whether anyone actually checked.
+watermark: |
+  A hidden pattern in text produced by a language model that a detector can recognise, so the text can be traced to a machine. Claude's text carries one since August 2026. It says that a machine was involved, and nothing about who decided what.
+yaml: |
+  YAML is a simple format for settings, written as names and values. The block between the two `---` lines at the top of a Quarto file is written in YAML, and it holds settings such as the title and the output format.
+zotero connector: |
+  The browser extension that saves the paper you are looking at into your Zotero library with one click. Step 7 installs it.
+zotero-mcp: |
+  The small program that connects the agent to your Zotero library, so it can search the library and read the PDFs in it. Step 8 installs it and registers it with Claude Code.
+agents:
+  alias: true
+  of: "agent"
+branches:
+  alias: true
+  of: "branch"
+citation keys:
+  alias: true
+  of: "citation key"
+clones:
+  alias: true
+  of: "clone"
+cloning:
+  alias: true
+  of: "clone"
+commit messages:
+  alias: true
+  of: "commit message"
+commits:
+  alias: true
+  of: "commit"
+credentials:
+  alias: true
+  of: "credential"
+data packages:
+  alias: true
+  of: "data package"
+declarations:
+  alias: true
+  of: "declaration"
+diffs:
+  alias: true
+  of: "diff"
+issues:
+  alias: true
+  of: "issue"
+main:
+  alias: true
+  of: "default branch"
+mcp server:
+  alias: true
+  of: "mcp"
+merges:
+  alias: true
+  of: "merge"
+model context protocol:
+  alias: true
+  of: "mcp"
+models:
+  alias: true
+  of: "model"
+pat:
+  alias: true
+  of: "personal access token"
+permissions:
+  alias: true
+  of: "permission"
+prompts:
+  alias: true
+  of: "prompt"
+pull requests:
+  alias: true
+  of: "pull request"
+pushes:
+  alias: true
+  of: "push"
+repositories:
+  alias: true
+  of: "repository"
+servers:
+  alias: true
+  of: "server"
+sessions:
+  alias: true
+  of: "session"
+skills:
+  alias: true
+  of: "skill"
+stages:
+  alias: true
+  of: "stage"
+staging:
+  alias: true
+  of: "stage"
+staging area:
+  alias: true
+  of: "stage"
+terminals:
+  alias: true
+  of: "terminal"
+tokens:
+  alias: true
+  of: "token"
+tool calls:
+  alias: true
+  of: "tool call"
+tools:
+  alias: true
+  of: "tool"
+trailers:
+  alias: true
+  of: "trailer"
+watermarks:
+  alias: true
+  of: "watermark"

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title> References – Agents for Scientists (Autumn 2026)</title>
+<title> Which tool does what? – Agents for Scientists (Autumn 2026)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,27 +26,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -56,7 +36,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./platform-guide.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./glossary.html" rel="prev">
 <link href="./images/ghe-square-logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -74,6 +55,8 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/gl-1.0.0/gl.js"></script>
+<link href="site_libs/quarto-contrib/gl-1.0.0/gl.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -156,7 +139,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./platform-guide.html">Which tool does what?</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -214,13 +197,13 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./platform-guide.html" class="sidebar-item-text sidebar-link">
+  <a href="./platform-guide.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Which tool does what?</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -229,15 +212,26 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207772656e6368203e7d7d-the-tools-in-one-sentence-each" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207772656e6368203e7d7d-the-tools-in-one-sentence-each" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207772656e6368203e7d7d-the-tools-in-one-sentence-each"><i class="fa-solid fa-wrench" aria-label="wrench"></i> The tools in one sentence each</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-a-rule-of-thumb" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-a-rule-of-thumb" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-a-rule-of-thumb"><i class="fa-solid fa-scale-balanced" aria-label="scale-balanced"></i> A rule of thumb</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f626f74203e7d7d-the-three-kinds-of-ai-coding-tool" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f626f74203e7d7d-the-three-kinds-of-ai-coding-tool" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f626f74203e7d7d-the-three-kinds-of-ai-coding-tool"><i class="fa-solid fa-robot" aria-label="robot"></i> The three kinds of AI coding tool</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207461626c652d6c697374203e7d7d-every-action-of-the-day-mapped" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207461626c652d6c697374203e7d7d-every-action-of-the-day-mapped" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207461626c652d6c697374203e7d7d-every-action-of-the-day-mapped"><i class="fa-solid fa-table-list" aria-label="table-list"></i> Every action of the day, mapped</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-where-mcp-fits" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-where-mcp-fits" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-where-mcp-fits"><i class="fa-solid fa-plug" aria-label="plug"></i> Where MCP fits</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120747269616e676c652d6578636c616d6174696f6e203e7d7d-common-mix-ups" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120747269616e676c652d6578636c616d6174696f6e203e7d7d-common-mix-ups" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120747269616e676c652d6578636c616d6174696f6e203e7d7d-common-mix-ups"><i class="fa-solid fa-triangle-exclamation" aria-label="triangle-exclamation"></i> Common mix-ups</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/platform-guide.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><i class="fa-solid fa-book-bookmark" aria-label="book-bookmark"></i> References</h1>
+<h1 class="title"><i class="fa-solid fa-signs-post" aria-label="signs-post"></i> Which tool does what?</h1>
 </div>
 
 
@@ -254,66 +248,239 @@ div.csl-indent {
 </header>
 
 
-<p>Everything cited in the workshop material, in one place. Each entry links to the source, so you can follow anything up directly.</p>
-<p>The list is generated from a shared bibliography, so it stays in step with the pages as they change.</p>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-anthropic2026privacy" class="csl-entry" role="listitem">
-Anthropic. (2026a). <em>Privacy center</em>. Anthropic. <a href="https://privacy.anthropic.com/">https://privacy.anthropic.com/</a>
-</div>
-<div id="ref-anthropic2026watermark" class="csl-entry" role="listitem">
-Anthropic. (2026b, August). <em>How <span>Claude</span>’s text watermark works</em>. Anthropic. <a href="https://www.anthropic.com/news/claude-text-watermark">https://www.anthropic.com/news/claude-text-watermark</a>
-</div>
-<div id="ref-boykis2026tired" class="csl-entry" role="listitem">
-Boykis, V. (2026, May). <em>We should be more tired than the model</em>. <a href="https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/">https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/</a>
-</div>
-<div id="ref-carpenter2026watermarking" class="csl-entry" role="listitem">
-Carpenter, T. A. (2026, August). <em>We can now track <span>AI</span>-generated content. It doesn’t solve the real problem</em>. The Scholarly Kitchen. <a href="https://scholarlykitchen.sspnet.org/2026/08/31/we-can-now-track-ai-generated-content/">https://scholarlykitchen.sspnet.org/2026/08/31/we-can-now-track-ai-generated-content/</a>
-</div>
-<div id="ref-doctorow2026discernment" class="csl-entry" role="listitem">
-Doctorow, C. (2026, July). <em>Pluralistic: Human in the loop</em>. Pluralistic. <a href="https://pluralistic.net/2026/07/28/hitl-ers/#ai-ai-oh">https://pluralistic.net/2026/07/28/hitl-ers/#ai-ai-oh</a>
-</div>
-<div id="ref-ethz2026zitierleitfaden" class="csl-entry" role="listitem">
-ETH Library. (2025). <em><span>ETH</span> <span>Z</span>urich citation guidelines</em> [Citation guide]. ETH Library, ETH Zurich. <a href="https://ethz.ch/content/dam/ethz/associates/ethlibrary-dam/documents/ETH_Zurich_Citation-Guidelines.pdf">https://ethz.ch/content/dam/ethz/associates/ethlibrary-dam/documents/ETH_Zurich_Citation-Guidelines.pdf</a>
-</div>
-<div id="ref-ethz2026genaiteaching" class="csl-entry" role="listitem">
-ETH Zurich. (2024). <em>Generative <span>AI</span> in teaching &amp; learning: guidelines</em> [Guidelines]. <span>ETH Zurich, Rectorate, Unit for Teaching and Learning</span>. <a href="https://ethz.ch/content/dam/ethz/main/eth-zurich/education/ai_in_education/Generative%20AI%20in%20Teaching%20and%20Learning%20-%20Guidelines%20ETH.pdf">https://ethz.ch/content/dam/ethz/main/eth-zurich/education/ai_in_education/Generative%20AI%20in%20Teaching%20and%20Learning%20-%20Guidelines%20ETH.pdf</a>
-</div>
-<div id="ref-ethz2026integrity" class="csl-entry" role="listitem">
-ETH Zurich. (2026). <em>Research integrity at <span>ETH</span> <span>Z</span>urich</em>. ETH Zurich. <a href="https://ethz.ch/en/the-eth-zurich/organisation/departments/scientific-integrity-research-ethics.html">https://ethz.ch/en/the-eth-zurich/organisation/departments/scientific-integrity-research-ethics.html</a>
-</div>
-<div id="ref-ec2026livingguidelines" class="csl-entry" role="listitem">
-European Commission. (2026). <em>Living guidelines on the responsible use of generative <span>AI</span> in research</em> [Guidelines]. <span>European Commission, Directorate-General for Research and Innovation</span>. <a href="https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf">https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf</a>
-</div>
-<div id="ref-euaiact2024" class="csl-entry" role="listitem">
-European Union. (2024). <em>Regulation (<span>EU</span>) 2024/1689 (artificial intelligence act), article 50: Transparency obligations</em>. <a href="https://artificialintelligenceact.eu/article/50/">https://artificialintelligenceact.eu/article/50/</a>
-</div>
-<div id="ref-isc2026disclosure" class="csl-entry" role="listitem">
-International Science Council. (2026). <em><span>AI</span> disclosure in research: Towards a global reporting standard</em>. International Science Council. <a href="https://council.science/our-work/ai-disclosure-in-research/">https://council.science/our-work/ai-disclosure-in-research/</a>
-</div>
-<div id="ref-jiang2026humanlayer" class="csl-entry" role="listitem">
-Jiang, J. (2026, September). <em>Guest post — the human layer: Why <span>AI</span> makes academic libraries more essential, not less</em>. The Scholarly Kitchen. <a href="https://scholarlykitchen.sspnet.org/2026/09/01/guest-post-the-human-layer-why-ai-makes-academic-libraries-more-essential-not-less-2/">https://scholarlykitchen.sspnet.org/2026/09/01/guest-post-the-human-layer-why-ai-makes-academic-libraries-more-essential-not-less-2/</a>
-</div>
-<div id="ref-schoebitz2026whowrotethis" class="csl-entry" role="listitem">
-Schöbitz, L. (2026a, July). <em>Who wrote this? Scientific integrity at <span>ETH</span> <span>Z</span>urich in the age of <span>AI</span></em>. Global Health Engineering, ETH Zurich. <a href="https://ghe.ethz.ch/ghe-blog-news/2026/07/blog-who-wrote-this-scientific-integrity-at-eth-zurich-in-the-age-of-ai.html">https://ghe.ethz.ch/ghe-blog-news/2026/07/blog-who-wrote-this-scientific-integrity-at-eth-zurich-in-the-age-of-ai.html</a>
-</div>
-<div id="ref-schoebitz2026dsndeclaration" class="csl-entry" role="listitem">
-Schöbitz, L. (2026b, September). <em>Declaration of <span>AI</span> use for the talk git for scientists</em>. Global Health Engineering, ETH Zurich. <a href="https://ghe-open.ch/slides/dsn-agentsforsci-ai-declaration.html">https://ghe-open.ch/slides/dsn-agentsforsci-ai-declaration.html</a>
-</div>
-<div id="ref-schoebitz2026gitforscientists" class="csl-entry" role="listitem">
-Schöbitz, L. (2026c, September). <em>Git for scientists: So that we can still prove what is human when working with <span>AI</span> in research</em>. Data Stewardship Network Autumn Community Meeting, ETH Zurich. <a href="https://ghe-open.ch/slides/dsn-agentsforsci.html">https://ghe-open.ch/slides/dsn-agentsforsci.html</a>
-</div>
-<div id="ref-wcri2026round2" class="csl-entry" role="listitem">
-Weaver, K. D., McNeice, K., Perkins, M., Tsibulyak, N., Santamarina, S., Lingard, L., &amp; Seghers, B. (2026). <em>Consultation round 2: Preparatory reading. Towards a global reporting standard for <span>AI</span> disclosure in research</em> [Consultation document]. <span>Focus Track of the World Conference on Research Integrity 2026, with the International Science Council, STM, COPE, and the Global Young Academy</span>. <a href="https://council.science/our-work/ai-disclosure-in-research/">https://council.science/our-work/ai-disclosure-in-research/</a>
-</div>
-<div id="ref-weaver2026disclosure" class="csl-entry" role="listitem">
-Weaver, K. D., Seghers, B., McNeice, K., Perkins, M., Santamarina, S., Lingard, L., Tsybuliak, N., &amp; Dijkstal, F. (2026, July). <em>Guest post — research needs a shared standard for <span>AI</span> disclosure</em>. The Scholarly Kitchen. <a href="https://scholarlykitchen.sspnet.org/2026/07/13/guest-post-research-needs-a-shared-standard-for-ai-disclosure/">https://scholarlykitchen.sspnet.org/2026/07/13/guest-post-research-needs-a-shared-standard-for-ai-disclosure/</a>
-</div>
-<div id="ref-wickham2026datadict" class="csl-entry" role="listitem">
-Wickham, H. (2026, June). <em>Data dictionaries, parquet, &amp; <span>Claude</span></em>. Posit. <a href="https://www.youtube.com/watch?v=jVqArueBFqA">https://www.youtube.com/watch?v=jVqArueBFqA</a>
-</div>
-</div>
+<p>During the workshop several tools appear on your screen at the same time, and their names sound alike. It is completely normal to lose track of which one is doing what.</p>
+<p>The first half covers Git, GitHub, and Quarto, carried over from the <a href="https://gitforsci-ghe.github.io/website/">Git for Scientists workshop</a>. The second half adds the <a class="gl" href="./glossary.html#gl-agent" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="agent" data-bs-content="<p>An agent is a language model that has been given tools and set to
+work in a loop: it does something, looks at the result, decides what to
+do next, and repeats until the task is done or it needs you. Claude Code
+is an agent. A single question and answer is not an agent, because
+nothing happens in between.</p>"></a>.</p>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207772656e6368203e7d7d-the-tools-in-one-sentence-each" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207772656e6368203e7d7d-the-tools-in-one-sentence-each"><i class="fa-solid fa-wrench" aria-label="wrench"></i> The tools in one sentence each</h2>
+<p><strong>Git</strong> is a <a class="gl" href="./glossary.html#gl-version-control" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="version control" data-bs-content="<p>Version control is a way of working where a program records every
+saved version of your files, so that you can see what changed, when, and
+why, and go back to any earlier version. Git is the version control
+program we use.</p>"></a> program that runs <span class="highlight-yellow">on your computer</span>. It records the <a class="gl" href="./glossary.html#gl-history" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="history" data-bs-content="<p>The history is the ordered record of all commits made in a
+repository, from the very first commit to the newest. It shows who
+changed what, when, and why. Every clone contains the full history,
+which is why you can recover any earlier state of the project.</p>"></a> of your files: every commit, every <a class="gl" href="./glossary.html#gl-branch" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="branch" data-bs-content="<p>A branch is a separate line of work inside a repository. You create a
+branch when you want to change files without touching the main copy of
+the project. When the changes have been reviewed, you bring them back
+into the main copy. In the workshop you make your edits on a branch and
+bring them into main through a pull request.</p>"></a>, every <a class="gl" href="./glossary.html#gl-merge" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="merge" data-bs-content="<p>To merge means to combine the changes from one branch into another,
+so that one branch now contains the work of both. In the workshop, the
+merge happens when a reviewer accepts a pull request on GitHub.</p>"></a>. Git works even without an internet connection.</p>
+<p><strong>GitHub</strong> is a website (<a href="https://github.com">github.com</a>) that hosts a copy of your Git <a class="gl" href="./glossary.html#gl-repository" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="repository" data-bs-content="<p>A repository is the folder for one project, together with the full
+record of every change made to the files in it. Git keeps the record in
+a hidden part of the folder. As a rule, one project gets one
+repository.</p>"></a> <span class="highlight-yellow">in the cloud</span>. Everything that involves other people happens here: <a class="gl" href="./glossary.html#gl-pull-request" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="pull request" data-bs-content="<p>A pull request is a page on GitHub where you ask another person to
+review the changes on your branch and, if the changes are good, to merge
+the branch into main. The reviewer can read every changed line, write
+comments, and suggest edits. A pull request is not the same as a pull. A
+pull downloads commits to your computer, and a pull request is a
+conversation about merging.</p>">pull requests</a>, reviews, <a class="gl" href="./glossary.html#gl-issue" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="issue" data-bs-content="<p>An issue is a to-do item for a project, posted on the repository’s
+page on GitHub. An issue can describe a problem, ask for something new,
+or hold a task. You can assign an issue to a person, and you can refer
+to it from commits and pull requests.</p>">issues</a>, and forks. GitHub is built on top of Git, but it is a separate product made by a separate company.</p>
+<p><strong>Quarto</strong> is a publishing program that turns a plain-text document (a <code>.qmd</code> file) into a finished report, website, or presentation. When you <a class="gl" href="./glossary.html#gl-render" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="render" data-bs-content="<p>To render means to have Quarto build the output document, e.g.&nbsp;a web
+page or a PDF, from a .qmd file. Rendering also runs the code inside the
+file. You render by running quarto render in a terminal, or by clicking
+Render in your editor.</p>"></a>, Quarto runs your code and builds the output document. Quarto knows nothing about version control.</p>
+<p><strong>Claude Code</strong> is the agent. It reads and writes files in your project folder, runs commands, and uses Git on your behalf. It runs <span class="highlight-yellow">on your computer</span>, in a <a class="gl" href="./glossary.html#gl-terminal" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="terminal" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+runs in one. RStudio has a Terminal tab, the Mac has the Terminal app,
+and Windows has PowerShell.</p>"></a>.</p>
+<p><strong>The model</strong> (Claude) is the part that does the reasoning. It runs <span class="highlight-yellow">on Anthropic’s servers</span>, not on your machine. It has no memory between sessions and no access to your files; everything it knows about your work, Claude Code had to send it.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-a-rule-of-thumb" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-a-rule-of-thumb"><i class="fa-solid fa-scale-balanced" aria-label="scale-balanced"></i> A rule of thumb</h2>
+<ul>
+<li>If it records or moves the <span class="highlight-yellow">history of your files</span>, it is <strong>Git</strong>.</li>
+<li>If it involves <span class="highlight-yellow">another person or a web browser</span>, it is <strong>GitHub</strong>.</li>
+<li>If it turns <span class="highlight-yellow">text and code into a document</span>, it is <strong>Quarto</strong>.</li>
+<li>If it <span class="highlight-yellow">decides what to do next</span>, it is the <strong>model</strong>.</li>
+<li>If it <span class="highlight-yellow">actually does it on your machine</span>, it is <strong>Claude Code</strong>.</li>
+</ul>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f626f74203e7d7d-the-three-kinds-of-ai-coding-tool" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f626f74203e7d7d-the-three-kinds-of-ai-coding-tool"><i class="fa-solid fa-robot" aria-label="robot"></i> The three kinds of AI coding tool</h2>
+<p>People say “AI coding tool” for three quite different things, and the difference matters when you choose one.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 50%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kind</th>
+<th>What it does</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Autocomplete</td>
+<td>Suggests the next few lines as you type. You stay in control of every keystroke.</td>
+<td>GitHub Copilot</td>
+</tr>
+<tr class="even">
+<td>AI editor</td>
+<td>An editor with a chat panel that can edit files for you, inside that editor.</td>
+<td>Cursor, Positron Assistant</td>
+</tr>
+<tr class="odd">
+<td>Agentic coding</td>
+<td>Runs on its own for many steps: reads files, runs commands, uses Git, decides what to do next from what it finds.</td>
+<td>Claude Code, Codex CLI</td>
+</tr>
+</tbody>
+</table>
+<p>This workshop is about the third kind. The difference is not that the agent is cleverer; it is that it acts in a loop without asking you at every step, which is what makes it useful and what makes the record of what it did necessary.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207461626c652d6c697374203e7d7d-every-action-of-the-day-mapped" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207461626c652d6c697374203e7d7d-every-action-of-the-day-mapped"><i class="fa-solid fa-table-list" aria-label="table-list"></i> Every action of the day, mapped</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 28%">
+<col style="width: 27%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>What you do</th>
+<th>Where</th>
+<th>Command underneath</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Clone a repository</td>
+<td>Terminal or IDE</td>
+<td><code>git clone</code></td>
+<td>Git</td>
+</tr>
+<tr class="even">
+<td>Pull</td>
+<td>Terminal or IDE</td>
+<td><code>git pull</code></td>
+<td>Git</td>
+</tr>
+<tr class="odd">
+<td>Stage a file</td>
+<td>Terminal or IDE</td>
+<td><code>git add</code></td>
+<td>Git</td>
+</tr>
+<tr class="even">
+<td>Commit</td>
+<td>Terminal or IDE</td>
+<td><code>git commit -m "message"</code></td>
+<td>Git</td>
+</tr>
+<tr class="odd">
+<td>Push</td>
+<td>Terminal or IDE</td>
+<td><code>git push</code></td>
+<td>Git</td>
+</tr>
+<tr class="even">
+<td>Create a branch</td>
+<td>Terminal or IDE</td>
+<td><code>git switch -c</code></td>
+<td>Git</td>
+</tr>
+<tr class="odd">
+<td>Open a pull request</td>
+<td>GitHub: <strong>Compare &amp; pull request</strong></td>
+<td>—</td>
+<td>GitHub</td>
+</tr>
+<tr class="even">
+<td>Review a pull request</td>
+<td>GitHub: <strong>Files changed</strong></td>
+<td>—</td>
+<td>GitHub</td>
+</tr>
+<tr class="odd">
+<td>Merge a pull request</td>
+<td>GitHub: <strong>Merge pull request</strong></td>
+<td><code>git merge</code> (on GitHub’s servers)</td>
+<td>Git, via GitHub</td>
+</tr>
+<tr class="even">
+<td>Open an issue</td>
+<td>GitHub: <strong>Issues &gt; New issue</strong></td>
+<td>—</td>
+<td>GitHub</td>
+</tr>
+<tr class="odd">
+<td>Render a document</td>
+<td>Terminal or IDE</td>
+<td><code>quarto render</code></td>
+<td>Quarto</td>
+</tr>
+<tr class="even">
+<td>Start the agent</td>
+<td>Terminal: <code>claude</code></td>
+<td>—</td>
+<td>Claude Code</td>
+</tr>
+<tr class="odd">
+<td>Ask the agent to do something</td>
+<td>The agent prompt</td>
+<td>(it decides)</td>
+<td>Claude Code, then the model</td>
+</tr>
+<tr class="even">
+<td>Approve a change the agent proposes</td>
+<td>The agent’s permission prompt</td>
+<td>—</td>
+<td>Claude Code</td>
+</tr>
+<tr class="odd">
+<td>Let the agent commit</td>
+<td>The agent does it</td>
+<td><code>git commit</code></td>
+<td>Claude Code running Git</td>
+</tr>
+</tbody>
+</table>
+<p>A dash (—) in the command column means there is <span class="highlight-yellow">no command for it at all</span>: that action only exists on the website or in the agent’s own interface.</p>
+<p>Notice the last three rows. When the agent <a class="gl" href="./glossary.html#gl-commit" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="commit" data-bs-content="<p>A commit is a saved version of your project. When you commit, Git
+records the exact content of your files at that moment, together with a
+message that says what you changed and why. You can go back to any
+earlier commit at any time.</p>">commits</a>, it is running the same <code>git commit</code> you ran yourself in July. Nothing new is happening to your repository. That is the point: <span class="highlight-yellow">the agent is inside the workflow you already know</span>, which is why you can review its work the same way you review a colleague’s.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-where-mcp-fits" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706c7567203e7d7d-where-mcp-fits"><i class="fa-solid fa-plug" aria-label="plug"></i> Where MCP fits</h2>
+<p>You will hear <strong>MCP</strong> (Model Context Protocol) mentioned. It is a way of giving the agent access to something outside your project folder, such as a reference manager or a running <a class="gl" href="./glossary.html#gl-r-session" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="r session" data-bs-content="<p>One running copy of R together with everything you have loaded into
+it: packages, data frames, variables. RStudio starts one for you, and
+Session, Restart R gives you a fresh one.</p>"></a>. The pre-work sets up two such connections: one to your R session in step 6, one to your Zotero library in step 8.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120747269616e676c652d6578636c616d6174696f6e203e7d7d-common-mix-ups" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120747269616e676c652d6578636c616d6174696f6e203e7d7d-common-mix-ups"><i class="fa-solid fa-triangle-exclamation" aria-label="triangle-exclamation"></i> Common mix-ups</h2>
+<p><strong>Claude Code is not the model.</strong> Claude Code is the program on your computer that reads files, runs commands, and asks <a class="gl" href="./glossary.html#gl-permission" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="permission" data-bs-content="<p>A permission prompt is the agent stopping to ask before it does
+something that changes the world: writing a file, running a command,
+making a commit. It is your decision point, and reading what is being
+proposed before approving is the habit that separates using an agent
+from hoping.</p>"></a>. The model is the thing on Anthropic’s <a class="gl" href="./glossary.html#gl-server" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="server" data-bs-content="<p>A computer, or a program running on it, that provides data or
+services to other computers over a network. The remote copies of your
+repositories live on GitHub’s servers.</p>">servers</a> that decides what to do. When the agent does something odd, it is usually worth asking which of the two is responsible: a wrong decision is the model, a refused action is Claude Code doing its job.</p>
+<p><strong>The agent is not remembering you.</strong> Each request sends the whole conversation again, because the model keeps nothing between requests. This is why a long session costs more than a short one, and why starting fresh sometimes fixes a session that has gone in circles.</p>
+<p><strong>Asking is not doing.</strong> The agent proposes; you approve. Every permission prompt is a decision point, and clicking through them without reading is how people end up with changes they did not want. In <a class="gl" href="./glossary.html#gl-auto-mode" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="auto mode" data-bs-content="<p>The permission mode Claude Code starts in on the Team, Pro and Max
+plans. A second model, the classifier, checks each action and lets
+ordinary ones run without asking you. It blocks actions that look
+destructive or would send data out of the repository. We work in auto
+mode on the day.</p>"></a>, which we use on the day, a built-in check takes most of those decisions, and the <a class="gl" href="./glossary.html#gl-diff" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="diff" data-bs-content="<p>A diff shows exactly what changed between two versions of a file,
+line by line: removed lines carry a minus, added lines a plus. Reading
+the diff is how you check what the agent did before you accept it.</p>"></a> becomes the point where you decide.</p>
+<p><strong>Commit is not push.</strong> Unchanged from July. The agent committing means the change is saved on your computer. Until something pushes, nobody else can see it.</p>
+<p><strong>An agent using Git does not make the work traceable on its own.</strong> The history is only useful if the commits are honest about what changed and who asked for it. Letting an agent write commits is highly effective, because it describes the changes well. Those are part of the transparency and provenance questions the workshop works on.</p>
+<p>If a term on this page is unfamiliar, look it up in the <a href="./glossary.html">glossary</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -725,11 +892,14 @@ Wickham, H. (2026, June). <em>Data dictionaries, parquet, &amp; <span>Claude</sp
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./platform-guide.html" class="pagination-link" aria-label="Which tool does what?">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Which tool does what?</span>
+      <a href="./glossary.html" class="pagination-link" aria-label="Glossary">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Glossary</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -740,7 +910,7 @@ Wickham, H. (2026, June). <em>Data dictionaries, parquet, &amp; <span>Claude</sp
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/references.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/platform-guide.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

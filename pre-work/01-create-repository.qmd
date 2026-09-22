@@ -37,9 +37,9 @@ Two settings to choose on the same screen:
 - **Visibility:** public if you can, private if you cannot
 - **Initialise this repository with:** tick **Add a README file**
 
-**Visibility.** Choose public if the data allows it. The aim is for every repository to be public by the end, so the work and its outcomes can be shown to others. If you are not ready to make yours public yet, start private and switch it later under Settings. What you must not do is treat private as permission to commit something sensitive: the rule below applies either way.
+**Visibility.** Choose public if the data allows it. The aim is for every repository to be public by the end, so the work and its outcomes can be shown to others. If you are not ready to make yours public yet, start private and switch it later under Settings. What you must not do is treat private as permission to {{< gl commit >}} something sensitive: the rule below applies either way.
 
-**README.** Ticking **Add a README file** means GitHub creates the repository with a file already in it, so you can clone it straight away. Without it you get an empty repository and a set of setup commands instead.
+**README.** Ticking **Add a README file** means GitHub creates the repository with a file already in it, so you can {{< gl clone >}} it straight away. Without it you get an empty repository and a set of setup commands instead.
 
 ## Clone it
 
@@ -56,11 +56,11 @@ Inside your cloned repository, create a folder named `data`, and put the dataset
 ::: {.callout-important}
 ## This must be non-sensitive data, with no personal data in it
 
-Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent, and a later visibility change, a new collaborator, or a push to the wrong remote can expose it.
+Personal and sensitive data never go into a Git repository, private {{< gl repository display="repositories" >}} included. Git {{< gl history >}} is permanent, and a later visibility change, a new collaborator, or a {{< gl push >}} to the wrong remote can expose it.
 
 Do not commit names, recruitment or participant data, health data, signed consent, or anything that identifies a person in combination with other columns.
 
-This matters more with an agent than without one: a coding agent reads whole directories and sends file contents to a model, so protected data in the folder can leave your machine without you deciding to send it.
+This matters more with an {{< gl agent >}} than without one: a coding agent reads whole directories and sends file contents to a model, so protected data in the folder can leave your machine without you deciding to send it.
 
 If you are unsure which category your data falls into, treat it as protected and ask before committing anything.
 :::
@@ -73,11 +73,11 @@ Get in touch with me directly and we will sort something out before the workshop
 
 ## Commit and push
 
-Stage the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.
+{{< gl stage display="Stage" >}} the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.
 
 ## Open an issue
 
-Once the data is committed and pushed, open an issue on your own repository:
+Once the data is committed and pushed, open an {{< gl issue >}} on your own repository:
 
 - **Title:** `Data added`
 - **Body:** one or two sentences saying what the data is and where it came from

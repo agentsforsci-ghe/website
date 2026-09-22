@@ -19,9 +19,9 @@ This is the second of the two workshops in the series. The first, [{{< var prere
 
 In the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.
 
-The day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan and using GitHub issues. Comparing the three shows what the agent actually does for you, how you can document the process, and how you stay involved in making decisions.
+The day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without {{< gl agent display="agents" >}}, with an agent given minimal input, and with an agent given a proper plan and using GitHub {{< gl issue display="issues" >}}. Comparing the three shows what the agent actually does for you, how you can document the process, and how you stay involved in making decisions.
 
-Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing disclosure rules for scientific research right now. We will not write a response to them in the room, but what the day shows feeds into the reproducibility community's contribution, through the AI working group of the Global Federation of Reproducibility Networks.
+Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing {{< gl disclosure >}} rules for scientific research right now. We will not write a response to them in the room, but what the day shows feeds into the reproducibility community's contribution, through the AI working group of the Global Federation of Reproducibility Networks.
 
 Four short [background pages](background/index.qmd) cover the themes the introduction block builds on: security, literacy, transparency, and disclosure. Reading them before the day is useful, not required.
 
@@ -29,10 +29,10 @@ Four short [background pages](background/index.qmd) cover the themes the introdu
 
 Everyone taking part has been through the {{< var prerequisite.title >}} workshop, so this builds directly on it. You should be able to:
 
-- clone a repository and open it as a project
-- run the pull, stage, commit, push cycle
-- create a branch and open a pull request
-- review a colleague's pull request and merge it
+- {{< gl clone >}} a {{< gl repository >}} and open it as a project
+- run the {{< gl pull >}}, {{< gl stage >}}, {{< gl commit >}}, {{< gl push >}} cycle
+- create a {{< gl branch >}} and open a {{< gl "pull request" >}}
+- review a colleague's pull request and {{< gl merge >}} it
 - open an issue, assign it, and close it
 
 If any of these are shaky, work through the [{{< var prerequisite.title >}} material]({{< var prerequisite.site >}}) again before the day. You do not need any prior experience with AI coding agents.
@@ -55,7 +55,17 @@ Two tasks came first, both due by **{{< var due.repo >}}**:
 - [Step 1](pre-work/01-create-repository.qmd): Create your repository and add your data
 - [Step 2](pre-work/02-join-element.qmd): Join the ai-playground chat room
 
-Seven more steps follow, a short survey and the tool setup, all due by [**{{< var due.setup >}}**]{.highlight-yellow}. They take around two hours in total and are listed on the [Prepare](pre-work/index.qmd) page. The tests run on a small repository with public data that I prepare for each of you, not on your own data. Step 9 tests the whole setup and ends with an issue assigned to me, so I know you are ready.
+Seven more steps follow, all due by [**{{< var due.setup >}}**]{.highlight-yellow}. They take around two hours in total, and not in one sitting:
+
+- [Step 3](pre-work/03-survey.qmd): Complete the pre-course survey
+- [Step 4](pre-work/04-install-claude-code.qmd): Install Claude Code, clone your setup repository, log in
+- [Step 5](pre-work/05-github-cli.qmd): Connect GitHub from the terminal
+- [Step 6](pre-work/06-connect-r.qmd): Connect your R session
+- [Step 7](pre-work/07-zotero.qmd): Set up Zotero
+- [Step 8](pre-work/08-zotero-mcp.qmd): Connect Zotero
+- [Step 9](pre-work/09-setup-check.qmd): Test your setup and report done
+
+The tests run on a small repository with public data that I prepare for each of you, not on your own data. Step 9 ends with an issue assigned to me, so I know you are ready. The [Prepare](pre-work/index.qmd) page has the same list with time estimates and the details of each step.
 
 ```{r}
 library(dplyr)
@@ -95,7 +105,7 @@ By the end of this workshop, participants will be able to:
 
 2. **Judge the difference a plan makes**: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.
 
-3. **Judge the difference documentation makes**: compare what an agent does with a plain CSV against the same data published as a data package, the data together with its documentation in a form the agent can read.
+3. **Judge the difference documentation makes**: compare what an agent does with a plain CSV against the same data published as a {{< gl "data package" >}}, the data together with its documentation in a form the agent can read.
 
 4. **Declare agent use**: point to the record your workflow produced and say what it shows about which parts of the work an agent touched.
 

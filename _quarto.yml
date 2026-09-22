@@ -1,11 +1,13 @@
 project:
   type: website
   output-dir: docs
+  # Rebuilds glossary.yml from glossary.qmd and anchors every term there,
+  # for the gl shortcode (_extensions/ghe/gl) that adds popover definitions.
+  pre-render:
+    - tools/build_glossary.py
   render:
     - "*.qmd"
     - "**/*.qmd"
-    # The platform guide stays in the repo but is not published yet (under review)
-    - "!platform-guide.qmd"
   # Copied into docs/ on every render. GitHub Pages serves docs/ directly, and
   # this tells it not to run the output through Jekyll. Quarto clears docs/ on
   # render, so the file has to be a project resource rather than sit there.
@@ -99,6 +101,8 @@ website:
         - text: "---"
         - href: glossary.qmd
           text: "Glossary"
+        - href: platform-guide.qmd
+          text: "Which tool does what?"
         - href: references.qmd
           text: "References"
 
@@ -119,7 +123,6 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-    mainfont: "Atkinson Hyperlegible"
 
 freeze: auto
 editor: source
