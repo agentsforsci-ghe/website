@@ -4,7 +4,7 @@ title: "{{< fa clipboard-list >}} Step 3: Complete the pre-course survey"
 
 [Due by **{{< var due.setup >}}**]{.highlight-yellow}
 
-Five minutes. The survey tells me which operating system and tools you are bringing, how much you have used AI assistants so far, and what you are curious about. The answers shape the day, and the curiosity question feeds a questions page we work through together.
+Ten minutes. The survey tells me which operating system and tools you are bringing, how much you have used AI assistants so far, and what you are curious about. The answers shape the day, and the curiosity question feeds a questions page we work through together.
 
 Complete the survey here: [{{< var survey.url >}}]({{< var survey.url >}})
 

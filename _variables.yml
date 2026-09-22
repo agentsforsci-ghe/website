@@ -51,9 +51,10 @@ due:
   repo: "Monday, 14 September 2026"
   setup: "Friday, 25 September 2026"
 
-# Pre-course survey (a surveydown app). Replace before publishing step 3.
+# Pre-course survey, a surveydown app on Posit Connect Cloud.
+# Source: https://github.com/agentsforsci-dev/pre-course-survey
 survey:
-  url: "https://REPLACE-BEFORE-PUBLISHING"
+  url: "https://larnsce-agentsforsci-ghe-survey.share.connect.posit.cloud/"
 
 # Claude account routes shown on the install page.
 claude:

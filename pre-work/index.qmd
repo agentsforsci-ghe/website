@@ -8,7 +8,7 @@ Steps 1 and 2 were due by **{{< var due.repo >}}**. Steps 3 to 9 are due by [**{
 |------|------|------|-----|
 | [1](01-create-repository.qmd) | Create your repository and add your data | 30 min | {{< var due.repo >}} |
 | [2](02-join-element.qmd) | Join the ai-playground chat room | 5 min | {{< var due.repo >}} |
-| [3](03-survey.qmd) | Complete the pre-course survey | 5 min | {{< var due.setup >}} |
+| [3](03-survey.qmd) | Complete the pre-course survey | 10 min | {{< var due.setup >}} |
 | [4](04-install-claude-code.qmd) | Install Claude Code, clone your setup repository, log in | 25 min | {{< var due.setup >}} |
 | [5](05-github-cli.qmd) | Connect GitHub from the terminal | 10 min | {{< var due.setup >}} |
 | [6](06-connect-r.qmd) | Connect your R session | 10 min | {{< var due.setup >}} |
