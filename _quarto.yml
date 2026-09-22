@@ -48,6 +48,8 @@ website:
         text: "Prepare"
       - href: background/index.qmd
         text: "Background"
+      - href: workshop/index.qmd
+        text: "Workshop"
     right:
       - icon: github
         href: https://github.com/agentsforsci-ghe

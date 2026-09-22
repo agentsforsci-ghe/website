@@ -1,0 +1,21 @@
+---
+title: "{{< var course.long-title >}}"
+subtitle: "{{< var session.date-long >}}, {{< var session.event-location >}}"
+bibliography: ../references.bib
+---
+
+## {{< fa display >}} Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## {{< fa route >}} How the day runs
+
+One question, your own, runs through the whole day. Each round changes one thing: who reads the files, who decides the steps, who reviews, and where the instructions live. Every round ends with the same check: would I merge this?
+
+There is a break at every full hour, and each break slide carries one question to take with you. The block after the break opens with it.
+
+The schedule with the rounds is on the [overview page](../index.qmd).
