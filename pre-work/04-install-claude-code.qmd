@@ -70,7 +70,7 @@ The first prints a version number. The second checks the installation and prints
 ::: {.callout-tip}
 ## Which terminal
 
-Any terminal works, including the **Terminal** tab in RStudio (Tools, Terminal, New Terminal). On the Mac, [iTerm](https://iterm2.com/) is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in {{< gl PowerShell >}}, and use whichever terminal you like afterwards.
+For the two install lines any terminal works. For working with Claude Code, give it a terminal window of its own next to your editor, not the Terminal tab inside RStudio, which is slow and cramped; Part 3 shows the layout. On the Mac, [iTerm](https://iterm2.com/) is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in {{< gl PowerShell >}}, and use whichever terminal you like afterwards.
 :::
 
 ## {{< fa right-to-bracket >}} Part 3: Clone your setup repository and log in
@@ -99,13 +99,9 @@ Tell me in [the chat room]({{< var chat.room-link >}}). Creating it takes me a m
 
 ### Open a terminal at that folder
 
-Claude Code works in the folder you start it from, so the terminal has to be opened inside the setup repository. I like to open a terminal separately from RStudio while working on a project, and keep the two windows next to each other, filling the screen. RStudio and other editors also have a terminal built in. Both ways are described below. Pick one and try out what works for you.
+Claude Code works in the folder you start it from, so the terminal has to be opened inside the setup repository. Give it a terminal window of its own and put it next to RStudio: the two windows side by side, filling the screen, the editor on one side and the agent on the other. That is the layout for the whole day. RStudio and other editors have a terminal built in, and it does work, but it is slow and cramped for an agent, so keep it as a fallback.
 
 ::: {.panel-tabset}
-
-### RStudio
-
-With the project open, choose **Tools, Terminal, New Terminal**. A Terminal tab appears next to the {{< gl Console >}}, already inside the project folder. This works the same on macOS and Windows.
 
 ### macOS Finder
 
@@ -115,9 +111,13 @@ Open Finder and go to the folder you just created, `Documents/gitrepos/gh-org-ag
 
 Open File Explorer and open the folder you just created. Right-click an empty area inside the folder and choose **Open in Terminal**. On Windows 10, hold Shift while right-clicking and choose **Open PowerShell window here**. **Open Git Bash here**, which Git for Windows added to the same menu, works as well.
 
+### RStudio, as a fallback
+
+With the project open, choose **Tools, Terminal, New Terminal**. A Terminal tab appears next to the {{< gl Console >}}, already inside the project folder. It works on both systems, and it is the slow, cramped option: use it only when the other two fail.
+
 :::
 
-Whichever way you chose, the prompt in the terminal ends with the folder name, `setup-USERNAME`. If it does not, you are in the wrong folder.
+Whichever way you chose, the prompt in the terminal ends with the folder name, `setup-USERNAME`. If it does not, you are in the wrong folder. Now place the terminal window and the RStudio window side by side and make them fill the screen.
 
 ### Log in
 

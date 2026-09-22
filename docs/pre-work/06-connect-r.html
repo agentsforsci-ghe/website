@@ -317,8 +317,9 @@ nothing happens in between.</p>"></a> run R code inside your running RStudio ses
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Open the <a class="gl" href="../glossary.html#gl-terminal" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="terminal" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
-runs in one. RStudio has a Terminal tab, the Mac has the Terminal app,
-and Windows has PowerShell.</p>">Terminal</a> app (Spotlight, then type Terminal). Any folder is fine, this setting is not tied to a folder. Copy the line below, paste it after the prompt, and press Enter. It answers with a line saying the server was added:</p>
+runs in one. Give it a window of its own next to your editor: the
+Terminal app on the Mac, PowerShell on Windows. RStudio’s Terminal tab
+also works, but it is slow and cramped for an agent.</p>">Terminal</a> app (Spotlight, then type Terminal). Any folder is fine, this setting is not tied to a folder. Copy the line below, paste it after the prompt, and press Enter. It answers with a line saying the server was added:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span> mcp add <span class="at">-s</span> user r-mcptools <span class="at">--</span> Rscript <span class="at">-e</span> <span class="st">"mcptools::mcp_server()"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">

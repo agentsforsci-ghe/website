@@ -145,7 +145,7 @@ synchronize: |
 system prompt: |
   The system prompt is the standing instruction the harness sends with every request, telling the model what it is and how to behave. You do not usually see it. A `CLAUDE.md` file in your project is a way for you to add to it.
 terminal: |
-  A window where you type commands instead of clicking. Claude Code runs in one. RStudio has a Terminal tab, the Mac has the Terminal app, and Windows has PowerShell.
+  A window where you type commands instead of clicking. Claude Code runs in one. Give it a window of its own next to your editor: the Terminal app on the Mac, PowerShell on Windows. RStudio's Terminal tab also works, but it is slow and cramped for an agent.
 token: |
   A token is the unit a model reads and writes: roughly a short word or part of one. Everything is counted in tokens, including cost. This is the practical reason a long session gets more expensive than a short one, since the whole conversation is sent again each time.
 tool: |

@@ -14,7 +14,7 @@ The {{< gl agent >}} does not see your data before the day. The rule from step 1
 
 ## 1. Both connections
 
-In RStudio, open a {{< gl terminal >}} inside the project: **Tools, Terminal, New Terminal**. A Terminal tab appears next to the {{< gl Console >}}, already in the setup folder. Run:
+Open a {{< gl terminal >}} at the setup folder, the way you did in step 4, and place it next to the RStudio window. Run:
 
 ```bash
 claude mcp list
@@ -28,7 +28,7 @@ In the Files pane at the bottom right, click `01-read-data.R` to open it, then c
 
 ## 3. A read-only run in plan mode
 
-In the Terminal tab, start Claude Code:
+In that terminal, start Claude Code:
 
 ```bash
 claude
@@ -64,7 +64,7 @@ Today you do every commit yourself. On the day you hand the agent one step at a 
 
 ## 5. Report done
 
-Open an issue on your setup repository with the title **Setup complete**, assigned to `{{< var github-handle >}}`, saying which of the steps 4 to 9 worked and which did not. You can have the agent do it. Start `claude` again in the Terminal tab and ask:
+Open an issue on your setup repository with the title **Setup complete**, assigned to `{{< var github-handle >}}`, saying which of the steps 4 to 9 worked and which did not. You can have the agent do it. Start `claude` again in the terminal and ask:
 
 > Open an issue on this repository titled "Setup complete", assign it to {{< var github-handle >}}, and write in the body which of the pre-work steps 4 to 9 worked for me and which did not.
 
