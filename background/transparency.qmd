@@ -17,11 +17,11 @@ Every commit says what changed and who made the change. Agent commits carry a tr
 
 The pull request then shows the whole history in one view: what the human drafted, what the agent altered, and what was reviewed before it was merged.
 
-This is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim [@schoebitz2026whowrotethis]. 
+This is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim [@schoebitz2026whowrotethis].
 
 The talk at the Data Stewardship Network autumn meeting on 22 September 2026 took the record one step further [@schoebitz2026gitforscientists]. The deck was built with the agent, and at the end the agent was asked to write the declaration of AI use for it. It read the archived prompts, the commit trailers, and the line by line history of the deck file, and produced the declaration page, with the prompt that produced it archived in turn [@schoebitz2026dsndeclaration]. Both are online. The same step, letting the agent write the declaration from the record, is demonstrated live on the day.
 
-The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a diff [@wickham2026datadict]. 
+The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a diff [@wickham2026datadict].
 
 ## {{< fa rotate >}} Could you recreate it if the AI were gone?
 

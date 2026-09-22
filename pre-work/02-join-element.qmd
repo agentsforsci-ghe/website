@@ -14,7 +14,7 @@ Join the room with the link above, then [send me a message]{.highlight-yellow} s
 
 Element is the chat client; `staffchat.ethz.ch` is the ETH server it connects to. You sign in with your GitHub account.
 
-Step-by-step instructions, written for a previous course but identical for this one: [setting up Element](https://ds4owd-002.github.io/website/content/assignments/md-01/am-01-2-element.html)
+Step-by-step instructions, written for a previous course but identical for this one: [setting up Element]({{< var chat.element-instructions >}})
 
 Follow those through the login with GitHub, then come back and join [#ai-playground:staffchat.ethz.ch](https://matrix.to/#/#ai-playground:staffchat.ethz.ch).
 

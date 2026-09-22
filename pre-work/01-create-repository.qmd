@@ -4,7 +4,7 @@ title: "{{< fa folder-plus >}} Step 1: Create your repository and add your data"
 
 [Due by **{{< var due.repo >}}**]{.highlight-yellow}
 
-Everything here uses the Git and GitHub workflow from [{{< var prerequisite.title >}}]({{< var prerequisite.site >}}). If a step is unfamiliar, the instructions from that workshop still apply. If you are would like support in completing a step, please reach out to the course instructor.
+Everything here uses the Git and GitHub workflow from [{{< var prerequisite.title >}}]({{< var prerequisite.site >}}). If a step is unfamiliar, the instructions from that workshop still apply. If you would like support with a step, get in touch with me.
 
 ## Accept the invitation to the organization
 

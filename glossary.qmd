@@ -15,6 +15,7 @@ The Git and GitHub definitions draw on [Glosario](https://glosario.carpentries.o
 
 ## Git and GitHub
 
+branch
 :   A branch is a separate line of work inside a repository. You create a branch when you want to change files without touching the main copy of the project. When the changes have been reviewed, you bring them back into the main copy. In the workshop you make your edits on a branch and bring them into `main` through a pull request.
 
     ::: {.glossary-technical}

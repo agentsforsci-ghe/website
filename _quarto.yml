@@ -65,6 +65,8 @@ website:
           text: "Step 1: Your repository"
         - href: pre-work/02-join-element.qmd
           text: "Step 2: Join the chat"
+        - href: pre-work/03-survey.qmd
+          text: "Step 3: Pre-course survey"
         - href: pre-work/04-install-claude-code.qmd
           text: "Step 4: Install Claude Code"
         - href: pre-work/05-github-cli.qmd

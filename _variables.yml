@@ -51,6 +51,10 @@ due:
   repo: "Monday, 14 September 2026"
   setup: "Friday, 25 September 2026"
 
+# Pre-course survey (a surveydown app). Replace before publishing step 3.
+survey:
+  url: "https://REPLACE-BEFORE-PUBLISHING"
+
 # Claude account routes shown on the install page.
 claude:
   team-org: "Global Health Engineering"
