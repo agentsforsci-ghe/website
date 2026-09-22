@@ -59,8 +59,8 @@ Seven more steps follow, all due by [**{{< var due.setup >}}**]{.highlight-yello
 
 - [Step 3](pre-work/03-survey.qmd): Complete the pre-course survey
 - [Step 4](pre-work/04-install-claude-code.qmd): Install Claude Code, clone your setup repository, log in
-- [Step 5](pre-work/05-github-cli.qmd): Connect GitHub from the terminal
-- [Step 6](pre-work/06-connect-r.qmd): Connect your R session
+- [Step 5](pre-work/05-github-cli.qmd): Connect GitHub from the {{< gl terminal >}}
+- [Step 6](pre-work/06-connect-r.qmd): Connect your {{< gl "R session" >}}
 - [Step 7](pre-work/07-zotero.qmd): Set up Zotero
 - [Step 8](pre-work/08-zotero-mcp.qmd): Connect Zotero
 - [Step 9](pre-work/09-setup-check.qmd): Test your setup and report done
