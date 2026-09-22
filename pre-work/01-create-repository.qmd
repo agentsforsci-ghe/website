@@ -43,7 +43,7 @@ Two settings to choose on the same screen:
 
 ## Clone it
 
-Clone the repository to your computer, the same way you did in the first workshop.
+Clone the repository to your computer, the same way you did in the first workshop, into `Documents/gitrepos/gh-org-agentsforsci-ghe`, next to the `gh-org-gitforsci-ghe` folder from July. One folder per GitHub organization under `gitrepos` is the convention we keep.
 
 If you would like to walk through it again, the instructions are still online: [cloning a repository]({{< var prerequisite.site >}}pre-work/06a-clone-repo.html).
 
