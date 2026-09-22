@@ -271,6 +271,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#open-a-terminal-at-that-folder" id="toc-open-a-terminal-at-that-folder" class="nav-link" data-scroll-target="#open-a-terminal-at-that-folder">Open a terminal at that folder</a></li>
   <li><a href="#log-in" id="toc-log-in" class="nav-link" data-scroll-target="#log-in">Log in</a></li>
   </ul></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206d6f62696c652d73637265656e203e7d7d-part-4-the-claude-app-on-your-phone" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206d6f62696c652d73637265656e203e7d7d-part-4-the-claude-app-on-your-phone" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206d6f62696c652d73637265656e203e7d7d-part-4-the-claude-app-on-your-phone"><i class="fa-solid fa-mobile-screen" aria-label="mobile-screen"></i> Part 4: The Claude app on your phone</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/agentsforsci-ghe/website/edit/main/pre-work/04-install-claude-code.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/agentsforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -308,7 +309,7 @@ something that changes the world: writing a file, running a command,
 making a commit. It is your decision point, and reading what is being
 proposed before approving is the habit that separates using an agent
 from hoping.</p>"></a> prompt is the first thing to learn to read.</p>
-<p>This step has three parts: get an account, install the program, and log in once from a small repository I prepared for you.</p>
+<p>This step has four parts: get an account, install the program, log in once from a small repository I prepared for you, and put the Claude app on your phone for the day.</p>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account"><i class="fa-solid fa-user" aria-label="user"></i> Part 1: Your Claude account</h2>
 <p>Claude Code is not part of the free Claude plan. You need one of the two routes below.</p>
@@ -376,7 +377,7 @@ record of every change made to the files in it. Git keeps the record in
 a hidden part of the folder. As a rule, one project gets one
 repository.</p>">repositories</a>. Use the search field on that page if the list is long.</li>
 <li>Open it, click the green <strong>Code</strong> button, and copy the HTTPS URL.</li>
-<li>In RStudio, choose <strong>File, New Project, Version Control, Git</strong>, paste the URL, pick where the folder should live, and click <strong>Create Project</strong>. This is the same <a class="gl" href="../glossary.html#gl-clone" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="clone" data-bs-content="<p>To clone a repository means to download a full copy of it from GitHub
+<li>In RStudio, choose <strong>File, New Project, Version Control, Git</strong>, paste the URL, and under <strong>Create project as subdirectory of</strong> browse to <code>Documents/gitrepos/gh-org-agentsforsci-ghe</code>, creating that folder if it does not exist yet. Then click <strong>Create Project</strong>. This is the same <a class="gl" href="../glossary.html#gl-clone" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="clone" data-bs-content="<p>To clone a repository means to download a full copy of it from GitHub
 onto your own computer, including the record of every change ever made
 to it. You clone by running git clone in a terminal, or through your
 editor’s own Git menu.</p>"></a> you did in the first workshop; the <a href="https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html">instructions from then</a> still apply, screenshots included.</li>
@@ -384,6 +385,22 @@ editor’s own Git menu.</p>"></a> you did in the first workshop; the <a href="h
 <p>RStudio opens the new project. The Files pane at the bottom right shows <code>01-read-data.R</code>, a <code>data</code> folder, and a <a class="gl" href="../glossary.html#gl-readme" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="readme" data-bs-content="<p>A README is a text file that explains what a project is and how to
 use it. GitHub shows the file named README.md on the front page of the
 repository.</p>"></a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Where repositories live
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The folder structure from the first workshop carries on. Every Git repository lives under <code>Documents/gitrepos</code>, in one folder per GitHub organization named <code>gh-org-</code> plus the organization, and one folder per personal account named <code>gh-</code> plus the username. So this workshop’s repositories go into <code>gh-org-agentsforsci-ghe</code>, next to the <code>gh-org-gitforsci-ghe</code> folder from July, and a personal website cloned from your own account would go into <code>gh-rainbow-train</code>, with your username in place of <code>rainbow-train</code>. Keep <code>gitrepos</code> out of folders that sync to a <a class="gl" href="../glossary.html#gl-cloud" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="cloud" data-bs-content="<p>Computers, storage, and services that you reach over the internet
+instead of running on your own machine. When we say GitHub stores your
+repository in the cloud, we mean it stores the repository on GitHub’s
+servers.</p>"></a> drive.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -410,7 +427,7 @@ at the bottom left by default, with a &amp;gt; prompt. It is not the
 Terminal tab next to it, which runs shell commands rather than R.</p>"></a>, already inside the project folder. This works the same on macOS and Windows.</p>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p>Open Finder and go to the folder you just created, for example <code>Documents/setup-USERNAME</code>. Right-click the folder and choose <strong>New Terminal at Folder</strong>. A Terminal window opens inside it. If the entry is missing from the menu, look under <strong>Services</strong> in the same menu, or switch it on once under System Settings, Keyboard, Keyboard Shortcuts, Services, Files and Folders.</p>
+<p>Open Finder and go to the folder you just created, <code>Documents/gitrepos/gh-org-agentsforsci-ghe/setup-USERNAME</code>. Right-click the folder and choose <strong>New Terminal at Folder</strong>. A Terminal window opens inside it. If the entry is missing from the menu, look under <strong>Services</strong> in the same menu, or switch it on once under System Settings, Keyboard, Keyboard Shortcuts, Services, Files and Folders.</p>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p>Open File Explorer and open the folder you just created. Right-click an empty area inside the folder and choose <strong>Open in Terminal</strong>. On Windows 10, hold Shift while right-clicking and choose <strong>Open PowerShell window here</strong>. <strong>Open Git Bash here</strong>, which Git for Windows added to the same menu, works as well.</p>
@@ -448,6 +465,31 @@ mode on the day.</p>"></a>.</p></li>
 <p>The agent reads whole folders and sends what it finds to a model. Before the day, it does not see the data you committed in step 1. Every test in steps 4 to 9 runs in <code>setup-USERNAME</code>, which holds public data prepared for exactly this. We set the safety rails for your own repository together in the room.</p>
 </div>
 </div>
+</section>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206d6f62696c652d73637265656e203e7d7d-part-4-the-claude-app-on-your-phone" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206d6f62696c652d73637265656e203e7d7d-part-4-the-claude-app-on-your-phone"><i class="fa-solid fa-mobile-screen" aria-label="mobile-screen"></i> Part 4: The Claude app on your phone</h2>
+<p>Install the Claude app on your phone for the day. You can delete it again afterwards. We use it once, to see how work started on the laptop carries on from the phone: a session running in the terminal is handed to the app, and from there you read what the agent did, send it the next instruction, and approve what it asks, while the laptop keeps doing the work.</p>
+<ol type="1">
+<li>Install the app: <a href="https://apps.apple.com/us/app/claude-by-anthropic/id6473753684">App Store</a> on an iPhone, <a href="https://play.google.com/store/apps/details?id=com.anthropic.claude">Google Play</a> on Android. If you have Claude Code open, typing <code>/mobile</code> shows a QR code that opens the right store.</li>
+<li>Sign in with the same account as in Part 1. GHE members use the ETH address and pick the <strong>Global Health Engineering</strong> organization if asked.</li>
+<li>That is all before the day. In the workshop, <code>/remote-control</code> in a running session shows a QR code that the app scans, and the session appears on the phone.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The Claude desktop app
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There is also a Claude desktop app for the Mac and for Windows. Its Code tab is Claude Code with a graphical interface: a file pane, a <a class="gl" href="../glossary.html#gl-diff" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="diff" data-bs-content="<p>A diff shows exactly what changed between two versions of a file,
+line by line: removed lines carry a minus, added lines a plus. Reading
+the diff is how you check what the agent did before you accept it.</p>"></a> view, a terminal built in, no command line needed. We do not use it in the workshop, so that everyone has the same thing on screen and reads the same prompts. It is an option afterwards for anyone who would rather work with the agent outside a terminal. It needs the same paid plan as Part 1 and brings its own copy of Claude Code, so Part 2 is not required for it.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -476,7 +518,6 @@ mode on the day.</p>"></a>.</p></li>
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
