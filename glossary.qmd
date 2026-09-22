@@ -7,341 +7,553 @@ The terms you meet during the pre-work and the workshop.
 
 Each entry has two layers. The main text defines the term in plain, everyday words, so you can read it once and understand it. The quieter block underneath gives the more technical wording, which is the vocabulary you will meet in documentation and in other courses.
 
-The page has two halves. **[Git and GitHub](#git-and-github)** carries over the terms from the first workshop. **[Working with agents](#working-with-agents)** covers the vocabulary this workshop adds.
+The page has four parts. **[Git and GitHub](#git-and-github)** carries over the terms from the first workshop. **[Tools on your computer](#tools-on-your-computer)** names the programs the pre-work installs. **[Working with agents](#working-with-agents)** covers the vocabulary this workshop adds. **[Research integrity](#research-integrity)** has the words of the disclosure debate.
 
-If you are unsure which *tool* a term belongs to, see [Which tool does what?](platform-guide.qmd)
+If you are unsure which *tool* a term belongs to, see [Which tool does what?](platform-guide.qmd).
 
 The Git and GitHub definitions draw on [Glosario](https://glosario.carpentries.org/) by The Carpentries, and the agent terms on the [Dictionary of AI Coding](https://github.com/mattpocock/dictionary-of-ai-coding). Full details are in [References and attribution](#references-and-attribution) at the foot of the page.
 
 ## Git and GitHub
 
+[branch]{#gl-branch}
 :   A branch is a separate line of work inside a repository. You create a branch when you want to change files without touching the main copy of the project. When the changes have been reviewed, you bring them back into the main copy. In the workshop you make your edits on a branch and bring them into `main` through a pull request.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#git_branch): A snapshot of a version of a Git repository. Multiple branches can capture multiple versions of the same repository.
     :::
 
-bug report
+[bug report]{#gl-bug-report}
 :   A description of an unexpected error or wrong output from a program, written down so that someone can find and fix the problem. On GitHub, bug reports are usually filed as issues.
 
-clone
+[clone]{#gl-clone}
 :   To clone a repository means to download a full copy of it from GitHub onto your own computer, including the record of every change ever made to it. You clone by running `git clone` in a terminal, or through your editor's own Git menu.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#git_clone): A copy (usually downloaded) of a Git remote repository on a local computer.
     :::
 
-cloud
+[cloud]{#gl-cloud}
 :   Computers, storage, and services that you reach over the internet instead of running on your own machine. When we say GitHub stores your repository in the cloud, we mean it stores the repository on GitHub's servers.
 
-commit
+[commit]{#gl-commit}
 :   A commit is a saved version of your project. When you commit, Git records the exact content of your files at that moment, together with a message that says what you changed and why. You can go back to any earlier commit at any time.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#commit): As a verb, the act of saving a set of changes to a version control repository. As a noun, the changes saved.
     :::
 
-commit message
+[commit message]{#gl-commit-message}
 :   A commit message is the short note you attach to a commit. It tells your collaborators, and your future self, what you changed and why you changed it.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#commit_message): A comment attached to a commit that explains what was done and why.
     :::
 
-credential
+[credential]{#gl-credential}
 :   A piece of information that proves to a computer system who you are, such as a password or a personal access token. Git keeps your GitHub credential on your computer, so you do not have to retype it for every push and pull.
 
-default branch (`main`)
+[default branch (`main`)]{#gl-default-branch}
 :   The default branch is the main copy of the project inside a repository, and it is usually called `main`. It should always hold a version of the project that works. You make changes on other branches and bring them into `main` after someone has reviewed them. In older projects the default branch is called `master`.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#master_branch): A dedicated, permanent, central branch which should contain a ready product. After a new feature is developed on a separate branch, it can be merged into this branch.
     :::
 
-fork
+[dev branch]{#gl-dev-branch}
+:   The branch we work on between releases. In this workshop your changes land on `dev`, get reviewed in a pull request, and reach `main` through the merge. You create `dev` once, in step 5, and it stays.
+
+    ::: {.glossary-technical}
+    A long-lived integration branch. The name is a convention of this group, not a Git feature: Git treats `dev` like any other branch. See [branching workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows) in the Git book.
+    :::
+
+[diff]{#gl-diff}
+:   A diff shows exactly what changed between two versions of a file, line by line: removed lines carry a minus, added lines a plus. Reading the diff is how you check what the agent did before you accept it.
+
+    ::: {.glossary-technical}
+    Git produces diffs with `git diff`; the Git pane in RStudio and the Files changed tab of a pull request show the same output with colour. See [git diff](https://git-scm.com/docs/git-diff).
+    :::
+
+[fork]{#gl-fork}
 :   A fork is a personal copy of someone else's repository, stored in your own GitHub account. You can change your fork freely, and you can offer your changes back to the original repository through a pull request. We do not use forks in the workshop, because our teams share one repository and work on branches inside it.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#fork): A copy of one person's Git repository that lives in another person's GitHub account. Changes to the content of a fork can be submitted to the upstream repository via a pull request.
     :::
 
-Git
+[Git]{#gl-git}
 :   Git is a program on your computer that keeps track of changes to your files. It saves the versions you tell it to save, shows you what changed between versions, and lets you go back to any earlier version. Git works without an internet connection.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#git): A version control tool to record and manage changes to a project.
     :::
 
-Git pane
+[Git pane]{#gl-git-pane}
 :   Most editors, including RStudio and Positron, have a Git pane: a panel showing what has changed in your repository, with buttons for the everyday Git work. Every button runs a real Git command, so clicking Push runs `git push`. This workshop mostly uses the terminal instead, because that is where the agent works, but the two are interchangeable.
 
-GitHub
+[GitHub]{#gl-github}
 :   GitHub is a website that stores a copy of your Git repository online, so that other people can see your project, download it, and work on it with you. GitHub also adds tools that Git itself does not have, such as pull requests and issues.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#github): A cloud-based platform built around Git that allows you to save versions of your project online and collaborate with other Git users.
     :::
 
-history
+[history]{#gl-history}
 :   The history is the ordered record of all commits made in a repository, from the very first commit to the newest. It shows who changed what, when, and why. Every clone contains the full history, which is why you can recover any earlier state of the project.
 
-HTML
+[HTML]{#gl-html}
 :   The format used for web pages. Rendering a Quarto document usually produces an HTML page that you can open in any web browser.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#html): The standard markup language used for web pages.
     :::
 
-HTTPS
+[HTTPS]{#gl-https}
 :   The secure way computers exchange data on the web, the same one behind every `https://` address. Git talks to GitHub over HTTPS, which is why GitHub asks for a personal access token to prove who you are.
 
-issue
+[issue]{#gl-issue}
 :   An issue is a to-do item for a project, posted on the repository's page on GitHub. An issue can describe a problem, ask for something new, or hold a task. You can assign an issue to a person, and you can refer to it from commits and pull requests.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#issue): A bug report, feature request, or other to-do item associated with a project.
     :::
 
-local repository
+[local repository]{#gl-local-repository}
 :   The local repository is the copy of a repository on your own computer, including the record of every change. Your commits are saved here first. Pushing then uploads them to the copy on GitHub.
 
-Markdown
+[Markdown]{#gl-markdown}
 :   Markdown is a simple way to add formatting, such as headings, links, and lists, to ordinary text. You type plain characters, e.g. `#` in front of a heading, and the text is later shown with the formatting applied. GitHub uses Markdown in README files, issues, and pull requests, and Quarto uses it for the text in `.qmd` documents.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#markdown): A markup language with a simple syntax. Markdown is often used for README files.
     :::
 
-markup language
+[markup language]{#gl-markup-language}
 :   A set of rules for marking up text to say what it means or how it should be shown. The marks themselves are usually not displayed. Markdown and HTML are markup languages.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#markup_language): A set of rules for annotating text to define its meaning or how it should be displayed.
     :::
 
-merge
+[merge]{#gl-merge}
 :   To merge means to combine the changes from one branch into another, so that one branch now contains the work of both. In the workshop, the merge happens when a reviewer accepts a pull request on GitHub.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#git_merge): Merging branches in Git incorporates the development histories of two branches in one. If changes are made to similar parts of both branches, a conflict will occur.
     :::
 
-merge conflict
+[merge conflict]{#gl-merge-conflict}
 :   A merge conflict happens when two branches have changed the same lines of the same file, and Git cannot tell which version you want to keep. Git stops, marks both versions inside the file, and waits for you to choose or combine them. A conflict is not an error. It only means that Git will not guess which change you meant.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#git_conflict): A situation in which incompatible or overlapping changes have been made on different branches that are now being merged.
     :::
 
-metadata
+[metadata]{#gl-metadata}
 :   Information that describes other information. The author, date, and message attached to each commit are metadata about the changes in that commit.
 
-open source
+[open source]{#gl-open-source}
 :   Software whose source code is public and licensed so that anyone may use, change, and share it. Git and Quarto are open source. GitHub is not, although it hosts millions of open-source projects.
 
-origin
+[origin]{#gl-origin}
 :   Origin is the name your computer uses for the copy of your repository on GitHub. Git sets the name automatically when you clone, so that you can push and pull without typing the full web address every time.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#git_remote): A short name for a remote repository.
     :::
 
-personal access token (PAT)
+[personal access token (PAT)]{#gl-personal-access-token}
 :   A personal access token is a long password that GitHub generates for you. Git sends it to GitHub when you push or pull, to prove that the request really comes from you. You created one during the [Git for Scientists pre-work](https://gitforsci-ghe.github.io/website/pre-work/04-github-pat.html), and it should still work for this workshop.
 
-plain text
+[plain text]{#gl-plain-text}
 :   Text stored as ordinary characters only, with no hidden formatting, so that any editor on any computer can open it. Git works best with plain text, because it can show exactly which lines changed between versions. Quarto documents, R scripts, and CSV files are all plain text.
 
-pull
+[pull]{#gl-pull}
 :   To pull means to download the newest commits from GitHub into the copy on your own computer, so that both copies are the same again. Pulling is the first step of the commit cycle. Pull, then stage, then commit, then push.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#git_pull): Downloads and synchronizes changes between a remote repository and a local repository.
     :::
 
-pull request
+[pull request]{#gl-pull-request}
 :   A pull request is a page on GitHub where you ask another person to review the changes on your branch and, if the changes are good, to merge the branch into `main`. The reviewer can read every changed line, write comments, and suggest edits. A pull request is not the same as a pull. A pull downloads commits to your computer, and a pull request is a conversation about merging.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#pull_request): The request to merge a new feature or correction created on a branch or fork of a Git repository into the upstream repository. The developer is notified of the change, reviews it, makes or suggests changes, and potentially merges it.
     :::
 
-push
+[push]{#gl-push}
 :   To push means to upload your commits from your own computer to the copy of your repository on GitHub. Until you push, your commits exist only on your computer, and nobody else can see them.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#git_push): Uploads and synchronizes changes between a local repository and a remote repository.
     :::
 
-Quarto
+[Quarto]{#gl-quarto}
 :   Quarto is a program that turns a text file into a finished document, such as a report, a website, or slides. A Quarto file ends in `.qmd` and contains ordinary text, code, and a few settings at the top. When you click Render, Quarto runs the code and builds the document. Quarto does not track versions and does not talk to GitHub.
 
-README
+[README]{#gl-readme}
 :   A README is a text file that explains what a project is and how to use it. GitHub shows the file named `README.md` on the front page of the repository.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#readme): A plain text file containing important information about a project or software package.
     :::
 
-remote repository
+[remote repository]{#gl-remote-repository}
 :   The remote repository is the copy of a repository that is not on your computer. For us, the remote repository is the copy on GitHub. Pull and push move commits between your local copy and the remote copy, so that everyone can share their work.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#remote_repository): A repository located on another computer. Tools such as Git are designed to synchronize changes between local and remote repositories in order to share work.
     :::
 
-render
+[render]{#gl-render}
 :   To render means to have Quarto build the output document, e.g. a web page or a PDF, from a `.qmd` file. Rendering also runs the code inside the file. You render by running `quarto render` in a terminal, or by clicking Render in your editor.
 
-repository
+[repository]{#gl-repository}
 :   A repository is the folder for one project, together with the full record of every change made to the files in it. Git keeps the record in a hidden part of the folder. As a rule, one project gets one repository.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#repository): A place where a version control system stores the files that make up a project and the metadata that describes their history.
     :::
 
-server
+[server]{#gl-server}
 :   A computer, or a program running on it, that provides data or services to other computers over a network. The remote copies of your repositories live on GitHub's servers.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#server): Typically, a program such as a database manager or web server that provides data to a client upon request.
     :::
 
-snapshot
+[snapshot]{#gl-snapshot}
 :   The complete state of all files in your project at one moment in time, saved so that you can return to it later. Every commit stores a snapshot, and the history is the ordered line of those snapshots.
 
-stage / staging area
+[stage / staging area]{#gl-stage}
 :   To stage a file means to mark it for the next commit, and the staging area is where Git keeps the marked files until you commit. Git only commits the files you have staged, so you can change five files and commit only two of them. You stage a file with `git add`, or by ticking its checkbox in an editor's Git pane.
 
-synchronize
+[synchronize]{#gl-synchronize}
 :   To bring two copies of the same thing to the same state, so that neither is missing changes the other has. Pull and push are how you synchronize your local repository with the remote repository on GitHub.
 
-version control
+[version control]{#gl-version-control}
 :   Version control is a way of working where a program records every saved version of your files, so that you can see what changed, when, and why, and go back to any earlier version. Git is the version control program we use.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#version_control_system): A system for managing changes made to software during its development.
     :::
 
-YAML
+[YAML]{#gl-yaml}
 :   YAML is a simple format for settings, written as names and values. The block between the two `---` lines at the top of a Quarto file is written in YAML, and it holds settings such as the title and the output format.
 
     ::: {.glossary-technical}
     [Glosario](https://glosario.carpentries.org/en/#yaml): Short for "YAML Ain't Markup Language", a way to represent nested data using indentation. YAML is often used in configuration files and to define parameters for various flavours of Markdown documents.
     :::
 
+## Tools on your computer
+
+The programs the pre-work installs or relies on, and the words the instructions use for parts of them.
+
+[Better BibTeX]{#gl-better-bibtex}
+:   A Zotero plugin that gives every item in your library a short, stable citation key, such as `forte2022building`. Step 7 installs it and sets the key formula the group shares.
+
+    ::: {.glossary-technical}
+    [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/) generates and pins citation keys and exports BibTeX and BibLaTeX for LaTeX, Quarto and Markdown workflows.
+    :::
+
+[citation key]{#gl-citation-key}
+:   A short ID for one reference, built from the first author, the year and the first word of the title, like `forte2022building`. Plain text documents cite by key, so a key must never change once other files use it.
+
+    ::: {.glossary-technical}
+    In Quarto and Pandoc a citation is written `[@forte2022building]` and resolved against a bibliography file at render time. See [citations](https://quarto.org/docs/authoring/citations.html) in the Quarto guide.
+    :::
+
+[Console]{#gl-console}
+:   The pane in RStudio where you type R commands and see their output, at the bottom left by default, with a `>` prompt. It is not the Terminal tab next to it, which runs shell commands rather than R.
+
+    ::: {.glossary-technical}
+    One of the four RStudio panes; see [the RStudio user guide](https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html).
+    :::
+
+[GitHub CLI]{#gl-github-cli}
+:   A program called `gh` that talks to GitHub from the terminal: it logs you in, opens issues and pull requests, and lists repositories. On the day the agent uses it to open issues and pull requests for you.
+
+    ::: {.glossary-technical}
+    [GitHub CLI](https://cli.github.com/). `gh auth login` stores a token for Git and the CLI; `gh issue create` and `gh pr create` are the two commands the workshop relies on.
+    :::
+
+[Homebrew]{#gl-homebrew}
+:   The package manager for the Mac. One command in the terminal installs a program, one command updates it. It is installed once, from brew.sh, and step 5 uses it for the GitHub CLI.
+
+    ::: {.glossary-technical}
+    [Homebrew](https://brew.sh/) installs into `/opt/homebrew` on Apple silicon; `brew install`, `brew upgrade`.
+    :::
+
+[mcptools]{#gl-mcptools}
+:   An R package that lets the agent reach into your running RStudio session: it can look at the objects there and run R code in it. Step 6 installs it and registers it with Claude Code.
+
+    ::: {.glossary-technical}
+    [mcptools](https://posit-dev.github.io/mcptools/) implements the Model Context Protocol in R. `mcp_server()` runs the server that Claude Code talks to; `mcp_session()` registers a live R session with it.
+    :::
+
+[PowerShell]{#gl-powershell}
+:   The terminal program built into Windows, where you type commands. Its prompt starts with `PS`. The pre-work uses it for the install lines on Windows.
+
+    ::: {.glossary-technical}
+    [PowerShell](https://learn.microsoft.com/en-us/powershell/) is a shell and a scripting language. Windows also has the older Command Prompt, cmd, whose commands differ; the install lines on the pre-work pages are written for PowerShell.
+    :::
+
+[Quick Copy]{#gl-quick-copy}
+:   A Zotero setting that decides what lands on your clipboard when you copy an item. Step 7 sets it to the citation key, so Cmd+Shift+C on the Mac or Ctrl+Shift+C on Windows copies the key.
+
+    ::: {.glossary-technical}
+    [Quick Copy](https://www.zotero.org/support/creating_bibliographies#quick_copy) in the Zotero documentation.
+    :::
+
+[R profile]{#gl-r-profile}
+:   A file called `.Rprofile` in your home folder that R reads every time it starts. Step 6 adds one line to it, so every RStudio session announces itself to the agent.
+
+    ::: {.glossary-technical}
+    One of R's startup files; see [R startup](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Startup.html) in the R manual.
+    :::
+
+[R session]{#gl-r-session}
+:   One running copy of R together with everything you have loaded into it: packages, data frames, variables. RStudio starts one for you, and Session, Restart R gives you a fresh one.
+
+    ::: {.glossary-technical}
+    The agent has no R session of its own. It can run scripts and render documents, but it sees the objects in a session only through the connection that mcptools provides.
+    :::
+
+[RStudio]{#gl-rstudio}
+:   The program most of this group writes R in. Its window has four panes: the editor, the Console, the Environment and history, and Files, plots, packages and Git.
+
+    ::: {.glossary-technical}
+    [RStudio](https://posit.co/products/open-source/rstudio/) by Posit. Positron and VS Code are alternatives that the pre-work instructions do not cover.
+    :::
+
+[shell]{#gl-shell}
+:   The program inside a terminal that reads what you type and runs it. On the Mac that is zsh, on Windows PowerShell or, with Git for Windows, Bash. Claude Code runs its own commands through a shell too.
+
+    ::: {.glossary-technical}
+    Terminal and shell are often used for each other: the terminal is the window, the shell the program running in it. See [the shell](https://swcarpentry.github.io/shell-novice/) lesson by Software Carpentry.
+    :::
+
+[terminal]{#gl-terminal}
+:   A window where you type commands instead of clicking. Claude Code runs in one. RStudio has a Terminal tab, the Mac has the Terminal app, and Windows has PowerShell.
+
+    ::: {.glossary-technical}
+    See shell. The Claude Code documentation has a [terminal guide](https://code.claude.com/docs/en/terminal-guide) for people who have never opened one.
+    :::
+
+[uv]{#gl-uv}
+:   A small program that installs Python tools, including zotero-mcp, and takes care of Python for you. Step 8 installs it once.
+
+    ::: {.glossary-technical}
+    [uv](https://docs.astral.sh/uv/) by Astral. `uv tool install` installs a tool in its own environment and puts its command on your path.
+    :::
+
+[Zotero Connector]{#gl-zotero-connector}
+:   The browser extension that saves the paper you are looking at into your Zotero library with one click. Step 7 installs it.
+
+    ::: {.glossary-technical}
+    [Zotero Connectors](https://www.zotero.org/download/connectors) exist for Firefox, Chrome, Edge and Safari and hand items to the running Zotero app.
+    :::
+
+[zotero-mcp]{#gl-zotero-mcp}
+:   The small program that connects the agent to your Zotero library, so it can search the library and read the PDFs in it. Step 8 installs it and registers it with Claude Code.
+
+    ::: {.glossary-technical}
+    [zotero-mcp](https://github.com/54yyyu/zotero-mcp) is an MCP server that talks to Zotero's local API on your own computer; nothing leaves the machine except what the agent then sends to the model.
+    :::
+
 ## Working with agents
 
-agent
+[agent]{#gl-agent}
 :   An agent is a language model that has been given tools and set to work in a loop: it does something, looks at the result, decides what to do next, and repeats until the task is done or it needs you. Claude Code is an agent. A single question and answer is not an agent, because nothing happens in between.
 
     ::: {.glossary-ai}
     A model, in a harness, that calls tools repeatedly in a loop, deciding each next step from the last result. Most agents carry read tools that observe and write tools that change things, giving the cycle explore, change, observe.
     :::
 
-context window
+[auto mode]{#gl-auto-mode}
+:   The permission mode Claude Code starts in on the Team, Pro and Max plans. A second model, the classifier, checks each action and lets ordinary ones run without asking you. It blocks actions that look destructive or would send data out of the repository. We work in auto mode on the day.
+
+    ::: {.glossary-ai}
+    [Permission modes](https://code.claude.com/docs/en/permission-modes) in the Claude Code documentation. Shift+Tab cycles between auto, manual, accept edits and plan mode.
+    :::
+
+[classifier]{#gl-classifier}
+:   The second model that reviews the agent's actions in auto mode, against a set of rules, instead of you. It sees your messages and the agent's tool calls, not the contents of files, so text inside a file cannot talk it into anything.
+
+    ::: {.glossary-ai}
+    [How the classifier evaluates actions](https://code.claude.com/docs/en/permission-modes) in the Claude Code documentation. Blocked actions are listed under Recently denied in `/permissions`.
+    :::
+
+[context window]{#gl-context-window}
 :   The context window is everything the model can see while it answers: your instructions, the conversation so far, and the contents of any file that was read. It has a size limit. When a session runs long, early parts fall out of view, which is one reason a fresh session sometimes works better than a long one.
 
     ::: {.glossary-ai}
     The full set of tokens sent to the model on a single request. Everything the model knows about your situation at that moment is inside it, and nothing outside it exists as far as the model is concerned.
     :::
 
-hallucination
+[hallucination]{#gl-hallucination}
 :   A hallucination is output that is stated confidently and is wrong. A model can invent a function that does not exist, a citation for a paper nobody wrote, or a plausible number. It does not signal uncertainty when it does this, which is why the output has to be checked by someone who could tell.
 
     ::: {.glossary-ai}
     Confidently-wrong model output. Two variants are usually distinguished: factuality (the claim is false about the world) and faithfulness (the claim is not supported by the source it cites).
     :::
 
-harness
+[harness]{#gl-harness}
 :   The harness is the program wrapped around the model that turns it into an agent. It sends the requests, runs the tools on your computer, sends the results back, and asks you for permission. Claude Code is a harness. So is a chat window, though a much simpler one.
 
     ::: {.glossary-ai}
     Everything around the model that turns it into an agent: the loop, the tool definitions, the system prompt, the permission layer, and the context assembly.
     :::
 
-inference
+[inference]{#gl-inference}
 :   Inference is the model producing output. Training is what set the model's numbers, months ago; inference is what happens each time you send a request. Nothing you do during inference changes the model.
 
     ::: {.glossary-ai}
     Running a trained model to generate output, as distinct from training, which sets its parameters.
     :::
 
-MCP (Model Context Protocol)
+[manual mode]{#gl-manual-mode}
+:   The permission mode in which Claude Code asks you before every command and every file edit. From auto mode, one press of Shift+Tab gets you there, and the status line says so.
+
+    ::: {.glossary-ai}
+    The configuration value is `default`; the documentation calls it Manual. See [permission modes](https://code.claude.com/docs/en/permission-modes).
+    :::
+
+[MCP (Model Context Protocol)]{#gl-mcp}
 :   MCP is a standard way of giving an agent access to something outside your project folder, such as a reference manager, a database, or an issue tracker. A piece of software that offers such access is called an MCP server. We use one on the day to search literature through Zotero.
 
     ::: {.glossary-ai}
     A protocol for exposing external tools to an agent through a server. Note the cost: an MCP server's tool definitions are sent on every request, so a command-line tool the agent already knows how to run is often the cheaper choice.
     :::
 
-model
+[model]{#gl-model}
 :   The model is the part that does the reasoning. It runs on the provider's servers, not on your machine, and it has no memory between requests. Everything it knows about your work was sent to it in that request.
 
     ::: {.glossary-ai}
     A stateless set of parameters that performs next-token prediction. Statelessness is why the whole conversation is resent each time, and why costs grow over a long session.
     :::
 
-permission
+[permission]{#gl-permission}
 :   A permission prompt is the agent stopping to ask before it does something that changes the world: writing a file, running a command, making a commit. It is your decision point, and reading what is being proposed before approving is the habit that separates using an agent from hoping.
 
     ::: {.glossary-ai}
     The harness gates tool calls that have side effects. Which calls are gated depends on the permission mode; approving one does not approve the next.
     :::
 
-prompt
+[plan mode]{#gl-plan-mode}
+:   A mode in which the agent reads and proposes but changes nothing. Use it to have the agent look at something, or to get a plan before any work starts. Press Shift+Tab until the status line says plan mode.
+
+    ::: {.glossary-ai}
+    [Plan mode](https://code.claude.com/docs/en/permission-modes) in the Claude Code documentation. In plan mode the agent may run read-only commands; edits and other commands wait for you to leave it.
+    :::
+
+[prompt]{#gl-prompt}
 :   A prompt is what you type to the agent. It is a description of what you want, not a command with a fixed syntax, so being specific about what "done" looks like matters more than any particular wording.
 
     ::: {.glossary-ai}
     The user-supplied portion of the request. It sits alongside the system prompt, the conversation history, and any tool results already in the context window.
     :::
 
-sandbox
+[sandbox]{#gl-sandbox}
 :   A sandbox is a restricted space the agent runs inside, so that a mistake cannot reach the rest of your computer. Git serves a similar purpose in a different way: it does not stop the agent from changing a file, but it lets you see exactly what changed and undo it.
 
     ::: {.glossary-ai}
     An isolated environment limiting what an agent can read, write, or reach. Sandboxing, version control, and backups are the three standard mitigations for the fact that write tools are both the point and the risk.
     :::
 
-session
+[session]{#gl-session}
 :   A session is one continuous run of working with the agent, from starting it to closing it. Everything said in a session is in view; nothing carries into the next one unless it was written to a file.
 
     ::: {.glossary-ai}
     One bounded run of interaction with an agent. Ending a session and starting fresh is the normal remedy when the context window has filled with material that is no longer relevant.
     :::
 
-system prompt
+[skill]{#gl-skill}
+:   A file of instructions the agent loads when a task matches the skill's description, so you do not explain the same procedure every time. On the day we install two, one that commits and one that opens a pull request.
+
+    ::: {.glossary-ai}
+    [Skills](https://code.claude.com/docs/en/skills) in the Claude Code documentation. A skill is a folder with a `SKILL.md` file; its description is always visible to the model, the body loads on demand.
+    :::
+
+[system prompt]{#gl-system-prompt}
 :   The system prompt is the standing instruction the harness sends with every request, telling the model what it is and how to behave. You do not usually see it. A `CLAUDE.md` file in your project is a way for you to add to it.
 
     ::: {.glossary-ai}
     Instructions the harness prepends to every model request. Project-level files such as `CLAUDE.md` or `AGENTS.md` are the user-editable layer on top of it.
     :::
 
-token
+[token]{#gl-token}
 :   A token is the unit a model reads and writes: roughly a short word or part of one. Everything is counted in tokens, including cost. This is the practical reason a long session gets more expensive than a short one, since the whole conversation is sent again each time.
 
     ::: {.glossary-ai}
     The atomic unit of model input and output. Input tokens are what the harness sends, output tokens what the model generates; cached tokens are input the provider has stored from an earlier request and charges less for.
     :::
 
-tool
+[tool]{#gl-tool}
 :   A tool is a function the agent can call: read a file, write a file, run a command, search the web. The agent cannot do anything that is not one of its tools. The description of each tool is all the model knows about it.
 
     ::: {.glossary-ai}
     A function the harness exposes to the model, described by a name, a description, and an input schema. Read tools observe; write tools change things.
     :::
 
-tool call
+[tool call]{#gl-tool-call}
 :   A tool call is the agent asking for a tool to be run, with particular arguments. The harness runs it and sends back the result. Most of what you see scrolling past during an agent session is tool calls and their results.
 
     ::: {.glossary-ai}
     The model's output naming a tool and its arguments, rather than text for the user. The harness executes it and returns a tool result into the context window.
     :::
 
-vibe coding
+[trailer]{#gl-trailer}
+:   A line at the end of a commit message in the form `Key: value`, such as `Assisted-by: Claude`. Trailers mark which commits an agent touched, and Git can list and count them.
+
+    ::: {.glossary-ai}
+    [git interpret-trailers](https://git-scm.com/docs/git-interpret-trailers). `git log --grep='^Assisted-by:'` finds every commit that carries the trailer.
+    :::
+
+[vibe coding]{#gl-vibe-coding}
 :   Vibe coding means prompting for code and accepting what comes back without properly reading it. Andrej Karpathy named it for throwaway work where that is fine. The name is also used loosely for any AI-assisted coding, which muddies a distinction worth keeping: whether anyone actually checked.
 
     ::: {.glossary-ai}
     Coined by Karpathy for low-stakes work where the code is not reviewed. The contrasting practice, sometimes called agentic engineering, keeps the review step and treats the agent as a collaborator whose output goes through the same scrutiny as a colleague's.
+    :::
+
+## Research integrity
+
+The words of the disclosure debate, as the background pages use them.
+
+[content credentials]{#gl-content-credentials}
+:   Signed information attached to an image or other file that records how it was made, including whether an AI tool produced it. Claude attaches them to the images it makes. They live in the file's metadata and are lost when the file is re-saved without them.
+
+    ::: {.glossary-technical}
+    The [C2PA](https://c2pa.org/) standard, Coalition for Content Provenance and Authenticity.
+    :::
+
+[data package]{#gl-data-package}
+:   A dataset published together with its documentation: what each column means, where the data came from, how it was cleaned, in a form both people and programs can read. The workshop compares what an agent does with a plain CSV against the same data as a package.
+
+    ::: {.glossary-technical}
+    In this group a data package is an R package built with the [openwashdata](https://openwashdata.org/) tooling. The wider idea is the [Frictionless Data Package](https://datapackage.org/), a folder of data files with a machine-readable description.
+    :::
+
+[declaration]{#gl-declaration}
+:   The statement in a paper, thesis or talk that says which AI tools you used, for what, and what you did yourself. ETH asks for one, and the record your workflow leaves behind is what you write it from.
+
+    ::: {.glossary-technical}
+    The ETH Library's citation guide sets out the form of the declaration; see the [references](references.qmd) page.
+    :::
+
+[disclosure]{#gl-disclosure}
+:   Telling the reader that AI was used, and how. The word the journals and research integrity bodies use for the rules they are writing; a declaration is the text you write to meet them.
+
+    ::: {.glossary-technical}
+    The Round 2 consultation document of the global reporting standard defines disclosure as information about the use of AI provided in the research article for transparency; see the [references](references.qmd) page.
+    :::
+
+[watermark]{#gl-watermark}
+:   A hidden pattern in text produced by a language model that a detector can recognise, so the text can be traced to a machine. Claude's text carries one since August 2026. It says that a machine was involved, and nothing about who decided what.
+
+    ::: {.glossary-technical}
+    Anthropic's page on [how Claude's text watermark works](https://www.anthropic.com/news/claude-text-watermark). Images carry content credentials instead.
     :::
 
 ## References and attribution
@@ -351,5 +563,7 @@ The plain-language definitions on this page were written for this course.
 The gray technical blocks in the [Git and GitHub](#git-and-github) section are from [Glosario](https://glosario.carpentries.org/) by [The Carpentries](https://carpentries.org/), licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), in places shortened or adapted to the context of this workshop.
 
 The technical blocks in the [Working with agents](#working-with-agents) section were written for this course. The choice of which terms to include, and some of the framing, draws on the [Dictionary of AI Coding](https://github.com/mattpocock/dictionary-of-ai-coding) by Matt Pocock. Only the terms this workshop actually uses are included; the dictionary is worth reading in full if you want the rest.
+
+The technical blocks in [Tools on your computer](#tools-on-your-computer) link to each tool's own documentation, and those in [Research integrity](#research-integrity) rest on the sources cited on the background pages.
 
 The definitions of agent, harness, tool, and tool call follow Hadley Wickham's explainer on what an agent is, which builds the concept up from the request and response loop between you and a model.

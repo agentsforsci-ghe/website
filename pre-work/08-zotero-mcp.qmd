@@ -1,0 +1,75 @@
+---
+title: "{{< fa book >}} Step 8: Connect Zotero"
+---
+
+[Due by **{{< var due.setup >}}**]{.highlight-yellow}
+
+With this step the {{< gl agent >}} can search your Zotero library, read the PDFs in it, and pull {{< gl "citation key" display="citation keys" >}} while it writes. The connection is a small program called {{< gl zotero-mcp >}} that talks to Zotero on your own computer, through the local access you switched on in step 7. It reads your library and does not change it.
+
+Zotero has to be running whenever the agent uses it.
+
+## {{< fa download >}} Part 1: Install
+
+zotero-mcp is a Python program. The installer below, called {{< gl uv >}}, takes care of Python for you.
+
+::: {.panel-tabset}
+
+### macOS
+
+Open the {{< gl terminal display="Terminal" >}} app (any folder is fine), copy the line below, paste it after the prompt, and press Enter. It prints where uv was installed:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+### Windows
+
+Open {{< gl PowerShell >}}, copy the line below, paste it after the prompt, and press Enter:
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+:::
+
+Close the terminal and open a new one, so the new installer is found. Then install the program, in the terminal:
+
+```bash
+uv tool install zotero-mcp-server
+```
+
+Check, in the same terminal. It prints a version number:
+
+```bash
+zotero-mcp version
+```
+
+## {{< fa plug >}} Part 2: Register it with Claude Code
+
+Open a terminal (any folder is fine, the setting is not tied to a folder), copy this line, paste it after the prompt, and press Enter:
+
+```bash
+claude mcp add -s user zotero -e ZOTERO_LOCAL=true -- zotero-mcp
+```
+
+It answers with a line saying the server was added. Then, with the Zotero app running, check:
+
+```bash
+claude mcp list
+```
+
+The `zotero` line should end in **Connected**. If it says it failed to connect, the two usual causes are that Zotero is not running, or that the setting from step 7 (**Settings, Advanced, Allow other applications on this computer to communicate with Zotero**) is not ticked. On Windows there is a third: a terminal opened before the install in Part 1 finished does not find `zotero-mcp`. Open a new one and check again.
+
+## {{< fa vial >}} Part 3: Try it
+
+Keep Zotero open. Open a terminal at your setup {{< gl repository >}} (as in step 4), start `claude`, and ask something your library can answer, for example:
+
+> Which items in my Zotero library are about sanitation?
+
+If Claude Code asks before using the zotero tool, read the prompt and allow it; in {{< gl "auto mode" >}} it runs without asking. The answer lists items from your own library, with titles and citation keys. If it answers that it cannot reach Zotero, the app is not running or the Advanced setting from step 7 is off; fix that and ask again.
+
+::: {.callout-note}
+## What you do not need
+
+The zotero-mcp project offers extras for semantic search and PDF page images. The base install is enough for the workshop. Leave the extras out.
+:::

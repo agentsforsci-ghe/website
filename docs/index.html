@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,16 +43,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a88deade1133a401a461acf351919818.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-bfa26a4c1e8b77f9495bd0694bdf7c57.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a88deade1133a401a461acf351919818.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-712a858a7335f8c7f74f41a4769ee845.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d33e41aec669e7e09c3129c761b8ccf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-712a858a7335f8c7f74f41a4769ee845.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d83d88b8d67974b5dcc887f4af409a7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-d83d88b8d67974b5dcc887f4af409a7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-d83d88b8d67974b5dcc887f4af409a7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/gl-1.0.0/gl.js"></script>
+<link href="site_libs/quarto-contrib/gl-1.0.0/gl.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,6 +114,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./pre-work/index.html"> 
 <span class="menu-text">Prepare</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./background/index.html"> 
+<span class="menu-text">Background</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -172,17 +181,56 @@ ul.task-list li input[type="checkbox"] {
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background"><i class="fa-solid fa-circle-info" aria-label="circle-info"></i> Background</h2>
 <p>In the first workshop you learned to use Git and GitHub so that every change to a project is versioned, documented, and open to review. This workshop puts a coding agent inside that same workflow.</p>
-<p>The day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without agents, with an agent given minimal input, and with an agent given a proper plan and using GitHub issues. Comparing the three shows what the agent actually does for you, how you can document the process and how your stay involved in making decisions.</p>
-<p>Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing disclosure rules for scientific research right now, and we are planning to use to send them a response written from what we do in the room.</p>
+<p>The day runs the real work of writing a paper (analysing data, preparing a literature review, publishing a manuscript) under three conditions: as you do it now without <a class="gl" href="./glossary.html#gl-agent" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="agent" data-bs-content="<p>An agent is a language model that has been given tools and set to
+work in a loop: it does something, looks at the result, decides what to
+do next, and repeats until the task is done or it needs you. Claude Code
+is an agent. A single question and answer is not an agent, because
+nothing happens in between.</p>">agents</a>, with an agent given minimal input, and with an agent given a proper plan and using GitHub <a class="gl" href="./glossary.html#gl-issue" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="issue" data-bs-content="<p>An issue is a to-do item for a project, posted on the repository’s
+page on GitHub. An issue can describe a problem, ask for something new,
+or hold a task. You can assign an issue to a person, and you can refer
+to it from commits and pull requests.</p>">issues</a>. Comparing the three shows what the agent actually does for you, how you can document the process, and how you stay involved in making decisions.</p>
+<p>Because the work runs through Git and GitHub, every action an agent takes and every decision you make is recorded as you go. That record is what makes agent use traceable and declarable, which is the second half of the day: research integrity bodies are writing <a class="gl" href="./glossary.html#gl-disclosure" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="disclosure" data-bs-content="<p>Telling the reader that AI was used, and how. The word the journals
+and research integrity bodies use for the rules they are writing; a
+declaration is the text you write to meet them.</p>"></a> rules for scientific research right now. We will not write a response to them in the room, but what the day shows feeds into the reproducibility community’s contribution, through the AI working group of the Global Federation of Reproducibility Networks.</p>
+<p>Four short <a href="./background/index.html">background pages</a> cover the themes the introduction block builds on: security, literacy, transparency, and disclosure. Reading them before the day is useful, not required.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Prior knowledge</h2>
 <p>Everyone taking part has been through the Git for Scientists workshop, so this builds directly on it. You should be able to:</p>
 <ul>
-<li>clone a repository and open it as a project</li>
-<li>run the pull, stage, commit, push cycle</li>
-<li>create a branch and open a pull request</li>
-<li>review a colleague’s pull request and merge it</li>
+<li><a class="gl" href="./glossary.html#gl-clone" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="clone" data-bs-content="<p>To clone a repository means to download a full copy of it from GitHub
+onto your own computer, including the record of every change ever made
+to it. You clone by running git clone in a terminal, or through your
+editor’s own Git menu.</p>"></a> a <a class="gl" href="./glossary.html#gl-repository" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="repository" data-bs-content="<p>A repository is the folder for one project, together with the full
+record of every change made to the files in it. Git keeps the record in
+a hidden part of the folder. As a rule, one project gets one
+repository.</p>"></a> and open it as a project</li>
+<li>run the <a class="gl" href="./glossary.html#gl-pull" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="pull" data-bs-content="<p>To pull means to download the newest commits from GitHub into the
+copy on your own computer, so that both copies are the same again.
+Pulling is the first step of the commit cycle. Pull, then stage, then
+commit, then push.</p>"></a>, <a class="gl" href="./glossary.html#gl-stage" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="stage" data-bs-content="<p>To stage a file means to mark it for the next commit, and the staging
+area is where Git keeps the marked files until you commit. Git only
+commits the files you have staged, so you can change five files and
+commit only two of them. You stage a file with git add, or by ticking
+its checkbox in an editor’s Git pane.</p>"></a>, <a class="gl" href="./glossary.html#gl-commit" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="commit" data-bs-content="<p>A commit is a saved version of your project. When you commit, Git
+records the exact content of your files at that moment, together with a
+message that says what you changed and why. You can go back to any
+earlier commit at any time.</p>"></a>, <a class="gl" href="./glossary.html#gl-push" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="push" data-bs-content="<p>To push means to upload your commits from your own computer to the
+copy of your repository on GitHub. Until you push, your commits exist
+only on your computer, and nobody else can see them.</p>"></a> cycle</li>
+<li>create a <a class="gl" href="./glossary.html#gl-branch" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="branch" data-bs-content="<p>A branch is a separate line of work inside a repository. You create a
+branch when you want to change files without touching the main copy of
+the project. When the changes have been reviewed, you bring them back
+into the main copy. In the workshop you make your edits on a branch and
+bring them into main through a pull request.</p>"></a> and open a <a class="gl" href="./glossary.html#gl-pull-request" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="pull request" data-bs-content="<p>A pull request is a page on GitHub where you ask another person to
+review the changes on your branch and, if the changes are good, to merge
+the branch into main. The reviewer can read every changed line, write
+comments, and suggest edits. A pull request is not the same as a pull. A
+pull downloads commits to your computer, and a pull request is a
+conversation about merging.</p>"></a></li>
+<li>review a colleague’s pull request and <a class="gl" href="./glossary.html#gl-merge" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="merge" data-bs-content="<p>To merge means to combine the changes from one branch into another,
+so that one branch now contains the work of both. In the workshop, the
+merge happens when a reviewer accepts a pull request on GitHub.</p>"></a> it</li>
 <li>open an issue, assign it, and close it</li>
 </ul>
 <p>If any of these are shaky, work through the <a href="https://gitforsci-ghe.github.io/website/">Git for Scientists material</a> again before the day. You do not need any prior experience with AI coding agents.</p>
@@ -193,18 +241,34 @@ ul.task-list li input[type="checkbox"] {
 <li>a laptop, connected to wifi</li>
 <li>a web browser</li>
 <li>a pen and paper</li>
-<li><span class="highlight-yellow">your repository, with your own data already committed</span> (Step 1 below)</li>
+<li><span class="highlight-yellow">your repository, with your own data already committed</span> (Step 1)</li>
+<li>your setup repository, cloned and tested (Steps 4 and 9)</li>
+<li>a Zotero library with a few references related to your data (Step 7)</li>
 </ul>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> What do I need to prepare?</h2>
 <p><span class="highlight-yellow">There is pre-work for this workshop</span>. It matters more than usual here: the day is built around <em>your</em> data, so a participant who arrives without it cannot take part in the main exercise.</p>
-<p>Two tasks to start with, both due by <span class="highlight-yellow"><strong>Monday, 14 September 2026</strong></span>:</p>
+<p>Two tasks came first, both due by <strong>Monday, 14 September 2026</strong>:</p>
 <ul>
 <li><a href="./pre-work/01-create-repository.html">Step 1</a>: Create your repository and add your data</li>
 <li><a href="./pre-work/02-join-element.html">Step 2</a>: Join the ai-playground chat room</li>
 </ul>
-<p>Further preparation, including a pre-course survey and the tool setup, follows closer to the workshop.</p>
+<p>Seven more steps follow, all due by <span class="highlight-yellow"><strong>Friday, 25 September 2026</strong></span>. They take around two hours in total, and not in one sitting:</p>
+<ul>
+<li><a href="./pre-work/03-survey.html">Step 3</a>: Complete the pre-course survey</li>
+<li><a href="./pre-work/04-install-claude-code.html">Step 4</a>: Install Claude Code, clone your setup repository, log in</li>
+<li><a href="./pre-work/05-github-cli.html">Step 5</a>: Connect GitHub from the <a class="gl" href="./glossary.html#gl-terminal" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="terminal" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+runs in one. RStudio has a Terminal tab, the Mac has the Terminal app,
+and Windows has PowerShell.</p>"></a></li>
+<li><a href="./pre-work/06-connect-r.html">Step 6</a>: Connect your <a class="gl" href="./glossary.html#gl-r-session" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="r session" data-bs-content="<p>One running copy of R together with everything you have loaded into
+it: packages, data frames, variables. RStudio starts one for you, and
+Session, Restart R gives you a fresh one.</p>"></a></li>
+<li><a href="./pre-work/07-zotero.html">Step 7</a>: Set up Zotero</li>
+<li><a href="./pre-work/08-zotero-mcp.html">Step 8</a>: Connect Zotero</li>
+<li><a href="./pre-work/09-setup-check.html">Step 9</a>: Test your setup and report done</li>
+</ul>
+<p>The tests run on a small repository with public data that I prepare for each of you, not on your own data. Step 9 ends with an issue assigned to me, so I know you are ready. The <a href="./pre-work/index.html">Prepare</a> page has the same list with time estimates and the details of each step.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</h2>
@@ -273,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td style="text-align: left;">16:00 - 16:45</td>
-<td style="text-align: left;">Our response to the disclosure consultation</td>
+<td style="text-align: left;">Disclosure rules in the making: what the record shows</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">16:45 - 17:00</td>
@@ -303,7 +367,10 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><p><strong>Run an agent inside the Git workflow</strong>: give a coding agent a task, write its plan down as GitHub issues before any code is produced, then review what it produced as a pull request and accept or reject the change.</p></li>
 <li><p><strong>Judge the difference a plan makes</strong>: compare the output of an agent given minimal input against one given a reviewed plan, and say what changed and why.</p></li>
-<li><p><strong>Judge the difference documentation makes</strong>: compare what an agent does with a plain CSV against the same data published as a data package.</p></li>
+<li><p><strong>Judge the difference documentation makes</strong>: compare what an agent does with a plain CSV against the same data published as a <a class="gl" href="./glossary.html#gl-data-package" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="data package" data-bs-content="<p>A dataset published together with its documentation: what each column
+means, where the data came from, how it was cleaned, in a form both
+people and programs can read. The workshop compares what an agent does
+with a plain CSV against the same data as a package.</p>"></a>, the data together with its documentation in a form the agent can read.</p></li>
 <li><p><strong>Declare agent use</strong>: point to the record your workflow produced and say what it shows about which parts of the work an agent touched.</p></li>
 </ol>
 </section>

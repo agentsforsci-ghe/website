@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,16 +43,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a88deade1133a401a461acf351919818.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-bfa26a4c1e8b77f9495bd0694bdf7c57.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a88deade1133a401a461acf351919818.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-712a858a7335f8c7f74f41a4769ee845.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d33e41aec669e7e09c3129c761b8ccf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-712a858a7335f8c7f74f41a4769ee845.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d83d88b8d67974b5dcc887f4af409a7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d83d88b8d67974b5dcc887f4af409a7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-d83d88b8d67974b5dcc887f4af409a7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ad4e323ce240e5abdcb06c1e9cf2b809.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/gl-1.0.0/gl.js"></script>
+<link href="../site_libs/quarto-contrib/gl-1.0.0/gl.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,6 +115,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="../pre-work/index.html" aria-current="page"> 
 <span class="menu-text">Prepare</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../background/index.html"> 
+<span class="menu-text">Background</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -165,6 +174,48 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Step 2: Join the chat</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/03-survey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 3: Pre-course survey</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/04-install-claude-code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 4: Install Claude Code</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/05-github-cli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 5: Connect GitHub</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/06-connect-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 6: Connect R</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/07-zotero.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 7: Set up Zotero</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/08-zotero-mcp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 8: Connect Zotero</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pre-work/09-setup-check.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 9: Test your setup</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -195,17 +246,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Two tasks for now. Both are due by <span class="highlight-yellow"><strong>Monday, 14 September 2026</strong></span>.</p>
+<p>Steps 1 and 2 were due by <strong>Monday, 14 September 2026</strong>. Steps 3 to 9 are due by <span class="highlight-yellow"><strong>Friday, 25 September 2026</strong></span>: a short survey, then the tool setup.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 10%">
-<col style="width: 60%">
-<col style="width: 30%">
+<col style="width: 8%">
+<col style="width: 52%">
+<col style="width: 15%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Step</th>
 <th>What</th>
+<th>Time</th>
 <th>Due</th>
 </tr>
 </thead>
@@ -213,26 +266,80 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td><a href="../pre-work/01-create-repository.html">1</a></td>
 <td>Create your repository and add your data</td>
+<td>30 min</td>
 <td><p>Monday, 14 September 2026</p></td>
 </tr>
 <tr class="even">
 <td><a href="../pre-work/02-join-element.html">2</a></td>
 <td>Join the ai-playground chat room</td>
+<td>5 min</td>
 <td><p>Monday, 14 September 2026</p></td>
+</tr>
+<tr class="odd">
+<td><a href="../pre-work/03-survey.html">3</a></td>
+<td>Complete the pre-course survey</td>
+<td>10 min</td>
+<td><p>Friday, 25 September 2026</p></td>
+</tr>
+<tr class="even">
+<td><a href="../pre-work/04-install-claude-code.html">4</a></td>
+<td>Install Claude Code, clone your setup repository, log in</td>
+<td>25 min</td>
+<td><p>Friday, 25 September 2026</p></td>
+</tr>
+<tr class="odd">
+<td><a href="../pre-work/05-github-cli.html">5</a></td>
+<td>Connect GitHub from the terminal</td>
+<td>10 min</td>
+<td><p>Friday, 25 September 2026</p></td>
+</tr>
+<tr class="even">
+<td><a href="../pre-work/06-connect-r.html">6</a></td>
+<td>Connect your R session</td>
+<td>10 min</td>
+<td><p>Friday, 25 September 2026</p></td>
+</tr>
+<tr class="odd">
+<td><a href="../pre-work/07-zotero.html">7</a></td>
+<td>Set up Zotero</td>
+<td>30 to 45 min</td>
+<td><p>Friday, 25 September 2026</p></td>
+</tr>
+<tr class="even">
+<td><a href="../pre-work/08-zotero-mcp.html">8</a></td>
+<td>Connect Zotero</td>
+<td>10 min</td>
+<td><p>Friday, 25 September 2026</p></td>
+</tr>
+<tr class="odd">
+<td><a href="../pre-work/09-setup-check.html">9</a></td>
+<td>Test your setup on the prepared repository and report done</td>
+<td>20 min</td>
+<td><p>Friday, 25 September 2026</p></td>
 </tr>
 </tbody>
 </table>
+<p>Do the steps in order. Step 4 ends with a small <a class="gl" href="../glossary.html#gl-repository" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="repository" data-bs-content="<p>A repository is the folder for one project, together with the full
+record of every change made to the files in it. Git keeps the record in
+a hidden part of the folder. As a rule, one project gets one
+repository.</p>"></a> I prepared for you, with public data in it, and steps 6, 8 and 9 use it for their tests. Your own repository from step 1 stays out of Claude Code until the day. Step 8 needs Zotero from step 7, and step 9 checks everything at once.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>More to come
+<span class="screen-reader-only">Note</span>What I assume you use
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Further preparation, including a pre-course survey and the tool setup, will be added here closer to the workshop. You will hear from me when it is ready. Start with these two, since the repository is what everything else builds on.</p>
+<p>The instructions and the day are written for RStudio, R and Quarto, as taught in the first workshop. Other editors (Positron, VS Code) and other languages (Python, JavaScript, Stata do files) are welcome, and the <a class="gl" href="../glossary.html#gl-agent" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="agent" data-bs-content="<p>An agent is a language model that has been given tools and set to
+work in a loop: it does something, looks at the result, decides what to
+do next, and repeats until the task is done or it needs you. Claude Code
+is an agent. A single question and answer is not an agent, because
+nothing happens in between.</p>"></a> works with all of them. What I cannot promise is that the setup works the same way; step 6, the connection to a running <a class="gl" href="../glossary.html#gl-r-session" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="r session" data-bs-content="<p>One running copy of R together with everything you have loaded into
+it: packages, data frames, variables. RStudio starts one for you, and
+Session, Restart R gives you a fresh one.</p>"></a>, is specific to R and RStudio. If you work differently, do the steps as far as they apply and tell me in the chat room where they stop.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -245,7 +352,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Around half an hour for both, assuming you already know which dataset you want to use and your GitHub authentication still works from the first workshop. Picking the dataset is usually the part that takes the thinking.</p>
+<p>Around two hours in total, and it does not have to happen in one sitting. Step 7 is the long one. If you already use Zotero, it shrinks to checking a few settings.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -258,7 +365,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Do not spend an evening fighting it. Ask in <a href="https://matrix.to/#/#ai-playground:staffchat.ethz.ch">the chat room</a>, or open an issue on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.</p>
+<p>Do not spend an evening fighting it. Ask in <a href="https://matrix.to/#/#ai-playground:staffchat.ethz.ch">the chat room</a>, or open an <a class="gl" href="../glossary.html#gl-issue" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="issue" data-bs-content="<p>An issue is a to-do item for a project, posted on the repository’s
+page on GitHub. An issue can describe a problem, ask for something new,
+or hold a task. You can assign an issue to a person, and you can refer
+to it from commits and pull requests.</p>"></a> on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.</p>
 </div>
 </div>
 

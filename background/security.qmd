@@ -5,45 +5,40 @@ subtitle: "What must never go into the tool"
 
 ## {{< fa users >}} The group rule
 
-Personal and sensitive data never go into a Git repository, private repositories included. Git history is permanent. A later visibility change, a new collaborator, or a push to the wrong remote can expose something committed months earlier, and removing it properly is difficult.
+Personal and sensitive data never go into a Git repository, private {{< gl repository display="repositories" >}} included. Git {{< gl history >}} is permanent. A later visibility change, a new collaborator, or a {{< gl push >}} to the wrong remote can expose something committed months earlier, and removing it properly is difficult.
 
 Never in Git: names tied to attributes, recruitment data, health data, signed consent, anything that identifies a person. When you are unsure, treat it as protected and ask.
 
-This rule predates agents. What agents change is how easily it is broken by accident: Claude Code reads a directory and pulls file contents into a request to a model. Protected data sitting in the project folder can leave your machine without you deciding to send it. The rule has to be in force before the first agent session, not after.
+This rule predates {{< gl agent display="agents" >}}. What agents change is how easily it is broken by accident: Claude Code reads a directory and pulls file contents into a request to a model. Protected data sitting in the project folder can leave your machine without you deciding to send it. The rule has to be in force before the first agent session, not after.
 
 ## {{< fa building-columns >}} The ETH rule
 
-The Information Security office sets two levels. Compliant use is the baseline: use AI in line with the law and ETH directives, protect confidentiality, and never put personal or confidential data into a service that is not cleared for it. Responsible use goes further.
+ETH's Cyber and Information Security unit sets two levels. Authorized use is the baseline and it is mandatory: use AI in line with the law and ETH directives, protect confidentiality, and never put personal or confidential data into a service that is not cleared for it. Responsible use includes authorized use and goes beyond it, meaning no personal data, no particularly sensitive personal data, and no information identifying ETH or third parties. Responsible use is highly desirable rather than mandatory.
 
-AI systems count as external cloud services. At most "confidential" data may go into a cleared cloud service, and "strictly confidential" data never leaves ETH.
+AI systems count as external {{< gl cloud >}} services. At most "confidential" data may go into a cleared cloud service, and "strictly confidential" data never leaves ETH. ETH does provide data protected access to some AI services through its own cloud subscriptions, where what you enter is not used for training. Claude Code is not currently one of them, which is why the rule above applies to it in full.
 
-Three obligations stay with you regardless of tool: you remain responsible for the output, you declare AI use, and you check every result [@ethz2026genaiteaching].
+Three obligations stay with you regardless of tool: you remain responsible for the output, you declare AI use, and you check every result. ETH has no standalone research guideline on this, so the nearest texts are the integrity guidelines [@ethz2026integrity] and the guidance written for teaching [@ethz2026genaiteaching]; the principles carry across.
 
 ## {{< fa database >}} What the vendor does with your sessions
 
-On consumer plans (Free, Pro, Max), including Claude Code used from such an account, Anthropic may use conversations and coding sessions to train models under four conditions [@anthropic2026privacy]:
+On consumer plans (Free, Pro, Max), including Claude Code used from such an account, training on your conversations and coding sessions is on unless you turn it off [@anthropic2026privacy]. The choice is put to you at signup with the setting already switched on, so this is opt out rather than opt in. Two consequences follow for a research session:
 
-- you allow it in privacy settings
-- a conversation is flagged for safety review
-- you send feedback with the thumbs buttons
-- you opt in to a tester program
+- **Retention.** Five years if you allow training, 30 days if you do not.
+- **Two carve-outs that hold either way.** A conversation flagged for safety review may be used regardless of your setting, and rating an output with the thumbs buttons stores that whole conversation as feedback, which may also be used regardless of your setting.
 
-Anthropic asks consumer users not to process personal data in the products at all.
-
-Commercial products (Claude for Work, the API) fall under a separate policy where the customer, not the vendor, controls the data. This split is the whole reason group access is being arranged rather than everyone signing up individually.
+Commercial products (Claude Team, Claude Enterprise, and the API) fall under separate terms where Anthropic does not train on customer content by default, and the data processing addendum makes the customer the controller and Anthropic the processor. This split is the whole reason group access is being arranged rather than everyone signing up individually.
 
 The European Commission's living guidelines say the same thing from the researcher's side: do not upload unpublished or sensitive work into an external AI system unless you have assurances it will not be used for training [@ec2026livingguidelines].
 
-## {{< fa lock >}} Guardrails that also bind the agent
+## {{< fa lock >}} What actually stops the agent
 
-The repository settings from the first workshop apply to the agent exactly as they apply to you:
+The agent has no special restraint built into it. It runs the same Git commands you do, which includes the destructive ones. Three things stand between it and your repository, and it is worth knowing which of them are real on the day:
 
-- branch protection on `main`
-- no direct pushes
-- no force push
-- at least one review before merge
+- **The permission prompt, and the check that stands in for it.** In {{< gl "manual mode" >}} Claude Code asks before it runs a command or edits a file, and reading that prompt rather than approving it by reflex is the guardrail you operate yourself. On the day we work in {{< gl "auto mode" >}}, where a second model checks each action against a set of rules, blocks what looks destructive or would move data out of the repository, and lets everything else run without asking. That trades your attention for a filter that does not know your data or your intent. It still asks when a rule says so or when you have told the agent not to do something, and Shift+Tab switches back to manual mode at any time. The habit is the same in both modes: read what the agent proposes before it happens, or what it did right after.
+- **The diff.** Every change is visible before you accept it. An agent that edits ten files leaves ten {{< gl diff display="diffs" >}} to read, and reading them is the practice this workshop asks of you.
+- **The pull request.** Changes reach `main` through a {{< gl branch >}} and a reviewed {{< gl "pull request" >}}. This is a working practice rather than an enforced setting, so it holds only as long as you follow it.
 
-Claude Code cannot force-push or reset shared history, and every change it makes still passes through a reviewed pull request. This is the practical answer to "what stops it breaking something": the same thing that stops you.
+Git itself gives you the recovery path when something does slip through: committed work can be restored, which is the reason to {{< gl commit >}} often while working with an agent.
 
 ::: {.callout-important}
 ## The short version

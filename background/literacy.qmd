@@ -19,21 +19,21 @@ That is the right question, and answering it is a skill separate from producing 
 
 Citation literacy is worth separating from citation mechanics here. Reference managers already showed that automating the format can hide whether anyone understood the source. Citation is about transparency and honesty; formatting was never the purpose.
 
-On detection: AI text detectors cannot reliably identify AI-written text, and building integrity policy on them does not work. The better design is work where people demonstrate their thinking through drafts, process, and transparency about what they used, which is what a version-controlled workflow produces anyway.
+On detection: AI text detectors cannot reliably identify AI-written text, and building integrity policy on them does not work [@jiang2026humanlayer]. The better design is work where people demonstrate their thinking through drafts, process, and transparency about what they used, which is what a version-controlled workflow like Git produces anyway.
 
 ## {{< fa dumbbell >}} Skills erode when you outsource them
 
-Skill retention drops when the tool does the work. Vicki Boykis's proposed remedy is deliberate friction, for example reading every diff the agent produces. Her formulation: we should be more tired than the model [@boykis2026tired].
+Skill retention drops when the tool does the work. Vicki Boykis's proposed remedy is deliberate friction, for example reading every {{< gl diff >}} the agent produces. Her formulation: we should be more tired than the model [@boykis2026tired].
 
-This is not an argument against using agents. It is an argument for choosing where the friction goes. Reading the diff is slower than accepting it, and that slowness is where the understanding lives.
+This is not an argument against using {{< gl agent display="agents" >}}. It is an argument for choosing where the friction goes. Reading the diff is slower than accepting it, and that slowness is where the understanding lives.
 
 ## {{< fa file-lines >}} Write down what you know about your data
 
 If you use an agent for data analysis, you have to write down what you know about the data so the agent can help. Hadley Wickham's point is that this is not new work invented for machines [@wickham2026datadict]: the data dictionary is the same documentation that always helped human colleagues, and mostly did not get written.
 
-His working method keeps three things in sync: the cleaning script, a data dictionary, and the data file itself, with a commit after each AI-assisted edit.
+His working method keeps three things in sync: the cleaning script, a data dictionary, and the data file itself, with a {{< gl commit >}} after each AI-assisted edit.
 
-The workshop tests this directly. The same agent gets a plain CSV, then gets the same data published as a documented data package. The difference in what it can do is the argument for documentation, made empirically rather than asserted.
+The workshop tests this directly. The same agent gets a plain CSV, then gets the same data published as a documented {{< gl "data package" >}}: the data together with its documentation, the column descriptions and the origin, in a form the agent can read alongside the file. The difference in what it can do is the argument for documentation.
 
 ::: {.callout-note}
 ## The short version

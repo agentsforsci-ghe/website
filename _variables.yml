@@ -26,7 +26,7 @@ course:
 # Logistics shown on the landing page (index.qmd) via {{< var >}}.
 session:
   event-location: "Villa Hatt, ETH Zurich"
-  event-location-directions: "https://ethz.ch/en/campus/get-to-know/campus-buildings/zurich/villa-hatt.html"
+  event-location-directions: "https://ethz.ch/en/campus/access/region-zurich/villa-hatt.html"
   datetime: "Tuesday, 29 September 2026 - 08:30 to 17:00"
   date-long: "Tuesday, 29 September 2026"
   time-range: "08:30 to 17:00"
@@ -49,6 +49,22 @@ chat:
 # Due dates for the pre-course work.
 due:
   repo: "Monday, 14 September 2026"
+  setup: "Friday, 25 September 2026"
+
+# Pre-course survey, a surveydown app on Posit Connect Cloud.
+# Source: https://github.com/agentsforsci-dev/pre-course-survey
+survey:
+  url: "https://larnsce-agentsforsci-ghe-survey.share.connect.posit.cloud/"
+
+# Claude account routes shown on the install page.
+claude:
+  team-org: "Global Health Engineering"
+  privacy-settings: "https://claude.ai/settings/data-privacy-controls"
+
+# The commit and open-pr skills used in the workshop.
+skills:
+  repo: "https://github.com/Global-Health-Engineering/skills"
+  repo-short: "Global-Health-Engineering/skills"
 
 # Brand colour mirrored from _brand.yml so slide section headers stay in
 # sync with the website palette. Update both if the brand changes.

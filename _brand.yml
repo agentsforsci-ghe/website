@@ -22,15 +22,23 @@ color:
   secondary: ghe-gray
   link: ghe-blue
 
+# Typography mirrors the openwashdata brand (openwashdata/brand); the GHE
+# brand will follow the same lines with its own colours.
 typography:
   fonts:
-    - family: Atkinson Hyperlegible
+    - family: Atkinson Hyperlegible Next
       source: google
+      weight: [400, 600, 700]
+      style: [normal, italic]
     - family: Source Code Pro
       source: google
-  base: Atkinson Hyperlegible
+      weight: [400, 500]
+  base:
+    family: Atkinson Hyperlegible Next
+    line-height: 1.5
   headings:
-    family: Atkinson Hyperlegible
+    family: Atkinson Hyperlegible Next
+    weight: 700
     color: primary
   monospace:
     family: Source Code Pro

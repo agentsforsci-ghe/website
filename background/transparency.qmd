@@ -7,17 +7,21 @@ subtitle: "What the workflow records for you"
 
 The ETH integrity guidelines rest on reliability, honesty, respect, and responsibility. Reliability includes transparency and traceability, and authorship requires a significant contribution through personal work [@ethz2026integrity].
 
-None of this was written with agents in mind, and none of it needs rewriting because of them. The question the workshop answers is a practical one: how do you keep faith with these principles when an agent writes some of the code and some of the prose?
+None of this was written with {{< gl agent display="agents" >}} in mind, and none of it needs rewriting because of them. The question the workshop answers is a practical one: how do you keep faith with these principles when an agent writes some of the code and some of the prose?
 
 ## {{< fa code-commit >}} Attribution at the commit level
 
 The answer this group is testing is that the record should be a by-product of the work rather than something reconstructed afterwards.
 
-Every commit says what changed and who made the change. Agent commits carry a trailer marking them as assisted; human commits carry one marking them as human-authored. The prompts behind agent commits can be archived alongside the code, so the instruction that produced a change sits next to the change.
+Every commit says what changed and who made the change. Agent {{< gl commit display="commits" >}} carry a trailer, a line at the end of the {{< gl "commit message" >}}, marking them as assisted; human commits carry one marking them as human-authored. The prompts behind agent commits can be archived alongside the code, so the instruction that produced a change sits next to the change.
 
-The pull request then shows the whole history in one view: what the human drafted, what the agent altered, and what was reviewed before it was merged.
+The {{< gl "pull request" >}} then shows the whole {{< gl history >}} in one view: what the human drafted, what the agent altered, and what was reviewed before it was merged.
 
-This is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim [@schoebitz2026whowrotethis]. The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a diff [@wickham2026datadict].
+This is not hypothetical. The blog post that first set out this argument was written that way: a human first draft, agent edits in a second commit, prompts archived verbatim [@schoebitz2026whowrotethis].
+
+The talk at the Data Stewardship Network autumn meeting on 22 September 2026 took the record one step further [@schoebitz2026gitforscientists]. The deck was built with the agent, and at the end the agent was asked to write the {{< gl declaration >}} of AI use for it. It read the archived prompts, the commit {{< gl trailer display="trailers" >}}, and the line by line history of the deck file, and produced the declaration page, with the prompt that produced it archived in turn [@schoebitz2026dsndeclaration]. Both are online. The same step, letting the agent write the declaration from the record, is demonstrated live on the day.
+
+The same pattern appears elsewhere, notably Wickham committing after each AI-assisted edit so that every change is visible as a {{< gl diff >}} [@wickham2026datadict].
 
 ## {{< fa rotate >}} Could you recreate it if the AI were gone?
 
@@ -33,14 +37,14 @@ The remedy is a code-based source of truth that reads the data and builds the ou
 
 ## {{< fa stamp >}} A watermark says a machine was involved, and nothing else
 
-Since August 2026 Anthropic watermarks Claude text and images, meeting the EU AI Act's transparency obligation [@euaiact2024].
+Since August 2026 Anthropic marks Claude output, in line with the EU AI Act's transparency obligation [@euaiact2024; @anthropic2026watermark]. Text carries a {{< gl watermark >}} woven into the wording itself; images and other files carry signed {{< gl "content credentials" >}} attached as {{< gl metadata >}}. Models launched from 2 August 2026 mark their output from the start, and older models follow during a transition period, so the output of a given session may or may not be marked yet.
 
-The limits are worth knowing [@carpenter2026watermarking]. A mark can be stripped or edited away. It needs a substantial amount of text to work at all. Most importantly it carries no intent: it cannot distinguish translating your own ideas from having the machine write them, which is precisely the distinction that matters for integrity.
+The limits are worth knowing [@carpenter2026watermarking]. A mark can be stripped or edited away, which is easier with the metadata on an image than with a watermark woven into text. It needs a substantial amount of text to work at all. Most importantly it carries no intent: it cannot distinguish translating your own ideas from having the machine write them, which is precisely the distinction that matters for integrity.
 
 The audit trail from a version-controlled workflow carries what the mark cannot: what the tool did, on which files, in response to which instruction.
 
 ::: {.callout-note}
 ## The short version
 
-Traceability is not an extra step bolted onto agent use. Done this way it is the ordinary output of working through Git, and it is what makes the disclosure question answerable rather than a matter of memory.
+Traceability is not an extra step bolted onto agent use. Done this way it is the ordinary output of working through Git, and it is what makes the {{< gl disclosure >}} question answerable rather than a matter of memory.
 :::

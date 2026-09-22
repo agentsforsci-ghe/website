@@ -1,11 +1,18 @@
 /*-- scss:defaults --*/
 
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
-@import 'https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap';
+// Typography follows the openwashdata brand (openwashdata/brand, _brand.yml):
+// Atkinson Hyperlegible Next at 400, 600 and 700 with italics, headings at
+// 700, Source Code Pro for code. The GHE brand will be built along the same
+// lines with its own colours. The older Atkinson Hyperlegible is the fallback
+// for a machine that has it installed and no network.
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap';
 
-$font-family: "Atkinson Hyperlegible", sans-serif;
-$font-family-serif: "Atkinson Hyperlegible", sans-serif;
+$font-family: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", sans-serif;
+$font-family-serif: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", sans-serif;
 $font-family-monospace: "Source Code Pro", monospace;
+$headings-font-weight: 700;
+$line-height-base: 1.5;
 
 // GHE colour identity, sourced from Global-Health-Engineering/website
 $ghe-blue: #0F4C81;
@@ -35,6 +42,16 @@ $code-color: $ghe-orange;
 
 h1, h2, h3 {
   color: $ghe-blue;
+}
+
+// code blocks keep the body colour; the orange stays for inline code.
+// The highlighter gives command names (class ex) no colour of their own,
+// so without this they inherit $code-color and read orange on grey.
+div.sourceCode pre code, pre code {
+  color: $body-color;
+}
+code span.ex {
+  color: $body-color;
 }
 
 // highlight classes

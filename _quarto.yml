@@ -1,15 +1,13 @@
 project:
   type: website
   output-dir: docs
+  # Rebuilds glossary.yml from glossary.qmd and anchors every term there,
+  # for the gl shortcode (_extensions/ghe/gl) that adds popover definitions.
+  pre-render:
+    - tools/build_glossary.py
   render:
     - "*.qmd"
     - "**/*.qmd"
-    # Background pages stay in the repo but are not published yet (under review)
-    - "!background/"
-    # Reference pages stay in the repo but are not published yet (under review)
-    - "!glossary.qmd"
-    - "!platform-guide.qmd"
-    - "!references.qmd"
   # Copied into docs/ on every render. GitHub Pages serves docs/ directly, and
   # this tells it not to run the output through Jekyll. Quarto clears docs/ on
   # render, so the file has to be a project resource rather than sit there.
@@ -48,6 +46,8 @@ website:
         text: "Overview"
       - href: pre-work/index.qmd
         text: "Prepare"
+      - href: background/index.qmd
+        text: "Background"
     right:
       - icon: github
         href: https://github.com/agentsforsci-ghe
@@ -67,6 +67,44 @@ website:
           text: "Step 1: Your repository"
         - href: pre-work/02-join-element.qmd
           text: "Step 2: Join the chat"
+        - href: pre-work/03-survey.qmd
+          text: "Step 3: Pre-course survey"
+        - href: pre-work/04-install-claude-code.qmd
+          text: "Step 4: Install Claude Code"
+        - href: pre-work/05-github-cli.qmd
+          text: "Step 5: Connect GitHub"
+        - href: pre-work/06-connect-r.qmd
+          text: "Step 6: Connect R"
+        - href: pre-work/07-zotero.qmd
+          text: "Step 7: Set up Zotero"
+        - href: pre-work/08-zotero-mcp.qmd
+          text: "Step 8: Connect Zotero"
+        - href: pre-work/09-setup-check.qmd
+          text: "Step 9: Test your setup"
+    - id: background
+      title: "Background"
+      style: "docked"
+      background: "#F5F5F5"
+      collapse-level: 1
+      contents:
+        - href: background/index.qmd
+          text: "Overview"
+        - text: "---"
+        - href: background/security.qmd
+          text: "Security"
+        - href: background/literacy.qmd
+          text: "Literacy"
+        - href: background/transparency.qmd
+          text: "Transparency"
+        - href: background/disclosure.qmd
+          text: "Disclosure"
+        - text: "---"
+        - href: glossary.qmd
+          text: "Glossary"
+        - href: platform-guide.qmd
+          text: "Which tool does what?"
+        - href: references.qmd
+          text: "References"
 
 bibliography: references.bib
 csl: https://www.zotero.org/styles/apa
@@ -85,7 +123,6 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-    mainfont: "Atkinson Hyperlegible"
 
 freeze: auto
 editor: source
