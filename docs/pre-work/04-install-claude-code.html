@@ -298,18 +298,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><span class="highlight-yellow">Due by <strong>Friday, 25 September 2026</strong></span></p>
-<p>Claude Code is the coding <a class="gl" href="../glossary.html#gl-agent" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="agent" data-bs-content="<p>An agent is a language model that has been given tools and set to
+<p>Claude Code is the coding <a href="../glossary.html#gl-agent" class="gl" data-bs-title="agent" data-bs-content="<p>An agent is a language model that has been given tools and set to
 work in a loop: it does something, looks at the result, decides what to
 do next, and repeats until the task is done or it needs you. Claude Code
 is an agent. A single question and answer is not an agent, because
-nothing happens in between.</p>"></a> we use on the day. It runs in a <a class="gl" href="../glossary.html#gl-terminal" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="terminal" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
+nothing happens in between.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">agent</a> we use on the day. It runs in a <a href="../glossary.html#gl-terminal" class="gl" data-bs-title="terminal" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
 runs in one. Give it a window of its own next to your editor: the
 Terminal app on the Mac, PowerShell on Windows. RStudio’s Terminal tab
-also works, but it is slow and cramped for an agent.</p>"></a>, works inside the folder you start it in, reads and edits files there, and runs commands. It asks before it runs a command or changes a file, and that <a class="gl" href="../glossary.html#gl-permission" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="permission" data-bs-content="<p>A permission prompt is the agent stopping to ask before it does
+also works, but it is slow and cramped for an agent.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">terminal</a>, works inside the folder you start it in, reads and edits files there, and runs commands. It asks before it runs a command or changes a file, and that <a href="../glossary.html#gl-permission" class="gl" data-bs-title="permission" data-bs-content="<p>A permission prompt is the agent stopping to ask before it does
 something that changes the world: writing a file, running a command,
 making a commit. It is your decision point, and reading what is being
 proposed before approving is the habit that separates using an agent
-from hoping.</p>"></a> prompt is the first thing to learn to read.</p>
+from hoping.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">permission</a> prompt is the first thing to learn to read.</p>
 <p>This step has four parts: get an account, install the program, log in once from a small repository I prepared for you, and put the Claude app on your phone for the day.</p>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account" class="level2">
 <h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612075736572203e7d7d-part-1-your-claude-account"><i class="fa-solid fa-user" aria-label="user"></i> Part 1: Your Claude account</h2>
@@ -361,9 +361,9 @@ from hoping.</p>"></a> prompt is the first thing to learn to read.</p>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For the two install lines any terminal works. For working with Claude Code, give it a terminal window of its own next to your editor, not the Terminal tab inside RStudio, which is slow and cramped; Part 3 shows the layout. On the Mac, <a href="https://iterm2.com/">iTerm</a> is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in <a class="gl" href="../glossary.html#gl-powershell" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="powershell" data-bs-content="<p>The terminal program built into Windows, where you type commands. Its
+<p>For the two install lines any terminal works. For working with Claude Code, give it a terminal window of its own next to your editor, not the Terminal tab inside RStudio, which is slow and cramped; Part 3 shows the layout. On the Mac, <a href="https://iterm2.com/">iTerm</a> is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in <a href="../glossary.html#gl-powershell" class="gl" data-bs-title="powershell" data-bs-content="<p>The terminal program built into Windows, where you type commands. Its
 prompt starts with PS. The pre-work uses it for the install lines on
-Windows.</p>"></a>, and use whichever terminal you like afterwards.</p>
+Windows.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">PowerShell</a>, and use whichever terminal you like afterwards.</p>
 </div>
 </div>
 </section>
@@ -373,19 +373,19 @@ Windows.</p>"></a>, and use whichever terminal you like afterwards.</p>
 <h3 class="anchored" data-anchor-id="clone-your-setup-repository">Clone your setup repository</h3>
 <p>I have created a repository for you in the organization, named <code>setup-USERNAME</code> with your GitHub username in place of USERNAME. It holds a small public dataset and one R script, and it is where every test before the day runs.</p>
 <ol type="1">
-<li>Open the organization page, <a href="https://github.com/agentsforsci-ghe/">https://github.com/agentsforsci-ghe/</a>, and find <code>setup-USERNAME</code> in the list of <a class="gl" href="../glossary.html#gl-repository" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="repository" data-bs-content="<p>A repository is the folder for one project, together with the full
+<li>Open the organization page, <a href="https://github.com/agentsforsci-ghe/">https://github.com/agentsforsci-ghe/</a>, and find <code>setup-USERNAME</code> in the list of <a href="../glossary.html#gl-repository" class="gl" data-bs-title="repository" data-bs-content="<p>A repository is the folder for one project, together with the full
 record of every change made to the files in it. Git keeps the record in
 a hidden part of the folder. As a rule, one project gets one
-repository.</p>">repositories</a>. Use the search field on that page if the list is long.</li>
+repository.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">repositories</a>. Use the search field on that page if the list is long.</li>
 <li>Open it, click the green <strong>Code</strong> button, and copy the HTTPS URL.</li>
-<li>In RStudio, choose <strong>File, New Project, Version Control, Git</strong>, paste the URL, and under <strong>Create project as subdirectory of</strong> browse to <code>Documents/gitrepos/gh-org-agentsforsci-ghe</code>, creating that folder if it does not exist yet. Then click <strong>Create Project</strong>. This is the same <a class="gl" href="../glossary.html#gl-clone" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="clone" data-bs-content="<p>To clone a repository means to download a full copy of it from GitHub
+<li>In RStudio, choose <strong>File, New Project, Version Control, Git</strong>, paste the URL, and under <strong>Create project as subdirectory of</strong> browse to <code>Documents/gitrepos/gh-org-agentsforsci-ghe</code>, creating that folder if it does not exist yet. Then click <strong>Create Project</strong>. This is the same <a href="../glossary.html#gl-clone" class="gl" data-bs-title="clone" data-bs-content="<p>To clone a repository means to download a full copy of it from GitHub
 onto your own computer, including the record of every change ever made
 to it. You clone by running git clone in a terminal, or through your
-editor’s own Git menu.</p>"></a> you did in the first workshop; the <a href="https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html">instructions from then</a> still apply, screenshots included.</li>
+editor’s own Git menu.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">clone</a> you did in the first workshop; the <a href="https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html">instructions from then</a> still apply, screenshots included.</li>
 </ol>
-<p>RStudio opens the new project. The Files pane at the bottom right shows <code>01-read-data.R</code>, a <code>data</code> folder, and a <a class="gl" href="../glossary.html#gl-readme" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="readme" data-bs-content="<p>A README is a text file that explains what a project is and how to
+<p>RStudio opens the new project. The Files pane at the bottom right shows <code>01-read-data.R</code>, a <code>data</code> folder, and a <a href="../glossary.html#gl-readme" class="gl" data-bs-title="readme" data-bs-content="<p>A README is a text file that explains what a project is and how to
 use it. GitHub shows the file named README.md on the front page of the
-repository.</p>"></a>.</p>
+repository.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">README</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -396,10 +396,10 @@ repository.</p>"></a>.</p>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The folder structure from the first workshop carries on. Every Git repository lives under <code>Documents/gitrepos</code>, in one folder per GitHub organization named <code>gh-org-</code> plus the organization, and one folder per personal account named <code>gh-</code> plus the username. So this workshop’s repositories go into <code>gh-org-agentsforsci-ghe</code>, next to the <code>gh-org-gitforsci-ghe</code> folder from July, and a personal website cloned from your own account would go into <code>gh-rainbow-train</code>, with your username in place of <code>rainbow-train</code>. Keep <code>gitrepos</code> out of folders that sync to a <a class="gl" href="../glossary.html#gl-cloud" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="cloud" data-bs-content="<p>Computers, storage, and services that you reach over the internet
+<p>The folder structure from the first workshop carries on. Every Git repository lives under <code>Documents/gitrepos</code>, in one folder per GitHub organization named <code>gh-org-</code> plus the organization, and one folder per personal account named <code>gh-</code> plus the username. So this workshop’s repositories go into <code>gh-org-agentsforsci-ghe</code>, next to the <code>gh-org-gitforsci-ghe</code> folder from July, and a personal website cloned from your own account would go into <code>gh-rainbow-train</code>, with your username in place of <code>rainbow-train</code>. Keep <code>gitrepos</code> out of folders that sync to a <a href="../glossary.html#gl-cloud" class="gl" data-bs-title="cloud" data-bs-content="<p>Computers, storage, and services that you reach over the internet
 instead of running on your own machine. When we say GitHub stores your
 repository in the cloud, we mean it stores the repository on GitHub’s
-servers.</p>"></a> drive.</p>
+servers.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">cloud</a> drive.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -429,9 +429,9 @@ servers.</p>"></a> drive.</p>
 <p>Open File Explorer and open the folder you just created. Right-click an empty area inside the folder and choose <strong>Open in Terminal</strong>. On Windows 10, hold Shift while right-clicking and choose <strong>Open PowerShell window here</strong>. <strong>Open Git Bash here</strong>, which Git for Windows added to the same menu, works as well.</p>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<p>With the project open, choose <strong>Tools, Terminal, New Terminal</strong>. A Terminal tab appears next to the <a class="gl" href="../glossary.html#gl-console" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="console" data-bs-content="<p>The pane in RStudio where you type R commands and see their output,
+<p>With the project open, choose <strong>Tools, Terminal, New Terminal</strong>. A Terminal tab appears next to the <a href="../glossary.html#gl-console" class="gl" data-bs-title="console" data-bs-content="<p>The pane in RStudio where you type R commands and see their output,
 at the bottom left by default, with a &amp;gt; prompt. It is not the
-Terminal tab next to it, which runs shell commands rather than R.</p>"></a>, already inside the project folder. It works on both systems, and it is the slow, cramped option: use it only when the other two fail.</p>
+Terminal tab next to it, which runs shell commands rather than R.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">Console</a>, already inside the project folder. It works on both systems, and it is the slow, cramped option: use it only when the other two fail.</p>
 </div>
 </div>
 </div>
@@ -444,11 +444,11 @@ Terminal tab next to it, which runs shell commands rather than R.</p>"></a>, alr
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>The first start asks you to pick a colour theme, then opens your browser to log in. Log in with the account from Part 1. If the browser does not open, press <code>c</code> to copy the login link and paste it into a browser yourself. GHE members: if asked which organization to use, pick <strong>Global Health Engineering</strong>.</p></li>
 <li><p>Back in the terminal, type <code>/status</code> and press Enter. It shows which account you are logged in with. Check that it is the one you intended.</p></li>
-<li><p>Look at the bottom line of the window, where Claude Code shows its permission mode. On the Team, Pro and Max plans it starts in <strong>auto mode</strong>: a built-in check approves ordinary actions on its own and asks you only when something looks risky. Pressing <strong>Shift+Tab</strong> switches to <strong>manual mode</strong>, where it asks before every command. Either is fine for the pre-work. On the workshop day we work in <a class="gl" href="../glossary.html#gl-auto-mode" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="auto mode" data-bs-content="<p>The permission mode Claude Code starts in on the Team, Pro and Max
+<li><p>Look at the bottom line of the window, where Claude Code shows its permission mode. On the Team, Pro and Max plans it starts in <strong>auto mode</strong>: a built-in check approves ordinary actions on its own and asks you only when something looks risky. Pressing <strong>Shift+Tab</strong> switches to <strong>manual mode</strong>, where it asks before every command. Either is fine for the pre-work. On the workshop day we work in <a href="../glossary.html#gl-auto-mode" class="gl" data-bs-title="auto mode" data-bs-content="<p>The permission mode Claude Code starts in on the Team, Pro and Max
 plans. A second model, the classifier, checks each action and lets
 ordinary ones run without asking you. It blocks actions that look
 destructive or would send data out of the repository. We work in auto
-mode on the day.</p>"></a>.</p></li>
+mode on the day.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">auto mode</a>.</p></li>
 <li><p>Say hello. Type a greeting and press Enter. You get a greeting back. That is the whole test.</p></li>
 <li><p>Type <code>/exit</code> to leave.</p></li>
 </ol>
@@ -486,9 +486,9 @@ mode on the day.</p>"></a>.</p></li>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>There is also a Claude desktop app for the Mac and for Windows. Its Code tab is Claude Code with a graphical interface: a file pane, a <a class="gl" href="../glossary.html#gl-diff" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="diff" data-bs-content="<p>A diff shows exactly what changed between two versions of a file,
+<p>There is also a Claude desktop app for the Mac and for Windows. Its Code tab is Claude Code with a graphical interface: a file pane, a <a href="../glossary.html#gl-diff" class="gl" data-bs-title="diff" data-bs-content="<p>A diff shows exactly what changed between two versions of a file,
 line by line: removed lines carry a minus, added lines a plus. Reading
-the diff is how you check what the agent did before you accept it.</p>"></a> view, a terminal built in, no command line needed. We do not use it in the workshop, so that everyone has the same thing on screen and reads the same prompts. It is an option afterwards for anyone who would rather work with the agent outside a terminal. It needs the same paid plan as Part 1 and brings its own copy of Claude Code, so Part 2 is not required for it.</p>
+the diff is how you check what the agent did before you accept it.</p>" data-bs-placement="top" data-bs-toggle="popover" data-bs-html="true" data-bs-trigger="hover focus">diff</a> view, a terminal built in, no command line needed. We do not use it in the workshop, so that everyone has the same thing on screen and reads the same prompts. It is an option afterwards for anyone who would rather work with the agent outside a terminal. It needs the same paid plan as Part 1 and brings its own copy of Claude Code, so Part 2 is not required for it.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">

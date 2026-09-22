@@ -74,11 +74,6 @@ local function to_html(value)
   return (html:gsub("%s+$", ""))
 end
 
-local function attr_escape(s)
-  s = s:gsub("&", "&amp;"):gsub('"', "&quot;"):gsub("<", "&lt;"):gsub(">", "&gt;")
-  return s
-end
-
 local function slug(term)
   local s = string.lower(term)
   s = s:gsub("[^%w]+", "-"):gsub("^%-+", ""):gsub("%-+$", "")
@@ -89,8 +84,10 @@ return {
   ["gl"] = function(args, kwargs, meta)
     local shown = pandoc.utils.stringify(args[1])
     local term = string.lower(shown)
+    -- Quarto passes an absent keyword as an empty Inlines list, not as nil.
     if kwargs.display ~= nil then
-      shown = pandoc.utils.stringify(kwargs.display)
+      local d = pandoc.utils.stringify(kwargs.display)
+      if d ~= "" then shown = d end
     end
 
     if not quarto.doc.isFormat("html:js") then
@@ -120,12 +117,17 @@ return {
 
     local _, rel = find_root()
     local href = pandoc.path.join({rel or ".", "glossary.html"}) .. "#gl-" .. slug(key)
-    local html = '<a class="gl" href="' .. href .. '"'
-      .. ' data-bs-toggle="popover" data-bs-trigger="hover focus"'
-      .. ' data-bs-html="true" data-bs-placement="top"'
-      .. ' data-bs-title="' .. attr_escape(key) .. '"'
-      .. ' data-bs-content="' .. attr_escape(to_html(entry)) .. '">'
-      .. shown .. '</a>'
-    return pandoc.RawInline("html", html)
+    -- A native Link renders correctly in every block context (a raw HTML
+    -- inline came out empty inside tight list items) and Pandoc escapes the
+    -- attribute values itself.
+    local attr = pandoc.Attr("", {"gl"}, {
+      ["data-bs-toggle"] = "popover",
+      ["data-bs-trigger"] = "hover focus",
+      ["data-bs-html"] = "true",
+      ["data-bs-placement"] = "top",
+      ["data-bs-title"] = key,
+      ["data-bs-content"] = to_html(entry)
+    })
+    return pandoc.Link({pandoc.Str(shown)}, href, "", attr)
   end
 }
