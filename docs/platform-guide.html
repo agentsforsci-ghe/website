@@ -286,8 +286,9 @@ page or a PDF, from a .qmd file. Rendering also runs the code inside the
 file. You render by running quarto render in a terminal, or by clicking
 Render in your editor.</p>"></a>, Quarto runs your code and builds the output document. Quarto knows nothing about version control.</p>
 <p><strong>Claude Code</strong> is the agent. It reads and writes files in your project folder, runs commands, and uses Git on your behalf. It runs <span class="highlight-yellow">on your computer</span>, in a <a class="gl" href="./glossary.html#gl-terminal" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-placement="top" data-bs-title="terminal" data-bs-content="<p>A window where you type commands instead of clicking. Claude Code
-runs in one. RStudio has a Terminal tab, the Mac has the Terminal app,
-and Windows has PowerShell.</p>"></a>.</p>
+runs in one. Give it a window of its own next to your editor: the
+Terminal app on the Mac, PowerShell on Windows. RStudio’s Terminal tab
+also works, but it is slow and cramped for an agent.</p>"></a>.</p>
 <p><strong>The model</strong> (Claude) is the part that does the reasoning. It runs <span class="highlight-yellow">on Anthropic’s servers</span>, not on your machine. It has no memory between sessions and no access to your files; everything it knows about your work, Claude Code had to send it.</p>
 </section>
 <section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207363616c652d62616c616e636564203e7d7d-a-rule-of-thumb" class="level2">
