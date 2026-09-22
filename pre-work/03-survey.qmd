@@ -7,9 +7,3 @@ title: "{{< fa clipboard-list >}} Step 3: Complete the pre-course survey"
 Ten minutes. The survey tells me which operating system and tools you are bringing, how much you have used AI assistants so far, and what you are curious about. The answers shape the day, and the curiosity question feeds a questions page we work through together.
 
 Complete the survey here: [{{< var survey.url >}}]({{< var survey.url >}})
-
-::: {.callout-note}
-## Why a survey when you are already in the organization
-
-I know your GitHub username from step 1. What I do not know is whether you are on macOS or Windows, whether you have used a coding {{< gl agent >}} before, and which reference manager you use. Steps 4 to 8 go differently depending on those answers, and the survey lets me prepare help for the combinations that are actually in the room.
-:::
