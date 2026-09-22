@@ -6,7 +6,7 @@ title: "{{< fa terminal >}} Step 4: Install Claude Code and log in"
 
 Claude Code is the coding {{< gl agent >}} we use on the day. It runs in a {{< gl terminal >}}, works inside the folder you start it in, reads and edits files there, and runs commands. It asks before it runs a command or changes a file, and that {{< gl permission >}} prompt is the first thing to learn to read.
 
-This step has four parts: get an account, install the program, log in once from a small repository I prepared for you, and put the Claude app on your phone for the day.
+This step has four parts: get an account, install the program, log in once from a small {{< gl repository >}} I prepared for you, and put the Claude app on your phone for the day.
 
 ## {{< fa user >}} Part 1: Your Claude account
 
@@ -22,11 +22,11 @@ Use your ETH address, not a personal one. If you already use Claude with a perso
 
 The invitation expires after three weeks. If none has arrived by the time you reach this step, tell me in the chat room.
 
-On the Team plan, what you type and what the agent reads is not used to train models, and the group, not the vendor, controls the data. That is the reason for the plan.
+On the Team plan, what you type and what the {{< gl agent >}} reads is not used to train models, and the group, not the vendor, controls the data. That is the reason for the plan.
 
 ### Everyone else
 
-Create your own account at [claude.ai](https://claude.ai) and subscribe to a paid plan for the month of the workshop. The Pro plan is enough. I suggest the Max plan for one month, since the day involves a lot of agent work and the Pro limits can run out in an afternoon. Cancel afterwards if you do not want to keep it.
+Create your own account at [claude.ai](https://claude.ai) and subscribe to a paid plan for the month of the workshop. The Pro plan is enough. I suggest the Max plan for one month, since the day involves a lot of {{< gl agent >}} work and the Pro limits can run out in an afternoon. Cancel afterwards if you do not want to keep it.
 
 Then do one thing before anything else: open [your privacy settings]({{< var claude.privacy-settings >}}) and turn **off** the setting that allows your chats and coding sessions to be used for model training. On the Free, Pro and Max plans that setting is on unless you turn it off, and it covers Claude Code sessions. With the setting off, your data is kept for 30 days instead of five years and is not used for training.
 
@@ -34,7 +34,7 @@ Then do one thing before anything else: open [your privacy settings]({{< var cla
 
 ## {{< fa download >}} Part 2: Install
 
-The installer needs nothing else on your computer. Open a terminal and paste one line.
+The installer needs nothing else on your computer. Open a {{< gl terminal >}} and paste one line.
 
 ::: {.panel-tabset}
 
@@ -58,7 +58,7 @@ Claude Code uses Git for Windows, which you installed for the first workshop, to
 
 :::
 
-Close the terminal and open a new one, so it picks up the new program. Then check the install:
+Close the {{< gl terminal >}} and open a new one, so it picks up the new program. Then check the install:
 
 ```bash
 claude --version
@@ -70,7 +70,7 @@ The first prints a version number. The second checks the installation and prints
 ::: {.callout-tip}
 ## Which terminal
 
-For the two install lines any terminal works. For working with Claude Code, give it a terminal window of its own next to your editor, not the Terminal tab inside RStudio, which is slow and cramped; Part 3 shows the layout. On the Mac, [iTerm](https://iterm2.com/) is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in {{< gl PowerShell >}}, and use whichever terminal you like afterwards.
+For the two install lines any {{< gl terminal >}} works. For working with Claude Code, give it a terminal window of its own next to your editor, not the Terminal tab inside RStudio, which is slow and cramped; Part 3 shows the layout. On the Mac, [iTerm](https://iterm2.com/) is a good alternative to the built-in Terminal; if you are interested in using it, get in touch. On Windows, run the two install lines above in {{< gl PowerShell >}}, and use whichever terminal you like afterwards.
 :::
 
 ## {{< fa right-to-bracket >}} Part 3: Clone your setup repository and log in
@@ -88,7 +88,7 @@ RStudio opens the new project. The Files pane at the bottom right shows `01-read
 ::: {.callout-note}
 ## Where repositories live
 
-The folder structure from the first workshop carries on. Every Git repository lives under `Documents/gitrepos`, in one folder per GitHub organization named `gh-org-` plus the organization, and one folder per personal account named `gh-` plus the username. So this workshop's repositories go into `gh-org-agentsforsci-ghe`, next to the `gh-org-gitforsci-ghe` folder from July, and a personal website cloned from your own account would go into `gh-rainbow-train`, with your username in place of `rainbow-train`. Keep `gitrepos` out of folders that sync to a {{< gl cloud >}} drive.
+The folder structure from the first workshop carries on. Every Git repository lives under `Documents/gitrepos`, in one folder per GitHub organization named `gh-org-` plus the organization, and one folder per personal account named `gh-` plus the username. So this workshop's {{< gl repository display="repositories" >}} go into `gh-org-agentsforsci-ghe`, next to the `gh-org-gitforsci-ghe` folder from July, and a personal website cloned from your own account would go into `gh-rainbow-train`, with your username in place of `rainbow-train`. Keep `gitrepos` out of folders that sync to a {{< gl cloud >}} drive.
 :::
 
 ::: {.callout-important}
@@ -99,13 +99,13 @@ Tell me in [the chat room]({{< var chat.room-link >}}). Creating it takes me a m
 
 ### Open a terminal at that folder
 
-Claude Code works in the folder you start it from, so the terminal has to be opened inside the setup repository. Give it a terminal window of its own and put it next to RStudio: the two windows side by side, filling the screen, the editor on one side and the agent on the other. That is the layout for the whole day. RStudio and other editors have a terminal built in, and it does work, but it is slow and cramped for an agent, so keep it as a fallback.
+Claude Code works in the folder you start it from, so the {{< gl terminal >}} has to be opened inside the setup {{< gl repository >}}. Give it a terminal window of its own and put it next to RStudio: the two windows side by side, filling the screen, the editor on one side and the {{< gl agent >}} on the other. That is the layout for the whole day. RStudio and other editors have a terminal built in, and it does work, but it is slow and cramped for an agent, so keep it as a fallback.
 
 ::: {.panel-tabset}
 
 ### macOS Finder
 
-Open Finder and go to the folder you just created, `Documents/gitrepos/gh-org-agentsforsci-ghe/setup-USERNAME`. Right-click the folder and choose **New Terminal at Folder**. A Terminal window opens inside it. If the entry is missing from the menu, look under **Services** in the same menu, or switch it on once under System Settings, Keyboard, Keyboard Shortcuts, Services, Files and Folders.
+Open Finder and go to the folder you just created, `Documents/gitrepos/gh-org-agentsforsci-ghe/setup-USERNAME`. Right-click the folder and choose **New Terminal at Folder**. A {{< gl terminal display="Terminal" >}} window opens inside it. If the entry is missing from the menu, look under **Services** in the same menu, or switch it on once under System Settings, Keyboard, Keyboard Shortcuts, Services, Files and Folders.
 
 ### Windows Explorer
 
@@ -113,7 +113,7 @@ Open File Explorer and open the folder you just created. Right-click an empty ar
 
 ### RStudio, as a fallback
 
-With the project open, choose **Tools, Terminal, New Terminal**. A Terminal tab appears next to the {{< gl Console >}}, already inside the project folder. It works on both systems, and it is the slow, cramped option: use it only when the other two fail.
+With the project open, choose **Tools, Terminal, New Terminal**. A {{< gl terminal display="Terminal" >}} tab appears next to the {{< gl Console >}}, already inside the project folder. It works on both systems, and it is the slow, cramped option: use it only when the other two fail.
 
 :::
 
@@ -121,7 +121,7 @@ Whichever way you chose, the prompt in the terminal ends with the folder name, `
 
 ### Log in
 
-1. In that terminal, start Claude Code:
+1. In that {{< gl terminal >}}, start Claude Code:
 
    ```bash
    claude
@@ -131,7 +131,7 @@ Whichever way you chose, the prompt in the terminal ends with the folder name, `
 
 3. Back in the terminal, type `/status` and press Enter. It shows which account you are logged in with. Check that it is the one you intended.
 
-4. Look at the bottom line of the window, where Claude Code shows its permission mode. On the Team, Pro and Max plans it starts in **auto mode**: a built-in check approves ordinary actions on its own and asks you only when something looks risky. Pressing **Shift+Tab** switches to **manual mode**, where it asks before every command. Either is fine for the pre-work. On the workshop day we work in {{< gl "auto mode" >}}.
+4. Look at the bottom line of the window, where Claude Code shows its {{< gl permission >}} mode. On the Team, Pro and Max plans it starts in **auto mode**: a built-in check approves ordinary actions on its own and asks you only when something looks risky. Pressing **Shift+Tab** switches to **manual mode**, where it asks before every command. Either is fine for the pre-work. On the workshop day we work in {{< gl "auto mode" >}}.
 
 5. Say hello. Type a greeting and press Enter. You get a greeting back. That is the whole test.
 
@@ -142,12 +142,12 @@ Do not ask it to do anything else yet. Step 9 is where you give it work, with th
 ::: {.callout-note}
 ## Why a setup repository and not your own
 
-The agent reads whole folders and sends what it finds to a model. Before the day, it does not see the data you committed in step 1. Every test in steps 4 to 9 runs in `setup-USERNAME`, which holds public data prepared for exactly this. We set the safety rails for your own repository together in the room.
+The {{< gl agent >}} reads whole folders and sends what it finds to a model. Before the day, it does not see the data you committed in step 1. Every test in steps 4 to 9 runs in `setup-USERNAME`, which holds public data prepared for exactly this. We set the safety rails for your own {{< gl repository >}} together in the room.
 :::
 
 ## {{< fa mobile-screen >}} Part 4: The Claude app on your phone
 
-Install the Claude app on your phone for the day. You can delete it again afterwards. We use it once, to see how work started on the laptop carries on from the phone: a session running in the terminal is handed to the app, and from there you read what the agent did, send it the next instruction, and approve what it asks, while the laptop keeps doing the work.
+Install the Claude app on your phone for the day. You can delete it again afterwards. We use it once, to see how work started on the laptop carries on from the phone: a session running in the {{< gl terminal >}} is handed to the app, and from there you read what the {{< gl agent >}} did, send it the next instruction, and approve what it asks, while the laptop keeps doing the work.
 
 1. Install the app: [App Store](https://apps.apple.com/us/app/claude-by-anthropic/id6473753684) on an iPhone, [Google Play](https://play.google.com/store/apps/details?id=com.anthropic.claude) on Android. If you have Claude Code open, typing `/mobile` shows a QR code that opens the right store.
 2. Sign in with the same account as in Part 1. GHE members use the ETH address and pick the **{{< var claude.team-org >}}** organization if asked.
@@ -156,17 +156,17 @@ Install the Claude app on your phone for the day. You can delete it again afterw
 ::: {.callout-note}
 ## The Claude desktop app
 
-There is also a Claude desktop app for the Mac and for Windows. Its Code tab is Claude Code with a graphical interface: a file pane, a {{< gl diff >}} view, a terminal built in, no command line needed. We do not use it in the workshop, so that everyone has the same thing on screen and reads the same prompts. It is an option afterwards for anyone who would rather work with the agent outside a terminal. It needs the same paid plan as Part 1 and brings its own copy of Claude Code, so Part 2 is not required for it.
+There is also a Claude desktop app for the Mac and for Windows. Its Code tab is Claude Code with a graphical interface: a file pane, a {{< gl diff >}} view, a {{< gl terminal >}} built in, no command line needed. We do not use it in the workshop, so that everyone has the same thing on screen and reads the same prompts. It is an option afterwards for anyone who would rather work with the {{< gl agent >}} outside a terminal. It needs the same paid plan as Part 1 and brings its own copy of Claude Code, so Part 2 is not required for it.
 :::
 
 ::: {.callout-important}
 ## If the login fails on the ETH network
 
-Claude Code needs to reach a handful of addresses (claude.ai, api.anthropic.com, platform.claude.com and downloads.claude.ai). If the login page never opens or the terminal reports a connection error while you are on eduroam or the ETH network, try again on a phone hotspot and tell me in the chat room which network failed.
+Claude Code needs to reach a handful of addresses (claude.ai, api.anthropic.com, platform.claude.com and downloads.claude.ai). If the login page never opens or the {{< gl terminal >}} reports a connection error while you are on eduroam or the ETH network, try again on a phone hotspot and tell me in the chat room which network failed.
 :::
 
 ::: {.callout-note}
 ## If the install fails
 
-Claude Code also exists as a website, [claude.ai/code](https://claude.ai/code), that works from your GitHub repository without anything on your laptop. It is the fallback for the day if the local install cannot be fixed. Tell me before the workshop so we can set it up together.
+Claude Code also exists as a website, [claude.ai/code](https://claude.ai/code), that works from your GitHub {{< gl repository >}} without anything on your laptop. It is the fallback for the day if the local install cannot be fixed. Tell me before the workshop so we can set it up together.
 :::

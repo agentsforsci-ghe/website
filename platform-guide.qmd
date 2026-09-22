@@ -9,13 +9,13 @@ The first half covers Git, GitHub, and Quarto, carried over from the [{{< var pr
 
 ## {{< fa wrench >}} The tools in one sentence each
 
-**Git** is a {{< gl "version control" >}} program that runs [on your computer]{.highlight-yellow}. It records the {{< gl history >}} of your files: every commit, every {{< gl branch >}}, every {{< gl merge >}}. Git works even without an internet connection.
+**Git** is a {{< gl "version control" >}} program that runs [on your computer]{.highlight-yellow}. It records the {{< gl history >}} of your files: every {{< gl commit >}}, every {{< gl branch >}}, every {{< gl merge >}}. Git works even without an internet connection.
 
 **GitHub** is a website ([github.com](https://github.com)) that hosts a copy of your Git {{< gl repository >}} [in the cloud]{.highlight-yellow}. Everything that involves other people happens here: {{< gl "pull request" display="pull requests" >}}, reviews, {{< gl issue display="issues" >}}, and forks. GitHub is built on top of Git, but it is a separate product made by a separate company.
 
 **Quarto** is a publishing program that turns a plain-text document (a `.qmd` file) into a finished report, website, or presentation. When you {{< gl render >}}, Quarto runs your code and builds the output document. Quarto knows nothing about version control.
 
-**Claude Code** is the agent. It reads and writes files in your project folder, runs commands, and uses Git on your behalf. It runs [on your computer]{.highlight-yellow}, in a {{< gl terminal >}}.
+**Claude Code** is the {{< gl agent >}}. It reads and writes files in your project folder, runs commands, and uses Git on your behalf. It runs [on your computer]{.highlight-yellow}, in a {{< gl terminal >}}.
 
 **The model** (Claude) is the part that does the reasoning. It runs [on Anthropic's servers]{.highlight-yellow}, not on your machine. It has no memory between sessions and no access to your files; everything it knows about your work, Claude Code had to send it.
 
@@ -39,7 +39,7 @@ People say "AI coding tool" for three quite different things, and the difference
 
 : {tbl-colwidths="[20,50,30]"}
 
-This workshop is about the third kind. The difference is not that the agent is cleverer; it is that it acts in a loop without asking you at every step, which is what makes it useful and what makes the record of what it did necessary.
+This workshop is about the third kind. The difference is not that the {{< gl agent >}} is cleverer; it is that it acts in a loop without asking you at every step, which is what makes it useful and what makes the record of what it did necessary.
 
 ## {{< fa table-list >}} Every action of the day, mapped
 
@@ -63,17 +63,17 @@ This workshop is about the third kind. The difference is not that the agent is c
 
 : {tbl-colwidths="[30,28,27,15]"}
 
-A dash (—) in the command column means there is [no command for it at all]{.highlight-yellow}: that action only exists on the website or in the agent's own interface.
+A dash (—) in the command column means there is [no command for it at all]{.highlight-yellow}: that action only exists on the website or in the {{< gl agent >}}'s own interface.
 
-Notice the last three rows. When the agent {{< gl commit display="commits" >}}, it is running the same `git commit` you ran yourself in July. Nothing new is happening to your repository. That is the point: [the agent is inside the workflow you already know]{.highlight-yellow}, which is why you can review its work the same way you review a colleague's.
+Notice the last three rows. When the agent {{< gl commit display="commits" >}}, it is running the same `git commit` you ran yourself in July. Nothing new is happening to your {{< gl repository >}}. That is the point: [the agent is inside the workflow you already know]{.highlight-yellow}, which is why you can review its work the same way you review a colleague's.
 
 ## {{< fa plug >}} Where MCP fits
 
-You will hear **MCP** (Model Context Protocol) mentioned. It is a way of giving the agent access to something outside your project folder, such as a reference manager or a running {{< gl "R session" >}}. The pre-work sets up two such connections: one to your R session in step 6, one to your Zotero library in step 8.
+You will hear **MCP** (Model Context Protocol) mentioned. It is a way of giving the {{< gl agent >}} access to something outside your project folder, such as a reference manager or a running {{< gl "R session" >}}. The pre-work sets up two such connections: one to your R session in step 6, one to your Zotero library in step 8.
 
 ## {{< fa triangle-exclamation >}} Common mix-ups
 
-**Claude Code is not the model.** Claude Code is the program on your computer that reads files, runs commands, and asks {{< gl permission >}}. The model is the thing on Anthropic's {{< gl server display="servers" >}} that decides what to do. When the agent does something odd, it is usually worth asking which of the two is responsible: a wrong decision is the model, a refused action is Claude Code doing its job.
+**Claude Code is not the model.** Claude Code is the program on your computer that reads files, runs commands, and asks {{< gl permission >}}. The model is the thing on Anthropic's {{< gl server display="servers" >}} that decides what to do. When the {{< gl agent >}} does something odd, it is usually worth asking which of the two is responsible: a wrong decision is the model, a refused action is Claude Code doing its job.
 
 **The agent is not remembering you.** Each request sends the whole conversation again, because the model keeps nothing between requests. This is why a long session costs more than a short one, and why starting fresh sometimes fixes a session that has gone in circles.
 
@@ -81,6 +81,6 @@ You will hear **MCP** (Model Context Protocol) mentioned. It is a way of giving 
 
 **Commit is not push.** Unchanged from July. The agent committing means the change is saved on your computer. Until something pushes, nobody else can see it.
 
-**An agent using Git does not make the work traceable on its own.** The history is only useful if the commits are honest about what changed and who asked for it. Letting an agent write commits is highly effective, because it describes the changes well. Those are part of the transparency and provenance questions the workshop works on. 
+**An agent using Git does not make the work traceable on its own.** The {{< gl history >}} is only useful if the {{< gl commit display="commits" >}} are honest about what changed and who asked for it. Letting an agent write commits is highly effective, because it describes the changes well. Those are part of the transparency and provenance questions the workshop works on. 
 
 If a term on this page is unfamiliar, look it up in the [glossary](glossary.qmd).

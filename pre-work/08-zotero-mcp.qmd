@@ -10,13 +10,13 @@ Zotero has to be running whenever the agent uses it.
 
 ## {{< fa download >}} Part 1: Install
 
-zotero-mcp is a Python program. The installer below, called {{< gl uv >}}, takes care of Python for you.
+{{< gl zotero-mcp >}} is a Python program. The installer below, called {{< gl uv >}}, takes care of Python for you.
 
 ::: {.panel-tabset}
 
 ### macOS
 
-Open the {{< gl terminal display="Terminal" >}} app (any folder is fine), copy the line below, paste it after the prompt, and press Enter. It prints where uv was installed:
+Open the {{< gl terminal display="Terminal" >}} app (any folder is fine), copy the line below, paste it after the prompt, and press Enter. It prints where {{< gl uv >}} was installed:
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -32,7 +32,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 :::
 
-Close the terminal and open a new one, so the new installer is found. Then install the program, in the terminal:
+Close the {{< gl terminal >}} and open a new one, so the new installer is found. Then install the program, in the terminal:
 
 ```bash
 uv tool install zotero-mcp-server
@@ -46,7 +46,7 @@ zotero-mcp version
 
 ## {{< fa plug >}} Part 2: Register it with Claude Code
 
-Open a terminal (any folder is fine, the setting is not tied to a folder), copy this line, paste it after the prompt, and press Enter:
+Open a {{< gl terminal >}} (any folder is fine, the setting is not tied to a folder), copy this line, paste it after the prompt, and press Enter:
 
 ```bash
 claude mcp add -s user zotero -e ZOTERO_LOCAL=true -- zotero-mcp
@@ -62,14 +62,14 @@ The `zotero` line should end in **Connected**. If it says it failed to connect, 
 
 ## {{< fa vial >}} Part 3: Try it
 
-Keep Zotero open. Open a terminal at your setup {{< gl repository >}} (as in step 4), start `claude`, and ask something your library can answer, for example:
+Keep Zotero open. Open a {{< gl terminal >}} at your setup {{< gl repository >}} (as in step 4), start `claude`, and ask something your library can answer, for example:
 
 > Which items in my Zotero library are about sanitation?
 
-If Claude Code asks before using the zotero tool, read the prompt and allow it; in {{< gl "auto mode" >}} it runs without asking. The answer lists items from your own library, with titles and citation keys. If it answers that it cannot reach Zotero, the app is not running or the Advanced setting from step 7 is off; fix that and ask again.
+If Claude Code asks before using the zotero tool, read the prompt and allow it; in {{< gl "auto mode" >}} it runs without asking. The answer lists items from your own library, with titles and {{< gl "citation key" display="citation keys" >}}. If it answers that it cannot reach Zotero, the app is not running or the Advanced setting from step 7 is off; fix that and ask again.
 
 ::: {.callout-note}
 ## What you do not need
 
-The zotero-mcp project offers extras for semantic search and PDF page images. The base install is enough for the workshop. Leave the extras out.
+The {{< gl zotero-mcp >}} project offers extras for semantic search and PDF page images. The base install is enough for the workshop. Leave the extras out.
 :::

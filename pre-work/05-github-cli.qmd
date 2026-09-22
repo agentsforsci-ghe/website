@@ -12,7 +12,7 @@ On the day, the {{< gl agent >}} opens {{< gl issue display="issues" >}} and {{<
 
 ### macOS
 
-The GitHub CLI comes through {{< gl Homebrew >}}, the package manager for the Mac. If you do not have Homebrew yet, go to [brew.sh](https://brew.sh/), copy the install line shown at the top of that page, paste it into Terminal, press Enter, and follow the prompts. It asks for your Mac password and takes a few minutes. Then, in the same Terminal window, install the GitHub CLI:
+The {{< gl "GitHub CLI" >}} comes through {{< gl Homebrew >}}, the package manager for the Mac. If you do not have Homebrew yet, go to [brew.sh](https://brew.sh/), copy the install line shown at the top of that page, paste it into {{< gl terminal display="Terminal" >}}, press Enter, and follow the prompts. It asks for your Mac password and takes a few minutes. Then, in the same Terminal window, install the GitHub CLI:
 
 ```bash
 brew install gh
@@ -26,7 +26,7 @@ Open {{< gl PowerShell >}} (as in step 4), paste this line, and press Enter:
 winget install --id GitHub.cli --source winget
 ```
 
-Close the terminal and open a new window afterwards, so the new program is found.
+Close the {{< gl terminal >}} and open a new window afterwards, so the new program is found.
 
 :::
 
@@ -44,7 +44,7 @@ Check it worked:
 gh auth status
 ```
 
-Then open a terminal at your setup repository (as in step 4) and run one command that only works when GitHub is reachable:
+Then open a terminal at your setup {{< gl repository >}} (as in step 4) and run one command that only works when GitHub is reachable:
 
 ```bash
 gh repo view
@@ -55,14 +55,14 @@ It prints the name and {{< gl README >}} of `setup-USERNAME`.
 ::: {.callout-note}
 ## The token from the first workshop
 
-The {{< gl "personal access token" >}} you created for the first workshop keeps working for RStudio. The GitHub CLI has its own login, which is what you just did. The two do not interfere.
+The {{< gl "personal access token" >}} you created for the first workshop keeps working for RStudio. The {{< gl "GitHub CLI" >}} has its own login, which is what you just did. The two do not interfere.
 :::
 
 ## {{< fa code-branch >}} Part 2: A `dev` branch
 
-The working pattern for the day is that changes land on a branch called `dev`, get reviewed in a pull request, and reach `main` through the {{< gl merge >}}. Create the branch now so it is there when the agent starts working.
+The working pattern for the day is that changes land on a {{< gl branch >}} called `dev`, get reviewed in a {{< gl "pull request" >}}, and reach `main` through the {{< gl merge >}}. Create the branch now so it is there when the {{< gl agent >}} starts working.
 
-Create it on your own repository from step 1, the one with your data, which is where the day's work happens. Open that project in RStudio with **File, Open Project**.
+Create it on your own {{< gl repository >}} from step 1, the one with your data, which is where the day's work happens. Open that project in RStudio with **File, Open Project**.
 
 In the {{< gl "Git pane" >}}, click the **New Branch** button. Name it `dev`, leave **Sync branch with remote** ticked, and click **Create**. RStudio creates the branch, switches to it, and pushes it to GitHub.
 
@@ -71,11 +71,11 @@ Check on GitHub: the branch menu on your repository page now lists `main` and `d
 ::: {.callout-note}
 ## Not using RStudio
 
-Create a branch called `dev` and {{< gl push >}} it with whatever tool you prefer. The name is what matters.
+Create a {{< gl branch >}} called `dev` and {{< gl push >}} it with whatever tool you prefer. The name is what matters.
 :::
 
 ::: {.callout-note}
 ## Announced for the day: two GHE skills
 
-During the workshop we install two small {{< gl skill display="skills" >}} written at Global Health Engineering, one that turns the agent's changes into a {{< gl commit >}} with a record of what the agent did, and one that opens a pull request from `dev` into `main`. They are installed in Claude Code with two commands, take a minute, and can be removed again after the day. Nothing to do now. If you are curious, they live at [{{< var skills.repo-short >}}]({{< var skills.repo >}}).
+During the workshop we install two small {{< gl skill display="skills" >}} written at Global Health Engineering, one that turns the {{< gl agent >}}'s changes into a {{< gl commit >}} with a record of what the agent did, and one that opens a {{< gl "pull request" >}} from `dev` into `main`. They are installed in Claude Code with two commands, take a minute, and can be removed again after the day. Nothing to do now. If you are curious, they live at [{{< var skills.repo-short >}}]({{< var skills.repo >}}).
 :::

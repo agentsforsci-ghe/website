@@ -22,7 +22,7 @@ You can see which address GitHub has for you under [Settings, Emails](https://gi
 
 ## Create the repository
 
-Once you are a member, create a new repository in the [{{< var course.short-title >}} organization]({{< var course.github-org >}}).
+Once you are a member, create a new {{< gl repository >}} in the [{{< var course.short-title >}} organization]({{< var course.github-org >}}).
 
 The name should broadly reflect what you work with, following three rules:
 
@@ -43,13 +43,13 @@ Two settings to choose on the same screen:
 
 ## Clone it
 
-Clone the repository to your computer, the same way you did in the first workshop, into `Documents/gitrepos/gh-org-agentsforsci-ghe`, next to the `gh-org-gitforsci-ghe` folder from July. One folder per GitHub organization under `gitrepos` is the convention we keep.
+{{< gl clone display="Clone" >}} the {{< gl repository >}} to your computer, the same way you did in the first workshop, into `Documents/gitrepos/gh-org-agentsforsci-ghe`, next to the `gh-org-gitforsci-ghe` folder from July. One folder per GitHub organization under `gitrepos` is the convention we keep.
 
 If you would like to walk through it again, the instructions are still online: [cloning a repository]({{< var prerequisite.site >}}pre-work/06a-clone-repo.html).
 
 ## Add a folder called `data`
 
-Inside your cloned repository, create a folder named `data`, and put the dataset you plan to work with into it.
+Inside your cloned {{< gl repository >}}, create a folder named `data`, and put the dataset you plan to work with into it.
 
 **What to bring.** Something real from your own research, small enough to look at in one sitting. Several files are okay with a few hundred to a few thousand rows and columns you can explain. It does not need to be tidy or finished. Messy real data could be very useful here. Any file format is okay: CSV or XLSX, also PDF and DOCX, or JSON, etc.
 
@@ -58,7 +58,7 @@ Inside your cloned repository, create a folder named `data`, and put the dataset
 
 Personal and sensitive data never go into a Git repository, private {{< gl repository display="repositories" >}} included. Git {{< gl history >}} is permanent, and a later visibility change, a new collaborator, or a {{< gl push >}} to the wrong remote can expose it.
 
-Do not commit names, recruitment or participant data, health data, signed consent, or anything that identifies a person in combination with other columns.
+Do not {{< gl commit >}} names, recruitment or participant data, health data, signed consent, or anything that identifies a person in combination with other columns.
 
 This matters more with an {{< gl agent >}} than without one: a coding agent reads whole directories and sends file contents to a model, so protected data in the folder can leave your machine without you deciding to send it.
 
@@ -73,11 +73,11 @@ Get in touch with me directly and we will sort something out before the workshop
 
 ## Commit and push
 
-{{< gl stage display="Stage" >}} the data, commit it with a clear message, and push to GitHub. Then open your repository in the browser and check the file is actually there.
+{{< gl stage display="Stage" >}} the data, {{< gl commit >}} it with a clear message, and {{< gl push >}} to GitHub. Then open your {{< gl repository >}} in the browser and check the file is actually there.
 
 ## Open an issue
 
-Once the data is committed and pushed, open an {{< gl issue >}} on your own repository:
+Once the data is committed and pushed, open an {{< gl issue >}} on your own {{< gl repository >}}:
 
 - **Title:** `Data added`
 - **Body:** one or two sentences saying what the data is and where it came from
@@ -88,5 +88,5 @@ That issue is how I know you are ready, and the description is the beginning of 
 ::: {.callout-important}
 ## All of this by {{< var due.repo >}}
 
-If anything blocks you, open the issue anyway, describe what went wrong, and assign it to me. A problem found now is half an hour of work; the same problem found on the morning of the workshop costs you the session.
+If anything blocks you, open the {{< gl issue >}} anyway, describe what went wrong, and assign it to me. A problem found now is half an hour of work; the same problem found on the morning of the workshop costs you the session.
 :::

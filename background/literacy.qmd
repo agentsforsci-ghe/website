@@ -9,7 +9,7 @@ Every model produces some defective output. Useful use therefore requires enough
 
 Cory Doctorow's corollary is uncomfortable and worth stating plainly [@doctorow2026discernment]: a student is by definition not yet an expert in the subject, so learning a subject from a chatbot is incoherent. An expert can use the tool to generate and validate material precisely because they can accept or reject what comes back.
 
-For this workshop, the practical reading is that the agent is most useful on work you could have done yourself but would rather not, and least trustworthy exactly where you cannot check it.
+For this workshop, the practical reading is that the {{< gl agent >}} is most useful on work you could have done yourself but would rather not, and least trustworthy exactly where you cannot check it.
 
 ## {{< fa magnifying-glass >}} The question that matters
 
@@ -29,7 +29,7 @@ This is not an argument against using {{< gl agent display="agents" >}}. It is a
 
 ## {{< fa file-lines >}} Write down what you know about your data
 
-If you use an agent for data analysis, you have to write down what you know about the data so the agent can help. Hadley Wickham's point is that this is not new work invented for machines [@wickham2026datadict]: the data dictionary is the same documentation that always helped human colleagues, and mostly did not get written.
+If you use an {{< gl agent >}} for data analysis, you have to write down what you know about the data so the agent can help. Hadley Wickham's point is that this is not new work invented for machines [@wickham2026datadict]: the data dictionary is the same documentation that always helped human colleagues, and mostly did not get written.
 
 His working method keeps three things in sync: the cleaning script, a data dictionary, and the data file itself, with a {{< gl commit >}} after each AI-assisted edit.
 
@@ -38,5 +38,5 @@ The workshop tests this directly. The same agent gets a plain CSV, then gets the
 ::: {.callout-note}
 ## The short version
 
-The agent is a lever, not a substitute for knowing your field. It works best where you could check it and worst where you cannot. Documentation you write for a colleague turns out to be documentation the agent needs too.
+The {{< gl agent >}} is a lever, not a substitute for knowing your field. It works best where you could check it and worst where you cannot. Documentation you write for a colleague turns out to be documentation the agent needs too.
 :::

@@ -9,7 +9,7 @@ Twenty minutes. This runs everything from steps 4 to 8 once, in the order the da
 ::: {.callout-note}
 ## Why not your own repository
 
-The {{< gl agent >}} does not see your data before the day. The rule from step 1 about what goes into a repository applies to what an agent reads, and we set the safety rails together in the room. Your setup repository holds a few hundred rows of public WASH investment data instead, which is enough to test every connection.
+The {{< gl agent >}} does not see your data before the day. The rule from step 1 about what goes into a {{< gl repository >}} applies to what an agent reads, and we set the safety rails together in the room. Your setup repository holds a few hundred rows of public WASH investment data instead, which is enough to test every connection.
 :::
 
 ## 1. Both connections
@@ -24,17 +24,17 @@ Both `r-mcptools` and `zotero` end in **Connected**. If one does not, go back to
 
 ## 2. Put the data in your R session
 
-In the Files pane at the bottom right, click `01-read-data.R` to open it, then click **Source** at the top right of the editor. There is nothing to edit. The Console prints a line starting with "Loaded", and the **Environment** pane at the top right lists two objects, `investments` and `investments_by_country`.
+In the Files pane at the bottom right, click `01-read-data.R` to open it, then click **Source** at the top right of the editor. There is nothing to edit. The {{< gl Console >}} prints a line starting with "Loaded", and the **Environment** pane at the top right lists two objects, `investments` and `investments_by_country`.
 
 ## 3. A read-only run in plan mode
 
-In that terminal, start Claude Code:
+In that {{< gl terminal >}}, start Claude Code:
 
 ```bash
 claude
 ```
 
-Press **Shift+Tab** until the status line at the bottom says **plan mode**. In {{< gl "plan mode" >}} the agent reads and proposes. It does not change anything. Ask these three things, one at a time, and wait for each answer:
+Press **Shift+Tab** until the status line at the bottom says **plan mode**. In {{< gl "plan mode" >}} the {{< gl agent >}} reads and proposes. It does not change anything. Ask these three things, one at a time, and wait for each answer:
 
 > Read the files in the data folder and describe what is in them. Do not change anything.
 
@@ -47,24 +47,24 @@ When Claude Code asks before using a tool, read the prompt and allow it. In {{< 
 ::: {.callout-note}
 ## If it proposes something you did not ask for
 
-Say no. In plan mode the agent may only read. Anything else is a good story for the chat room.
+Say no. In {{< gl "plan mode" >}} the {{< gl agent >}} may only read. Anything else is a good story for the chat room.
 :::
 
 ## 4. A file and a commit
 
-Press **Shift+Tab** to leave plan mode. Ask:
+Press **Shift+Tab** to leave {{< gl "plan mode" >}}. Ask:
 
 > Create a file called SETUP.md at the top of this repository. In it, list my operating system, the Claude Code version, whether the r-mcptools and zotero servers are connected, and a short summary of what is in the data folder. Do not run git.
 
-The agent shows the file it wants to write. Read it and accept. Then type `/exit`.
+The {{< gl agent >}} shows the file it wants to write. Read it and accept. Then type `/exit`.
 
-{{< gl commit display="Commit" >}} and {{< gl push >}} the file yourself, the way you did in the first workshop: in the RStudio {{< gl "Git pane" >}}, tick `SETUP.md` to {{< gl stage >}} it, click **Commit**, write "Add setup report" as the message, click **Commit**, then **Push**. Open the repository on GitHub and check that `SETUP.md` is there.
+{{< gl commit display="Commit" >}} and {{< gl push >}} the file yourself, the way you did in the first workshop: in the RStudio {{< gl "Git pane" >}}, tick `SETUP.md` to {{< gl stage >}} it, click **Commit**, write "Add setup report" as the message, click **Commit**, then **Push**. Open the {{< gl repository >}} on GitHub and check that `SETUP.md` is there.
 
 Today you do every commit yourself. On the day you hand the agent one step at a time.
 
 ## 5. Report done
 
-Open an issue on your setup repository with the title **Setup complete**, assigned to `{{< var github-handle >}}`, saying which of the steps 4 to 9 worked and which did not. You can have the agent do it. Start `claude` again in the terminal and ask:
+Open an {{< gl issue >}} on your setup {{< gl repository >}} with the title **Setup complete**, assigned to `{{< var github-handle >}}`, saying which of the steps 4 to 9 worked and which did not. You can have the {{< gl agent >}} do it. Start `claude` again in the {{< gl terminal >}} and ask:
 
 > Open an issue on this repository titled "Setup complete", assign it to {{< var github-handle >}}, and write in the body which of the pre-work steps 4 to 9 worked for me and which did not.
 
@@ -73,7 +73,7 @@ It uses the {{< gl "GitHub CLI" >}} from step 5 for that. Allow the prompt if on
 ::: {.callout-important}
 ## If anything failed
 
-Open the issue anyway, describe what failed and at which step, and assign it to me. A problem found now is half an hour of work. The same problem found on the morning of the workshop costs you the session.
+Open the {{< gl issue >}} anyway, describe what failed and at which step, and assign it to me. A problem found now is half an hour of work. The same problem found on the morning of the workshop costs you the session.
 :::
 
 Thank you for working through all of this. See you at {{< var session.event-location >}}.

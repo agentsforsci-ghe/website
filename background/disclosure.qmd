@@ -29,7 +29,7 @@ The test for "substantive" is whether a disciplinary peer would reasonably need 
 
 ## {{< fa scale-balanced >}} Two positions to argue out
 
-**Disclose if AI was used at all.** A threshold each author judges for themselves invites under-reporting, particularly given evidence that disclosing AI use lowers reader trust [@weaver2026disclosure], which is a standing incentive to say nothing. A version-controlled workflow logs every use anyway, so the marginal cost of full disclosure is near zero. Beyond the declaration, hand over the artifacts: {{< gl commit >}} {{< gl history >}}, prompts, review record.
+**Disclose if AI was used at all.** A threshold each author judges for themselves invites under-reporting, particularly given evidence that disclosing AI use lowers reader trust [@weaver2026disclosure], which is a standing incentive to say nothing. A version-controlled workflow logs every use anyway, so the marginal cost of full {{< gl disclosure >}} is near zero. Beyond the {{< gl declaration >}}, hand over the artifacts: {{< gl commit >}} {{< gl history >}}, prompts, review record.
 
 **A yes-or-no flag loses the intent.** The transparency page makes the argument in full: a mark cannot tell translation of your own ideas from ghostwriting [@carpenter2026watermarking]. Two consequences follow for disclosure. Readers will read the flag as a quality signal the way they read journal rank, and a binary requirement singles out AI as uniquely requiring negative disclosure, which may lock in a practice that looks strange once these tools are ordinary.
 

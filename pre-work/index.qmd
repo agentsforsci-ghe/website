@@ -35,5 +35,5 @@ Around two hours in total, and it does not have to happen in one sitting. Step 7
 ::: {.callout-important}
 ## If you get stuck
 
-Do not spend an evening fighting it. Ask in [the chat room]({{< var chat.room-link >}}), or open an {{< gl issue >}} on your repository and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.
+Do not spend an evening fighting it. Ask in [the chat room]({{< var chat.room-link >}}), or open an {{< gl issue >}} on your {{< gl repository >}} and assign it to me. Getting you unstuck before the day is the whole point of having pre-work.
 :::
