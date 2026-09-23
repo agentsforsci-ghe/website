@@ -52,7 +52,7 @@ account. Expect to adapt to what the agent shows live.
   in every block. Countdowns on the slides equal the minutes in this plan.
 - Protected blocks: sprint 1 ship (11:40, may spill into lunch), the partner
   review of issues (13:58), the walk with the agent (14:20), round 5 (15:06,
-  twenty minutes, not less), sprint 2 ship (15:30), disclosure (16:00), the
+  twenty minutes at least), sprint 2 ship (15:30), disclosure (16:00), the
   zine (16:30). If behind, cut in this order: the buffers; be the agent (6 to
   4); the studio (35 to 25, never less, "at least two cards" becomes "at least
   one"); two sides of the room (6 to 5); the 18-task checklist (8 to 5); the
@@ -324,7 +324,8 @@ Browser, claude.ai chat, the report PDF from
 - `/remote-control`. Scan the QR code with the Claude app. Send "Status?" from
   the phone, read the answer on the laptop. Close the session on the phone.
   Sticky note when the answer arrived. Anyone whose pairing fails goes to the
-  helper in the break; the fallback for 14:10 is set now, not then. Remote
+  helper in the break; the fallback for 14:10 is settled now, with a break
+  behind it. Remote
   Control has to be enabled in the Team admin settings before the day; it is
   off by default.
 - Break slide with question 1, restart 10:35.

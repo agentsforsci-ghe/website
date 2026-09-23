@@ -50,7 +50,7 @@ Elements kept by three or more reviewers, and where they came from:
 | The variable table on the opening slide | A | 3 |
 | Pair talk after plan mode, and commit the plan | A, B | 3 |
 | 18-task checklist in two colours, sprint 1 against sprint 2 | C | 4 |
-| Round 5 given 20 minutes, not 10 | all asked | 5 |
+| Round 5 given 20 minutes | all asked | 5 |
 | Declaration over both releases, naming who reviewed what | C | 3 |
 | Disclosure block protected at 30 minutes | A, C | 2, kept for the working group |
 
