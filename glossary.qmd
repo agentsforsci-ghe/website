@@ -285,10 +285,10 @@ The programs the pre-work installs or relies on, and the words the instructions 
     :::
 
 [mcptools]{#gl-mcptools}
-:   An R package that lets the agent reach into your running RStudio session: it can look at the objects there and run R code in it. Step 6 installs it and registers it with Claude Code.
+:   An R package that lets the agent reach into your running RStudio session. Together with the btw package, which supplies the tools, the agent can look at the objects there. Step 6 installs both and registers them with Claude Code.
 
     ::: {.glossary-technical}
-    [mcptools](https://posit-dev.github.io/mcptools/) implements the Model Context Protocol in R. `mcp_server()` runs the server that Claude Code talks to; `mcp_session()` registers a live R session with it.
+    [mcptools](https://posit-dev.github.io/mcptools/) implements the Model Context Protocol in R. `mcp_server()` runs the server that Claude Code talks to; `mcp_session()` registers a live R session with it. Without a `tools` argument the server offers only the tools to list and select sessions, so step 6 starts it through [btw](https://posit-dev.github.io/btw/)'s `btw_mcp_server()`, which adds tools for inspecting objects.
     :::
 
 [PowerShell]{#gl-powershell}

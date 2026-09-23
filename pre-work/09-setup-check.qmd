@@ -20,9 +20,11 @@ Open a {{< gl terminal >}} at the setup folder, the way you did in step 4, and p
 claude mcp list
 ```
 
-Both `r-mcptools` and `zotero` end in **Connected**. If one does not, go back to step 6 or step 8 before continuing.
+Both `r-btw` and `zotero` end in **Connected**. If one does not, go back to step 6 or step 8 before continuing.
 
-## 2. Put the data in your R session
+## 2. Put the sample data in your R session
+
+This uses the setup {{< gl repository >}} from step 4, `setup-USERNAME`, not the repository with your own data from step 1. Check the project name at the top right of the RStudio window: it reads `setup`. If it shows another project, switch with **File, Open Project** and pick `setup.Rproj` in the setup folder.
 
 In the Files pane at the bottom right, click `01-read-data.R` to open it, then click **Source** at the top right of the editor. There is nothing to edit. The {{< gl Console >}} prints a line starting with "Loaded", and the **Environment** pane at the top right lists two objects, `investments` and `investments_by_country`.
 
@@ -54,7 +56,7 @@ Say no. In {{< gl "plan mode" >}} the {{< gl agent >}} may only read. Anything e
 
 Press **Shift+Tab** to leave {{< gl "plan mode" >}}. Ask:
 
-> Create a file called SETUP.md at the top of this repository. In it, list my operating system, the Claude Code version, whether the r-mcptools and zotero servers are connected, and a short summary of what is in the data folder. Do not run git.
+> Create a file called SETUP.md at the top of this repository. In it, list my operating system, the Claude Code version, whether the r-btw and zotero servers are connected, and a short summary of what is in the data folder. Do not run git.
 
 The {{< gl agent >}} shows the file it wants to write. Read it and accept. Then type `/exit`.
 
