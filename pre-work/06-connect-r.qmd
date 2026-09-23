@@ -4,14 +4,14 @@ title: "{{< fa brands r-project >}} Step 6: Connect your R session"
 
 [Due by **{{< var due.setup >}}**]{.highlight-yellow}
 
-Claude Code has no {{< gl "R session" >}} of its own. It can run a script or {{< gl render >}} a Quarto document, but it cannot see the data frame you have open in RStudio. The {{< gl mcptools >}} package changes that. It lets the {{< gl agent >}} run R code inside your running RStudio session and look at the objects there, which is how it inspects your data on the day. This connection is specific to R and RStudio, see the note on the [Prepare](index.qmd) page. If you work in another language or editor, the agent still works, but this step may not apply.
+Claude Code has no {{< gl "R session" >}} of its own. It can run a script or {{< gl render >}} a Quarto document, but it cannot see the data frame you have open in RStudio. Two packages change that. {{< gl mcptools >}} connects the {{< gl agent >}} to your running RStudio session, and btw gives it the tools to look at the objects there, which is how it inspects your data on the day. This connection is specific to R and RStudio, see the note on the [Prepare](index.qmd) page. If you work in another language or editor, the agent still works, but this step may not apply.
 
-## {{< fa download >}} Part 1: Install the package
+## {{< fa download >}} Part 1: Install the packages
 
 Open RStudio. The **Console** is the pane at the bottom left, the one with a `>` prompt. Click into it, type the line below, and press Enter. Wait until the download messages stop and the prompt is back:
 
 ```r
-install.packages("mcptools")
+install.packages(c("mcptools", "btw"))
 ```
 
 ## {{< fa plug >}} Part 2: Register it with Claude Code
@@ -23,7 +23,7 @@ install.packages("mcptools")
 Open the {{< gl terminal display="Terminal" >}} app (Spotlight, then type Terminal). Any folder is fine, this setting is not tied to a folder. Copy the line below, paste it after the prompt, and press Enter. It answers with a line saying the server was added:
 
 ```bash
-claude mcp add -s user r-mcptools -- Rscript -e "mcptools::mcp_server()"
+claude mcp add -s user r-btw -- Rscript -e "btw::btw_mcp_server(list('env', 'docs', 'sessioninfo'))"
 ```
 
 ### Windows
@@ -37,9 +37,19 @@ normalizePath(file.path(R.home("bin"), "Rscript.exe"))
 It prints something like `C:\Program Files\R\R-4.5.1\bin\Rscript.exe`. Use your path, in quotes, in PowerShell:
 
 ```powershell
-claude mcp add -s user r-mcptools -- "C:\Program Files\R\R-4.5.1\bin\Rscript.exe" -e "mcptools::mcp_server()"
+claude mcp add -s user r-btw -- "C:\Program Files\R\R-4.5.1\bin\Rscript.exe" -e "btw::btw_mcp_server(list('env', 'docs', 'sessioninfo'))"
 ```
 
+:::
+
+::: {.callout-note}
+## Registered `r-mcptools` in an earlier version of this page?
+
+The earlier line started `mcptools::mcp_server()` without any tools, so the {{< gl agent >}} could find your session but not see inside it. Remove it and run the line above instead:
+
+```bash
+claude mcp remove -s user r-mcptools
+```
 :::
 
 Check, in the same terminal:
@@ -48,7 +58,7 @@ Check, in the same terminal:
 claude mcp list
 ```
 
-The line for `r-mcptools` should end in **Connected**.
+The line for `r-btw` should end in **Connected**.
 
 ## {{< fa gear >}} Part 3: Let R announce its sessions
 
@@ -78,10 +88,10 @@ Check the **Environment** pane at the top right of RStudio: `x` is listed there 
 
 > What objects are in my R session?
 
-If Claude Code asks before using the r-mcptools tool, read the prompt and allow it; in {{< gl "auto mode" >}} it runs without asking. The answer names `x` and describes it as a data frame with 6 rows and 11 columns. On the day you do the same with the workshop data loaded.
+If Claude Code asks before using an r-btw tool, read the prompt and allow it; in {{< gl "auto mode" >}} it runs without asking. The answer names `x` and describes it as a data frame with 6 rows and 11 columns. On the day you do the same with the workshop data loaded.
 
 ::: {.callout-important}
 ## What this connection means
 
-With this in place the {{< gl agent >}} can run any R code in your live session, including code that removes objects or writes files. In {{< gl "manual mode" >}} the {{< gl permission >}} prompt is what stands between it and that; in {{< gl "auto mode" >}} a built-in check takes that role, and it does not know your data. Read what the agent proposes, or what it did, rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.
+With this in place the {{< gl agent >}} can read every object in your live session, and whatever it reads is sent to the model. In {{< gl "manual mode" >}} the {{< gl permission >}} prompt is what stands between it and that; in {{< gl "auto mode" >}} a built-in check takes that role, and it does not know your data. Read what the agent proposes, or what it did, rather than approving by reflex. That habit is the point of the workshop, and this is where you start it.
 :::

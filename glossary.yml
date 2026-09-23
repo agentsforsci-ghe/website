@@ -77,7 +77,7 @@ markup language: |
 mcp: |
   MCP is a standard way of giving an agent access to something outside your project folder, such as a reference manager, a database, or an issue tracker. A piece of software that offers such access is called an MCP server. We use one on the day to search literature through Zotero.
 mcptools: |
-  An R package that lets the agent reach into your running RStudio session: it can look at the objects there and run R code in it. Step 6 installs it and registers it with Claude Code.
+  An R package that lets the agent reach into your running RStudio session. Together with the btw package, which supplies the tools, the agent can look at the objects there. Step 6 installs both and registers them with Claude Code.
 merge: |
   To merge means to combine the changes from one branch into another, so that one branch now contains the work of both. In the workshop, the merge happens when a reviewer accepts a pull request on GitHub.
 merge conflict: |
