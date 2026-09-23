@@ -6,7 +6,7 @@ title: "{{< fa terminal >}} Step 4: Install Claude Code and log in"
 
 Claude Code is the coding {{< gl agent >}} we use on the day. It runs in a {{< gl terminal >}}, works inside the folder you start it in, reads and edits files there, and runs commands. It asks before it runs a command or changes a file, and that {{< gl permission >}} prompt is the first thing to learn to read.
 
-This step has four parts: get an account, install the program, log in once from a small {{< gl repository >}} I prepared for you, and put the Claude app on your phone for the day.
+This step has four parts: get an account, install the program, log in once from a small {{< gl repository >}} I prepared for you, and, optionally, put the Claude app on your phone for the day.
 
 ## {{< fa user >}} Part 1: Your Claude account
 
@@ -147,7 +147,7 @@ The {{< gl agent >}} reads whole folders and sends what it finds to a model. Bef
 
 ## {{< fa mobile-screen >}} Part 4: The Claude app on your phone
 
-Install the Claude app on your phone for the day. You can delete it again afterwards. We use it once, to see how work started on the laptop carries on from the phone: a session running in the {{< gl terminal >}} is handed to the app, and from there you read what the {{< gl agent >}} did, send it the next instruction, and approve what it asks, while the laptop keeps doing the work.
+This part is optional. Without it you watch the demonstration instead, and nothing else in the workshop depends on the app. If you want to try it yourself, install the Claude app on your phone for the day. You can delete it again afterwards. We use it once, to see how work started on the laptop carries on from the phone: a session running in the {{< gl terminal >}} is handed to the app, and from there you read what the {{< gl agent >}} did, send it the next instruction, and approve what it asks, while the laptop keeps doing the work.
 
 1. Install the app: [App Store](https://apps.apple.com/us/app/claude-by-anthropic/id6473753684) on an iPhone, [Google Play](https://play.google.com/store/apps/details?id=com.anthropic.claude) on Android. If you have Claude Code open, typing `/mobile` shows a QR code that opens the right store.
 2. Sign in with the same account as in Part 1. GHE members use the ETH address and pick the **{{< var claude.team-org >}}** organization if asked.
