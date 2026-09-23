@@ -129,8 +129,6 @@ Items that were already in your library may carry keys from the old default form
 
 From now on, selecting an item and pressing **Cmd+Shift+C** on macOS or **Ctrl+Shift+C** on Windows copies its {{< gl "citation key" >}}.
 
-If the shortcut copies nothing, or copies a full reference instead of the key, quit Zotero and open it again. The new Quick Copy format only takes effect after a restart.
-
 ## Check
 
 Save one more paper with the {{< gl "Zotero Connector" display="connector" >}}. Within two seconds its right pane shows a **Citation Key** in the shape `authorYEARword`. Select it, press the {{< gl "Quick Copy" >}} shortcut, paste into any text editor, and you get the bare key. Edit the title, wait two seconds, and confirm the key did not change. If all three worked, the setup is complete, and step 8 connects it to the {{< gl agent >}}.
