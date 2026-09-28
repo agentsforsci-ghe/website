@@ -1,6 +1,7 @@
 ---
 title: "Lesson plan (run of show), combined layout"
-subtitle: "{{< var course.short-title >}}, {{< var session.date-long >}}, {{< var session.time-range >}}, {{< var session.event-location >}}"
+# Written out: the var shortcode does not reach front matter (_variables.yml).
+subtitle: "agentsforsci-ghe, Tuesday, 29 September 2026, 08:30 to 17:00, Villa Hatt, ETH Zurich"
 format:
   pdf:
     papersize: a4
@@ -46,9 +47,10 @@ repository with a commit after each, a pull request you merge yourself, and
 release v0.1.0, rough on purpose. Sprint 2, after lunch, runs the path
 properly on one question: a plan that runs while the room is on the floor,
 an editable plan file, issues a colleague reviews before any code exists, a
-run that continues from the phone, a review that leaves TODO markers for the
-agent, a pull request your partner reviews, a CLAUDE.md, release v0.2.0, and
-one declaration over both records. The day closes with a zine.
+run that continues from the phone, a review that leaves TODO lines for the
+agent, a pull request your partner comments on, a CLAUDE.md and a new session
+that works on those comments, release v0.2.0, and one declaration over both
+records. The day closes with a zine.
 
 The focus of this plan is the **My turn** blocks: exactly what I do at the
 keyboard while the room watches. My-turn slides say only "sit back and watch";
@@ -75,12 +77,12 @@ account. Expect to adapt to what the agent shows live.
 - Three questions per person on the printed question sheet: one you know the
   answer to (question 1, to check it, sharpened by a neighbour), one you do not
   (question 2, to explore), one the data cannot answer (question 3, to catch
-  it). The framed run at 10:44 uses question 1 for everyone. The cards use 2
+  it). The framed run at 10:39 uses question 1 for everyone. The cards use 2
   and 3. Sprint 2 is a choice: question 1 done properly, or question 2. The
-  three questions go into the repository by hand at 09:55 as `questions.md`.
+  three questions go into the repository by hand at 10:06 as `questions.md`.
 - Every round ends with the same self-check: would I merge this?
 - Every run gets one row on the day sheet ("fill one row"). The sheet is handed
-  out at 10:43, right before the first run.
+  out at 10:37, right before the first run.
 - Reflect right after the activity; the block after a break opens with the
   question that went into the break.
 - Bounded regroup after each Your turn: 3 min, then park-and-pair, 1:1 fix at the
@@ -89,24 +91,29 @@ account. Expect to adapt to what the agent shows live.
   slide, 3 min of questions in any block with five or more slides, a buffer line
   in every block. Countdowns on the slides equal the minutes in this plan.
 - Protected blocks: sprint 1 ship (11:40, may spill into lunch), the partner
-  review of issues (13:50), the walk with the agent (14:20), round 5 (15:08,
-  twenty minutes at least), sprint 2 ship (15:30), disclosure (16:00), the
-  zine (16:30). If behind, cut in this order: the buffers; be the agent (6 to
-  4); the studio (35 to 25, never less, "at least two cards" becomes "at least
-  one"); the TODO pass (14 to 10, "at least one TODO, one commit"); two sides
-  of the room (6 to 5); the 18-task checklist (8 to 5); the declaration demo
-  (5 to 0, two volunteers read theirs instead).
+  review of issues (13:50), the walk with the agent (14:20), round 5 (15:11,
+  twenty minutes at least), sprint 2 ship (15:36), disclosure (16:06), the
+  zine (16:30). If behind, cut in this order: the buffers; the studio (35 to
+  25, never less, "at least two cards" becomes "at least one"); the TODO pass
+  (14 to 10, "at least one TODO"); two sides of the room (6 to 5); the
+  declaration demo (5 to 0, two volunteers read theirs instead).
 - Git facts that bite: the pre-work never creates a `dev` branch, so the rails
-  say `git switch -c dev` (and `git switch dev` for anyone who has one). The
-  open-pr skill pushes `dev` first and reports how many commits went up, so no
-  step that opens a pull request needs a push before it. The hand-over prompt
-  and the rerun still end with a plain push, because no pull request is opened
-  there. The open-pr skill ends by offering to run the test plan: both slides
-  say "answer no".
+  prompt asks the agent to create `dev` and switch to it, or to switch to it
+  if it already exists. The open-pr skill pushes `dev` first and reports how
+  many commits went up, so no step that opens a pull request needs a push
+  before it. The hand-over prompt and the round 5 prompt still end with a
+  plain push, because no pull request is opened there. The open-pr skill ends
+  by offering to run the test plan: both slides say "answer no".
+- Sprint 2 stays on `dev` and builds on v0.1.0. It starts with `/clear`, so the
+  conversation is clean; the sprint 1 files are meant to be there. A branch per
+  sprint would still hold the sprint 1 work, and the open-pr skill only opens
+  pull requests from `dev`.
+- Every prompt a learner types is in `workshop/element-prompts.md`, in slide
+  order. Paste each one into the chat room when its step comes up.
 - A hand-edited file sends the commit skill down its mixed path, which hands
   the commit back to the learner as a typed command. The two hand edits of the
-  day (the plan line at 13:28, the TODO comments at 14:43) are therefore
-  committed by hand in RStudio, the way the three questions were at 09:55. The
+  day (the plan line at 13:28, the TODO lines at 14:46) are therefore
+  committed by hand in RStudio, the way the three questions were at 10:06. The
   agent's work goes through the skill.
 - A rough v0.1.0 is the point. If the manuscript does not render before lunch,
   the release goes out without the DOCX and the release note says so. Lunch is
@@ -117,7 +124,7 @@ account. Expect to adapt to what the agent shows live.
   `~/Documents/gitrepos/gh-org-agentsforsci-ghe/<repo>` for repositories in this
   organisation, `~/Documents/gitrepos/gh-rainbow-train/<repo>` for a personal
   account. `gh-org-*` and `gh-*` sit next to each other inside `gitrepos`.
-- The day runs in auto mode. At the rails (09:50) everyone presses Shift+Tab
+- The day runs in auto mode. At the rails (09:57) everyone presses Shift+Tab
   with me until the line under the box says "auto mode on", so the key has been
   seen once. Plan mode is entered the same way at 13:00 and left again at 13:28.
 
@@ -128,20 +135,19 @@ Free means the participant chooses what to ask.
 
 | Block | Activity | Where | Min | Free |
 |-----|---------------------------|--------|----|------|
-| 10:37 | Be the agent, on the setup repository | Claude chat | 6 | |
-| 10:44 | The framed run, then commit | Claude Code | 18 | |
-| 11:05 | Studio cards, a commit after each that changed a file | Claude Code | 35 | 35 |
+| 10:39 | The framed run, then commit | Claude Code | 18 | |
+| 11:02 | Studio cards, a commit after each that changed a file | Claude Code | 35 | 35 |
 | 11:40 | Ship v0.1.0 | Claude Code, RStudio | 16 | |
 | 13:00 | Start the plan (runs during the floor exercise) | Claude Code | 2 | question is theirs |
 | 13:28 | Plan mode: reject, editable plan, two commits | Claude Code, RStudio | 12 | |
 | 13:44 | The issues | Claude Code | 6 | |
 | 14:10 | Hand-over to the phone | Claude Code, phone | 8 | |
 | 14:20 | Walk with your agent | Phone | 20 | |
-| 14:43 | Finish, TODOs, open the pull request | Claude Code, RStudio | 14 | |
-| 15:08 | Round 5: CLAUDE.md, new session, rerun, pairs | Claude Code | 20 | |
-| 15:30 | Ship v0.2.0 | Claude Code, RStudio | 10 | |
-| 15:45 | Your declaration over both releases | Claude Code | 10 | |
-| | **Total** | | **177** | **35** |
+| 14:46 | TODOs, then the pull request | Claude Code, RStudio | 14 | |
+| 15:11 | Round 5: CLAUDE.md, new session, review comments, pairs | Claude Code | 20 | |
+| 15:36 | Ship v0.2.0 | Claude Code, RStudio | 10 | |
+| 15:51 | Your declaration over both releases | Claude Code | 10 | |
+| | **Total** | | **171** | **35** |
 
 For comparison: the first layout had 118 minutes (none free), the studio
 layout 155 (45 free), the sprints layout 148 (25 free), and the first cut of
@@ -160,13 +166,13 @@ not eat the block; the sprint 1 ship may spill into lunch.
 - Yellow sticky notes on every seat (done-signal).
 - Masking tape for the spectrum line and the stakes ladder on the floor.
 - Printed from `workshop/studio-cards.qmd`: one question sheet per person, one
-  set of studio cards per table, one day sheet per person (eleven rows), one
-  18-task checklist per person. Two pen colours per person for the 16:00 block.
+  set of studio cards per table, one day sheet per person (eleven rows).
+- Markers at the question wall, for the dots at the stand-up (11:17).
 - For the zine: A3 paper, one sheet per person plus spares; scissors, one pair
   per two people; coloured pens; stickers; a speaker for music; three flipcharts
-  and markers (also used for the 16:00 block); tape.
-- Snacks for 10:15 and 14:20. The helper lays them out during the chat demo
-  (09:44) and during the partner review of issues (13:50), never during an Our
+  and markers (also used for the disclosure block); tape.
+- Snacks for 10:20 and 14:20. The helper lays them out during the chat demo
+  (09:49) and during the partner review of issues (13:50), never during an Our
   turn script. Coffee and water all day.
 - Power strips for the laptops that stay inside at 14:20.
 
@@ -174,12 +180,12 @@ not eat the block; the sprint 1 ship may spill into lunch.
 
 | Break | Time | Question on the slide | Opens the next block as |
 |------|--------|--------------------------|--------------------|
-| Snack 1 | 10:15-10:35 | What in your data folder would you not want a model to read? | One last look at `data/` before the first run |
+| Snack 1 | 10:20-10:35 | What in your data folder would you not want a model to read? | One last look at `data/` before the first run |
 | Lunch | 12:00-13:00 | Of the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over? Pick your sprint 2 question. | The plan starts, then the stakes ladder |
-| Snack 2 | 14:20-14:40 | Walk with your agent: what does it ask you, and what does it decide alone? | One note each, kept for the oversight flipchart at 16:00 |
+| Snack 2 | 14:20-14:40 | Walk with your agent: what does it ask you, and what does it decide alone? | One note each, kept for the oversight flipchart at 16:12 |
 
 Breaks outdoors where weather allows. The helper takes the list of parked
-participants into every break: failed installs at 10:15, failed renders and
+participants into every break: failed installs at 10:20, failed renders and
 releases at 12:00, failed pairings at 14:20.
 
 {{< pagebreak >}}
@@ -201,13 +207,13 @@ releases at 12:00, failed pairings at 14:20.
 - [ ] Usage: the dry run cost about USD 55 API-equivalent for one learner over
   the day. On the Team plan that is quota. Check the plan's limits against the
   room size.
-- [ ] Print: question sheets, studio cards, day sheets, 18-task checklists,
-  this run sheet.
+- [ ] Print: question sheets, studio cards, day sheets, this run sheet.
 - [ ] Rehearse: the chat answer to question 3 (helminth eggs), the DOCX unzip
-  on screen, a screenshot pasted into the Claude Code box and an image dragged
-  in, the two "CSV against data package" screenshots, and the plan-mode frame
-  with the "plan only" line on the demo repository (not yet measured; the
-  frame without it took 18.5 minutes).
+  on screen, a screenshot dragged into the Claude Code box, the two "CSV
+  against data package" screenshots, the plan-mode frame with the "plan only"
+  line on the demo repository (not yet measured; the frame without it took
+  18.5 minutes), and round 5 on the demo repository: the agent reads the pull
+  request's review comments through gh and replies to each.
 - [ ] Confirm the folder template on the "Inside a repository" slide.
 
 {{< pagebreak >}}
@@ -229,23 +235,25 @@ releases at 12:00, failed pairings at 14:20.
 
 {{< pagebreak >}}
 
-## Opening: security, literacy, transparency, disclosure (09:00-09:40, 40 min)
+## Opening: security, literacy, transparency, disclosure (09:00-09:45, 45 min)
 
-Slides: Welcome -> Two room rules -> Spectrum line -> Four questions -> How
-the day works -> The variable -> Two rungs today -> Learning objectives ->
-Schedule -> Your turn (question bank) -> The instructor's questions.
+Slides: Welcome -> Two room rules -> Spectrum line -> The goal today -> Four
+questions -> How the day works -> The variable -> Two rungs today -> Learning
+objectives -> Schedule -> Your turn (question bank) -> The instructor's
+questions.
 
 | Min | What |
 |---|---|
 | 3 | Welcome and the two room rules |
 | 8 | Spectrum line |
-| 6 | Four questions, two neighbour minutes |
+| 2 | The goal today |
+| 7 | Four questions, two minutes per partner |
 | 4 | How the day works, the variable table |
 | 2 | Two rungs today |
 | 3 | Objectives |
 | 2 | Schedule |
 | 10 | Your turn: question bank |
-| 2 | Buffer |
+| 4 | Buffer |
 
 ### Welcome and the two rules (3 min)
 
@@ -263,13 +271,22 @@ Schedule -> Your turn (question bank) -> The instructor's questions.
   voices from each end.
 - Re-sort by "how much do I trust the output". Two voices again. Sit down.
 
-### Four questions (6 min)
+### The goal today (2 min)
+
+- Right after the spectrum line, while the room has just seen how wide it is.
+  The goal today is not a finished data analysis. The goal is the same level
+  for everyone: working with Claude Code and the ideas behind it (plan mode,
+  issues, review, CLAUDE.md, skills, the record). For some the tool is new,
+  some already use these ideas. The experienced are welcome to explore
+  further, after following the instructions first.
+
+### Four questions (7 min, countdown 4)
 
 - One slide, four questions: what must never go in; how do I know this is
   right; could I recreate it if the AI were gone; what do I say, and to whom.
-- Two neighbour minutes (countdown 2): pick the question that worries you most
-  and say why. The background pages carry the arguments; the slide carries the
-  questions.
+- Two minutes per partner (countdown 4), the pairs swap on their own: pick the
+  question that worries you most and say why. The background pages carry the
+  arguments; the slide carries the questions.
 
 ### How the day works, the variable, two rungs (6 min)
 
@@ -279,9 +296,9 @@ Schedule -> Your turn (question bank) -> The instructor's questions.
   a chat thread in an account against files and a commit in a repository.
   Sprint 1 is rows 1 and 2, sprint 2 is rows 3 to 5.
 - Two rungs today: the stakes ladder in its compact form. The workflow is not
-  the same for every task; which rung a task gets is the first decision. Sprint
-  1 is rung 1, sprint 2 is rung 3. The physical version is on the floor at
-  13:02.
+  the same for every task; which rung a task gets is the first decision. That
+  sentence is a note that appears after the last rung. Sprint 1 is rung 1,
+  sprint 2 is rung 3. The physical version is on the floor at 13:02.
 
 ### Objectives and schedule (5 min)
 
@@ -294,8 +311,11 @@ Schedule -> Your turn (question bank) -> The instructor's questions.
   you already know the answer to, to check it; (2) one you do not, to explore;
   (3) one the data cannot answer, to catch it. One sentence each.
 - Swap with a neighbour, who makes question 1 20 percent more specific: which
-  column, which unit, which comparison. The sharper version goes in box 4.
-- Pin the sheet on the wall.
+  column, which unit, which comparison. The sharper version goes in box 4. Say
+  it once: being 20 percent more specific improves the result by 80 percent
+  (Wickham and Bryan, Modern R Workflow, posit::conf 2026).
+- Pin the sheet on the wall. It becomes the question wall of the stand-up at
+  11:17.
 - Then the instructor's questions on the slide: which of the 47 FSTPs meet the
   CPCB discharge standard of 30 mg/L BOD, and how does BOD removal compare across
   treatment technologies (question 1); helminth egg counts in the treated
@@ -303,37 +323,36 @@ Schedule -> Your turn (question bank) -> The instructor's questions.
 
 {{< pagebreak >}}
 
-## Current state, safety rails, the commit rule (09:40-10:15, 35 min)
+## Current state, safety rails, the commit rule (09:45-10:20, 35 min)
 
 Slides labelled "current state" for rounds 0 and 1, then the rails.
 
 Slides: Round 0 (variable) -> The steps of a paper -> Round 1 (variable) -> My
-turn (chat) -> Where did that go? -> A good question -> Our turn (safety
-rails) -> Four keys -> Our turn (one commit by hand) -> Who commits? -> Our
-turn (two skills) -> Snack break.
+turn (chat) -> Where did that go? -> Our turn (safety rails) -> Four keys ->
+Our turn (one commit by hand) -> Who commits? -> Our turn (two skills) ->
+Snack break.
 
 | Min | What |
 |---|---|
-| 3 | Rounds 0 and 1 slides, the workflow graph, neighbour minute |
+| 4 | Rounds 0 and 1 slides, the workflow graph, two neighbour minutes |
 | 6 | My turn: chat |
 | 2 | Where did that go? |
-| 2 | A good question |
 | 8 | Our turn: safety rails, Shift+Tab follow along |
 | 1 | Four keys |
-| 4 | Our turn: one commit by hand |
+| 5 | Our turn: one commit by hand |
 | 3 | Who commits, and how often |
 | 5 | Our turn: install the two skills |
 | 1 | Buffer, break slide |
 
 The helper lays out the snacks during the chat demo.
 
-### Rounds 0 and 1 (3 min)
+### Rounds 0 and 1 (4 min, countdown 2)
 
 - The steps of a paper as you do them now: the workflow graph from the
   colloquium talk. Point at the five boxes the day touches: data processing,
   data analysis, the manuscript, the repository, the release.
-- Neighbour minute (countdown 1): where does AI sit in your workflow today, if
-  anywhere?
+- Two neighbour minutes (countdown 2): where does AI sit in your workflow
+  today, if anywhere?
 
 ### My turn: round 1, chat (6 min) [DEMO SCRIPT]
 
@@ -359,41 +378,37 @@ three steps are on the slide so the room can follow.
   it. This is the last column of the variable table; everything after the
   break puts the result where a colleague can read it.
 
-### A good question (2 min)
-
-- One slide, one sourced line: being 20 percent more specific improves the
-  result by 80 percent (Wickham and Bryan, Modern R Workflow, posit::conf 2026).
-  Point back at the neighbour edit of question 1.
-
-### Our turn: safety rails (8 min)
+### Our turn: safety rails (8 min, countdown 8)
 
 - Together, step by step: open `data/` in your own repository and look once
   more against the group rule; terminal at
   `~/Documents/gitrepos/gh-org-agentsforsci-ghe/<your repo>`, not one level up
-  (the agent reads the folder it starts in); `git switch -c dev` (anyone who
-  already has a `dev` branch: `git switch dev`); `claude`.
-- Step 4 is a follow along. I press Shift+Tab on the projector, everyone
+  (the agent reads the folder it starts in); `claude`.
+- Step 3 is a follow along. I press Shift+Tab on the projector, everyone
   presses on their own screen, until the line under the box says "auto mode
   on". The cycle is auto, manual, accept edits, plan, auto. On the Team plan
   auto is the starting mode, so most screens say it already; the point is
-  that everyone has pressed the key once. Then `/context`.
+  that everyone has pressed the key once.
+- Step 4 is the first prompt of the day, and it is a small one: "Create a
+  branch called dev and switch to it. If dev already exists, switch to it."
+  The agent runs the git command. Then `/context`.
 - Sticky note when `/context` has printed and the line says auto mode on.
 
 ### Four keys (1 min)
 
 - Shift+Tab cycles the mode. Esc stops a run. Esc twice on an empty box lists
-  earlier turns to go back to. Up arrow brings back the last prompt. A
-  screenshot pastes into the box with Ctrl+V (Cmd+V in iTerm2). Checked
-  against the Claude Code docs on 24 September; drag and drop is on the
-  rehearsal list.
+  earlier turns to go back to. Up arrow brings back the last prompt. Stuck on
+  something on the screen: take a screenshot, drag it into the Claude Code
+  box, then ask for what you want. Checked against the Claude Code docs on 24
+  September; the drag and drop is on the rehearsal list.
 
-### Our turn: one commit by hand (4 min, countdown 4)
+### Our turn: one commit by hand (5 min, countdown 5)
 
 - In RStudio, on `dev`: new text file `questions.md` at the top of the
   repository, the three questions typed in, saved. Git pane: stage, message
   `docs: add my three questions`, commit. The way it was done in July.
 - Why: the agent can read the file later, the cards quote from it, and the
-  declaration at 15:45 shows one commit by hand next to the assisted ones.
+  declaration at 15:51 shows one commit by hand next to the assisted ones.
   This is rung 1 of the ladder, lived before it is named.
 
 ### Who commits, and how often (3 min)
@@ -406,7 +421,7 @@ three steps are on the slide so the room can follow.
   read and cheap to undo. One pull request per sprint, when the chunk is done.
   The pull request skill pushes first and tells you how many commits went up.
 
-### Our turn: two skills (5 min)
+### Our turn: two skills (5 min, countdown 5)
 
 - In Claude Code: `/plugin marketplace add Global-Health-Engineering/skills`,
   then `/plugin install ghe-skills@ghe-skills`, then `/exit` and `claude` again.
@@ -416,47 +431,46 @@ three steps are on the slide so the room can follow.
 
 {{< pagebreak >}}
 
-## Snack break 1 (10:15-10:35, 20 min)
+## Snack break 1 (10:20-10:35, 15 min)
 
 Question 1 on the screen. Helper fixes failed installs from a known list.
 
 {{< pagebreak >}}
 
-## Sprint 1: the loop by hand, first run, studio, ship v0.1.0 (10:35-12:00, 85 min)
+## Sprint 1: first run, studio, ship v0.1.0 (10:35-12:00, 85 min)
 
-Slides: Question 1 opener -> Your turn (be the agent) -> The day sheet ->
-Round 2 (variable) -> Your turn (the framed run, then commit) -> What
-scrolled past -> The studio (the cards) -> Your turn (the studio) -> Stand up
--> The release path -> Our turn (ship v0.1.0) -> The 18 tasks -> Lunch.
+Slides: Sprint 1 section (break question opener) -> The day sheet -> Round 2
+(variable) -> Your turn (the framed run, then commit) -> What scrolled past ->
+The studio (cards 1 to 5, cards 6 to 10) -> Your turn (the studio) -> Stand
+up (the question wall) -> The release path -> Our turn (ship v0.1.0, two
+slides) -> The 18 tasks -> Lunch.
 
 | Min | What |
 |---|---|
-| 2 | Opens with question 1, one last look at `data/` |
-| 6 | Your turn: be the agent, on the setup repository |
-| 1 | The day sheet, handed out |
+| 2 | Opens with the break question, one last look at `data/` |
+| 2 | The day sheet, handed out |
 | 18 | Your turn: the framed run, then commit |
 | 2 | What scrolled past |
-| 1 | The studio: ten cards |
-| 35 | Your turn: the studio, stand-up at minute 15 |
+| 3 | The studio cards, two slides |
+| 35 | Your turn: the studio, question wall at minute 15 |
+| 3 | Buffer |
 | 16 | The release path, Our turn: ship v0.1.0 (protected, may spill into lunch) |
 | 2 | The 18 tasks |
 | 2 | Buffer, lunch slide |
 
-### Your turn: be the agent (6 min, countdown 5)
+### Opens with the break question (2 min)
 
-- In the chat, not in Claude Code, and on the public data of the setup
-  repository from the pre-work, not your own: "I have a repository with data.
-  Ask me for the files you need to answer this question, one at a time, and I
-  will paste what you ask for: what is in this data?" Paste by hand. Feel the
-  loop.
+- What in your data folder would you not want a model to read? Two answers,
+  then one last look at `data/` before the first run.
 
-### The day sheet (1 min)
+### The day sheet (2 min)
 
-- One slide with the first two rows. The helper hands the sheets out while it
-  is up. Columns: what happened, what it assumed, minutes it ran, would I merge
-  this, committed. One row per run all day: the first run, each card, the plan,
-  the issues, the TODOs, the rerun, the declaration. The sheet is the material
-  for the 13:00 reflect, the 16:00 checklist and page 2 of the zine.
+- One slide with the first two rows and four bullets. The helper hands the
+  sheets out while it is up. Columns: what happened, what it assumed, minutes
+  it ran, would I merge this, committed. One row per run all day: the first
+  run, each card, the plan, the issues, the TODOs, the review comments, the
+  declaration. Fill it right after the run. The sheet is the material for the
+  13:00 reflect and page 2 of the zine.
 
 ### Your turn: the framed run, then commit (18 min, countdown 15)
 
@@ -468,6 +482,9 @@ scrolled past -> The studio (the cards) -> Your turn (the studio) -> Stand up
 - Watch the tool calls. Do not intervene. When it stops: `/ghe-skills:commit`.
   Read the message it proposes. Fill the first row of the day sheet. Sticky
   note when the commit is in.
+- Step 4 is for everyone who is done early: open the manuscript `.qmd` and
+  read it, ask for changes if you like, and run `/ghe-skills:commit` after
+  every prompt that changed a file.
 - The dry run measured 12 minutes for a first run on a 180-page PDF, plus 1.5
   for the skill and a minute of reading; the block holds that with two minutes
   to spare. A CSV should come in under 5.
@@ -475,10 +492,17 @@ scrolled past -> The studio (the cards) -> Your turn (the studio) -> Stand up
 ### What scrolled past (2 min)
 
 - Every line was a tool call: read a file, list a folder, write a file, run a
-  command. That is the loop they did by hand in the chat, run by a program on
-  the laptop; the model on the server only sees what that program sends. The
-  result is files and a commit in the repository, against a thread in an
-  account.
+  command. Each line is a step they would otherwise do by hand: open a file,
+  copy it into a chat, paste the answer back. Here a program on the laptop does
+  it; the model on the server only sees what that program sends. The result is
+  files and a commit in the repository, against a thread in an account.
+
+### The studio cards (3 min)
+
+- Two slides, five cards each. Every card has a one-line version a novice can
+  type as a starter prompt; the printed card has the full prompt. The second
+  slide ends with the invitation to go further: ask it about what just
+  happened, why did you do that, what does this line do.
 
 ### Your turn: the studio (35 min, countdown 35) [PROTECTED, FLOOR 25]
 
@@ -490,8 +514,10 @@ scrolled past -> The studio (the cards) -> Your turn (the studio) -> Stand up
 - Rules inside the studio: if it asks, answer; stuck for two minutes, raise a
   hand and take another card. Cards 6 and 7 for the stuck (nothing can break),
   cards 8, 9 and 10 for the fast.
-- At minute 15: everyone stands up, reads one other screen for one minute, sits
-  down. There is no gallery walk; this is it.
+- At minute 15 (11:17), the question wall (countdown 4, inside the 35):
+  everyone stands up, walks to the wall with the question sheets, reads three
+  questions that are not theirs and puts a dot next to the one they would most
+  like answered. Back to the cards.
 - Instructor and helper circulate. Fix nothing longer than two minutes; park
   and move on. Anyone whose card 4 did not render is on the helper's lunch
   list.
@@ -500,7 +526,8 @@ scrolled past -> The studio (the cards) -> Your turn (the studio) -> Stand up
 
 Step by step, everyone at the same time. The release path slide first (1):
 pull request merged into main, manuscript rendered in RStudio, tag, release
-with the artifact, dev synced. Sprint 1 does it rough.
+with the artifact, dev synced. Sprint 1 does it rough. Two slides, countdown
+7 each: steps 1 to 3 (the pull request), then 4 to 7 (the release).
 
 1. `/ghe-skills:open-pr`. The skill pushes first and reports "Pushed N commits
    to origin/dev". When it offers the test plan, answer no. The first pull
@@ -530,8 +557,7 @@ is not up by 12:05 goes on the helper's lunch list and eats first.
 - The 18 tasks slide with the screenshot from the ISC consultation: the
   proposed standard for declaring AI use lists 18 research tasks and you tick
   the ones AI touched. One sentence: this is the taxonomy that came out of
-  round 1, it is the printed checklist at 16:00, and the lunch question uses
-  it. (2)
+  round 1, and the lunch question uses it. (2)
 - Lunch slide with the lunch question and "pick your sprint 2 question over
   lunch: question 1 done properly, or question 2". Countdown 60. (2)
 
@@ -560,13 +586,21 @@ files).
 
 ### Our turn: start your plan (2 min, countdown 2) [SCRIPT]
 
-1. Shift+Tab until the line says plan mode on. (Everyone, me included, on the
-   demo repository.)
-2. The morning frame with the sprint 2 question, plus one line: "Plan only. Do
-   not run any analysis or write any file yet."
-3. Leave it running. Come to the floor.
+1. `/clear`: a new conversation, the files stay. (Everyone, me included, on
+   the demo repository.)
+2. Shift+Tab until the line says plan mode on.
+3. The morning frame with the sprint 2 question, plus one line, spelled out on
+   the slide: "Answer the following question using the data in this
+   repository and write up the result as a Quarto manuscript that renders to
+   DOCX: <your sprint 2 question>. Plan only. Do not run any analysis or write
+   any file yet."
+4. Leave it running. Stand up and walk to the tape lines on the floor.
 
-Why: in the dry run the frame alone took 18.5 minutes in plan mode on a PDF,
+Sprint 2 stays on `dev` and builds on v0.1.0. `/clear` gives it a clean
+conversation; the sprint 1 files are meant to be there, and the reflect and
+the plan-mode rejection work on them.
+
+Why the plan starts now: in the dry run the frame alone took 18.5 minutes in plan mode on a PDF,
 because the agent ran the analysis to plan it. The plan now runs while the
 room is on the ladder, the way the walk covers the hand-over. The "plan only"
 line is meant to shorten it and has not been measured; whatever is back at
@@ -662,7 +696,7 @@ room, in plan mode, with the "plan only" line.
    it. (1)
 5. `/ghe-skills:commit`. The agent's plan, one assisted commit. (1)
 6. In RStudio: change one line of the plan file, save. Stage, commit by hand,
-   as at 09:55. Two commits: the skill's for the agent's plan, mine for my
+   as at 10:06. Two commits: the skill's for the agent's plan, mine for my
    line. A plan is worth a commit. (1)
 
 ### Your turn: plan mode (12 min, countdown 12)
@@ -704,7 +738,7 @@ room, in plan mode, with the "plan only" line.
 
 Slides: Our turn (hand-over) -> Snack break 2 (walk with your agent).
 
-### Our turn: hand-over to the phone (8 min) [SCRIPT]
+### Our turn: hand-over to the phone (8 min, countdown 8) [SCRIPT]
 
 Step by step, everyone at the same time. First pairing of the day; the helper
 checked the app and the account at the door.
@@ -735,54 +769,72 @@ laptops.
 
 {{< pagebreak >}}
 
-## Sprint 2: review, CLAUDE.md, rerun, merge (14:40-15:30, 50 min)
+## Sprint 2: review, CLAUDE.md, review comments, merge (14:40-15:36, 56 min)
 
-Slides: Question 3 opener -> Your turn (finish, review, open the pull request)
--> Partner review (approve, do not merge yet) -> CLAUDE.md -> CLAUDE.md
-against a skill -> CSV against data package (one slide) -> Round 5 (variable)
--> Your turn (round 5) -> Partner merges.
+Slides: Question 3 opener -> My turn (one TODO) -> Your turn (TODOs, then the
+pull request) -> Partner review (three comments, do not merge yet) ->
+CLAUDE.md -> CLAUDE.md against a skill -> CSV against data package (one
+slide) -> Round 5 (variable) -> Your turn (round 5) -> Partner merges.
 
 | Min | What |
 |---|---|
 | 3 | Opens with question 3, one note each for the oversight flipchart |
-| 14 | Your turn: finish, TODOs, open the pull request |
-| 8 | Partner review: approve, do not merge yet |
+| 3 | My turn: one TODO |
+| 14 | Your turn: TODOs, then the pull request |
+| 8 | Partner review: three comments, do not merge yet |
 | 3 | CLAUDE.md, CLAUDE.md against a skill, CSV against data package |
 | 20 | Your turn: round 5 (protected) |
-| 2 | Partner merges |
+| 5 | Partner merges |
 
 ### What did it ask you? (3 min)
 
 - Opens with question 3: what did it ask you, what did it decide alone. One
-  note each, one line, collected and kept for the third flipchart at 16:00
-  (how do you describe the oversight that was actually done).
+  note each, one line, collected and kept for the third flipchart at 16:12
+  (what a paper should say about who checked the AI's work, and how).
 - From the dry run, if the room is quiet: it asked nothing and decided four
   things alone. The author name from the machine account; reading the Zotero
   database file when the tool returned nothing; moving the sprint 1 files
   during the restructure; keeping three older charts.
 
-### Your turn: finish, review, open the pull request (14 min, countdown 14)
+### My turn: one TODO (3 min) [DEMO SCRIPT]
+
+On `fstp-eval-india`, branch `dev`, after the run from the phone.
+
+1. In RStudio: open the manuscript. Where I would not merge it, type one plain
+   line: `TODO: name the source of the CPCB standard of 30 mg/L BOD`. No
+   comment tag needed. Save. Stage and commit by hand. (1)
+2. In Claude Code: "Work through the TODOs in the manuscript. Remove each one
+   when it is done. When all are done, run /ghe-skills:commit." Let it run and
+   point at the TODO line leaving the diff. (2)
+
+Inside a code chunk the marker is a line starting with `# TODO`.
+
+### Your turn: TODOs, then the pull request (14 min, countdown 14)
 
 1. Back at the laptop: read the diff. If the agent is not done, it finishes
    now. Commits are in (the skill ran after each issue). (3)
-2. In RStudio: open the manuscript. Wherever you would not merge it, write
-   `<!-- TODO: what has to change -->` (inside a code chunk, a line starting
-   with `# TODO`). Save. Stage and commit by hand. The human review leaves the
+2. In RStudio: open the manuscript. Wherever you would not merge it, write a
+   line `TODO: what has to change` (inside a code chunk, a line starting with
+   `# TODO`). Save. Stage and commit by hand. The human review leaves the
    markers. (4)
-3. "Work through the TODO comments in the manuscript one at a time. Remove
-   each when it is done and run /ghe-skills:commit after each." (4)
+3. "Work through the TODOs in the manuscript. Remove each one when it is done.
+   When all are done, run /ghe-skills:commit." One commit for the whole pass.
+   (4)
 4. Read the diff again. Then `/ghe-skills:open-pr`, answer no when it offers
    the test plan. The second and last pull request of the day. Sticky note
    when it is open. Fill one row. (3)
 
-Cut order if behind: at least one TODO and one commit.
+Cut order if behind: at least one TODO.
 
-### Partner review: approve, do not merge yet (8 min, countdown 8)
+### Partner review: three comments, do not merge yet (8 min, countdown 8)
 
-- Partner reviews the pull request on GitHub, every line: would I merge this?
-  Approve, or say what would have to change. Do not merge yet: round 5 adds the
-  CLAUDE.md to the same pull request, so the tag carries it. Compare with the
-  sprint 1 pull request nobody reviewed.
+- Nobody can review every line of a colleague's analysis in eight minutes.
+  The partner opens the pull request, Files changed, and leaves at least three
+  comments where they see fit: something unclear, a number to check, a
+  missing step (the + next to a line, then Add single comment). Do not approve
+  or merge yet: in round 5 the agent reads the comments and works on them, and
+  the CLAUDE.md lands in the same pull request, so the tag carries it. Compare
+  with the sprint 1 pull request nobody reviewed.
 
 ### CLAUDE.md, a skill, and the data package slide (3 min)
 
@@ -805,26 +857,33 @@ Cut order if behind: at least one TODO and one commit.
 - "Write a CLAUDE.md for this repository from what we did today: the folder
   template, the naming rules, where the codebook is, how to render the
   manuscript. Then fill data/metadata/codebook.csv for the derived table."
-  Commit. (8)
-- New session (`/exit`, `claude`). Rerun the sprint 1 frame with question 1,
-  word for word. Commit, if it has not already. "Push the dev branch." (8)
-- Pairs: the sprint 1 output next to this one. Did it follow the template
-  without being told? What did it do with work that was already done? Would I
-  merge this? (4)
-- Two things the dry run saw, to name aloud: a CLAUDE.md that says every
-  change ends with the commit skill makes the agent commit on its own (rung 3
-  of the ladder, reached by documentation alone); and the rerun verified the
-  existing answer against the PDF and added a check script instead of
-  repeating the work.
+  Then `/ghe-skills:commit`. (8)
+- New session (`/exit`, `claude`): it knows only CLAUDE.md and the files.
+  "Read the review comments on my open pull request and work on each one.
+  Reply to each comment with what you changed. Then run /ghe-skills:commit
+  and push the dev branch." (8)
+- Pairs: were your comments handled? Did it follow CLAUDE.md without being
+  told: the folders, the file names, the commit skill? Would I merge this? (4)
+- Why this replaces the word-for-word rerun: in the dry run the rerun only
+  verified the existing answer against the PDF and added a check script, so
+  it showed little. The review comments give the new session real work, and
+  whether it keeps to CLAUDE.md shows what documentation does. One thing the
+  dry run saw, to name aloud: a CLAUDE.md that says every change ends with the
+  commit skill makes the agent commit on its own (rung 3 of the ladder,
+  reached by documentation alone).
 
-### Partner merges (2 min)
+### Partner merges (5 min, countdown 5)
 
 - The pull request now carries the issues, the TODO fixes, the CLAUDE.md and
-  the rerun. The partner merges it. Sticky note when it is merged.
+  the answers to the review comments. On the partner's pull request, in small
+  steps: Conversation, find your three comments, did the agent reply, is each
+  one handled; Commits, find the commits since your review; Files changed,
+  find CLAUDE.md and read it. Would I merge this? Then merge. Sticky note when
+  it is merged.
 
 {{< pagebreak >}}
 
-## Sprint 2: ship v0.2.0, declare both (15:30-16:00, 30 min) [PROTECTED]
+## Sprint 2: ship v0.2.0, declare both (15:36-16:06, 30 min) [PROTECTED]
 
 Slides: Our turn (ship v0.2.0) -> My turn (declaration) -> Your turn (your
 declaration).
@@ -839,7 +898,8 @@ declaration).
 ### Our turn: ship v0.2.0 (10 min, countdown 10) [SCRIPT]
 
 Same script as the morning, without the pull request step (the partner merged
-it).
+it). Two slides: steps 1 and 2 (countdown 4), then steps 3 to 5 (countdown
+6).
 
 1. "Switch to main and pull." (2)
 2. In RStudio: open the manuscript, press Render. If it failed at lunch and
@@ -859,8 +919,8 @@ it).
    paying off. In the dry run: twelve commits, eight assisted, one of them
    mixed, ten prompt files. (1)
 3. Say what the record covers and what it cannot. Commits with their
-   trailers, the prompt files, the issues, the pull requests and CLAUDE.md are
-   in. The prompts behind the issue texts, the pull request bodies and the
+   trailers, the prompt files, the issues, the pull requests with their review
+   comments and CLAUDE.md are in. The prompts behind the issue texts, the pull request bodies and the
    release notes are not archived, because they changed nothing in git; the
    dry run's declaration flagged that gap itself, and a good declaration says
    so. (1)
@@ -874,40 +934,35 @@ it).
 
 {{< pagebreak >}}
 
-## Disclosure rules in the making: two records (16:00-16:30, 30 min) [PROTECTED]
+## Disclosure rules in the making: two records (16:06-16:30, 24 min) [PROTECTED]
 
 No response is written in the room. The block turns the day's two records into
 material for the GFRN AI working group.
 
-Slides: Two sides of the room -> The 18 tasks, two colours -> Three flipcharts
--> What happens next.
+Slides: Two sides of the room -> Three flipcharts -> What happens next.
 
 | Min | What |
 |---|---|
 | 6 | Two sides of the room |
-| 8 | Your turn: the 18 tasks, two colours |
 | 8 | Three flipcharts |
 | 2 | What happens next |
-| 6 | Buffer, absorbs a late ship |
+| 8 | Buffer, absorbs a late ship |
 
 ### Two sides of the room (6 min, countdown 5)
 
-- "Disclose if used at all" on one side, "a yes-or-no flag loses the intent" on
-  the other. Argue, cross over if persuaded. Use v0.1.0 and v0.2.0 as evidence:
-  the same person, the same data, two records.
-
-### Your turn: the 18 tasks, two colours (8 min, countdown 7)
-
-- Printed checklist of the proposed taxonomy, the same 18 tasks as on the
-  slide before lunch. In one colour, tick the tasks the agent touched in
-  sprint 1; in the other, sprint 2. Your declaration and your day sheet are
-  the source. Circle the ones a peer would need to know about (the
-  "substantive" test). Compare with your lunch answer.
+- The question on top: what should a paper say about AI use? Left side of the
+  room, as seen from the seats: only whether AI was used, yes or no, one rule
+  everyone can follow. Right side: a yes or no says nothing, the paper should
+  describe what the AI did and who checked it. Argue, cross over if persuaded.
+  Use v0.1.0 and v0.2.0 as evidence: the same person, the same data, two
+  records.
 
 ### Three flipcharts (8 min, countdown 7)
 
-- The consultation's open questions: placement (spread through the sections or
-  one statement), a mandatory null statement, describing oversight. One sticky
+- The consultation's open questions, in plain words: where disclosure belongs
+  (spread through the sections or one statement); whether every paper has to
+  say when no AI was used, the way it states conflicts of interest; what a
+  paper should say about who checked the AI's work, and how. One sticky
   note per person per chart, one line each, from what the two records showed.
   The notes from 14:40 (what did it ask you, what did it decide alone) go on
   the third chart.

@@ -1,15 +1,15 @@
 day,time,title,rounds
 1,08:30 - 09:00,Arrival and coffee,Setup clinic
-1,09:00 - 09:40,"Opening: security, literacy, transparency, disclosure",Your question bank
-1,09:40 - 10:15,"Current state, safety rails, the commit rule","Rounds 0 and 1, then the skills"
-1,10:15 - 10:35,Snack break,A question to take with you
-1,10:35 - 12:00,"Sprint 1: the loop by hand, first run, studio cards, ship v0.1.0","Round 2: one line, your cards, a commit each, release v0.1.0"
+1,09:00 - 09:45,"Opening: security, literacy, transparency, disclosure",Your question bank
+1,09:45 - 10:20,"Current state, safety rails, the commit rule","Rounds 0 and 1, then the skills"
+1,10:20 - 10:35,Snack break,A question to take with you
+1,10:35 - 12:00,"Sprint 1: first run, studio cards, ship v0.1.0","Round 2: one line, your cards, a commit each, release v0.1.0"
 1,12:00 - 13:00,Lunch,A question to take with you
 1,13:00 - 13:20,"Between sprints: what v0.1.0 shows, folders and files",Your plan runs while you reflect
 1,13:20 - 14:10,"Sprint 2: plan mode, issues, partner review","Rounds 3 and 4a: plan mode, issues"
 1,14:10 - 14:20,Hand-over to the phone,Round 4b starts
 1,14:20 - 14:40,Snack break: walk with your agent,Round 4b runs from your phone
-1,14:40 - 15:30,"Sprint 2: review, CLAUDE.md, rerun, merge","Round 4b: the pull request, round 5"
-1,15:30 - 16:00,"Sprint 2: ship v0.2.0, declare both",Release v0.2.0
-1,16:00 - 16:30,"Disclosure rules in the making: two records against the draft rules",Your two records against the draft rules
+1,14:40 - 15:36,"Sprint 2: review, CLAUDE.md, review comments, merge","Round 4b: the pull request, round 5"
+1,15:36 - 16:06,"Sprint 2: ship v0.2.0, declare both",Release v0.2.0
+1,16:06 - 16:30,"Disclosure rules in the making: two records against the draft rules",Your two records against the draft rules
 1,16:30 - 17:00,Close: the zine,

@@ -20,4 +20,4 @@ Two room rules from minute three. Never make another human read AI slop: read ev
 
 There is a snack break in the morning and one in the afternoon, and each break slide carries one question to take with you. The block after the break opens with it. The day closes with a zine.
 
-The schedule with the rounds is on the [overview page](../index.qmd). The [print page](studio-cards.qmd) holds the question sheet, the studio cards, the day sheet and the 18-task checklist; all four are printed for the day and online here.
+The schedule with the rounds is on the [overview page](../index.qmd). The [print page](studio-cards.qmd) holds the question sheet, the studio cards and the day sheet; all three are printed for the day and online here.
