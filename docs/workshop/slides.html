@@ -59,7 +59,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-9a75487fc9776b632c361d6ac4feae17.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-eac9d55fb7c82f9c52da933d9124fc06.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -178,24 +178,22 @@ Lars Schöbitz
 
   <p class="date">September 29, 2026</p>
 </section>
-<section class="slide level2">
-
+<section>
+<section id="welcome-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d" class="title-slide slide level1 center" data-background-color="#5c5751">
+<h1>Welcome <i class="fa-solid fa-hand" aria-label="hand"></i></h1>
 <!--
 Combined layout: the whole path twice, with the studio cards inside sprint 1.
 Every slide from the lesson plan is placed with its headline, turn type,
 icons, countdown and a notes stub. Body text is a placeholder where it says
 so. Demo scripts live in lesson-plan.qmd, not here. The question sheet, the
-cards, the day sheet and the 18 task checklist live on studio-cards.qmd and
-are printed for the day. Countdown minutes equal the minute tables in
-lesson-plan.qmd.
+cards and the day sheet live on studio-cards.qmd and are printed for the day.
+Countdown minutes equal the minute tables in lesson-plan.qmd. Every prompt a
+learner types is also in element-prompts.md, for the chat room. This comment
+sits below the first heading: above it, it made an empty slide after the
+title.
 -->
 </section>
-<section>
-<section id="welcome-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d" class="title-slide slide level1 center" data-background-color="#5c5751">
-<h1>Welcome <i class="fa-solid fa-hand" aria-label="hand"></i></h1>
-
-</section>
-<section id="welcome-back" class="slide level2 smaller">
+<section id="welcome-back" class="slide level2">
 <h2>Welcome back</h2>
 <ul>
 <li class="fragment">In July you learned the workflow: clone, commit, branch, pull request, review, merge.</li>
@@ -216,24 +214,20 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="two-room-rules" class="slide level2 smaller">
+<section id="two-room-rules" class="slide level2">
 <h2>Two room rules</h2>
-<div class="hand-purple" style="margin-top: 0.6em;">
+<div class="rule" style="margin-top: 0.6em;">
 <ol type="1">
 <li>Never make another human read AI slop.</li>
 </ol>
 </div>
-<div class="small">
 <p>Read everything it does. Every round ends with the same question: would I merge this?</p>
-</div>
-<div class="hand-purple" style="margin-top: 0.6em;">
+<div class="rule" style="margin-top: 0.8em;">
 <ol start="2" type="1">
 <li>Commit often.</li>
 </ol>
 </div>
-<div class="small">
 <p>A commit is a checkpoint you can return to and a line in the record. Today: <span class="highlight-yellow">a commit after every run that changed a file</span>, one pull request per sprint.</p>
-</div>
 <aside class="notes">
 <p>Minute three. Both rules come back all day: rule one at every “would I merge this?”, rule two at the end of every Your turn.</p>
 <style type="text/css">
@@ -248,7 +242,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-spectrum-line" class="slide level2 smaller">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-spectrum-line" class="slide level2">
 <h2><i class="fa-solid fa-person-walking" aria-label="person-walking"></i> Spectrum line</h2>
 <div class="task">
 <p>Stand along the tape line.</p>
@@ -260,7 +254,7 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_67fc99a2" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e1faacb7" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -277,24 +271,16 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="four-questions" class="slide level2 smaller">
-<h2>Four questions</h2>
+<section id="the-goal-today" class="slide level2">
+<h2>The goal today</h2>
 <ul>
-<li class="fragment"><strong>What must never go in?</strong> The agent reads whole folders. Personal and sensitive data never go into a repository, private ones included.</li>
-<li class="fragment"><strong>How do I know this is right?</strong> Most useful on work you could have done yourself, least trustworthy where you cannot check it <span class="citation" data-cites="doctorow2026discernment">(<a href="#/references" role="doc-biblioref" onclick="">Doctorow, 2026</a>)</span>.</li>
-<li class="fragment"><strong>Could I recreate it if the AI were gone?</strong> Fine that the AI made it. A problem when it has to stay in the loop for you to change it.</li>
-<li class="fragment"><strong>What do I say, and to whom?</strong> Declare the tool as a method. Do not cite the model as a source.</li>
+<li class="fragment">The goal today is <span class="highlight-yellow">not a finished data analysis</span>.</li>
+<li class="fragment">The goal is the same level for everyone: working with Claude Code and the ideas behind it, such as plan mode, issues, review, CLAUDE.md, skills and the record.</li>
+<li class="fragment">For some of you the tool is new. Some of you already use these ideas.</li>
+<li class="fragment">Already experienced? You are welcome to explore further, but follow the instructions first.</li>
 </ul>
-<div class="hand-purple" style="text-align: center; margin-top: 0.5em;">
-<p>With your neighbour: which one worries you most, and why?</p>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_2a841be3" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
-</div>
 <aside class="notes">
-<p>The arguments are on the four background pages. Two neighbour minutes, no share-out; the questions return in the disclosure block.</p>
+<p>Right after the spectrum line, while the room has just seen how wide it is. Two minutes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -307,7 +293,37 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="how-the-day-works" class="slide level2 smaller">
+<section id="four-questions" class="slide level2 compact">
+<h2>Four questions</h2>
+<ul>
+<li class="fragment"><strong>What must never go in?</strong> The agent reads whole folders. Personal and sensitive data never go into a repository, private ones included.</li>
+<li class="fragment"><strong>How do I know this is right?</strong> Most useful on work you could have done yourself, least trustworthy where you cannot check it <span class="citation" data-cites="doctorow2026discernment">(<a href="#/references" role="doc-biblioref" onclick="">Doctorow, 2026</a>)</span>.</li>
+<li class="fragment"><strong>Could I recreate it if the AI were gone?</strong> Fine that the AI made it. A problem when it has to stay in the loop for you to change it.</li>
+<li class="fragment"><strong>What do I say, and to whom?</strong> Declare the tool as a method. Do not cite the model as a source.</li>
+</ul>
+<div class="hand-purple" style="text-align: center; margin-top: 0.5em;">
+<p>With your neighbour, two minutes each: which one worries you most, and why?</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_c9b55a7f" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>The arguments are on the four background pages. Two minutes per partner, the pairs swap on their own, no share-out; the questions return in the disclosure block.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-the-day-works" class="slide level2 compact">
 <h2>How the day works</h2>
 <ul>
 <li class="fragment">The same path <span class="highlight-yellow">twice</span>: question, agent, commits, pull request, release.</li>
@@ -405,7 +421,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="two-rungs-today" class="slide level2 smaller">
+<section id="two-rungs-today" class="slide level2">
 <h2>Two rungs today</h2>
 <ol type="1">
 <li class="fragment">Very low stakes: implement it. <span class="highlight-yellow">Sprint 1.</span></li>
@@ -413,11 +429,23 @@ lesson-plan.qmd.
 <li class="fragment">Medium stakes: plan, review the plan, implement, review the implementation. <span class="highlight-yellow">Sprint 2.</span></li>
 <li class="fragment">High stakes: design first, then repeat the cycles.</li>
 </ol>
-<div class="small" style="margin-top: 0.8em;">
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
 <p>The workflow is not the same for every task. Which rung a task gets is the first decision, every time. After lunch you stand on it.</p>
 </div>
+</div>
+</div>
+</div>
 <aside class="notes">
-<p>Hadley Wickham’s stakes ladder, the reason plan mode exists. Two minutes here; the physical version is the floor exercise at 13:02.</p>
+<p>Hadley Wickham’s stakes ladder, the reason plan mode exists. Two minutes here; the physical version is the floor exercise at 13:02. The note appears after the last rung.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -430,7 +458,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="learning-objectives" class="slide level2 smaller">
+<section id="learning-objectives" class="slide level2 compact">
 <h2>Learning objectives</h2>
 <p>By the end of this workshop, you will be able to:</p>
 <ol type="1">
@@ -546,7 +574,7 @@ lesson-plan.qmd.
 </div>
 </div>
 </section>
-<section id="your-turn-your-question-bank" class="slide level2 smaller">
+<section id="your-turn-your-question-bank" class="slide level2">
 <h2>Your turn: your question bank</h2>
 <div class="task">
 <p><i class="fa-solid fa-pen" aria-label="pen"></i> &nbsp; On the <strong>printed question sheet</strong>, three questions your data can answer. One sentence each.</p>
@@ -555,18 +583,18 @@ lesson-plan.qmd.
 <li>One you do not. <em>To explore.</em></li>
 <li>One <span class="highlight-yellow">your data cannot answer</span>. <em>To catch it.</em></li>
 </ol>
-<p>Swap with a neighbour. Make their question 1 <span class="highlight-yellow">20 percent more specific</span>: which column, which unit, which comparison. Write the sharper version in box 4. Pin the sheet on the wall.</p>
+<p>Swap with a neighbour. Make their question 1 <span class="highlight-yellow">20 percent more specific</span> <span class="citation" data-cites="wickham2026modernworkflow">(<a href="#/references" role="doc-biblioref" onclick="">Wickham &amp; Bryan, 2026</a>)</span>: which column, which unit, which comparison. Write the sharper version in box 4. Pin the sheet on the wall.</p>
 <div class="hand">
 <p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Sticky note on your laptop when your sheet is on the wall.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_23e63521" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_5f16bc72" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Question 1 runs the framed run at 10:44 and the rerun at 15:14: a known answer is what makes those runs checkable. Question 2 is card 1, question 3 is card 2. Sprint 2 is a choice: question 1 done properly, or question 2. At 09:55 the three questions go into the repository by hand.</p>
+<p>Question 1 runs the framed run at 10:39: a known answer is what makes that run checkable. Question 2 is card 1, question 3 is card 2. Sprint 2 is a choice: question 1 done properly, or question 2. At 10:06 the three questions go into the repository by hand. Being 20 percent more specific improves the result by 80 percent (Wickham and Bryan, posit::conf 2026); say it once while the sheets go round.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -579,7 +607,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-instructors-questions" class="slide level2 smaller">
+<section id="the-instructors-questions" class="slide level2 compact">
 <h2>The instructor’s questions</h2>
 <p><code>agentsforsci-ghe/fstp-eval-india</code>, one PDF: a 2023 evaluation of 69 treatment plants in eight Indian states.</p>
 <div class="hand-purple" style="margin-top: 0.5em;">
@@ -592,9 +620,7 @@ lesson-plan.qmd.
 <li>What are the helminth egg counts in the treated effluent per plant?</li>
 </ol>
 </div>
-<div class="small">
 <p>Cloned at <code>~/Documents/gitrepos/gh-org-agentsforsci-ghe/fstp-eval-india</code>. Question 3 is the one the report cannot answer.</p>
-</div>
 </section></section>
 <section>
 <section id="current-state-safety-rails-the-commit-rule-current-state" class="title-slide slide level1 center" data-background-color="#5c5751">
@@ -642,11 +668,11 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_a3f7b015" minutes="1" seconds="0" update-every="1" tabindex="0" style="top:8%;right:1%;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_ed8ec627" minutes="2" seconds="0" update-every="1" tabindex="0" style="top:8%;right:1%;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>The workflow graph from the ETH Library colloquium talk. Point at the five boxes the day touches, then the neighbour minute.</p>
+<p>The workflow graph from the ETH Library colloquium talk. Point at the five boxes the day touches, then two neighbour minutes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -689,7 +715,7 @@ lesson-plan.qmd.
 </tbody>
 </table>
 </section>
-<section id="my-turn-current-state" class="slide level2 smaller">
+<section id="my-turn-current-state" class="slide level2">
 <h2>My turn <span class="current-state">current state</span></h2>
 <div class="hand-purple" style="margin-top: 0.6em;">
 <p>Sit back and watch.</p>
@@ -713,7 +739,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="where-did-that-go-current-state" class="slide level2 smaller">
+<section id="where-did-that-go-current-state" class="slide level2">
 <h2>Where did that go? <span class="current-state">current state</span></h2>
 <table class="caption-top">
 <tbody>
@@ -756,19 +782,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="a-good-question" class="slide level2 smaller">
-<h2>A good question</h2>
-<div class="hand-purple-large" style="text-align: center; margin-top: 1em;">
-<p>20 percent more specific, 80 percent better results.</p>
-</div>
-<div class="small" style="text-align: center;">
-<p>Hadley Wickham and Jenny Bryan, Modern R Workflow, posit::conf 2026 <span class="citation" data-cites="wickham2026modernworkflow">(<a href="#/references" role="doc-biblioref" onclick="">Wickham &amp; Bryan, 2026</a>)</span></p>
-</div>
-<div class="small">
-<p>Which column, which unit, which comparison. Your neighbour did that to your question 1 half an hour ago.</p>
-</div>
-</section>
-<section id="our-turn-safety-rails" class="slide level2 smaller">
+<section id="our-turn-safety-rails" class="slide level2">
 <h2>Our turn: safety rails</h2>
 <div class="task">
 <p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong>, your own repository</p>
@@ -777,16 +791,25 @@ lesson-plan.qmd.
 </ol>
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In the <strong>terminal</strong></p>
 <ol start="2" type="1">
-<li>Open it at <code>~/Documents/gitrepos/gh-org-agentsforsci-ghe/&lt;your repo&gt;</code>, <span class="highlight-yellow">not one level up</span>.</li>
-<li><code>git switch -c dev</code> (already have one? <code>git switch dev</code>), then <code>claude</code>.</li>
-<li>Press <strong>Shift+Tab</strong> with me until the line under the box says <span class="highlight-yellow">auto mode on</span>. Then <code>/context</code>.</li>
+<li><p>Go to <code>~/Documents/gitrepos/gh-org-agentsforsci-ghe/&lt;your repo&gt;</code>, <span class="highlight-yellow">not one level up</span>. Type <code>claude</code>.</p></li>
+<li><p>Press <strong>Shift+Tab</strong> with me until the line under the box says <span class="highlight-yellow">auto mode on</span>.</p></li>
+<li><p>Type:</p>
+<div class="prompt">
+<p>Create a branch called dev and switch to it. If dev already exists, switch to it.</p>
+</div></li>
+<li><p><code>/context</code></p></li>
 </ol>
 <div class="hand">
 <p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Sticky note when <code>/context</code> has printed and your line says auto mode on.</p>
 </div>
 </div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_49cbb766" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
 <aside class="notes">
-<p>The agent reads the folder it starts in; one level up it would read every repository. The pre-work never created dev, so -c.&nbsp;Step 4 is a follow along: Shift+Tab cycles auto, manual, accept edits, plan and back to auto, and everyone presses until their line matches mine. On the Team plan auto is the starting mode, so most screens say it already; the point is that everyone has seen the key. Auto mode has to be allowed in the Team admin settings before the day.</p>
+<p>The agent reads the folder it starts in; one level up it would read every repository. The pre-work never created dev; the prompt covers both cases, and the agent runs the git command for you. Step 3 is a follow along: Shift+Tab cycles auto, manual, accept edits, plan and back to auto, and everyone presses until their line matches mine. On the Team plan auto is the starting mode, so most screens say it already; the point is that everyone has seen the key. Auto mode has to be allowed in the Team admin settings before the day.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -799,7 +822,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="four-keys" class="slide level2 smaller">
+<section id="four-keys" class="slide level2">
 <h2>Four keys</h2>
 <table class="caption-top">
 <colgroup>
@@ -831,11 +854,11 @@ lesson-plan.qmd.
 </tr>
 </tbody>
 </table>
-<div class="small" style="margin-top: 0.8em;">
-<p>A screenshot pastes into the box with <strong>Ctrl+V</strong> (Cmd+V in iTerm2). Stuck on something on your screen? Paste it.</p>
+<div style="margin-top: 0.8em;">
+<p>Stuck on something on your screen? Take a screenshot, drag it into the Claude Code box, then ask for what you want.</p>
 </div>
 <aside class="notes">
-<p>One minute. Checked against the Claude Code docs on 24 September. Drag and drop of an image is on the rehearsal list.</p>
+<p>One minute. Checked against the Claude Code docs on 24 September. Rehearse dragging a screenshot into the box before the day.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -848,7 +871,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="our-turn-one-commit-by-hand" class="slide level2 smaller">
+<section id="our-turn-one-commit-by-hand" class="slide level2">
 <h2>Our turn: one commit by hand</h2>
 <div class="task">
 <p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong>, your own repository, branch <code>dev</code></p>
@@ -862,11 +885,11 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_1d89ba23" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_9c3e9789" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Four minutes. The agent can read the file later, the cards quote from it, and this afternoon the declaration shows one commit by hand next to the assisted ones. This is rung 1 of the ladder on the next slide, lived before it is named.</p>
+<p>Five minutes. The agent can read the file later, the cards quote from it, and this afternoon the declaration shows one commit by hand next to the assisted ones. This is rung 1 of the ladder on the next slide, lived before it is named.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -879,7 +902,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="who-commits-and-how-often" class="slide level2 smaller">
+<section id="who-commits-and-how-often" class="slide level2">
 <h2>Who commits, and how often</h2>
 <ol type="1">
 <li class="fragment">Do all commits yourself. <span class="highlight-yellow">You just did.</span></li>
@@ -891,7 +914,7 @@ lesson-plan.qmd.
 <p>Commit after every run that changed a file. One pull request per sprint. The pull request skill pushes and tells you how many commits went up.</p>
 </div>
 <aside class="notes">
-<p>Hadley Wickham’s git-trust ladder with the issue step inserted. Small commits are cheap to read and cheap to undo; the declaration at 15:45 is written from them. Three minutes.</p>
+<p>Hadley Wickham’s git-trust ladder with the issue step inserted. Small commits are cheap to read and cheap to undo; the declaration at 15:51 is written from them. Three minutes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -904,7 +927,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="our-turn-two-skills" class="slide level2 smaller">
+<section id="our-turn-two-skills" class="slide level2">
 <h2>Our turn: two skills</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
@@ -915,6 +938,11 @@ lesson-plan.qmd.
 </ol>
 <div class="hand">
 <p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Sticky note when <code>/ghe-skills:commit</code> shows up in the command list.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_8c10d2eb" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -931,7 +959,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="snack-break" class="slide level2 smaller">
+<section id="snack-break" class="slide level2">
 <h2>Snack break</h2>
 <p><span class="highlight-yellow">Please get up and move!</span> Back at <strong>10:35</strong>.</p>
 <div class="hand-purple" style="text-align: center; margin-top: 1em;">
@@ -939,34 +967,15 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_a29d4ef3" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_42801bdf" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
 <section>
-<section id="sprint-1-the-loop-by-hand-first-run-studio-ship-v0.1.0" class="title-slide slide level1 center" data-background-color="#5c5751">
-<h1>Sprint 1: the loop by hand, first run, studio, ship v0.1.0</h1>
-
-</section>
-<section id="your-turn-be-the-agent" class="slide level2 smaller">
-<h2>Your turn: be the agent</h2>
-<div class="task">
-<p><i class="fa-solid fa-comments" aria-label="comments"></i> &nbsp; In the <strong>Claude chat</strong>, not in Claude Code, on your <strong>setup repository</strong> (public data), not your own</p>
-<ol type="1">
-<li>Type: “I have a repository with data. Ask me for the files you need to answer this question, one at a time, and I will paste what you ask for: what is in this data?”</li>
-<li>Paste what it asks for, by hand. Keep going.</li>
-</ol>
-<div class="hand">
-<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Sticky note after the third file you pasted.</p>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_b929ce82" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
-</div>
+<section id="sprint-1-first-run-studio-ship-v0.1.0" class="title-slide slide level1 center" data-background-color="#5c5751">
+<h1>Sprint 1: first run, studio, ship v0.1.0</h1>
 <aside class="notes">
-<p>Opens with question 1: two answers, one last look at data/. Posit’s “be the tool” trick, on public data so nothing of yours goes into the chat. The loop is felt before Claude Code automates it.</p>
+<p>Opens with the break question: two answers, then one last look at data/ before the first run. Two minutes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -979,8 +988,9 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-day-sheet" class="slide level2 smaller">
+<section id="the-day-sheet" class="slide level2">
 <h2>The day sheet</h2>
+<div class="small">
 <table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 16%">
@@ -1019,11 +1029,15 @@ lesson-plan.qmd.
 </tr>
 </tbody>
 </table>
-<div class="small" style="margin-top: 0.8em;">
-<p>One row per run, all day: the first run, each card, the plan, the issues, the TODOs, the rerun, the declaration. Hand out now. The sheet feeds the reflect block at 13:00, the checklist at 16:00 and page 2 of your zine.</p>
 </div>
+<ul>
+<li>One row for every run, all day.</li>
+<li>Fill it right after the run, while you still remember.</li>
+<li>“Minutes it ran” is the clock time from your prompt until the agent stops.</li>
+<li>You need it after lunch, when we look back at v0.1.0, and for page 2 of your zine.</li>
+</ul>
 <aside class="notes">
-<p>One minute. The helper hands the sheets out while the slide is up, so the first “fill one row” on the next slide lands on paper everyone holds.</p>
+<p>Two minutes. The helper hands the sheets out while the slide is up, so the first “fill one row” on the framed run lands on paper everyone holds.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1066,26 +1080,30 @@ lesson-plan.qmd.
 </tbody>
 </table>
 </section>
-<section id="your-turn-the-framed-run-then-commit" class="slide level2 smaller">
+<section id="your-turn-the-framed-run-then-commit" class="slide level2">
 <h2>Your turn: the framed run, then commit</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong>, your own repository, branch <code>dev</code></p>
 <ol type="1">
-<li>Type this and nothing else: “Answer the following question using the data in this repository and write up the result as a Quarto manuscript that renders to DOCX: <em>your question 1</em>.”</li>
-<li>Watch the tool calls. <span class="highlight-yellow">Do not intervene.</span></li>
-<li>When it stops: <code>/ghe-skills:commit</code>. Read the message it proposes. Fill the first row of your day sheet.</li>
+<li><p>Type this and nothing else:</p>
+<div class="prompt">
+<p>Answer the following question using the data in this repository and write up the result as a Quarto manuscript that renders to DOCX: <em>your question 1</em></p>
+</div></li>
+<li><p>Watch the tool calls. <span class="highlight-yellow">Do not intervene.</span></p></li>
+<li><p>When it stops: <code>/ghe-skills:commit</code>. Read the message it proposes. Fill the first row of your day sheet.</p></li>
+<li><p>Done early? Open the manuscript <code>.qmd</code> and read it. Ask for changes if you like. After every prompt that changed a file, run <code>/ghe-skills:commit</code>.</p></li>
 </ol>
 <div class="hand">
-<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Sticky note when the commit is in.</p>
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Sticky note when the first commit is in.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_c546cb08" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_43829334" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Everyone runs the same underspecified frame with their own question 1, so the stand-up compares like with like. A first run on a PDF is the slow case: 12 minutes measured in the dry run, plus 1.5 for the skill. A CSV should come in under 5. Bounded regroup: 3 minutes, then park-and-pair.</p>
+<p>Everyone runs the same underspecified frame with their own question 1, so the stand-up compares like with like. The prompt is also in the chat room. A first run on a PDF is the slow case: 12 minutes measured in the dry run, plus 1.5 for the skill. A CSV should come in under 5, and step 4 is for everyone who is done early. Bounded regroup: 3 minutes, then park-and-pair.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1098,11 +1116,11 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-scrolled-past" class="slide level2 smaller">
+<section id="what-scrolled-past" class="slide level2">
 <h2>What scrolled past</h2>
 <ul>
 <li class="fragment">Every line was a <strong>tool call</strong>: read a file, list a folder, write a file, run a command.</li>
-<li class="fragment">That is the loop you did by hand in the chat, run by a program on your laptop. The model on the server only ever sees what that program sends it.</li>
+<li class="fragment">Each line is a step you would otherwise do by hand: open a file, copy it into a chat, paste the answer back. Here a program on your laptop does it. The model on the server only ever sees what that program sends it.</li>
 <li class="fragment">The result is <span class="highlight-yellow">files and a commit in your repository</span>. Compare the chat: a thread in an account.</li>
 </ul>
 <aside class="notes">
@@ -1119,31 +1137,17 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-studio-ten-cards" class="slide level2 smaller">
-<h2>The studio: ten cards</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="the-studio-cards-1-to-5" class="slide level2 compact">
+<h2>The studio: cards 1 to 5</h2>
 <ol type="1">
-<li>The question you cannot answer yet</li>
-<li>The question the data cannot answer</li>
-<li>The codebook</li>
-<li>One figure, rendered <span class="highlight-yellow">(recommended)</span></li>
-<li>Five references</li>
+<li><strong>The question you cannot answer yet.</strong> Ask your question 2 and watch what it assumes without asking.</li>
+<li><strong>The question the data cannot answer.</strong> Ask your question 3. Does it say the data cannot answer it, or does it make something up?</li>
+<li><strong>The codebook.</strong> Ask it to describe every file in <code>data/</code> and write a codebook, one row per variable.</li>
+<li><strong>One figure, rendered</strong> <span class="highlight-yellow">(recommended)</span>. Ask for one figure for your question 1 in the manuscript, then render it to DOCX.</li>
+<li><strong>Five references.</strong> Ask it for the five most relevant references in your Zotero library.</li>
 </ol>
-</div><div class="column" style="width:50%;">
-<ol start="6" type="1">
-<li>The README, read by a stranger</li>
-<li>What does it know right now</li>
-<li>Name the tool</li>
-<li>The same task twice</li>
-<li>Wild card</li>
-</ol>
-</div></div>
-<div class="small">
-<p>Pick freely, any order, at least two. Changed a file? <span class="highlight-yellow"><code>/ghe-skills:commit</code></span>. Either way, fill one row of your day sheet. If it asks, answer. Stuck for two minutes: raise a hand, next card.</p>
-</div>
 <aside class="notes">
-<p>Cards are printed and on studio-cards.qmd. Card 4 is the render test for the ship. Stuck: cards 6 and 7, nothing can break. Fast: 8, 9 and 10. One minute.</p>
+<p>Cards are printed and on studio-cards.qmd, with the full prompt on each. Card 4 is the render test for the ship. Stuck: cards 6 and 7, nothing can break. Fast: 8, 9 and 10. Three minutes for the two card slides.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1156,18 +1160,35 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-turn-the-studio" class="slide level2 smaller">
+<section id="the-studio-cards-6-to-10" class="slide level2 compact">
+<h2>The studio: cards 6 to 10</h2>
+<ol start="6" type="1">
+<li><strong>The README, read by a stranger.</strong> Ask what a new colleague would not understand in your README.</li>
+<li><strong>What does it know right now.</strong> Type <code>/context</code>, then ask what it has read and what it has not.</li>
+<li><strong>Name the tool.</strong> Ask it to use <code>git log</code> to tell the history of your repository in five lines.</li>
+<li><strong>The same task twice.</strong> Start a new session and run card 1 again, word for word. What changed?</li>
+<li><strong>Wild card.</strong> Ask anything you are curious about.</li>
+</ol>
+<div class="hand-purple" style="margin-top: 0.6em;">
+<p>Curious? Go further. Ask it about what just happened: why did you do that? What does this line do?</p>
+</div>
+</section>
+<section id="your-turn-the-studio" class="slide level2">
 <h2>Your turn: the studio</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong>, your own repository, branch <code>dev</code></p>
-<p>Cards on the table. At least two. Card 4 for everyone. A commit after each card that changed a file. One row of the day sheet per card.</p>
+<ul>
+<li>Pick any cards, in any order. <span class="highlight-yellow">At least two. Card 4 for everyone.</span></li>
+<li>Changed a file? <code>/ghe-skills:commit</code>. Either way, fill one row of your day sheet.</li>
+<li>If it asks, answer.</li>
+</ul>
 <div class="hand">
 <p><i class="fa-solid fa-hand" aria-label="hand"></i> &nbsp; Raised hand when a card is stuck for two minutes, then move on.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_9fadce70" minutes="35" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_d83a7ccc" minutes="35" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1184,18 +1205,36 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-stand-up" class="slide level2 smaller">
-<h2><i class="fa-solid fa-person-walking" aria-label="person-walking"></i> Stand up</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-stand-up-the-question-wall" class="slide level2">
+<h2><i class="fa-solid fa-person-walking" aria-label="person-walking"></i> Stand up: the question wall</h2>
 <div class="task">
-<p>Stand up. Read one other screen for one minute. Where did the files land, what are they called? Sit down, carry on.</p>
+<ol type="1">
+<li>Stand up and walk to the question wall.</li>
+<li>Read three questions that are not yours.</li>
+<li>Put a dot next to the one you would most like answered.</li>
+<li>Back to your card.</li>
+</ol>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f309e970" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_53a015b6" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
+<aside class="notes">
+<p>At minute 15 of the studio, inside its 35 minutes. Markers at the wall. Then back to the studio slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="the-release-path" class="slide level2 smaller">
+<section id="the-release-path" class="slide level2">
 <h2>The release path</h2>
 <ol type="1">
 <li class="fragment">Pull request merged into <code>main</code>.</li>
@@ -1204,32 +1243,78 @@ lesson-plan.qmd.
 <li class="fragment">Release on GitHub, with the DOCX attached. <span class="highlight-yellow">Source in git, artifact on the release.</span></li>
 <li class="fragment"><code>dev</code> synced with <code>main</code>.</li>
 </ol>
-<div class="small" style="margin-top: 0.8em;">
+<div style="margin-top: 0.8em;">
 <p>Sprint 1 does it rough: no reviewer, whatever rendered. Sprint 2 does it properly.</p>
 </div>
 </section>
-<section id="our-turn-ship-v0.1.0" class="slide level2 smaller">
-<h2>Our turn: ship v0.1.0</h2>
+<section id="our-turn-ship-v0.1.0-the-pull-request" class="slide level2">
+<h2>Our turn: ship v0.1.0, the pull request</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
 <ol type="1">
-<li><code>/ghe-skills:open-pr</code>. It pushes first and tells you how many commits went up. When it offers the test plan, answer no. <span class="highlight-yellow">The first pull request of the day.</span></li>
+<li><code>/ghe-skills:open-pr</code>. It pushes first and tells you how many commits went up. When it offers the test plan, answer no.</li>
 </ol>
-<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Open it, one minute on Files changed, merge it yourself. No reviewer, on purpose.</p>
-<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; 2. “Switch to main and pull.” Main and dev now hold the same work.</p>
-<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; 3. In <strong>RStudio</strong>: open the manuscript, press <strong>Render</strong>. A DOCX appears next to it.</p>
-<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; 4. “Tag v0.1.0 and create a GitHub release. Attach the DOCX if it rendered; if not, say in the release note that the manuscript does not render yet.” 5. “Switch to dev, merge main into it, and push.”</p>
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
+<ol start="2" type="1">
+<li>Open the pull request. One minute on <strong>Files changed</strong>. Merge it yourself. <span class="highlight-yellow">No reviewer, on purpose.</span></li>
+</ol>
+<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
+<ol start="3" type="1">
+<li><p>Type:</p>
+<div class="prompt">
+<p>Switch to main and pull.</p>
+</div>
+<p>Main and dev now hold the same work.</p></li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_472bcec1" minutes="7" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>Script in lesson-plan.qmd. The first pull request of the day: the chunk is done. A rough v0.1.0 is the point; do not let anyone polish it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="our-turn-ship-v0.1.0-the-release" class="slide level2">
+<h2>Our turn: ship v0.1.0, the release</h2>
+<div class="task">
+<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
+<ol start="4" type="1">
+<li>Open the manuscript and press <strong>Render</strong>. A DOCX appears next to it.</li>
+</ol>
+<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
+<ol start="5" type="1">
+<li><p>Tag and release:</p>
+<div class="prompt">
+<p>Tag v0.1.0 and create a GitHub release. Attach the DOCX if it rendered; if not, say in the release note that the manuscript does not render yet.</p>
+</div></li>
+<li><p>Sync dev:</p>
+<div class="prompt">
+<p>Switch to dev, merge main into it, and push.</p>
+</div></li>
+</ol>
 <div class="hand">
-<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Sticky note when the release page is up. Download the DOCX: this is the file you would email a co-author without Git.</p>
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Sticky note when the release page is up. Download the DOCX: the file you would email a co-author without Git.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_87164f01" minutes="14" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_7ffbf26f" minutes="7" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Script in lesson-plan.qmd. A rough v0.1.0 is the point; do not let anyone polish it. The render in RStudio uses the bundled Quarto and is a minute of Quarto practice; the agent does the tag and the release. May spill into lunch; whoever is not up by 12:05 is on the helper’s lunch list and eats first.</p>
+<p>The render in RStudio uses the bundled Quarto and is a minute of Quarto practice; the agent does the tag and the release. May spill into lunch; whoever is not up by 12:05 is on the helper’s lunch list and eats first.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1246,10 +1331,10 @@ lesson-plan.qmd.
 <h2>The 18 tasks</h2>
 
 <img data-src="../images/wcri-18-boxes.png" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%"><div class="small">
-<p>The proposed standard for declaring AI use in research lists 18 tasks; you tick the ones AI touched <span class="citation" data-cites="isc2026disclosure">(<a href="#/references" role="doc-biblioref" onclick="">International Science Council, 2026</a>)</span>. Screenshot: International Science Council, Consultation Round 2, preparatory reading. Printed for you at 16:00.</p>
+<p>The proposed standard for declaring AI use in research lists 18 tasks; you tick the ones AI touched <span class="citation" data-cites="isc2026disclosure">(<a href="#/references" role="doc-biblioref" onclick="">International Science Council, 2026</a>)</span>. Screenshot: International Science Council, Consultation Round 2, preparatory reading.</p>
 </div>
 <aside class="notes">
-<p>Two minutes. One sentence: this is the taxonomy that came out of round 1 of the consultation, and it becomes the checklist at 16:00. The lunch question uses it.</p>
+<p>Two minutes. One sentence: this is the taxonomy that came out of round 1 of the consultation. The lunch question uses it.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1262,18 +1347,18 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="lunch" class="slide level2 smaller">
+<section id="lunch" class="slide level2">
 <h2>Lunch</h2>
 <p>Back at <strong>13:00</strong>. Bring your day sheet. The afternoon starts with two minutes at the keyboard, then on the floor.</p>
 <div class="hand-purple" style="text-align: center; margin-top: 1em;">
 <p>Of the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over?</p>
 </div>
-<div class="small" style="margin-top: 0.8em;">
+<div style="margin-top: 0.8em;">
 <p>Over lunch, pick your sprint 2 question: <span class="highlight-yellow">question 1 done properly</span>, or question 2.</p>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d545862d" minutes="60" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_2fc301c0" minutes="60" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -1282,23 +1367,27 @@ lesson-plan.qmd.
 <h1>Between sprints: what v0.1.0 shows</h1>
 
 </section>
-<section id="our-turn-start-your-plan" class="slide level2 smaller">
+<section id="our-turn-start-your-plan" class="slide level2">
 <h2>Our turn: start your plan</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong>, your own repository, branch <code>dev</code></p>
 <ol type="1">
-<li><strong>Shift+Tab</strong> until the line under the box says <span class="highlight-yellow">plan mode on</span>.</li>
-<li>Type the morning frame with your sprint 2 question, plus one line: “Plan only. Do not run any analysis or write any file yet.”</li>
-<li>Leave it running. Come to the floor.</li>
+<li><p><code>/clear</code>. A new conversation. Your files stay.</p></li>
+<li><p><strong>Shift+Tab</strong> until the line under the box says <span class="highlight-yellow">plan mode on</span>.</p></li>
+<li><p>Type, with your sprint 2 question:</p>
+<div class="prompt">
+<p>Answer the following question using the data in this repository and write up the result as a Quarto manuscript that renders to DOCX: <em>your sprint 2 question</em>. Plan only. Do not run any analysis or write any file yet.</p>
+</div></li>
+<li><p>Leave it running. Stand up and walk to the tape lines on the floor.</p></li>
 </ol>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d3fda260" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_aa9fcf22" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>The plan runs while the room is on the ladder, the way the walk covers the hand-over. In the dry run the frame alone took 18 minutes in plan mode on a PDF, because the agent ran the analysis to plan it; the added line is meant to stop that and has not been measured. Whatever is back by 13:28 is what the Your turn starts from. My own plan starts now too, on the demo repository.</p>
+<p>Sprint 2 stays on dev and builds on v0.1.0; /clear gives it a clean conversation, and the sprint 1 files are meant to be there. The plan runs while the room is on the ladder, the way the walk covers the hand-over. In the dry run the frame alone took 18 minutes in plan mode on a PDF, because the agent ran the analysis to plan it; the added line is meant to stop that and has not been measured. Whatever is back by 13:28 is what the Your turn starts from. My own plan starts now too, on the demo repository.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1311,7 +1400,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-the-stakes-ladder" class="slide level2 smaller">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-the-stakes-ladder" class="slide level2">
 <h2><i class="fa-solid fa-person-walking" aria-label="person-walking"></i> The stakes ladder</h2>
 <ol type="1">
 <li class="fragment">Very low stakes: implement it. <span class="highlight-yellow">Sprint 1.</span></li>
@@ -1324,7 +1413,7 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_2dabaeeb" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_2b15dd3e" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1341,7 +1430,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="reflect-on-v0.1.0" class="slide level2 smaller">
+<section id="reflect-on-v0.1.0" class="slide level2">
 <h2>Reflect on v0.1.0</h2>
 <p>Release page open on your screen, day sheet in hand.</p>
 <ul>
@@ -1352,7 +1441,7 @@ lesson-plan.qmd.
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_206d329d" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_90c844dd" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1369,7 +1458,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="where-repositories-live" class="slide level2 smaller">
+<section id="where-repositories-live" class="slide level2 compact">
 <h2>Where repositories live</h2>
 <pre><code>~/Documents/gitrepos/
 ├── gh-org-gitforsci-ghe/        July
@@ -1383,7 +1472,7 @@ lesson-plan.qmd.
 <li class="fragment">The agent reads the folder it starts in. <span class="highlight-yellow">Start inside the repository.</span></li>
 </ul>
 </section>
-<section id="inside-a-repository" class="slide level2 smaller">
+<section id="inside-a-repository" class="slide level2">
 <h2>Inside a repository</h2>
 <div class="columns">
 <div class="column" style="width:55%;">
@@ -1419,29 +1508,29 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="our-turn-look-inside-your-files" class="slide level2 smaller">
+<section id="our-turn-look-inside-your-files" class="slide level2">
 <h2>Our turn: look inside your files</h2>
 <div class="task">
 <p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
 <ol type="1">
 <li>Open the manuscript <code>.qmd</code> the agent wrote. Text you can read.</li>
-<li>Open the CSV in the editor (<strong>View File</strong>, not Import). Type one row at the bottom. Then undo it; save nothing.</li>
+<li>Open the CSV in the editor (<strong>View File</strong>, not Import). Type one row at the bottom. Then undo it and save nothing.</li>
 </ol>
 <p><i class="fa-solid fa-display" aria-label="display"></i> &nbsp; On the <strong>screen</strong></p>
 <ol start="3" type="1">
 <li>I unzip the DOCX from the release. Inside: folders of XML. An XLSX opens the same way.</li>
 </ol>
-<div class="small" style="margin-top: 0.5em;">
-<p>The source is text you can read, type and diff. The DOCX is <span class="highlight-yellow">generated from it</span>, so never edit the DOCX. The PDF cost the agent a table extraction across pages this morning.</p>
 </div>
+<div style="margin-top: 0.5em;">
+<p>The source is text you can read, type and diff. The DOCX is <span class="highlight-yellow">generated from it</span>, so never edit the DOCX.</p>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_5d771960" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e539c8eb" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Four minutes. The typed row is undone so the working tree stays clean for the plan commit. The DOCX and XLSX peek is mine on screen, since everyone’s agent is busy planning. Rehearse the unzip.</p>
+<p>Four minutes. The typed row is undone so the working tree stays clean for the plan commit. The DOCX and XLSX peek is mine on screen, since everyone’s agent is busy planning. Rehearse the unzip. On the demo PDF, one line more: the PDF cost the agent a table extraction across pages this morning.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1489,7 +1578,7 @@ lesson-plan.qmd.
 </tbody>
 </table>
 </section>
-<section id="my-turn" class="slide level2 smaller">
+<section id="my-turn" class="slide level2">
 <h2>My turn</h2>
 <div class="hand-purple" style="margin-top: 1em;">
 <p>Sit back and watch.</p>
@@ -1509,21 +1598,24 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-turn-plan-mode" class="slide level2 smaller">
+<section id="your-turn-plan-mode" class="slide level2 compact">
 <h2>Your turn: plan mode</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
 <ol type="1">
-<li>Read the plan that came back. Would I merge this plan?</li>
-<li>Reject it in one sentence that points at the template and the naming rules.</li>
-<li><strong>Shift+Tab</strong> until the line says auto mode on again. <span class="highlight-yellow">The file only lands in the repository after leaving plan mode.</span></li>
-<li>“Write the plan as a markdown file in this repository that I can edit.”</li>
-<li><code>/ghe-skills:commit</code>. The agent’s plan, one assisted commit.</li>
+<li><p>Read the plan that came back. Would I merge this plan?</p></li>
+<li><p>Reject it in one sentence that points at the template and the naming rules.</p></li>
+<li><p><strong>Shift+Tab</strong> until the line says auto mode on again. <span class="highlight-yellow">The file only lands in the repository after leaving plan mode.</span></p></li>
+<li><p>Type:</p>
+<div class="prompt">
+<p>Write the plan as a markdown file in this repository that I can edit.</p>
+</div></li>
+<li><p><code>/ghe-skills:commit</code>. The agent’s plan, one assisted commit.</p></li>
 </ol>
 <p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
 <ol start="6" type="1">
 <li>Change one line of the plan file. Save.</li>
-<li>Stage, commit, the way you did at 09:55. <span class="highlight-yellow">Your line, one commit by hand.</span> Fill one row.</li>
+<li>Stage, commit, the way you did this morning. <span class="highlight-yellow">Your line, one commit by hand.</span> Fill one row.</li>
 </ol>
 <div class="hand">
 <p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Sticky note when both commits are in.</p>
@@ -1531,7 +1623,7 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_05837209" minutes="12" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_ae53e558" minutes="12" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1555,7 +1647,7 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_71409a05" minutes="3" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_94e7db3f" minutes="3" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -1589,20 +1681,26 @@ lesson-plan.qmd.
 </tbody>
 </table>
 </section>
-<section id="your-turn-the-issues" class="slide level2 smaller">
+<section id="your-turn-the-issues" class="slide level2">
 <h2>Your turn: the issues</h2>
 <div class="task">
-<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
+<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong>. The prompt is also in the chat room.</p>
+<div class="prompt">
+<p>Turn the plan into four issues on this repository. Each issue gets a title, what done looks like in at most five checkboxes, and the files it touches:</p>
 <ol type="1">
-<li>“Turn the plan into four issues on this repository, each with a title, what done looks like in at most five checkboxes, and the files it touches: 1. Organise the repository following the template. 2. The analysis inside the Quarto manuscript with format: docx, one figure from a code chunk. 3. Five references from my Zotero library. 4. A methods paragraph.”</li>
+<li>Organise the repository following the template.</li>
+<li>The analysis inside the Quarto manuscript with format: docx, one figure from a code chunk.</li>
+<li>Five references from my Zotero library.</li>
+<li>A methods paragraph.</li>
 </ol>
+</div>
 <div class="hand">
 <p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Sticky note when the issues are on GitHub. Fill one row.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d114726b" minutes="6" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_1677fb81" minutes="6" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1619,7 +1717,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-find-your-review-partner" class="slide level2 smaller">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-find-your-review-partner" class="slide level2">
 <h2><i class="fa-solid fa-person-walking" aria-label="person-walking"></i> Find your review partner</h2>
 <div class="task">
 <p>Move to sit with your partner (neighbour pairs, triple if odd).</p>
@@ -1631,7 +1729,7 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_049ef4da" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_b53cfeb2" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1653,13 +1751,16 @@ lesson-plan.qmd.
 <h1>Hand-over to the phone</h1>
 
 </section>
-<section id="our-turn-hand-over-to-your-phone" class="slide level2 smaller">
+<section id="our-turn-hand-over-to-your-phone" class="slide level2">
 <h2>Our turn: hand over to your phone</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
 <ol type="1">
-<li>“Implement issues 1 and 2 on the dev branch. Run /ghe-skills:commit after each issue, then push. Ask me when you are unsure.”</li>
-<li><code>/remote-control</code>. A link and a QR code appear.</li>
+<li><p>Type:</p>
+<div class="prompt">
+<p>Implement issues 1 and 2 on the dev branch. Run /ghe-skills:commit after each issue, then push. Ask me when you are unsure.</p>
+</div></li>
+<li><p><code>/remote-control</code>. A link and a QR code appear.</p></li>
 </ol>
 <p><i class="fa-solid fa-mobile-screen" aria-label="mobile-screen"></i> &nbsp; On your <strong>phone</strong></p>
 <ol start="3" type="1">
@@ -1669,6 +1770,11 @@ lesson-plan.qmd.
 <p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; Laptop plugged in, lid open, terminal open.</p>
 <div class="hand">
 <p><i class="fa-solid fa-person-walking" aria-label="person-walking"></i> &nbsp; Snack in hand, go outside.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_31f55c66" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1685,7 +1791,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="snack-break-walk-with-your-agent" class="slide level2 smaller">
+<section id="snack-break-walk-with-your-agent" class="slide level2">
 <h2>Snack break: walk with your agent</h2>
 <p>Back at <strong>14:40</strong>. Check progress every few minutes. Answer what it asks. Do not start new tasks.</p>
 <div class="hand-purple" style="text-align: center; margin-top: 1em;">
@@ -1693,22 +1799,22 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_6653f0c6" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_7510c96a" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
 <section>
-<section id="sprint-2-review-claude.md-rerun-merge" class="title-slide slide level1 center" data-background-color="#5c5751">
-<h1>Sprint 2: review, CLAUDE.md, rerun, merge</h1>
+<section id="sprint-2-review-claude.md-review-comments-merge" class="title-slide slide level1 center" data-background-color="#5c5751">
+<h1>Sprint 2: review, CLAUDE.md, review comments, merge</h1>
 
 </section>
-<section id="what-did-it-ask-you" class="slide level2 smaller">
+<section id="what-did-it-ask-you" class="slide level2 compact">
 <h2>What did it ask you?</h2>
 <div class="hand-purple-large" style="text-align: center; margin-top: 1em;">
 <p>What did it ask you? What did it decide alone?</p>
 </div>
 <div class="hand">
-<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; One note, one line. It goes on the oversight flipchart at 16:00.</p>
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; One note, one line. It goes on the oversight flipchart in the disclosure block.</p>
 </div>
 <aside class="notes">
 <p>Three minutes. In the dry run it asked nothing and decided four things alone: the author name from the machine account, reading the Zotero database file when the tool returned nothing, moving the sprint 1 files during the restructure, and keeping three older charts. Collect the notes; they open the third flipchart.</p>
@@ -1724,33 +1830,14 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-turn-finish-review-open-the-pull-request" class="slide level2 smaller">
-<h2>Your turn: finish, review, open the pull request</h2>
-<div class="task">
-<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong>, at the laptop</p>
-<ol type="1">
-<li>Read the diff. If the agent is not done, it finishes now.</li>
-</ol>
-<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
-<ol start="2" type="1">
-<li>Open the manuscript. Wherever you would not merge it, write <code>&lt;!-- TODO: what has to change --&gt;</code>. Save. Commit by hand.</li>
-</ol>
-<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
-<ol start="3" type="1">
-<li>“Work through the TODO comments in the manuscript one at a time. Remove each when it is done and run /ghe-skills:commit after each.”</li>
-<li>Read the diff again. Then <code>/ghe-skills:open-pr</code>, answer no. <span class="highlight-yellow">The second and last pull request of the day.</span></li>
-</ol>
-<div class="hand">
-<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Sticky note when the pull request is open. Fill one row.</p>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e33e5d46" minutes="14" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
+<section id="my-turn-1" class="slide level2">
+<h2>My turn</h2>
+<div class="hand-purple" style="margin-top: 1em;">
+<p>Sit back and watch.</p>
+<p>Note down any questions as they come up. We pick them up right after.</p>
 </div>
 <aside class="notes">
-<p>The human review leaves the markers, the agent works them off, one commit each. Cut order if behind: at least one TODO and one commit. Inside a code chunk the marker is a line starting with # TODO.</p>
+<p>Demo script in lesson-plan.qmd: in the demo manuscript, write one line starting with TODO, save, commit by hand, then show the TODO prompt and let it run. Three minutes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1763,24 +1850,79 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-turn-partner-review" class="slide level2 smaller">
+<section id="your-turn-todos-then-the-pull-request" class="slide level2 compact">
+<h2>Your turn: TODOs, then the pull request</h2>
+<div class="task">
+<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong>, at the laptop</p>
+<ol type="1">
+<li>Read the diff. If the agent is not done, it finishes now.</li>
+</ol>
+<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
+<ol start="2" type="1">
+<li>Open the manuscript. Wherever you would not merge it, write a line <code>TODO: what has to change</code>. Save. Commit by hand.</li>
+</ol>
+<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
+<ol start="3" type="1">
+<li><p>Type:</p>
+<div class="prompt">
+<p>Work through the TODOs in the manuscript. Remove each one when it is done. When all are done, run /ghe-skills:commit.</p>
+</div></li>
+<li><p>Read the diff again. Then <code>/ghe-skills:open-pr</code>, answer no. <span class="highlight-yellow">The second and last pull request of the day.</span></p></li>
+</ol>
+<div class="hand">
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Sticky note when the pull request is open. Fill one row.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_3517681c" minutes="14" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>The human review leaves the markers, the agent works them off, one commit when all are done. Cut order if behind: at least one TODO. Inside a code chunk the marker is a line starting with # TODO.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="your-turn-partner-review" class="slide level2">
 <h2>Your turn: partner review</h2>
 <div class="task">
 <p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
 <ol type="1">
-<li>Open your partner’s pull request. Files changed.</li>
-<li>Read every line. <span class="highlight-yellow">Would I merge this?</span></li>
-<li>Approve, or say what would have to change. <span class="highlight-yellow">Do not merge yet</span>: round 5 adds the CLAUDE.md to this pull request.</li>
+<li>Open your partner’s pull request. <strong>Files changed</strong>.</li>
+<li>Leave <span class="highlight-yellow">at least three comments</span> where you see fit, for example something unclear, a number to check or a missing step. Click the <strong>+</strong> next to a line, write, then <strong>Add single comment</strong>.</li>
+<li>Do not approve or merge yet. In round 5, Claude reads your comments and works on them.</li>
 <li>Compare with the sprint 1 pull request nobody reviewed.</li>
 </ol>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_db95cd4a" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_0a32ebed" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
+<aside class="notes">
+<p>Nobody can review every line of a colleague’s analysis in eight minutes. Three comments where they matter give the agent concrete work in round 5, and they end up in the record.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="claude.md" class="slide level2 smaller">
+<section id="claude.md" class="slide level2">
 <h2>CLAUDE.md</h2>
 <ul>
 <li class="fragment"><code>CLAUDE.md</code> in the project folder: versioned, shared with collaborators, <span class="highlight-yellow">in the record</span>.</li>
@@ -1802,7 +1944,7 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="claude.md-against-a-skill" class="slide level2 smaller">
+<section id="claude.md-against-a-skill" class="slide level2">
 <h2>CLAUDE.md against a skill</h2>
 <ul>
 <li class="fragment">A skill has two parts: the <span class="highlight-yellow">when</span> is always sent to the model, the <span class="highlight-yellow">what</span> loads on demand.</li>
@@ -1810,7 +1952,7 @@ lesson-plan.qmd.
 <li class="fragment">Never write skills prospectively. Extract them from a conversation that just happened.</li>
 </ul>
 </section>
-<section id="csv-against-data-package" class="slide level2 smaller">
+<section id="csv-against-data-package" class="slide level2">
 <h2>CSV against data package</h2>
 <p>Placeholder: two screenshots from the rehearsal, the same short prompt on a plain CSV and on the installed openwashdata package. On the CSV it guesses; on the package it reads the documentation and names the variables.</p>
 <div class="hand-purple" style="text-align: center; margin-top: 0.8em;">
@@ -1860,27 +2002,33 @@ lesson-plan.qmd.
 </tbody>
 </table>
 </section>
-<section id="your-turn-round-5" class="slide level2 smaller">
+<section id="your-turn-round-5" class="slide level2 compact">
 <h2>Your turn: round 5</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
 <ol type="1">
-<li>“Write a CLAUDE.md for this repository from what we did today: the folder template, the naming rules, where the codebook is, how to render the manuscript. Then fill data/metadata/codebook.csv for the derived table.” Commit.</li>
-<li><code>/exit</code>, then <code>claude</code>. New session.</li>
-<li>Rerun the sprint 1 frame with question 1, word for word. Commit, if it has not already. “Push the dev branch.”</li>
-<li>With your partner: the sprint 1 output next to this one. Did it follow the template without being told? What did it do with work that was already done? <span class="highlight-yellow">Would I merge this?</span></li>
+<li><p>Type, then <code>/ghe-skills:commit</code>:</p>
+<div class="prompt">
+<p>Write a CLAUDE.md for this repository from what we did today: the folder template, the naming rules, where the codebook is, how to render the manuscript. Then fill data/metadata/codebook.csv for the derived table.</p>
+</div></li>
+<li><p><code>/exit</code>, then <code>claude</code>. A new session that knows only CLAUDE.md and your files.</p></li>
+<li><p>Type:</p>
+<div class="prompt">
+<p>Read the review comments on my open pull request and work on each one. Reply to each comment with what you changed. Then run /ghe-skills:commit and push the dev branch.</p>
+</div></li>
+<li><p>With your partner: were your comments handled? Did it follow CLAUDE.md without being told? <span class="highlight-yellow">Would I merge this?</span></p></li>
 </ol>
 <div class="hand">
-<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Sticky note when the rerun is pushed.</p>
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Sticky note when the push is done.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_6db822d7" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_b8fd30ac" minutes="20" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Rerunning the same prompt after adding CLAUDE.md is the lesson. Two things the dry run saw: a CLAUDE.md that says every change ends with the commit skill makes the agent commit on its own, rung 3 of the ladder reached by documentation alone; and the rerun verified the existing answer against the PDF and added a check script, it did not repeat the work. Twenty minutes, protected.</p>
+<p>The lesson is the new session: does documentation change what the agent does without being told? Look for the folders, the file names and the commit skill. The dry run saw a CLAUDE.md that says every change ends with the commit skill make the agent commit on its own, rung 3 of the ladder reached by documentation alone. The review comments give the new session real work; the word-for-word rerun this replaces only re-checked the old answer. Twenty minutes, protected.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1893,18 +2041,23 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="partner-merges" class="slide level2 smaller">
+<section id="partner-merges" class="slide level2">
 <h2>Partner merges</h2>
 <div class="task">
-<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
-<p>The pull request now carries the issues, the TODO fixes, the CLAUDE.md and the rerun. Merge your partner’s.</p>
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong>, your partner’s pull request</p>
+<ol type="1">
+<li>In <strong>Conversation</strong>, find your three comments. Did Claude reply? Is each one handled?</li>
+<li>In <strong>Commits</strong>, find the commits since your review.</li>
+<li>In <strong>Files changed</strong>, find <code>CLAUDE.md</code> and read it.</li>
+<li>Would I merge this? Then <strong>Merge pull request</strong>.</li>
+</ol>
 <div class="hand">
 <p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Sticky note when it is merged.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_31ca2f37" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_6d76fb6e" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -1913,27 +2066,70 @@ lesson-plan.qmd.
 <h1>Sprint 2: ship v0.2.0, declare both</h1>
 
 </section>
-<section id="our-turn-ship-v0.2.0" class="slide level2 smaller">
-<h2>Our turn: ship v0.2.0</h2>
+<section id="our-turn-ship-v0.2.0-main-and-render" class="slide level2">
+<h2>Our turn: ship v0.2.0, main and render</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
 <ol type="1">
-<li>“Switch to main and pull.”</li>
+<li><p>Type:</p>
+<div class="prompt">
+<p>Switch to main and pull.</p>
+</div></li>
 </ol>
-<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; 2. In <strong>RStudio</strong>: open the manuscript, press <strong>Render</strong>.</p>
-<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; 3. “Tag v0.2.0 and create a GitHub release with the DOCX attached.” If it did not render, the release note says so, as in the morning. 4. “Switch to dev, merge main into it, and push.”</p>
-<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Open the two release pages side by side.</p>
+<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
+<ol start="2" type="1">
+<li>Open the manuscript and press <strong>Render</strong>.</li>
+</ol>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_1921799a" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>Same script as the morning, without the pull request step: the partner merged it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="our-turn-ship-v0.2.0-the-release" class="slide level2">
+<h2>Our turn: ship v0.2.0, the release</h2>
+<div class="task">
+<p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
+<ol start="3" type="1">
+<li><p>Tag and release:</p>
+<div class="prompt">
+<p>Tag v0.2.0 and create a GitHub release with the DOCX attached.</p>
+</div>
+<p>If it did not render, the release note says so, as in the morning.</p></li>
+<li><p>Sync dev:</p>
+<div class="prompt">
+<p>Switch to dev, merge main into it, and push.</p>
+</div></li>
+</ol>
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
+<ol start="5" type="1">
+<li>Open the two release pages side by side.</li>
+</ol>
 <div class="hand">
 <p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Sticky note when both release pages are up.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_2b64b27d" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_ea341c65" minutes="6" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Same script as the morning. The DOCX stays out of git. Never leave a release on main with dev behind it.</p>
+<p>The DOCX stays out of git. Never leave a release on main with dev behind it.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1946,14 +2142,14 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="my-turn-1" class="slide level2 smaller">
+<section id="my-turn-2" class="slide level2">
 <h2>My turn</h2>
 <div class="hand-purple" style="margin-top: 1em;">
 <p>Sit back and watch.</p>
 <p>Note down any questions as they come up. We pick them up right after.</p>
 </div>
 <aside class="notes">
-<p>Demo script in lesson-plan.qmd: the agent writes the declaration of AI use from the first commit to v0.2.0, including who reviewed what and what changed between the releases, and puts it in the release notes of v0.2.0. Count the commits it found aloud. Say what the record covers and what it cannot: commits with their trailers, the prompt files, issues, pull requests and CLAUDE.md are in; the prompts behind issue texts, pull request bodies and release notes are not archived, and a good declaration says so. If behind: skip, two volunteers read a line of theirs instead.</p>
+<p>Demo script in lesson-plan.qmd: the agent writes the declaration of AI use from the first commit to v0.2.0, including who reviewed what and what changed between the releases, and puts it in the release notes of v0.2.0. Count the commits it found aloud. Say what the record covers and what it cannot: commits with their trailers, the prompt files, issues, pull requests, review comments and CLAUDE.md are in; the prompts behind issue texts, pull request bodies and release notes are not archived, and a good declaration says so. If behind: skip, two volunteers read a line of theirs instead.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1966,20 +2162,20 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-turn-your-declaration" class="slide level2 smaller">
+<section id="your-turn-your-declaration" class="slide level2">
 <h2>Your turn: your declaration</h2>
 <div class="task">
 <p><i class="fa-solid fa-terminal" aria-label="terminal"></i> &nbsp; In <strong>Claude Code</strong></p>
-<ol type="1">
-<li>“Write a declaration of AI use for this repository from the first commit to tag v0.2.0. Read the commit history and its trailers, the prompts folder, the issues, the pull requests and CLAUDE.md. Say which files an agent touched, in response to which instruction, who reviewed what, and what changed between v0.1.0 and v0.2.0. Put it in the release notes of v0.2.0.”</li>
-</ol>
+<div class="prompt">
+<p>Write a declaration of AI use for this repository from the first commit to tag v0.2.0. Read the commit history and its trailers, the prompts folder, the issues, the pull requests and CLAUDE.md. Say which files an agent touched, in response to which instruction, who reviewed what, and what changed between v0.1.0 and v0.2.0. Put it in the release notes of v0.2.0.</p>
+</div>
 <div class="hand">
 <p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; Sticky note when the release notes are updated. Fill the last row. Two volunteers read one line aloud.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_361d1678" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_fb7cb417" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -1988,26 +2184,31 @@ lesson-plan.qmd.
 <h1>Disclosure rules in the making: two records</h1>
 
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-two-sides-of-the-room" class="slide level2 smaller">
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-two-sides-of-the-room" class="slide level2">
 <h2><i class="fa-solid fa-person-walking" aria-label="person-walking"></i> Two sides of the room</h2>
+<div class="hand-purple" style="text-align: center;">
+<p>What should a paper say about AI use?</p>
+</div>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Disclose if AI was used at all.</strong></p>
-<p>A threshold each author judges invites under-reporting. The workflow logs every use anyway.</p>
+<p><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i> <strong>Left side of the room</strong></p>
+<p>Only whether AI was used, yes or no. One rule everyone can follow.</p>
 </div><div class="column" style="width:50%;">
-<p><strong>A yes-or-no flag loses the intent.</strong></p>
-<p>It cannot tell translation of your own ideas from ghostwriting, and readers will read it as a quality signal.</p>
+<div style="text-align: right;">
+<p><strong>Right side of the room</strong> <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i></p>
+<p>A yes or no says nothing. The paper should describe what the AI did and who checked it.</p>
+</div>
 </div></div>
 <div class="task">
 <p>Stand on your side. Argue with v0.1.0 and v0.2.0 as evidence. Cross over if persuaded.</p>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_1f97059a" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_21fd1526" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Both positions are on the Disclosure background page <span class="citation" data-cites="weaver2026disclosure carpenter2026watermarking">(<a href="#/references" role="doc-biblioref" onclick="">Carpenter, 2026</a>; <a href="#/references" role="doc-biblioref" onclick="">Weaver et al., 2026</a>)</span>. Where they meet: the flag decides whether there is something to show; the artifacts show what was done.</p>
+<p>Left and right as seen from the seats, facing the screen. Both positions are on the Disclosure background page <span class="citation" data-cites="weaver2026disclosure carpenter2026watermarking">(<a href="#/references" role="doc-biblioref" onclick="">Carpenter, 2026</a>; <a href="#/references" role="doc-biblioref" onclick="">Weaver et al., 2026</a>)</span>. Where they meet: the flag decides whether there is something to show; the artifacts show what was done.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2020,53 +2221,23 @@ lesson-plan.qmd.
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-turn-the-18-tasks-two-colours" class="slide level2 smaller">
-<h2>Your turn: the 18 tasks, two colours</h2>
-
-<img data-src="../images/wcri-18-boxes.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><div class="task">
-<p><i class="fa-solid fa-pen" aria-label="pen"></i> &nbsp; On the <strong>printed checklist</strong>, two pen colours</p>
-<ol type="1">
-<li>One colour: the tasks the agent touched in sprint 1. The other: sprint 2. Your declaration and your day sheet are the source.</li>
-<li>Circle the ones a peer would need to know about to judge the work.</li>
-<li>Compare with your lunch answer.</li>
-</ol>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_63a594cf" minutes="7" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
-</div>
-<aside class="notes">
-<p>The same list as before lunch, printed <span class="citation" data-cites="isc2026disclosure">(<a href="#/references" role="doc-biblioref" onclick="">International Science Council, 2026</a>)</span>. The “substantive” test is the proposed threshold.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="three-flipcharts" class="slide level2 smaller">
+<section id="three-flipcharts" class="slide level2">
 <h2>Three flipcharts</h2>
 <ul>
 <li class="fragment">Where does disclosure belong: spread through the sections, or gathered in one statement?</li>
-<li class="fragment">Should a null statement be mandatory, the way conflict of interest statements are?</li>
-<li class="fragment">How do you describe the verification and oversight that was actually done?</li>
+<li class="fragment">Should every paper have to say when no AI was used, the way it states conflicts of interest?</li>
+<li class="fragment">What should a paper say about who checked the AI’s work, and how?</li>
 </ul>
 <div class="hand">
 <p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; One note per chart, one line each, from what the two records showed. Your note from 14:40 goes on the third chart.</p>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_817ac41c" minutes="7" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_30273578" minutes="7" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
-<section id="what-happens-next" class="slide level2 smaller">
+<section id="what-happens-next" class="slide level2">
 <h2>What happens next</h2>
 <ul>
 <li class="fragment">The three flipcharts go to the AI working group of the Global Federation of Reproducibility Networks.</li>
@@ -2079,7 +2250,7 @@ lesson-plan.qmd.
 <h1>Close: the zine</h1>
 
 </section>
-<section id="what-you-learned-today" class="slide level2 smaller">
+<section id="what-you-learned-today" class="slide level2">
 <h2>What you learned today</h2>
 <p>Matched to the four objectives from this morning:</p>
 <ul>
@@ -2089,7 +2260,7 @@ lesson-plan.qmd.
 <li class="fragment"><strong>Declare agent use</strong>: one declaration written from two records.</li>
 </ul>
 </section>
-<section id="fold-a-zine" class="slide level2 smaller">
+<section id="fold-a-zine" class="slide level2">
 <h2>Fold a zine</h2>
 <div class="task">
 <p><i class="fa-solid fa-pen" aria-label="pen"></i> &nbsp; One <strong>A3 sheet</strong> each. Watch twice at the front, then fold.</p>
@@ -2132,11 +2303,11 @@ lesson-plan.qmd.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_5f511672" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_a674e39c" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
-<section id="the-table" class="slide level2 smaller">
+<section id="the-table" class="slide level2">
 <h2>The table</h2>
 <div class="task">
 <p>Zines in the middle of the table.</p>
@@ -2146,16 +2317,14 @@ lesson-plan.qmd.
 <li>One note for a flipchart if you have one: open questions, learnings, what I still wanted to say.</li>
 </ol>
 </div>
-<div class="small">
 <p>Post-course survey, five minutes, anonymous: link in the chat room, now or tonight.</p>
-</div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_7d950cbd" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_99f4808e" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
-<section id="thanks" class="slide level2 smaller">
+<section id="thanks" class="slide level2">
 <h2>Thanks!</h2>
 <ul>
 <li>Remove the two skills if you do not want to keep them: <code>/plugin uninstall ghe-skills@ghe-skills</code>. The app on the phone can go too.</li>
