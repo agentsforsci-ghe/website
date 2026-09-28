@@ -5,6 +5,10 @@ project:
   # for the gl shortcode (_extensions/ghe/gl) that adds popover definitions.
   pre-render:
     - tools/build_glossary.py
+    # Rebuilds workshop/run-of-show.html, the instructor's run of show for
+    # the iPad, from workshop/lesson-plan.qmd (which is excluded from the
+    # render below but still read by the script).
+    - tools/build_run_of_show.py
   render:
     - "*.qmd"
     - "**/*.qmd"
@@ -16,6 +20,9 @@ project:
   # render, so the file has to be a project resource rather than sit there.
   resources:
     - ".nojekyll"
+    # The run of show is a plain HTML page, unlisted (no navbar entry, noindex),
+    # served at workshop/run-of-show.html for the instructor's iPad.
+    - "workshop/run-of-show.html"
 
 website:
   page-navigation: true
