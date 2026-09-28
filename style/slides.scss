@@ -38,16 +38,55 @@ $presentation-font-size-root: 36px !default;
   text-align: center;
 }
 
+// Task boxes used to sit inside .smaller slides (0.7em) at 0.8em, about
+// 20px. Slides no longer carry .smaller, so 0.8em here is about 29px.
 .reveal .slide .task {
-  font-size: 0.80em;
+  font-size: 0.8em;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
   margin-bottom: 6px;
   margin-top: 6px;
-  border-left: solid 5px #0F4C81;
   background-color: #F5F5F5;
+}
+
+.reveal .slide .task p {
+  margin: 0.4em 0 0.15em 0;
+}
+
+.reveal .slide .task li,
+.reveal .slide .task li > p {
+  margin: 0.1em 0;
+}
+
+// Countdowns a third smaller and closer to the corner, so they stay clear of
+// the last line of a long task box.
+.reveal .countdown {
+  --countdown-font-size: 2rem;
+  --countdown-margin: 0.1em;
+  --countdown-padding: 0.4rem 0.6rem;
+}
+
+// A slide with a lot of text: between the default size and .smaller.
+.reveal .slides section.compact {
+  font-size: 0.85em;
+}
+
+.reveal .slides section.compact h2 {
+  font-size: calc(1.4em / 0.85);
+}
+
+// Text a learner types into Claude Code, on its own line under the step.
+.reveal .prompt {
+  background-color: #FFFFFF;
+  border-radius: 0.3em;
+  padding: 0.1em 0.5em;
+  margin: 0.15em 0 0.3em 0;
+}
+
+.reveal .prompt p {
+  margin: 0.1em 0;
 }
 
 .small {
@@ -75,6 +114,13 @@ $presentation-font-size-root: 36px !default;
   font-family: 'Gochi Hand', cursive;
   color: #0F4C81;
   font-size: 1.2em
+}
+
+// A rule or key line in the body font, bold, in the link blue.
+.reveal .rule {
+  font-weight: bold;
+  color: #0F4C81;
+  font-size: 1.1em;
 }
 
 .reveal .hand-purple-large {
