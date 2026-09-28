@@ -1,16 +1,34 @@
 ---
-title: "{{< fa layer-group >}} Studio cards"
-subtitle: "Sprint 1, after the first run: explore with cards, commit after every card that changed a file"
+title: "{{< fa layer-group >}} Print page: question sheet, studio cards, day sheet, checklist"
+subtitle: "Everything on paper for the day, in the order it is handed out"
 toc: true
 ---
 
-Ten cards, 35 minutes, your own repository. Pick freely, in any order, at least two. Each card is one prompt to type into Claude Code and one thing to watch for. Every card ends the same way: if it changed a file, run `/ghe-skills:commit`; either way, log the card on your day sheet.
+Four things are printed from this page. The question sheet is on the table when you arrive (09:30). The studio cards are one set per table and the day sheet one per person, handed out before the first run (10:43). The 18-task checklist is handed out at 16:00.
+
+## The question sheet
+
+One per person, half a page. Three questions your own data can answer, one sentence each, and a fourth box your neighbour fills. The sheet goes on the wall at 09:38, and at 09:55 you type the three questions into `questions.md` in your repository and commit them by hand.
+
+| | |
+|---|---|
+| Name | |
+| **1. To check it.** A question you already know the answer to. | |
+| **2. To explore.** A question you do not know the answer to. | |
+| **3. To catch it.** A question your data cannot answer. | |
+| **4. Question 1, 20 percent more specific**, written by your neighbour: which column, which unit, which comparison. | |
+
+: {tbl-colwidths="[45,55]"}
+
+Question 1 runs the framed run at 10:44 and the rerun at 15:14. Question 2 is card 1, question 3 is card 2. Sprint 2 is a choice: question 1 done properly, or question 2.
+
+## The studio cards
+
+Ten cards, 35 minutes, your own repository. Pick freely, in any order, at least two. Each card is one prompt to type into Claude Code and one thing to watch for. Every card ends the same way: if it changed a file, run `/ghe-skills:commit`; either way, fill one row of your day sheet.
 
 Two rules inside the studio. If the agent asks, answer. If it is stuck for two minutes, raise your hand and move to another card.
 
-The prompts use your three questions from the morning: question 1 is the one you know the answer to, question 2 the one you do not, question 3 the one your data cannot answer. Card 4 is recommended for everyone: it is the render test for the release before lunch.
-
-## The cards
+The prompts use your three questions from the morning: question 1 is the one you know the answer to (to check it), question 2 the one you do not (to explore), question 3 the one your data cannot answer (to catch it). Card 4 is recommended for everyone: it is the render test for the release before lunch.
 
 ### Card 1: the question you cannot answer yet
 
@@ -40,7 +58,7 @@ Watch for: whether it renders. If it does not, this is the moment to find out, n
 
 > Find the five references in my Zotero library that are most relevant to this data, and say in one sentence each why.
 
-Watch for: does it read the library through the Zotero tool, or does it guess titles? Check one.
+Watch for: does it read the library through the Zotero tool, or does it guess titles? Check one. And if the tool returned nothing: did it go around the tool, and did it ask you first?
 
 ### Card 6: the README, read by a stranger
 
@@ -72,9 +90,9 @@ Anything you are curious about. Watch for: your own reaction. Write it on the sh
 
 ## The day sheet
 
-One per person, on paper, ten rows: one for the first run, one per card, and one each for the plan, the issues and the rerun in the afternoon. The sheet is the material for the reflect block at 13:00, for the 18-task checklist at 16:00 and for page 2 of your zine.
+One per person, on paper, eleven rows: one for the first run, one per card, and one each for the plan, the issues, the run from the phone, the TODO pass, the CLAUDE.md, the rerun and the declaration. "Minutes it ran" is the wall clock from your prompt to the agent stopping; a first run on a PDF took 12 minutes in the dry run, most cards under 2. The sheet is the material for the reflect block at 13:00, for the 18-task checklist at 16:00 and for page 2 of your zine.
 
-| Run | What happened (one line) | What it assumed | Cost line | Would I merge this? | Committed? |
+| Run | What happened (one line) | What it assumed | Minutes it ran | Would I merge this? | Committed? |
 |---|---|---|---|---|---|
 | First run | | | | | |
 | Card | | | | | |
@@ -82,11 +100,37 @@ One per person, on paper, ten rows: one for the first run, one per card, and one
 | Card | | | | | |
 | Plan | | | | | |
 | Issues | | | | | |
-| Issue 1 and 2 (from the phone) | | | | | |
+| Issues 1 and 2 (from the phone) | | | | | |
+| TODOs | | | | | |
 | CLAUDE.md | | | | | |
 | Rerun | | | | | |
 | Declaration | | | | | |
 
-: {tbl-colwidths="[14,30,18,10,16,12]"}
+: {tbl-colwidths="[16,30,18,10,14,12]"}
 
-The back of the sheet is for the recall sentence. Write it out each time blanks are filled.
+## The 18-task checklist
+
+One per person, handed out at 16:00 with two pen colours. The tasks are the proposed taxonomy from the International Science Council's consultation on a reporting standard for AI use in research [@isc2026disclosure]. One colour for the tasks the agent touched in sprint 1, the other for sprint 2; your declaration and your day sheet are the source. Circle the ones a peer would need to know about to judge the work.
+
+| | Task | Sprint 1 | Sprint 2 | A peer needs to know |
+|---|---|---|---|---|
+| 1 | Idea generation | | | |
+| 2 | Hypothesis development | | | |
+| 3 | Literature search | | | |
+| 4 | Literature summarization | | | |
+| 5 | Design: study design or experiment design | | | |
+| 6 | Design: data collection methodology | | | |
+| 7 | Design: data analysis plan | | | |
+| 8 | Data collection (operations, activities) | | | |
+| 9 | Data creation | | | |
+| 10 | Computer code generation, refinement or auditing | | | |
+| 11 | Data cleaning, preprocessing or auditing | | | |
+| 12 | Quantitative data analysis | | | |
+| 13 | Qualitative data analysis | | | |
+| 14 | Data visualization | | | |
+| 15 | Figure or image generation | | | |
+| 16 | Drafting manuscript or abstract text | | | |
+| 17 | Translation | | | |
+| 18 | Editing or rewriting, including of reference lists | | | |
+
+: {tbl-colwidths="[5,45,14,14,22]"}
