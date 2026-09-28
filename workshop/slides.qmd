@@ -34,8 +34,10 @@ library(countdown)
 Combined layout: the whole path twice, with the studio cards inside sprint 1.
 Every slide from the lesson plan is placed with its headline, turn type,
 icons, countdown and a notes stub. Body text is a placeholder where it says
-so. Demo scripts live in lesson-plan.md, not here. The cards and the day
-sheet live on studio-cards.qmd and are printed for the day.
+so. Demo scripts live in lesson-plan.qmd, not here. The question sheet, the
+cards, the day sheet and the 18 task checklist live on studio-cards.qmd and
+are printed for the day. Countdown minutes equal the minute tables in
+lesson-plan.qmd.
 -->
 
 # Welcome {{< fa hand >}} {background-color="{{< var brand.section-bg >}}"}
@@ -122,37 +124,39 @@ The arguments are on the four background pages. Two neighbour minutes, no share-
 -   **Sprint 1**, before lunch: three questions of your own, one framed run, then [studio cards]{.highlight-yellow} on your repository with a commit after each, a pull request you merge yourself, release v0.1.0. Fast and rough, on purpose.
 -   **Sprint 2**, after lunch: a plan you edit, issues a colleague reviews, a run that continues from your phone, a reviewed pull request, a CLAUDE.md, release v0.2.0, one declaration over both.
 -   Every round ends with the same check: [would I merge this?]{.highlight-yellow}
--   Two snack breaks, each with a question to take with you. The evidence wall collects what you notice. The day closes with a zine.
+-   Two snack breaks, each with a question to take with you. The day closes with a zine.
 :::
 
 ## The variable {.smaller}
 
-| Round | Who reads the files | Who decides the steps | Who reviews | Where the instructions live |
-|---|---|---|---|---|
-| 0 No AI | you | you | nobody | your head |
-| 1 Chat | you paste them | you | you | the chat box |
-| 2 One line, sprint 1 | the agent | the agent | you, afterwards | one line |
-| 3 Plan mode, sprint 2 | the agent | you, before anything runs | you | a plan you can edit |
-| 4 Issues and review | the agent | you and a colleague | a colleague, twice | GitHub issues |
-| 5 CLAUDE.md and skills | the agent | you and a colleague | a colleague | the repository |
+| Round | Who reads the files | Who decides the steps | Who reviews | Where the instructions live | Where the result lives |
+|---|---|---|---|---|---|
+| 0 No AI | you | you | nobody | your head | a Word file on your laptop |
+| 1 Chat | you paste them | you | you | the chat box | [a chat thread in your account]{.highlight-yellow} |
+| 2 One line, sprint 1 | the agent | the agent | you, afterwards | one line | [files and a commit in your repository]{.highlight-yellow} |
+| 3 Plan mode, sprint 2 | the agent | you, before anything runs | you | a plan you can edit | a plan file, then commits |
+| 4 Issues and review | the agent | you and a colleague | a colleague, twice | GitHub issues | a reviewed pull request |
+| 5 CLAUDE.md and skills | the agent | you and a colleague | a colleague | the repository | a tagged release |
 
 ::: {.notes}
-This table returns as one row per section slide, with the changed cell highlighted. Sprint 1 is rows 1 and 2, sprint 2 is rows 3 to 5.
+This table returns as one row per section slide, with the changed cell highlighted. Sprint 1 is rows 1 and 2, sprint 2 is rows 3 to 5. The last column is the one to point at: rounds 1 and 2 differ most in where the result ends up.
 :::
 
-## How the recall works {.smaller}
-
-One sentence describes the whole workflow. It has six blanks. It comes back five times today, each time with more blanks to fill.
+## Two rungs today {.smaller}
 
 ::: incremental
-1.  The sentence appears with the newest blanks [empty]{.highlight-yellow}.
-2.  Twenty seconds: tell your neighbour what goes in.
-3.  Reveal.
-4.  Write the whole sentence so far on the back of your day sheet.
+1.  Very low stakes: implement it. [Sprint 1.]{.highlight-yellow}
+2.  Low stakes: plan, then implement.
+3.  Medium stakes: plan, review the plan, implement, review the implementation. [Sprint 2.]{.highlight-yellow}
+4.  High stakes: design first, then repeat the cycles.
 :::
 
-::: {.small}
-Filling the blank from memory is what makes it stick. By 17:00 you can say the workflow without the slide, and it goes on the last page of your zine.
+::: {.small style="margin-top: 0.8em;"}
+The workflow is not the same for every task. Which rung a task gets is the first decision, every time. After lunch you stand on it.
+:::
+
+::: {.notes}
+Hadley Wickham's stakes ladder, the reason plan mode exists. Two minutes here; the physical version is the floor exercise at 13:02.
 :::
 
 ## Learning objectives {.smaller}
@@ -187,13 +191,13 @@ read_csv(here::here("data/tbl-01-agentsforsci-ghe-course-schedule.csv"),
 ## Your turn: your question bank {.smaller}
 
 :::: task
-{{< fa pen >}} &nbsp; On **paper**, three questions your data can answer. One sentence each.
+{{< fa pen >}} &nbsp; On the **printed question sheet**, three questions your data can answer. One sentence each.
 
-1.  One you [already know the answer to]{.highlight-yellow}.
-2.  One you do not.
-3.  One [your data cannot answer]{.highlight-yellow}.
+1.  One you [already know the answer to]{.highlight-yellow}. *To check it.*
+2.  One you do not. *To explore.*
+3.  One [your data cannot answer]{.highlight-yellow}. *To catch it.*
 
-Swap with a neighbour. Make their question 1 [20 percent more specific]{.highlight-yellow}: which column, which unit, which comparison. Pin the sheet on the wall.
+Swap with a neighbour. Make their question 1 [20 percent more specific]{.highlight-yellow}: which column, which unit, which comparison. Write the sharper version in box 4. Pin the sheet on the wall.
 
 ::: hand
 {{< fa note-sticky >}} &nbsp; Sticky note on your laptop when your sheet is on the wall.
@@ -206,7 +210,7 @@ countdown(minutes = 8)
 ```
 
 ::: {.notes}
-Question 1 runs the framed run at 10:47 and the rerun at 15:14. Questions 2 and 3 are cards. Sprint 2 is a choice: question 1 done properly, or question 2.
+Question 1 runs the framed run at 10:44 and the rerun at 15:14: a known answer is what makes those runs checkable. Question 2 is card 1, question 3 is card 2. Sprint 2 is a choice: question 1 done properly, or question 2. At 09:55 the three questions go into the repository by hand.
 :::
 
 ## The instructor's questions {.smaller}
@@ -229,15 +233,19 @@ Cloned at `~/Documents/gitrepos/gh-org-agentsforsci-ghe/fstp-eval-india`. Questi
 
 ## Round 0: no AI [current state]{.current-state} {.smaller}
 
-| Who reads the files | Who decides the steps | Who reviews | Where the instructions live |
-|---|---|---|---|
-| [you]{.highlight-yellow} | you | nobody | your head |
+| Who reads the files | Who decides the steps | Who reviews | Where the instructions live | Where the result lives |
+|---|---|---|---|---|
+| [you]{.highlight-yellow} | you | nobody | your head | a Word file on your laptop |
 
 ## The steps of a paper, as you do them now [current state]{.current-state} {.smaller}
 
-Placeholder: one slide with the steps from data to submitted manuscript and where the hours go.
+![](../images/ghe-rdm-workflow-v2.jpg){fig-align="center" width="78%"}
 
-::: {.hand-purple style="text-align: center; margin-top: 1em;"}
+::: {.small}
+Today touches five of the boxes: data processing, data analysis, the manuscript, the repository, the release. Diagram from the group's data management strategy, <https://github.com/Global-Health-Engineering/concept-maps>.
+:::
+
+::: {.hand-purple style="text-align: center; margin-top: 0.2em;"}
 Where does AI sit in your workflow today, if anywhere?
 :::
 
@@ -246,22 +254,46 @@ Where does AI sit in your workflow today, if anywhere?
 countdown(minutes = 1)
 ```
 
+::: {.notes}
+The workflow graph from the ETH Library colloquium talk. Point at the five boxes the day touches, then the neighbour minute.
+:::
+
 ## Round 1: chat [current state]{.current-state} {.smaller}
 
-| Who reads the files | Who decides the steps | Who reviews | Where the instructions live |
-|---|---|---|---|
-| [you paste them]{.highlight-yellow} | you | you | the chat box |
+| Who reads the files | Who decides the steps | Who reviews | Where the instructions live | Where the result lives |
+|---|---|---|---|---|
+| [you paste them]{.highlight-yellow} | you | you | the chat box | [a chat thread in your account]{.highlight-yellow} |
 
 ## My turn [current state]{.current-state} {.smaller}
 
-::: {.hand-purple style="margin-top: 1em;"}
+::: {.hand-purple style="margin-top: 0.6em;"}
 Sit back and watch.
+:::
 
-Note down any questions as they come up. We pick them up right after.
+1.  I upload the report PDF into the Claude chat and ask question 1. Then I ask for receipts: which page, which table.
+2.  I ask question 3, the one the report cannot answer.
+3.  Note down any questions as they come up. We pick them up right after.
+
+::: {.notes}
+Demo script in lesson-plan.qmd. The answer sounds the same whether it is right or not. What the model does with question 3 is filled in at the rehearsal. The helper lays out the snacks now.
+:::
+
+## Where did that go? [current state]{.current-state} {.smaller}
+
+| | |
+|---|---|
+| The PDF | on Anthropic's servers, in my account |
+| The answer | in a chat thread, in my account |
+| To continue tomorrow | scroll up and paste |
+| To share it | a screenshot |
+| To redo it | ask again, get a different answer |
+
+::: {.hand-purple style="text-align: center; margin-top: 0.6em;"}
+Nothing is in the project. Nothing is versioned. Nobody can check it.
 :::
 
 ::: {.notes}
-Demo script in lesson-plan.md: question 1 in chat with the report, ask for receipts, then question 3 (helminth eggs). The answer sounds the same whether it is right or not. The helper lays out the snacks now.
+The point of the chat demo is the last column of the variable table. Everything after the break puts the result where colleagues can read it, diff it and cite it.
 :::
 
 ## A good question {.smaller}
@@ -289,32 +321,71 @@ Which column, which unit, which comparison. Your neighbour did that to your ques
 
 2.  Open it at `~/Documents/gitrepos/gh-org-agentsforsci-ghe/<your repo>`, [not one level up]{.highlight-yellow}.
 3.  `git switch -c dev` (already have one? `git switch dev`), then `claude`.
-4.  `/status`. Find the mode line. `/context`.
+4.  Press **Shift+Tab** with me until the line under the box says [auto mode on]{.highlight-yellow}. Then `/context`.
 
 ::: hand
-{{< fa note-sticky >}} &nbsp; Sticky note when `/context` has printed.
+{{< fa note-sticky >}} &nbsp; Sticky note when `/context` has printed and your line says auto mode on.
 :::
 ::::
 
 ::: {.notes}
-The agent reads the folder it starts in; one level up it would read every repository. The pre-work never created dev, so -c. Auto mode, Shift+Tab for manual, said once. Hand out the bingo cards.
+The agent reads the folder it starts in; one level up it would read every repository. The pre-work never created dev, so -c. Step 4 is a follow along: Shift+Tab cycles auto, manual, accept edits, plan and back to auto, and everyone presses until their line matches mine. On the Team plan auto is the starting mode, so most screens say it already; the point is that everyone has seen the key. Auto mode has to be allowed in the Team admin settings before the day.
+:::
+
+## Four keys {.smaller}
+
+| Key | What it does |
+|---|---|
+| **Shift+Tab** | cycles the mode: auto, manual, accept edits, plan |
+| **Esc** | stops a run |
+| **Esc, Esc** on an empty box | lists earlier turns; pick one to go back to |
+| **Up arrow** | brings back your last prompt |
+
+::: {.small style="margin-top: 0.8em;"}
+A screenshot pastes into the box with **Ctrl+V** (Cmd+V in iTerm2). Stuck on something on your screen? Paste it.
+:::
+
+::: {.notes}
+One minute. Checked against the Claude Code docs on 24 September. Drag and drop of an image is on the rehearsal list.
+:::
+
+## Our turn: one commit by hand {.smaller}
+
+:::: task
+{{< fa laptop-code >}} &nbsp; In **RStudio**, your own repository, branch `dev`
+
+1.  New text file, `questions.md`, at the top of the repository. Type your three questions. Save.
+2.  Git pane: stage it, message `docs: add my three questions`, commit. [The way you did in July.]{.highlight-yellow}
+
+::: hand
+{{< fa note-sticky >}} &nbsp; Sticky note when the commit is in.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 4)
+```
+
+::: {.notes}
+Four minutes. The agent can read the file later, the cards quote from it, and this afternoon the declaration shows one commit by hand next to the assisted ones. This is rung 1 of the ladder on the next slide, lived before it is named.
 :::
 
 ## Who commits, and how often {.smaller}
 
 ::: incremental
-1.  Do all commits yourself.
+1.  Do all commits yourself. [You just did.]{.highlight-yellow}
 2.  Tell the agent when to commit. [Sprint 1.]{.highlight-yellow}
 3.  Let the agent commit. You write the issues and open the pull request. [Sprint 2.]{.highlight-yellow}
 4.  Let the agent make the whole pull request.
 :::
 
 ::: {.hand-purple style="margin-top: 0.8em;"}
-Commit after every run that changed a file. One pull request per sprint. Pushing is its own step.
+Commit after every run that changed a file. One pull request per sprint. The pull request skill pushes and tells you how many commits went up.
 :::
 
 ::: {.notes}
-Hadley Wickham's git-trust ladder with the issue step inserted. Small commits are cheap to read and cheap to undo; the declaration at 15:45 is written from them. The pull request skill does not push.
+Hadley Wickham's git-trust ladder with the issue step inserted. Small commits are cheap to read and cheap to undo; the declaration at 15:45 is written from them. Three minutes.
 :::
 
 ## Our turn: two skills {.smaller}
@@ -332,28 +403,7 @@ Hadley Wickham's git-trust ladder with the issue step inserted. Small commits ar
 ::::
 
 ::: {.notes}
-One turns the agent's changes into a commit with a record of what the agent did, one opens a pull request from dev into main. A failed install goes to the helper in the break. Removal on the close slide.
-:::
-
-## Our turn: pair your phone once {.smaller}
-
-:::: task
-{{< fa terminal >}} &nbsp; In **Claude Code**
-
-1.  `/remote-control`. A link and a QR code appear.
-
-{{< fa mobile-screen >}} &nbsp; On your **phone**
-
-2.  Scan the code with the Claude app. Send: "Status?"
-3.  Read the answer on the laptop. Close the session on the phone.
-
-::: hand
-{{< fa note-sticky >}} &nbsp; Sticky note when the answer arrived. Failed? The helper, in the break.
-:::
-::::
-
-::: {.notes}
-The pairing for 14:10 is tested now, with a break behind it. Same account and organisation on laptop and phone. Remote Control must be enabled in the Team admin settings before the day.
+One turns the agent's changes into a commit with a record of what the agent did, one pushes dev and opens a pull request into main. A failed install goes to the helper in the break. Removal on the close slide.
 :::
 
 ## Snack break {.smaller}
@@ -393,32 +443,35 @@ countdown(minutes = 5)
 Opens with question 1: two answers, one last look at data/. Posit's "be the tool" trick, on public data so nothing of yours goes into the chat. The loop is felt before Claude Code automates it.
 :::
 
-## The model {.smaller}
+## The day sheet {.smaller}
 
-Placeholder: stateless, on the provider's servers, sees only what was sent in this request.
+| Run | What happened | What it assumed | Minutes it ran | Would I merge this? | Committed? |
+|---|---|---|---|---|---|
+| First run | | | | | |
+| Card | | | | | |
 
-## The harness {.smaller}
+::: {.small style="margin-top: 0.8em;"}
+One row per run, all day: the first run, each card, the plan, the issues, the TODOs, the rerun, the declaration. Hand out now. The sheet feeds the reflect block at 13:00, the checklist at 16:00 and page 2 of your zine.
+:::
 
-Placeholder: the loop, the tools, the permission layer, on your laptop. What you just did by hand.
-
-## The tool call {.smaller}
-
-Placeholder: what will scroll past in a minute. Read tools observe, write tools change things.
+::: {.notes}
+One minute. The helper hands the sheets out while the slide is up, so the first "fill one row" on the next slide lands on paper everyone holds.
+:::
 
 ## Round 2: one line {.smaller}
 
-| Who reads the files | Who decides the steps | Who reviews | Where the instructions live |
-|---|---|---|---|
-| [the agent]{.highlight-yellow} | [the agent]{.highlight-yellow} | you, afterwards | one line |
+| Who reads the files | Who decides the steps | Who reviews | Where the instructions live | Where the result lives |
+|---|---|---|---|---|
+| [the agent]{.highlight-yellow} | [the agent]{.highlight-yellow} | you, afterwards | one line | [files and a commit in your repository]{.highlight-yellow} |
 
 ## Your turn: the framed run, then commit {.smaller}
 
 :::: task
 {{< fa terminal >}} &nbsp; In **Claude Code**, your own repository, branch `dev`
 
-1.  Type this and nothing else: "Answer the following question using the data in this repository and write up the result as a Quarto manuscript: *your question 1*."
+1.  Type this and nothing else: "Answer the following question using the data in this repository and write up the result as a Quarto manuscript that renders to DOCX: *your question 1*."
 2.  Watch the tool calls. [Do not intervene.]{.highlight-yellow}
-3.  When it stops: `/ghe-skills:commit`. Read the message it proposes. Log the run on your day sheet.
+3.  When it stops: `/ghe-skills:commit`. Read the message it proposes. Fill the first row of your day sheet.
 
 ::: hand
 {{< fa note-sticky >}} &nbsp; Sticky note when the commit is in.
@@ -427,11 +480,23 @@ Placeholder: what will scroll past in a minute. Read tools observe, write tools 
 
 ```{r}
 #| echo: false
-countdown(minutes = 12)
+countdown(minutes = 15)
 ```
 
 ::: {.notes}
-Everyone runs the same underspecified frame with their own question 1, so the stand-up compares like with like. Bounded regroup: 3 minutes, then park-and-pair.
+Everyone runs the same underspecified frame with their own question 1, so the stand-up compares like with like. A first run on a PDF is the slow case: 12 minutes measured in the dry run, plus 1.5 for the skill. A CSV should come in under 5. Bounded regroup: 3 minutes, then park-and-pair.
+:::
+
+## What scrolled past {.smaller}
+
+::: incremental
+-   Every line was a **tool call**: read a file, list a folder, write a file, run a command.
+-   That is the loop you did by hand in the chat, run by a program on your laptop. The model on the server only ever sees what that program sends it.
+-   The result is [files and a commit in your repository]{.highlight-yellow}. Compare the chat: a thread in an account.
+:::
+
+::: {.notes}
+Two minutes, said right after everyone has watched the lines scroll. Read tools observe, write tools change things; both showed up in the run.
 :::
 
 ## The studio: ten cards {.smaller}
@@ -455,22 +520,11 @@ Everyone runs the same underspecified frame with their own question 1, so the st
 ::::
 
 ::: {.small}
-Pick freely, any order, at least two. Changed a file? [`/ghe-skills:commit`]{.highlight-yellow}. Either way, log it. If it asks, answer. Stuck for two minutes: raise a hand, next card.
+Pick freely, any order, at least two. Changed a file? [`/ghe-skills:commit`]{.highlight-yellow}. Either way, fill one row of your day sheet. If it asks, answer. Stuck for two minutes: raise a hand, next card.
 :::
 
 ::: {.notes}
-Cards are printed and on studio-cards.qmd. Card 4 is the render test for the ship. Stuck: cards 6 and 7, nothing can break. Fast: 8, 9 and 10.
-:::
-
-## The day sheet {.smaller}
-
-| Run | What happened | What it assumed | Cost line | Would I merge this? | Committed? |
-|---|---|---|---|---|---|
-| First run | | | | | |
-| Card | | | | | |
-
-::: {.small style="margin-top: 0.8em;"}
-Ten rows, one per run, all day. The sheet feeds the reflect block at 13:00, the checklist at 16:00 and page 2 of your zine. The back is for the recall sentence.
+Cards are printed and on studio-cards.qmd. Card 4 is the render test for the ship. Stuck: cards 6 and 7, nothing can break. Fast: 8, 9 and 10. One minute.
 :::
 
 ## Your turn: the studio {.smaller}
@@ -478,7 +532,7 @@ Ten rows, one per run, all day. The sheet feeds the reflect block at 13:00, the 
 :::: task
 {{< fa terminal >}} &nbsp; In **Claude Code**, your own repository, branch `dev`
 
-Cards on the table. At least two. Card 4 for everyone. A commit after each card that changed a file. Log every card.
+Cards on the table. At least two. Card 4 for everyone. A commit after each card that changed a file. One row of the day sheet per card.
 
 ::: hand
 {{< fa hand >}} &nbsp; Raised hand when a card is stuck for two minutes, then move on.
@@ -509,7 +563,7 @@ countdown(minutes = 1)
 
 ::: incremental
 1.  Pull request merged into `main`.
-2.  Manuscript rendered to DOCX.
+2.  Manuscript rendered to DOCX, in RStudio.
 3.  Tag `v0.1.0`.
 4.  Release on GitHub, with the DOCX attached. [Source in git, artifact on the release.]{.highlight-yellow}
 5.  `dev` synced with `main`.
@@ -524,61 +578,52 @@ Sprint 1 does it rough: no reviewer, whatever rendered. Sprint 2 does it properl
 :::: task
 {{< fa terminal >}} &nbsp; In **Claude Code**
 
-1.  "Push the dev branch." Then `/ghe-skills:open-pr`. [The first pull request of the day.]{.highlight-yellow}
+1.  `/ghe-skills:open-pr`. It pushes first and tells you how many commits went up. When it offers the test plan, answer no. [The first pull request of the day.]{.highlight-yellow}
 
 {{< fa brands github >}} &nbsp; Open it, one minute on Files changed, merge it yourself. No reviewer, on purpose.
 
-{{< fa terminal >}} &nbsp; Back in **Claude Code**
+{{< fa terminal >}} &nbsp; 2. "Switch to main and pull." Main and dev now hold the same work.
 
-2.  "Switch to main and pull. Render the manuscript to DOCX."
-3.  "Tag v0.1.0 and create a GitHub release. Attach the DOCX if it rendered; if not, say in the release note that the manuscript does not render yet."
-4.  "Switch to dev, merge main into it, and push."
+{{< fa laptop-code >}} &nbsp; 3. In **RStudio**: open the manuscript, press **Render**. A DOCX appears next to it.
+
+{{< fa terminal >}} &nbsp; 4. "Tag v0.1.0 and create a GitHub release. Attach the DOCX if it rendered; if not, say in the release note that the manuscript does not render yet." 5. "Switch to dev, merge main into it, and push."
 
 ::: hand
-{{< fa brands github >}} &nbsp; Sticky note when the release page is up, with or without the DOCX.
+{{< fa brands github >}} &nbsp; Sticky note when the release page is up. Download the DOCX: this is the file you would email a co-author without Git.
 :::
 ::::
 
 ```{r}
 #| echo: false
-countdown(minutes = 18)
+countdown(minutes = 14)
 ```
 
 ::: {.notes}
-Script in lesson-plan.md. A rough v0.1.0 is the point; do not let anyone polish it. May spill into lunch; whoever is not up by 12:05 is on the helper's lunch list and eats first.
+Script in lesson-plan.qmd. A rough v0.1.0 is the point; do not let anyone polish it. The render in RStudio uses the bundled Quarto and is a minute of Quarto practice; the agent does the tag and the release. May spill into lunch; whoever is not up by 12:05 is on the helper's lunch list and eats first.
 :::
 
-## Recall {.smaller}
+## The 18 tasks {.smaller}
 
-You write [ ]{.blank}. The agent reads [ ]{.blank}. The agent proposes [ ]{.blank}. You [ ]{.blank}. A colleague reviews [ ]{.blank}. The instructions live in [ ]{.blank}.
+![](../images/wcri-18-boxes.png){fig-align="center" width="88%"}
 
-::: {.hand-purple style="text-align: center; margin-top: 0.8em;"}
-Twenty seconds: the first two blanks, to your neighbour.
+::: {.small}
+The proposed standard for declaring AI use in research lists 18 tasks; you tick the ones AI touched [@isc2026disclosure]. Screenshot: International Science Council, Consultation Round 2, preparatory reading. Printed for you at 16:00.
 :::
-
-```{r}
-#| echo: false
-countdown(minutes = 0, seconds = 20)
-```
 
 ::: {.notes}
-Version 1, the guess. Sprint 1 filled two blanks at once. Say nothing until the countdown ends.
-:::
-
-## Recall {.smaller}
-
-You write [a question]{.blank .filled}. The agent reads [your repository]{.blank .filled}. The agent proposes [ ]{.blank}. You [ ]{.blank}. A colleague reviews [ ]{.blank}. The instructions live in [ ]{.blank}.
-
-::: {.small style="margin-top: 1em;"}
-{{< fa pen >}} &nbsp; Write the sentence on the back of your day sheet.
+Two minutes. One sentence: this is the taxonomy that came out of round 1 of the consultation, and it becomes the checklist at 16:00. The lunch question uses it.
 :::
 
 ## Lunch {.smaller}
 
-Back at **13:00**. Bring your day sheet. The afternoon starts on the floor.
+Back at **13:00**. Bring your day sheet. The afternoon starts with two minutes at the keyboard, then on the floor.
 
 ::: {.hand-purple style="text-align: center; margin-top: 1em;"}
 Of the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over?
+:::
+
+::: {.small style="margin-top: 0.8em;"}
+Over lunch, pick your sprint 2 question: [question 1 done properly]{.highlight-yellow}, or question 2.
 :::
 
 ```{r}
@@ -587,6 +632,25 @@ countdown(minutes = 60)
 ```
 
 # Between sprints: what v0.1.0 shows {background-color="{{< var brand.section-bg >}}"}
+
+## Our turn: start your plan {.smaller}
+
+:::: task
+{{< fa terminal >}} &nbsp; In **Claude Code**, your own repository, branch `dev`
+
+1.  **Shift+Tab** until the line under the box says [plan mode on]{.highlight-yellow}.
+2.  Type the morning frame with your sprint 2 question, plus one line: "Plan only. Do not run any analysis or write any file yet."
+3.  Leave it running. Come to the floor.
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 2)
+```
+
+::: {.notes}
+The plan runs while the room is on the ladder, the way the walk covers the hand-over. In the dry run the frame alone took 18 minutes in plan mode on a PDF, because the agent ran the analysis to plan it; the added line is meant to stop that and has not been measured. Whatever is back by 13:28 is what the Your turn starts from. My own plan starts now too, on the demo repository.
+:::
 
 ## {{< fa person-walking >}} The stakes ladder {.smaller}
 
@@ -607,7 +671,7 @@ countdown(minutes = 5)
 ```
 
 ::: {.notes}
-Opens with the lunch question: two answers, then everybody up. The ladder is the reason plan mode exists. Sprint 1 was rung 1 on purpose.
+Opens with the lunch question: two answers, then everybody up. The compact version was on the opening slide; this is the physical one. Sprint 1 was rung 1 on purpose.
 :::
 
 ## Reflect on v0.1.0 {.smaller}
@@ -619,6 +683,15 @@ Release page open on your screen, day sheet in hand.
 -   Where did it put files, and how did it name them?
 -   How many commits did sprint 1 produce? Hands up: three or more.
 -   [Would I send v0.1.0 to a co-author?]{.highlight-yellow}
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 4)
+```
+
+::: {.notes}
+Four minutes. In the dry run: the manuscript at the repository root, data files with underscores, no metadata folder, the author name taken from the machine. The numbers were right; the layout was the agent's.
 :::
 
 ## Where repositories live {.smaller}
@@ -665,31 +738,47 @@ File names: lowercase, dash as separator, short, a two-digit prefix for scripts.
 :::
 ::::
 
-::: {.notes}
-Placeholder template, to confirm before the day (reduced student-dir-template). The three levels: where repositories live, inside a repository, file names.
+::: {.hand-purple style="text-align: center; margin-top: 0.5em;"}
+Where would your v0.1.0 files belong in here?
 :::
 
-## Your sprint 2 question {.smaller}
+::: {.notes}
+Placeholder template, to confirm before the day (reduced student-dir-template). Five minutes for the two folder slides. The question is the bridge to the rejection sentence at 13:28.
+:::
+
+## Our turn: look inside your files {.smaller}
 
 :::: task
-{{< fa pen >}} &nbsp; On **paper**, one minute
+{{< fa laptop-code >}} &nbsp; In **RStudio**
 
-1.  Where would your v0.1.0 files belong in the template?
-2.  Sprint 2 runs [question 1 done properly]{.highlight-yellow}, or question 2. Write it down.
+1.  Open the manuscript `.qmd` the agent wrote. Text you can read.
+2.  Open the CSV in the editor (**View File**, not Import). Type one row at the bottom. Then undo it; save nothing.
+
+{{< fa display >}} &nbsp; On the **screen**
+
+3.  I unzip the DOCX from the release. Inside: folders of XML. An XLSX opens the same way.
+
+::: {.small style="margin-top: 0.5em;"}
+The source is text you can read, type and diff. The DOCX is [generated from it]{.highlight-yellow}, so never edit the DOCX. The PDF cost the agent a table extraction across pages this morning.
+:::
 ::::
 
 ```{r}
 #| echo: false
-countdown(minutes = 1)
+countdown(minutes = 4)
 ```
+
+::: {.notes}
+Four minutes. The typed row is undone so the working tree stays clean for the plan commit. The DOCX and XLSX peek is mine on screen, since everyone's agent is busy planning. Rehearse the unzip.
+:::
 
 # Sprint 2: plan mode, issues, partner review {background-color="{{< var brand.section-bg >}}"}
 
 ## Round 3: plan mode {.smaller}
 
-| Who reads the files | Who decides the steps | Who reviews | Where the instructions live |
-|---|---|---|---|
-| the agent | [you, before anything runs]{.highlight-yellow} | you | [a plan you can edit]{.highlight-yellow} |
+| Who reads the files | Who decides the steps | Who reviews | Where the instructions live | Where the result lives |
+|---|---|---|---|---|
+| the agent | [you, before anything runs]{.highlight-yellow} | you | [a plan you can edit]{.highlight-yellow} | a plan file, then commits |
 
 ## My turn {.smaller}
 
@@ -700,7 +789,7 @@ Note down any questions as they come up. We pick them up right after.
 :::
 
 ::: {.notes}
-Demo script in lesson-plan.md: plan mode on fstp-eval-india after its own rough v0.1.0, first plan rejected with one sentence, then a markdown plan to edit, then a commit of the plan.
+Demo script in lesson-plan.qmd: my plan started at 13:00 on fstp-eval-india after its own rough v0.1.0. Read what came back, reject it with one sentence, leave plan mode, ask for the plan as a file in the repository, commit with the skill, change one line in RStudio, commit by hand. Seven minutes.
 :::
 
 ## Your turn: plan mode {.smaller}
@@ -708,23 +797,29 @@ Demo script in lesson-plan.md: plan mode on fstp-eval-india after its own rough 
 :::: task
 {{< fa terminal >}} &nbsp; In **Claude Code**
 
-1.  Shift+Tab until the status line says [plan mode]{.highlight-yellow}.
-2.  The sprint 1 frame with your sprint 2 question.
-3.  Reject the first plan on purpose, in one sentence that points at the template and the naming rules.
-4.  "Write the plan as a markdown file I can edit before you do anything." Edit one line. [Do not implement.]{.highlight-yellow} Commit the plan. Log it.
+1.  Read the plan that came back. Would I merge this plan?
+2.  Reject it in one sentence that points at the template and the naming rules.
+3.  **Shift+Tab** until the line says auto mode on again. [The file only lands in the repository after leaving plan mode.]{.highlight-yellow}
+4.  "Write the plan as a markdown file in this repository that I can edit."
+5.  `/ghe-skills:commit`. The agent's plan, one assisted commit.
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+6.  Change one line of the plan file. Save.
+7.  Stage, commit, the way you did at 09:55. [Your line, one commit by hand.]{.highlight-yellow} Fill one row.
 
 ::: hand
-{{< fa note-sticky >}} &nbsp; Sticky note when your edited plan is committed.
+{{< fa note-sticky >}} &nbsp; Sticky note when both commits are in.
 :::
 ::::
 
 ```{r}
 #| echo: false
-countdown(minutes = 15)
+countdown(minutes = 12)
 ```
 
 ::: {.notes}
-Correcting a plan costs one sentence; correcting code costs a re-run. A plan is worth a commit.
+Correcting a plan costs one sentence; correcting code costs a re-run. Two commits on purpose: the skill's for the agent's plan, yours for your line. A hand-edited file sends the skill down its mixed path and hands the commit back to you anyway, so committing by hand is the cleaner record. If the plan is not back yet: wait two minutes and read the demo's meanwhile.
 :::
 
 ## {.unlisted}
@@ -738,54 +833,32 @@ With your neighbour: what did one sentence change? Would I merge this plan?
 countdown(minutes = 3)
 ```
 
-## Recall {.smaller}
-
-You write [a question]{.blank .filled}. The agent reads [your repository]{.blank .filled}. The agent proposes [ ]{.blank}. You [ ]{.blank}. A colleague reviews [ ]{.blank}. The instructions live in [ ]{.blank}.
-
-::: {.hand-purple style="text-align: center; margin-top: 0.8em;"}
-Twenty seconds: blanks three and four, to your neighbour.
-:::
-
-```{r}
-#| echo: false
-countdown(minutes = 0, seconds = 20)
-```
-
-## Recall {.smaller}
-
-You write [a question]{.blank .filled}. The agent reads [your repository]{.blank .filled}. The agent proposes [a plan]{.blank .filled}. You [reject it with one sentence]{.blank .filled}. A colleague reviews [ ]{.blank}. The instructions live in [ ]{.blank}.
-
-::: {.small style="margin-top: 1em;"}
-{{< fa pen >}} &nbsp; Write the sentence on the back of your day sheet.
-:::
-
 ## Round 4: issues and review {.smaller}
 
-| Who reads the files | Who decides the steps | Who reviews | Where the instructions live |
-|---|---|---|---|
-| the agent | [you and a colleague]{.highlight-yellow} | [a colleague, before code exists and again on the pull request]{.highlight-yellow} | [GitHub issues]{.highlight-yellow} |
+| Who reads the files | Who decides the steps | Who reviews | Where the instructions live | Where the result lives |
+|---|---|---|---|---|
+| the agent | [you and a colleague]{.highlight-yellow} | [a colleague, before code exists and again on the pull request]{.highlight-yellow} | [GitHub issues]{.highlight-yellow} | a reviewed pull request |
 
 ## Your turn: the issues {.smaller}
 
 :::: task
 {{< fa terminal >}} &nbsp; In **Claude Code**
 
-Ask the agent to turn the approved plan into three or four issues on your repository, each with a title, what done looks like, and the files it touches:
-
-1.  Organise the repository following the template.
-2.  The analysis inside the Quarto manuscript with `format: docx`, one figure from a code chunk.
-3.  Five references from your Zotero library.
-4.  A methods paragraph.
+1.  "Turn the plan into four issues on this repository, each with a title, what done looks like in at most five checkboxes, and the files it touches: 1. Organise the repository following the template. 2. The analysis inside the Quarto manuscript with format: docx, one figure from a code chunk. 3. Five references from my Zotero library. 4. A methods paragraph."
 
 ::: hand
-{{< fa brands github >}} &nbsp; Sticky note when the issues are on GitHub.
+{{< fa brands github >}} &nbsp; Sticky note when the issues are on GitHub. Fill one row.
 :::
 ::::
 
 ```{r}
 #| echo: false
-countdown(minutes = 10)
+countdown(minutes = 6)
 ```
+
+::: {.notes}
+Two minutes measured in the dry run. The checkbox cap keeps the partner review readable: one issue in the dry run had ten checkboxes naming plants and page numbers.
+:::
 
 ## {{< fa person-walking >}} Find your review partner {.smaller}
 
@@ -794,7 +867,7 @@ Move to sit with your partner (neighbour pairs, triple if odd).
 
 {{< fa brands github >}} &nbsp; On **github.com**
 
-1.  Open your partner's issues.
+1.  Open your partner's issues 1 and 2, the two the agent implements next.
 2.  Comment where a step is unclear or where done is not defined. [Before any code exists.]{.highlight-yellow}
 ::::
 
@@ -804,7 +877,7 @@ countdown(minutes = 10)
 ```
 
 ::: {.notes}
-A colleague without agent access can still shape the work. Protected block. The helper lays out the afternoon snacks now.
+A colleague without agent access can still shape the work. Protected block. Two issues, because reading four long ones filled the whole block in the dry run. The helper lays out the afternoon snacks now.
 :::
 
 # Hand-over to the phone {background-color="{{< var brand.section-bg >}}"}
@@ -830,7 +903,7 @@ A colleague without agent access can still shape the work. Protected block. The 
 ::::
 
 ::: {.notes}
-Script in lesson-plan.md. The pairing was tested at 10:08. Fallback: leave the laptop running, go outside anyway, read the transcript on return.
+Script in lesson-plan.qmd. First pairing of the day: the helper checked the app and the account at the door. Same account and organisation on laptop and phone; Remote Control must be enabled in the Team admin settings before the day. Fallback: leave the laptop running, go outside anyway, read the transcript on return. In the dry run the run took 14 minutes and asked nothing.
 :::
 
 ## Snack break: walk with your agent {.smaller}
@@ -855,26 +928,42 @@ What did it ask you? What did it decide alone?
 :::
 
 ::: hand
-{{< fa note-sticky >}} &nbsp; One note for the evidence wall.
+{{< fa note-sticky >}} &nbsp; One note, one line. It goes on the oversight flipchart at 16:00.
 :::
 
-## Your turn: finish, push, open the pull request {.smaller}
+::: {.notes}
+Three minutes. In the dry run it asked nothing and decided four things alone: the author name from the machine account, reading the Zotero database file when the tool returned nothing, moving the sprint 1 files during the restructure, and keeping three older charts. Collect the notes; they open the third flipchart.
+:::
+
+## Your turn: finish, review, open the pull request {.smaller}
 
 :::: task
 {{< fa terminal >}} &nbsp; In **Claude Code**, at the laptop
 
-1.  Read the diff. If the agent is not done, it finishes now. The commits are in.
-2.  "Push the dev branch." Then `/ghe-skills:open-pr`. [The second and last pull request of the day.]{.highlight-yellow}
+1.  Read the diff. If the agent is not done, it finishes now.
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+2.  Open the manuscript. Wherever you would not merge it, write `<!-- TODO: what has to change -->`. Save. Commit by hand.
+
+{{< fa terminal >}} &nbsp; In **Claude Code**
+
+3.  "Work through the TODO comments in the manuscript one at a time. Remove each when it is done and run /ghe-skills:commit after each."
+4.  Read the diff again. Then `/ghe-skills:open-pr`, answer no. [The second and last pull request of the day.]{.highlight-yellow}
 
 ::: hand
-{{< fa brands github >}} &nbsp; Sticky note when the pull request is open.
+{{< fa brands github >}} &nbsp; Sticky note when the pull request is open. Fill one row.
 :::
 ::::
 
 ```{r}
 #| echo: false
-countdown(minutes = 8)
+countdown(minutes = 14)
 ```
+
+::: {.notes}
+The human review leaves the markers, the agent works them off, one commit each. Cut order if behind: at least one TODO and one commit. Inside a code chunk the marker is a line starting with # TODO.
+:::
 
 ## Your turn: partner review {.smaller}
 
@@ -892,27 +981,6 @@ countdown(minutes = 8)
 countdown(minutes = 8)
 ```
 
-## Recall {.smaller}
-
-You write [a question]{.blank .filled}. The agent reads [your repository]{.blank .filled}. The agent proposes [a plan]{.blank .filled}. You [reject it with one sentence]{.blank .filled}. A colleague reviews [ ]{.blank}. The instructions live in [ ]{.blank}.
-
-::: {.hand-purple style="text-align: center; margin-top: 0.8em;"}
-Twenty seconds: blank five, to your neighbour.
-:::
-
-```{r}
-#| echo: false
-countdown(minutes = 0, seconds = 20)
-```
-
-## Recall {.smaller}
-
-You write [a question]{.blank .filled}. The agent reads [your repository]{.blank .filled}. The agent proposes [a plan]{.blank .filled}. You [reject it with one sentence]{.blank .filled}. A colleague reviews [the issues and the pull request]{.blank .filled}. The instructions live in [ ]{.blank}.
-
-::: {.small style="margin-top: 1em;"}
-{{< fa pen >}} &nbsp; Write the sentence on the back of your day sheet.
-:::
-
 ## CLAUDE.md {.smaller}
 
 ::: incremental
@@ -923,7 +991,7 @@ You write [a question]{.blank .filled}. The agent reads [your repository]{.blank
 :::
 
 ::: {.notes}
-The user level file is a hint only, nothing to do.
+The user level file is a hint only, nothing to do. Three minutes for the three slides.
 :::
 
 ## CLAUDE.md against a skill {.smaller}
@@ -948,9 +1016,9 @@ No live demo: it was the first cut in every layout, so it never happened. CLAUDE
 
 ## Round 5: CLAUDE.md and skills {.smaller}
 
-| Who reads the files | Who decides the steps | Who reviews | Where the instructions live |
-|---|---|---|---|
-| the agent | you and a colleague | a colleague | [the repository]{.highlight-yellow} |
+| Who reads the files | Who decides the steps | Who reviews | Where the instructions live | Where the result lives |
+|---|---|---|---|---|
+| the agent | you and a colleague | a colleague | [the repository]{.highlight-yellow} | [a tagged release]{.highlight-yellow} |
 
 ## Your turn: round 5 {.smaller}
 
@@ -959,11 +1027,11 @@ No live demo: it was the first cut in every layout, so it never happened. CLAUDE
 
 1.  "Write a CLAUDE.md for this repository from what we did today: the folder template, the naming rules, where the codebook is, how to render the manuscript. Then fill data/metadata/codebook.csv for the derived table." Commit.
 2.  `/exit`, then `claude`. New session.
-3.  Rerun the sprint 1 frame with question 1, word for word. Commit. "Push the dev branch."
-4.  With your partner: the sprint 1 output next to this one. Did it follow the template without being told? [Would I merge this?]{.highlight-yellow}
+3.  Rerun the sprint 1 frame with question 1, word for word. Commit, if it has not already. "Push the dev branch."
+4.  With your partner: the sprint 1 output next to this one. Did it follow the template without being told? What did it do with work that was already done? [Would I merge this?]{.highlight-yellow}
 
 ::: hand
-{{< fa note-sticky >}} &nbsp; Sticky note when the rerun is pushed. Bingo closes.
+{{< fa note-sticky >}} &nbsp; Sticky note when the rerun is pushed.
 :::
 ::::
 
@@ -973,7 +1041,7 @@ countdown(minutes = 20)
 ```
 
 ::: {.notes}
-Rerunning the same prompt after adding CLAUDE.md is the lesson. Twenty minutes: two agent runs, two commits, a push, a comparison. Protected.
+Rerunning the same prompt after adding CLAUDE.md is the lesson. Two things the dry run saw: a CLAUDE.md that says every change ends with the commit skill makes the agent commit on its own, rung 3 of the ladder reached by documentation alone; and the rerun verified the existing answer against the PDF and added a check script, it did not repeat the work. Twenty minutes, protected.
 :::
 
 ## Partner merges {.smaller}
@@ -981,23 +1049,12 @@ Rerunning the same prompt after adding CLAUDE.md is the lesson. Twenty minutes: 
 :::: task
 {{< fa brands github >}} &nbsp; On **github.com**
 
-The pull request now carries the issues, the CLAUDE.md and the rerun. Merge your partner's.
+The pull request now carries the issues, the TODO fixes, the CLAUDE.md and the rerun. Merge your partner's.
 
 ::: hand
 {{< fa brands github >}} &nbsp; Sticky note when it is merged.
 :::
 ::::
-
-```{r}
-#| echo: false
-countdown(minutes = 2)
-```
-
-## {.unlisted}
-
-::: {.hand-purple style="text-align: center;"}
-Anything from [review, CLAUDE.md and the rerun]{.highlight-yellow} you'd like clarified before the second release?
-:::
 
 ```{r}
 #| echo: false
@@ -1011,9 +1068,11 @@ countdown(minutes = 2)
 :::: task
 {{< fa terminal >}} &nbsp; In **Claude Code**
 
-1.  "Switch to main and pull. Render the manuscript to DOCX."
-2.  "Tag v0.2.0 and create a GitHub release with the DOCX attached." If it did not render, the release note says so, as in the morning.
-3.  "Switch to dev, merge main into it, and push."
+1.  "Switch to main and pull."
+
+{{< fa laptop-code >}} &nbsp; 2. In **RStudio**: open the manuscript, press **Render**.
+
+{{< fa terminal >}} &nbsp; 3. "Tag v0.2.0 and create a GitHub release with the DOCX attached." If it did not render, the release note says so, as in the morning. 4. "Switch to dev, merge main into it, and push."
 
 {{< fa brands github >}} &nbsp; Open the two release pages side by side.
 
@@ -1028,7 +1087,7 @@ countdown(minutes = 10)
 ```
 
 ::: {.notes}
-The DOCX stays out of git. Never leave a release on main with dev behind it.
+Same script as the morning. The DOCX stays out of git. Never leave a release on main with dev behind it.
 :::
 
 ## My turn {.smaller}
@@ -1040,7 +1099,7 @@ Note down any questions as they come up. We pick them up right after.
 :::
 
 ::: {.notes}
-Demo script in lesson-plan.md: the agent writes the declaration of AI use from the first commit to v0.2.0, including who reviewed what and what changed between the releases, and puts it in the release notes of v0.2.0. Count the commits it found aloud. If behind: skip, two volunteers read a line of theirs instead.
+Demo script in lesson-plan.qmd: the agent writes the declaration of AI use from the first commit to v0.2.0, including who reviewed what and what changed between the releases, and puts it in the release notes of v0.2.0. Count the commits it found aloud. Say what the record covers and what it cannot: commits with their trailers, the prompt files, issues, pull requests and CLAUDE.md are in; the prompts behind issue texts, pull request bodies and release notes are not archived, and a good declaration says so. If behind: skip, two volunteers read a line of theirs instead.
 :::
 
 ## Your turn: your declaration {.smaller}
@@ -1051,7 +1110,7 @@ Demo script in lesson-plan.md: the agent writes the declaration of AI use from t
 1.  "Write a declaration of AI use for this repository from the first commit to tag v0.2.0. Read the commit history and its trailers, the prompts folder, the issues, the pull requests and CLAUDE.md. Say which files an agent touched, in response to which instruction, who reviewed what, and what changed between v0.1.0 and v0.2.0. Put it in the release notes of v0.2.0."
 
 ::: hand
-{{< fa brands github >}} &nbsp; Sticky note when the release notes are updated. Two volunteers read one line aloud.
+{{< fa brands github >}} &nbsp; Sticky note when the release notes are updated. Fill the last row. Two volunteers read one line aloud.
 :::
 ::::
 
@@ -1059,27 +1118,6 @@ Demo script in lesson-plan.md: the agent writes the declaration of AI use from t
 #| echo: false
 countdown(minutes = 8)
 ```
-
-## Recall {.smaller}
-
-You write [a question]{.blank .filled}. The agent reads [your repository]{.blank .filled}. The agent proposes [a plan]{.blank .filled}. You [reject it with one sentence]{.blank .filled}. A colleague reviews [the issues and the pull request]{.blank .filled}. The instructions live in [ ]{.blank}.
-
-::: {.hand-purple style="text-align: center; margin-top: 0.8em;"}
-Twenty seconds: the last blank, to your neighbour.
-:::
-
-```{r}
-#| echo: false
-countdown(minutes = 0, seconds = 20)
-```
-
-## Recall {.smaller}
-
-You write [a question]{.blank .filled}. The agent reads [your repository]{.blank .filled}. The agent proposes [a plan]{.blank .filled}. You [reject it with one sentence]{.blank .filled}. A colleague reviews [the issues and the pull request]{.blank .filled}. The instructions live in [the repository]{.blank .filled}.
-
-::: {.small style="margin-top: 1em;"}
-{{< fa pen >}} &nbsp; Write the sentence on the back of your day sheet. It goes on your zine at 16:30.
-:::
 
 # Disclosure rules in the making: two records {background-color="{{< var brand.section-bg >}}"}
 
@@ -1114,6 +1152,8 @@ Both positions are on the Disclosure background page [@weaver2026disclosure; @ca
 
 ## Your turn: the 18 tasks, two colours {.smaller}
 
+![](../images/wcri-18-boxes.png){fig-align="center" width="70%"}
+
 :::: task
 {{< fa pen >}} &nbsp; On the **printed checklist**, two pen colours
 
@@ -1128,7 +1168,7 @@ countdown(minutes = 7)
 ```
 
 ::: {.notes}
-Placeholder for the taxonomy list in two columns, same as the printed checklist [@isc2026disclosure]. The "substantive" test is the proposed threshold.
+The same list as before lunch, printed [@isc2026disclosure]. The "substantive" test is the proposed threshold.
 :::
 
 ## Three flipcharts {.smaller}
@@ -1140,7 +1180,7 @@ Placeholder for the taxonomy list in two columns, same as the printed checklist 
 :::
 
 ::: hand
-{{< fa note-sticky >}} &nbsp; One note per chart, one line each, from what the two records showed.
+{{< fa note-sticky >}} &nbsp; One note per chart, one line each, from what the two records showed. Your note from 14:40 goes on the third chart.
 :::
 
 ```{r}
@@ -1151,7 +1191,7 @@ countdown(minutes = 7)
 ## What happens next {.smaller}
 
 ::: incremental
--   The wall goes to the AI working group of the Global Federation of Reproducibility Networks.
+-   The three flipcharts go to the AI working group of the Global Federation of Reproducibility Networks.
 -   Round 2 of the consultation closes on [16 October 2026]{.highlight-yellow}.
 -   The chat room stays open.
 :::
@@ -1193,7 +1233,7 @@ Show it slowly, twice. Scissors are one pair per two people. Spares on the front
 4.  **Where the instructions live**: what goes into my CLAUDE.md, what stays in my head.
 5.  **What I will not hand to an agent**, and what I hand over from tomorrow.
 6.  and 7. Left free for feedback from others.
-8.  **Take-away**: my one-line rule for working with an agent, and the recall sentence in my own words.
+8.  **Take-away**: my one-line rule for working with an agent.
 :::
 
 ::: hand
@@ -1223,14 +1263,6 @@ Post-course survey, five minutes, anonymous: link in the chat room, now or tonig
 #| echo: false
 countdown(minutes = 8)
 ```
-
-## Recall {.smaller}
-
-You write [a question]{.blank .filled}. The agent reads [your repository]{.blank .filled}. The agent proposes [a plan]{.blank .filled}. You [reject it with one sentence]{.blank .filled}. A colleague reviews [the issues and the pull request]{.blank .filled}. The instructions live in [the repository]{.blank .filled}.
-
-::: {.hand-purple style="text-align: center; margin-top: 0.8em;"}
-Read it aloud, together.
-:::
 
 ## Thanks! {.smaller}
 
