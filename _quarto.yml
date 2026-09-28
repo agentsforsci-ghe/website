@@ -112,7 +112,7 @@ website:
           text: "References"
 
 bibliography: references.bib
-csl: https://www.zotero.org/styles/apa
+csl: style/apa.csl
 link-citations: true
 
 format:

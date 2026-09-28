@@ -660,7 +660,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
     "title": "Agents for Scientists",
     "section": " Schedule",
-    "text": "Schedule\n\n\n\n\n\n\nNoteTentative\n\n\n\nThe schedule below is a working draft and still under active development.\n\n\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\nRounds\n\n\n\n\n08:30 - 09:00\nArrival and coffee\nSetup clinic\n\n\n09:00 - 09:40\nOpening: security, literacy, transparency, disclosure\nYour question bank\n\n\n09:40 - 10:15\nCurrent state, safety rails, the commit rule\nRounds 0 and 1, then the skills\n\n\n10:15 - 10:35\nSnack break\nA question to take with you\n\n\n10:35 - 12:00\nSprint 1: the loop by hand, first run, studio cards, ship v0.1.0\nRound 2: one line, your cards, a commit each, release v0.1.0\n\n\n12:00 - 13:00\nLunch\nA question to take with you\n\n\n13:00 - 13:20\nBetween sprints: what v0.1.0 shows, folders and files\nReflect\n\n\n13:20 - 14:10\nSprint 2: plan mode, issues, partner review\nRounds 3 and 4a: plan mode, issues\n\n\n14:10 - 14:20\nHand-over to the phone\nRound 4b starts\n\n\n14:20 - 14:40\nSnack break: walk with your agent\nRound 4b runs from your phone\n\n\n14:40 - 15:30\nSprint 2: review, CLAUDE.md, rerun, merge\nRound 4b: the pull request, round 5\n\n\n15:30 - 16:00\nSprint 2: ship v0.2.0, declare both\nRelease v0.2.0\n\n\n16:00 - 16:30\nDisclosure rules in the making: two records against the draft rules\nYour two records against the draft rules\n\n\n16:30 - 17:00\nClose: the zine"
+    "text": "Schedule\n\n\n\n\n\n\nNoteTentative\n\n\n\nThe schedule below is a working draft and still under active development.\n\n\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\nRounds\n\n\n\n\n08:30 - 09:00\nArrival and coffee\nSetup clinic\n\n\n09:00 - 09:45\nOpening: security, literacy, transparency, disclosure\nYour question bank\n\n\n09:45 - 10:20\nCurrent state, safety rails, the commit rule\nRounds 0 and 1, then the skills\n\n\n10:20 - 10:35\nSnack break\nA question to take with you\n\n\n10:35 - 12:00\nSprint 1: first run, studio cards, ship v0.1.0\nRound 2: one line, your cards, a commit each, release v0.1.0\n\n\n12:00 - 13:00\nLunch\nA question to take with you\n\n\n13:00 - 13:20\nBetween sprints: what v0.1.0 shows, folders and files\nYour plan runs while you reflect\n\n\n13:20 - 14:10\nSprint 2: plan mode, issues, partner review\nRounds 3 and 4a: plan mode, issues\n\n\n14:10 - 14:20\nHand-over to the phone\nRound 4b starts\n\n\n14:20 - 14:40\nSnack break: walk with your agent\nRound 4b runs from your phone\n\n\n14:40 - 15:36\nSprint 2: review, CLAUDE.md, review comments, merge\nRound 4b: the pull request, round 5\n\n\n15:36 - 16:06\nSprint 2: ship v0.2.0, declare both\nRelease v0.2.0\n\n\n16:06 - 16:30\nDisclosure rules in the making: two records against the draft rules\nYour two records against the draft rules\n\n\n16:30 - 17:00\nClose: the zine"
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
@@ -1007,14 +1007,14 @@
     "href": "workshop/slides.html#two-room-rules",
     "title": "Agents for Scientists",
     "section": "Two room rules",
-    "text": "Two room rules\n\n\nNever make another human read AI slop.\n\n\nRead everything it does. Every round ends with the same question: would I merge this?\n\n\nCommit often.\n\n\nA commit is a checkpoint you can return to and a line in the record. Today: a commit after every run that changed a file, one pull request per sprint.\n\nMinute three. Both rules come back all day: rule one at every “would I merge this?”, rule two at the end of every Your turn."
+    "text": "Two room rules\n\n\nNever make another human read AI slop.\n\n\nRead everything it does. Tell humans what you want feedback on. Every round ends with the same question: would I merge this?\n\n\nCommit often.\n\n\nA commit is a checkpoint you can return to and a line in the record. Today: a commit after every run that changed a file, one pull request per sprint.\n\nMinute three. Both rules come back all day: rule one at every “would I merge this?”, rule two at the end of every Your turn."
   },
   {
     "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-spectrum-line",
     "href": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-spectrum-line",
     "title": "Agents for Scientists",
     "section": " Spectrum line",
-    "text": "Spectrum line\n\nStand along the tape line.\n\nLeft end: never used AI for research. Right end: use an agent every week.\nTwo voices from each end.\nRe-sort: how much do you trust the output? Two voices again.\n\n\n\n\n\n\n\n\nFirst movement of the day, before any slide with content. The trust re-sort is the one to listen to."
+    "text": "Spectrum line\n\nStand along the tape line.\n\nLeft end: never used AI for research. Right end: use Claude Code every day.\nTwo voices from each end.\nRe-sort: how much do you trust the output? Two voices again.\n\n\n\n\n\n\n\n\nFirst movement of the day, before any slide with content. The trust re-sort is the one to listen to."
   },
   {
     "objectID": "workshop/slides.html#the-goal-today",
@@ -1035,7 +1035,7 @@
     "href": "workshop/slides.html#how-the-day-works",
     "title": "Agents for Scientists",
     "section": "How the day works",
-    "text": "How the day works\n\nThe same path twice: question, agent, commits, pull request, release.\nSprint 1, before lunch: three questions of your own, one framed run, then studio cards on your repository with a commit after each, a pull request you merge yourself, release v0.1.0. Fast and rough, on purpose.\nSprint 2, after lunch: a plan you edit, issues a colleague reviews, a run that continues from your phone, a reviewed pull request, a CLAUDE.md, release v0.2.0, one declaration over both.\nEvery round ends with the same check: would I merge this?\nTwo snack breaks, each with a question to take with you. The day closes with a zine."
+    "text": "How the day works\n\nThe same path twice: question, agent, commits, pull request, release.\nSprint 1, before lunch: three questions of your own, one framed run, then studio cards on your repository with a commit after each, a pull request you merge yourself, release v0.1.0. Fast and rough, on purpose.\nSprint 2, after lunch: a plan you edit, issues a colleague reviews, a run that continues from your phone, a reviewed pull request, a CLAUDE.md, release v0.2.0, one declaration over both.\nEvery round ends with the same check: would I merge this? Today, we merge.\nTwo snack breaks, each with a question to take with you. The day closes with a zine."
   },
   {
     "objectID": "workshop/slides.html#the-variable",
@@ -1049,7 +1049,7 @@
     "href": "workshop/slides.html#two-rungs-today",
     "title": "Agents for Scientists",
     "section": "Two rungs today",
-    "text": "Two rungs today\n\nVery low stakes: implement it. Sprint 1.\nLow stakes: plan, then implement.\nMedium stakes: plan, review the plan, implement, review the implementation. Sprint 2.\nHigh stakes: design first, then repeat the cycles.\n\n\n\n\n\n\n\n\nNote\n\n\nThe workflow is not the same for every task. Which rung a task gets is the first decision, every time. After lunch you stand on it.\n\n\n\n\n\nHadley Wickham’s stakes ladder, the reason plan mode exists. Two minutes here; the physical version is the floor exercise at 13:02. The note appears after the last rung."
+    "text": "Two rungs today\n\nVery low stakes: implement it. Sprint 1.\nLow stakes: plan, then implement.\nMedium stakes: plan, review the plan, implement, review the implementation. Sprint 2.\nHigh stakes: design first, then repeat the cycles.\n\n\n\n\n\n\n\n\nNote\n\n\nThe workflow is not the same for every task. Which rung a task gets is the first decision, every time.\n\n\n\n\n\nHadley Wickham’s stakes ladder, the reason plan mode exists. Two minutes. The note appears after the last rung."
   },
   {
     "objectID": "workshop/slides.html#learning-objectives",
@@ -1063,7 +1063,7 @@
     "href": "workshop/slides.html#schedule",
     "title": "Agents for Scientists",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\nRounds\n\n\n\n\n08:30 - 09:00\nArrival and coffee\nSetup clinic\n\n\n09:00 - 09:40\nOpening: security, literacy, transparency, disclosure\nYour question bank\n\n\n09:40 - 10:15\nCurrent state, safety rails, the commit rule\nRounds 0 and 1, then the skills\n\n\n10:15 - 10:35\nSnack break\nA question to take with you\n\n\n10:35 - 12:00\nSprint 1: the loop by hand, first run, studio cards, ship v0.1.0\nRound 2: one line, your cards, a commit each, release v0.1.0\n\n\n12:00 - 13:00\nLunch\nA question to take with you\n\n\n13:00 - 13:20\nBetween sprints: what v0.1.0 shows, folders and files\nYour plan runs while you reflect\n\n\n13:20 - 14:10\nSprint 2: plan mode, issues, partner review\nRounds 3 and 4a: plan mode, issues\n\n\n14:10 - 14:20\nHand-over to the phone\nRound 4b starts\n\n\n14:20 - 14:40\nSnack break: walk with your agent\nRound 4b runs from your phone\n\n\n14:40 - 15:30\nSprint 2: review, CLAUDE.md, rerun, merge\nRound 4b: the pull request, round 5\n\n\n15:30 - 16:00\nSprint 2: ship v0.2.0, declare both\nRelease v0.2.0\n\n\n16:00 - 16:30\nDisclosure rules in the making: two records against the draft rules\nYour two records against the draft rules\n\n\n16:30 - 17:00\nClose: the zine"
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\nRounds\n\n\n\n\n08:30 - 09:00\nArrival and coffee\nSetup clinic\n\n\n09:00 - 09:45\nOpening: security, literacy, transparency, disclosure\nYour question bank\n\n\n09:45 - 10:20\nCurrent state, safety rails, the commit rule\nRounds 0 and 1, then the skills\n\n\n10:20 - 10:35\nSnack break\nA question to take with you\n\n\n10:35 - 12:00\nSprint 1: first run, studio cards, ship v0.1.0\nRound 2: one line, your cards, a commit each, release v0.1.0\n\n\n12:00 - 13:00\nLunch\nA question to take with you\n\n\n13:00 - 13:20\nBetween sprints: what v0.1.0 shows, folders and files\nYour plan runs while you reflect\n\n\n13:20 - 14:10\nSprint 2: plan mode, issues, partner review\nRounds 3 and 4a: plan mode, issues\n\n\n14:10 - 14:20\nHand-over to the phone\nRound 4b starts\n\n\n14:20 - 14:40\nSnack break: walk with your agent\nRound 4b runs from your phone\n\n\n14:40 - 15:36\nSprint 2: review, CLAUDE.md, review comments, merge\nRound 4b: the pull request, round 5\n\n\n15:36 - 16:06\nSprint 2: ship v0.2.0, declare both\nRelease v0.2.0\n\n\n16:06 - 16:30\nDisclosure rules in the making: two records against the draft rules\nYour two records against the draft rules\n\n\n16:30 - 17:00\nClose: the zine"
   },
   {
     "objectID": "workshop/slides.html#your-turn-your-question-bank",
@@ -1112,14 +1112,14 @@
     "href": "workshop/slides.html#where-did-that-go-current-state",
     "title": "Agents for Scientists",
     "section": "Where did that go? current state",
-    "text": "Where did that go? current state\n\n\n\nThe PDF\non Anthropic’s servers, in my account\n\n\nThe answer\nin a chat thread, in my account\n\n\nTo continue tomorrow\nscroll up and paste\n\n\nTo share it\na screenshot\n\n\nTo redo it\nask again, get a different answer\n\n\n\n\nNothing is in the project. Nothing is versioned. Nobody can check it.\n\n\nThe point of the chat demo is the last column of the variable table. Everything after the break puts the result where colleagues can read it, diff it and cite it."
+    "text": "Where did that go? current state\n\n\n\nThe PDF\non Anthropic’s servers, in my account\n\n\nThe answer\nin a chat thread, in my account\n\n\nTo continue tomorrow\ncopy it from the old thread\n\n\nTo share it\na screenshot\n\n\nTo redo it\nask again, get a different answer\n\n\n\n\nNothing is in the project. Nothing is versioned. Nobody can check it.\n\n\nThe point of the chat demo is the last column of the variable table. Everything after the break puts the result where colleagues can read it, diff it and cite it."
   },
   {
     "objectID": "workshop/slides.html#our-turn-safety-rails",
     "href": "workshop/slides.html#our-turn-safety-rails",
     "title": "Agents for Scientists",
     "section": "Our turn: safety rails",
-    "text": "Our turn: safety rails\n\n   In RStudio, your own repository\n\nOpen data/. Look once more against the group rule.\n\n   In the terminal\n\nGo to ~/Documents/gitrepos/gh-org-agentsforsci-ghe/&lt;your repo&gt;, not one level up. Type claude.\nPress Shift+Tab with me until the line under the box says auto mode on.\nType:\n\nCreate a branch called dev and switch to it. If dev already exists, switch to it.\n\n/context\n\n\n   Sticky note when /context has printed and your line says auto mode on.\n\n\n\n\n\n\n\n\nThe agent reads the folder it starts in; one level up it would read every repository. The pre-work never created dev; the prompt covers both cases, and the agent runs the git command for you. Step 3 is a follow along: Shift+Tab cycles auto, manual, accept edits, plan and back to auto, and everyone presses until their line matches mine. On the Team plan auto is the starting mode, so most screens say it already; the point is that everyone has seen the key. Auto mode has to be allowed in the Team admin settings before the day."
+    "text": "Our turn: safety rails\n\n   In the terminal\n\nGo to ~/Documents/gitrepos/gh-org-agentsforsci-ghe/&lt;your repo&gt;, not one level up. Type claude.\nPress Shift+Tab with me until the line under the box says auto mode on.\nType:\n\nCreate a branch called dev and switch to it. If dev already exists, switch to it.\n\n/context\n\n\n   Sticky note when /context has printed and your line says auto mode on.\n\n\n\n\n\n\n\n\nThe agent reads the folder it starts in; one level up it would read every repository. The pre-work never created dev; the prompt covers both cases, and the agent runs the git command for you. Step 2 is a follow along: Shift+Tab cycles auto, manual, accept edits, plan and back to auto, and everyone presses until their line matches mine. On the Team plan auto is the starting mode, so most screens say it already; the point is that everyone has seen the key. Auto mode has to be allowed in the Team admin settings before the day."
   },
   {
     "objectID": "workshop/slides.html#four-keys",
@@ -1245,14 +1245,14 @@
     "href": "workshop/slides.html#lunch",
     "title": "Agents for Scientists",
     "section": "Lunch",
-    "text": "Lunch\nBack at 13:00. Bring your day sheet. The afternoon starts with two minutes at the keyboard, then on the floor.\n\nOf the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over?\n\n\nOver lunch, pick your sprint 2 question: question 1 done properly, or question 2."
+    "text": "Lunch\nBack at 13:00. Bring your day sheet. The afternoon starts with two minutes at the keyboard, then a look back at v0.1.0.\n\nOf the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over?\n\n\nOver lunch, pick your sprint 2 question: question 1 done properly, or question 2."
   },
   {
     "objectID": "workshop/slides.html#our-turn-start-your-plan",
     "href": "workshop/slides.html#our-turn-start-your-plan",
     "title": "Agents for Scientists",
     "section": "Our turn: start your plan",
-    "text": "Our turn: start your plan\n\n   In Claude Code, your own repository, branch dev\n\n/clear. A new conversation. Your files stay.\nShift+Tab until the line under the box says plan mode on.\nType, with your sprint 2 question:\n\nAnswer the following question using the data in this repository and write up the result as a Quarto manuscript that renders to DOCX: your sprint 2 question. Plan only. Do not run any analysis or write any file yet.\n\nLeave it running. Stand up and walk to the tape lines on the floor.\n\n\n\n\n\n\n\n\nSprint 2 stays on dev and builds on v0.1.0; /clear gives it a clean conversation, and the sprint 1 files are meant to be there. The plan runs while the room is on the ladder, the way the walk covers the hand-over. In the dry run the frame alone took 18 minutes in plan mode on a PDF, because the agent ran the analysis to plan it; the added line is meant to stop that and has not been measured. Whatever is back by 13:28 is what the Your turn starts from. My own plan starts now too, on the demo repository."
+    "text": "Our turn: start your plan\n\n   In Claude Code, your own repository, branch dev\n\n/clear. A new conversation. Your files stay.\nShift+Tab until the line under the box says plan mode on.\nType, with your sprint 2 question:\n\nAnswer the following question using the data in this repository and write up the result as a Quarto manuscript that renders to DOCX: your sprint 2 question. Plan only. Do not run any analysis or write any file yet.\n\nLeave it running. Open your v0.1.0 release page next to it.\n\n\n\n\n\n\n\n\nSprint 2 stays on dev and builds on v0.1.0; /clear gives it a clean conversation, and the sprint 1 files are meant to be there. The plan runs while the room looks back at v0.1.0. In the dry run the frame alone took 18 minutes in plan mode on a PDF, because the agent ran the analysis to plan it; the added line is meant to stop that and has not been measured. Whatever is back by 13:28 is what the Your turn starts from. My own plan starts now too, on the demo repository."
   },
   {
     "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-the-stakes-ladder",
@@ -1266,7 +1266,7 @@
     "href": "workshop/slides.html#reflect-on-v0.1.0",
     "title": "Agents for Scientists",
     "section": "Reflect on v0.1.0",
-    "text": "Reflect on v0.1.0\nRelease page open on your screen, day sheet in hand.\n\nWhat did it assume without asking?\nWhere did it put files, and how did it name them?\nHow many commits did sprint 1 produce? Hands up: three or more.\nWould I send v0.1.0 to a co-author?\n\n\n\n\n\n\n\nFour minutes. In the dry run: the manuscript at the repository root, data files with underscores, no metadata folder, the author name taken from the machine. The numbers were right; the layout was the agent’s."
+    "text": "Reflect on v0.1.0\nRelease page open on your screen, day sheet in hand.\n\nWhat did it assume without asking?\nWhere did it put files, and how did it name them?\nHow many commits did sprint 1 produce? Hands up: three or more.\nWould I send v0.1.0 to a co-author?\n\n\n\n\n\n\n\nOpens with the lunch question: two answers. Four minutes. In the dry run: the manuscript at the repository root, data files with underscores, no metadata folder, the author name taken from the machine. The numbers were right; the layout was the agent’s."
   },
   {
     "objectID": "workshop/slides.html#where-repositories-live",
@@ -1315,7 +1315,7 @@
     "href": "workshop/slides.html#section",
     "title": "Agents for Scientists",
     "section": "",
-    "text": "With your neighbour: what did one sentence change? Would I merge this plan?"
+    "text": "With your neighbour: what did one sentence change?"
   },
   {
     "objectID": "workshop/slides.html#round-4-issues-and-review",
@@ -1512,5 +1512,19 @@
     "title": "Agents for Scientists",
     "section": "References",
     "text": "References\n\n\nCarpenter, T. A. (2026, August). We can now track AI-generated content. It doesn’t solve the real problem. The Scholarly Kitchen. https://scholarlykitchen.sspnet.org/2026/08/31/we-can-now-track-ai-generated-content/\n\n\nDoctorow, C. (2026, July). Pluralistic: Human in the loop. Pluralistic. https://pluralistic.net/2026/07/28/hitl-ers/#ai-ai-oh\n\n\nInternational Science Council. (2026). AI disclosure in research: Towards a global reporting standard. International Science Council. https://council.science/our-work/ai-disclosure-in-research/\n\n\nWeaver, K. D., Seghers, B., McNeice, K., Perkins, M., Santamarina, S., Lingard, L., Tsybuliak, N., & Dijkstal, F. (2026, July). Guest post — research needs a shared standard for AI disclosure. The Scholarly Kitchen. https://scholarlykitchen.sspnet.org/2026/07/13/guest-post-research-needs-a-shared-standard-for-ai-disclosure/\n\n\nWickham, H., & Bryan, J. (2026, September). Modern R workflow. posit::conf 2026. https://github.com/posit-conf-2026/modern-r-workflow"
+  },
+  {
+    "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-the-stakes-ladder-todo-remove-this.-it-saves-time-and-feels-confusing",
+    "href": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-the-stakes-ladder-todo-remove-this.-it-saves-time-and-feels-confusing",
+    "title": "Agents for Scientists",
+    "section": " The stakes ladder TODO: remove this. it saves time and feels confusing",
+    "text": "The stakes ladder TODO: remove this. it saves time and feels confusing\n\nVery low stakes: implement it. Sprint 1.\nLow stakes: plan, then implement.\nMedium stakes: plan, review the plan, implement, review the implementation. Sprint 2.\nHigh stakes: design first, then repeat the cycles.\n\n\nFour rungs on the floor. Stand on the rung for the question you take through sprint 2. Then for “a figure in your thesis”. Then for “a throwaway plot”.\n\n\n\n\n\n\n\nOpens with the lunch question: two answers, then everybody up. The compact version was on the opening slide; this is the physical one. Sprint 1 was rung 1 on purpose."
+  },
+  {
+    "objectID": "workshop/slides.html#inside-a-repository-todo-the-left-column-slightly-cuts-off",
+    "href": "workshop/slides.html#inside-a-repository-todo-the-left-column-slightly-cuts-off",
+    "title": "Agents for Scientists",
+    "section": "Inside a repository TODO: the left column slightly cuts off",
+    "text": "Inside a repository TODO: the left column slightly cuts off\n\n\n&lt;your repo&gt;/\n├── README.md\n├── CLAUDE.md\n├── data/\n│   ├── raw_data/\n│   ├── derived_data/\n│   └── metadata/codebook.csv\n├── analysis/\n├── docs/reports/\n└── src/\n\nFile names: lowercase, dash as separator, short, a two-digit prefix for scripts.\n01-read-data.R\nFinal analysis (v2) LS.R\n\n\nWhere would your v0.1.0 files belong in here?\n\n\nPlaceholder template, to confirm before the day (reduced student-dir-template). Five minutes for the two folder slides. The question is the bridge to the rejection sentence at 13:28."
   }
 ]
