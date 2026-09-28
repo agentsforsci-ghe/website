@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build workshop/run-of-show.html from workshop/lesson-plan.qmd.
+"""Build the run of show artifact from workshop/lesson-plan.qmd.
 
 The run sheet is the instructor's run of show, written for print. This
 script reads it and writes a self-contained web page for the iPad on the
@@ -15,13 +15,14 @@ schedule, and the Before, After and Rules pages from the untimed sections.
   2. Match every table row to the subsection that holds its notes, by word
      overlap, monotonic within the block. --report prints the table.
   3. Inline the data as JSON with tools/run_of_show.css and
-     tools/run_of_show.js into one HTML file, written only when it changes.
+     tools/run_of_show.js into one HTML body fragment.
 
-Run by Quarto before every render (project: pre-render in _quarto.yml), and
-by hand with --report to read the mapping. --artifact PATH also writes the
-body-only variant that claude.ai wraps in its own document skeleton.
-Standard library only. Exit 1 only when a heading cannot be parsed or, with
---check, when the file on disk is stale.
+The page lives as a private claude.ai artifact, not on the site: the
+fragment written by --out PATH is what the Artifact tool publishes
+(claude.ai wraps it in its own document skeleton; ticks and times are kept
+in the artifact's database). Rebuild and republish it whenever the run
+sheet's blocks or minutes change, for example after the rehearsal.
+Standard library only. Exit 1 only when a heading cannot be parsed.
 """
 import argparse
 import hashlib
@@ -34,7 +35,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 QMD = ROOT / "workshop" / "lesson-plan.qmd"
-OUT = ROOT / "workshop" / "run-of-show.html"
 JS = ROOT / "tools" / "run_of_show.js"
 CSS = ROOT / "tools" / "run_of_show.css"
 
@@ -612,10 +612,13 @@ def print_report(data, reports):
 def main(argv):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--report", action="store_true", help="print the row to section mapping")
-    ap.add_argument("--check", action="store_true", help="exit 1 if workshop/run-of-show.html is stale")
-    ap.add_argument("--artifact", metavar="PATH", help="also write the body-only variant for claude.ai")
+    ap.add_argument("--out", metavar="PATH", help="write the artifact body fragment to PATH (publish it with the Artifact tool)")
+    ap.add_argument("--page", metavar="PATH", help="write a full standalone HTML document instead, for a look in a local browser")
     ap.add_argument("--json", metavar="PATH", help="also write the data as JSON")
     args = ap.parse_args(argv)
+    if not (args.report or args.out or args.page or args.json):
+        ap.print_usage()
+        return 0
 
     text = QMD.read_text(encoding="utf-8")
     data, reports = parse(text)
@@ -626,30 +629,12 @@ def main(argv):
 
     css = CSS.read_text(encoding="utf-8")
     js = JS.read_text(encoding="utf-8")
-
-    # Keep the build time of an unchanged page: compare without the stamp.
-    current = OUT.read_text(encoding="utf-8") if OUT.exists() else ""
-    old_sha = re.search(r'sha256:([0-9a-f]{64})', current)
-    old_built = re.search(r'built ([0-9T:Z-]+)"', current)
-    old_built_json = re.search(r'"builtAt":"([^"]+)"', current)
-    if old_sha and old_built and old_built_json:
-        trial = dict(data)
-        trial["source"] = {"sha256": sha, "builtAt": old_built_json.group(1)}
-        if build_html(trial, css, js) == current:
-            if args.check:
-                print("run-of-show.html is current")
-            if args.artifact:
-                Path(args.artifact).write_text(build_html(trial, css, js, artifact=True), encoding="utf-8")
-            if args.json:
-                Path(args.json).write_text(json.dumps(trial, ensure_ascii=False, indent=1), encoding="utf-8")
-            return 0
-    if args.check:
-        print("run-of-show.html is stale; run tools/build_run_of_show.py", file=sys.stderr)
-        return 1
-    OUT.write_text(build_html(data, css, js), encoding="utf-8")
-    print("wrote %s (%d blocks)" % (OUT.relative_to(ROOT), len(data["blocks"])))
-    if args.artifact:
-        Path(args.artifact).write_text(build_html(data, css, js, artifact=True), encoding="utf-8")
+    if args.out:
+        Path(args.out).write_text(build_html(data, css, js, artifact=True), encoding="utf-8")
+        print("wrote %s (%d blocks, artifact fragment)" % (args.out, len(data["blocks"])))
+    if args.page:
+        Path(args.page).write_text(build_html(data, css, js), encoding="utf-8")
+        print("wrote %s (%d blocks, standalone page)" % (args.page, len(data["blocks"])))
     if args.json:
         Path(args.json).write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     return 0
