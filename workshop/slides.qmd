@@ -62,7 +62,7 @@ Say the opening claim once and move on. The two rules follow on their own slide.
 1. Never make another human read AI slop.
 :::
 
-Read everything it does. Every round ends with the same question: would I merge this?
+Read everything it does. Tell humans what you want feedback on. Every round ends with the same question: would I merge this?
 
 ::: {.rule style="margin-top: 0.8em;"}
 2. Commit often.
@@ -79,7 +79,7 @@ Minute three. Both rules come back all day: rule one at every "would I merge thi
 ::: task
 Stand along the tape line.
 
-1.  Left end: never used AI for research. Right end: use an agent every week.
+1.  Left end: never used AI for research. Right end: use Claude Code every day.
 2.  Two voices from each end.
 3.  Re-sort: how much do you trust the output? Two voices again.
 :::
@@ -115,7 +115,7 @@ Right after the spectrum line, while the room has just seen how wide it is. Two 
 -   **What do I say, and to whom?** Declare the tool as a method. Do not cite the model as a source.
 :::
 
-::: {.hand-purple style="text-align: center; margin-top: 0.5em;"}
+::: {.fragment style="text-align: center; margin-top: 0.5em;"}
 With your neighbour, two minutes each: which one worries you most, and why?
 :::
 
@@ -134,7 +134,7 @@ The arguments are on the four background pages. Two minutes per partner, the pai
 -   The same path [twice]{.highlight-yellow}: question, agent, commits, pull request, release.
 -   **Sprint 1**, before lunch: three questions of your own, one framed run, then [studio cards]{.highlight-yellow} on your repository with a commit after each, a pull request you merge yourself, release v0.1.0. Fast and rough, on purpose.
 -   **Sprint 2**, after lunch: a plan you edit, issues a colleague reviews, a run that continues from your phone, a reviewed pull request, a CLAUDE.md, release v0.2.0, one declaration over both.
--   Every round ends with the same check: [would I merge this?]{.highlight-yellow}
+-   Every round ends with the same check: [would I merge this?]{.highlight-yellow} Today, we merge.
 -   Two snack breaks, each with a question to take with you. The day closes with a zine.
 :::
 
@@ -168,12 +168,12 @@ This table returns as one row per section slide, with the changed cell highlight
 
 ::: {.fragment}
 ::: {.callout-note}
-The workflow is not the same for every task. Which rung a task gets is the first decision, every time. After lunch you stand on it.
+The workflow is not the same for every task. Which rung a task gets is the first decision, every time. 
 :::
 :::
 
 ::: {.notes}
-Hadley Wickham's stakes ladder, the reason plan mode exists. Two minutes here; the physical version is the floor exercise at 13:02. The note appears after the last rung.
+Hadley Wickham's stakes ladder, the reason plan mode exists. Two minutes. The note appears after the last rung.
 :::
 
 ## Learning objectives {.compact}
@@ -299,7 +299,7 @@ Demo script in lesson-plan.qmd. The answer sounds the same whether it is right o
 |---|---|
 | The PDF | on Anthropic's servers, in my account |
 | The answer | in a chat thread, in my account |
-| To continue tomorrow | scroll up and paste |
+| To continue tomorrow | copy it from the old thread |
 | To share it | a screenshot |
 | To redo it | ask again, get a different answer |
 
@@ -314,21 +314,17 @@ The point of the chat demo is the last column of the variable table. Everything 
 ## Our turn: safety rails
 
 :::: task
-{{< fa laptop-code >}} &nbsp; In **RStudio**, your own repository
-
-1.  Open `data/`. Look once more against the group rule.
-
 {{< fa terminal >}} &nbsp; In the **terminal**
 
-2.  Go to `~/Documents/gitrepos/gh-org-agentsforsci-ghe/<your repo>`, [not one level up]{.highlight-yellow}. Type `claude`.
-3.  Press **Shift+Tab** with me until the line under the box says [auto mode on]{.highlight-yellow}.
-4.  Type:
+1.  Go to `~/Documents/gitrepos/gh-org-agentsforsci-ghe/<your repo>`, [not one level up]{.highlight-yellow}. Type `claude`.
+2.  Press **Shift+Tab** with me until the line under the box says [auto mode on]{.highlight-yellow}.
+3.  Type:
 
     ::: prompt
     Create a branch called dev and switch to it. If dev already exists, switch to it.
     :::
 
-5.  `/context`
+4.  `/context`
 
 ::: hand
 {{< fa note-sticky >}} &nbsp; Sticky note when `/context` has printed and your line says auto mode on.
@@ -341,7 +337,7 @@ countdown(minutes = 8)
 ```
 
 ::: {.notes}
-The agent reads the folder it starts in; one level up it would read every repository. The pre-work never created dev; the prompt covers both cases, and the agent runs the git command for you. Step 3 is a follow along: Shift+Tab cycles auto, manual, accept edits, plan and back to auto, and everyone presses until their line matches mine. On the Team plan auto is the starting mode, so most screens say it already; the point is that everyone has seen the key. Auto mode has to be allowed in the Team admin settings before the day.
+The agent reads the folder it starts in; one level up it would read every repository. The pre-work never created dev; the prompt covers both cases, and the agent runs the git command for you. Step 2 is a follow along: Shift+Tab cycles auto, manual, accept edits, plan and back to auto, and everyone presses until their line matches mine. On the Team plan auto is the starting mode, so most screens say it already; the point is that everyone has seen the key. Auto mode has to be allowed in the Team admin settings before the day.
 :::
 
 ## Four keys
@@ -666,7 +662,7 @@ Two minutes. One sentence: this is the taxonomy that came out of round 1 of the 
 
 ## Lunch
 
-Back at **13:00**. Bring your day sheet. The afternoon starts with two minutes at the keyboard, then on the floor.
+Back at **13:00**. Bring your day sheet. The afternoon starts with two minutes at the keyboard, then a look back at v0.1.0.
 
 ::: {.hand-purple style="text-align: center; margin-top: 1em;"}
 Of the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over?
@@ -696,7 +692,7 @@ countdown(minutes = 60)
     Answer the following question using the data in this repository and write up the result as a Quarto manuscript that renders to DOCX: *your sprint 2 question*. Plan only. Do not run any analysis or write any file yet.
     :::
 
-4.  Leave it running. Stand up and walk to the tape lines on the floor.
+4.  Leave it running. Open your v0.1.0 release page next to it.
 ::::
 
 ```{r}
@@ -705,29 +701,7 @@ countdown(minutes = 2)
 ```
 
 ::: {.notes}
-Sprint 2 stays on dev and builds on v0.1.0; /clear gives it a clean conversation, and the sprint 1 files are meant to be there. The plan runs while the room is on the ladder, the way the walk covers the hand-over. In the dry run the frame alone took 18 minutes in plan mode on a PDF, because the agent ran the analysis to plan it; the added line is meant to stop that and has not been measured. Whatever is back by 13:28 is what the Your turn starts from. My own plan starts now too, on the demo repository.
-:::
-
-## {{< fa person-walking >}} The stakes ladder
-
-::: incremental
-1.  Very low stakes: implement it. [Sprint 1.]{.highlight-yellow}
-2.  Low stakes: plan, then implement.
-3.  Medium stakes: plan, review the plan, implement, review the implementation. [Sprint 2.]{.highlight-yellow}
-4.  High stakes: design first, then repeat the cycles.
-:::
-
-::: task
-Four rungs on the floor. Stand on the rung for the question you take through sprint 2. Then for "a figure in your thesis". Then for "a throwaway plot".
-:::
-
-```{r}
-#| echo: false
-countdown(minutes = 5)
-```
-
-::: {.notes}
-Opens with the lunch question: two answers, then everybody up. The compact version was on the opening slide; this is the physical one. Sprint 1 was rung 1 on purpose.
+Sprint 2 stays on dev and builds on v0.1.0; /clear gives it a clean conversation, and the sprint 1 files are meant to be there. The plan runs while the room looks back at v0.1.0. In the dry run the frame alone took 18 minutes in plan mode on a PDF, because the agent ran the analysis to plan it; the added line is meant to stop that and has not been measured. Whatever is back by 13:28 is what the Your turn starts from. My own plan starts now too, on the demo repository.
 :::
 
 ## Reflect on v0.1.0
@@ -747,7 +721,7 @@ countdown(minutes = 4)
 ```
 
 ::: {.notes}
-Four minutes. In the dry run: the manuscript at the repository root, data files with underscores, no metadata folder, the author name taken from the machine. The numbers were right; the layout was the agent's.
+Opens with the lunch question: two answers. Four minutes. In the dry run: the manuscript at the repository root, data files with underscores, no metadata folder, the author name taken from the machine. The numbers were right; the layout was the agent's.
 :::
 
 ## Where repositories live {.compact}
@@ -767,7 +741,7 @@ Four minutes. In the dry run: the manuscript at the repository root, data files 
 -   The agent reads the folder it starts in. [Start inside the repository.]{.highlight-yellow}
 :::
 
-## Inside a repository
+## Inside a repository {.compact}
 
 :::: columns
 ::: {.column width="55%"}
@@ -886,7 +860,7 @@ Correcting a plan costs one sentence; correcting code costs a re-run. Two commit
 ## {.unlisted}
 
 ::: {.hand-purple style="text-align: center;"}
-With your neighbour: what did one sentence change? Would I merge this plan?
+With your neighbour: what did one sentence change? 
 :::
 
 ```{r}
