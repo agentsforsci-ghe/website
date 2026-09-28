@@ -129,6 +129,7 @@ The arguments are on the four background pages. Two neighbour minutes, no share-
 
 ## The variable {.smaller}
 
+::: {.small}
 | Round | Who reads the files | Who decides the steps | Who reviews | Where the instructions live | Where the result lives |
 |---|---|---|---|---|---|
 | 0 No AI | you | you | nobody | your head | a Word file on your laptop |
@@ -137,6 +138,9 @@ The arguments are on the four background pages. Two neighbour minutes, no share-
 | 3 Plan mode, sprint 2 | the agent | you, before anything runs | you | a plan you can edit | a plan file, then commits |
 | 4 Issues and review | the agent | you and a colleague | a colleague, twice | GitHub issues | a reviewed pull request |
 | 5 CLAUDE.md and skills | the agent | you and a colleague | a colleague | the repository | a tagged release |
+
+: {tbl-colwidths="[15,14,17,14,18,22]"}
+:::
 
 ::: {.notes}
 This table returns as one row per section slide, with the changed cell highlighted. Sprint 1 is rows 1 and 2, sprint 2 is rows 3 to 5. The last column is the one to point at: rounds 1 and 2 differ most in where the result ends up.
@@ -239,7 +243,7 @@ Cloned at `~/Documents/gitrepos/gh-org-agentsforsci-ghe/fstp-eval-india`. Questi
 
 ## The steps of a paper, as you do them now [current state]{.current-state} {.smaller}
 
-![](../images/ghe-rdm-workflow-v2.jpg){fig-align="center" width="78%"}
+![](../images/ghe-rdm-workflow-v2.jpg){fig-align="center" width="68%"}
 
 ::: {.small}
 Today touches five of the boxes: data processing, data analysis, the manuscript, the repository, the release. Diagram from the group's data management strategy, <https://github.com/Global-Health-Engineering/concept-maps>.
@@ -251,7 +255,7 @@ Where does AI sit in your workflow today, if anywhere?
 
 ```{r}
 #| echo: false
-countdown(minutes = 1)
+countdown(minutes = 1, top = "8%", right = "1%")
 ```
 
 ::: {.notes}
