@@ -42,7 +42,7 @@ Press **Shift+Tab** until the status line at the bottom says **plan mode**. In {
 
 > List five items from my Zotero library with their citation keys.
 
-When Claude Code asks before using a tool, read the prompt and allow it. In {{< gl "auto mode" >}} most of these steps run without asking, and each answer names the tool it used. The three answers show the agent reading the sample data, your {{< gl "R session" >}}, and your own library.
+When Claude Code asks before using a tool, read the prompt and allow it. In {{< gl "auto mode" >}} most of these steps run without asking, and each answer names the tool it used. The three answers show the agent reading the sample data, your {{< gl "R session" >}}, and your own library. The Zotero answer must name the `zotero` tool. If it lists items without naming the tool, or says the library is empty, the local API in Zotero is off: go back to step 7.
 
 ::: {.callout-note}
 ## If it proposes something you did not ask for

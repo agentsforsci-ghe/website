@@ -83,6 +83,14 @@ Dropped by three or more:
 - The release sticky note fired only when the DOCX showed, so a failed render
   never signalled. It now fires when the release page is up.
 
+Addendum, 24 September 2026: the second bug was fixed in the skill rather
+than on the slides. `/ghe-skills:open-pr` now pushes `dev` first, sets the
+upstream if it is missing, and reports how many commits went up. The "Push
+the dev branch" lines before both pull request steps are gone; the hand-over
+prompt and the rerun keep a plain push, because no pull request is opened
+there. The skill also ends by offering to run the test plan, which the learner
+trace found hanging unanswered, so both pull request slides say "answer no".
+
 ## Where the reviewers split, and the decision
 
 - **One release or two.** Arti and the trainer wanted one release, in the
