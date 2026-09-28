@@ -358,7 +358,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
     "title": "Agents for Scientists",
     "section": " Schedule",
-    "text": "Schedule\n\n\n\n\n\n\nNoteTentative\n\n\n\nThe schedule below is a working draft and still under active development.\n\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\n\n\n\n\n08:30 - 09:00\nArrival and coffee\n\n\n09:00 - 09:45\nIntroduction: security, literacy, transparency, disclosure\n\n\n09:45 - 10:30\nCondition one: the work as you do it now\n\n\n10:30 - 11:00\nBreak\n\n\n11:00 - 12:15\nCondition two: agents with minimal input\n\n\n12:15 - 13:15\nLunch\n\n\n13:15 - 14:45\nCondition three: the planned run\n\n\n14:45 - 15:15\nBreak\n\n\n15:15 - 16:00\nPlain CSV against a published data package\n\n\n16:00 - 16:45\nDisclosure rules in the making: what the record shows\n\n\n16:45 - 17:00\nClose"
+    "text": "Schedule\n\n\n\n\n\n\nNoteTentative\n\n\n\nThe schedule below is a working draft and still under active development.\n\n\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\nRounds\n\n\n\n\n08:30 - 09:00\nArrival and coffee\nSetup clinic\n\n\n09:00 - 09:40\nOpening: security, literacy, transparency, disclosure\nYour question bank\n\n\n09:40 - 10:15\nCurrent state, safety rails, the commit rule\nRounds 0 and 1, then the skills\n\n\n10:15 - 10:35\nSnack break\nA question to take with you\n\n\n10:35 - 12:00\nSprint 1: the loop by hand, first run, studio cards, ship v0.1.0\nRound 2: one line, your cards, a commit each, release v0.1.0\n\n\n12:00 - 13:00\nLunch\nA question to take with you\n\n\n13:00 - 13:20\nBetween sprints: what v0.1.0 shows, folders and files\nReflect\n\n\n13:20 - 14:10\nSprint 2: plan mode, issues, partner review\nRounds 3 and 4a: plan mode, issues\n\n\n14:10 - 14:20\nHand-over to the phone\nRound 4b starts\n\n\n14:20 - 14:40\nSnack break: walk with your agent\nRound 4b runs from your phone\n\n\n14:40 - 15:30\nSprint 2: review, CLAUDE.md, rerun, merge\nRound 4b: the pull request, round 5\n\n\n15:30 - 16:00\nSprint 2: ship v0.2.0, declare both\nRelease v0.2.0\n\n\n16:00 - 16:30\nDisclosure rules in the making: two records against the draft rules\nYour two records against the draft rules\n\n\n16:30 - 17:00\nClose: the zine"
   },
   {
     "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
@@ -945,5 +945,810 @@
       "Prepare",
       "Overview"
     ]
+  },
+  {
+    "objectID": "workshop/index.html",
+    "href": "workshop/index.html",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "workshop/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides",
+    "href": "workshop/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "workshop/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f757465203e7d7d-how-the-day-runs",
+    "href": "workshop/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120726f757465203e7d7d-how-the-day-runs",
+    "title": "Agents for Scientists",
+    "section": " How the day runs",
+    "text": "How the day runs\nThe day runs the path from a question to a tagged release twice. Sprint 1, before lunch, is fast and wide: you write three questions your data can answer, run one of them the same way as everyone else, then explore with a set of studio cards on your own repository, commit after every card, merge your own pull request, and release v0.1.0, rough on purpose. Sprint 2, after lunch, runs the path properly on one question: a plan you edit, issues a colleague reviews before any code exists, a run that continues from your phone, a pull request your partner reviews, a CLAUDE.md, release v0.2.0, and one declaration written from both records.\nTwo room rules from minute three. Never make another human read AI slop: read everything the agent does. Commit often, and open a pull request only at the end of a larger chunk of work. Today that is once per sprint.\nThere is a snack break in the morning and one in the afternoon, and each break slide carries one question to take with you. The block after the break opens with it. The day closes with a zine.\nThe schedule with the rounds is on the overview page. The studio cards are printed for the day and online here."
+  },
+  {
+    "objectID": "workshop/slides.html#welcome-back",
+    "href": "workshop/slides.html#welcome-back",
+    "title": "Agents for Scientists",
+    "section": "Welcome back",
+    "text": "Welcome back\n\nIn July you learned the workflow: clone, commit, branch, pull request, review, merge.\nToday one new participant joins that workflow: a coding agent.\nSubject matter expertise now matters more than programming skill.\n\n\nSay the opening claim once and move on. The two rules follow on their own slide."
+  },
+  {
+    "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-spectrum-line",
+    "href": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-spectrum-line",
+    "title": "Agents for Scientists",
+    "section": " Spectrum line",
+    "text": "Spectrum line\n\nStand along the tape line.\n\nLeft end: never used AI for research. Right end: use an agent every week.\nTwo voices from each end.\nRe-sort: how much do you trust the output? Two voices again.\n\n\n\n\n\n\n\n\nFirst movement of the day, before any slide with content. The trust re-sort is the one to listen to."
+  },
+  {
+    "objectID": "workshop/slides.html#what-must-never-go-in",
+    "href": "workshop/slides.html#what-must-never-go-in",
+    "title": "Agents for Scientists",
+    "section": "What must never go in",
+    "text": "What must never go in\n\nWhat in your project folder would you not want a model to read?\n\n\nPersonal and sensitive data never go into a Git repository, private ones included. The agent reads whole folders.\n\n\n\n\n\n\n\nNeighbour minute. The argument is on the Security background page; the slide carries only the question and one line."
+  },
+  {
+    "objectID": "workshop/slides.html#how-do-i-know-this-is-right",
+    "href": "workshop/slides.html#how-do-i-know-this-is-right",
+    "title": "Agents for Scientists",
+    "section": "How do I know this is right",
+    "text": "How do I know this is right\n\nWhen did you last check an answer against the source?\n\n\nThe agent is most useful on work you could have done yourself, and least trustworthy where you cannot check it (Doctorow, 2026)."
+  },
+  {
+    "objectID": "workshop/slides.html#could-you-recreate-it-if-the-ai-were-gone",
+    "href": "workshop/slides.html#could-you-recreate-it-if-the-ai-were-gone",
+    "title": "Agents for Scientists",
+    "section": "Could you recreate it if the AI were gone",
+    "text": "Could you recreate it if the AI were gone\n\nWhich file in your project would you not be able to rebuild?\n\n\nFine that the AI made it. A problem when the AI has to stay in the loop for you to change it."
+  },
+  {
+    "objectID": "workshop/slides.html#what-do-i-say-and-to-whom",
+    "href": "workshop/slides.html#what-do-i-say-and-to-whom",
+    "title": "Agents for Scientists",
+    "section": "What do I say, and to whom",
+    "text": "What do I say, and to whom\n\nIf a reader asked what the agent did in your last paper, what would you point to?\n\n\nDeclare the tool as a method. Do not cite the model as a source."
+  },
+  {
+    "objectID": "workshop/slides.html#how-the-day-works",
+    "href": "workshop/slides.html#how-the-day-works",
+    "title": "Agents for Scientists",
+    "section": "How the day works",
+    "text": "How the day works\n\nThe same path twice: question, agent, commits, pull request, release.\nSprint 1, before lunch: three questions of your own, one framed run, then studio cards on your repository with a commit after each, a pull request you merge yourself, release v0.1.0. Fast and rough, on purpose.\nSprint 2, after lunch: a plan you edit, issues a colleague reviews, a run that continues from your phone, a reviewed pull request, a CLAUDE.md, release v0.2.0, one declaration over both.\nEvery round ends with the same check: would I merge this?\nTwo snack breaks, each with a question to take with you. The evidence wall collects what you notice. The day closes with a zine."
+  },
+  {
+    "objectID": "workshop/slides.html#the-variable",
+    "href": "workshop/slides.html#the-variable",
+    "title": "Agents for Scientists",
+    "section": "The variable",
+    "text": "The variable\n\n\n\n\n\n\n\n\n\n\nRound\nWho reads the files\nWho decides the steps\nWho reviews\nWhere the instructions live\n\n\n\n\n0 No AI\nyou\nyou\nnobody\nyour head\n\n\n1 Chat\nyou paste them\nyou\nyou\nthe chat box\n\n\n2 One line, sprint 1\nthe agent\nthe agent\nyou, afterwards\none line\n\n\n3 Plan mode, sprint 2\nthe agent\nyou, before anything runs\nyou\na plan you can edit\n\n\n4 Issues and review\nthe agent\nyou and a colleague\na colleague, twice\nGitHub issues\n\n\n5 CLAUDE.md and skills\nthe agent\nyou and a colleague\na colleague\nthe repository\n\n\n\n\nThis table returns as one row per section slide, with the changed cell highlighted. Sprint 1 is rows 1 and 2, sprint 2 is rows 3 to 5."
+  },
+  {
+    "objectID": "workshop/slides.html#learning-objectives",
+    "href": "workshop/slides.html#learning-objectives",
+    "title": "Agents for Scientists",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nBy the end of this workshop, you will be able to:\n\nRun an agent inside the Git workflow: give it a task, have the plan reviewed and written as issues before any code exists, then review the pull request and accept or reject it.\nJudge the difference a plan makes: compare one line against a reviewed plan, and say what changed and why.\nJudge the difference documentation makes: a plain CSV against a data package, a bare repository against one with a template, a codebook and a CLAUDE.md.\nDeclare agent use: point to the record your workflow produced, up to a tagged release, and say what it shows.\n\n\nPlaceholder wording; the website objectives are the source of truth once reworded. Objective 2 is two releases side by side today."
+  },
+  {
+    "objectID": "workshop/slides.html#schedule",
+    "href": "workshop/slides.html#schedule",
+    "title": "Agents for Scientists",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\nTime\nBlock\nRounds\n\n\n\n\n08:30 - 09:00\nArrival and coffee\nSetup clinic\n\n\n09:00 - 09:40\nOpening: security, literacy, transparency, disclosure\nYour question bank\n\n\n09:40 - 10:15\nCurrent state, safety rails, the commit rule\nRounds 0 and 1, then the skills\n\n\n10:15 - 10:35\nSnack break\nA question to take with you\n\n\n10:35 - 12:00\nSprint 1: the loop by hand, first run, studio cards, ship v0.1.0\nRound 2: one line, your cards, a commit each, release v0.1.0\n\n\n12:00 - 13:00\nLunch\nA question to take with you\n\n\n13:00 - 13:20\nBetween sprints: what v0.1.0 shows, folders and files\nReflect\n\n\n13:20 - 14:10\nSprint 2: plan mode, issues, partner review\nRounds 3 and 4a: plan mode, issues\n\n\n14:10 - 14:20\nHand-over to the phone\nRound 4b starts\n\n\n14:20 - 14:40\nSnack break: walk with your agent\nRound 4b runs from your phone\n\n\n14:40 - 15:30\nSprint 2: review, CLAUDE.md, rerun, merge\nRound 4b: the pull request, round 5\n\n\n15:30 - 16:00\nSprint 2: ship v0.2.0, declare both\nRelease v0.2.0\n\n\n16:00 - 16:30\nDisclosure rules in the making: two records against the draft rules\nYour two records against the draft rules\n\n\n16:30 - 17:00\nClose: the zine"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-your-anchor-question",
+    "href": "workshop/slides.html#your-turn-your-anchor-question",
+    "title": "Agents for Scientists",
+    "section": "Your turn: your anchor question",
+    "text": "Your turn: your anchor question\n\n   On paper\n\nWrite one question your data can answer. One sentence.\nSwap with a neighbour. Make theirs 20 percent more specific: which column, which unit, which comparison.\nPin it on the wall.\n\n\n   Sticky note on your laptop when your question is on the wall.\n\n\n\n\n\n\n\n\nBeing 20 percent more specific improves results by 80 percent (Wickham). The question on the wall is the one that runs through every round."
+  },
+  {
+    "objectID": "workshop/slides.html#the-instructors-question",
+    "href": "workshop/slides.html#the-instructors-question",
+    "title": "Agents for Scientists",
+    "section": "The instructor’s question",
+    "text": "The instructor’s question\nagentsforsci-ghe/fstp-eval-india, one PDF: a 2023 evaluation of 69 treatment plants in eight Indian states.\n\nWhich of the 47 FSTPs meet the discharge standard of 30 mg/L BOD, and how does BOD removal compare across treatment technologies?\n\n\nCloned at ~/Documents/gitrepos/gh-org-agentsforsci-ghe/fstp-eval-india"
+  },
+  {
+    "objectID": "workshop/slides.html#round-0-no-ai-current-state",
+    "href": "workshop/slides.html#round-0-no-ai-current-state",
+    "title": "Agents for Scientists",
+    "section": "Round 0: no AI current state",
+    "text": "Round 0: no AI current state\n\n\n\n\n\n\n\n\n\nWho reads the files\nWho decides the steps\nWho reviews\nWhere the instructions live\n\n\n\n\nyou\nyou\nnobody\nyour head"
+  },
+  {
+    "objectID": "workshop/slides.html#the-steps-of-a-paper-as-you-do-them-now-current-state",
+    "href": "workshop/slides.html#the-steps-of-a-paper-as-you-do-them-now-current-state",
+    "title": "Agents for Scientists",
+    "section": "The steps of a paper, as you do them now current state",
+    "text": "The steps of a paper, as you do them now current state\nPlaceholder: one slide with the steps from data to submitted manuscript and where the hours go.\n\nWhere does AI sit in your workflow today, if anywhere?"
+  },
+  {
+    "objectID": "workshop/slides.html#round-1-chat-current-state",
+    "href": "workshop/slides.html#round-1-chat-current-state",
+    "title": "Agents for Scientists",
+    "section": "Round 1: chat current state",
+    "text": "Round 1: chat current state\n\n\n\n\n\n\n\n\n\nWho reads the files\nWho decides the steps\nWho reviews\nWhere the instructions live\n\n\n\n\nyou paste them\nyou\nyou\nthe chat box"
+  },
+  {
+    "objectID": "workshop/slides.html#my-turn-current-state",
+    "href": "workshop/slides.html#my-turn-current-state",
+    "title": "Agents for Scientists",
+    "section": "My turn current state",
+    "text": "My turn current state\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\nDemo script in lesson-plan.qmd: question 1 in chat with the report, ask for receipts, then question 3 (helminth eggs). The answer sounds the same whether it is right or not. The helper lays out the snacks now."
+  },
+  {
+    "objectID": "workshop/slides.html#section",
+    "href": "workshop/slides.html#section",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "With your neighbour: what did one sentence change? Would I merge this plan?"
+  },
+  {
+    "objectID": "workshop/slides.html#recall",
+    "href": "workshop/slides.html#recall",
+    "title": "Agents for Scientists",
+    "section": "Recall",
+    "text": "Recall\nYou write . The agent reads . The agent proposes . You . A colleague reviews . The instructions live in .\n\nTwenty seconds: the first two blanks, to your neighbour.\n\n\n\n\n\n\n\nVersion 1, the guess. Sprint 1 filled two blanks at once. Say nothing until the countdown ends."
+  },
+  {
+    "objectID": "workshop/slides.html#section-1",
+    "href": "workshop/slides.html#section-1",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "Anything from review, CLAUDE.md and the rerun you’d like clarified before the second release?"
+  },
+  {
+    "objectID": "workshop/slides.html#take-a-break",
+    "href": "workshop/slides.html#take-a-break",
+    "title": "Agents for Scientists",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Back at 10:10.\n\nWhat in your data folder would you not want a model to read?"
+  },
+  {
+    "objectID": "workshop/slides.html#our-turn-safety-rails",
+    "href": "workshop/slides.html#our-turn-safety-rails",
+    "title": "Agents for Scientists",
+    "section": "Our turn: safety rails",
+    "text": "Our turn: safety rails\n\n   In RStudio, your own repository\n\nOpen data/. Look once more against the group rule.\n\n   In the terminal\n\nOpen it at ~/Documents/gitrepos/gh-org-agentsforsci-ghe/&lt;your repo&gt;, not one level up.\ngit switch -c dev (already have one? git switch dev), then claude.\n/status. Find the mode line. /context.\n\n\n   Sticky note when /context has printed.\n\n\n\nThe agent reads the folder it starts in; one level up it would read every repository. The pre-work never created dev, so -c. Auto mode, Shift+Tab for manual, said once. Hand out the bingo cards."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-be-the-agent",
+    "href": "workshop/slides.html#your-turn-be-the-agent",
+    "title": "Agents for Scientists",
+    "section": "Your turn: be the agent",
+    "text": "Your turn: be the agent\n\n   In the Claude chat, not in Claude Code, on your setup repository (public data), not your own\n\nType: “I have a repository with data. Ask me for the files you need to answer this question, one at a time, and I will paste what you ask for: what is in this data?”\nPaste what it asks for, by hand. Keep going.\n\n\n   Sticky note after the third file you pasted.\n\n\n\n\n\n\n\n\nOpens with question 1: two answers, one last look at data/. Posit’s “be the tool” trick, on public data so nothing of yours goes into the chat. The loop is felt before Claude Code automates it."
+  },
+  {
+    "objectID": "workshop/slides.html#the-model",
+    "href": "workshop/slides.html#the-model",
+    "title": "Agents for Scientists",
+    "section": "The model",
+    "text": "The model\nPlaceholder: stateless, on the provider’s servers, sees only what was sent in this request."
+  },
+  {
+    "objectID": "workshop/slides.html#the-harness",
+    "href": "workshop/slides.html#the-harness",
+    "title": "Agents for Scientists",
+    "section": "The harness",
+    "text": "The harness\nPlaceholder: the loop, the tools, the permission layer, on your laptop. What you just did by hand."
+  },
+  {
+    "objectID": "workshop/slides.html#the-tool-call",
+    "href": "workshop/slides.html#the-tool-call",
+    "title": "Agents for Scientists",
+    "section": "The tool call",
+    "text": "The tool call\nPlaceholder: what will scroll past in a minute. Read tools observe, write tools change things."
+  },
+  {
+    "objectID": "workshop/slides.html#round-2-one-line",
+    "href": "workshop/slides.html#round-2-one-line",
+    "title": "Agents for Scientists",
+    "section": "Round 2: one line",
+    "text": "Round 2: one line\n\n\n\n\n\n\n\n\n\nWho reads the files\nWho decides the steps\nWho reviews\nWhere the instructions live\n\n\n\n\nthe agent\nthe agent\nyou, afterwards\none line"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-round-2",
+    "href": "workshop/slides.html#your-turn-round-2",
+    "title": "Agents for Scientists",
+    "section": "Your turn: round 2",
+    "text": "Your turn: round 2\n\n   In Claude Code, your own repository, branch dev\n\nType this and nothing else: “Answer the following question using the data in this repository and write up the result: your anchor question.”\nWatch the tool calls. Do not intervene. Do not commit.\n\n\n   Sticky note when it stops.\n\n\n\n\n\n\n\n\nEveryone runs the same underspecified frame. Variation is the point of the gallery walk. Bounded regroup: 2 minutes, then park-and-pair."
+  },
+  {
+    "objectID": "workshop/slides.html#section-2",
+    "href": "workshop/slides.html#section-2",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "Anything from the first run you’d like clarified before the break?"
+  },
+  {
+    "objectID": "workshop/slides.html#take-a-break-1",
+    "href": "workshop/slides.html#take-a-break-1",
+    "title": "Agents for Scientists",
+    "section": "Take a break",
+    "text": "Take a break\nLeave your screen on. Back at 11:10.\n\nWould you merge what the agent just did? What would it take?"
+  },
+  {
+    "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-gallery-walk",
+    "href": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-gallery-walk",
+    "title": "Agents for Scientists",
+    "section": " Gallery walk",
+    "text": "Gallery walk\n\nResult, transcript and file pane stay on your screen. Read three other screens.\nWhere did the files land? What are they called?"
+  },
+  {
+    "objectID": "workshop/slides.html#reflect",
+    "href": "workshop/slides.html#reflect",
+    "title": "Agents for Scientists",
+    "section": "Reflect",
+    "text": "Reflect\n\nWhat did it assume without asking?\nWhere did it put files, and how did it name them?\nWhat did it cost, and was it worth it?\nDid it use git?\nWould I merge this? Hands up.\n\n\n   One note for the evidence wall."
+  },
+  {
+    "objectID": "workshop/slides.html#where-repositories-live",
+    "href": "workshop/slides.html#where-repositories-live",
+    "title": "Agents for Scientists",
+    "section": "Where repositories live",
+    "text": "Where repositories live\n~/Documents/gitrepos/\n├── gh-org-gitforsci-ghe/        July\n├── gh-org-agentsforsci-ghe/     today\n│   └── &lt;your repo&gt;/             &lt;- the agent starts here, never one level up\n└── gh-rainbow-train/            a personal account\n    └── website/\n\nOne folder per GitHub organisation (gh-org-), one per personal account (gh-), side by side.\ngitrepos stays out of folders that sync to a cloud drive.\nThe agent reads the folder it starts in. Start inside the repository."
+  },
+  {
+    "objectID": "workshop/slides.html#inside-a-repository",
+    "href": "workshop/slides.html#inside-a-repository",
+    "title": "Agents for Scientists",
+    "section": "Inside a repository",
+    "text": "Inside a repository\n\n\n&lt;your repo&gt;/\n├── README.md\n├── CLAUDE.md\n├── data/\n│   ├── raw_data/\n│   ├── derived_data/\n│   └── metadata/codebook.csv\n├── analysis/\n├── docs/reports/\n└── src/\n\nFile names: lowercase, dash as separator, short, a two-digit prefix for scripts.\n01-read-data.R\nFinal analysis (v2) LS.R\n\n\nPlaceholder template, to confirm before the day (reduced student-dir-template). The three levels: where repositories live, inside a repository, file names."
+  },
+  {
+    "objectID": "workshop/slides.html#who-commits",
+    "href": "workshop/slides.html#who-commits",
+    "title": "Agents for Scientists",
+    "section": "Who commits?",
+    "text": "Who commits?\n\nDo all commits yourself.\nTell the agent when to commit.\nLet the agent commit. You write the issues and open the pull request.\nLet the agent make the whole pull request.\n\n\nHadley Wickham’s git-trust ladder with the issue step inserted. Picks up “did it use git” from the reflect slide. Today we climb to rung 3."
+  },
+  {
+    "objectID": "workshop/slides.html#our-turn-two-skills",
+    "href": "workshop/slides.html#our-turn-two-skills",
+    "title": "Agents for Scientists",
+    "section": "Our turn: two skills",
+    "text": "Our turn: two skills\n\n   In Claude Code\n\n/plugin marketplace add Global-Health-Engineering/skills\n/plugin install ghe-skills@ghe-skills\n/exit, then claude again.\n\n\n   Sticky note when /ghe-skills:commit shows up in the command list.\n\n\n\nOne turns the agent’s changes into a commit with a record of what the agent did, one opens a pull request from dev into main. A failed install goes to the helper in the break. Removal on the close slide."
+  },
+  {
+    "objectID": "workshop/slides.html#recall-1",
+    "href": "workshop/slides.html#recall-1",
+    "title": "Agents for Scientists",
+    "section": "Recall",
+    "text": "Recall\nYou write a question. The agent reads your repository. The agent proposes . You . A colleague reviews . The instructions live in .\n\n   Write the sentence on the back of your day sheet."
+  },
+  {
+    "objectID": "workshop/slides.html#section-3",
+    "href": "workshop/slides.html#section-3",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "We should be more tired than the model.\n\n\nVicki Boykis (Boykis, 2026)"
+  },
+  {
+    "objectID": "workshop/slides.html#lunch",
+    "href": "workshop/slides.html#lunch",
+    "title": "Agents for Scientists",
+    "section": "Lunch",
+    "text": "Lunch\nBack at 13:00. Bring your day sheet. The afternoon starts on the floor.\n\nOf the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over?"
+  },
+  {
+    "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-the-stakes-ladder",
+    "href": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-the-stakes-ladder",
+    "title": "Agents for Scientists",
+    "section": " The stakes ladder",
+    "text": "The stakes ladder\n\nVery low stakes: implement it. Sprint 1.\nLow stakes: plan, then implement.\nMedium stakes: plan, review the plan, implement, review the implementation. Sprint 2.\nHigh stakes: design first, then repeat the cycles.\n\n\nFour rungs on the floor. Stand on the rung for the question you take through sprint 2. Then for “a figure in your thesis”. Then for “a throwaway plot”.\n\n\n\n\n\n\n\nOpens with the lunch question: two answers, then everybody up. The ladder is the reason plan mode exists. Sprint 1 was rung 1 on purpose."
+  },
+  {
+    "objectID": "workshop/slides.html#round-3-plan-mode",
+    "href": "workshop/slides.html#round-3-plan-mode",
+    "title": "Agents for Scientists",
+    "section": "Round 3: plan mode",
+    "text": "Round 3: plan mode\n\n\n\n\n\n\n\n\n\nWho reads the files\nWho decides the steps\nWho reviews\nWhere the instructions live\n\n\n\n\nthe agent\nyou, before anything runs\nyou\na plan you can edit"
+  },
+  {
+    "objectID": "workshop/slides.html#my-turn",
+    "href": "workshop/slides.html#my-turn",
+    "title": "Agents for Scientists",
+    "section": "My turn",
+    "text": "My turn\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\nDemo script in lesson-plan.qmd: plan mode on fstp-eval-india after its own rough v0.1.0, first plan rejected with one sentence, then a markdown plan to edit, then a commit of the plan."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-round-3",
+    "href": "workshop/slides.html#your-turn-round-3",
+    "title": "Agents for Scientists",
+    "section": "Your turn: round 3",
+    "text": "Your turn: round 3\n\n   In Claude Code\n\nShift+Tab until the status line says plan mode.\nSame frame as round 2, same question.\nReject the first plan on purpose, in one sentence that points at the template and the naming rules.\n“Write the plan as a markdown file I can edit before you do anything.” Edit one line. Do not implement.\n\n\n   Sticky note when your edited plan is saved.\n\n\n\n\n\n\n\n\nCorrecting a plan costs one sentence; correcting code costs a re-run."
+  },
+  {
+    "objectID": "workshop/slides.html#section-4",
+    "href": "workshop/slides.html#section-4",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "With your neighbour: what did one sentence change? Would I merge this plan?"
+  },
+  {
+    "objectID": "workshop/slides.html#round-4-issues-and-review",
+    "href": "workshop/slides.html#round-4-issues-and-review",
+    "title": "Agents for Scientists",
+    "section": "Round 4: issues and review",
+    "text": "Round 4: issues and review\n\n\n\n\n\n\n\n\n\nWho reads the files\nWho decides the steps\nWho reviews\nWhere the instructions live\n\n\n\n\nthe agent\nyou and a colleague\na colleague, before code exists and again on the pull request\nGitHub issues"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-round-4a-the-issues",
+    "href": "workshop/slides.html#your-turn-round-4a-the-issues",
+    "title": "Agents for Scientists",
+    "section": "Your turn: round 4a, the issues",
+    "text": "Your turn: round 4a, the issues\n\n   In Claude Code\nAsk the agent to turn the approved plan into four issues on your repository, each with a title, what done looks like, and the files it touches:\n\nOrganise the repository following the template.\nThe analysis inside a Quarto manuscript with format: docx, one figure from a code chunk.\nFive references from your Zotero library.\nA methods paragraph.\n\n\n   Sticky note when the four issues are on GitHub."
+  },
+  {
+    "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-find-your-review-partner",
+    "href": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-find-your-review-partner",
+    "title": "Agents for Scientists",
+    "section": " Find your review partner",
+    "text": "Find your review partner\n\nMove to sit with your partner (neighbour pairs, triple if odd).\n   On github.com\n\nOpen your partner’s issues.\nComment where a step is unclear or where done is not defined. Before any code exists.\n\n\n\n\n\n\n\n\nA colleague without agent access can still shape the work. Protected block. The helper lays out the afternoon snacks now."
+  },
+  {
+    "objectID": "workshop/slides.html#our-turn-hand-over-to-your-phone",
+    "href": "workshop/slides.html#our-turn-hand-over-to-your-phone",
+    "title": "Agents for Scientists",
+    "section": "Our turn: hand over to your phone",
+    "text": "Our turn: hand over to your phone\n\n   In Claude Code\n\n“Implement issues 1 and 2 on the dev branch. Run /ghe-skills:commit after each issue, then push. Ask me when you are unsure.”\n/remote-control. A link and a QR code appear.\n\n   On your phone\n\nScan the code with the Claude app, or open Code in the app.\nSend: “Status?”\n\n   Laptop plugged in, lid open, terminal open.\n\n   Snack in hand, go outside.\n\n\n\nScript in lesson-plan.qmd. The pairing was tested at 10:08. Fallback: leave the laptop running, go outside anyway, read the transcript on return."
+  },
+  {
+    "objectID": "workshop/slides.html#walk-with-your-agent",
+    "href": "workshop/slides.html#walk-with-your-agent",
+    "title": "Agents for Scientists",
+    "section": "Walk with your agent",
+    "text": "Walk with your agent\nBack at 14:20. Check progress every few minutes. Answer what it asks. Do not start new tasks.\n\nWhat does it ask you, and what does it decide alone?"
+  },
+  {
+    "objectID": "workshop/slides.html#what-did-it-ask-you",
+    "href": "workshop/slides.html#what-did-it-ask-you",
+    "title": "Agents for Scientists",
+    "section": "What did it ask you?",
+    "text": "What did it ask you?\n\nWhat did it ask you? What did it decide alone?\n\n\n   One note for the evidence wall."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-finish-round-4b",
+    "href": "workshop/slides.html#your-turn-finish-round-4b",
+    "title": "Agents for Scientists",
+    "section": "Your turn: finish round 4b",
+    "text": "Your turn: finish round 4b\n\n   In Claude Code, at the laptop\n\nRead the diff. If the agent is not done, it finishes now.\n/ghe-skills:open-pr\n\n\n   Sticky note when the pull request is open."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-partner-review",
+    "href": "workshop/slides.html#your-turn-partner-review",
+    "title": "Agents for Scientists",
+    "section": "Your turn: partner review",
+    "text": "Your turn: partner review\n\n   On github.com\n\nOpen your partner’s pull request. Files changed.\nRead every line. Would I merge this?\nApprove, or say what would have to change. Do not merge yet: round 5 adds the CLAUDE.md to this pull request.\nCompare with the sprint 1 pull request nobody reviewed."
+  },
+  {
+    "objectID": "workshop/slides.html#recall-2",
+    "href": "workshop/slides.html#recall-2",
+    "title": "Agents for Scientists",
+    "section": "Recall",
+    "text": "Recall\nYou write a question. The agent reads your repository. The agent proposes . You . A colleague reviews . The instructions live in .\n\nTwenty seconds: blanks three and four, to your neighbour."
+  },
+  {
+    "objectID": "workshop/slides.html#my-turn-1",
+    "href": "workshop/slides.html#my-turn-1",
+    "title": "Agents for Scientists",
+    "section": "My turn",
+    "text": "My turn\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\nDemo script in lesson-plan.qmd: the agent writes the declaration of AI use from the first commit to v0.2.0, including who reviewed what and what changed between the releases, and puts it in the release notes of v0.2.0. Count the commits it found aloud. If behind: skip, two volunteers read a line of theirs instead."
+  },
+  {
+    "objectID": "workshop/slides.html#section-5",
+    "href": "workshop/slides.html#section-5",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "Anything from issues, review and merge you’d like clarified before the break?"
+  },
+  {
+    "objectID": "workshop/slides.html#take-a-break-2",
+    "href": "workshop/slides.html#take-a-break-2",
+    "title": "Agents for Scientists",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Back at 15:10.\n\nCould you recreate what the agent built today if the AI were gone?"
+  },
+  {
+    "objectID": "workshop/slides.html#claude.md",
+    "href": "workshop/slides.html#claude.md",
+    "title": "Agents for Scientists",
+    "section": "CLAUDE.md",
+    "text": "CLAUDE.md\n\nCLAUDE.md in the project folder: versioned, shared with collaborators, in the record.\nIt holds what is true for this project: the template, the naming rules, where the codebook is, how to render.\nTold the agent something three times? Put it in CLAUDE.md.\nA user level file (~/.claude/CLAUDE.md) exists on your machine, applies to every project, and never appears in the repository.\n\n\nThe user level file is a hint only, nothing to do."
+  },
+  {
+    "objectID": "workshop/slides.html#claude.md-against-a-skill",
+    "href": "workshop/slides.html#claude.md-against-a-skill",
+    "title": "Agents for Scientists",
+    "section": "CLAUDE.md against a skill",
+    "text": "CLAUDE.md against a skill\n\nA skill has two parts: the when is always sent to the model, the what loads on demand.\nLots of text for one purpose: make it a skill.\nNever write skills prospectively. Extract them from a conversation that just happened."
+  },
+  {
+    "objectID": "workshop/slides.html#round-5-claude.md-and-skills",
+    "href": "workshop/slides.html#round-5-claude.md-and-skills",
+    "title": "Agents for Scientists",
+    "section": "Round 5: CLAUDE.md and skills",
+    "text": "Round 5: CLAUDE.md and skills\n\n\n\n\n\n\n\n\n\nWho reads the files\nWho decides the steps\nWho reviews\nWhere the instructions live\n\n\n\n\nthe agent\nyou and a colleague\na colleague\nthe repository"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-round-5",
+    "href": "workshop/slides.html#your-turn-round-5",
+    "title": "Agents for Scientists",
+    "section": "Your turn: round 5",
+    "text": "Your turn: round 5\n\n   In Claude Code\n\n“Write a CLAUDE.md for this repository from what we did today: the folder template, the naming rules, where the codebook is, how to render the manuscript. Then fill data/metadata/codebook.csv for the derived table.” Commit.\n/exit, then claude. New session.\nRerun the sprint 1 frame with question 1, word for word. Commit. “Push the dev branch.”\nWith your partner: the sprint 1 output next to this one. Did it follow the template without being told? Would I merge this?\n\n\n   Sticky note when the rerun is pushed. Bingo closes.\n\n\n\n\n\n\n\n\nRerunning the same prompt after adding CLAUDE.md is the lesson. Twenty minutes: two agent runs, two commits, a push, a comparison. Protected."
+  },
+  {
+    "objectID": "workshop/slides.html#section-6",
+    "href": "workshop/slides.html#section-6",
+    "title": "Agents for Scientists",
+    "section": "",
+    "text": "With your partner: round 2 output next to round 5 output. Did it follow the template without being told? Would I merge this?\n\n\n\n\n\n\n\nBingo closes here. Rerunning the same prompt after adding CLAUDE.md is the lesson."
+  },
+  {
+    "objectID": "workshop/slides.html#the-first-release",
+    "href": "workshop/slides.html#the-first-release",
+    "title": "Agents for Scientists",
+    "section": "The first release",
+    "text": "The first release\n\nPull request merged into main.\nManuscript rendered to DOCX.\nTag v0.1.0.\nRelease on GitHub, with the DOCX attached. Source in git, artifact on the release.\ndev synced with main."
+  },
+  {
+    "objectID": "workshop/slides.html#our-turn-release-v0.1.0",
+    "href": "workshop/slides.html#our-turn-release-v0.1.0",
+    "title": "Agents for Scientists",
+    "section": "Our turn: release v0.1.0",
+    "text": "Our turn: release v0.1.0\n\n   Merge the pull request if it is not merged yet.\n   In Claude Code\n\n“Switch to main and pull. Render the manuscript to DOCX.”\n“Tag v0.1.0 and create a GitHub release with the DOCX attached.”\n“Switch to dev, merge main into it, and push.”\n\n\n   Sticky note when the release page shows the DOCX.\n\n\n\n\n\n\n\n\nThe DOCX stays out of git. Never leave a release on main with dev behind it."
+  },
+  {
+    "objectID": "workshop/slides.html#my-turn-2",
+    "href": "workshop/slides.html#my-turn-2",
+    "title": "Agents for Scientists",
+    "section": "My turn",
+    "text": "My turn\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\nDemo script in lesson-plan.md: the agent writes the declaration of AI use from the record up to v0.1.0 and puts it in the release notes."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-your-declaration",
+    "href": "workshop/slides.html#your-turn-your-declaration",
+    "title": "Agents for Scientists",
+    "section": "Your turn: your declaration",
+    "text": "Your turn: your declaration\n\n   In Claude Code\n\n“Write a declaration of AI use for this repository from the first commit to tag v0.2.0. Read the commit history and its trailers, the prompts folder, the issues, the pull requests and CLAUDE.md. Say which files an agent touched, in response to which instruction, who reviewed what, and what changed between v0.1.0 and v0.2.0. Put it in the release notes of v0.2.0.”\n\n\n   Sticky note when the release notes are updated. Two volunteers read one line aloud."
+  },
+  {
+    "objectID": "workshop/slides.html#take-a-break-3",
+    "href": "workshop/slides.html#take-a-break-3",
+    "title": "Agents for Scientists",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Back at 16:10.\n\nDisclose whenever AI was used, or does a yes-or-no flag lose the intent? Pick a side."
+  },
+  {
+    "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-two-sides-of-the-room",
+    "href": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-two-sides-of-the-room",
+    "title": "Agents for Scientists",
+    "section": " Two sides of the room",
+    "text": "Two sides of the room\n\n\nDisclose if AI was used at all.\nA threshold each author judges invites under-reporting. The workflow logs every use anyway.\n\nA yes-or-no flag loses the intent.\nIt cannot tell translation of your own ideas from ghostwriting, and readers will read it as a quality signal.\n\n\nStand on your side. Argue with v0.1.0 and v0.2.0 as evidence. Cross over if persuaded.\n\n\n\n\n\n\n\nBoth positions are on the Disclosure background page (Carpenter, 2026; Weaver et al., 2026). Where they meet: the flag decides whether there is something to show; the artifacts show what was done."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-the-18-tasks",
+    "href": "workshop/slides.html#your-turn-the-18-tasks",
+    "title": "Agents for Scientists",
+    "section": "Your turn: the 18 tasks",
+    "text": "Your turn: the 18 tasks\n\n   On the printed checklist\n\nTick the tasks the agent touched today. Your declaration is the source.\nCircle the ones a peer would need to know about to judge the work.\nCompare with your lunch answer.\n\n\n\n\n\n\n\n\nPlaceholder for the taxonomy list in two columns, same as the printed checklist (International Science Council, 2026). The “substantive” test is the proposed threshold."
+  },
+  {
+    "objectID": "workshop/slides.html#three-flipcharts",
+    "href": "workshop/slides.html#three-flipcharts",
+    "title": "Agents for Scientists",
+    "section": "Three flipcharts",
+    "text": "Three flipcharts\n\nWhere does disclosure belong: spread through the sections, or gathered in one statement?\nShould a null statement be mandatory, the way conflict of interest statements are?\nHow do you describe the verification and oversight that was actually done?\n\n\n   One note per chart, one line each, from what the two records showed."
+  },
+  {
+    "objectID": "workshop/slides.html#what-happens-next",
+    "href": "workshop/slides.html#what-happens-next",
+    "title": "Agents for Scientists",
+    "section": "What happens next",
+    "text": "What happens next\n\nThe wall goes to the AI working group of the Global Federation of Reproducibility Networks.\nRound 2 of the consultation closes on 16 October 2026.\nThe chat room stays open."
+  },
+  {
+    "objectID": "workshop/slides.html#standing-circle",
+    "href": "workshop/slides.html#standing-circle",
+    "title": "Agents for Scientists",
+    "section": "Standing circle",
+    "text": "Standing circle\n\n   On paper, then aloud\n\nOne thing I will change about how I work.\nOne thing I will not hand to an agent."
+  },
+  {
+    "objectID": "workshop/slides.html#recall-3",
+    "href": "workshop/slides.html#recall-3",
+    "title": "Agents for Scientists",
+    "section": "Recall",
+    "text": "Recall\nYou write a question. The agent reads your repository. The agent proposes a plan. You reject it with one sentence. A colleague reviews . The instructions live in .\n\n   Write the sentence on the back of your day sheet."
+  },
+  {
+    "objectID": "workshop/slides.html#what-you-learned-today",
+    "href": "workshop/slides.html#what-you-learned-today",
+    "title": "Agents for Scientists",
+    "section": "What you learned today",
+    "text": "What you learned today\nMatched to the four objectives from this morning:\n\nRun an agent inside the Git workflow: twice. A commit after every run, a pull request per sprint, two releases.\nJudge the difference a plan makes: v0.1.0 against v0.2.0, on your own data; ten cards with one line each against one sentence of correction.\nJudge the difference documentation makes: a bare repository against a template, a codebook and a CLAUDE.md.\nDeclare agent use: one declaration written from two records."
+  },
+  {
+    "objectID": "workshop/slides.html#feedback-and-thanks",
+    "href": "workshop/slides.html#feedback-and-thanks",
+    "title": "Agents for Scientists",
+    "section": "Feedback, and thanks",
+    "text": "Feedback, and thanks\n\nPost-course survey: link in the chat room now, five minutes, anonymous.\nRemove the two skills if you do not want to keep them: /plugin uninstall ghe-skills@ghe-skills. The app on the phone can go too.\nThe chat room stays open."
+  },
+  {
+    "objectID": "workshop/slides.html#thanks",
+    "href": "workshop/slides.html#thanks",
+    "title": "Agents for Scientists",
+    "section": "Thanks!",
+    "text": "Thanks!\n\nRemove the two skills if you do not want to keep them: /plugin uninstall ghe-skills@ghe-skills. The app on the phone can go too.\nThe chat room stays open. Take your zine home.\n\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/\nAll material is licensed under Creative Commons Attribution 4.0 International."
+  },
+  {
+    "objectID": "workshop/slides.html#references",
+    "href": "workshop/slides.html#references",
+    "title": "Agents for Scientists",
+    "section": "References",
+    "text": "References\n\n\nCarpenter, T. A. (2026, August). We can now track AI-generated content. It doesn’t solve the real problem. The Scholarly Kitchen. https://scholarlykitchen.sspnet.org/2026/08/31/we-can-now-track-ai-generated-content/\n\n\nDoctorow, C. (2026, July). Pluralistic: Human in the loop. Pluralistic. https://pluralistic.net/2026/07/28/hitl-ers/#ai-ai-oh\n\n\nInternational Science Council. (2026). AI disclosure in research: Towards a global reporting standard. International Science Council. https://council.science/our-work/ai-disclosure-in-research/\n\n\nWeaver, K. D., Seghers, B., McNeice, K., Perkins, M., Santamarina, S., Lingard, L., Tsybuliak, N., & Dijkstal, F. (2026, July). Guest post — research needs a shared standard for AI disclosure. The Scholarly Kitchen. https://scholarlykitchen.sspnet.org/2026/07/13/guest-post-research-needs-a-shared-standard-for-ai-disclosure/\n\n\nWickham, H., & Bryan, J. (2026, September). Modern R workflow. posit::conf 2026. https://github.com/posit-conf-2026/modern-r-workflow"
+  },
+  {
+    "objectID": "workshop/slides.html#two-room-rules",
+    "href": "workshop/slides.html#two-room-rules",
+    "title": "Agents for Scientists",
+    "section": "Two room rules",
+    "text": "Two room rules\n\n\nNever make another human read AI slop.\n\n\n\nRead everything it does. Every round ends with the same question: would I merge this?\n\n\n\nCommit often.\n\n\n\nA commit is a checkpoint you can return to and a line in the record. Today: a commit after every run that changed a file, one pull request per sprint.\n\n\nMinute three. Both rules come back all day: rule one at every “would I merge this?”, rule two at the end of every Your turn."
+  },
+  {
+    "objectID": "workshop/slides.html#four-questions",
+    "href": "workshop/slides.html#four-questions",
+    "title": "Agents for Scientists",
+    "section": "Four questions",
+    "text": "Four questions\n\nWhat must never go in? The agent reads whole folders. Personal and sensitive data never go into a repository, private ones included.\nHow do I know this is right? Most useful on work you could have done yourself, least trustworthy where you cannot check it (Doctorow, 2026).\nCould I recreate it if the AI were gone? Fine that the AI made it. A problem when it has to stay in the loop for you to change it.\nWhat do I say, and to whom? Declare the tool as a method. Do not cite the model as a source.\n\n\nWith your neighbour: which one worries you most, and why?\n\n\n\n\n\n\n\nThe arguments are on the four background pages. Two neighbour minutes, no share-out; the questions return in the disclosure block."
+  },
+  {
+    "objectID": "workshop/slides.html#how-the-recall-works",
+    "href": "workshop/slides.html#how-the-recall-works",
+    "title": "Agents for Scientists",
+    "section": "How the recall works",
+    "text": "How the recall works\nOne sentence describes the whole workflow. It has six blanks. It comes back five times today, each time with more blanks to fill.\n\nThe sentence appears with the newest blanks empty.\nTwenty seconds: tell your neighbour what goes in.\nReveal.\nWrite the whole sentence so far on the back of your day sheet.\n\n\nFilling the blank from memory is what makes it stick. By 17:00 you can say the workflow without the slide, and it goes on the last page of your zine."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-your-question-bank",
+    "href": "workshop/slides.html#your-turn-your-question-bank",
+    "title": "Agents for Scientists",
+    "section": "Your turn: your question bank",
+    "text": "Your turn: your question bank\n\n   On paper, three questions your data can answer. One sentence each.\n\nOne you already know the answer to.\nOne you do not.\nOne your data cannot answer.\n\nSwap with a neighbour. Make their question 1 20 percent more specific: which column, which unit, which comparison. Pin the sheet on the wall.\n\n   Sticky note on your laptop when your sheet is on the wall.\n\n\n\n\n\n\n\n\nQuestion 1 runs the framed run at 10:47 and the rerun at 15:14. Questions 2 and 3 are cards. Sprint 2 is a choice: question 1 done properly, or question 2."
+  },
+  {
+    "objectID": "workshop/slides.html#the-instructors-questions",
+    "href": "workshop/slides.html#the-instructors-questions",
+    "title": "Agents for Scientists",
+    "section": "The instructor’s questions",
+    "text": "The instructor’s questions\nagentsforsci-ghe/fstp-eval-india, one PDF: a 2023 evaluation of 69 treatment plants in eight Indian states.\n\n\nWhich of the 47 FSTPs meet the discharge standard of 30 mg/L BOD, and how does BOD removal compare across treatment technologies?\n\n\n\n\nWhat are the helminth egg counts in the treated effluent per plant?\n\n\n\nCloned at ~/Documents/gitrepos/gh-org-agentsforsci-ghe/fstp-eval-india. Question 3 is the one the report cannot answer."
+  },
+  {
+    "objectID": "workshop/slides.html#a-good-question",
+    "href": "workshop/slides.html#a-good-question",
+    "title": "Agents for Scientists",
+    "section": "A good question",
+    "text": "A good question\n\n20 percent more specific, 80 percent better results.\n\n\nHadley Wickham and Jenny Bryan, Modern R Workflow, posit::conf 2026 (Wickham & Bryan, 2026)\n\n\nWhich column, which unit, which comparison. Your neighbour did that to your question 1 half an hour ago."
+  },
+  {
+    "objectID": "workshop/slides.html#who-commits-and-how-often",
+    "href": "workshop/slides.html#who-commits-and-how-often",
+    "title": "Agents for Scientists",
+    "section": "Who commits, and how often",
+    "text": "Who commits, and how often\n\nDo all commits yourself.\nTell the agent when to commit. Sprint 1.\nLet the agent commit. You write the issues and open the pull request. Sprint 2.\nLet the agent make the whole pull request.\n\n\nCommit after every run that changed a file. One pull request per sprint. Pushing is its own step.\n\n\nHadley Wickham’s git-trust ladder with the issue step inserted. Small commits are cheap to read and cheap to undo; the declaration at 15:45 is written from them. The pull request skill does not push."
+  },
+  {
+    "objectID": "workshop/slides.html#our-turn-pair-your-phone-once",
+    "href": "workshop/slides.html#our-turn-pair-your-phone-once",
+    "title": "Agents for Scientists",
+    "section": "Our turn: pair your phone once",
+    "text": "Our turn: pair your phone once\n\n   In Claude Code\n\n/remote-control. A link and a QR code appear.\n\n   On your phone\n\nScan the code with the Claude app. Send: “Status?”\nRead the answer on the laptop. Close the session on the phone.\n\n\n   Sticky note when the answer arrived. Failed? The helper, in the break.\n\n\n\nThe pairing for 14:10 is tested now, with a break behind it. Same account and organisation on laptop and phone. Remote Control must be enabled in the Team admin settings before the day."
+  },
+  {
+    "objectID": "workshop/slides.html#snack-break",
+    "href": "workshop/slides.html#snack-break",
+    "title": "Agents for Scientists",
+    "section": "Snack break",
+    "text": "Snack break\nPlease get up and move! Back at 10:35.\n\nWhat in your data folder would you not want a model to read?"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-the-framed-run-then-commit",
+    "href": "workshop/slides.html#your-turn-the-framed-run-then-commit",
+    "title": "Agents for Scientists",
+    "section": "Your turn: the framed run, then commit",
+    "text": "Your turn: the framed run, then commit\n\n   In Claude Code, your own repository, branch dev\n\nType this and nothing else: “Answer the following question using the data in this repository and write up the result as a Quarto manuscript: your question 1.”\nWatch the tool calls. Do not intervene.\nWhen it stops: /ghe-skills:commit. Read the message it proposes. Log the run on your day sheet.\n\n\n   Sticky note when the commit is in.\n\n\n\n\n\n\n\n\nEveryone runs the same underspecified frame with their own question 1, so the stand-up compares like with like. Bounded regroup: 3 minutes, then park-and-pair."
+  },
+  {
+    "objectID": "workshop/slides.html#the-studio-ten-cards",
+    "href": "workshop/slides.html#the-studio-ten-cards",
+    "title": "Agents for Scientists",
+    "section": "The studio: ten cards",
+    "text": "The studio: ten cards\n\n\n\nThe question you cannot answer yet\nThe question the data cannot answer\nThe codebook\nOne figure, rendered (recommended)\nFive references\n\n\n\nThe README, read by a stranger\nWhat does it know right now\nName the tool\nThe same task twice\nWild card\n\n\n\nPick freely, any order, at least two. Changed a file? /ghe-skills:commit. Either way, log it. If it asks, answer. Stuck for two minutes: raise a hand, next card.\n\n\nCards are printed and on studio-cards.qmd. Card 4 is the render test for the ship. Stuck: cards 6 and 7, nothing can break. Fast: 8, 9 and 10."
+  },
+  {
+    "objectID": "workshop/slides.html#the-day-sheet",
+    "href": "workshop/slides.html#the-day-sheet",
+    "title": "Agents for Scientists",
+    "section": "The day sheet",
+    "text": "The day sheet\n\n\n\n\n\n\n\n\n\n\n\nRun\nWhat happened\nWhat it assumed\nCost line\nWould I merge this?\nCommitted?\n\n\n\n\nFirst run\n\n\n\n\n\n\n\nCard\n\n\n\n\n\n\n\n\n\nTen rows, one per run, all day. The sheet feeds the reflect block at 13:00, the checklist at 16:00 and page 2 of your zine. The back is for the recall sentence."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-the-studio",
+    "href": "workshop/slides.html#your-turn-the-studio",
+    "title": "Agents for Scientists",
+    "section": "Your turn: the studio",
+    "text": "Your turn: the studio\n\n   In Claude Code, your own repository, branch dev\nCards on the table. At least two. Card 4 for everyone. A commit after each card that changed a file. Log every card.\n\n   Raised hand when a card is stuck for two minutes, then move on.\n\n\n\n\n\n\n\n\nInstructor and helper circulate, fix nothing longer than two minutes. Jump to the next slide at minute 15. Anyone whose card 4 did not render goes on the helper’s lunch list."
+  },
+  {
+    "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-stand-up",
+    "href": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d77616c6b696e67203e7d7d-stand-up",
+    "title": "Agents for Scientists",
+    "section": " Stand up",
+    "text": "Stand up\n\nStand up. Read one other screen for one minute. Where did the files land, what are they called? Sit down, carry on."
+  },
+  {
+    "objectID": "workshop/slides.html#the-release-path",
+    "href": "workshop/slides.html#the-release-path",
+    "title": "Agents for Scientists",
+    "section": "The release path",
+    "text": "The release path\n\nPull request merged into main.\nManuscript rendered to DOCX.\nTag v0.1.0.\nRelease on GitHub, with the DOCX attached. Source in git, artifact on the release.\ndev synced with main.\n\n\nSprint 1 does it rough: no reviewer, whatever rendered. Sprint 2 does it properly."
+  },
+  {
+    "objectID": "workshop/slides.html#our-turn-ship-v0.1.0",
+    "href": "workshop/slides.html#our-turn-ship-v0.1.0",
+    "title": "Agents for Scientists",
+    "section": "Our turn: ship v0.1.0",
+    "text": "Our turn: ship v0.1.0\n\n   In Claude Code\n\n“Push the dev branch.” Then /ghe-skills:open-pr. The first pull request of the day.\n\n   Open it, one minute on Files changed, merge it yourself. No reviewer, on purpose.\n   Back in Claude Code\n\n“Switch to main and pull. Render the manuscript to DOCX.”\n“Tag v0.1.0 and create a GitHub release. Attach the DOCX if it rendered; if not, say in the release note that the manuscript does not render yet.”\n“Switch to dev, merge main into it, and push.”\n\n\n   Sticky note when the release page is up, with or without the DOCX.\n\n\n\n\n\n\n\n\nScript in lesson-plan.qmd. A rough v0.1.0 is the point; do not let anyone polish it. May spill into lunch; whoever is not up by 12:05 is on the helper’s lunch list and eats first."
+  },
+  {
+    "objectID": "workshop/slides.html#reflect-on-v0.1.0",
+    "href": "workshop/slides.html#reflect-on-v0.1.0",
+    "title": "Agents for Scientists",
+    "section": "Reflect on v0.1.0",
+    "text": "Reflect on v0.1.0\nRelease page open on your screen, day sheet in hand.\n\nWhat did it assume without asking?\nWhere did it put files, and how did it name them?\nHow many commits did sprint 1 produce? Hands up: three or more.\nWould I send v0.1.0 to a co-author?"
+  },
+  {
+    "objectID": "workshop/slides.html#your-sprint-2-question",
+    "href": "workshop/slides.html#your-sprint-2-question",
+    "title": "Agents for Scientists",
+    "section": "Your sprint 2 question",
+    "text": "Your sprint 2 question\n\n   On paper, one minute\n\nWhere would your v0.1.0 files belong in the template?\nSprint 2 runs question 1 done properly, or question 2. Write it down."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-plan-mode",
+    "href": "workshop/slides.html#your-turn-plan-mode",
+    "title": "Agents for Scientists",
+    "section": "Your turn: plan mode",
+    "text": "Your turn: plan mode\n\n   In Claude Code\n\nShift+Tab until the status line says plan mode.\nThe sprint 1 frame with your sprint 2 question.\nReject the first plan on purpose, in one sentence that points at the template and the naming rules.\n“Write the plan as a markdown file I can edit before you do anything.” Edit one line. Do not implement. Commit the plan. Log it.\n\n\n   Sticky note when your edited plan is committed.\n\n\n\n\n\n\n\n\nCorrecting a plan costs one sentence; correcting code costs a re-run. A plan is worth a commit."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-the-issues",
+    "href": "workshop/slides.html#your-turn-the-issues",
+    "title": "Agents for Scientists",
+    "section": "Your turn: the issues",
+    "text": "Your turn: the issues\n\n   In Claude Code\nAsk the agent to turn the approved plan into three or four issues on your repository, each with a title, what done looks like, and the files it touches:\n\nOrganise the repository following the template.\nThe analysis inside the Quarto manuscript with format: docx, one figure from a code chunk.\nFive references from your Zotero library.\nA methods paragraph.\n\n\n   Sticky note when the issues are on GitHub."
+  },
+  {
+    "objectID": "workshop/slides.html#snack-break-walk-with-your-agent",
+    "href": "workshop/slides.html#snack-break-walk-with-your-agent",
+    "title": "Agents for Scientists",
+    "section": "Snack break: walk with your agent",
+    "text": "Snack break: walk with your agent\nBack at 14:40. Check progress every few minutes. Answer what it asks. Do not start new tasks.\n\nWhat does it ask you, and what does it decide alone?"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-finish-push-open-the-pull-request",
+    "href": "workshop/slides.html#your-turn-finish-push-open-the-pull-request",
+    "title": "Agents for Scientists",
+    "section": "Your turn: finish, push, open the pull request",
+    "text": "Your turn: finish, push, open the pull request\n\n   In Claude Code, at the laptop\n\nRead the diff. If the agent is not done, it finishes now. The commits are in.\n“Push the dev branch.” Then /ghe-skills:open-pr. The second and last pull request of the day.\n\n\n   Sticky note when the pull request is open."
+  },
+  {
+    "objectID": "workshop/slides.html#recall-4",
+    "href": "workshop/slides.html#recall-4",
+    "title": "Agents for Scientists",
+    "section": "Recall",
+    "text": "Recall\nYou write a question. The agent reads your repository. The agent proposes a plan. You reject it with one sentence. A colleague reviews . The instructions live in .\n\nTwenty seconds: blank five, to your neighbour."
+  },
+  {
+    "objectID": "workshop/slides.html#recall-5",
+    "href": "workshop/slides.html#recall-5",
+    "title": "Agents for Scientists",
+    "section": "Recall",
+    "text": "Recall\nYou write a question. The agent reads your repository. The agent proposes a plan. You reject it with one sentence. A colleague reviews the issues and the pull request. The instructions live in .\n\n   Write the sentence on the back of your day sheet."
+  },
+  {
+    "objectID": "workshop/slides.html#csv-against-data-package",
+    "href": "workshop/slides.html#csv-against-data-package",
+    "title": "Agents for Scientists",
+    "section": "CSV against data package",
+    "text": "CSV against data package\nPlaceholder: two screenshots from the rehearsal, the same short prompt on a plain CSV and on the installed openwashdata package. On the CSV it guesses; on the package it reads the documentation and names the variables.\n\nDocumentation you wrote for a colleague is documentation the agent needs too.\n\n\nNo live demo: it was the first cut in every layout, so it never happened. CLAUDE.md is that documentation for the repository. Take the two screenshots in rehearsal."
+  },
+  {
+    "objectID": "workshop/slides.html#partner-merges",
+    "href": "workshop/slides.html#partner-merges",
+    "title": "Agents for Scientists",
+    "section": "Partner merges",
+    "text": "Partner merges\n\n   On github.com\nThe pull request now carries the issues, the CLAUDE.md and the rerun. Merge your partner’s.\n\n   Sticky note when it is merged."
+  },
+  {
+    "objectID": "workshop/slides.html#our-turn-ship-v0.2.0",
+    "href": "workshop/slides.html#our-turn-ship-v0.2.0",
+    "title": "Agents for Scientists",
+    "section": "Our turn: ship v0.2.0",
+    "text": "Our turn: ship v0.2.0\n\n   In Claude Code\n\n“Switch to main and pull. Render the manuscript to DOCX.”\n“Tag v0.2.0 and create a GitHub release with the DOCX attached.” If it did not render, the release note says so, as in the morning.\n“Switch to dev, merge main into it, and push.”\n\n   Open the two release pages side by side.\n\n   Sticky note when both release pages are up.\n\n\n\n\n\n\n\n\nThe DOCX stays out of git. Never leave a release on main with dev behind it."
+  },
+  {
+    "objectID": "workshop/slides.html#recall-6",
+    "href": "workshop/slides.html#recall-6",
+    "title": "Agents for Scientists",
+    "section": "Recall",
+    "text": "Recall\nYou write a question. The agent reads your repository. The agent proposes a plan. You reject it with one sentence. A colleague reviews the issues and the pull request. The instructions live in .\n\nTwenty seconds: the last blank, to your neighbour."
+  },
+  {
+    "objectID": "workshop/slides.html#recall-7",
+    "href": "workshop/slides.html#recall-7",
+    "title": "Agents for Scientists",
+    "section": "Recall",
+    "text": "Recall\nYou write a question. The agent reads your repository. The agent proposes a plan. You reject it with one sentence. A colleague reviews the issues and the pull request. The instructions live in the repository.\n\n   Write the sentence on the back of your day sheet. It goes on your zine at 16:30."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-the-18-tasks-two-colours",
+    "href": "workshop/slides.html#your-turn-the-18-tasks-two-colours",
+    "title": "Agents for Scientists",
+    "section": "Your turn: the 18 tasks, two colours",
+    "text": "Your turn: the 18 tasks, two colours\n\n   On the printed checklist, two pen colours\n\nOne colour: the tasks the agent touched in sprint 1. The other: sprint 2. Your declaration and your day sheet are the source.\nCircle the ones a peer would need to know about to judge the work.\nCompare with your lunch answer.\n\n\n\n\n\n\n\n\nPlaceholder for the taxonomy list in two columns, same as the printed checklist (International Science Council, 2026). The “substantive” test is the proposed threshold."
+  },
+  {
+    "objectID": "workshop/slides.html#fold-a-zine",
+    "href": "workshop/slides.html#fold-a-zine",
+    "title": "Agents for Scientists",
+    "section": "Fold a zine",
+    "text": "Fold a zine\n\n   One A3 sheet each. Watch twice at the front, then fold.\n\nFold in half the long way. Open.\nFold in half the short way, then each half again. Open: eight panels.\nOne cut along the middle crease, two panels long.\nPush the ends together. Fold into a booklet. Eight pages.\n\n\n\nShow it slowly, twice. Scissors are one pair per two people. Spares on the front table."
+  },
+  {
+    "objectID": "workshop/slides.html#eight-pages",
+    "href": "workshop/slides.html#eight-pages",
+    "title": "Agents for Scientists",
+    "section": "Eight pages",
+    "text": "Eight pages\n\n\nCover: a name for today’s paper, or for your agent workflow.\nMy two sprints: v0.1.0 against v0.2.0, what changed and why. Your day sheet is the source.\nWho reviews: who I want reviewing the agent’s issues and pull requests, and who has a say in what an agent may touch.\nWhere the instructions live: what goes into my CLAUDE.md, what stays in my head.\nWhat I will not hand to an agent, and what I hand over from tomorrow.\nand 7. Left free for feedback from others.\nTake-away: my one-line rule for working with an agent, and the recall sentence in my own words.\n\n\n\n   Work alone. Pens and stickers on the table. Music on."
+  },
+  {
+    "objectID": "workshop/slides.html#the-table",
+    "href": "workshop/slides.html#the-table",
+    "title": "Agents for Scientists",
+    "section": "The table",
+    "text": "The table\n\nZines in the middle of the table.\n\nRead at least three.\nWrite on pages 6 and 7: something positive you noticed, a question, an encouragement.\nOne note for a flipchart if you have one: open questions, learnings, what I still wanted to say.\n\n\n\nPost-course survey, five minutes, anonymous: link in the chat room, now or tonight."
+  },
+  {
+    "objectID": "workshop/slides.html#recall-8",
+    "href": "workshop/slides.html#recall-8",
+    "title": "Agents for Scientists",
+    "section": "Recall",
+    "text": "Recall\nYou write a question. The agent reads your repository. The agent proposes a plan. You reject it with one sentence. A colleague reviews the issues and the pull request. The instructions live in the repository.\n\nRead it aloud, together."
+  },
+  {
+    "objectID": "workshop/studio-cards.html",
+    "href": "workshop/studio-cards.html",
+    "title": " Studio cards",
+    "section": "",
+    "text": "Ten cards, 35 minutes, your own repository. Pick freely, in any order, at least two. Each card is one prompt to type into Claude Code and one thing to watch for. Every card ends the same way: if it changed a file, run /ghe-skills:commit; either way, log the card on your day sheet.\nTwo rules inside the studio. If the agent asks, answer. If it is stuck for two minutes, raise your hand and move to another card.\nThe prompts use your three questions from the morning: question 1 is the one you know the answer to, question 2 the one you do not, question 3 the one your data cannot answer. Card 4 is recommended for everyone: it is the render test for the release before lunch."
+  },
+  {
+    "objectID": "workshop/studio-cards.html#the-cards",
+    "href": "workshop/studio-cards.html#the-cards",
+    "title": " Studio cards",
+    "section": "The cards",
+    "text": "The cards\n\nCard 1: the question you cannot answer yet\n\nAnswer the following question using the data in this repository and add the result to the manuscript: your question 2.\n\nWatch for: what it assumes without asking. Does it name the assumption?\n\n\nCard 2: the question the data cannot answer\n\nAnswer the following question using the data in this repository: your question 3.\n\nWatch for: does it say the data cannot answer it, or does it produce an answer anyway? Ask for receipts: which file, which column.\n\n\nCard 3: the codebook\n\nDescribe every file in data/. Then write a codebook for the main table as a CSV with one row per variable: name, type, unit, description.\n\nWatch for: where it puts the codebook and what it calls it. Would a colleague find it?\n\n\nCard 4: one figure, rendered (recommended)\n\nAdd one figure that answers your question 1 to the manuscript, with the plot code in a chunk, and render the manuscript to DOCX.\n\nWatch for: whether it renders. If it does not, this is the moment to find out, not at the release. Raise your hand.\n\n\nCard 5: five references\n\nFind the five references in my Zotero library that are most relevant to this data, and say in one sentence each why.\n\nWatch for: does it read the library through the Zotero tool, or does it guess titles? Check one.\n\n\nCard 6: the README, read by a stranger\n\nRead the README and tell me what a new collaborator would not understand about this repository. Do not change anything.\n\nWatch for: does it read, or does it flatter? Is anything it names actually missing? Nothing to commit.\n\n\nCard 7: what does it know right now\nType /context. Then:\n\nWhat do you know about this repository right now, and what have you not read?\n\nWatch for: the size of the context and what is in it. The answer should match the list. Nothing to commit.\n\n\nCard 8: name the tool\n\nUse git log to tell me the history of this repository in five lines.\n\nThen try another tool by name: read a file, list a folder, run a command. Watch for: the tool call line before each answer. Nothing to commit.\n\n\nCard 9: the same task twice\nType /exit, then claude, then card 1 again, word for word. Watch for: what differs between the two runs. Which one would you merge? Commit the one you would.\n\n\nCard 10: wild card\nAnything you are curious about. Watch for: your own reaction. Write it on the sheet."
+  },
+  {
+    "objectID": "workshop/studio-cards.html#the-day-sheet",
+    "href": "workshop/studio-cards.html#the-day-sheet",
+    "title": " Studio cards",
+    "section": "The day sheet",
+    "text": "The day sheet\nOne per person, on paper, ten rows: one for the first run, one per card, and one each for the plan, the issues and the rerun in the afternoon. The sheet is the material for the reflect block at 13:00, for the 18-task checklist at 16:00 and for page 2 of your zine.\n\n\n\n\n\n\n\n\n\n\n\nRun\nWhat happened (one line)\nWhat it assumed\nCost line\nWould I merge this?\nCommitted?\n\n\n\n\nFirst run\n\n\n\n\n\n\n\nCard\n\n\n\n\n\n\n\nCard\n\n\n\n\n\n\n\nCard\n\n\n\n\n\n\n\nPlan\n\n\n\n\n\n\n\nIssues\n\n\n\n\n\n\n\nIssue 1 and 2 (from the phone)\n\n\n\n\n\n\n\nCLAUDE.md\n\n\n\n\n\n\n\nRerun\n\n\n\n\n\n\n\nDeclaration\n\n\n\n\n\n\n\n\nThe back of the sheet is for the recall sentence. Write it out each time blanks are filled."
   }
 ]

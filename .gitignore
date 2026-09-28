@@ -18,3 +18,6 @@ private/*
 
 # private survey data (anonymized cohort data, kept local)
 /data/private/
+
+# Print PDF of the lesson plan, rendered on demand next to its source
+/workshop/lesson-plan.pdf

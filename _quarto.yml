@@ -8,6 +8,9 @@ project:
   render:
     - "*.qmd"
     - "**/*.qmd"
+    # The lesson plan is a print PDF for the instructor, rendered on its own
+    # (quarto render workshop/lesson-plan.qmd), not part of the site.
+    - "!workshop/lesson-plan.qmd"
   # Copied into docs/ on every render. GitHub Pages serves docs/ directly, and
   # this tells it not to run the output through Jekyll. Quarto clears docs/ on
   # render, so the file has to be a project resource rather than sit there.
