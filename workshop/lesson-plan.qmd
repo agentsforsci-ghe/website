@@ -45,7 +45,7 @@ first run.** Sprint 1, before lunch, is fast and wide: three questions, one
 framed run everyone does the same way, then studio cards on your own
 repository with a commit after each, a pull request you merge yourself, and
 release v0.1.0, rough on purpose. Sprint 2, after lunch, runs the path
-properly on one question: a plan that runs while the room is on the floor,
+properly on one question: a plan that runs while the room looks back at v0.1.0,
 an editable plan file, issues a colleague reviews before any code exists, a
 run that continues from the phone, a review that leaves TODO lines for the
 agent, a pull request your partner comments on, a CLAUDE.md and a new session
@@ -138,7 +138,7 @@ Free means the participant chooses what to ask.
 | 10:39 | The framed run, then commit | Claude Code | 18 | |
 | 11:02 | Studio cards, a commit after each that changed a file | Claude Code | 35 | 35 |
 | 11:40 | Ship v0.1.0 | Claude Code, RStudio | 16 | |
-| 13:00 | Start the plan (runs during the floor exercise) | Claude Code | 2 | question is theirs |
+| 13:00 | Start the plan (runs during the look back at v0.1.0) | Claude Code | 2 | question is theirs |
 | 13:28 | Plan mode: reject, editable plan, two commits | Claude Code, RStudio | 12 | |
 | 13:44 | The issues | Claude Code | 6 | |
 | 14:10 | Hand-over to the phone | Claude Code, phone | 8 | |
@@ -164,7 +164,7 @@ not eat the block; the sprint 1 ship may spill into lunch.
 ## Materials
 
 - Yellow sticky notes on every seat (done-signal).
-- Masking tape for the spectrum line and the stakes ladder on the floor.
+- Masking tape for the spectrum line on the floor.
 - Printed from `workshop/studio-cards.qmd`: one question sheet per person, one
   set of studio cards per table, one day sheet per person (eleven rows).
 - Markers at the question wall, for the dots at the stand-up (11:17).
@@ -181,7 +181,7 @@ not eat the block; the sprint 1 ship may spill into lunch.
 | Break | Time | Question on the slide | Opens the next block as |
 |------|--------|--------------------------|--------------------|
 | Snack 1 | 10:20-10:35 | What in your data folder would you not want a model to read? | One last look at `data/` before the first run |
-| Lunch | 12:00-13:00 | Of the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over? Pick your sprint 2 question. | The plan starts, then the stakes ladder |
+| Lunch | 12:00-13:00 | Of the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over? Pick your sprint 2 question. | The plan starts, then two answers open the reflect on v0.1.0 |
 | Snack 2 | 14:20-14:40 | Walk with your agent: what does it ask you, and what does it decide alone? | One note each, kept for the oversight flipchart at 16:12 |
 
 Breaks outdoors where weather allows. The helper takes the list of parked
@@ -221,8 +221,8 @@ releases at 12:00, failed pairings at 14:20.
 ## Arrival (08:30-09:00, 30 min)
 
 - [ ] Room: projector, wall space for the question sheets, three flipcharts,
-  tape lines on the floor (the spectrum line, four ladder rungs), sticky notes
-  on every seat, power strips.
+  the spectrum line taped on the floor, sticky notes on every seat, power
+  strips.
 - [ ] On the tables, face down: question sheets, day sheets, one card set per
   table.
 - [ ] Setup clinic at the door, run by the helper: `claude --version`,
@@ -261,13 +261,15 @@ questions.
 - Opening claim, said once: subject matter expertise now matters more than
   programming skill.
 - Rule one: never make another human read AI slop. Read everything it does.
+  Tell humans what you want feedback on.
 - Rule two: commit often. A commit is a checkpoint you can return to and a line
   in the record. A pull request is for the end of a larger chunk of work. Today:
   a commit after every run that changed a file, one pull request per sprint.
 
 ### Spectrum line (8 min)
 
-- Tape line along the room. Stand by agent experience (never, to weekly). Two
+- Tape line along the room. Stand by agent experience (never used AI for research, to Claude Code every
+  day). Two
   voices from each end.
 - Re-sort by "how much do I trust the output". Two voices again. Sit down.
 
@@ -285,7 +287,8 @@ questions.
 - One slide, four questions: what must never go in; how do I know this is
   right; could I recreate it if the AI were gone; what do I say, and to whom.
 - Two minutes per partner (countdown 4), the pairs swap on their own: pick the
-  question that worries you most and say why. The background pages carry the
+  question that worries you most and say why. The pair question appears on
+  the slide after the fourth question. The background pages carry the
   arguments; the slide carries the questions.
 
 ### How the day works, the variable, two rungs (6 min)
@@ -295,10 +298,10 @@ questions.
   the instructions live, and where the result lives. Point at the last column:
   a chat thread in an account against files and a commit in a repository.
   Sprint 1 is rows 1 and 2, sprint 2 is rows 3 to 5.
-- Two rungs today: the stakes ladder in its compact form. The workflow is not
+- Two rungs today: the stakes ladder. The workflow is not
   the same for every task; which rung a task gets is the first decision. That
   sentence is a note that appears after the last rung. Sprint 1 is rung 1,
-  sprint 2 is rung 3. The physical version is on the floor at 13:02.
+  sprint 2 is rung 3.
 
 ### Objectives and schedule (5 min)
 
@@ -372,7 +375,7 @@ three steps are on the slide so the room can follow.
 ### Where did that go? (2 min)
 
 - One slide, one table: the PDF is on Anthropic's servers in my account, the
-  answer is in a chat thread, to continue tomorrow I scroll and paste, to
+  answer is in a chat thread, to continue tomorrow I copy it from the old thread, to
   share it I send a screenshot, to redo it I ask again and get a different
   answer. Nothing is in the project, nothing is versioned, nobody can check
   it. This is the last column of the variable table; everything after the
@@ -380,16 +383,15 @@ three steps are on the slide so the room can follow.
 
 ### Our turn: safety rails (8 min, countdown 8)
 
-- Together, step by step: open `data/` in your own repository and look once
-  more against the group rule; terminal at
+- Together, step by step: terminal at
   `~/Documents/gitrepos/gh-org-agentsforsci-ghe/<your repo>`, not one level up
   (the agent reads the folder it starts in); `claude`.
-- Step 3 is a follow along. I press Shift+Tab on the projector, everyone
+- Step 2 is a follow along. I press Shift+Tab on the projector, everyone
   presses on their own screen, until the line under the box says "auto mode
   on". The cycle is auto, manual, accept edits, plan, auto. On the Team plan
   auto is the starting mode, so most screens say it already; the point is
   that everyone has pressed the key once.
-- Step 4 is the first prompt of the day, and it is a small one: "Create a
+- Step 3 is the first prompt of the day, and it is a small one: "Create a
   branch called dev and switch to it. If dev already exists, switch to it."
   The agent runs the git command. Then `/context`.
 - Sticky note when `/context` has printed and the line says auto mode on.
@@ -572,17 +574,17 @@ then releases that did not happen.
 
 ## Between sprints: what v0.1.0 shows (13:00-13:20, 20 min)
 
-Slides: Our turn (start your plan) -> Stakes ladder -> Reflect on v0.1.0 ->
+Slides: Our turn (start your plan) -> Reflect on v0.1.0 ->
 Where repositories live -> Inside a repository -> Our turn (look inside your
 files).
 
 | Min | What |
 |---|---|
-| 2 | Our turn: start your plan, in plan mode, then to the floor |
-| 5 | Stakes ladder on the floor (opens with the lunch question) |
-| 4 | Reflect with the release page open |
+| 2 | Our turn: start your plan, in plan mode, and leave it running |
+| 4 | Reflect with the release page open (opens with the lunch question) |
 | 5 | Folders and files, three levels |
 | 4 | Our turn: look inside your files |
+| 5 | Buffer, the plans keep running |
 
 ### Our turn: start your plan (2 min, countdown 2) [SCRIPT]
 
@@ -594,7 +596,7 @@ files).
    repository and write up the result as a Quarto manuscript that renders to
    DOCX: <your sprint 2 question>. Plan only. Do not run any analysis or write
    any file yet."
-4. Leave it running. Stand up and walk to the tape lines on the floor.
+4. Leave it running. Open your v0.1.0 release page next to it.
 
 Sprint 2 stays on `dev` and builds on v0.1.0. `/clear` gives it a clean
 conversation; the sprint 1 files are meant to be there, and the reflect and
@@ -602,21 +604,13 @@ the plan-mode rejection work on them.
 
 Why the plan starts now: in the dry run the frame alone took 18.5 minutes in plan mode on a PDF,
 because the agent ran the analysis to plan it. The plan now runs while the
-room is on the ladder, the way the walk covers the hand-over. The "plan only"
+room looks back at v0.1.0. The "plan only"
 line is meant to shorten it and has not been measured; whatever is back at
 13:28 is what the Your turn starts from.
 
-### Stakes ladder (5 min)
-
-- Opens with the lunch question: two answers, then everybody up. Four rungs
-  taped on the floor: implement it; plan, then implement; plan, review the
-  plan, implement, review the implementation; design first, then repeat the
-  cycles. The compact version was on the opening slide. Sprint 1 was rung 1.
-  Stand on the rung for the question you will take through sprint 2, then for
-  "a figure in your thesis", then for "a throwaway plot". Sit down.
-
 ### Reflect on v0.1.0 (4 min)
 
+- Opens with the lunch question: two answers.
 - Release page open on every screen, day sheet in hand. What did it assume
   without asking? Where did it put files and how did it name them? How many
   commits did sprint 1 produce (hands up: three or more)? Would I send v0.1.0
@@ -712,7 +706,7 @@ room, in plan mode, with the "plan only" line.
 
 ### Pair talk (3 min, countdown 3)
 
-- What did one sentence change? Would I merge this plan?
+- What did one sentence change?
 
 ### Your turn: the issues (6 min, countdown 6)
 
