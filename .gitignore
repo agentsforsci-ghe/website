@@ -21,3 +21,8 @@ private/*
 
 # Print PDF of the lesson plan, rendered on demand next to its source
 /workshop/lesson-plan.pdf
+
+# Theme variants Quarto writes on every render of the deck; no page uses them
+/docs/site_libs/revealjs/dist/theme/quarto-2fd77ad6349eca9e95e6b605477bca0f.css
+/docs/site_libs/revealjs/dist/theme/quarto-66c9af2608aa067a54776f348a5da643.css
+/docs/site_libs/revealjs/dist/theme/quarto-9a75487fc9776b632c361d6ac4feae17.css
