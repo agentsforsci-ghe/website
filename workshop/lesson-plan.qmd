@@ -180,7 +180,7 @@ not eat the block; the sprint 1 ship may spill into lunch.
 
 | Break | Time | Question on the slide | Opens the next block as |
 |------|--------|--------------------------|--------------------|
-| Snack 1 | 10:20-10:35 | What in your data folder would you not want a model to read? | One last look at `data/` before the first run |
+| Snack 1 | 10:20-10:35 | What in your data folder would you not want a model to read? | Two answers open sprint 1 |
 | Lunch | 12:00-13:00 | Of the 18 tasks in writing a paper, which did the agent touch in sprint 1, and which would you never hand over? Pick your sprint 2 question. | The plan starts, then two answers open the reflect on v0.1.0 |
 | Snack 2 | 14:20-14:40 | Walk with your agent: what does it ask you, and what does it decide alone? | One note each, kept for the oversight flipchart at 16:12 |
 
@@ -449,7 +449,7 @@ slides) -> The 18 tasks -> Lunch.
 
 | Min | What |
 |---|---|
-| 2 | Opens with the break question, one last look at `data/` |
+| 2 | Opens with the break question, two answers |
 | 2 | The day sheet, handed out |
 | 18 | Your turn: the framed run, then commit |
 | 2 | What scrolled past |
@@ -462,8 +462,7 @@ slides) -> The 18 tasks -> Lunch.
 
 ### Opens with the break question (2 min)
 
-- What in your data folder would you not want a model to read? Two answers,
-  then one last look at `data/` before the first run.
+- What in your data folder would you not want a model to read? Two answers.
 
 ### The day sheet (2 min)
 

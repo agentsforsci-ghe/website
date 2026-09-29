@@ -435,7 +435,7 @@ countdown(minutes = 15)
 # Sprint 1: first run, studio, ship v0.1.0 {background-color="{{< var brand.section-bg >}}"}
 
 ::: {.notes}
-Opens with the break question: two answers, then one last look at data/ before the first run. Two minutes.
+Opens with the break question: two answers. Two minutes.
 :::
 
 ## The day sheet
