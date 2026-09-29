@@ -1,0 +1,111 @@
+---
+title: "{{< fa layer-group >}} Print page: question sheet, studio cards, day sheet"
+subtitle: "Everything on paper for the day, in the order it is handed out"
+toc: true
+---
+
+Three things are printed from this page. The question sheet is on the table when you arrive. The studio cards are one set per table and the day sheet one per person, handed out before the first run (10:37).
+
+## The question sheet
+
+One per person, half a page. Three questions your own data can answer, one sentence each, and a fourth box your neighbour fills. The sheet goes on the wall at 09:41, where it becomes the question wall for the stand-up at 11:17, and at 10:06 you type the three questions into `questions.md` in your repository and commit them by hand.
+
+| | |
+|---|---|
+| Name | |
+| **1. To check it.** A question you already know the answer to. | |
+| **2. To explore.** A question you do not know the answer to. | |
+| **3. To catch it.** A question your data cannot answer. | |
+| **4. Question 1, 20 percent more specific**, written by your neighbour: which column, which unit, which comparison. | |
+
+: {tbl-colwidths="[45,55]"}
+
+Question 1 runs the framed run at 10:39. Question 2 is card 1, question 3 is card 2. Sprint 2 is a choice: question 1 done properly, or question 2.
+
+## The studio cards
+
+Ten cards, 35 minutes, your own repository. Pick freely, in any order, at least two. Each card is one prompt to type into Claude Code and one thing to watch for. Every card ends the same way: if it changed a file, run `/ghe-skills:commit`; either way, fill one row of your day sheet.
+
+Two rules inside the studio. If the agent asks, answer. If it is stuck for two minutes, raise your hand and move to another card.
+
+Curious? Go further. Ask it about what just happened: why did you do that? What does this line do?
+
+The prompts use your three questions from the morning: question 1 is the one you know the answer to (to check it), question 2 the one you do not (to explore), question 3 the one your data cannot answer (to catch it). Card 4 is recommended for everyone: it is the render test for the release before lunch.
+
+### Card 1: the question you cannot answer yet
+
+> Answer the following question using the data in this repository and add the result to the manuscript: *your question 2*.
+
+Watch for: what it assumes without asking. Does it name the assumption?
+
+### Card 2: the question the data cannot answer
+
+> Answer the following question using the data in this repository: *your question 3*.
+
+Watch for: does it say the data cannot answer it, or does it produce an answer anyway? Ask for receipts: which file, which column.
+
+### Card 3: the codebook
+
+> Describe every file in data/. Then write a codebook for the main table as a CSV with one row per variable: name, type, unit, description.
+
+Watch for: where it puts the codebook and what it calls it. Would a colleague find it?
+
+### Card 4: one figure, rendered (recommended)
+
+> Add one figure that answers *your question 1* to the manuscript, with the plot code in a chunk, and render the manuscript to DOCX.
+
+Watch for: whether it renders. If it does not, this is the moment to find out, not at the release. Raise your hand.
+
+### Card 5: five references
+
+> Find the five references in my Zotero library that are most relevant to this data, and say in one sentence each why.
+
+Watch for: does it read the library through the Zotero tool, or does it guess titles? Check one. And if the tool returned nothing: did it go around the tool, and did it ask you first?
+
+### Card 6: the README, read by a stranger
+
+> Read the README and tell me what a new collaborator would not understand about this repository. Do not change anything.
+
+Watch for: does it read, or does it flatter? Is anything it names actually missing? Nothing to commit.
+
+### Card 7: what does it know right now
+
+Type `/context`. Then:
+
+> What do you know about this repository right now, and what have you not read?
+
+Watch for: the size of the context and what is in it. The answer should match the list. Nothing to commit.
+
+### Card 8: name the tool
+
+> Use git log to tell me the history of this repository in five lines.
+
+Then try another tool by name: read a file, list a folder, run a command. Watch for: the tool call line before each answer. Nothing to commit.
+
+### Card 9: the same task twice
+
+Type `/exit`, then `claude`, then card 1 again, word for word. Watch for: what differs between the two runs. Which one would you merge? Commit the one you would.
+
+### Card 10: wild card
+
+Anything you are curious about. Watch for: your own reaction. Write it on the sheet.
+
+## The day sheet
+
+One per person, on paper, eleven rows: one for the first run, one per card, and one each for the plan, the issues, the run from the phone, the TODO pass, the CLAUDE.md, the review comments and the declaration. "Minutes it ran" is the wall clock from your prompt to the agent stopping; a first run on a PDF took 12 minutes in the dry run, most cards under 2. The sheet is the material for the reflect block at 13:00 and for page 2 of your zine.
+
+| Run | What happened (one line) | What it assumed | Minutes it ran | Would I merge this? | Committed? |
+|---|---|---|---|---|---|
+| First run | | | | | |
+| Card | | | | | |
+| Card | | | | | |
+| Card | | | | | |
+| Plan | | | | | |
+| Issues | | | | | |
+| Issues 1 and 2 (from the phone) | | | | | |
+| TODOs | | | | | |
+| CLAUDE.md | | | | | |
+| Review comments | | | | | |
+| Declaration | | | | | |
+
+: {tbl-colwidths="[16,30,18,10,14,12]"}

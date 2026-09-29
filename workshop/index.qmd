@@ -1,0 +1,23 @@
+---
+title: "{{< var course.long-title >}}"
+subtitle: "{{< var session.date-long >}}, {{< var session.event-location >}}"
+bibliography: ../references.bib
+---
+
+## {{< fa display >}} Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## {{< fa route >}} How the day runs
+
+The day runs the path from a question to a tagged release twice. Sprint 1, before lunch, is fast and wide: you write three questions your data can answer, run one of them the same way as everyone else, then explore with a set of [studio cards](studio-cards.qmd) on your own repository, commit after every card, merge your own pull request, and release v0.1.0, rough on purpose. Sprint 2, after lunch, runs the path properly on one question: a plan you edit, issues a colleague reviews before any code exists, a run that continues from your phone, a pull request your partner reviews, a CLAUDE.md, release v0.2.0, and one declaration written from both records.
+
+Two room rules from minute three. Never make another human read AI slop: read everything the agent does. Commit often, and open a pull request only at the end of a larger chunk of work. Today that is once per sprint.
+
+There is a snack break in the morning and one in the afternoon, and each break slide carries one question to take with you. The block after the break opens with it. The day closes with a zine.
+
+The schedule with the rounds is on the [overview page](../index.qmd). The [print page](studio-cards.qmd) holds the question sheet, the studio cards and the day sheet; all three are printed for the day and online here.

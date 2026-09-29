@@ -82,11 +82,13 @@ The schedule below is a working draft and still under active development.
 :::
 
 ```{r}
-#| tbl-colwidths: [25,75]
+#| tbl-colwidths: [20,50,30]
 
-read_csv(here::here("data/tbl-01-agentsforsci-ghe-course-schedule.csv")) |>
+read_csv(here::here("data/tbl-01-agentsforsci-ghe-course-schedule.csv"),
+         show_col_types = FALSE) |>
   filter(day == 1) |>
-  select(Time = time, Block = title) |>
+  select(Time = time, Block = title, Rounds = rounds) |>
+  mutate(Rounds = coalesce(Rounds, "")) |>
   kable()
 
 ```
