@@ -1,0 +1,235 @@
+repo,milestone,label,status,evidence
+bcmeter-example,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+bcmeter-example,M02,Three questions file,no,
+bcmeter-example,M03,Framed run: Q1 as Quarto manuscript,no,
+bcmeter-example,M04,Commit skill: Assisted-by trailer and prompt archive,no,"0 assisted commits, 0 prompts"
+bcmeter-example,M05,Studio cards (evidenced in prompt archive),no,
+bcmeter-example,M06,Sprint 1 pull request dev->main merged,no,
+bcmeter-example,M07,Release v0.1.0 with DOCX attached,no,
+bcmeter-example,M08,Plan mode: 'plan only' prompt,no,
+bcmeter-example,M09,Plan written as markdown in repo,no,0 plan files
+bcmeter-example,M10,Issues created from the plan,no,"0 issues, 0 with checkboxes"
+bcmeter-example,M11,Issues implemented and closed,no,0 of 0 closed
+bcmeter-example,M12,Run continued from the phone,not observable,no trace in git or GitHub
+bcmeter-example,M13,"TODO pass: human review comments in source, agent works through them",no,
+bcmeter-example,M14,Sprint 2 pull request merged,no,
+bcmeter-example,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+bcmeter-example,M16,CLAUDE.md written,no,on none
+bcmeter-example,M17,Release v0.2.0,no,
+bcmeter-example,M18,Declaration of AI use in the v0.2.0 notes,no,
+beaver-ss,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+beaver-ss,M02,Three questions file,no,
+beaver-ss,M03,Framed run: Q1 as Quarto manuscript,partial,
+beaver-ss,M04,Commit skill: Assisted-by trailer and prompt archive,no,"0 assisted commits, 0 prompts"
+beaver-ss,M05,Studio cards (evidenced in prompt archive),no,
+beaver-ss,M06,Sprint 1 pull request dev->main merged,no,
+beaver-ss,M07,Release v0.1.0 with DOCX attached,no,
+beaver-ss,M08,Plan mode: 'plan only' prompt,no,
+beaver-ss,M09,Plan written as markdown in repo,no,0 plan files
+beaver-ss,M10,Issues created from the plan,no,"0 issues, 0 with checkboxes"
+beaver-ss,M11,Issues implemented and closed,no,0 of 0 closed
+beaver-ss,M12,Run continued from the phone,not observable,no trace in git or GitHub
+beaver-ss,M13,"TODO pass: human review comments in source, agent works through them",no,
+beaver-ss,M14,Sprint 2 pull request merged,no,
+beaver-ss,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+beaver-ss,M16,CLAUDE.md written,no,on none
+beaver-ss,M17,Release v0.2.0,no,
+beaver-ss,M18,Declaration of AI use in the v0.2.0 notes,no,
+biogas-malawi,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+biogas-malawi,M02,Three questions file,no,
+biogas-malawi,M03,Framed run: Q1 as Quarto manuscript,no,
+biogas-malawi,M04,Commit skill: Assisted-by trailer and prompt archive,no,"0 assisted commits, 0 prompts"
+biogas-malawi,M05,Studio cards (evidenced in prompt archive),no,
+biogas-malawi,M06,Sprint 1 pull request dev->main merged,no,
+biogas-malawi,M07,Release v0.1.0 with DOCX attached,no,
+biogas-malawi,M08,Plan mode: 'plan only' prompt,no,
+biogas-malawi,M09,Plan written as markdown in repo,no,0 plan files
+biogas-malawi,M10,Issues created from the plan,no,"0 issues, 0 with checkboxes"
+biogas-malawi,M11,Issues implemented and closed,no,0 of 0 closed
+biogas-malawi,M12,Run continued from the phone,not observable,no trace in git or GitHub
+biogas-malawi,M13,"TODO pass: human review comments in source, agent works through them",no,
+biogas-malawi,M14,Sprint 2 pull request merged,no,
+biogas-malawi,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+biogas-malawi,M16,CLAUDE.md written,no,on none
+biogas-malawi,M17,Release v0.2.0,no,
+biogas-malawi,M18,Declaration of AI use in the v0.2.0 notes,no,
+caves-currents,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+caves-currents,M02,Three questions file,yes,questions.md
+caves-currents,M03,Framed run: Q1 as Quarto manuscript,yes,2026-09-29-001-glas-age-range-quarto-docx
+caves-currents,M04,Commit skill: Assisted-by trailer and prompt archive,yes,"9 assisted commits, 17 prompts"
+caves-currents,M05,Studio cards (evidenced in prompt archive),yes,card1_add_question;card5_references
+caves-currents,M06,Sprint 1 pull request dev->main merged,yes,PR #2 merged 09:59Z
+caves-currents,M07,Release v0.1.0 with DOCX attached,yes,"10:00Z, 2 assets"
+caves-currents,M08,Plan mode: 'plan only' prompt,yes,2026-09-29-006-answer-question-2-quarto-docx-plan-only
+caves-currents,M09,Plan written as markdown in repo,yes,1 plan files
+caves-currents,M10,Issues created from the plan,yes,"4 issues, 4 with checkboxes"
+caves-currents,M11,Issues implemented and closed,yes,4 of 4 closed
+caves-currents,M12,Run continued from the phone,not observable,no trace in git or GitHub
+caves-currents,M13,"TODO pass: human review comments in source, agent works through them",yes,2e177f9 + 2026-09-29-016-work-through-manuscript-todos
+caves-currents,M14,Sprint 2 pull request merged,yes,#8;#7
+caves-currents,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+caves-currents,M16,CLAUDE.md written,yes,on main
+caves-currents,M17,Release v0.2.0,yes,"13:45Z, 3 assets, tag on main"
+caves-currents,M18,Declaration of AI use in the v0.2.0 notes,yes,7681 characters
+cybersecurity-ownership,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+cybersecurity-ownership,M02,Three questions file,no,
+cybersecurity-ownership,M03,Framed run: Q1 as Quarto manuscript,no,
+cybersecurity-ownership,M04,Commit skill: Assisted-by trailer and prompt archive,no,"0 assisted commits, 0 prompts"
+cybersecurity-ownership,M05,Studio cards (evidenced in prompt archive),no,
+cybersecurity-ownership,M06,Sprint 1 pull request dev->main merged,no,
+cybersecurity-ownership,M07,Release v0.1.0 with DOCX attached,no,
+cybersecurity-ownership,M08,Plan mode: 'plan only' prompt,no,
+cybersecurity-ownership,M09,Plan written as markdown in repo,no,0 plan files
+cybersecurity-ownership,M10,Issues created from the plan,no,"0 issues, 0 with checkboxes"
+cybersecurity-ownership,M11,Issues implemented and closed,no,0 of 0 closed
+cybersecurity-ownership,M12,Run continued from the phone,not observable,no trace in git or GitHub
+cybersecurity-ownership,M13,"TODO pass: human review comments in source, agent works through them",no,
+cybersecurity-ownership,M14,Sprint 2 pull request merged,no,
+cybersecurity-ownership,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+cybersecurity-ownership,M16,CLAUDE.md written,no,on none
+cybersecurity-ownership,M17,Release v0.2.0,no,
+cybersecurity-ownership,M18,Declaration of AI use in the v0.2.0 notes,no,
+ghg-bsfl,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+ghg-bsfl,M02,Three questions file,yes,questions.md
+ghg-bsfl,M03,Framed run: Q1 as Quarto manuscript,yes,2026-09-29-001-answer-question-1-quarto-manuscript-docx
+ghg-bsfl,M04,Commit skill: Assisted-by trailer and prompt archive,yes,"10 assisted commits, 11 prompts"
+ghg-bsfl,M05,Studio cards (evidenced in prompt archive),yes,card2_unanswerable;card4_figure_render;card5_references;card6_readme
+ghg-bsfl,M06,Sprint 1 pull request dev->main merged,yes,PR #2 merged 09:56Z
+ghg-bsfl,M07,Release v0.1.0 with DOCX attached,yes,"09:56Z, 1 assets"
+ghg-bsfl,M08,Plan mode: 'plan only' prompt,yes,2026-09-29-008-answer-question-2-co2-equivalents-quarto
+ghg-bsfl,M09,Plan written as markdown in repo,yes,1 plan files
+ghg-bsfl,M10,Issues created from the plan,yes,"4 issues, 4 with checkboxes"
+ghg-bsfl,M11,Issues implemented and closed,yes,2 of 4 closed
+ghg-bsfl,M12,Run continued from the phone,not observable,no trace in git or GitHub
+ghg-bsfl,M13,"TODO pass: human review comments in source, agent works through them",yes,24c9af1 + 2026-09-29-011-work-through-the-todo-in-the-manuscript
+ghg-bsfl,M14,Sprint 2 pull request merged,yes,#7
+ghg-bsfl,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+ghg-bsfl,M16,CLAUDE.md written,yes,on tag-only
+ghg-bsfl,M17,Release v0.2.0,yes,"13:47Z, 2 assets, tag on unmerged"
+ghg-bsfl,M18,Declaration of AI use in the v0.2.0 notes,yes,11010 characters
+implementation-mzuzu,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+implementation-mzuzu,M02,Three questions file,yes,questions.md
+implementation-mzuzu,M03,Framed run: Q1 as Quarto manuscript,yes,2026-09-29-001-quarto-manuscript-which-city-interviews
+implementation-mzuzu,M04,Commit skill: Assisted-by trailer and prompt archive,yes,"7 assisted commits, 10 prompts"
+implementation-mzuzu,M05,Studio cards (evidenced in prompt archive),yes,card1_add_question
+implementation-mzuzu,M06,Sprint 1 pull request dev->main merged,yes,PR #2 merged 09:57Z
+implementation-mzuzu,M07,Release v0.1.0 with DOCX attached,yes,"10:00Z, 2 assets"
+implementation-mzuzu,M08,Plan mode: 'plan only' prompt,yes,2026-09-29-003-revisiting-question-2-plan-only
+implementation-mzuzu,M09,Plan written as markdown in repo,yes,1 plan files
+implementation-mzuzu,M10,Issues created from the plan,yes,"6 issues, 1 with checkboxes"
+implementation-mzuzu,M11,Issues implemented and closed,yes,6 of 6 closed
+implementation-mzuzu,M12,Run continued from the phone,not observable,no trace in git or GitHub
+implementation-mzuzu,M13,"TODO pass: human review comments in source, agent works through them",yes,2026-09-29-009-implement-two-todo-items-in-quarto-file
+implementation-mzuzu,M14,Sprint 2 pull request merged,yes,#9
+implementation-mzuzu,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+implementation-mzuzu,M16,CLAUDE.md written,yes,on dev
+implementation-mzuzu,M17,Release v0.2.0,yes,"13:45Z, 2 assets, tag on main"
+implementation-mzuzu,M18,Declaration of AI use in the v0.2.0 notes,yes,10257 characters
+myco-sanitation,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+myco-sanitation,M02,Three questions file,yes,docs/questions.md
+myco-sanitation,M03,Framed run: Q1 as Quarto manuscript,yes,2026-09-29-001-answer-raw-sterile-degradation-quarto-docx
+myco-sanitation,M04,Commit skill: Assisted-by trailer and prompt archive,yes,"8 assisted commits, 11 prompts"
+myco-sanitation,M05,Studio cards (evidenced in prompt archive),yes,card5_references;card9_same_task_twice
+myco-sanitation,M06,Sprint 1 pull request dev->main merged,yes,PR #2 merged 09:53Z
+myco-sanitation,M07,Release v0.1.0 with DOCX attached,yes,"10:01Z, 2 assets"
+myco-sanitation,M08,Plan mode: 'plan only' prompt,yes,2026-09-29-004-answer-f40-vs-ambm-degradation-rate-quarto
+myco-sanitation,M09,Plan written as markdown in repo,yes,1 plan files
+myco-sanitation,M10,Issues created from the plan,yes,"2 issues, 2 with checkboxes"
+myco-sanitation,M11,Issues implemented and closed,yes,1 of 2 closed
+myco-sanitation,M12,Run continued from the phone,not observable,no trace in git or GitHub
+myco-sanitation,M13,"TODO pass: human review comments in source, agent works through them",yes,2026-09-29-007-work-through-todo-in-manuscripts
+myco-sanitation,M14,Sprint 2 pull request merged,yes,#6;#5
+myco-sanitation,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+myco-sanitation,M16,CLAUDE.md written,yes,on main
+myco-sanitation,M17,Release v0.2.0,yes,"13:49Z, 2 assets, tag on main"
+myco-sanitation,M18,Declaration of AI use in the v0.2.0 notes,yes,361 characters
+sensor-validation,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+sensor-validation,M02,Three questions file,yes,questions.md
+sensor-validation,M03,Framed run: Q1 as Quarto manuscript,yes,2026-09-29-001-answer-question-lab-validation-limitations
+sensor-validation,M04,Commit skill: Assisted-by trailer and prompt archive,yes,"6 assisted commits, 11 prompts"
+sensor-validation,M05,Studio cards (evidenced in prompt archive),yes,card3_codebook;card5_references
+sensor-validation,M06,Sprint 1 pull request dev->main merged,yes,PR #2 merged 09:56Z
+sensor-validation,M07,Release v0.1.0 with DOCX attached,yes,"10:00Z, 1 assets"
+sensor-validation,M08,Plan mode: 'plan only' prompt,yes,2026-09-29-004-check-out-questions-plan-write-report
+sensor-validation,M09,Plan written as markdown in repo,yes,1 plan files
+sensor-validation,M10,Issues created from the plan,yes,"4 issues, 4 with checkboxes"
+sensor-validation,M11,Issues implemented and closed,yes,4 of 4 closed
+sensor-validation,M12,Run continued from the phone,not observable,no trace in git or GitHub
+sensor-validation,M13,"TODO pass: human review comments in source, agent works through them",yes,1b27f17 + 
+sensor-validation,M14,Sprint 2 pull request merged,yes,#7
+sensor-validation,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+sensor-validation,M16,CLAUDE.md written,yes,on dev
+sensor-validation,M17,Release v0.2.0,yes,"13:45Z, 2 assets, tag on dev"
+sensor-validation,M18,Declaration of AI use in the v0.2.0 notes,yes,7228 characters
+tdabc-mzuzu,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+tdabc-mzuzu,M02,Three questions file,yes,questions.md
+tdabc-mzuzu,M03,Framed run: Q1 as Quarto manuscript,yes,2026-09-29-001-answer-total-time-pit-emptying-jobs
+tdabc-mzuzu,M04,Commit skill: Assisted-by trailer and prompt archive,yes,"10 assisted commits, 17 prompts"
+tdabc-mzuzu,M05,Studio cards (evidenced in prompt archive),yes,card4_figure_render;card5_references
+tdabc-mzuzu,M06,Sprint 1 pull request dev->main merged,yes,PR #2 merged 10:00Z
+tdabc-mzuzu,M07,Release v0.1.0 with DOCX attached,yes,"10:02Z, 1 assets"
+tdabc-mzuzu,M08,Plan mode: 'plan only' prompt,yes,2026-09-29-006-answer-average-time-spent-on-travel-per-job
+tdabc-mzuzu,M09,Plan written as markdown in repo,yes,2 plan files
+tdabc-mzuzu,M10,Issues created from the plan,yes,"5 issues, 5 with checkboxes"
+tdabc-mzuzu,M11,Issues implemented and closed,yes,4 of 5 closed
+tdabc-mzuzu,M12,Run continued from the phone,not observable,no trace in git or GitHub
+tdabc-mzuzu,M13,"TODO pass: human review comments in source, agent works through them",yes,2026-09-29-016-work-through-the-todos-in-q2-index-qmd
+tdabc-mzuzu,M14,Sprint 2 pull request merged,yes,#8
+tdabc-mzuzu,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+tdabc-mzuzu,M16,CLAUDE.md written,yes,on dev
+tdabc-mzuzu,M17,Release v0.2.0,yes,"13:46Z, 1 assets, tag on main"
+tdabc-mzuzu,M18,Declaration of AI use in the v0.2.0 notes,yes,8946 characters
+urine-durban,M01,Pre-work: data in repo and 'Data added' issue,partial,"data committed, no issue"
+urine-durban,M02,Three questions file,yes,questions.md
+urine-durban,M03,Framed run: Q1 as Quarto manuscript,yes,2026-09-29-001-answer-question-using-data-quarto-manuscript
+urine-durban,M04,Commit skill: Assisted-by trailer and prompt archive,yes,"13 assisted commits, 5 prompts"
+urine-durban,M05,Studio cards (evidenced in prompt archive),no,
+urine-durban,M06,Sprint 1 pull request dev->main merged,yes,PR #1 merged 09:53Z
+urine-durban,M07,Release v0.1.0 with DOCX attached,yes,"10:01Z, 1 assets"
+urine-durban,M08,Plan mode: 'plan only' prompt,no,
+urine-durban,M09,Plan written as markdown in repo,yes,2 plan files
+urine-durban,M10,Issues created from the plan,yes,"4 issues, 4 with checkboxes"
+urine-durban,M11,Issues implemented and closed,yes,4 of 4 closed
+urine-durban,M12,Run continued from the phone,not observable,no trace in git or GitHub
+urine-durban,M13,"TODO pass: human review comments in source, agent works through them",yes,5160847 + 
+urine-durban,M14,Sprint 2 pull request merged,yes,#8;#7;#6
+urine-durban,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+urine-durban,M16,CLAUDE.md written,yes,on main
+urine-durban,M17,Release v0.2.0,yes,"13:47Z, 1 assets, tag on main"
+urine-durban,M18,Declaration of AI use in the v0.2.0 notes,yes,356 characters
+washschools-nigeria,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #2
+washschools-nigeria,M02,Three questions file,yes,QUESTIONS.md
+washschools-nigeria,M03,Framed run: Q1 as Quarto manuscript,yes,2026-09-29-001-answer-question-1-as-quarto-manuscript
+washschools-nigeria,M04,Commit skill: Assisted-by trailer and prompt archive,yes,"13 assisted commits, 19 prompts"
+washschools-nigeria,M05,Studio cards (evidenced in prompt archive),yes,card1_add_question;card3_codebook;card4_figure_render
+washschools-nigeria,M06,Sprint 1 pull request dev->main merged,yes,PR #3 merged 09:56Z
+washschools-nigeria,M07,Release v0.1.0 with DOCX attached,partial,"10:01Z, 0 assets"
+washschools-nigeria,M08,Plan mode: 'plan only' prompt,yes,2026-09-29-011-make-a-plan-to-answer-question-3
+washschools-nigeria,M09,Plan written as markdown in repo,yes,2 plan files
+washschools-nigeria,M10,Issues created from the plan,yes,"4 issues, 4 with checkboxes"
+washschools-nigeria,M11,Issues implemented and closed,yes,2 of 4 closed
+washschools-nigeria,M12,Run continued from the phone,not observable,no trace in git or GitHub
+washschools-nigeria,M13,"TODO pass: human review comments in source, agent works through them",no,
+washschools-nigeria,M14,Sprint 2 pull request merged,yes,#8
+washschools-nigeria,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+washschools-nigeria,M16,CLAUDE.md written,yes,on main
+washschools-nigeria,M17,Release v0.2.0,yes,"13:46Z, 0 assets, tag on main"
+washschools-nigeria,M18,Declaration of AI use in the v0.2.0 notes,yes,6111 characters
+water-quality-col,M01,Pre-work: data in repo and 'Data added' issue,yes,issue #1
+water-quality-col,M02,Three questions file,yes,questions.md
+water-quality-col,M03,Framed run: Q1 as Quarto manuscript,yes,2026-09-29-001-answer-first-question-quarto-manuscript-docx
+water-quality-col,M04,Commit skill: Assisted-by trailer and prompt archive,yes,"10 assisted commits, 10 prompts"
+water-quality-col,M05,Studio cards (evidenced in prompt archive),yes,card1_add_question
+water-quality-col,M06,Sprint 1 pull request dev->main merged,yes,PR #2 merged 09:56Z
+water-quality-col,M07,Release v0.1.0 with DOCX attached,yes,"10:01Z, 1 assets"
+water-quality-col,M08,Plan mode: 'plan only' prompt,yes,2026-09-29-005-write-a-plan-to-turn-the-manuscript-into-html
+water-quality-col,M09,Plan written as markdown in repo,yes,1 plan files
+water-quality-col,M10,Issues created from the plan,yes,"4 issues, 4 with checkboxes"
+water-quality-col,M11,Issues implemented and closed,yes,4 of 4 closed
+water-quality-col,M12,Run continued from the phone,not observable,no trace in git or GitHub
+water-quality-col,M13,"TODO pass: human review comments in source, agent works through them",yes,1c236ed + 2026-09-29-008-work-through-the-todos-in-the-manuscript
+water-quality-col,M14,Sprint 2 pull request merged,yes,#8;#7
+water-quality-col,M15,Partner review as a GitHub review,no,"0 reviews, 0 review comments on any PR (API)"
+water-quality-col,M16,CLAUDE.md written,yes,on dev
+water-quality-col,M17,Release v0.2.0,yes,"13:46Z, 2 assets, tag on main"
+water-quality-col,M18,Declaration of AI use in the v0.2.0 notes,yes,6463 characters

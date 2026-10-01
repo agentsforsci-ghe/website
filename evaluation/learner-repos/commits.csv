@@ -1,0 +1,177 @@
+repo,sha,author_datetime,date,time_local,author,subject,conventional_type,is_merge,author_path,assisted_models,co_authored_model,n_prompts_cited,human_authored_flag,files_changed,insertions,deletions,on_workshop_day,sprint
+bcmeter-example,09ad2fc,2026-09-14T18:14:05+02:00,2026-09-14,18:14,s-loggia,Initial commit,,0,human,,,0,0,1,2,0,0,
+bcmeter-example,efc0c5b,2026-09-14T18:18:55+02:00,2026-09-14,18:18,Serena Loggia,data added,,0,human,,,0,0,20,58237,0,0,
+beaver-ss,d966829,2026-09-09T16:15:38+02:00,2026-09-09,16:15,Leonardo Capitani,Initial commit,,0,human,,,0,0,3,712,0,0,
+beaver-ss,8953a5b,2026-09-09T16:16:15+02:00,2026-09-09,16:16,Leonardo Capitani,Fix typo in README description,,0,human,,,0,0,1,1,1,0,
+beaver-ss,afc9747,2026-09-09T16:25:35+02:00,2026-09-09,16:25,Leonardo Capitani,Add beaver-insect size dataset and RStudio project file,,0,co-authored,,Claude Sonnet 5,0,0,2,88982,0,0,
+beaver-ss,60ca5b1,2026-09-09T19:53:56+02:00,2026-09-09,19:53,Leonardo Capitani,"Document data, research question and ISD analysis approach",,0,co-authored,,Claude Sonnet 5,0,0,5,135,0,0,
+biogas-malawi,e525445,2026-09-09T11:28:13+02:00,2026-09-09,11:28,yashika-agg-ui,Initial commit,,0,human,,,0,0,1,1,0,0,
+biogas-malawi,06c6c94,2026-09-09T14:32:59+02:00,2026-09-09,14:32,Yashika Aggarwal,Data added,,0,human,,,0,0,1,0,0,0,
+caves-currents,39d5f8a,2026-09-24T16:48:14+02:00,2026-09-24,16:48,lrndrs,Initial commit,,0,human,,,0,0,1,1,0,0,
+caves-currents,0e7d9eb,2026-09-24T17:01:48+02:00,2026-09-24,17:01,Laura Endres,Add La Vallina speleothem data excerpt,,0,co-authored,,Claude Sonnet 5,0,0,31,9400,0,0,
+caves-currents,3adfefc,2026-09-29T09:02:33+02:00,2026-09-29,09:02,Laura Endres,Discharge series added,,0,human,,,0,0,2,324,0,1,1
+caves-currents,95dd4f0,2026-09-29T10:22:41+02:00,2026-09-29,10:22,Laura Endres,3 questions to solve,,0,human,,,0,0,1,4,0,1,1
+caves-currents,f4a37b8,2026-09-29T10:22:59+02:00,2026-09-29,10:22,Laura Endres,the project,,0,human,,,0,0,2,14,0,1,1
+caves-currents,b8c61b1,2026-09-29T10:58:04+02:00,2026-09-29,10:58,Laura Endres,Add Quarto manuscript answering Glas age-range question,,0,co-authored,,Claude Opus 5.5,0,0,2,155,0,1,1
+caves-currents,bd4d1eb,2026-09-29T11:00:27+02:00,2026-09-29,11:00,Laura Endres,docs(prompts): archive prompt for Glas age-range work,docs,0,assisted,claude-opus-5-5,,1,0,1,10,0,1,1
+caves-currents,a2461f7,2026-09-29T11:05:09+02:00,2026-09-29,11:05,Laura Endres,fix(data): update Glas reference to published CP paper,fix,0,assisted,claude-opus-5-5,,1,0,3,11,1,1,1
+caves-currents,336cd19,2026-09-29T11:48:40+02:00,2026-09-29,11:48,Laura Endres,feat(analysis): answer question 2 on NISA meltwater sources,feat,0,assisted,claude-fable-5-1,,3,0,5,633,0,1,1
+caves-currents,03fb039,2026-09-29T11:51:35+02:00,2026-09-29,11:51,Laura Endres,"docs(questions): expand question 2 to importance, variability and alignment",docs,0,human,,,0,0,1,1,1,1,1
+caves-currents,f8c0634,2026-09-29T11:59:16+02:00,2026-09-29,11:59,lrndrs,Merge pull request #2 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,1
+caves-currents,72b1abc,2026-09-29T14:08:29+02:00,2026-09-29,14:08,Laura Endres,feat(analysis): redo question 2 with age ensemble,feat,0,assisted,claude-fable-5-1;claude-opus-5-5,,6,0,9,975,469,1,2
+caves-currents,4f182de,2026-09-29T14:08:44+02:00,2026-09-29,14:08,Laura Endres,feat(app): add region outlines and base map data,feat,0,assisted,claude-opus-5-5,,3,0,4,797,0,1,2
+caves-currents,108a54b,2026-09-29T14:20:12+02:00,2026-09-29,14:20,Laura Endres,feat(app): build interactive meltwater discharge explorer,feat,0,assisted,claude-opus-5-5,,2,0,5,1179,0,1,2
+caves-currents,2e552e7,2026-09-29T14:20:50+02:00,2026-09-29,14:20,Laura Endres,docs(app): document explorer build and shared page,docs,0,assisted,claude-opus-5-5,,1,0,1,46,0,1,2
+caves-currents,2e177f9,2026-09-29T14:45:06+02:00,2026-09-29,14:45,Laura Endres,Todo's added.,,0,human,,,0,0,1,10,2,1,2
+caves-currents,5cd8479,2026-09-29T15:03:34+02:00,2026-09-29,15:03,Laura Endres,feat(analysis): resolve manuscript TODOs for question 2,feat,0,assisted,claude-opus-5-5,,1,0,5,507,33,1,2
+caves-currents,c2e9646,2026-09-29T15:11:59+02:00,2026-09-29,15:11,lrndrs,Merge pull request #7 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+caves-currents,16dea6e,2026-09-29T15:20:56+02:00,2026-09-29,15:20,Laura Endres,docs: add CLAUDE.md with repo conventions,docs,0,assisted,claude-opus-5-5,,1,0,2,116,0,1,2
+caves-currents,72f3adc,2026-09-29T15:24:42+02:00,2026-09-29,15:24,lrndrs,Merge pull request #8 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+cybersecurity-ownership,1eb8be6,2026-09-16T10:40:14+02:00,2026-09-16,10:40,ambuehlb,Initial commit,,0,human,,,0,0,1,1,0,0,
+cybersecurity-ownership,20d413f,2026-09-16T10:44:13+02:00,2026-09-16,10:44,Ambühl Benjamin (ambe),added merged & anonymised dataset,,0,human,,,0,0,1,0,0,0,
+ghg-bsfl,a89d0d1,2026-09-22T22:00:26+03:00,2026-09-22,22:00,dapeguero,Initial commit,,0,human,,,0,0,1,1,0,0,
+ghg-bsfl,e4d03e7,2026-09-22T22:23:07+03:00,2026-09-22,22:23,Daniela Peguero,Committing data for dani,,0,human,,,0,0,3,17,0,0,
+ghg-bsfl,52915b9,2026-09-29T10:21:37+02:00,2026-09-29,10:21,Daniela Peguero,docs: add my three questions,docs,0,co-authored,,Claude Opus 5.5,0,0,1,5,0,1,1
+ghg-bsfl,a8c1a23,2026-09-29T11:00:30+02:00,2026-09-29,11:00,Daniela Peguero,docs(manuscripts): answer Q1 on measured gases,docs,0,assisted,claude-opus-5-5,,1,0,3,237,0,1,1
+ghg-bsfl,bc5969f,2026-09-29T11:33:56+02:00,2026-09-29,11:33,Daniela Peguero,docs(manuscripts): add Q2 CO2e totals per chamber,docs,0,assisted,claude-fable-5-1,,1,0,3,191,19,1,1
+ghg-bsfl,2848e3a,2026-09-29T11:34:09+02:00,2026-09-29,11:34,Daniela Peguero,docs(manuscripts): compare VD 299 with BSFL literature,docs,0,assisted,claude-fable-5-1,,2,0,5,111,0,1,1
+ghg-bsfl,9dc2fcf,2026-09-29T11:42:40+02:00,2026-09-29,11:42,Daniela Peguero,docs: fill in README,docs,0,assisted,claude-fable-5-1,,1,0,2,84,1,1,1
+ghg-bsfl,60e7187,2026-09-29T11:42:41+02:00,2026-09-29,11:42,Daniela Peguero,docs(manuscripts): add gas coverage figure for Q1,docs,0,assisted,claude-fable-5-1,,2,0,4,54,1,1,1
+ghg-bsfl,aeb9c2d,2026-09-29T12:56:34+03:00,2026-09-29,12:56,dapeguero,Merge pull request #2 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+ghg-bsfl,3182317,2026-09-29T13:16:37+02:00,2026-09-29,13:16,Daniela Peguero,docs(manuscripts): add standalone Q2 CO2e manuscript,docs,0,assisted,claude-fable-5-1,,1,0,4,409,3,1,2
+ghg-bsfl,3675afe,2026-09-29T13:21:45+02:00,2026-09-29,13:21,Daniela Peguero,docs: add plan for the Q2 CO2e manuscript,docs,0,assisted,claude-fable-5-1,,1,0,2,98,0,1,2
+ghg-bsfl,5a5e9e1,2026-09-29T14:14:00+02:00,2026-09-29,14:14,Daniela Peguero,build: turn ghg-bsfl into R package ghgbsfl with CI,build,0,assisted,claude-fable-5-1,,1,0,6,101,0,1,2
+ghg-bsfl,19aec50,2026-09-29T14:16:09+02:00,2026-09-29,14:16,Daniela Peguero,data: add vd299_emissions and vd299_recovery from the workbook,data,0,assisted,claude-fable-5-1,,1,0,10,240,0,1,2
+ghg-bsfl,24c9af1,2026-09-29T14:41:57+02:00,2026-09-29,14:41,Daniela Peguero,added todos,,0,human,,,0,0,2,4,4,1,2
+ghg-bsfl,e22ab6a,2026-09-29T14:54:03+02:00,2026-09-29,14:54,Daniela Peguero,docs(manuscripts): work through the Q2 manuscript to-do list,docs,0,assisted,claude-fable-5-1,,1,0,4,207,31,1,2
+ghg-bsfl,79f7732,2026-09-29T15:59:47+03:00,2026-09-29,15:59,dapeguero,Merge pull request #7 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+implementation-mzuzu,869adb7,2026-09-10T10:34:31+02:00,2026-09-10,10:34,katiemcaves,Initial commit,,0,human,,,0,0,1,2,0,0,
+implementation-mzuzu,ae7a593,2026-09-11T17:36:33+02:00,2026-09-11,17:36,Katie Caves,Interview data for gitforsci course,,0,human,,,0,0,6,0,0,0,
+implementation-mzuzu,2c066f5,2026-09-29T10:21:18+02:00,2026-09-29,10:21,Katie Caves,Add questions.md with research questions,,0,co-authored,,Claude Opus 5.5,0,0,2,18,0,1,1
+implementation-mzuzu,3346b6b,2026-09-29T10:23:01+02:00,2026-09-29,10:23,Katie Caves,Add .gitignore excluding data files,,0,co-authored,,Claude Opus 5.5,0,0,1,7,0,1,1
+implementation-mzuzu,c20d66b,2026-09-29T11:00:50+02:00,2026-09-29,11:00,Katie Caves,Add Quarto manuscript answering which city the interviews cover,,0,assisted,claude-opus-5-5,,1,0,5,161,0,1,1
+implementation-mzuzu,9bed800,2026-09-29T11:48:15+02:00,2026-09-29,11:48,Katie Caves,Move Question 1 manuscript into q1-city/,,0,assisted,claude-fable-5-1,,0,0,5,4,2,1,1
+implementation-mzuzu,0cba119,2026-09-29T11:48:25+02:00,2026-09-29,11:48,Katie Caves,Add Quarto manuscript scoring formalization indicators,,0,assisted,claude-fable-5-1,,1,0,8,610,0,1,1
+implementation-mzuzu,831d5d0,2026-09-29T11:57:17+02:00,2026-09-29,11:57,katiemcaves,Merge pull request #2 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,1
+implementation-mzuzu,d64f0e3,2026-09-29T13:28:04+02:00,2026-09-29,13:28,Katie Caves,Revise Question 2 manuscript after auditing scores,,0,assisted,claude-fable-5-1,,2,0,9,474,214,1,2
+implementation-mzuzu,1b4587f,2026-09-29T14:28:22+02:00,2026-09-29,14:28,Katie Caves,Add 20-rater scoring of the Q2 interviews with agreement analysis,,0,assisted,claude-fable-5-1,,3,0,37,2970,0,1,2
+implementation-mzuzu,40ff8e7,2026-09-29T14:29:21+02:00,2026-09-29,14:29,Katie Caves,Apply author-adjudicated rater scores to the Q2 manuscript,,0,assisted,claude-fable-5-1,,1,1,7,251,132,1,2
+implementation-mzuzu,e149b97,2026-09-29T14:52:10+02:00,2026-09-29,14:52,Katie Caves,Add introduction and full table borders to Q2 manuscript,,0,assisted,claude-fable-5-1,,2,0,6,189,0,1,2
+implementation-mzuzu,3b758af,2026-09-29T14:59:05+02:00,2026-09-29,14:59,katiemcaves,Merge pull request #9 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+myco-sanitation,fa371e9,2026-09-09T11:31:27+02:00,2026-09-09,11:31,Jules Peter,Project local,,0,human,,,0,0,2,17,0,0,
+myco-sanitation,063f6f7,2026-09-09T11:38:47+02:00,2026-09-09,11:38,Jules Peter,added README.md file and data folder with raw data from running experiment,,0,human,,,0,0,7,378,0,0,
+myco-sanitation,c6262f7,2026-09-29T10:11:20+02:00,2026-09-29,10:11,Jules Peter,"Add mass tracking data for days 21, 28, 35",,0,co-authored,,Claude Opus 5.5,0,0,1,180,0,1,1
+myco-sanitation,b62d34b,2026-09-29T10:23:05+02:00,2026-09-29,10:23,Jules Peter,doc: add my three questions,doc,0,human,,,0,0,1,10,0,1,1
+myco-sanitation,4ed1d3e,2026-09-29T10:26:16+02:00,2026-09-29,10:26,Jules Peter,Move questions.md into docs/,,0,co-authored,,Claude Opus 5.5,0,0,1,0,0,1,1
+myco-sanitation,16e22e6,2026-09-29T11:00:42+02:00,2026-09-29,11:00,Jules Peter,docs(manuscript): add raw vs sterile degradation report,docs,0,assisted,claude-opus-5-5,,1,0,3,310,0,1,1
+myco-sanitation,c335346,2026-09-29T11:12:29+02:00,2026-09-29,11:12,Jules Peter,docs(manuscript): add Fable re-run of Q1 report,docs,0,assisted,claude-fable-5-1,,1,0,2,263,0,1,1
+myco-sanitation,91dea94,2026-09-29T11:46:58+02:00,2026-09-29,11:46,Jules Peter,docs(manuscript): add literature and outlook to Fable report,docs,0,assisted,claude-fable-5-1,,1,0,3,431,27,1,1
+myco-sanitation,5c5fbcf,2026-09-29T11:53:55+02:00,2026-09-29,11:53,Jules-Peter,Merge pull request #2 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,1
+myco-sanitation,8c54c50,2026-09-29T13:19:52+02:00,2026-09-29,13:19,Jules Peter,docs(manuscript): add F40 vs AmBm degradation report,docs,0,assisted,claude-fable-5-1,,1,0,3,430,0,1,2
+myco-sanitation,dae3850,2026-09-29T14:30:56+02:00,2026-09-29,14:30,Jules Peter,docs(manuscript): add dry-mass balance and outlook to F40 vs AmBm report,docs,0,assisted,claude-fable-5-1,,2,0,4,320,3,1,2
+myco-sanitation,8119d26,2026-09-29T14:44:03+02:00,2026-09-29,14:44,Jules Peter,docs(manuscript): resolve review TODOs in Fable Q1 report,docs,0,assisted,claude-fable-5-1,,1,0,4,50,9,1,2
+myco-sanitation,dc2cf8f,2026-09-29T14:58:39+02:00,2026-09-29,14:58,Jules-Peter,Merge pull request #5 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+myco-sanitation,495d86d,2026-09-29T15:20:11+02:00,2026-09-29,15:20,Jules Peter,docs(manuscript): add k-sensitivity fan and plateau outlook,docs,0,assisted,claude-fable-5-1,,3,0,5,177,11,1,2
+myco-sanitation,696a7c1,2026-09-29T15:20:11+02:00,2026-09-29,15:20,Jules Peter,docs: add CLAUDE.md with repo conventions,docs,0,assisted,claude-fable-5-1,,1,0,2,60,0,1,2
+myco-sanitation,30690be,2026-09-29T15:49:49+02:00,2026-09-29,15:49,Jules-Peter,Merge pull request #6 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+sensor-validation,34ea041,2026-09-16T12:16:00+02:00,2026-09-16,12:16,weberel,Initial commit,,0,human,,,0,0,1,2,0,0,
+sensor-validation,e0c3be3,2026-09-16T14:17:16+02:00,2026-09-16,14:17,weberel,data folder added,,0,human,,,0,0,1,0,0,0,
+sensor-validation,33ac844,2026-09-29T09:16:09+02:00,2026-09-29,09:16,weberel,initial data,,0,human,,,0,0,283,1478903,0,1,1
+sensor-validation,7f734c3,2026-09-29T10:25:53+02:00,2026-09-29,10:25,weberel,added questions,,0,human,,,0,0,1,3,0,1,1
+sensor-validation,087e53f,2026-09-29T11:11:19+02:00,2026-09-29,11:11,weberel,docs(manuscripts): add Q1 manuscript on lab vs digester validation,docs,0,assisted,claude-opus-5-5,,1,0,4,422,0,1,1
+sensor-validation,eed94fc,2026-09-29T11:31:19+02:00,2026-09-29,11:31,weberel,docs(manuscripts): answer all three questions in one manuscript,docs,0,assisted,claude-fable-5-1,,1,0,6,611,408,1,1
+sensor-validation,2e474a9,2026-09-29T11:50:15+02:00,2026-09-29,11:50,weberel,fix(manuscripts): source digester CH4 values properly,fix,0,assisted,claude-fable-5-1,,1,0,4,58,21,1,1
+sensor-validation,4eb56a1,2026-09-29T11:56:10+02:00,2026-09-29,11:56,weberel,Merge pull request #2 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,1
+sensor-validation,b0486dc,2026-09-29T13:37:44+02:00,2026-09-29,13:37,weberel,docs(reports): answer questions.md independently,docs,0,assisted,claude-fable-5-1,,3,0,8,1074,0,1,2
+sensor-validation,088ac08,2026-09-29T14:29:56+02:00,2026-09-29,14:29,weberel,docs(data): add a generated codebook for data/,docs,0,assisted,claude-fable-5-1,,4,0,12,2595,0,1,2
+sensor-validation,1b27f17,2026-09-29T14:42:36+02:00,2026-09-29,14:42,weberel,added todos,,0,human,,,0,0,1,2,0,1,2
+sensor-validation,2aedbfa,2026-09-29T14:52:28+02:00,2026-09-29,14:52,weberel,fix(manuscripts): move TODO notes out of the YAML front matter,fix,0,assisted,claude-fable-5-1,,1,0,2,12,2,1,2
+sensor-validation,6cd49c2,2026-09-29T14:58:37+02:00,2026-09-29,14:58,weberel,Merge pull request #7 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+tdabc-mzuzu,cebdbf8,2026-09-11T15:28:29+02:00,2026-09-11,15:28,PCstumbleine,Initial commit,,0,human,,,0,0,1,2,0,0,
+tdabc-mzuzu,027a8e2,2026-09-11T15:33:58+02:00,2026-09-11,15:33,PCstumbleine,Update README.md,,0,human,,,0,0,1,1,1,0,
+tdabc-mzuzu,e98a418,2026-09-11T16:12:01+02:00,2026-09-11,16:12,Padraic Casserly,Add task timing data from Gulper Timer app,,0,human,,,0,0,2,10436,0,0,
+tdabc-mzuzu,03c8de5,2026-09-11T16:17:42+02:00,2026-09-11,16:17,Padraic Casserly,Add detailed README,,0,human,,,0,0,1,71,1,0,
+tdabc-mzuzu,be262e4,2026-09-18T12:09:21+02:00,2026-09-18,12:09,Padraic Casserly,Add 36 unique job observations (18 Sept 2026),,0,co-authored,,Claude Sonnet 4.6,0,0,1,1478,1128,0,
+tdabc-mzuzu,54f81bd,2026-09-29T10:25:17+02:00,2026-09-29,10:25,Padraic Casserly,docs: add my three questions,docs,0,human,,,0,0,1,3,0,1,1
+tdabc-mzuzu,9b85092,2026-09-29T11:02:35+02:00,2026-09-29,11:02,Padraic Casserly,feat(analysis): answer total pit emptying job time,feat,0,assisted,claude-opus-5-5,,1,0,7,225,0,1,1
+tdabc-mzuzu,91f9964,2026-09-29T11:31:46+02:00,2026-09-29,11:31,Padraic Casserly,feat(analysis): add task figure and literature appendix,feat,0,assisted,claude-opus-5-5,,2,0,7,173,4,1,1
+tdabc-mzuzu,76854db,2026-09-29T11:54:58+02:00,2026-09-29,11:54,Padraic Casserly,docs(data): add data review report and flagged rows,docs,0,assisted,claude-opus-5-5,,2,0,5,239,0,1,1
+tdabc-mzuzu,577d9ce,2026-09-29T12:00:23+02:00,2026-09-29,12:00,PCstumbleine,Merge pull request #2 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+tdabc-mzuzu,b556b42,2026-09-29T13:33:42+02:00,2026-09-29,13:33,Padraic Casserly,feat(analysis): answer average travel time to disposal site,feat,0,assisted,claude-fable-5-1,,5,0,13,584,0,1,2
+tdabc-mzuzu,b612e93,2026-09-29T14:08:46+02:00,2026-09-29,14:08,Padraic Casserly,feat(data): add cleaning script and cleaned dataset,feat,0,assisted,claude-fable-5-1,,2,0,6,11093,0,1,2
+tdabc-mzuzu,80d4b06,2026-09-29T14:08:46+02:00,2026-09-29,14:08,Padraic Casserly,docs(data): document the data-review resolution,docs,0,assisted,claude-fable-5-1,,1,0,3,70,2,1,2
+tdabc-mzuzu,d6726a2,2026-09-29T14:18:40+02:00,2026-09-29,14:18,Padraic Casserly,feat(analysis): use cleaned data in total job time,feat,0,assisted,claude-fable-5-1,,2,0,7,75,13,1,2
+tdabc-mzuzu,510d5fc,2026-09-29T14:18:40+02:00,2026-09-29,14:18,Padraic Casserly,feat(analysis): use cleaned data in travel time,feat,0,assisted,claude-fable-5-1,,2,0,3,15,22,1,2
+tdabc-mzuzu,c9b8477,2026-09-29T14:51:26+02:00,2026-09-29,14:51,Padraic Casserly,feat(analysis): add final manuscript combining Q1 and Q2,feat,0,assisted,claude-fable-5-1,,1,0,10,616,0,1,2
+tdabc-mzuzu,965ae13,2026-09-29T14:52:02+02:00,2026-09-29,14:52,Padraic Casserly,fix(analysis): show dates in travel-time table and figure,fix,0,assisted,claude-fable-5-1,,1,1,5,140,109,1,2
+tdabc-mzuzu,f35fb51,2026-09-29T15:15:27+02:00,2026-09-29,15:15,PCstumbleine,Merge pull request #8 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+urine-durban,148755c,2026-09-28T15:48:39+02:00,2026-09-28,15:48,larnsce,initial commit,,0,human,,,0,0,2,1537,0,0,
+urine-durban,37feb2a,2026-09-28T15:51:53+02:00,2026-09-28,15:51,elizabeth-tilley,no sensitive info,,0,human,,,0,0,2,14,0,0,
+urine-durban,a1db3bc,2026-09-29T10:20:28+02:00,2026-09-29,10:20,elizabeth-tilley,add my three questions,,0,human,,,0,0,1,3,0,1,1
+urine-durban,e19857d,2026-09-29T11:00:36+02:00,2026-09-29,11:00,elizabeth-tilley,docs(manuscript): add study areas write-up,docs,0,assisted,claude-opus-5-5,,1,0,3,131,0,1,1
+urine-durban,3628061,2026-09-29T11:24:21+02:00,2026-09-29,11:24,elizabeth-tilley,docs(manuscript): add urine production by area and phase,docs,0,assisted,claude-fable-5-1,,1,0,3,211,19,1,1
+urine-durban,fc033ee,2026-09-29T11:29:44+02:00,2026-09-29,11:29,elizabeth-tilley,build(manuscript): add self-contained HTML output,build,0,assisted,claude-fable-5-1,,1,0,4,3177,0,1,1
+urine-durban,3829487,2026-09-29T11:34:26+02:00,2026-09-29,11:34,elizabeth-tilley,feat(manuscript): add scatter plot of household urine volumes,feat,0,assisted,claude-fable-5-1,,1,0,4,76,2,1,1
+urine-durban,455e581,2026-09-29T11:43:38+02:00,2026-09-29,11:43,elizabeth-tilley,feat(manuscript): add non-zero variant of the volume scatter plot,feat,0,assisted,claude-fable-5-1,,1,0,4,90,28,1,1
+urine-durban,048ca25,2026-09-29T11:53:19+02:00,2026-09-29,11:53,elizabeth-tilley,Merge pull request #1 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,1
+urine-durban,5e780bd,2026-09-29T13:35:05+02:00,2026-09-29,13:35,elizabeth-tilley,feat(manuscript): compare urine production with published results,feat,0,assisted,claude-fable-5-1,,0,0,5,913,11,1,2
+urine-durban,269f490,2026-09-29T14:24:08+02:00,2026-09-29,14:24,elizabeth-tilley,feat(manuscript): add Question 4 diagnostics for samples and control mean,feat,0,assisted,claude-fable-5-1,,0,0,3,647,3,1,2
+urine-durban,b0715a3,2026-09-29T14:26:12+02:00,2026-09-29,14:26,elizabeth-tilley,fix(manuscript): reproduce published volume-collected figures (H4),fix,0,assisted,claude-fable-5-1,,0,0,3,249,12,1,2
+urine-durban,b7485c7,2026-09-29T14:31:56+02:00,2026-09-29,14:31,elizabeth-tilley,feat(manuscript): diagnose published volume effects (H5-H8),feat,0,assisted,claude-fable-5-1,,0,0,3,554,0,1,2
+urine-durban,53fce43,2026-09-29T14:34:48+02:00,2026-09-29,14:34,elizabeth-tilley,docs(manuscript): conclude Question 4 with diagnosis summary,docs,0,assisted,claude-fable-5-1,,0,0,4,283,7,1,2
+urine-durban,08546ba,2026-09-29T14:39:31+02:00,2026-09-29,14:39,elizabeth-tilley,docs(manuscript): add no-visit-rule variant to Ntabankulu table,docs,0,assisted,claude-fable-5-1,,0,0,3,26,12,1,2
+urine-durban,09ce5fa,2026-09-29T14:42:36+02:00,2026-09-29,14:42,elizabeth-tilley,Merge pull request #6 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+urine-durban,5160847,2026-09-29T14:49:48+02:00,2026-09-29,14:49,elizabeth-tilley,TODOs added,,0,human,,,0,0,1,1,0,1,2
+urine-durban,b63afc1,2026-09-29T14:53:02+02:00,2026-09-29,14:53,elizabeth-tilley,style(manuscript): use rainbow colours for the phase strip plots,style,0,assisted,claude-fable-5-1,,0,0,3,4,4,1,2
+urine-durban,0b0672c,2026-09-29T14:59:35+02:00,2026-09-29,14:59,elizabeth-tilley,Merge pull request #7 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+urine-durban,bd758af,2026-09-29T15:20:19+02:00,2026-09-29,15:20,elizabeth-tilley,docs: add CLAUDE.md with repository conventions,docs,0,assisted,claude-fable-5-1,,0,0,1,124,0,1,2
+urine-durban,14cedfc,2026-09-29T15:51:22+02:00,2026-09-29,15:51,elizabeth-tilley,Merge pull request #8 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+washschools-nigeria,f8f5606,2026-09-17T15:58:14+02:00,2026-09-17,15:58,Jakub Tkaczuk,Initial commit,,0,human,,,0,0,1,1,0,0,
+washschools-nigeria,7e85032,2026-09-17T16:03:39+02:00,2026-09-17,16:03,Jakub Tkaczuk,add raw data and gitignore file,,0,human,,,0,0,2,9,0,0,
+washschools-nigeria,1b20cc5,2026-09-23T15:09:02+02:00,2026-09-23,15:09,Jakub Tkaczuk,add setup report,,0,human,,,0,0,1,34,0,0,
+washschools-nigeria,8368e7e,2026-09-28T22:12:56+02:00,2026-09-28,22:12,Jakub Tkaczuk,add env for reproducibility,,0,human,,,0,0,2,196,1,0,
+washschools-nigeria,a4296ba,2026-09-28T22:21:10+02:00,2026-09-28,22:21,Jakub Tkaczuk,remove htmls from git commits,,0,human,,,0,0,1,3,0,0,
+washschools-nigeria,65f2d7b,2026-09-28T22:21:35+02:00,2026-09-28,22:21,Jakub Tkaczuk,python in quarto test,,0,human,,,0,0,1,181,0,0,
+washschools-nigeria,04749f2,2026-09-28T22:23:18+02:00,2026-09-28,22:23,Jakub Tkaczuk,update readme,,0,human,,,0,0,1,8,1,0,
+washschools-nigeria,485e57a,2026-09-29T10:22:21+02:00,2026-09-29,10:22,Jakub Tkaczuk,docs: add my three questions,docs,0,human,,,0,0,1,5,0,1,1
+washschools-nigeria,769261a,2026-09-29T10:24:22+02:00,2026-09-29,10:24,Jakub Tkaczuk,add office lock files,,0,human,,,0,0,1,3,0,1,1
+washschools-nigeria,f68e379,2026-09-29T11:06:19+02:00,2026-09-29,11:06,Jakub Tkaczuk,docs: answer question 1 (country of the data),docs,0,assisted,claude-opus-5-5,,1,0,3,238,0,1,1
+washschools-nigeria,88c0da7,2026-09-29T11:49:32+02:00,2026-09-29,11:49,Jakub Tkaczuk,feat(data): extract Annex VI school tables to CSV,feat,0,assisted,claude-opus-5-5,,2,0,29,15605,0,1,1
+washschools-nigeria,f0ba7ef,2026-09-29T11:52:26+02:00,2026-09-29,11:52,Jakub Tkaczuk,chore(style): add scientific matplotlib style,chore,0,human,,,0,1,1,56,0,1,1
+washschools-nigeria,07b7869,2026-09-29T11:52:48+02:00,2026-09-29,11:52,Jakub Tkaczuk,feat(fig): add example state-level WASH figure,feat,0,assisted,claude-opus-5-5,,1,0,4,74,0,1,1
+washschools-nigeria,9dfd8c5,2026-09-29T11:56:10+02:00,2026-09-29,11:56,Jakub Tkaczuk,Merge pull request #3 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,1
+washschools-nigeria,3be2020,2026-09-29T13:07:10+02:00,2026-09-29,13:07,Jakub Tkaczuk,feat(data): restructure data dir and add metadata,feat,0,assisted,claude-opus-5-5,,1,0,35,1351,579,1,2
+washschools-nigeria,6c37656,2026-09-29T13:07:33+02:00,2026-09-29,13:07,Jakub Tkaczuk,chore: remove SETUP.md,chore,0,human,,,0,1,1,0,34,1,2
+washschools-nigeria,5ca0906,2026-09-29T13:09:59+02:00,2026-09-29,13:09,Jakub Tkaczuk,add source of the pdf report,,0,human,,,0,0,1,3,0,1,2
+washschools-nigeria,0b0bccb,2026-09-29T13:44:23+02:00,2026-09-29,13:44,Jakub Tkaczuk,feat(q2): answer question 2 as a Quarto manuscript,feat,0,assisted,claude-opus-5-5,,2,0,5,310,0,1,2
+washschools-nigeria,1a7e9e2,2026-09-29T13:49:41+02:00,2026-09-29,13:49,Jakub Tkaczuk,docs(data): move report note from docs/ to raw_data/,docs,0,human,,,0,1,2,2,39,1,2
+washschools-nigeria,b098a89,2026-09-29T13:50:11+02:00,2026-09-29,13:50,Jakub Tkaczuk,feat(data): add external enrolment and toilet benchmarks,feat,0,assisted,claude-opus-5-5,,3,0,11,347,5,1,2
+washschools-nigeria,32d0818,2026-09-29T13:50:48+02:00,2026-09-29,13:50,Jakub Tkaczuk,fix(data): read the report PDF from raw_data/,fix,0,assisted,claude-opus-5-5,,0,0,6,16,16,1,2
+washschools-nigeria,7dd2ab2,2026-09-29T14:07:36+02:00,2026-09-29,14:07,Jakub Tkaczuk,feat(fig): add 20 exploratory figures of school WASH,feat,0,assisted,claude-opus-5-5,,2,0,50,854,6,1,2
+washschools-nigeria,1b67b7a,2026-09-29T14:11:07+02:00,2026-09-29,14:11,Jakub Tkaczuk,feat(q3): add exposure counts for school absence,feat,0,assisted,claude-opus-5-5,,3,0,4,193,0,1,2
+washschools-nigeria,f291c2e,2026-09-29T14:33:12+02:00,2026-09-29,14:33,Jakub Tkaczuk,feat(q3): add literature absence parameters,feat,0,assisted,claude-opus-5-5,,0,0,5,168,3,1,2
+washschools-nigeria,27f6e24,2026-09-29T14:36:06+02:00,2026-09-29,14:36,Jakub Tkaczuk,Merge pull request #8 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+washschools-nigeria,fe06433,2026-09-29T14:40:49+02:00,2026-09-29,14:40,Jakub Tkaczuk,Merge branch 'exploratory' into dev,,1,merge,claude-opus-5-5,,0,0,0,0,0,1,2
+washschools-nigeria,d62ad1c,2026-09-29T14:43:17+02:00,2026-09-29,14:43,Jakub Tkaczuk,Merge branch 'dev' into main,,1,merge,claude-opus-5-5,,0,0,0,0,0,1,2
+washschools-nigeria,aa1a05e,2026-09-29T14:52:10+02:00,2026-09-29,14:52,Jakub Tkaczuk,docs: add plan for the exploratory figures document,docs,0,assisted,claude-opus-5-5,,1,0,2,69,0,1,2
+washschools-nigeria,50aa51f,2026-09-29T15:17:23+02:00,2026-09-29,15:17,Jakub Tkaczuk,feat(fig): write up exploratory figures in Quarto,feat,0,assisted,claude-opus-5-5,,2,0,32,897,646,1,2
+washschools-nigeria,ef89437,2026-09-29T15:27:34+02:00,2026-09-29,15:27,Jakub Tkaczuk,docs: add CLAUDE.md with repo conventions,docs,0,assisted,claude-opus-5-5,,1,0,2,119,0,1,2
+washschools-nigeria,8898a5b,2026-09-29T15:46:45+02:00,2026-09-29,15:46,Jakub Tkaczuk,Merge branch 'dev' into main,,1,merge,,,0,0,0,0,0,1,2
+water-quality-col,c47a243,2026-09-22T11:46:26+02:00,2026-09-22,11:46,Adriana Clavijo Daza,Initial commit,,0,human,,,0,0,1,1,0,0,
+water-quality-col,b63780b,2026-09-22T11:50:57+02:00,2026-09-22,11:50,seawaR,Add csv cotaining water queality data,,0,human,,,0,0,1,19161,0,0,
+water-quality-col,a180fec,2026-09-29T10:26:20+02:00,2026-09-29,10:26,seawaR,Add files created by RStudio project,,0,human,,,0,0,2,17,0,1,1
+water-quality-col,34b2663,2026-09-29T10:27:06+02:00,2026-09-29,10:27,seawaR,Created question files,,0,human,,,0,0,1,4,0,1,1
+water-quality-col,eb52f61,2026-09-29T11:00:37+02:00,2026-09-29,11:00,seawaR,docs(manuscript): answer Q1 on the observational unit,docs,0,assisted,claude-fable-5-1,,1,0,6,186,0,1,1
+water-quality-col,7b0fd2c,2026-09-29T11:24:42+02:00,2026-09-29,11:24,seawaR,chore(manuscripts): move Q1 manuscript into manuscripts/,chore,0,assisted,claude-fable-5-1,,0,0,5,5,3,1,1
+water-quality-col,63b33d4,2026-09-29T11:24:42+02:00,2026-09-29,11:24,seawaR,docs(manuscripts): answer Q2 on data completeness,docs,0,assisted,claude-fable-5-1,,1,0,5,350,0,1,1
+water-quality-col,00c0d0a,2026-09-29T11:36:59+02:00,2026-09-29,11:36,seawaR,docs(manuscript): unify Q1 and Q2 in a single manuscript,docs,0,assisted,claude-fable-5-1,,1,0,12,221,491,1,1
+water-quality-col,cefa12f,2026-09-29T11:49:27+02:00,2026-09-29,11:49,seawaR,feat(manuscript): add municipal IRCA map for the most complete year,feat,0,assisted,claude-fable-5-1,,1,0,5,94,2,1,1
+water-quality-col,884043b,2026-09-29T11:56:00+02:00,2026-09-29,11:56,Adriana Clavijo Daza,Merge pull request #2 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,1
+water-quality-col,36d2764,2026-09-29T13:46:02+02:00,2026-09-29,13:46,seawaR,feat(manuscript): rebuild Q1 and Q2 write-up,feat,0,assisted,claude-fable-5-1,,0,0,6,744,176,1,2
+water-quality-col,1ff53d9,2026-09-29T14:47:03+02:00,2026-09-29,14:47,seawaR,feat(manuscript): add self-contained HTML output format,feat,0,assisted,claude-fable-5-1,,3,0,7,3234,1,1,2
+water-quality-col,1c236ed,2026-09-29T14:48:09+02:00,2026-09-29,14:48,seawaR,Add TODOS for Claude to work on,,0,human,,,0,0,1,17,0,1,2
+water-quality-col,835d480,2026-09-29T14:55:11+02:00,2026-09-29,14:55,seawaR,docs(manuscript): work through review TODOs,docs,0,assisted,claude-fable-5-1,,1,0,5,466,183,1,2
+water-quality-col,bf92241,2026-09-29T15:04:14+02:00,2026-09-29,15:04,seawaR,feat(manuscript): interactive table and map in the HTML output,feat,0,assisted,claude-fable-5-1,,1,0,5,5716,269,1,2
+water-quality-col,b9f633d,2026-09-29T15:06:53+02:00,2026-09-29,15:06,Adriana Clavijo Daza,Merge pull request #7 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2
+water-quality-col,4fb8989,2026-09-29T15:13:14+02:00,2026-09-29,15:13,seawaR,fix(manuscript): use a key-free basemap for the leaflet map,fix,0,assisted,claude-fable-5-1,,1,0,5,23,8,1,2
+water-quality-col,ca1ed18,2026-09-29T15:14:37+02:00,2026-09-29,15:14,Adriana Clavijo Daza,Merge pull request #8 from agentsforsci-ghe/dev,,1,merge,,,0,0,0,0,0,1,2

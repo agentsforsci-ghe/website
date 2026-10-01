@@ -1,0 +1,24 @@
+repo,number,state,title,author,head,base,created_at,merged_at,merged,sprint,body_chars
+caves-currents,8,closed,docs: add CLAUDE.md with repo conventions,lrndrs,dev,main,2026-09-29T13:23:17Z,2026-09-29T13:24:43Z,1,2,892
+caves-currents,7,closed,"Question 2 with age uncertainty, site anomalies and discharge explorer",lrndrs,dev,main,2026-09-29T13:04:43Z,2026-09-29T13:12:00Z,1,2,1613
+caves-currents,2,closed,Answer questions 1 and 2 with Quarto manuscripts,lrndrs,dev,main,2026-09-29T09:54:29Z,2026-09-29T09:59:16Z,1,1,993
+ghg-bsfl,7,closed,Q2 manuscript and data package skeleton for VD 299,dapeguero,dev,main,2026-09-29T12:56:34Z,2026-09-29T12:59:47Z,1,2,1229
+ghg-bsfl,2,closed,Answer questions 1 and 2 on VD 299 greenhouse gas emissions,dapeguero,dev,main,2026-09-29T09:52:00Z,2026-09-29T09:56:35Z,1,1,905
+implementation-mzuzu,9,closed,Multi-rater scoring and revision of the Question 2 manuscript,katiemcaves,dev,main,2026-09-29T12:54:57Z,2026-09-29T12:59:05Z,1,2,1755
+implementation-mzuzu,2,closed,Answer research questions 1 and 2 as Quarto manuscripts,katiemcaves,dev,main,2026-09-29T09:50:53Z,2026-09-29T09:57:18Z,1,1,1648
+myco-sanitation,6,closed,"Add k-sensitivity fan, plateau outlook, and repo CLAUDE.md",Jules-Peter,dev,main,2026-09-29T13:46:33Z,2026-09-29T13:49:49Z,1,2,1073
+myco-sanitation,5,closed,"Q2 analysis: F40 vs AmBm degradation, dry-mass balance, and Q1 review fixes",Jules-Peter,dev,main,2026-09-29T12:57:33Z,2026-09-29T12:58:40Z,1,2,1604
+myco-sanitation,2,closed,Q1 analysis: raw vs sterile degradation manuscripts,Jules-Peter,dev,main,2026-09-29T09:50:50Z,2026-09-29T09:53:55Z,1,1,1070
+sensor-validation,7,closed,Answer questions.md and add a codebook for data/,weberel,dev,main,2026-09-29T12:31:54Z,2026-09-29T12:58:38Z,1,2,1535
+sensor-validation,2,closed,Add manuscript answering the three validation questions,weberel,dev,main,2026-09-29T09:51:12Z,2026-09-29T09:56:10Z,1,1,1344
+tdabc-mzuzu,8,closed,"Answer Q2, resolve data-review flags, add final manuscript",PCstumbleine,dev,main,2026-09-29T12:19:26Z,2026-09-29T13:15:27Z,1,2,2637
+tdabc-mzuzu,2,closed,Answer total job time question and add data review,PCstumbleine,dev,main,2026-09-29T09:58:15Z,2026-09-29T10:00:24Z,1,1,998
+urine-durban,8,closed,docs: add CLAUDE.md with repository conventions,elizabeth-tilley,dev,main,2026-09-29T13:50:21Z,2026-09-29T13:51:23Z,1,2,825
+urine-durban,7,closed,Manuscript: rainbow colours for the phase strip plots (resolves TODO),elizabeth-tilley,dev,main,2026-09-29T12:53:14Z,2026-09-29T12:59:36Z,1,2,973
+urine-durban,6,closed,Manuscript: literature comparison and diagnosis of dataset–publication differences,elizabeth-tilley,dev,main,2026-09-29T12:40:50Z,2026-09-29T12:42:37Z,1,2,2034
+urine-durban,1,closed,Manuscript: study areas and urine production by area and phase,elizabeth-tilley,dev,main,2026-09-29T09:50:48Z,2026-09-29T09:53:20Z,1,1,1316
+washschools-nigeria,8,closed,"Restructure data, answer Q2, add Q3 inputs",jaktk,dev,main,2026-09-29T12:35:32Z,2026-09-29T12:36:06Z,1,2,1090
+washschools-nigeria,3,closed,"Answer Q1, extract Annex VI school tables, add example figure",jaktk,dev,main,2026-09-29T09:54:19Z,2026-09-29T09:56:11Z,1,1,1261
+water-quality-col,8,closed,Use a key-free basemap for the leaflet map,seawaR,dev,main,2026-09-29T13:13:49Z,2026-09-29T13:14:38Z,1,2,673
+water-quality-col,7,closed,Rebuild the Q1/Q2 manuscript and add a self-contained HTML output,seawaR,dev,main,2026-09-29T12:57:20Z,2026-09-29T13:06:53Z,1,2,1377
+water-quality-col,2,closed,Answer questions 1 and 2 in a Quarto manuscript with a municipal IRCA map,seawaR,dev,main,2026-09-29T09:51:40Z,2026-09-29T09:56:01Z,1,1,1554

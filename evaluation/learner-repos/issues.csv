@@ -1,0 +1,51 @@
+repo,number,state,title,author,created_at,closed_at,n_checkboxes,body_chars,kind
+bcmeter-example,1,open,data added,s-loggia,2026-09-14T16:23:58Z,,0,139,pre-work
+beaver-ss,1,open,Data added,leomarameo7,2026-09-09T14:49:31Z,,0,225,pre-work
+biogas-malawi,1,open,Data added,yashika-agg-ui,2026-09-09T12:44:59Z,,0,344,pre-work
+caves-currents,6,closed,"Discharge explorer: test, publish and commit",lrndrs,2026-09-29T11:43:24Z,2026-09-29T13:12:02Z,5,782,workshop
+caves-currents,5,closed,Discharge explorer: build the interactive map and time-series page,lrndrs,2026-09-29T11:43:22Z,2026-09-29T13:12:02Z,5,1080,workshop
+caves-currents,4,closed,Discharge explorer: region outlines and base map data,lrndrs,2026-09-29T11:43:20Z,2026-09-29T13:12:02Z,4,852,workshop
+caves-currents,3,closed,Verify and commit the question 2 manuscript,lrndrs,2026-09-29T11:43:20Z,2026-09-29T13:12:01Z,4,806,workshop
+caves-currents,1,closed,Data Added,lrndrs,2026-09-24T15:05:57Z,2026-09-29T11:55:35Z,0,237,pre-work
+cybersecurity-ownership,1,open,Data added,ambuehlb,2026-09-16T08:46:28Z,,0,192,pre-work
+ghg-bsfl,6,open,"Publish: pkgdown site with openwashdata brand, CITATION.cff, and manuscripts reading the packaged workbook",dapeguero,2026-09-29T11:48:55Z,,5,1779,workshop
+ghg-bsfl,5,open,"Documentation: dictionary, roxygen data docs, DESCRIPTION metadata and README.Rmd",dapeguero,2026-09-29T11:48:52Z,,5,2260,workshop
+ghg-bsfl,4,closed,Raw data: move the workbook to data-raw/ and export vd299_emissions and vd299_recovery,dapeguero,2026-09-29T11:48:50Z,2026-09-29T12:59:49Z,5,2123,workshop
+ghg-bsfl,3,closed,Package skeleton: make ghg-bsfl an R package (ghgbsfl) with washr 1.1.1 and CI,dapeguero,2026-09-29T11:48:48Z,2026-09-29T12:59:48Z,5,1408,workshop
+ghg-bsfl,1,open,Data added,dapeguero,2026-09-22T19:33:27Z,,0,103,pre-work
+implementation-mzuzu,8,closed,Apply final scores and update the Q2 manuscript,katiemcaves,2026-09-29T11:47:13Z,2026-09-29T12:26:07Z,0,1111,workshop
+implementation-mzuzu,7,closed,"q2-raters: agreement analysis, figures and voting list",katiemcaves,2026-09-29T11:47:11Z,2026-09-29T12:17:11Z,0,3174,workshop
+implementation-mzuzu,6,closed,q2-raters: transcript extraction and rater brief,katiemcaves,2026-09-29T11:47:09Z,2026-09-29T12:17:06Z,0,1968,workshop
+implementation-mzuzu,5,closed,Author vote on contested and changed scores (votes.csv),katiemcaves,2026-09-29T11:46:14Z,2026-09-29T12:26:04Z,0,582,workshop
+implementation-mzuzu,4,closed,q2-raters: run 20 raters with the Workflow tool,katiemcaves,2026-09-29T11:46:12Z,2026-09-29T12:17:09Z,0,2007,workshop
+implementation-mzuzu,3,closed,Multi-rater scoring of the Q2 interviews (20 AI raters),katiemcaves,2026-09-29T11:46:09Z,2026-09-29T12:26:11Z,5,2086,workshop
+implementation-mzuzu,1,closed,Data added,katiemcaves,2026-09-11T15:41:43Z,2026-09-29T13:15:40Z,0,95,pre-work
+myco-sanitation,4,open,"Verify render, update plan doc, and commit the dry-mass addendum",Jules-Peter,2026-09-29T11:43:14Z,,5,1325,workshop
+myco-sanitation,3,closed,Dry-mass balance: convert wet-mass loss to dry-mass loss with autoclave condensate,Jules-Peter,2026-09-29T11:43:13Z,2026-09-29T12:58:41Z,5,2140,workshop
+myco-sanitation,1,open,Data added,Jules-Peter,2026-09-09T09:43:15Z,,0,200,pre-work
+sensor-validation,6,closed,"Codebook 4/4: verify, review end to end, and link from data/README.md",weberel,2026-09-29T11:53:22Z,2026-09-29T12:58:41Z,5,1355,workshop
+sensor-validation,5,closed,Codebook 3/4: generator script that scans data/ and writes CODEBOOK.md,weberel,2026-09-29T11:53:20Z,2026-09-29T12:58:40Z,5,1833,workshop
+sensor-validation,4,closed,"Codebook 2/4: inventory of non-CSV files, devices and conventions",weberel,2026-09-29T11:53:19Z,2026-09-29T12:58:40Z,4,1730,workshop
+sensor-validation,3,closed,Codebook 1/4: define every CSV format and column,weberel,2026-09-29T11:53:17Z,2026-09-29T12:58:39Z,5,2057,workshop
+sensor-validation,1,open,Data added,weberel,2026-09-16T12:19:07Z,,0,237,pre-work
+tdabc-mzuzu,7,open,Field verification of flagged entries kept in the cleaned data,PCstumbleine,2026-09-29T12:18:59Z,,5,1597,workshop
+tdabc-mzuzu,6,closed,Q2 manuscript: switch to cleaned data and re-render,PCstumbleine,2026-09-29T11:56:19Z,2026-09-29T12:30:03Z,5,1078,workshop
+tdabc-mzuzu,5,closed,Q1 manuscript: switch to cleaned data and re-render,PCstumbleine,2026-09-29T11:56:18Z,2026-09-29T12:30:01Z,5,1205,workshop
+tdabc-mzuzu,4,closed,Document the data-review resolution in both READMEs,PCstumbleine,2026-09-29T11:56:16Z,2026-09-29T12:29:58Z,5,1017,workshop
+tdabc-mzuzu,3,closed,Cleaning script and cleaned dataset for data-review flags,PCstumbleine,2026-09-29T11:56:15Z,2026-09-29T12:29:56Z,5,1292,workshop
+tdabc-mzuzu,1,closed,Data Added,PCstumbleine,2026-09-11T14:19:57Z,2026-09-29T10:01:41Z,0,306,pre-work
+urine-durban,5,closed,Q4-3: Reproduce the published volume effects and diagnose the Mnamatha and Ntabankulu residuals,elizabeth-tilley,2026-09-29T11:50:53Z,2026-09-29T12:42:16Z,5,1946,workshop
+urine-durban,4,closed,Q4-2: Reproduce the published volume-collected figures and correct Q3 Table 11,elizabeth-tilley,2026-09-29T11:50:52Z,2026-09-29T12:42:14Z,5,1379,workshop
+urine-durban,3,closed,"Q4-1: Reproduce published sample sizes, participation rates and control baseline",elizabeth-tilley,2026-09-29T11:50:51Z,2026-09-29T12:42:13Z,5,1503,workshop
+urine-durban,2,closed,Q4-4: Write up Question 4 with a diagnosis summary table and the questions only the original Stata files can answer,elizabeth-tilley,2026-09-29T11:50:06Z,2026-09-29T12:42:10Z,5,1507,workshop
+washschools-nigeria,7,open,Q3: manuscript,jaktk,2026-09-29T11:48:31Z,,4,599,workshop
+washschools-nigeria,6,open,Q3: scenario model and sensitivity figure,jaktk,2026-09-29T11:48:29Z,,4,813,workshop
+washschools-nigeria,5,closed,Q3: exposure counts from WASH NORM 2019,jaktk,2026-09-29T11:48:28Z,2026-09-29T12:36:08Z,5,740,workshop
+washschools-nigeria,4,closed,Q3: collect and verify absence parameters from the literature,jaktk,2026-09-29T11:48:27Z,2026-09-29T12:36:08Z,5,1045,workshop
+washschools-nigeria,2,closed,Setup complete,jaktk,2026-09-23T13:10:29Z,2026-09-29T11:51:17Z,0,48,pre-work
+washschools-nigeria,1,closed,Data added,jaktk,2026-09-17T14:06:03Z,2026-09-29T11:51:24Z,0,76,pre-work
+water-quality-col,6,closed,"Render, verify and track the HTML manuscript",seawaR,2026-09-29T12:00:29Z,2026-09-29T13:02:25Z,5,900,workshop
+water-quality-col,5,closed,Interactive leaflet map of IRCA 2019 with hover tooltip,seawaR,2026-09-29T12:00:28Z,2026-09-29T13:02:23Z,5,1105,workshop
+water-quality-col,4,closed,Sortable columns table in the HTML output,seawaR,2026-09-29T12:00:26Z,2026-09-29T13:02:20Z,5,929,workshop
+water-quality-col,3,closed,Add an HTML output format to the manuscript project,seawaR,2026-09-29T12:00:24Z,2026-09-29T13:02:38Z,4,870,workshop
+water-quality-col,1,open,Data added,seawaR,2026-09-22T09:53:57Z,,0,242,pre-work

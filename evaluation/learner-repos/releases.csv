@@ -1,0 +1,19 @@
+repo,tag,name,created_at,author,n_assets,assets,body_chars,has_declaration,declaration_chars,tag_commit,tag_on
+caves-currents,v0.2.0,v0.2.0 – Age-uncertain meltwater analysis and discharge explorer,2026-09-29T13:45:09Z,lrndrs,3,discharge_explorer.html;glas_age_range.docx;nisa_meltwater_sources.docx,10069,1,7681,72f3adc,main
+caves-currents,v0.1.0,v0.1.0 – Glas age range and NISA meltwater sources,2026-09-29T10:00:58Z,lrndrs,2,glas_age_range.docx;nisa_meltwater_sources.docx,1075,0,0,03fb039,main
+ghg-bsfl,v0.2.0,"v0.2.0 – Q2 manuscript, R data package and slides",2026-09-29T13:47:05Z,dapeguero,2,q1-gases-measured.docx;q2-co2e-per-chamber.docx,13285,1,11010,68da5be,unmerged
+ghg-bsfl,v0.1.0,v0.1.0 – Questions 1 and 2 answered,2026-09-29T09:56:34Z,dapeguero,1,q1-gases-measured.docx,1154,0,0,aeb9c2d,main
+implementation-mzuzu,v0.2.0,v0.2.0 - Question 2 re-scored by twenty raters,2026-09-29T13:45:34Z,katiemcaves,2,q2-indicators-manuscript.docx;q2-raters-manuscript.docx,12910,1,10257,3b758af,main
+implementation-mzuzu,v0.1.0,v0.1.0 - Questions 1 and 2 answered,2026-09-29T10:00:49Z,katiemcaves,2,q1-city-manuscript.docx;q2-indicators-manuscript.docx,1727,0,0,831d5d0,main
+myco-sanitation,v0.2.0,v0.2.0 - Q2: F40 vs AmBm degradation,2026-09-29T13:49:49Z,Jules-Peter,2,f40_vs_ambm_degradation_v0.2.0.docx;raw_vs_sterile_degradation_fable_v0.2.0.docx,2742,1,361,30690be,main
+myco-sanitation,v0.1.0,v0.1.0 - Q1: raw vs sterile degradation,2026-09-29T10:01:16Z,Jules-Peter,2,raw_vs_sterile_degradation_fable_v0.1.0.docx;raw_vs_sterile_degradation_v0.1.0.docx,1605,0,0,5c5fbcf,main
+sensor-validation,v0.2.0,v0.2.0 – Independent report and data codebook,2026-09-29T13:45:06Z,weberel,2,validation-questions-v0.2.0.docx;validation-report-v0.2.0.docx,8492,1,7228,5f07065,dev
+sensor-validation,v0.1.0,v0.1.0 – Validation questions manuscript,2026-09-29T10:00:42Z,weberel,1,validation-questions.docx,1179,0,0,2e474a9,main
+tdabc-mzuzu,v0.2.0,v0.2.0,2026-09-29T13:46:15Z,PCstumbleine,1,tdabc-mzuzu-final-manuscript-v0.2.0.docx,11486,1,8946,f35fb51,main
+tdabc-mzuzu,v0.1.0,v0.1.0,2026-09-29T10:02:05Z,PCstumbleine,1,tdabc-mzuzu-q1-total-job-time-v0.1.0.docx,1146,0,0,76854db,main
+urine-durban,v0.2.0,v0.2.0 — Comparison with published results,2026-09-29T13:47:13Z,elizabeth-tilley,1,urine-durban-manuscript-v0.2.0.docx,2941,1,356,0b0672c,main
+urine-durban,v0.1.0,v0.1.0 — Study areas and urine production,2026-09-29T10:01:34Z,elizabeth-tilley,1,urine-durban-manuscript-v0.1.0.docx,1093,0,0,048ca25,main
+washschools-nigeria,v0.2.0,v0.2.0,2026-09-29T13:46:59Z,jaktk,0,,8791,1,6111,8898a5b,main
+washschools-nigeria,v0.1.0,v0.1.0,2026-09-29T10:01:04Z,jaktk,0,,1307,0,0,9dfd8c5,main
+water-quality-col,v0.2.0,v0.2.0,2026-09-29T13:46:38Z,seawaR,2,water-quality-col-manuscript-v0.2.0.docx;water-quality-col-manuscript-v0.2.0.html,8042,1,6463,ca1ed18,main
+water-quality-col,v0.1.0,v0.1.0,2026-09-29T10:01:01Z,seawaR,1,water-quality-col-manuscript-v0.1.0.docx,1356,0,0,884043b,main
